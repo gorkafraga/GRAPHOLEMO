@@ -4,21 +4,29 @@ rm(list=ls(all=TRUE)) # remove all variables (!)
 Packages <- c("readr", "data.table", "ggplot2","tibble","nlme","lme4","pwr","dplyr","cowplot","tidyr","psych","ggpubr","gridExtra")
 lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/Scripts/Misc R/R-plots and stats/Geom_flat_violin.R")
-#set inputs
+
+#set ins and outs
 dirinput <- "O:/studies/grapholemo/log_tests"
 diroutput <- dirinput
 task <- "FeedLearn"
 ntrials <- 40
 
 
+#loop thru files
 setwd(dirinput)
 files <- dir(pattern=paste("*.",task,".*.txt",sep=""))
 
-#read data per file and combine in array
-datalist <- list()
-i <- 3
-  # data 
+for (i in 1:length(files)){
+  #Read File 
   D <- read_delim(files[i],"\t", escape_double = FALSE, locale = locale(), trim_ws = TRUE, skip_empty_rows=TRUE)
+  
+  if (dim(D)[1] != ntrials) {
+    cat("This file has ",dim(D)[1]," trials instead of ",ntrials,"!!",
+                "\nAborting file ",files[i],"!!")
+    break
+  } else {
+    
+  cat("File OK (",dim(D)[1]," trials)","\nProceeding with ",files[i],"...\n")
   
   # Get indexes per feedback (b) /response type.
   idx_miss <- which(D$fb==2)
@@ -87,13 +95,25 @@ i <- 3
   colnames(buttons)<- c("button","count","proportion")
   buttons <- select(buttons, c(button,proportion))
   buttons_report <- paste("Button (",paste(buttons$button,collapse=";"),") response proportion from all responses: ",paste(buttons$proportion,collapse=";"),sep="")
-  #PLOT: Scatter  RTs per fb type
-  #------------------------------------------------------------------------------
+  
+  # PLOT preparations......
+  #........................
   ylims <- c(500,2500)
   ysep <- 250
-  cols <-  c("firebrick1","forestgreen","yellow") #set your own color palette! 
+  cols <-  c("firebrick1","forestgreen","black") #set your own color palette! 
   myshapemap <-c(21,21,17)
- scat_RTs <-  ggplot(data = D, aes(x = D$trial, y = D$rt, colour = respType)) +
+  if (length(idx_err)==0){
+      cols <- c("forestgreen","black") 
+      myshapemap <-c(21,17)  
+  }
+  # add note if there were responses < 500 
+  if (length(which(D$rt<500 & D$rt>0))!=0){
+    RT_note <- paste("[!]",length(which(D$rt<500 & D$rt>0)), "responses faster than 500 ms!")
+  } else { RT_note <- c("")}
+  
+  #PLOT: Scatter  RTs per fb type
+  #------------------------------------------------------------------------------
+  scat_RTs <-  ggplot(data = D, aes(x = D$trial, y = D$rt, colour = respType)) +
               #geom_vline(xintercept = 0,color="grey" ) + # add lines at strategic points
               geom_vline(xintercept = 10,color="grey" ) +
               geom_vline(xintercept = 20,color="grey" ) +
@@ -102,16 +122,17 @@ i <- 3
               geom_hline(yintercept = 2000,linetype = "dashed",color="blue" ) + # add lines at strategic points
               geom_point(aes(fill=respType,shape=respType),alpha = .8,size=3,color="black", stroke = .16) + 
               scale_shape_manual(values=myshapemap) +
-              labs(title ="RTs trial sequence", y = "RT", x = "Trial Number",subtitle = paste("Miss: ",length(idx_miss),sep="")) + # add some lables and title
+              labs(title ="RTs trial sequence", y = "RT", x = "Trial Number",caption=RT_note,
+                   subtitle = paste("Missing ",length(idx_miss)," trial(s)",sep="")) + # add some lables and title
               scale_y_continuous(limits = ylims, breaks = (seq(ylims[1],ylims[2],ysep)), labels= (seq(ylims[1],ylims[2],ysep)))+  # play with y axis ticks and range
               scale_x_continuous(breaks = seq(0,ntrials,5)) +  # play with y axis ticks and range 
               theme_bw(12)+
-              theme(title = element_text(size=10),
+              theme(title = element_text(size=10),plot.caption = element_text(colour ="red"),
                 axis.text.x = element_text(angle = 45,colour = "black",size=10, hjust = 1)) +   
               scale_fill_manual(values=cols) +
               scale_color_manual(values=cols) 
   
-    
+ print("scat_RT plot created\n")        
   #PLOT: Density RTs per fb type
   #------------------------------------------------------------------------------
    Dt <- D[c(idx_hit,idx_err),]
@@ -131,15 +152,17 @@ i <- 3
            stat_summary(aes(x=as.numeric(respType)+0.03,fill=respType),position=position_dodge(0.03),fun.data = mean_cl_boot,geom = "point",shape=21,size = 2,color="black",alpha = 1)+
            coord_flip()+ 
            theme_classic() +
-          labs(x="freq",y="RT",title = title_dense,  subtitle = caption_dense)+
+          labs(x="freq",y="RT",title = title_dense, caption=RT_note, subtitle = caption_dense)+
            theme(title = element_text(size=10),
                  axis.line.y = element_line(color = gray.colors(10)[3], size = 1, linetype = "solid"),
                  axis.line.x = element_line(color = gray.colors(10)[3], size = 1, linetype = "solid"),
                  axis.text.x = element_text(angle = 45,size=10,color="black"),
                  axis.text.y = element_text(size=10,color="black"),
-                 axis.title.x = element_text(size=10,color="black"))+
+                 axis.title.x = element_text(size=10,color="black"),
+                 plot.caption = element_text(colour ="red"))+
           scale_y_continuous(limits = ylims, breaks = (seq(ylims[1],ylims[2],ysep)), labels= (seq(ylims[1],ylims[2],ysep)))
-          
+    
+   cat("Dense_RT plot created\n")      
    #PLOT: Cummulative probabilities for each repetition of a sound
    #------------------------ ------------------------------------------------------
     cum_lines <-  
@@ -157,7 +180,7 @@ i <- 3
                        axis.text.x = element_text(angle = 45,size=10,color="black"),
                        axis.text.y = element_text(size=10,color="black"),
                        axis.title.x = element_text(size=10,color="black")) 
-     
+   cat("cum_lines plot created\n")       
    #PLOT: overall performance plot and info
    #------------------------------------------------------------------------------
    line_propHits <-  ggplot(propHits_per_quart, aes(x= quartile, y=hit_prop))+
@@ -175,29 +198,30 @@ i <- 3
                            axis.text.y = element_text(size=10,color="black"),
                            axis.title.x = element_text(size=10,color="black")) +
                      scale_y_continuous(limits = c(0,1),breaks=seq(0,1,0.1))
-   
-   
+   cat("line_propHits plot created\n")        
    # Summary Tables
    #------------------------------------------------------------------------------
-   
-   accu_table <- rbind(select(propHits_per_quart,c(quartile,hit_prop)),c("overall",length(which(D$fb==1))/dim(D)[1]))
+    accu_table <- rbind(select(propHits_per_quart,c(quartile,hit_prop)),c("overall",length(which(D$fb==1))/dim(D)[1]))
    colnames(accu_table) <- c("quartile","accu")
    T <- tableGrob(cbind(accu_table,select(rts_table,meanRT)),rows=NULL)
+
    
-    # COMBINED FIGURE         
-       combo <-  
-     ggdraw() + draw_plot(scat_RTs, x = 0, y = .5, width = .5, height = .5) +
-                             draw_plot(dense_RTs, x = .5, y = .5, width = .5, height = .5) +
-                             draw_plot(cum_lines, x = 0, y = 0, width = .5, height = .5)+
-                              draw_plot(line_propHits, x = .5, y =0, width = .25, height = .5)+
-                             draw_plot(T, x = .75, y = 0, width = .25, height = .5)
+#===========================
+#Combine plots in figure
+#===========================
+combo <-  ggdraw() + draw_plot(scat_RTs, x = 0, y = .5, width = .5, height = .5) +
+                     draw_plot(dense_RTs, x = .5, y = .5, width = .5, height = .5) +
+                     draw_plot(cum_lines, x = 0, y = 0, width = .5, height = .5)+
+                     draw_plot(line_propHits, x = .5, y =0, width = .25, height = .5)+
+                     draw_plot(T, x = .75, y = 0, width = .25, height = .5)
+
+#add some annotations
+combo <-  annotate_figure(combo,text_grob(files[i], color = "blue", face = "bold", size = 12),
+          fig.lab.pos="bottom",bottom = text_grob(buttons_report, color = "black",size=9))
        
-   combo <-  annotate_figure(combo,text_grob(files[i], color = "blue", face = "bold", size = 12),
-                             fig.lab.pos="bottom",bottom = text_grob(buttons_report, color = "black",size=9))
-       
-     ggsave("combo.jpg",combo,width = 350, height = 310, dpi=300, units = "mm")
-          
-         
-         
-         
-         
+# SAVE ~~~~~O ~~O 
+setwd(diroutput)
+outputname <- paste("FIG_",gsub(".txt",".jpg",files[i]),sep="")
+ggsave(outputname,combo,width = 350, height = 310, dpi=300, units = "mm")
+cat(i,"-done.\n")
+}}         
