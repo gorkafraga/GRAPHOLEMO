@@ -6,8 +6,8 @@ lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/Scripts/Misc R/R-plots and stats/Geom_flat_violin.R")
 
 #set ins and outs
-dirinput <- "O:/studies/grapholemo/log_tests"
-diroutput <- dirinput
+dirinput <- "O:/studies/grapholemo/Allread_FBL/Logs" 
+diroutput <-"O:/studies/grapholemo/Allread_FBL/Logs/Plots_per_file" 
 task <- "FeedLearn"
 ntrials <- 40
 
@@ -23,7 +23,7 @@ for (i in 1:length(files)){
   if (dim(D)[1] != ntrials) {
     cat("This file has ",dim(D)[1]," trials instead of ",ntrials,"!!",
                 "\nAborting file ",files[i],"!!")
-    break
+    next
   } else {
     
   cat("File OK (",dim(D)[1]," trials)","\nProceeding with ",files[i],"...\n")
@@ -118,6 +118,7 @@ for (i in 1:length(files)){
               geom_vline(xintercept = 10,color="grey" ) +
               geom_vline(xintercept = 20,color="grey" ) +
               geom_vline(xintercept = 30,color="grey" ) +
+              geom_hline(yintercept = 2500,linetype = "dashed",color="darkorange" ) + # add lines at strategic points  
               geom_hline(yintercept = 0,linetype = "dashed",color="blue" ) + # add lines at strategic points
               geom_hline(yintercept = 2000,linetype = "dashed",color="blue" ) + # add lines at strategic points
               geom_point(aes(fill=respType,shape=respType),alpha = .8,size=3,color="black", stroke = .16) + 
@@ -141,6 +142,7 @@ for (i in 1:length(files)){
    caption_dense <- paste("Miss: ",length(idx_miss),"\nHits: ",length(idx_hit),"\nErrors: ",length(idx_err))
    dense_RTs<- 
            ggplot(data=Dt, aes(x=respType,y=rt,group=respType)) +
+           geom_hline(yintercept = 2500,linetype="dashed",color="darkorange") +
            geom_hline(yintercept = 2000,linetype="dashed",color="blue") +
            geom_flat_violin(aes(fill = respType,color=respType),position = position_nudge(x = 0.0, y = 0.02), adjust = .9, trim = FALSE, alpha = .1) +
            geom_point(aes(x=as.numeric(respType)-0.05,shape= respType, fill = respType),color="black",position=position_jitter(0.02,0,3), size = 2, alpha=.5)+
@@ -224,4 +226,5 @@ setwd(diroutput)
 outputname <- paste("FIG_",gsub(".txt",".jpg",files[i]),sep="")
 ggsave(outputname,combo,width = 350, height = 310, dpi=300, units = "mm")
 cat(i,"-done.\n")
+setwd(dirinput)
 }}         
