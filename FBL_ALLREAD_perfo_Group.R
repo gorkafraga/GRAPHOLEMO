@@ -92,12 +92,12 @@ for (i in 1:length(files)){
     # Separate the data in quartile
     D$quartile <- unlist(lapply(seq(dim(D)[1]/(dim(D)[1]/4)),rep,(dim(D)[1]/4)))
     
- 
+    D2save <- cbind(rep(subject,dim(D)[1]),D)
+    colnames(D2save)[1] <- "subjID"
+    dataList[[i]]<- D2save
+    cumuList[[i]]<- cumuScore
   }  
-  D2save <- cbind(rep(subject,dim(D)[1]),D)
-  colnames(D2save)[1] <- "subjID"
-  dataList[[i]]<- D2save
-  cumuList[[i]]<- cumuScore
+
 }    
 
 # Merge in a single Table  

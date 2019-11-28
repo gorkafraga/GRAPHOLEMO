@@ -6,8 +6,8 @@ lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/Scripts/Misc R/R-plots and stats/Geom_flat_violin.R")
 
 #set ins and outs
-dirinput <- "O:/studies/grapholemo/Allread_FBL/Logs" 
-diroutput <- "O:/studies/grapholemo/Allread_FBL" 
+dirinput <- "O:/studies/grapholemo/Pilot-adults_FBL/Logs" 
+diroutput <- "O:/studies/grapholemo/Pilot-adults_FBL" 
 task <- "FeedLearn"
 ntrials <- 40
 
@@ -21,7 +21,7 @@ cumuList<-list()
 for (i in 1:length(files)){
   #Read File 
   D <- read_delim(files[i],"\t", escape_double = FALSE, locale = locale(), trim_ws = TRUE, skip_empty_rows=TRUE)
-  subject <- substr(files[i],1,6)
+  subject <- substr(files[i],11,12)
   if (dim(D)[1] != ntrials) {
     cat("This file has ",dim(D)[1]," trials instead of ",ntrials,"!!",
         "\nAborting file ",files[i],"!!")
@@ -29,19 +29,19 @@ for (i in 1:length(files)){
   } else {
     
     cat("File OK (",dim(D)[1]," trials)","\nProceeding with ",files[i],"...\n")
-    
-    # minor fix for some files with inconsistent headers
-    if (length(which(colnames(D)=="vSymbols"))!=0) {
-      D$vSymbol1 <- substr(D$vSymbols,1,1)
-      D$vSymbol2 <- substr(D$vSymbols,2,2)
-      tmpIdx <- which(colnames(D)=="vSymbols")
-      D$vSymbolCorrect <- 0
-      for (ii in 1:length(D$vStim1)) {
-        jnk <- cbind(D$vStim1[ii],D$vStim2[ii])
-        D$vSymbolCorrect[ii] <-	 jnk[which(jnk==D$aStim[ii])] 
-      }
-      D <- select(D,c(1:(tmpIdx-1)),length(D)-2,length(D)-1,length(D),c(1+tmpIdx:c(length(D)-2)))
-      }
+    # 
+    # # minor fix for some files with inconsistent headers
+    # if (length(which(colnames(D)=="vSymbols"))!=0) {
+    #   D$vSymbol1 <- substr(D$vSymbols,1,1)
+    #   D$vSymbol2 <- substr(D$vSymbols,2,2)
+    #   tmpIdx <- which(colnames(D)=="vSymbols")
+    #   D$vSymbolCorrect <- 0
+    #   for (ii in 1:length(D$vStim1)) {
+    #     jnk <- cbind(D$vStim1[ii],D$vStim2[ii])
+    #     D$vSymbolCorrect[ii] <-	 jnk[which(jnk==D$aStim[ii])] 
+    #   }
+    #   D <- select(D,c(1:(tmpIdx-1)),length(D)-2,length(D)-1,length(D),c(1+tmpIdx:c(length(D)-2)))
+    #   }
     # Get indexes per feedback (b) /response type.
     idx_miss <- which(D$fb==2)
     idx_hit <- which(D$fb==1)
@@ -92,12 +92,12 @@ for (i in 1:length(files)){
     # Separate the data in quartile
     D$quartile <- unlist(lapply(seq(dim(D)[1]/(dim(D)[1]/4)),rep,(dim(D)[1]/4)))
     
- 
+    D2save <- cbind(rep(subject,dim(D)[1]),D)
+    colnames(D2save)[1] <- "subjID"
+    dataList[[i]]<- D2save
+    cumuList[[i]]<- cumuScore
   }  
-  D2save <- cbind(rep(subject,dim(D)[1]),D)
-  colnames(D2save)[1] <- "subjID"
-  dataList[[i]]<- D2save
-  cumuList[[i]]<- cumuScore
+ 
 }    
 
 # Merge in a single Table  

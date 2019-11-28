@@ -12,7 +12,7 @@ lapply(Packages, require, character.only = TRUE)
 #--------------------------------------------------------------------------------------------
 # REFS: e.g. From Pederson et al.,2017 https://github.com/gbiele/RLDDM/blob/master/RLDDM.jags.txt 
 #set dirs
-dirinput <- "O:/studies/grapholemo/FBL_allread_logs"
+dirinput <- "O:/studies/grapholemo/Allread_FBL/Logs"
 diroutput <- "O:/studies/grapholemo/Analysis/models"
 setwd(dirinput)
 #Some starting info
@@ -75,6 +75,7 @@ T <- filter(rawG,fb!=2)
 T <- filter(T,RT>RTbound)
 T <- data.table(T)
 T$response <- T$fb
+T$trial<-as.integer(T$trial)
 #Count of trials per subject 
 DT_trials <- T[,.N,by = subjID]
 subjs <- DT_trials$subjID
@@ -105,13 +106,14 @@ for (ss in subjs){
 T$block <- as.integer(T$block)
 
 # Some nr formatting adjusts
+T$response <- T$fb+1 # Responses 0 becomes 1 (incorrect) and 1 becomes 2 (correct)
 T$aStim <- as.double(T$aStim)
 T$vStim1 <- as.double(T$vStim1)
 T$vStim2 <- as.double(T$vStim2)
 # Because stimuli change in each block, give unique numbers for stimuli for each block
-T[which(T$block==2),]$aStim = T[which(T$block==2),]$aStim + (stims_per_block*2)
-T[which(T$block==2),]$vStim1 = T[which(T$block==2),]$vStim1 + (stims_per_block*2)
-T[which(T$block==2),]$vStim2 = T[which(T$block==2),]$vStim2 + (stims_per_block*2)
+T[which(T$block==2),]$aStim = T[which(T$block==2),]$aStim + (stims_per_block)
+T[which(T$block==2),]$vStim1 = T[which(T$block==2),]$vStim1 + (stims_per_block)
+T[which(T$block==2),]$vStim2 = T[which(T$block==2),]$vStim2 + (stims_per_block)
 
 #Log in each trial which v-stimuli is correctly mapped to audio and which not
 T$vStimNassoc <- ifelse(T$aStim==T$vStim1,T$vStim2,T$vStim1)
@@ -120,15 +122,15 @@ minRT <- with(T, aggregate(RT, by = list(y = subjID), FUN = min)[["x"]])
 ifelse(is.null(dim(minRT)),minRT<-as.array(minRT))
 
 # Get index of first and last trial per subject 
-first <- which(T$trial==1)
+first <- as.double(which(T$trial==1))
 # if N=1 transform int to 1-d array
-  first<-as.array(first)
+first<-as.array(first)
 # last is a Sx1 matrix identifying all last trials of a subject for each choice
 last <- (first + DT_trials$N - 1)
 # if N=1 transform int to 1-d array
 last<-as.array(last)
 # define the values for the rewards: if upper resp, value = 1
-value <- ifelse(T$response==1, 1, 0)
+value <- ifelse(T$response==2, 1, 0)
 n_trials <- nrow(T)
 
 #Count number of blocks
@@ -142,11 +144,12 @@ dat <- list("N" = n_subj, "T"=n_trials,"RTbound" = 0.15,"minRT" = minRT,
             "iter" = T$trial, "response" = T$response, 
             "stim_assoc" = T$aStim, "stim_nassoc" = T$vStimNassoc, 
             "RT" = T$RT, "first" = first, "last" = last, "value"=value, 
-            "n_stims"=stims_per_block*blocks)  
+            "n_stims"=stims_per_block*blocks)
 
 #save list as file to read later
 setwd(diroutput)
-save(dat,file="Gathered_list")
+save(dat,file="Gathered_list_for_Stan")
+save(T,file="Gathered_data")
 
 
 

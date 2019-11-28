@@ -38,7 +38,7 @@ gather_data <- function(files){
 ## define paths
 path <- "C:/Rscripts"
 model_path <- paste0(path,"/model/rlddm_stan/rlddm_01.stan")
-data_path <- paste0(path,"/data/piloting/pilots_biokurs/subjects")
+data_path <- "N:/Users/phaller/mri_task_analysis/data/piloting/pilots_biokurs/subjects"
 
 
 ### load data

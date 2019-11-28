@@ -1,16 +1,16 @@
 data {
   int<lower=1> N;      // Number of subjects
-  real minRT[N];       // minimum RT for each subject of the observed data
-  int first[N];        // first trial of subject
-  int last[N];         // last trial of subject
   int<lower=1> T;      // Number of observations
+  real minRT[N];       // minimum RT for each subject of the observed data
   real RTbound;        // lower bound of RT across all subjects (e.g., 0.1 second)
   real iter[T];        // trial of given observation
   int response[T];      // encodes successful trial [1: lower bound (incorrect), 2: upper bound(correct)]
-  real RT[T];          // reaction time
-  int value[T];        // value of trial: successful / unsuccessful -> encodes rewards
   int stim_assoc[T];   // index of associated sound-symbol pair
   int stim_nassoc[T];  // index of presented non-associated symbol
+  real RT[T];          // reaction time
+  int first[N];        // first trial of subject
+  int last[N];         // last trial of subject
+  int value[T];        // value of trial: successful / unsuccessful -> encodes rewards
   int n_stims[N];      // number of items learned by each subject (represents # blocks)
 }
 
