@@ -148,9 +148,10 @@ nsubjects<- length(unique(DAT$subjID))
 #                     PLOT 
 # ======================================================
 #------------------------------------------------------
+
     ylims <- c(500,2500)
     ysep <- 250
-    colorder <-c(which(levels(DAT$respType)=="hit"),which(levels(DAT$respType)=="error"),which(levels(DAT$respType)=="miss"))
+    #colorder <-c(which(levels(DAT$respType)=="hit"),which(levels(DAT$respType)=="error"),which(levels(DAT$respType)=="miss"))
     cols <-  c("","","") #set your own color palette! 
     cols[which(levels(DAT$respType)=="hit")]<-"forestgreen"
     cols[which(levels(DAT$respType)=="error")]<-"firebrick1"
@@ -158,8 +159,8 @@ nsubjects<- length(unique(DAT$subjID))
     myshapemap <-c(21,21,17)
     myshapemap [which(levels(DAT$respType)=="hit")] <- 21
     myshapemap [which(levels(DAT$respType)=="error")] <- 21
-    myshapemap [which(levels(DAT$respType)=="miss")] <- 17
-   
+    myshapemap [which(levels(DAT$respType)=="miss")] <- 21
+    
     # Some annotations
     title_scat <- paste("RTs trial sequence (N = ",nsubjects,")",sep="")
     if (length(which(DAT$rt<500 & DAT$rt>0))!=0){
@@ -177,17 +178,20 @@ nsubjects<- length(unique(DAT$subjID))
       geom_hline(yintercept = 2500,linetype = "dashed",color="darkorange" ) + # add lines at strategic points  
       geom_hline(yintercept = 0,linetype = "dashed",color="blue" ) + # add lines at strategic points
       geom_hline(yintercept = 2000,linetype = "dashed",color="blue" ) + # add lines at strategic points
-      geom_point(aes(fill=respType,shape=respType),alpha = .6,size=2.5,color="black", stroke = .6) + 
-      scale_shape_manual(values=myshapemap) + 
+      geom_point(aes(fill=respType,shape=respType),alpha = .2,size=1,shape=21,color="black", stroke = .6) + 
+      stat_summary(aes(color=respType),position=position_dodge(0.03),fun.data = mean_cl_boot,geom = "line",size = 1,alpha = 1) +
+      stat_summary(aes(fill=respType),position=position_dodge(0.03),colour = NA,fun.data = mean_cl_boot,geom = "ribbon",alpha = .2) +
+      stat_summary(aes(fill=respType),position=position_dodge(0.03),fun.data = mean_cl_boot,geom = "point",color="black",shape=21,size = 1.5,alpha = 1) +
+      scale_fill_manual(values=cols) +
+      scale_color_manual(values=cols) +
+      scale_shape_manual(values=myshapemap)  +
       labs(title = title_scat, y = "RT", x = "Trial Number",caption=RT_note,
            subtitle = Miss_note) + # add some lables and title
-      scale_y_continuous(limits = ylims, breaks = (seq(ylims[1],ylims[2],ysep)), labels= (seq(ylims[1],ylims[2],ysep)))+  # play with y axis ticks and range
+      coord_cartesian(ylim = ylims)+#, breaks = (seq(ylims[1],ylims[2],ysep)), labels= (seq(ylims[1],ylims[2],ysep)))+  # play with y axis ticks and range
       scale_x_continuous(breaks = seq(0,ntrials,5)) +  # play with y axis ticks and range 
       theme_bw(12)+
       theme(title = element_text(size=10),plot.caption = element_text(colour ="red"),
-            axis.text.x = element_text(angle = 45,colour = "black",size=10, hjust = 1)) +   
-      scale_fill_manual(values=cols) +
-      scale_color_manual(values=cols) 
+            axis.text.x = element_text(angle = 45,colour = "black",size=10, hjust = 1)) 
     
     print("scat_RT plot created\n")        
     #PLOT: Density RTs per fb type
@@ -300,6 +304,6 @@ nsubjects<- length(unique(DAT$subjID))
     setwd(diroutput)
     outputname <- paste("GroupFIG (",nsubjects,"ss).jpg",sep="")
     ggsave(outputname,combo,width = 350, height = 310, dpi=300, units = "mm")
-    cat("done.\n")
+    cat("Done. File",outputname, " Saved in ", diroutput,"\n")
     setwd(dirinput)
           
