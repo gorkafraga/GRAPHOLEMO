@@ -1,3 +1,7 @@
+// Author: Patrick Haller
+// https://github.com/pathalle/RLDDM_stan
+// November 2019
+
 data {
   int<lower=1> N;      // Number of subjects
   real minRT[N];       // minimum RT for each subject of the observed data

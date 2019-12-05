@@ -1,3 +1,4 @@
+# Author: Patrick Haller https://github.com/pathalle/RLDDM_stan; November 2019
 .libPaths()
 
 #assign(".lib.loc", "C:/Program Files/R/R-3.5.2/library", envir = environment(.libPaths))
