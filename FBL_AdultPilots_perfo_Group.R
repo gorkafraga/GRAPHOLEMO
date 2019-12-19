@@ -104,6 +104,16 @@ for (i in 1:length(files)){
 DAT <- data.table::rbindlist(dataList) 
 CUMU <- data.table::rbindlist(cumuList) 
 
+DAT$originalBlock <- DAT$block
+CUMU$originalBlock <- CUMU$block
+subjects <- unique(DAT$subjID)
+
+for (i in length(subjects)){
+  DAT$block <- rep(1:length(unique(DAT$originalBlock[which(DAT$subjID == subjects[i])])),each=ntrials)
+  CUMU$block <- rep(1:length(unique(CUMU$originalBlock[which(CUMU$subjID == subjects[i])])),each=ntrials)
+  
+}
+
 # Summary Tables
 #------------------------------------------------------------------------------
 # ACCU summary Count proportion correct  trials in quartile
@@ -139,7 +149,7 @@ idx_err <- which(DAT$fb==0)
 idx_miss <- which(DAT$fb==2)
 
 # CUMULATIVE SCORE Avg per subject to add to plot
-SUCUMU <- CUMU %>% group_by(subjID,rep,stim) %>%  summarise(subAvg=mean(value))
+SUCUMU <- CUMU %>% group_by(subjID,rep,stim,block) %>%  summarise(subAvg=mean(value))
 
 
 nsubjects<- length(unique(DAT$subjID))
@@ -236,6 +246,7 @@ nsubjects<- length(unique(DAT$subjID))
     #PLOT: Cummulative probabilities for each repetition of a sound
     #------------------------ ------------------------------------------------------
     title_cumu <- paste("Cumulative scores per sound (N = ",nsubjects,")",sep="")
+    #SUCUMU <- CUMU %>% group_by(subjID,rep,stim,block) %>%  summarise(subAvg=mean(value))
     
     cum_lines <-  
       ggplot(CUMU, aes(x= rep, y=value, fill=stim))+
@@ -246,7 +257,8 @@ nsubjects<- length(unique(DAT$subjID))
       stat_summary(aes(color=stim),position=position_dodge(0.03),fun.data = mean_cl_boot,geom = "line",size = 1) +
       #stat_summary(aes(color=stim),position=position_dodge(0.03),fun.data = mean_cl_boot,geom = "errorbar",width=.02,size = 0.9,alpha = 1)+  
       #geom_hline(yintercept = 0,linetype="dashed",color="red") +
-      facet_wrap( ~stim, ncol=4)+
+      #facet_wrap( ~stim, ncol=4)+
+      facet_wrap( stim~block, ncol=3)+
       geom_point(data = SUCUMU,aes(y=subAvg, color=stim,group=subjID),size=.5,alpha=.5) +
       geom_line(data = SUCUMU, aes(y=subAvg,color=stim,group=subjID),size=.5,alpha=.5) +
       labs(x="repetition",y="cumulative score",title=title_cumu,subtitle="(hit=+1,error=-1,miss=0)") +
@@ -290,9 +302,9 @@ nsubjects<- length(unique(DAT$subjID))
     #===========================
     #Combine plots in figure
     #===========================
-    combo <-  ggdraw() + draw_plot(scat_RTs, x = 0, y = .5, width = .5, height = .5) +
+    combo <-  ggdraw() + draw_plot(scat_RTs, x = 0, y = .75, width = .5, height = .25) +
       draw_plot(dense_RTs, x = .5, y = .5, width = .5, height = .5) +
-      draw_plot(cum_lines, x = 0, y = 0, width = .5, height = .5)+
+      draw_plot(cum_lines, x = 0, y = 0, width = .5, height = .75)+
       draw_plot(line_propHits, x = .5, y =0, width = .25, height = .5)+
       draw_plot(T, x = .75, y = 0, width = .25, height = .5)
     
