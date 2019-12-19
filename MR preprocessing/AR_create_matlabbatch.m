@@ -1,4 +1,4 @@
-function [matlabbatch] = allread_create_matlabbatch(current_paths,tasklist)
+function [matlabbatch] = AR_create_matlabbatch(current_paths,tasklist)
 % bio_create_matlabbatch This is the preprocessing pipeline for the MR
 % sequence (TR=1000ms). It will create a matlabbatch file that can be
 % executed with the Batch Editor / spm_jobman. 
@@ -41,7 +41,7 @@ for k = 1:numel(tasklist)
                 c =  [c; {tmp_scans}];
             end
         end
-        b0.feedback = cellstr(spm_select('FPList', paths.b0, '^vdm5_.*._1_b0_learn.*.nii$'));
+        b0.learn = cellstr(spm_select('FPList', paths.b0, '^vdm5_.*._1_b0_learn.*.nii$'));
         nslices = 42;
         tr = 1.330;
         blocks = 2;
@@ -75,23 +75,23 @@ for k = 1:numel(tasklist)
     matlabbatch{k}.spm.temporal.st.prefix = 'a';
 end
 task_order  = tasklist;
-if contains(paths.epis,'feedback')
-    task_order{find(strcmp(tasklist,'feedback')==1)} = 'feedback1';
-    task_order = {task_order{1:find(strcmp(task_order,'feedback1')==1)}, 'feedback2', task_order{find(strcmp(task_order,'feedback1')==1)+1:end}};
+if contains(paths.epis,'learn')
+    task_order{find(strcmp(tasklist,'learn')==1)} = 'learn1';
+    task_order = {task_order{1:find(strcmp(task_order,'learn1')==1)}, 'learn2', task_order{find(strcmp(task_order,'learn1')==1)+1:end}};
 end
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% PARALLEL SLICE TIMING CORRECTION
 idx = 1;
 % change 1:3 depending on amount of tasks
-for i = 1:sum(contains(paths.epis,'eread')+contains(paths.epis,'feedback')*2+contains(paths.epis,'implicit')+contains(paths.epis,'faceloc'))
+for i = 1:sum(contains(paths.epis,'eread')+contains(paths.epis,'learn')*2+contains(paths.epis,'implicit')+contains(paths.epis,'faceloc'))
     current_scan = task_order{i};
-    if  contains(current_scan,'feedback1')
+    if  contains(current_scan,'learn1')
         matlabbatch{2}.spm.spatial.realignunwarp.data(i).scans(1) = cfg_dep('Slice Timing: Slice Timing Corr. Images (Sess 1)', substruct('.','val', '{}',{idx}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('()',{1}, '.','files'));
-        matlabbatch{2}.spm.spatial.realignunwarp.data(i).pmscan = b0.feedback;
-    elseif  contains(current_scan,'feedback2')
+        matlabbatch{2}.spm.spatial.realignunwarp.data(i).pmscan = b0.learn;
+    elseif  contains(current_scan,'learn2')
         matlabbatch{2}.spm.spatial.realignunwarp.data(i).scans(1) = cfg_dep('Slice Timing: Slice Timing Corr. Images (Sess 2)', substruct('.','val', '{}',{idx}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('()',{2}, '.','files'));
-        matlabbatch{2}.spm.spatial.realignunwarp.data(i).pmscan = b0.feedback;
+        matlabbatch{2}.spm.spatial.realignunwarp.data(i).pmscan = b0.learn;
         idx = idx + 1;
     elseif  contains(current_scan,'implicit')
         matlabbatch{2}.spm.spatial.realignunwarp.data(i).scans(1) = cfg_dep(['Slice Timing: Slice Timing Corr. Images (Sess 1, ' task_order{i} ')'], substruct('.','val', '{}',{idx}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('()',{1}, '.','files'));
@@ -184,7 +184,7 @@ matlabbatch{5}.spm.util.imcalc.options.dtype = 16;
 matlabbatch{6}.spm.spatial.coreg.estimate.ref(1) = cfg_dep('Image Calculator: ImCalc Computed Image: Brain', substruct('.','val', '{}',{5}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','files'));
 matlabbatch{6}.spm.spatial.coreg.estimate.source(1) = cfg_dep('Realign & Unwarp: Unwarped Mean Image', substruct('.','val', '{}',{2}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','meanuwr'));
 % change every time you change tasks!!!
-for i = 1:sum(contains(paths.epis,'eread')+contains(paths.epis,'feedback')*2+contains(paths.epis,'implicit')+contains(paths.epis,'faceloc'))
+for i = 1:sum(contains(paths.epis,'eread')+contains(paths.epis,'learn')*2+contains(paths.epis,'implicit')+contains(paths.epis,'faceloc'))
     matlabbatch{6}.spm.spatial.coreg.estimate.other(i) = cfg_dep(['Realign & Unwarp: Unwarped Images (Sess ' num2str(i) ')'], substruct('.','val', '{}',{2}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','sess', '()',{i}, '.','uwrfiles'));
 end
 %matlabbatch{5}.spm.spatial.coreg.estimate.other(2) = cfg_dep('Realign & Unwarp: Unwarped Images (Sess 2)', substruct('.','val', '{}',{2}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','sess', '()',{2}, '.','uwrfiles'));

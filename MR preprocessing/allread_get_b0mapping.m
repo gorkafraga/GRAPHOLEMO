@@ -17,17 +17,17 @@ function b0mapping = allread_get_b0mapping(subject,epis)
      % for each subject
     % check sequence nr for each subject:
     % IMPORTANT: SEQUENCE = eread, learn, localizer, symCtrl
-    b0mapping = {[2 5 11 11], %AR1002
-                 %[2 5 9 9], %AR1003
+    b0mapping = {[2 5 11 11 ], %AR1002
+                 [2 5 9 9], %AR1003
                  [2 6 10 10], %AR1004
-                 %[2 5 9 9], % AR1005
+                 [2 5 9 9], % AR1005
                  [2 5 10 10], % AR1006
                  [2 5 13 13], % AR1007
                  [3 6 15 15], % AR1008
-                 %[15 8 13 13], % AR1009
+                 [14 8 13 13], % AR1009
                  [2 9 16 16], %AR1011
-                 %[2 5 9 9], %AR1012
-                 %[2 6 10 10], %AR1014
+                 [2 5 9 9], %AR1012
+                 [2 6 10 10], %AR1014
                  [2 5 9 9], %AR1016
                  [2 5 9 9],%AR1018
                  [2 7 15 15],%AR1021
@@ -47,16 +47,16 @@ function b0mapping = allread_get_b0mapping(subject,epis)
              };
     %subjects = {};
     %excludes = {};
-    %for i=[ 1:length(b0mapping) ]
-    %    sub = sprintf('AR%02d',i);
-    %    if ~any(strcmp(excludes,sub))
-    %        subjects{end + 1} = sub; 
-    %    end    
-    %end
+    for i=[ 1:length(b0mapping) ]
+       sub = sprintf('AR%02d',i);
+       if ~any(strcmp(excludes,sub))
+           subjects{end + 1} = sub; 
+       end    
+    end
     %subjects = {'AR1031'};
-    subjects = {'AR1002','AR1004','AR1006','AR1007','AR1008','AR1011','AR1016','AR1018','AR1021','AR1023','AR1025','AR1028','AR1031','AR1035','AR1036','AR1038','AR1042','AR1045','AR1046','AR1048','AR1055','AR1056'};
+    allsubjects = {'AR1002','AR1004','AR1006','AR1007','AR1008','AR1011','AR1016','AR1018','AR1021','AR1023','AR1025','AR1028','AR1031','AR1035','AR1036','AR1038','AR1042','AR1045','AR1046','AR1048','AR1055','AR1056'};
     %is this line needed??
-    M = containers.Map(subjects,b0mapping);
+    M = containers.Map(allsubjects,b0mapping);
     
     try        
        b0mapping = M(subject);

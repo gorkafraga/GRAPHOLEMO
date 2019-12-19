@@ -1,4 +1,4 @@
-function [echoes] = allread_get_b0_echoes(subject,b0index)
+function [echoes] = AR_get_b0_echoes(subject,b0index)
 
 echoes = [];
 %fprintf ([ 'Processing subject ' subjects{s} '\n' ])
@@ -39,8 +39,8 @@ else
 end
 
 % read the parfile
-fid1 = fopen(fullfile('O:\studies\allread\mri\raw\',subject,'3_rec_par',parfile),'rt');
-A = textscan(fid1, '%f ', 'delimiter', 'Whitespace','collectoutput',true,'HeaderLines',100);
+fid = fopen(fullfile('O:\studies\allread\mri\raw\',subject,'3_rec_par',parfile),'rt');
+A = textscan(fid, '%f ', 'delimiter', 'Whitespace','collectoutput',true,'HeaderLines',100);
 format shortg
 
 % find long and short echo times for individual parfile
@@ -53,6 +53,6 @@ end
 echoes = [ echoes; shortecho longecho];
 
 % done
-fclose(fid1);
+fclose(fid);
 end
 
