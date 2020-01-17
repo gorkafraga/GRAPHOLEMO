@@ -38,7 +38,7 @@ subjects = {'AR1002','AR1004','AR1006','AR1007','AR1008','AR1009','AR1011','AR10
     paths.structural    = 'O:\studies\grapholemo\Allread_FBL\Analysis\mri\preprocessing\t1\';
 
 %% Initialize Script-Log file
-FileName = fullfile([studyPath,'preprocessing'], ['Preprocessing_log_',datestr(now,'ddmmyyyy'),'.txt']);
+FileName = fullfile(studyPath, ['Preprocessing_log_',datestr(now,'ddmmyyyy'),'.txt']);
 fid = fopen(FileName,'wt');
 
 msg = 'AR_preproc_par started at ';
@@ -54,8 +54,7 @@ for i=1:length(subjects)
     current_paths.epis       = fullfile(paths.epis,subjects(i));
     current_paths.structural = fullfile(paths.structural,subjects(i));
     fprintf(fid, ['\nBegin ',currsubject]);
-    disp(['---~~~[]~~~~~-------']);
-    disp(['START ',currsubject]);
+    disp(['START run in ',currsubject]);
     
     % Get b0 info (calls other script to find b0 maps)
     epi                      = paths.epis;

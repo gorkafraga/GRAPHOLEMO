@@ -60,4 +60,4 @@ header =['subject',strcat('epi_',tasks),strcat('b0_',tasks),'t1'] ;
 countFiles = [header;info];
 % Save log
 cd (preprocessingpath)
-xlswrite('CopyFilesLog.xls',countFiles)
+xlswrite(['CopyFiles_Log',datestr(now,'dd-mm-yyyy'),'.xls'],countFiles)

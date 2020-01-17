@@ -7,21 +7,19 @@ Packages <- c("readr","tidyr","dplyr","viridis","data.table","StanHeaders","rsta
 lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/Scripts/Misc R/R-plots and stats/Geom_flat_violin.R")
 #=====================================================================================
-
 #set dirs
-dirinput <- "O:/studies/grapholemo/Analysis/models"
+dirinput <- "O:/studies/grapholemo/Allread_FBL/Analysis/models"
 diroutput <- dirinput
-model_path <- "N:/studies/Grapholemo/Scripts/grapholemo/RLDDM_v01_GFG.stan"
+model_path <- "N:/studies/Grapholemo/Scripts/grapholemo/Learning models/RLDDM_v01_GFG.stan"
 
 setwd(dirinput)
 load("Gathered_data") #read gathered data (that will be combined with model parameters later)
 load("Gathered_list_for_Stan") #read list with gather data input for model
+fit <- readRDS(paste(dirinput,"/fit_rlddm_gfg.rds",sep="")) # read model output
 
-fit <- readRDS(paste(dirinput,"/fit_rlddm_gfg.rds",sep=""))
-
-#######################
-# GET  data #
-##########################
+#----------------------------------------------------------------------------
+# GET  DATA 
+#----------------------------------------------------------------------------
 # Extract results 
 parVals <- rstan::extract(fit, permuted = TRUE)
 fit_summary <- rstan::summary(fit)

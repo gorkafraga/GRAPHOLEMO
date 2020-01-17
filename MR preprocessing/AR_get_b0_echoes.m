@@ -1,8 +1,9 @@
 function [echoes] = AR_get_b0_echoes(subject,b0index)
-
+rawfilesdir = 'O:\studies\allread\mri\raw\';
+parfilefolder = '3_rec_par\';
 echoes = [];
 %fprintf ([ 'Processing subject ' subjects{s} '\n' ])
-parfile = dir( ['O:\studies\allread\mri\raw\' subject  '\3_rec_par\mr*_' num2str(b0index) '_1_*b0*.par'] );
+parfile = dir( [rawfilesdir subject '\' parfilefolder 'mr*_' num2str(b0index) '_1_*b0*.par'] );
 len = length(parfile);
 % it is possible, that there is more than one fieldmap in the raw-dir
 % then...
@@ -39,7 +40,7 @@ else
 end
 
 % read the parfile
-fid = fopen(fullfile('O:\studies\allread\mri\raw\',subject,'3_rec_par',parfile),'rt');
+fid = fopen(fullfile(rawfilesdir,subject,parfilefolder,parfile),'rt');
 A = textscan(fid, '%f ', 'delimiter', 'Whitespace','collectoutput',true,'HeaderLines',100);
 format shortg
 

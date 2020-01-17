@@ -1,0 +1,84 @@
+"AR_get_b0" run in AR1006... b0mapping = [5]
+========================================================================
+Generating fieldmap...B0 directory is O:\studies\grapholemo\Allread_FBL\Analysis\mri\preprocessing\b0\AR1006
+EPI directory is O:\studies\grapholemo\Allread_FBL\Analysis\mri\preprocessing\learn\AR1006
+========================================================================
+
+echoes =
+
+          4.2         7.21
+
+EPIDIR: O:\studies\grapholemo\Allread_FBL\Analysis\mri\preprocessing\learn\AR1006
+Calculating fieldmap for b0index: 5
+Starting parallel pool (parpool) using the 'local' profile ...
+connected to 8 workers.
+Initialising batch system... done.
+
+
+------------------------------------------------------------------------
+13-Jan-2020 09:37:38 - Running job #1
+------------------------------------------------------------------------
+13-Jan-2020 09:37:38 - Running 'Slice Timing'
+
+SPM12: spm_slice_timing (v6130)                    09:37:38 - 13/01/2020
+========================================================================
+Number of slices is...                  :                             42
+Time to Repeat (TR) is...               :                           1.33
+Parameters are specified as...          :               slice times (ms)
+Completed                               :          09:45:46 - 13/01/2020
+13-Jan-2020 09:45:46 - Done    'Slice Timing'
+13-Jan-2020 09:45:46 - Running 'Realign & Unwarp'
+
+SPM12: spm_realign (v7141)                         09:45:46 - 13/01/2020
+========================================================================
+Completed                               :          09:50:05 - 13/01/2020
+
+SPM12: spm_uw_estimate (v6824)                     09:50:06 - 13/01/2020
+========================================================================
+Completed                               :          09:53:25 - 13/01/2020
+
+SPM12: spm_uw_estimate (v6824)                     09:53:25 - 13/01/2020
+========================================================================
+Completed                               :          09:53:46 - 13/01/2020
+
+SPM12: spm_uw_apply (v6301)                        09:53:46 - 13/01/2020
+========================================================================
+Computing mask...                       :                        ...done
+Reslicing images...                     :                        ...done
+Writing mean image...                   :                        ...done
+Completed                               :          09:54:57 - 13/01/2020
+13-Jan-2020 09:54:57 - Done    'Realign & Unwarp'
+13-Jan-2020 09:54:57 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7408)                     09:54:58 - 13/01/2020
+========================================================================
+Segment O:\studies\grapholemo\Allread_FBL\Analysis\mri\preprocessing\t1\AR1006\mr_04092019_180322_13_1_t1_adni.nii
+Completed                               :          09:59:22 - 13/01/2020
+13-Jan-2020 09:59:22 - Done    'Segment'
+13-Jan-2020 09:59:22 - Running 'Get Pathnames'
+13-Jan-2020 09:59:22 - Done    'Get Pathnames'
+13-Jan-2020 09:59:22 - Running 'Image Calculator'
+
+SPM12: spm_imcalc (v6961)                          09:59:22 - 13/01/2020
+========================================================================
+ImCalc Image: O:\studies\grapholemo\Allread_FBL\Analysis\mri\preprocessing\t1\AR1006\Brain.nii
+13-Jan-2020 09:59:28 - Done    'Image Calculator'
+13-Jan-2020 09:59:28 - Running 'Coregister: Estimate'
+
+SPM12: spm_coreg (v7320)                           09:59:28 - 13/01/2020
+========================================================================
+Completed                               :          09:59:43 - 13/01/2020
+13-Jan-2020 10:00:07 - Done    'Coregister: Estimate'
+13-Jan-2020 10:00:07 - Running 'Normalise: Write'
+13-Jan-2020 10:01:35 - Done    'Normalise: Write'
+13-Jan-2020 10:01:35 - Running 'Smooth'
+13-Jan-2020 10:08:32 - Done    'Smooth'
+13-Jan-2020 10:08:32 - Running 'Normalise: Write'
+13-Jan-2020 10:08:45 - Done    'Normalise: Write'
+13-Jan-2020 10:08:45 - Done
+
+13-Jan-2020 10:08:45	Error during the preprocessing of subject AR1006 
+
+
+IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.
