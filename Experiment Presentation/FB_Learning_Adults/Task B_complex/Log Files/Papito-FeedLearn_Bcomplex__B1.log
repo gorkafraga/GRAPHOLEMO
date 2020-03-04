@@ -1,0 +1,182 @@
+Scenario - FeedLearn_Bcomplex.sce
+Logfile written - 02/13/2020 09:32:59
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Papito	0	Pulse	199	0	0	NA
+Papito	0	Pulse	199	10000	10000	NA
+Papito	1	Pulse	199	20000	9667	NA
+Papito	1	Pulse	199	30000	19667	NA
+Papito	1	Response	16	33278	22945	0
+Papito	2	Response	32	34719	1434	0
+Papito	2	Pulse	199	40000	6715	NA
+Papito	2	Pulse	199	50000	16715	NA
+Papito	2	Pulse	199	60000	26715	NA
+Papito	2	Pulse	199	70000	36715	NA
+Papito	2	Pulse	199	80000	46715	NA
+Papito	3	Picture	fix	84557	0	1	29189	1	0	next	other	0
+Papito	3	Pulse	199	90000	5443	NA
+Papito	3	Pulse	199	100000	15443	NA
+Papito	3	Pulse	199	110000	25443	NA
+Papito	5	Picture	stim	113747	0	1	20850	1	0	20000	hit	18
+Papito	5	Pulse	199	120000	6253	NA
+Papito	5	Response	16	125212	11465	0
+Papito	5	Pulse	199	130000	16253	NA
+Papito	6	Picture	fix2	134596	0	1	20015	1	0	next	other	0
+Papito	6	Pulse	199	140000	5404	NA
+Papito	6	Pulse	199	150000	15404	NA
+Papito	7	Picture	feedback	154612	0	1	20349	1	0	next	other	0
+Papito	7	Pulse	199	160000	5388	NA
+Papito	7	Pulse	199	170000	15388	NA
+Papito	8	Picture	fix	174961	0	1	33026	1	0	next	other	0
+Papito	8	Pulse	199	180000	5039	NA
+Papito	8	Pulse	199	190000	15039	NA
+Papito	8	Pulse	199	200000	25039	NA
+Papito	10	Picture	stim	207987	0	1	20349	1	0	20000	incorrect	33
+Papito	10	Pulse	199	210000	2013	NA
+Papito	10	Pulse	199	220000	12013	NA
+Papito	10	Response	32	222587	14600	0
+Papito	11	Picture	fix2	228336	0	1	18848	1	0	next	other	0
+Papito	11	Pulse	199	230000	1664	NA
+Papito	11	Pulse	199	240000	11664	NA
+Papito	12	Picture	feedback	247184	0	1	20349	1	0	next	other	0
+Papito	12	Pulse	199	250000	2816	NA
+Papito	12	Pulse	199	260000	12816	NA
+Papito	13	Picture	fix	267533	0	1	26354	1	0	next	other	0
+Papito	13	Pulse	199	270000	2467	NA
+Papito	13	Pulse	199	280000	12467	NA
+Papito	13	Pulse	199	290000	22467	NA
+Papito	15	Picture	stim	293887	0	1	20349	1	0	20000	incorrect	46
+Papito	15	Pulse	199	300000	6113	NA
+Papito	15	Response	32	303800	9913	0
+Papito	15	Pulse	199	310000	16113	NA
+Papito	16	Picture	fix2	314236	0	1	16179	1	0	next	other	0
+Papito	16	Pulse	199	320000	5764	NA
+Papito	16	Pulse	199	330000	15764	NA
+Papito	17	Picture	feedback	330415	0	1	20516	1	0	next	other	0
+Papito	17	Pulse	199	340000	9585	NA
+Papito	17	Pulse	199	350000	19585	NA
+Papito	18	Picture	fix	350931	0	1	30023	1	0	next	other	0
+Papito	18	Pulse	199	360000	9069	NA
+Papito	18	Pulse	199	370000	19069	NA
+Papito	18	Pulse	199	380000	29069	NA
+Papito	20	Picture	stim	380954	0	1	20182	1	0	20000	incorrect	60
+Papito	20	Pulse	199	390000	9046	NA
+Papito	20	Response	32	397334	16380	0
+Papito	20	Pulse	199	400000	19046	NA
+Papito	21	Picture	fix2	401137	0	1	18681	1	0	next	other	0
+Papito	21	Pulse	199	410000	8863	NA
+Papito	22	Picture	feedback	419818	0	1	20516	1	0	next	other	0
+Papito	22	Pulse	199	420000	182	NA
+Papito	22	Pulse	199	430000	10182	NA
+Papito	22	Pulse	199	440000	20182	NA
+Papito	23	Picture	fix	440334	0	1	23185	1	0	next	other	0
+Papito	23	Pulse	199	450000	9666	NA
+Papito	23	Pulse	199	460000	19666	NA
+Papito	25	Picture	stim	463518	0	1	20182	1	0	20000	hit	73
+Papito	25	Pulse	199	470000	6482	NA
+Papito	25	Response	16	475906	12387	0
+Papito	25	Pulse	199	480000	16482	NA
+Papito	26	Picture	fix2	483701	0	1	19015	1	0	next	other	0
+Papito	26	Pulse	199	490000	6299	NA
+Papito	26	Pulse	199	500000	16299	NA
+Papito	27	Picture	feedback	502715	0	1	20349	1	0	next	other	0
+Papito	27	Pulse	199	510000	7285	NA
+Papito	27	Pulse	199	520000	17285	NA
+Papito	28	Picture	fix	523065	0	1	22851	1	0	next	other	0
+Papito	28	Pulse	199	530000	6935	NA
+Papito	28	Pulse	199	540000	16935	NA
+Papito	30	Picture	stim	545916	0	1	20349	1	0	20000	incorrect	86
+Papito	30	Pulse	199	550000	4084	NA
+Papito	30	Response	32	558398	12482	0
+Papito	30	Pulse	199	560000	14084	NA
+Papito	31	Picture	fix2	566932	0	1	25186	1	0	next	other	0
+Papito	31	Pulse	199	570000	3068	NA
+Papito	31	Pulse	199	580000	13068	NA
+Papito	31	Pulse	199	590000	23068	NA
+Papito	32	Picture	feedback	592118	0	1	20516	1	0	next	other	0
+Papito	32	Pulse	199	600000	7882	NA
+Papito	32	Pulse	199	610000	17882	NA
+Papito	33	Picture	fix	612634	0	1	38363	1	0	next	other	0
+Papito	33	Pulse	199	620000	7366	NA
+Papito	33	Pulse	199	630000	17366	NA
+Papito	33	Pulse	199	640000	27366	NA
+Papito	33	Pulse	199	650000	37366	NA
+Papito	35	Picture	stim	650997	0	1	20349	1	0	20000	incorrect	102
+Papito	35	Pulse	199	660000	9003	NA
+Papito	35	Response	32	667295	16298	0
+Papito	35	Pulse	199	670000	19003	NA
+Papito	36	Picture	fix2	671346	0	1	25853	1	0	next	other	0
+Papito	36	Pulse	199	680000	8654	NA
+Papito	36	Pulse	199	690000	18654	NA
+Papito	37	Picture	feedback	697200	0	1	20516	1	0	next	other	0
+Papito	37	Pulse	199	700000	2800	NA
+Papito	37	Pulse	199	710000	12800	NA
+Papito	38	Picture	fix	717716	0	1	28856	1	0	next	other	0
+Papito	38	Pulse	199	720000	2284	NA
+Papito	38	Pulse	199	730000	12284	NA
+Papito	38	Pulse	199	740000	22284	NA
+Papito	40	Picture	stim	746571	0	1	20349	1	0	20000	hit	117
+Papito	40	Pulse	199	750000	3429	NA
+Papito	40	Pulse	199	760000	13429	NA
+Papito	40	Response	16	760429	13858	0
+Papito	41	Picture	fix2	766921	0	1	13677	1	0	next	other	0
+Papito	41	Pulse	199	770000	3079	NA
+Papito	41	Pulse	199	780000	13079	NA
+Papito	42	Picture	feedback	780598	0	1	20349	1	0	next	other	0
+Papito	42	Pulse	199	790000	9402	NA
+Papito	42	Pulse	199	800000	19402	NA
+Papito	43	Picture	fix	800947	0	1	17680	1	0	next	other	0
+Papito	43	Pulse	199	810000	9053	NA
+Papito	45	Picture	stim	818627	0	1	20349	1	0	20000	hit	129
+Papito	45	Pulse	199	820000	1373	NA
+Papito	45	Pulse	199	830000	11373	NA
+Papito	45	Response	16	831320	12693	0
+Papito	46	Picture	fix2	839310	0	1	13677	1	0	next	other	0
+Papito	46	Pulse	199	840000	690	NA
+Papito	46	Pulse	199	850000	10690	NA
+Papito	47	Picture	feedback	852987	0	1	20349	1	0	next	other	0
+Papito	47	Pulse	199	860000	7013	NA
+Papito	47	Pulse	199	870000	17013	NA
+Papito	48	Picture	fix	873337	0	1	35861	1	0	next	other	0
+Papito	48	Pulse	199	880000	6664	NA
+Papito	48	Pulse	199	890000	16664	NA
+Papito	48	Pulse	199	900000	26664	NA
+Papito	50	Picture	stim	909198	0	1	20516	1	0	20000	hit	143
+Papito	50	Pulse	199	910000	802	NA
+Papito	50	Pulse	199	920000	10802	NA
+Papito	50	Response	16	924134	14936	0
+Papito	51	Picture	fix2	929714	0	1	18848	1	0	next	other	0
+Papito	51	Pulse	199	930000	286	NA
+Papito	51	Pulse	199	940000	10286	NA
+Papito	52	Picture	feedback	948562	0	1	20349	1	0	next	other	0
+Papito	52	Pulse	199	950000	1438	NA
+Papito	52	Pulse	199	960000	11438	NA
+Papito	53	Picture	fix	968911	0	1	29023	1	0	next	other	0
+Papito	53	Pulse	199	970000	1089	NA
+Papito	53	Pulse	199	980000	11089	NA
+Papito	53	Pulse	199	990000	21089	NA
+Papito	55	Picture	stim	997933	0	1	20349	1	0	20000	incorrect	157
+Papito	55	Pulse	199	1000000	2067	NA
+Papito	55	Pulse	199	1010000	12067	NA
+Papito	55	Response	32	1015508	17575	0
+Papito	56	Picture	fix2	1018282	0	1	14344	1	0	next	other	0
+Papito	56	Pulse	199	1020000	1718	NA
+Papito	56	Pulse	199	1030000	11718	NA
+Papito	57	Picture	feedback	1032627	0	1	20349	1	0	next	other	0
+Papito	57	Pulse	199	1040000	7373	NA
+Papito	57	Pulse	199	1050000	17373	NA
+Papito	58	Picture	fix	1052976	0	1	30357	1	0	next	other	0
+Papito	58	Pulse	199	1060000	7024	NA
+Papito	58	Pulse	199	1070000	17024	NA
+Papito	58	Pulse	199	1080000	27024	NA
+Papito	60	Picture	stim	1083333	0	1	20349	1	0	20000	incorrect	171
+Papito	60	Pulse	199	1090000	6667	NA
+Papito	60	Pulse	199	1100000	16667	NA
+Papito	60	Response	32	1100161	16829	0
+Papito	61	Picture	fix2	1103682	0	1	20516	1	0	next	other	0
+Papito	61	Pulse	199	1110000	6318	NA
+Papito	61	Pulse	199	1120000	16318	NA
+Papito	62	Picture	feedback	1124198	0	1	14926	1	0	next	other	0
+Papito	62	Pulse	199	1130000	5802	NA
+Papito	62	Quit		1132406	8208	NA

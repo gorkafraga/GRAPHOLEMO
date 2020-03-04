@@ -1,6 +1,6 @@
 function b0mapping = AR_get_b0(subject,epi)
 %----------------------------------------------------------------
-% Get b0 values for a given file 
+% Get the b0 values for the current file 
 %------------------------------------------------------------
 % Adaptation of 'allread_get_b0mapping.m' by G.Fraga Gonzalez 2019 (Original by David Willinger, adapted by P.Haller)
 % Inputs: (called by wrapper script)
@@ -23,22 +23,29 @@ info = {'AR1002',{'eread','learn','symctrl'},[2 5 11];
         'AR1011',{'eread','learn','symctrl'},[2 9 16];
         'AR1012',{'eread','learn','symctrl'},[2 5 9];
         'AR1014',{'eread','learn','symctrl'},[2 6 10];
+        'AR1015',{'learn'},[5];
         'AR1016',{'eread','learn','symctrl'},[2 5 9];
+        'AR1017',{'learn'},[5];
         'AR1018',{'eread','learn','symctrl'},[2 5 9];
+        'AR1019',{'learn'},[5];
         'AR1021',{'eread','learn','symctrl'},[2 7 15];
         'AR1023',{'eread','learn'},[6 12]; % Check files. scmr files had different b0!
         'AR1025',{'eread','learn'},[10 6];
+        'AR1028',{'learn'},[5];
         'AR1031',{'eread','learn','symctrl'},[2 5 12];
+        'AR1034',{'learn'},[5];
         'AR1035',{'eread','learn','symctrl'},[2 5 10];                                
         'AR1036',{'eread','learn','symctrl'},[2 5 13];                                
         'AR1038',{'eread','learn','symctrl'},[2 5 9];                                
         'AR1042',{'eread','learn','symctrl'},[2 5 9];                                
         'AR1045',{'eread','learn'},[9 5];                                
         'AR1046',{'eread','learn','symctrl'},[2 5 12];                                
-        'AR1048',{'eread','learn','symctrl'},[2 5 10];                                
+        'AR1048',{'eread','learn','symctrl'},[2 5 10];      
+        'AR1052',{'learn'},[5];
+        'AR1053',{'learn'},[5];
         'AR1055',{'eread','learn','symctrl'},[2 5 10];  
         'AR1056',{'eread','learn','symctrl'},[2 6 10];
-       };
+        };
 
 % Arrange in structural array
 S = struct('subjID',info(:,1),'file',info(:,2),'b0maps', info(:,3));

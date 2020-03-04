@@ -1,0 +1,587 @@
+Scenario - FeedLearn_Bcomplex.sce
+Logfile written - 02/13/2020 09:45:48
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Leonie	0	Pulse	199	0	0	NA
+Leonie	0	Pulse	199	10000	10000	NA
+Leonie	1	Pulse	199	20000	9333	NA
+Leonie	1	Pulse	199	30000	19333	NA
+Leonie	1	Pulse	199	40000	29333	NA
+Leonie	1	Pulse	199	50000	39333	NA
+Leonie	1	Pulse	199	60000	49333	NA
+Leonie	1	Pulse	199	70000	59333	NA
+Leonie	1	Pulse	199	80000	69333	NA
+Leonie	1	Response	16	84380	73713	0
+Leonie	2	Pulse	199	90000	5595	NA
+Leonie	2	Pulse	199	100000	15595	NA
+Leonie	2	Pulse	199	110000	25595	NA
+Leonie	2	Pulse	199	120000	35595	NA
+Leonie	2	Response	16	121907	37502	0
+Leonie	2	Pulse	199	130000	45595	NA
+Leonie	3	Picture	fix	135931	0	1	34527	1	0	next	other	0
+Leonie	3	Pulse	199	140000	4069	NA
+Leonie	3	Pulse	199	150000	14069	NA
+Leonie	3	Pulse	199	160000	24069	NA
+Leonie	4	Pulse	199	170000	1233	NA
+Leonie	5	Picture	stim	170458	0	1	20516	1	0	20000	incorrect	24
+Leonie	5	Pulse	199	180000	9542	NA
+Leonie	5	Response	32	184956	14498	0
+Leonie	5	Pulse	199	190000	19542	NA
+Leonie	6	Picture	fix2	190973	0	1	17013	1	0	next	other	0
+Leonie	6	Pulse	199	200000	9027	NA
+Leonie	7	Picture	feedback	207987	0	1	20349	1	0	next	other	0
+Leonie	7	Pulse	199	210000	2013	NA
+Leonie	7	Pulse	199	220000	12013	NA
+Leonie	8	Picture	fix	228336	0	1	23018	1	0	next	other	0
+Leonie	8	Pulse	199	230000	1664	NA
+Leonie	8	Pulse	199	240000	11664	NA
+Leonie	8	Pulse	199	250000	21664	NA
+Leonie	10	Picture	stim	251354	0	1	20349	1	0	20000	miss	0
+Leonie	10	Pulse	199	260000	8646	NA
+Leonie	10	Pulse	199	270000	18646	NA
+Leonie	11	Picture	fix2	271703	0	1	26854	1	0	next	other	0
+Leonie	11	Response	32	277209	5507	0
+Leonie	11	Pulse	199	280000	8297	NA
+Leonie	11	Pulse	199	290000	18297	NA
+Leonie	12	Picture	feedback	298557	0	1	20349	1	0	next	other	0
+Leonie	12	Pulse	199	300000	1443	NA
+Leonie	12	Pulse	199	310000	11443	NA
+Leonie	13	Picture	fix	318906	0	1	23852	1	0	next	other	0
+Leonie	13	Pulse	199	320000	1094	NA
+Leonie	13	Pulse	199	330000	11094	NA
+Leonie	13	Pulse	199	340000	21094	NA
+Leonie	15	Picture	stim	342758	0	1	20182	1	0	20000	incorrect	51
+Leonie	15	Pulse	199	350000	7242	NA
+Leonie	15	Response	32	353702	10944	0
+Leonie	15	Pulse	199	360000	17242	NA
+Leonie	16	Picture	fix2	362940	0	1	20349	1	0	next	other	0
+Leonie	16	Pulse	199	370000	7060	NA
+Leonie	16	Pulse	199	380000	17060	NA
+Leonie	17	Picture	feedback	383289	0	1	20683	1	0	next	other	0
+Leonie	17	Pulse	199	390000	6711	NA
+Leonie	17	Pulse	199	400000	16711	NA
+Leonie	18	Picture	fix	403972	0	1	27188	1	0	next	other	0
+Leonie	18	Pulse	199	410000	6028	NA
+Leonie	18	Pulse	199	420000	16028	NA
+Leonie	18	Pulse	199	430000	26028	NA
+Leonie	20	Picture	stim	431160	0	1	20349	1	0	20000	miss	0
+Leonie	20	Pulse	199	440000	8840	NA
+Leonie	20	Pulse	199	450000	18840	NA
+Leonie	21	Picture	fix2	451509	0	1	18848	1	0	next	other	0
+Leonie	21	Response	16	451877	368	0
+Leonie	21	Pulse	199	460000	8491	NA
+Leonie	21	Pulse	199	470000	18491	NA
+Leonie	22	Picture	feedback	470357	0	1	20349	1	0	next	other	0
+Leonie	22	Pulse	199	480000	9643	NA
+Leonie	22	Pulse	199	490000	19643	NA
+Leonie	23	Picture	fix	490706	0	1	25687	1	0	next	other	0
+Leonie	23	Pulse	199	500000	9294	NA
+Leonie	23	Pulse	199	510000	19294	NA
+Leonie	25	Picture	stim	516393	0	1	20349	1	0	20000	hit	78
+Leonie	25	Pulse	199	520000	3607	NA
+Leonie	25	Response	16	527328	10935	0
+Leonie	25	Pulse	199	530000	13607	NA
+Leonie	26	Picture	fix2	536742	0	1	15679	1	0	next	other	0
+Leonie	26	Pulse	199	540000	3258	NA
+Leonie	26	Pulse	199	550000	13258	NA
+Leonie	27	Picture	feedback	552421	0	1	20349	1	0	next	other	0
+Leonie	27	Pulse	199	560000	7579	NA
+Leonie	27	Pulse	199	570000	17579	NA
+Leonie	28	Picture	fix	572770	0	1	30691	1	0	next	other	0
+Leonie	28	Pulse	199	580000	7230	NA
+Leonie	28	Pulse	199	590000	17230	NA
+Leonie	28	Pulse	199	600000	27230	NA
+Leonie	30	Picture	stim	603460	0	1	20516	1	0	20000	incorrect	92
+Leonie	30	Pulse	199	610000	6540	NA
+Leonie	30	Response	32	612863	9403	0
+Leonie	30	Pulse	199	620000	16540	NA
+Leonie	31	Picture	fix2	623976	0	1	12009	2	0	next	other	0
+Leonie	31	Pulse	199	630000	6024	NA
+Leonie	32	Picture	feedback	635986	0	1	20349	2	0	next	other	0
+Leonie	32	Pulse	199	640000	4014	NA
+Leonie	32	Pulse	199	650000	14014	NA
+Leonie	33	Picture	fix	656335	0	1	29189	1	0	next	other	0
+Leonie	33	Pulse	199	660000	3665	NA
+Leonie	33	Pulse	199	670000	13665	NA
+Leonie	33	Pulse	199	680000	23665	NA
+Leonie	35	Picture	stim	685524	0	1	20349	1	0	20000	incorrect	105
+Leonie	35	Pulse	199	690000	4476	NA
+Leonie	35	Response	32	697113	11589	0
+Leonie	35	Pulse	199	700000	14476	NA
+Leonie	36	Picture	fix2	705873	0	1	25853	1	0	next	other	0
+Leonie	36	Pulse	199	710000	4127	NA
+Leonie	36	Pulse	199	720000	14127	NA
+Leonie	36	Pulse	199	730000	24127	NA
+Leonie	37	Picture	feedback	731727	0	1	20850	1	0	next	other	0
+Leonie	37	Pulse	199	740000	8273	NA
+Leonie	37	Pulse	199	750000	18273	NA
+Leonie	38	Picture	fix	752576	0	1	27354	1	0	next	other	0
+Leonie	38	Pulse	199	760000	7424	NA
+Leonie	38	Pulse	199	770000	17424	NA
+Leonie	40	Picture	stim	779931	0	1	20349	1	0	20000	incorrect	119
+Leonie	40	Pulse	199	780000	69	NA
+Leonie	40	Response	32	788569	8638	0
+Leonie	40	Pulse	199	790000	10069	NA
+Leonie	40	Pulse	199	800000	20069	NA
+Leonie	41	Picture	fix2	800280	0	1	17514	1	0	next	other	0
+Leonie	41	Pulse	199	810000	9720	NA
+Leonie	42	Picture	feedback	817793	0	1	20349	1	0	next	other	0
+Leonie	42	Pulse	199	820000	2207	NA
+Leonie	42	Pulse	199	830000	12207	NA
+Leonie	43	Picture	fix	838142	0	1	38029	1	0	next	other	0
+Leonie	43	Pulse	199	840000	1858	NA
+Leonie	43	Pulse	199	850000	11858	NA
+Leonie	43	Pulse	199	860000	21858	NA
+Leonie	43	Pulse	199	870000	31858	NA
+Leonie	45	Picture	stim	876172	0	1	20349	1	0	20000	incorrect	134
+Leonie	45	Pulse	199	880000	3828	NA
+Leonie	45	Response	32	885542	9371	0
+Leonie	45	Pulse	199	890000	13828	NA
+Leonie	46	Picture	fix2	896521	0	1	26187	1	0	next	other	0
+Leonie	46	Pulse	199	900000	3479	NA
+Leonie	46	Pulse	199	910000	13479	NA
+Leonie	46	Pulse	199	920000	23479	NA
+Leonie	47	Picture	feedback	922708	0	1	20516	1	0	next	other	0
+Leonie	47	Pulse	199	930000	7292	NA
+Leonie	47	Pulse	199	940000	17292	NA
+Leonie	48	Picture	fix	943224	0	1	21350	1	0	next	other	0
+Leonie	48	Pulse	199	950000	6776	NA
+Leonie	48	Pulse	199	960000	16776	NA
+Leonie	50	Picture	stim	964574	0	1	20516	1	0	20000	incorrect	148
+Leonie	50	Pulse	199	970000	5426	NA
+Leonie	50	Response	32	974836	10262	0
+Leonie	50	Pulse	199	980000	15426	NA
+Leonie	51	Picture	fix2	985090	0	1	13677	1	0	next	other	0
+Leonie	51	Pulse	199	990000	4910	NA
+Leonie	52	Picture	feedback	998767	0	1	20349	1	0	next	other	0
+Leonie	52	Pulse	199	1000000	1233	NA
+Leonie	52	Pulse	199	1010000	11233	NA
+Leonie	53	Picture	fix	1019116	0	1	17680	1	0	next	other	0
+Leonie	53	Pulse	199	1020000	884	NA
+Leonie	53	Pulse	199	1030000	10884	NA
+Leonie	55	Picture	stim	1036797	0	1	20349	1	0	20000	incorrect	161
+Leonie	55	Pulse	199	1040000	3203	NA
+Leonie	55	Pulse	199	1050000	13203	NA
+Leonie	55	Response	32	1054448	17652	0
+Leonie	56	Picture	fix2	1057146	0	1	23685	1	0	next	other	0
+Leonie	56	Pulse	199	1060000	2854	NA
+Leonie	56	Pulse	199	1070000	12854	NA
+Leonie	56	Pulse	199	1080000	22854	NA
+Leonie	57	Picture	feedback	1080831	0	1	20683	1	0	next	other	0
+Leonie	57	Pulse	199	1090000	9169	NA
+Leonie	57	Pulse	199	1100000	19169	NA
+Leonie	58	Picture	fix	1101514	0	1	30357	1	0	next	other	0
+Leonie	58	Pulse	199	1110000	8486	NA
+Leonie	58	Pulse	199	1120000	18486	NA
+Leonie	58	Pulse	199	1130000	28486	NA
+Leonie	60	Picture	stim	1131870	0	1	20182	1	0	20000	incorrect	175
+Leonie	60	Pulse	199	1140000	8130	NA
+Leonie	60	Response	32	1140461	8591	0
+Leonie	60	Pulse	199	1150000	18130	NA
+Leonie	61	Picture	fix2	1152386	0	1	14344	1	0	next	other	0
+Leonie	61	Pulse	199	1160000	7614	NA
+Leonie	62	Picture	feedback	1166731	0	1	20349	1	0	next	other	0
+Leonie	62	Pulse	199	1170000	3269	NA
+Leonie	62	Pulse	199	1180000	13269	NA
+Leonie	63	Picture	fix	1187080	0	1	28856	1	0	next	other	0
+Leonie	63	Pulse	199	1190000	2920	NA
+Leonie	63	Pulse	199	1200000	12920	NA
+Leonie	63	Pulse	199	1210000	22920	NA
+Leonie	65	Picture	stim	1215936	0	1	20182	1	0	20000	incorrect	188
+Leonie	65	Pulse	199	1220000	4064	NA
+Leonie	65	Response	32	1227435	11499	0
+Leonie	65	Pulse	199	1230000	14064	NA
+Leonie	66	Picture	fix2	1236118	0	1	18681	1	0	next	other	0
+Leonie	66	Pulse	199	1240000	3882	NA
+Leonie	66	Pulse	199	1250000	13882	NA
+Leonie	67	Picture	feedback	1254799	0	1	20516	1	0	next	other	0
+Leonie	67	Pulse	199	1260000	5201	NA
+Leonie	67	Pulse	199	1270000	15201	NA
+Leonie	68	Picture	fix	1275315	0	1	31858	1	0	next	other	0
+Leonie	68	Pulse	199	1280000	4685	NA
+Leonie	68	Pulse	199	1290000	14685	NA
+Leonie	68	Pulse	199	1300000	24685	NA
+Leonie	70	Picture	stim	1307173	0	1	20516	1	0	20000	incorrect	202
+Leonie	70	Pulse	199	1310000	2827	NA
+Leonie	70	Response	32	1317608	10435	0
+Leonie	70	Pulse	199	1320000	12827	NA
+Leonie	71	Picture	fix2	1327689	0	1	20349	1	0	next	other	0
+Leonie	71	Pulse	199	1330000	2311	NA
+Leonie	71	Pulse	199	1340000	12311	NA
+Leonie	72	Picture	feedback	1348038	0	1	20349	1	0	next	other	0
+Leonie	72	Pulse	199	1350000	1962	NA
+Leonie	72	Pulse	199	1360000	11962	NA
+Leonie	73	Picture	fix	1368387	0	1	27021	1	0	next	other	0
+Leonie	73	Pulse	199	1370000	1613	NA
+Leonie	73	Pulse	199	1380000	11613	NA
+Leonie	73	Pulse	199	1390000	21613	NA
+Leonie	75	Picture	stim	1395408	0	1	20349	1	0	20000	incorrect	216
+Leonie	75	Pulse	199	1400000	4592	NA
+Leonie	75	Response	32	1403061	7652	0
+Leonie	75	Pulse	199	1410000	14592	NA
+Leonie	76	Picture	fix2	1415758	0	1	21517	1	0	next	other	0
+Leonie	76	Pulse	199	1420000	4242	NA
+Leonie	76	Pulse	199	1430000	14242	NA
+Leonie	77	Picture	feedback	1437274	0	1	20349	1	0	next	other	0
+Leonie	77	Pulse	199	1440000	2726	NA
+Leonie	77	Pulse	199	1450000	12726	NA
+Leonie	78	Picture	fix	1457623	0	1	24686	1	0	next	other	0
+Leonie	78	Pulse	199	1460000	2377	NA
+Leonie	78	Pulse	199	1470000	12377	NA
+Leonie	78	Pulse	199	1480000	22377	NA
+Leonie	80	Picture	stim	1482309	0	1	20349	1	0	20000	incorrect	230
+Leonie	80	Pulse	199	1490000	7691	NA
+Leonie	80	Response	32	1493395	11086	0
+Leonie	80	Pulse	199	1500000	17691	NA
+Leonie	81	Picture	fix2	1502658	0	1	16513	1	0	next	other	0
+Leonie	81	Pulse	199	1510000	7342	NA
+Leonie	82	Picture	feedback	1519171	0	1	20349	1	0	next	other	0
+Leonie	82	Pulse	199	1520000	829	NA
+Leonie	82	Pulse	199	1530000	10829	NA
+Leonie	83	Picture	fix	1539520	0	1	25353	1	0	next	other	0
+Leonie	83	Pulse	199	1540000	480	NA
+Leonie	83	Pulse	199	1550000	10480	NA
+Leonie	83	Pulse	199	1560000	20480	NA
+Leonie	85	Picture	stim	1564873	0	1	21016	1	0	20000	hit	243
+Leonie	85	Pulse	199	1570000	5127	NA
+Leonie	85	Response	16	1575009	10136	0
+Leonie	85	Pulse	199	1580000	15127	NA
+Leonie	86	Picture	fix2	1585890	0	1	22851	1	0	next	other	0
+Leonie	86	Pulse	199	1590000	4110	NA
+Leonie	86	Pulse	199	1600000	14110	NA
+Leonie	87	Picture	feedback	1608741	0	1	20349	1	0	next	other	0
+Leonie	87	Pulse	199	1610000	1259	NA
+Leonie	87	Pulse	199	1620000	11259	NA
+Leonie	88	Picture	fix	1629090	0	1	24185	1	0	next	other	0
+Leonie	88	Pulse	199	1630000	910	NA
+Leonie	88	Pulse	199	1640000	10910	NA
+Leonie	88	Pulse	199	1650000	20910	NA
+Leonie	90	Picture	stim	1653275	0	1	20349	1	0	20000	hit	257
+Leonie	90	Pulse	199	1660000	6725	NA
+Leonie	90	Response	16	1664941	11666	0
+Leonie	90	Pulse	199	1670000	16725	NA
+Leonie	91	Picture	fix2	1673624	0	1	23685	1	0	next	other	0
+Leonie	91	Pulse	199	1680000	6376	NA
+Leonie	91	Pulse	199	1690000	16376	NA
+Leonie	92	Picture	feedback	1697309	0	1	20349	1	0	next	other	0
+Leonie	92	Pulse	199	1700000	2691	NA
+Leonie	92	Pulse	199	1710000	12691	NA
+Leonie	93	Picture	fix	1717659	0	1	28022	1	0	next	other	0
+Leonie	93	Pulse	199	1720000	2341	NA
+Leonie	93	Pulse	199	1730000	12341	NA
+Leonie	93	Pulse	199	1740000	22341	NA
+Leonie	95	Picture	stim	1745680	0	1	20182	1	0	20000	hit	271
+Leonie	95	Pulse	199	1750000	4320	NA
+Leonie	95	Response	16	1759678	13998	0
+Leonie	95	Pulse	199	1760000	14320	NA
+Leonie	96	Picture	fix2	1766029	0	1	16680	1	0	next	other	0
+Leonie	96	Pulse	199	1770000	3971	NA
+Leonie	96	Pulse	199	1780000	13971	NA
+Leonie	97	Picture	feedback	1782709	0	1	20850	1	0	next	other	0
+Leonie	97	Pulse	199	1790000	7291	NA
+Leonie	97	Pulse	199	1800000	17291	NA
+Leonie	98	Picture	fix	1803559	0	1	31024	1	0	next	other	0
+Leonie	98	Pulse	199	1810000	6441	NA
+Leonie	98	Pulse	199	1820000	16441	NA
+Leonie	98	Pulse	199	1830000	26441	NA
+Leonie	100	Picture	stim	1834583	0	1	20349	1	0	20000	incorrect	285
+Leonie	100	Pulse	199	1840000	5417	NA
+Leonie	100	Response	32	1844730	10147	0
+Leonie	100	Pulse	199	1850000	15417	NA
+Leonie	101	Picture	fix2	1854932	0	1	27355	1	0	next	other	0
+Leonie	101	Pulse	199	1860000	5068	NA
+Leonie	101	Pulse	199	1870000	15068	NA
+Leonie	101	Pulse	199	1880000	25068	NA
+Leonie	102	Picture	feedback	1882286	0	1	20349	1	0	next	other	0
+Leonie	102	Pulse	199	1890000	7714	NA
+Leonie	102	Pulse	199	1900000	17714	NA
+Leonie	103	Picture	fix	1902635	0	1	32859	1	0	next	other	0
+Leonie	103	Pulse	199	1910000	7365	NA
+Leonie	103	Pulse	199	1920000	17365	NA
+Leonie	103	Pulse	199	1930000	27365	NA
+Leonie	105	Picture	stim	1935494	0	1	20182	1	0	20000	hit	300
+Leonie	105	Pulse	199	1940000	4506	NA
+Leonie	105	Response	16	1948024	12530	0
+Leonie	105	Pulse	199	1950000	14506	NA
+Leonie	106	Picture	fix2	1955677	0	1	23185	1	0	next	other	0
+Leonie	106	Pulse	199	1960000	4323	NA
+Leonie	106	Pulse	199	1970000	14323	NA
+Leonie	107	Picture	feedback	1978861	0	1	20516	1	0	next	other	0
+Leonie	107	Pulse	199	1980000	1139	NA
+Leonie	107	Pulse	199	1990000	11139	NA
+Leonie	108	Picture	fix	1999377	0	1	30691	1	0	next	other	0
+Leonie	108	Pulse	199	2000000	623	NA
+Leonie	108	Pulse	199	2010000	10623	NA
+Leonie	108	Pulse	199	2020000	20623	NA
+Leonie	109	Pulse	199	2030000	52	NA
+Leonie	110	Picture	stim	2030068	0	1	20349	1	0	20000	hit	314
+Leonie	110	Response	16	2039638	9571	0
+Leonie	110	Pulse	199	2040000	9932	NA
+Leonie	110	Pulse	199	2050000	19932	NA
+Leonie	111	Picture	fix2	2051584	0	1	19515	1	0	next	other	0
+Leonie	111	Pulse	199	2060000	8416	NA
+Leonie	111	Pulse	199	2070000	18416	NA
+Leonie	112	Picture	feedback	2071100	0	1	20349	1	0	next	other	0
+Leonie	112	Pulse	199	2080000	8900	NA
+Leonie	112	Pulse	199	2090000	18900	NA
+Leonie	113	Picture	fix	2091449	0	1	19182	1	0	next	other	0
+Leonie	113	Pulse	199	2100000	8551	NA
+Leonie	113	Pulse	199	2110000	18551	NA
+Leonie	115	Picture	stim	2110630	0	1	20516	1	0	20000	hit	327
+Leonie	115	Response	16	2118450	7820	0
+Leonie	115	Pulse	199	2120000	9370	NA
+Leonie	115	Pulse	199	2130000	19370	NA
+Leonie	116	Picture	fix2	2131146	0	1	14511	1	0	next	other	0
+Leonie	116	Pulse	199	2140000	8854	NA
+Leonie	117	Picture	feedback	2145657	0	1	20348	2	0	next	other	0
+Leonie	117	Pulse	199	2150000	4343	NA
+Leonie	117	Pulse	199	2160000	14343	NA
+Leonie	118	Picture	fix	2166006	0	2	41032	2	0	next	other	0
+Leonie	118	Pulse	199	2170000	3994	NA
+Leonie	118	Pulse	199	2180000	13994	NA
+Leonie	118	Pulse	199	2190000	23994	NA
+Leonie	118	Pulse	199	2200000	33994	NA
+Leonie	120	Picture	stim	2207038	0	1	20182	1	0	20000	incorrect	343
+Leonie	120	Pulse	199	2210000	2962	NA
+Leonie	120	Pulse	199	2220000	12962	NA
+Leonie	120	Response	32	2221746	14708	0
+Leonie	121	Picture	fix2	2227554	0	1	19849	1	0	next	other	0
+Leonie	121	Pulse	199	2230000	2446	NA
+Leonie	121	Pulse	199	2240000	12446	NA
+Leonie	122	Picture	feedback	2247403	0	1	20349	1	0	next	other	0
+Leonie	122	Pulse	199	2250000	2597	NA
+Leonie	122	Pulse	199	2260000	12597	NA
+Leonie	123	Picture	fix	2267752	0	1	39531	1	0	next	other	0
+Leonie	123	Pulse	199	2270000	2248	NA
+Leonie	123	Pulse	199	2280000	12248	NA
+Leonie	123	Pulse	199	2290000	22248	NA
+Leonie	123	Pulse	199	2300000	32248	NA
+Leonie	125	Picture	stim	2307283	0	1	20349	1	0	20000	hit	357
+Leonie	125	Pulse	199	2310000	2717	NA
+Leonie	125	Response	16	2318881	11598	0
+Leonie	125	Pulse	199	2320000	12717	NA
+Leonie	126	Picture	fix2	2327632	0	1	16179	1	0	next	other	0
+Leonie	126	Pulse	199	2330000	2368	NA
+Leonie	126	Pulse	199	2340000	12368	NA
+Leonie	127	Picture	feedback	2343811	0	1	20161	365	0	next	other	0
+Leonie	127	Pulse	199	2350000	6189	NA
+Leonie	127	Pulse	199	2360000	16189	NA
+Leonie	128	Picture	fix	2363972	0	365	30045	365	0	next	other	0
+Leonie	128	Pulse	199	2370000	6028	NA
+Leonie	128	Pulse	199	2380000	16028	NA
+Leonie	128	Pulse	199	2390000	26028	NA
+Leonie	130	Picture	stim	2394017	0	1	20182	1	0	20000	incorrect	371
+Leonie	130	Pulse	199	2400000	5983	NA
+Leonie	130	Response	32	2406175	12158	0
+Leonie	130	Pulse	199	2410000	15983	NA
+Leonie	131	Picture	fix2	2414199	0	1	12343	1	0	next	other	0
+Leonie	131	Pulse	199	2420000	5801	NA
+Leonie	132	Picture	feedback	2426542	0	1	20349	1	0	next	other	0
+Leonie	132	Pulse	199	2430000	3458	NA
+Leonie	132	Pulse	199	2440000	13458	NA
+Leonie	133	Picture	fix	2446891	0	1	33860	1	0	next	other	0
+Leonie	133	Pulse	199	2450000	3109	NA
+Leonie	133	Pulse	199	2460000	13109	NA
+Leonie	133	Pulse	199	2470000	23109	NA
+Leonie	133	Pulse	199	2480000	33109	NA
+Leonie	135	Picture	stim	2480751	0	1	20182	1	0	20000	hit	384
+Leonie	135	Response	16	2488987	8236	0
+Leonie	135	Pulse	199	2490000	9249	NA
+Leonie	135	Pulse	199	2500000	19249	NA
+Leonie	136	Picture	fix2	2501045	0	85	21906	85	0	next	other	0
+Leonie	136	Pulse	199	2510000	8955	NA
+Leonie	136	Pulse	199	2520000	18955	NA
+Leonie	137	Picture	feedback	2522950	0	1	20182	299	0	next	other	0
+Leonie	137	Pulse	199	2530000	7050	NA
+Leonie	137	Pulse	199	2540000	17050	NA
+Leonie	138	Picture	fix	2543132	0	299	33411	695	0	next	other	0
+Leonie	138	Pulse	199	2550000	6868	NA
+Leonie	138	Pulse	199	2560000	16868	NA
+Leonie	138	Pulse	199	2570000	26868	NA
+Leonie	140	Picture	stim	2576543	0	397	20298	397	0	20000	hit	399
+Leonie	140	Pulse	199	2580000	3457	NA
+Leonie	140	Response	16	2587082	10539	0
+Leonie	140	Pulse	199	2590000	13457	NA
+Leonie	141	Picture	fix2	2596841	0	1	13510	1	0	next	other	0
+Leonie	141	Pulse	199	2600000	3159	NA
+Leonie	141	Pulse	199	2610000	13159	NA
+Leonie	142	Picture	feedback	2610351	0	1	20349	1	0	next	other	0
+Leonie	142	Pulse	199	2620000	9649	NA
+Leonie	142	Pulse	199	2630000	19649	NA
+Leonie	143	Picture	fix	2630700	0	1	34527	1	0	next	other	0
+Leonie	143	Pulse	199	2640000	9300	NA
+Leonie	143	Pulse	199	2650000	19300	NA
+Leonie	143	Pulse	199	2660000	29300	NA
+Leonie	145	Picture	stim	2665227	0	1	20182	1	0	20000	hit	413
+Leonie	145	Pulse	199	2670000	4773	NA
+Leonie	145	Response	16	2674855	9628	0
+Leonie	145	Pulse	199	2680000	14773	NA
+Leonie	146	Picture	fix2	2685410	0	1	18514	1	0	next	other	0
+Leonie	146	Pulse	199	2690000	4590	NA
+Leonie	146	Pulse	199	2700000	14590	NA
+Leonie	147	Picture	feedback	2703924	0	1	20349	1	0	next	other	0
+Leonie	147	Pulse	199	2710000	6076	NA
+Leonie	147	Pulse	199	2720000	16076	NA
+Leonie	148	Picture	fix	2724273	0	1	32358	1	0	next	other	0
+Leonie	148	Pulse	199	2730000	5727	NA
+Leonie	148	Pulse	199	2740000	15727	NA
+Leonie	148	Pulse	199	2750000	25727	NA
+Leonie	150	Picture	stim	2756632	0	1	20850	1	0	20000	hit	427
+Leonie	150	Pulse	199	2760000	3368	NA
+Leonie	150	Response	16	2764469	7838	0
+Leonie	150	Pulse	199	2770000	13368	NA
+Leonie	151	Picture	fix2	2777648	0	1	20016	1	0	next	other	0
+Leonie	151	Pulse	199	2780000	2352	NA
+Leonie	151	Pulse	199	2790000	12352	NA
+Leonie	152	Picture	feedback	2797663	0	1	20349	1	0	next	other	0
+Leonie	152	Pulse	199	2800000	2337	NA
+Leonie	152	Pulse	199	2810000	12337	NA
+Leonie	153	Picture	fix	2818013	0	1	30691	1	0	next	other	0
+Leonie	153	Pulse	199	2820000	1987	NA
+Leonie	153	Pulse	199	2830000	11987	NA
+Leonie	153	Pulse	199	2840000	21987	NA
+Leonie	155	Picture	stim	2848703	0	1	20349	1	0	20000	hit	441
+Leonie	155	Pulse	199	2850000	1297	NA
+Leonie	155	Response	16	2858963	10260	0
+Leonie	155	Pulse	199	2860000	11297	NA
+Leonie	156	Picture	fix2	2869052	0	1	16012	1	0	next	other	0
+Leonie	156	Pulse	199	2870000	948	NA
+Leonie	156	Pulse	199	2880000	10948	NA
+Leonie	157	Picture	feedback	2885065	0	1	20349	1	0	next	other	0
+Leonie	157	Pulse	199	2890000	4935	NA
+Leonie	157	Pulse	199	2900000	14935	NA
+Leonie	158	Picture	fix	2905414	0	1	26187	1	0	next	other	0
+Leonie	158	Pulse	199	2910000	4586	NA
+Leonie	158	Pulse	199	2920000	14586	NA
+Leonie	158	Pulse	199	2930000	24586	NA
+Leonie	160	Picture	stim	2931601	0	1	20683	1	0	20000	hit	455
+Leonie	160	Pulse	199	2940000	8399	NA
+Leonie	160	Response	16	2946017	14416	0
+Leonie	160	Pulse	199	2950000	18399	NA
+Leonie	161	Picture	fix2	2952283	0	1	21850	1	0	next	other	0
+Leonie	161	Pulse	199	2960000	7717	NA
+Leonie	161	Pulse	199	2970000	17717	NA
+Leonie	162	Picture	feedback	2974134	0	1	20349	1	0	next	other	0
+Leonie	162	Pulse	199	2980000	5866	NA
+Leonie	162	Pulse	199	2990000	15866	NA
+Leonie	163	Picture	fix	2994483	0	1	23185	1	0	next	other	0
+Leonie	163	Pulse	199	3000000	5517	NA
+Leonie	163	Pulse	199	3010000	15517	NA
+Leonie	165	Picture	stim	3017667	0	1	20349	1	0	20000	hit	469
+Leonie	165	Pulse	199	3020000	2333	NA
+Leonie	165	Pulse	199	3030000	12333	NA
+Leonie	165	Response	16	3031790	14122	0
+Leonie	166	Picture	fix2	3038017	0	1	23518	1	0	next	other	0
+Leonie	166	Pulse	199	3040000	1983	NA
+Leonie	166	Pulse	199	3050000	11983	NA
+Leonie	166	Pulse	199	3060000	21983	NA
+Leonie	167	Picture	feedback	3061535	0	1	20349	1	0	next	other	0
+Leonie	167	Pulse	199	3070000	8465	NA
+Leonie	167	Pulse	199	3080000	18465	NA
+Leonie	168	Picture	fix	3081884	0	1	22184	1	0	next	other	0
+Leonie	168	Pulse	199	3090000	8116	NA
+Leonie	168	Pulse	199	3100000	18116	NA
+Leonie	170	Picture	stim	3104068	0	1	20182	1	0	20000	hit	482
+Leonie	170	Pulse	199	3110000	5932	NA
+Leonie	170	Response	16	3116843	12775	0
+Leonie	170	Pulse	199	3120000	15932	NA
+Leonie	171	Picture	fix2	3124250	0	1	19015	1	0	next	other	0
+Leonie	171	Pulse	199	3130000	5750	NA
+Leonie	171	Pulse	199	3140000	15750	NA
+Leonie	172	Picture	feedback	3143265	0	1	20349	1	0	next	other	0
+Leonie	172	Pulse	199	3150000	6735	NA
+Leonie	172	Pulse	199	3160000	16735	NA
+Leonie	173	Picture	fix	3163614	0	1	28856	1	0	next	other	0
+Leonie	173	Pulse	199	3170000	6386	NA
+Leonie	173	Pulse	199	3180000	16386	NA
+Leonie	173	Pulse	199	3190000	26386	NA
+Leonie	175	Picture	stim	3192470	0	1	20182	1	0	20000	hit	496
+Leonie	175	Pulse	199	3200000	7530	NA
+Leonie	175	Response	16	3206457	13987	0
+Leonie	175	Pulse	199	3210000	17530	NA
+Leonie	176	Picture	fix2	3212986	0	1	10174	1	0	next	other	0
+Leonie	176	Pulse	199	3220000	7014	NA
+Leonie	177	Picture	feedback	3223160	0	1	20516	1	0	next	other	0
+Leonie	177	Pulse	199	3230000	6840	NA
+Leonie	177	Pulse	199	3240000	16840	NA
+Leonie	178	Picture	fix	3243676	0	1	30690	1	0	next	other	0
+Leonie	178	Pulse	199	3250000	6324	NA
+Leonie	178	Pulse	199	3260000	16324	NA
+Leonie	178	Pulse	199	3270000	26324	NA
+Leonie	180	Picture	stim	3274367	0	1	20182	1	0	20000	miss	0
+Leonie	180	Pulse	199	3280000	5633	NA
+Leonie	180	Pulse	199	3290000	15633	NA
+Leonie	181	Picture	fix2	3294549	0	1	20516	1	0	next	other	0
+Leonie	181	Response	32	3296230	1681	0
+Leonie	181	Pulse	199	3300000	5451	NA
+Leonie	181	Pulse	199	3310000	15451	NA
+Leonie	182	Picture	feedback	3315065	0	1	20349	1	0	next	other	0
+Leonie	182	Pulse	199	3320000	4935	NA
+Leonie	182	Pulse	199	3330000	14935	NA
+Leonie	183	Picture	fix	3335414	0	1	35861	1	0	next	other	0
+Leonie	183	Pulse	199	3340000	4586	NA
+Leonie	183	Pulse	199	3350000	14586	NA
+Leonie	183	Pulse	199	3360000	24586	NA
+Leonie	183	Pulse	199	3370000	34586	NA
+Leonie	185	Picture	stim	3371275	0	1	20182	1	0	20000	incorrect	524
+Leonie	185	Pulse	199	3380000	8725	NA
+Leonie	185	Response	32	3384805	13529	0
+Leonie	185	Pulse	199	3390000	18725	NA
+Leonie	186	Picture	fix2	3391624	0	1	22684	1	0	next	other	0
+Leonie	186	Pulse	199	3400000	8376	NA
+Leonie	186	Pulse	199	3410000	18376	NA
+Leonie	187	Picture	feedback	3414309	0	1	20516	1	0	next	other	0
+Leonie	187	Pulse	199	3420000	5691	NA
+Leonie	187	Pulse	199	3430000	15691	NA
+Leonie	188	Picture	fix	3434825	0	1	28856	1	0	next	other	0
+Leonie	188	Pulse	199	3440000	5175	NA
+Leonie	188	Pulse	199	3450000	15175	NA
+Leonie	188	Pulse	199	3460000	25175	NA
+Leonie	190	Picture	stim	3463680	0	1	20349	1	0	20000	incorrect	538
+Leonie	190	Pulse	199	3470000	6320	NA
+Leonie	190	Response	32	3472659	8978	0
+Leonie	190	Pulse	199	3480000	16320	NA
+Leonie	191	Picture	fix2	3484030	0	1	25019	1	0	next	other	0
+Leonie	191	Pulse	199	3490000	5970	NA
+Leonie	191	Pulse	199	3500000	15970	NA
+Leonie	192	Picture	feedback	3509049	0	1	20349	1	0	next	other	0
+Leonie	192	Pulse	199	3510000	951	NA
+Leonie	192	Pulse	199	3520000	10951	NA
+Leonie	193	Picture	fix	3529398	0	1	22851	1	0	next	other	0
+Leonie	193	Pulse	199	3530000	602	NA
+Leonie	193	Pulse	199	3540000	10602	NA
+Leonie	193	Pulse	199	3550000	20602	NA
+Leonie	195	Picture	stim	3552249	0	1	20182	1	0	20000	incorrect	552
+Leonie	195	Pulse	199	3560000	7751	NA
+Leonie	195	Response	32	3561471	9222	0
+Leonie	195	Pulse	199	3570000	17751	NA
+Leonie	196	Picture	fix2	3572598	0	1	18681	1	0	next	other	0
+Leonie	196	Pulse	199	3580000	7402	NA
+Leonie	196	Pulse	199	3590000	17402	NA
+Leonie	197	Picture	feedback	3591279	0	1	20516	1	0	next	other	0
+Leonie	197	Pulse	199	3600000	8721	NA
+Leonie	197	Pulse	199	3610000	18721	NA
+Leonie	198	Picture	fix	3611795	0	1	31858	1	0	next	other	0
+Leonie	198	Pulse	199	3620000	8205	NA
+Leonie	198	Pulse	199	3630000	18205	NA
+Leonie	198	Pulse	199	3640000	28205	NA
+Leonie	200	Picture	stim	3643653	0	1	20349	1	0	20000	hit	566
+Leonie	200	Pulse	199	3650000	6347	NA
+Leonie	200	Response	16	3654204	10551	0
+Leonie	200	Pulse	199	3660000	16347	NA
+Leonie	201	Picture	fix2	3664002	0	1	25520	1	0	next	other	0
+Leonie	201	Pulse	199	3670000	5998	NA
+Leonie	201	Pulse	199	3680000	15998	NA
+Leonie	202	Picture	feedback	3689522	0	1	20182	1	0	next	other	0
+Leonie	202	Pulse	199	3690000	478	NA
+Leonie	202	Pulse	199	3700000	10478	NA
+Leonie	203	Picture	100	3709705	0	1	80229	1	0	80000	other	0
+Leonie	203	Pulse	199	3710000	295	NA
+Leonie	203	Pulse	199	3720000	10295	NA
+Leonie	203	Pulse	199	3730000	20295	NA
+Leonie	203	Pulse	199	3740000	30295	NA
+Leonie	203	Pulse	199	3750000	40295	NA
+Leonie	203	Pulse	199	3760000	50295	NA
+Leonie	203	Pulse	199	3770000	60295	NA
+Leonie	203	Pulse	199	3780000	70295	NA

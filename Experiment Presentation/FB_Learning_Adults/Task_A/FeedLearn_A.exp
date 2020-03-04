@@ -1,5 +1,5 @@
 <ver>20.1</ver>
-<efn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.exp</efn>
+<efn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_A\FeedLearn_A.exp</efn>
 <author></author>
 <con>
 <pause>P</pause>
@@ -40,12 +40,13 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_FeedLearn_MRI_5x8_noRep\Stimulus Files</dsd>
+<dsd>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_A\Stimulus Files</dsd>
 <dxv>8</dxv>
 <efs>
-<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.sce</filename>
-<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.exp</filename>
-<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.pcl</filename>
+<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_A\FeedLearn_A.pcl</filename>
+<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_A\FeedLearn_A.sce</filename>
+<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_A\FeedLearn_A_2.pcl</filename>
+<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_A\FeedLearn_A_2.sce</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version></exp_version>
@@ -88,6 +89,12 @@
 <asn>
 <sid>-2</sid>
 </asn>
+<asn>
+<sid>-2</sid>
+</asn>
+<asn>
+<sid>-2</sid>
+</asn>
 </ssa>
 </man>
 </exparam>
@@ -101,6 +108,8 @@
 <ftp>
 <ccc>0</ccc>
 <do_upload>
+<sce>1</sce>
+<sce>1</sce>
 <sce>1</sce>
 <sce>1</sce>
 </do_upload>
@@ -133,7 +142,7 @@
 <pindex>4294967295</pindex>
 </chan>
 </ip_chans>
-<lfd>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_FeedLearn_MRI_5x8_noRep\Log Files</lfd>
+<lfd>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_A\Log Files</lfd>
 <lnb>2</lnb>
 <lno>3</lno>
 <log>
@@ -479,7 +488,7 @@
 <offset>49</offset>
 </idv>
 <overrides></overrides>
-<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.sce</sfn>
+<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_A\FeedLearn_A.pcl</sfn>
 </sce>
 <sce>
 <idv>
@@ -496,7 +505,41 @@
 <offset>49</offset>
 </idv>
 <overrides></overrides>
-<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.exp</sfn>
+<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_A\FeedLearn_A.sce</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Z</ibn>
+<ibn>N</ibn>
+<idn>Keyboard</idn>
+<index>0</index>
+<index>1</index>
+<label></label>
+<label></label>
+<offset>44</offset>
+<offset>49</offset>
+</idv>
+<overrides></overrides>
+<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_A\FeedLearn_A_2.pcl</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Z</ibn>
+<ibn>N</ibn>
+<idn>Keyboard</idn>
+<index>0</index>
+<index>1</index>
+<label></label>
+<label></label>
+<offset>44</offset>
+<offset>49</offset>
+</idv>
+<overrides></overrides>
+<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task_A\FeedLearn_A_2.sce</sfn>
 </sce>
 <sct>
 <capture_device>

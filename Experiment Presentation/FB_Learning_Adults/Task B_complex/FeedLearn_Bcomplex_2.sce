@@ -11,7 +11,7 @@
 # https://github.com/pathalle/
 # November 2019, June 2019
 #----------------------------------------------------------------------------------------------------------------------
-scenario= "FeedLearn_Bcomplex.sce";
+scenario= "FeedLearn_Bcomplex_2.sce";
 scenario_type=fMRI_emulation; 					#use scenario_type=fMRI_emulation for testing outside scanner environemtn;  otherwise scenario_type=fMRI
 write_codes=false; 									# generate logs (turned to false for testing purposes)
 
@@ -46,12 +46,12 @@ picture { text { caption="☺"; font_size=98; font_color=0,0,0;} fb_pict; x=0; y
 
 # stimuli from main trial
 sound { wavefile { filename = "u_long.wav"; preload=true;} snd;} astim;
-picture { text { caption="V1";font_size=80; } vTXT1; x=0; y=0;} vstim1; # for testing purposes, use the stim identifier instead of the actual pictue/sound
-picture { text { caption="V2";font_size=80; } vTXT2; x=0; y=0;} vstim2;
+picture { text { caption="V1";font_size=80;} vTXT1; x=0; y=0;}  vstim1; # for testing purposes, use the stim identifier instead of the actual pictue/sound
+picture { text { caption="V2";font_size=80;} vTXT2; x=0; y=0;} vstim2;
 
 # combine pics from main trial
 picture{ text  cross; x=0; y=0;
-			text  vTXT1; x=-400; y=0;
+			text  vTXT1; x=-400; y=-0;
 			text  vTXT2; x=400; y=0;
 	} main_pic;
 	
@@ -104,11 +104,11 @@ picture{bitmap {filename="question_mark.jpg";width=$wdth;height=$hght;preload=tr
 	trial {
 		trial_type=fixed;
 		all_responses=false; 	#prevents terminating trial by an early button press	
-		trial_duration = 2000;
+		trial_duration = 2200;
 		stimulus_event {
 			picture main_pic; 
 			time = 0; 
-			duration = 2000;
+			duration = 2200;
 			target_button=1;
 			response_active=true; 
 			code="stim";  
@@ -236,7 +236,7 @@ out_file.print("block\ttrial\tvStims\taStim\tresp\trt\tfb\titi\tfeedJitter\tvSym
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #Execute pcl file with randomizations 
-include "FeedLearn_Bcomplex.pcl"
+include "FeedLearn_Bcomplex_2.pcl"
 #Some variables to keep track of things
 int  target_button; 
 bool random_feedback=false;
@@ -384,21 +384,23 @@ else
 			end;
 			*/
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
-array <int> soundOrder[40] = { 0,0,0,0,0,0,0,0,0,0,
+array <int> soundOrder[48] = { 0,0,0,0,0,0,0,0,0,0,
 										0,0,0,0,0,0,0,0,0,0,
+										0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+										0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+										
+array <int> matchOrder[48] = { 0,0,0,0,0,0,0,0,0,0,
 										0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0};
-array <int> matchOrder[40] = { 0,0,0,0,0,0,0,0,0,0,
+										0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+										0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+										
+array <int> missmatchOrder[48] = {0,0,0,0,0,0,0,0,0,0,
 										0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0};
-array <int> missmatchOrder[40] = { 0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0};	
+										0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+										0,0,0,0,0,0,0,0,0,0,0,0,0,0};	
 									
-array <int> switchplaces[40] = { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-											0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};														
+array <int> switchplaces[48] = { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+											0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};														
 											
 switchplaces.shuffle();
 
@@ -431,23 +433,23 @@ switchplaces.shuffle();
 		#string matchOrderStr;
 		#string missmatchOrderStr;
 		array <string> activePict[9];
-		array <string> activeSnd[5];	
+		array <string> activeSnd[6];	
 		
 		loop int j=1 until j> 9 begin 	                    # NOTE  !  9 unique symbol + marker combination (from those, only 5 unique matching pairs!)
 			activePict[j] = pict_file[blockNum][j];
 			j = j+1
 		end;
-		loop int k=1 until k> 5 begin									# Note : 5 unique sounds		
+		loop int k=1 until k > 6 begin									# Note : 6 unique sounds		
 			activeSnd[k] = sound_file[blockNum][k];
 			k=k+1;
 		end; 
 			
 		# Loop through the pairOrder array and depending on the value select 
-		loop int i = 1 until i> 40 begin
-				vTXT1.set_font_size(100);  # this resets the font size for each trial. A conditional loop will adjust font sizes for specific symbols
-				vTXT1.set_font("FBLearning");
+		loop int i = 1 until i> 48 begin
+				vTXT1.set_font_size(100);  # this resets the font size for each trial. A conditional loop will adjust font sizes for specific symbols # Original value: 100
+				vTXT1.set_font("graph2");
 				vTXT2.set_font_size(100);
-				vTXT2.set_font("FBLearning");	
+				vTXT2.set_font("graph2");	
 				 
 				aStim = soundOrder[i];
 				
@@ -469,8 +471,8 @@ switchplaces.shuffle();
 				
 				#Switch vstim 1 and vstim2 in some cases to alternate presentation order				
 				if (switchplaces[i]==1)	then
-					vStim2 = ((colidxMatch-1)*3)+ rowidxMatch; 
 					vStim1 = ((colidxMissmatch-1)*3)+ rowidxMissmatch ; 	
+					vStim2 = ((colidxMatch-1)*3)+ rowidxMatch; 
 					vTXT1.set_caption(activePict[vStim1], true); 
 					vTXT2.set_caption(activePict[vStim2], true); 
 				end;
@@ -479,7 +481,8 @@ switchplaces.shuffle();
 					((aStim == 2 && vStim1 == 13)) ||
 					((aStim == 3 && vStim1 == 21)) ||
 					((aStim == 4 && vStim1 == 22)) ||
-					((aStim == 5 && vStim1 == 32)) 	then
+					((aStim == 5 && vStim1 == 32)) ||
+            	((aStim == 6 && vStim1 == 33)) then
 					target_button=32; 
 					main_stim.set_port_code(22);
 						if (switchplaces[i]==1)then #Switch buttons depending on presentation order
@@ -556,7 +559,7 @@ switchplaces.shuffle();
 					#Present
 					feedback.present();
 					#Present a fixation after the last trial of the block
-					if (i == 40) then; 
+					if (i == 48) then; 
 					 wait.present();
 					end;
 					
@@ -578,7 +581,7 @@ switchplaces.shuffle();
 					out_file.print(iti[i]); out_file.print("\t"); 		
 					out_file.print(itifeedback[i]); out_file.print("\t"); 
 					if (switchplaces[i]==1) then 	
-							out_file.print(activePict[vStim2]+"_"+activePict[vStim1]);out_file.print("\t");		# get_filename(pict.filename()));	# filename of the picture
+							out_file.print(activePict[vStim2]+"_"+activePict[vStim1]+"_switched");out_file.print("\t");		# get_filename(pict.filename()));	# filename of the picture
 					else 	out_file.print(activePict[vStim1]+"_"+activePict[vStim2]);out_file.print("\t");
 					end;
 					out_file.print(activeSnd[aStim]);out_file.print("\t");		# get_filename(snd.filename()));	# filename of the sound

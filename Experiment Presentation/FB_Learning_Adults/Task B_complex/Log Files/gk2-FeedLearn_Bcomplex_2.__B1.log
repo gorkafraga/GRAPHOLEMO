@@ -1,0 +1,18 @@
+Scenario - FeedLearn_Bcomplex_2.sce
+Logfile written - 02/24/2020 10:05:05
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+gk2	0	Pulse	199	0	0	NA
+gk2	0	Pulse	199	10000	10000	NA
+gk2	1	Pulse	199	20000	9667	NA
+gk2	1	Response	16	21834	11501	0
+gk2	2	Response	32	25754	3911	0
+gk2	2	Response	16	26795	4952	0
+gk2	2	Pulse	199	30000	8157	NA
+gk2	2	Pulse	199	40000	18157	NA
+gk2	2	Pulse	199	50000	28157	NA
+gk2	2	Pulse	199	60000	38157	NA
+gk2	2	Response	16	61840	39998	0
+gk2	2	Response	32	62561	40718	0
+gk2	2	Pulse	199	70000	48157	NA

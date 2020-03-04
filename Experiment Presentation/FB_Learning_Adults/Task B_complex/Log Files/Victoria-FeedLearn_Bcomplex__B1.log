@@ -1,0 +1,634 @@
+Scenario - FeedLearn_Bcomplex.sce
+Logfile written - 02/13/2020 10:41:59
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Victoria	0	Pulse	199	0	0	NA
+Victoria	0	Pulse	199	10000	10000	NA
+Victoria	1	Pulse	199	20000	9667	NA
+Victoria	1	Pulse	199	30000	19667	NA
+Victoria	1	Pulse	199	40000	29667	NA
+Victoria	1	Pulse	199	50000	39667	NA
+Victoria	1	Pulse	199	60000	49667	NA
+Victoria	1	Pulse	199	70000	59667	NA
+Victoria	1	Pulse	199	80000	69667	NA
+Victoria	1	Pulse	199	90000	79667	NA
+Victoria	1	Pulse	199	100000	89667	NA
+Victoria	1	Pulse	199	110000	99667	NA
+Victoria	1	Pulse	199	120000	109667	NA
+Victoria	1	Pulse	199	130000	119667	NA
+Victoria	1	Pulse	199	140000	129667	NA
+Victoria	1	Pulse	199	150000	139667	NA
+Victoria	1	Pulse	199	160000	149667	NA
+Victoria	1	Pulse	199	170000	159667	NA
+Victoria	1	Pulse	199	180000	169667	NA
+Victoria	1	Pulse	199	190000	179667	NA
+Victoria	1	Pulse	199	200000	189667	NA
+Victoria	1	Pulse	199	210000	199667	NA
+Victoria	1	Pulse	199	220000	209667	NA
+Victoria	1	Pulse	199	230000	219667	NA
+Victoria	1	Pulse	199	240000	229667	NA
+Victoria	1	Pulse	199	250000	239667	NA
+Victoria	1	Pulse	199	260000	249667	NA
+Victoria	1	Pulse	199	270000	259667	NA
+Victoria	1	Pulse	199	280000	269667	NA
+Victoria	1	Pulse	199	290000	279667	NA
+Victoria	1	Pulse	199	300000	289667	NA
+Victoria	1	Pulse	199	310000	299667	NA
+Victoria	1	Pulse	199	320000	309667	NA
+Victoria	1	Pulse	199	330000	319667	NA
+Victoria	1	Pulse	199	340000	329667	NA
+Victoria	1	Pulse	199	350000	339667	NA
+Victoria	1	Pulse	199	360000	349667	NA
+Victoria	1	Pulse	199	370000	359667	NA
+Victoria	1	Pulse	199	380000	369667	NA
+Victoria	1	Pulse	199	390000	379667	NA
+Victoria	1	Pulse	199	400000	389667	NA
+Victoria	1	Pulse	199	410000	399667	NA
+Victoria	1	Pulse	199	420000	409667	NA
+Victoria	1	Pulse	199	430000	419667	NA
+Victoria	1	Pulse	199	440000	429667	NA
+Victoria	1	Pulse	199	450000	439667	NA
+Victoria	1	Pulse	199	460000	449667	NA
+Victoria	1	Pulse	199	470000	459667	NA
+Victoria	1	Pulse	199	480000	469667	NA
+Victoria	1	Pulse	199	490000	479667	NA
+Victoria	1	Pulse	199	500000	489667	NA
+Victoria	1	Pulse	199	510000	499667	NA
+Victoria	1	Pulse	199	520000	509667	NA
+Victoria	1	Pulse	199	530000	519667	NA
+Victoria	1	Pulse	199	540000	529667	NA
+Victoria	1	Pulse	199	550000	539667	NA
+Victoria	1	Pulse	199	560000	549667	NA
+Victoria	1	Pulse	199	570000	559667	NA
+Victoria	1	Pulse	199	580000	569667	NA
+Victoria	1	Pulse	199	590000	579667	NA
+Victoria	1	Response	16	590168	579835	0
+Victoria	2	Pulse	199	600000	9776	NA
+Victoria	2	Pulse	199	610000	19776	NA
+Victoria	2	Pulse	199	620000	29776	NA
+Victoria	2	Pulse	199	630000	39776	NA
+Victoria	2	Pulse	199	640000	49776	NA
+Victoria	3	Picture	fix	640989	0	1	34860	1	0	next	other	0
+Victoria	3	Pulse	199	650000	9011	NA
+Victoria	3	Pulse	199	660000	19011	NA
+Victoria	3	Pulse	199	670000	29011	NA
+Victoria	5	Picture	stim	675850	0	1	20349	1	0	20000	incorrect	73
+Victoria	5	Pulse	199	680000	4150	NA
+Victoria	5	Response	32	686502	10652	0
+Victoria	5	Pulse	199	690000	14150	NA
+Victoria	6	Picture	fix2	696199	0	1	22351	1	0	next	other	0
+Victoria	6	Pulse	199	700000	3801	NA
+Victoria	6	Pulse	199	710000	13801	NA
+Victoria	7	Picture	feedback	718550	0	1	20349	1	0	next	other	0
+Victoria	7	Pulse	199	720000	1450	NA
+Victoria	7	Pulse	199	730000	11450	NA
+Victoria	8	Picture	fix	738899	0	1	38030	1	0	next	other	0
+Victoria	8	Pulse	199	740000	1101	NA
+Victoria	8	Pulse	199	750000	11101	NA
+Victoria	8	Pulse	199	760000	21101	NA
+Victoria	8	Pulse	199	770000	31101	NA
+Victoria	10	Picture	stim	776928	0	1	20349	1	0	20000	miss	0
+Victoria	10	Pulse	199	780000	3072	NA
+Victoria	10	Pulse	199	790000	13072	NA
+Victoria	11	Picture	fix2	797277	0	1	18348	1	0	next	other	0
+Victoria	11	Pulse	199	800000	2723	NA
+Victoria	11	Pulse	199	810000	12723	NA
+Victoria	12	Picture	feedback	815625	0	1	20850	1	0	next	other	0
+Victoria	12	Pulse	199	820000	4375	NA
+Victoria	12	Pulse	199	830000	14375	NA
+Victoria	13	Picture	fix	836475	0	1	30690	1	0	next	other	0
+Victoria	13	Pulse	199	840000	3525	NA
+Victoria	13	Pulse	199	850000	13525	NA
+Victoria	13	Pulse	199	860000	23525	NA
+Victoria	15	Picture	stim	867165	0	1	20182	1	0	20000	incorrect	101
+Victoria	15	Pulse	199	870000	2835	NA
+Victoria	15	Response	32	874290	7125	0
+Victoria	15	Pulse	199	880000	12835	NA
+Victoria	16	Picture	fix2	887347	0	1	27521	1	0	next	other	0
+Victoria	16	Pulse	199	890000	2653	NA
+Victoria	16	Pulse	199	900000	12653	NA
+Victoria	16	Pulse	199	910000	22653	NA
+Victoria	17	Picture	feedback	914869	0	1	20516	1	0	next	other	0
+Victoria	17	Pulse	199	920000	5131	NA
+Victoria	17	Pulse	199	930000	15131	NA
+Victoria	18	Picture	fix	935385	0	1	41032	1	0	next	other	0
+Victoria	18	Pulse	199	940000	4615	NA
+Victoria	18	Pulse	199	950000	14615	NA
+Victoria	18	Pulse	199	960000	24615	NA
+Victoria	18	Pulse	199	970000	34615	NA
+Victoria	20	Picture	stim	976417	0	1	20182	1	0	20000	miss	0
+Victoria	20	Pulse	199	980000	3583	NA
+Victoria	20	Pulse	199	990000	13583	NA
+Victoria	21	Picture	fix2	996599	0	1	14678	1	0	next	other	0
+Victoria	21	Pulse	199	1000000	3401	NA
+Victoria	21	Pulse	199	1010000	13401	NA
+Victoria	22	Picture	feedback	1011277	0	1	20516	1	0	next	other	0
+Victoria	22	Pulse	199	1020000	8723	NA
+Victoria	22	Pulse	199	1030000	18723	NA
+Victoria	23	Picture	fix	1031793	0	1	33026	1	0	next	other	0
+Victoria	23	Pulse	199	1040000	8207	NA
+Victoria	23	Pulse	199	1050000	18207	NA
+Victoria	23	Pulse	199	1060000	28207	NA
+Victoria	25	Picture	stim	1064818	0	1	20182	1	0	20000	hit	130
+Victoria	25	Pulse	199	1070000	5182	NA
+Victoria	25	Response	16	1072722	7903	0
+Victoria	25	Pulse	199	1080000	15182	NA
+Victoria	26	Picture	fix2	1085001	0	1	10175	1	0	next	other	0
+Victoria	26	Pulse	199	1090000	4999	NA
+Victoria	27	Picture	feedback	1095175	0	1	20516	1	0	next	other	0
+Victoria	27	Pulse	199	1100000	4825	NA
+Victoria	27	Pulse	199	1110000	14825	NA
+Victoria	28	Picture	fix	1115691	0	1	31858	1	0	next	other	0
+Victoria	28	Pulse	199	1120000	4309	NA
+Victoria	28	Pulse	199	1130000	14309	NA
+Victoria	28	Pulse	199	1140000	24309	NA
+Victoria	30	Picture	stim	1147549	0	1	20349	1	0	20000	incorrect	143
+Victoria	30	Pulse	199	1150000	2451	NA
+Victoria	30	Response	32	1155773	8224	0
+Victoria	30	Pulse	199	1160000	12451	NA
+Victoria	31	Picture	fix2	1167899	0	1	20349	1	0	next	other	0
+Victoria	31	Pulse	199	1170000	2101	NA
+Victoria	31	Pulse	199	1180000	12101	NA
+Victoria	32	Picture	feedback	1188247	0	1	20350	2	0	next	other	0
+Victoria	32	Pulse	199	1190000	1753	NA
+Victoria	32	Pulse	199	1200000	11753	NA
+Victoria	33	Picture	fix	1208597	0	1	30691	1	0	next	other	0
+Victoria	33	Pulse	199	1210000	1403	NA
+Victoria	33	Pulse	199	1220000	11403	NA
+Victoria	33	Pulse	199	1230000	21403	NA
+Victoria	35	Picture	stim	1239287	0	1	20349	1	0	20000	incorrect	158
+Victoria	35	Pulse	199	1240000	713	NA
+Victoria	35	Pulse	199	1250000	10713	NA
+Victoria	35	Response	32	1251309	12021	0
+Victoria	36	Picture	fix2	1259636	0	1	20516	1	0	next	other	0
+Victoria	36	Pulse	199	1260000	364	NA
+Victoria	36	Pulse	199	1270000	10364	NA
+Victoria	36	Pulse	199	1280000	20364	NA
+Victoria	37	Picture	feedback	1280152	0	1	20349	1	0	next	other	0
+Victoria	37	Pulse	199	1290000	9848	NA
+Victoria	37	Pulse	199	1300000	19848	NA
+Victoria	38	Picture	fix	1300501	0	1	39531	1	0	next	other	0
+Victoria	38	Pulse	199	1310000	9499	NA
+Victoria	38	Pulse	199	1320000	19499	NA
+Victoria	38	Pulse	199	1330000	29499	NA
+Victoria	39	Pulse	199	1340000	208	NA
+Victoria	40	Picture	stim	1340032	0	1	20349	1	0	20000	hit	173
+Victoria	40	Pulse	199	1350000	9968	NA
+Victoria	40	Response	16	1352843	12811	0
+Victoria	40	Pulse	199	1360000	19968	NA
+Victoria	41	Picture	fix2	1360381	0	1	20349	1	0	next	other	0
+Victoria	41	Pulse	199	1370000	9619	NA
+Victoria	41	Pulse	199	1380000	19619	NA
+Victoria	42	Picture	feedback	1380730	0	1	20516	1	0	next	other	0
+Victoria	42	Pulse	199	1390000	9270	NA
+Victoria	42	Pulse	199	1400000	19270	NA
+Victoria	43	Picture	fix	1401246	0	1	27855	1	0	next	other	0
+Victoria	43	Pulse	199	1410000	8754	NA
+Victoria	43	Pulse	199	1420000	18754	NA
+Victoria	45	Picture	stim	1429101	0	1	20516	1	0	20000	incorrect	186
+Victoria	45	Pulse	199	1430000	899	NA
+Victoria	45	Response	32	1439337	10236	0
+Victoria	45	Pulse	199	1440000	10899	NA
+Victoria	46	Picture	fix2	1449617	0	1	15345	1	0	next	other	0
+Victoria	46	Pulse	199	1450000	383	NA
+Victoria	46	Pulse	199	1460000	10383	NA
+Victoria	47	Picture	feedback	1464962	0	1	20349	1	0	next	other	0
+Victoria	47	Pulse	199	1470000	5038	NA
+Victoria	47	Pulse	199	1480000	15038	NA
+Victoria	48	Picture	fix	1485312	0	1	26187	1	0	next	other	0
+Victoria	48	Pulse	199	1490000	4688	NA
+Victoria	48	Pulse	199	1500000	14688	NA
+Victoria	48	Pulse	199	1510000	24688	NA
+Victoria	50	Picture	stim	1511499	0	1	20349	1	0	20000	incorrect	200
+Victoria	50	Pulse	199	1520000	8501	NA
+Victoria	50	Response	32	1522311	10812	0
+Victoria	50	Pulse	199	1530000	18501	NA
+Victoria	51	Picture	fix2	1531848	0	1	25186	1	0	next	other	0
+Victoria	51	Pulse	199	1540000	8152	NA
+Victoria	51	Pulse	199	1550000	18152	NA
+Victoria	52	Picture	feedback	1557034	0	1	20349	1	0	next	other	0
+Victoria	52	Pulse	199	1560000	2966	NA
+Victoria	52	Pulse	199	1570000	12966	NA
+Victoria	53	Picture	fix	1577383	0	1	23351	1	0	next	other	0
+Victoria	53	Pulse	199	1580000	2617	NA
+Victoria	53	Pulse	199	1590000	12617	NA
+Victoria	53	Pulse	199	1600000	22617	NA
+Victoria	55	Picture	stim	1600735	0	1	20349	1	0	20000	incorrect	213
+Victoria	55	Response	32	1608962	8228	0
+Victoria	55	Pulse	199	1610000	9265	NA
+Victoria	55	Pulse	199	1620000	19265	NA
+Victoria	56	Picture	fix2	1621084	0	1	23185	1	0	next	other	0
+Victoria	56	Pulse	199	1630000	8916	NA
+Victoria	56	Pulse	199	1640000	18916	NA
+Victoria	57	Picture	feedback	1644268	0	1	20349	1	0	next	other	0
+Victoria	57	Pulse	199	1650000	5732	NA
+Victoria	57	Pulse	199	1660000	15732	NA
+Victoria	58	Picture	fix	1664617	0	1	29022	1	0	next	other	0
+Victoria	58	Pulse	199	1670000	5383	NA
+Victoria	58	Pulse	199	1680000	15383	NA
+Victoria	58	Pulse	199	1690000	25383	NA
+Victoria	60	Picture	stim	1693640	0	1	20683	1	0	20000	hit	228
+Victoria	60	Pulse	199	1700000	6360	NA
+Victoria	60	Response	16	1702258	8618	0
+Victoria	60	Pulse	199	1710000	16360	NA
+Victoria	61	Picture	fix2	1714323	0	1	11342	1	0	next	other	0
+Victoria	61	Pulse	199	1720000	5677	NA
+Victoria	62	Picture	feedback	1725665	0	1	20349	1	0	next	other	0
+Victoria	62	Pulse	199	1730000	4335	NA
+Victoria	62	Pulse	199	1740000	14335	NA
+Victoria	63	Picture	fix	1746014	0	1	17680	1	0	next	other	0
+Victoria	63	Pulse	199	1750000	3986	NA
+Victoria	63	Pulse	199	1760000	13986	NA
+Victoria	65	Picture	stim	1763694	0	1	20850	1	0	20000	incorrect	240
+Victoria	65	Pulse	199	1770000	6306	NA
+Victoria	65	Response	32	1772108	8414	0
+Victoria	65	Pulse	199	1780000	16306	NA
+Victoria	66	Picture	fix2	1784544	0	1	22684	1	0	next	other	0
+Victoria	66	Pulse	199	1790000	5456	NA
+Victoria	66	Pulse	199	1800000	15456	NA
+Victoria	67	Picture	feedback	1807228	0	1	20516	1	0	next	other	0
+Victoria	67	Pulse	199	1810000	2772	NA
+Victoria	67	Pulse	199	1820000	12772	NA
+Victoria	68	Picture	fix	1827744	0	1	22184	1	0	next	other	0
+Victoria	68	Pulse	199	1830000	2256	NA
+Victoria	68	Pulse	199	1840000	12256	NA
+Victoria	70	Picture	stim	1849928	0	1	20349	1	0	20000	hit	254
+Victoria	70	Pulse	199	1850000	72	NA
+Victoria	70	Pulse	199	1860000	10072	NA
+Victoria	70	Response	16	1863083	13155	0
+Victoria	70	Pulse	199	1870000	20072	NA
+Victoria	71	Picture	fix2	1870277	0	1	19015	1	0	next	other	0
+Victoria	71	Pulse	199	1880000	9723	NA
+Victoria	72	Picture	feedback	1889292	0	1	20516	1	0	next	other	0
+Victoria	72	Pulse	199	1890000	708	NA
+Victoria	72	Pulse	199	1900000	10708	NA
+Victoria	73	Picture	fix	1909808	0	1	30690	1	0	next	other	0
+Victoria	73	Pulse	199	1910000	192	NA
+Victoria	73	Pulse	199	1920000	10192	NA
+Victoria	73	Pulse	199	1930000	20192	NA
+Victoria	73	Pulse	199	1940000	30192	NA
+Victoria	75	Picture	stim	1940498	0	1	20349	1	0	20000	incorrect	268
+Victoria	75	Pulse	199	1950000	9502	NA
+Victoria	75	Response	32	1951175	10677	0
+Victoria	75	Pulse	199	1960000	19502	NA
+Victoria	76	Picture	fix2	1960847	0	1	16513	1	0	next	other	0
+Victoria	76	Pulse	199	1970000	9153	NA
+Victoria	77	Picture	feedback	1977360	0	1	20349	1	0	next	other	0
+Victoria	77	Pulse	199	1980000	2640	NA
+Victoria	77	Pulse	199	1990000	12640	NA
+Victoria	78	Picture	fix	1997709	0	1	22851	1	0	next	other	0
+Victoria	78	Pulse	199	2000000	2291	NA
+Victoria	78	Pulse	199	2010000	12291	NA
+Victoria	78	Pulse	199	2020000	22291	NA
+Victoria	80	Picture	stim	2020560	0	1	20349	1	0	20000	hit	281
+Victoria	80	Pulse	199	2030000	9440	NA
+Victoria	80	Response	16	2030626	10066	0
+Victoria	80	Pulse	199	2040000	19440	NA
+Victoria	81	Picture	fix2	2040910	0	1	25853	1	0	next	other	0
+Victoria	81	Pulse	199	2050000	9090	NA
+Victoria	81	Pulse	199	2060000	19090	NA
+Victoria	82	Picture	feedback	2066763	0	1	20182	1	0	next	other	0
+Victoria	82	Pulse	199	2070000	3237	NA
+Victoria	82	Pulse	199	2080000	13237	NA
+Victoria	83	Picture	fix	2086945	0	1	33526	1	0	next	other	0
+Victoria	83	Pulse	199	2090000	3055	NA
+Victoria	83	Pulse	199	2100000	13055	NA
+Victoria	83	Pulse	199	2110000	23055	NA
+Victoria	83	Pulse	199	2120000	33055	NA
+Victoria	85	Picture	stim	2120471	0	1	20140	415	0	20000	hit	295
+Victoria	85	Response	16	2128722	8251	0
+Victoria	85	Pulse	199	2130000	9529	NA
+Victoria	85	Pulse	199	2140000	19529	NA
+Victoria	86	Picture	fix2	2140611	0	415	17269	902	0	next	other	0
+Victoria	86	Pulse	199	2150000	9389	NA
+Victoria	87	Picture	feedback	2157880	0	487	20303	487	0	next	other	0
+Victoria	87	Pulse	199	2160000	2120	NA
+Victoria	87	Pulse	199	2170000	12120	NA
+Victoria	88	Picture	fix	2178183	0	1	25520	221	0	next	other	0
+Victoria	88	Pulse	199	2180000	1817	NA
+Victoria	88	Pulse	199	2190000	11817	NA
+Victoria	88	Pulse	199	2200000	21817	NA
+Victoria	90	Picture	stim	2203702	0	221	20182	221	0	20000	hit	309
+Victoria	90	Pulse	199	2210000	6298	NA
+Victoria	90	Response	16	2214415	10713	0
+Victoria	90	Pulse	199	2220000	16298	NA
+Victoria	91	Picture	fix2	2223885	0	1	12343	1	0	next	other	0
+Victoria	91	Pulse	199	2230000	6115	NA
+Victoria	92	Picture	feedback	2236228	0	1	20227	316	0	next	other	0
+Victoria	92	Pulse	199	2240000	3772	NA
+Victoria	92	Pulse	199	2250000	13772	NA
+Victoria	93	Picture	fix	2256455	0	315	27143	316	0	next	other	0
+Victoria	93	Pulse	199	2260000	3545	NA
+Victoria	93	Pulse	199	2270000	13545	NA
+Victoria	93	Pulse	199	2280000	23545	NA
+Victoria	95	Picture	stim	2283598	0	1	20009	206	0	20000	hit	322
+Victoria	95	Pulse	199	2290000	6402	NA
+Victoria	95	Response	16	2293627	10029	0
+Victoria	95	Pulse	199	2300000	16402	NA
+Victoria	96	Picture	fix2	2304103	0	36	16190	36	0	next	other	0
+Victoria	96	Pulse	199	2310000	5897	NA
+Victoria	96	Pulse	199	2320000	15897	NA
+Victoria	97	Picture	feedback	2320293	0	1	20349	1	0	next	other	0
+Victoria	97	Pulse	199	2330000	9707	NA
+Victoria	97	Pulse	199	2340000	19707	NA
+Victoria	98	Picture	fix	2340642	0	1	33860	1	0	next	other	0
+Victoria	98	Pulse	199	2350000	9358	NA
+Victoria	98	Pulse	199	2360000	19358	NA
+Victoria	98	Pulse	199	2370000	29358	NA
+Victoria	100	Picture	stim	2374502	0	1	20349	1	0	20000	incorrect	336
+Victoria	100	Pulse	199	2380000	5498	NA
+Victoria	100	Response	32	2386601	12099	0
+Victoria	100	Pulse	199	2390000	15498	NA
+Victoria	101	Picture	fix2	2394851	0	1	13536	178	0	next	other	0
+Victoria	101	Pulse	199	2400000	5149	NA
+Victoria	102	Picture	feedback	2408387	0	177	20323	177	0	next	other	0
+Victoria	102	Pulse	199	2410000	1613	NA
+Victoria	102	Pulse	199	2420000	11613	NA
+Victoria	103	Picture	fix	2428710	0	1	30691	1	0	next	other	0
+Victoria	103	Pulse	199	2430000	1290	NA
+Victoria	103	Pulse	199	2440000	11290	NA
+Victoria	103	Pulse	199	2450000	21290	NA
+Victoria	105	Picture	stim	2459401	0	1	20349	1	0	20000	hit	349
+Victoria	105	Pulse	199	2460000	599	NA
+Victoria	105	Response	16	2467333	7932	0
+Victoria	105	Pulse	199	2470000	10599	NA
+Victoria	106	Picture	fix2	2479750	0	1	21517	1	0	next	other	0
+Victoria	106	Pulse	199	2480000	250	NA
+Victoria	106	Pulse	199	2490000	10250	NA
+Victoria	106	Pulse	199	2500000	20250	NA
+Victoria	107	Picture	feedback	2501267	0	1	20683	1	0	next	other	0
+Victoria	107	Pulse	199	2510000	8733	NA
+Victoria	107	Pulse	199	2520000	18733	NA
+Victoria	108	Picture	fix	2521950	0	1	32859	1	0	next	other	0
+Victoria	108	Pulse	199	2530000	8050	NA
+Victoria	108	Pulse	199	2540000	18050	NA
+Victoria	108	Pulse	199	2550000	28050	NA
+Victoria	110	Picture	stim	2554808	0	1	20349	1	0	20000	incorrect	364
+Victoria	110	Pulse	199	2560000	5192	NA
+Victoria	110	Response	32	2561108	6299	0
+Victoria	110	Pulse	199	2570000	15192	NA
+Victoria	111	Picture	fix2	2575158	0	1	23685	1	0	next	other	0
+Victoria	111	Pulse	199	2580000	4842	NA
+Victoria	111	Pulse	199	2590000	14842	NA
+Victoria	112	Picture	feedback	2598842	0	1	20349	1	0	next	other	0
+Victoria	112	Pulse	199	2600000	1158	NA
+Victoria	112	Pulse	199	2610000	11158	NA
+Victoria	113	Picture	fix	2619192	0	1	21183	1	0	next	other	0
+Victoria	113	Pulse	199	2620000	808	NA
+Victoria	113	Pulse	199	2630000	10808	NA
+Victoria	113	Pulse	199	2640000	20808	NA
+Victoria	115	Picture	stim	2640375	0	1	20349	1	0	20000	hit	377
+Victoria	115	Response	16	2647922	7547	0
+Victoria	115	Pulse	199	2650000	9625	NA
+Victoria	115	Pulse	199	2660000	19625	NA
+Victoria	116	Picture	fix2	2660724	0	1	25019	1	0	next	other	0
+Victoria	116	Pulse	199	2670000	9276	NA
+Victoria	116	Pulse	199	2680000	19276	NA
+Victoria	117	Picture	feedback	2685743	0	1	20349	1	0	next	other	0
+Victoria	117	Pulse	199	2690000	4257	NA
+Victoria	117	Pulse	199	2700000	14257	NA
+Victoria	118	Picture	fix	2706092	0	1	35861	1	0	next	other	0
+Victoria	118	Pulse	199	2710000	3908	NA
+Victoria	118	Pulse	199	2720000	13908	NA
+Victoria	118	Pulse	199	2730000	23908	NA
+Victoria	118	Pulse	199	2740000	33908	NA
+Victoria	120	Picture	stim	2741954	0	1	20349	1	0	20000	hit	393
+Victoria	120	Pulse	199	2750000	8046	NA
+Victoria	120	Response	16	2752658	10704	0
+Victoria	120	Pulse	199	2760000	18046	NA
+Victoria	121	Picture	fix2	2762303	0	1	17180	1	0	next	other	0
+Victoria	121	Pulse	199	2770000	7697	NA
+Victoria	122	Picture	feedback	2779483	0	1	20349	1	0	next	other	0
+Victoria	122	Pulse	199	2780000	517	NA
+Victoria	122	Pulse	199	2790000	10517	NA
+Victoria	123	Picture	fix	2799832	0	1	32358	1	0	next	other	0
+Victoria	123	Pulse	199	2800000	168	NA
+Victoria	123	Pulse	199	2810000	10168	NA
+Victoria	123	Pulse	199	2820000	20168	NA
+Victoria	123	Pulse	199	2830000	30168	NA
+Victoria	125	Picture	stim	2832190	0	1	20349	1	0	20000	incorrect	407
+Victoria	125	Pulse	199	2840000	7810	NA
+Victoria	125	Response	32	2842352	10162	0
+Victoria	125	Pulse	199	2850000	17810	NA
+Victoria	126	Picture	fix2	2852539	0	1	27021	1	0	next	other	0
+Victoria	126	Pulse	199	2860000	7461	NA
+Victoria	126	Pulse	199	2870000	17461	NA
+Victoria	127	Picture	feedback	2879560	0	1	20349	1	0	next	other	0
+Victoria	127	Pulse	199	2880000	440	NA
+Victoria	127	Pulse	199	2890000	10440	NA
+Victoria	128	Picture	fix	2899909	0	1	28856	1	0	next	other	0
+Victoria	128	Pulse	199	2900000	91	NA
+Victoria	128	Pulse	199	2910000	10091	NA
+Victoria	128	Pulse	199	2920000	20091	NA
+Victoria	130	Picture	stim	2928765	0	1	20349	1	0	20000	incorrect	421
+Victoria	130	Pulse	199	2930000	1235	NA
+Victoria	130	Response	32	2938525	9760	0
+Victoria	130	Pulse	199	2940000	11235	NA
+Victoria	131	Picture	fix2	2949114	0	1	14678	1	0	next	other	0
+Victoria	131	Pulse	199	2950000	886	NA
+Victoria	131	Pulse	199	2960000	10886	NA
+Victoria	132	Picture	feedback	2963792	0	1	20349	1	0	next	other	0
+Victoria	132	Pulse	199	2970000	6208	NA
+Victoria	132	Pulse	199	2980000	16208	NA
+Victoria	133	Picture	fix	2984142	0	1	23351	1	0	next	other	0
+Victoria	133	Pulse	199	2990000	5858	NA
+Victoria	133	Pulse	199	3000000	15858	NA
+Victoria	135	Picture	stim	3007493	0	1	20182	1	0	20000	incorrect	434
+Victoria	135	Pulse	199	3010000	2507	NA
+Victoria	135	Response	32	3017818	10325	0
+Victoria	135	Pulse	199	3020000	12507	NA
+Victoria	136	Picture	fix2	3027675	0	1	18848	1	0	next	other	0
+Victoria	136	Pulse	199	3030000	2325	NA
+Victoria	136	Pulse	199	3040000	12325	NA
+Victoria	137	Picture	feedback	3046523	0	1	20349	1	0	next	other	0
+Victoria	137	Pulse	199	3050000	3477	NA
+Victoria	137	Pulse	199	3060000	13477	NA
+Victoria	138	Picture	fix	3066872	0	1	28856	1	0	next	other	0
+Victoria	138	Pulse	199	3070000	3128	NA
+Victoria	138	Pulse	199	3080000	13128	NA
+Victoria	138	Pulse	199	3090000	23128	NA
+Victoria	140	Picture	stim	3095728	0	1	20182	1	0	20000	incorrect	448
+Victoria	140	Pulse	199	3100000	4272	NA
+Victoria	140	Response	32	3104631	8903	0
+Victoria	140	Pulse	199	3110000	14272	NA
+Victoria	141	Picture	fix2	3116244	0	1	19515	1	0	next	other	0
+Victoria	141	Pulse	199	3120000	3756	NA
+Victoria	141	Pulse	199	3130000	13756	NA
+Victoria	142	Picture	feedback	3135759	0	1	20349	1	0	next	other	0
+Victoria	142	Pulse	199	3140000	4241	NA
+Victoria	142	Pulse	199	3150000	14241	NA
+Victoria	143	Picture	fix	3156108	0	1	31858	1	0	next	other	0
+Victoria	143	Pulse	199	3160000	3892	NA
+Victoria	143	Pulse	199	3170000	13892	NA
+Victoria	143	Pulse	199	3180000	23892	NA
+Victoria	145	Picture	stim	3187966	0	1	20349	1	0	20000	hit	463
+Victoria	145	Pulse	199	3190000	2034	NA
+Victoria	145	Pulse	199	3200000	12034	NA
+Victoria	145	Response	16	3200166	12200	0
+Victoria	146	Picture	fix2	3208315	0	1	18681	1	0	next	other	0
+Victoria	146	Pulse	199	3210000	1685	NA
+Victoria	146	Pulse	199	3220000	11685	NA
+Victoria	147	Picture	feedback	3226997	0	1	20349	1	0	next	other	0
+Victoria	147	Pulse	199	3230000	3003	NA
+Victoria	147	Pulse	199	3240000	13003	NA
+Victoria	148	Picture	fix	3247346	0	1	30357	1	0	next	other	0
+Victoria	148	Pulse	199	3250000	2654	NA
+Victoria	148	Pulse	199	3260000	12654	NA
+Victoria	148	Pulse	199	3270000	22654	NA
+Victoria	150	Picture	stim	3277703	0	1	20349	1	0	20000	hit	476
+Victoria	150	Pulse	199	3280000	2297	NA
+Victoria	150	Response	16	3286578	8876	0
+Victoria	150	Pulse	199	3290000	12297	NA
+Victoria	151	Picture	fix2	3298052	0	1	20182	1	0	next	other	0
+Victoria	151	Pulse	199	3300000	1948	NA
+Victoria	151	Pulse	199	3310000	11948	NA
+Victoria	152	Picture	feedback	3318234	0	1	20516	1	0	next	other	0
+Victoria	152	Pulse	199	3320000	1766	NA
+Victoria	152	Pulse	199	3330000	11766	NA
+Victoria	153	Picture	fix	3338750	0	1	23018	1	0	next	other	0
+Victoria	153	Pulse	199	3340000	1250	NA
+Victoria	153	Pulse	199	3350000	11250	NA
+Victoria	153	Pulse	199	3360000	21250	NA
+Victoria	155	Picture	stim	3361768	0	1	20349	1	0	20000	incorrect	489
+Victoria	155	Response	32	3369871	8103	0
+Victoria	155	Pulse	199	3370000	8232	NA
+Victoria	155	Pulse	199	3380000	18232	NA
+Victoria	156	Picture	fix2	3382117	0	1	13510	1	0	next	other	0
+Victoria	156	Pulse	199	3390000	7883	NA
+Victoria	157	Picture	feedback	3395627	0	1	20349	1	0	next	other	0
+Victoria	157	Pulse	199	3400000	4373	NA
+Victoria	157	Pulse	199	3410000	14373	NA
+Victoria	158	Picture	fix	3415977	0	1	30023	1	0	next	other	0
+Victoria	158	Pulse	199	3420000	4023	NA
+Victoria	158	Pulse	199	3430000	14023	NA
+Victoria	158	Pulse	199	3440000	24023	NA
+Victoria	160	Picture	stim	3446000	0	1	20182	1	0	20000	incorrect	504
+Victoria	160	Pulse	199	3450000	4000	NA
+Victoria	160	Pulse	199	3460000	14000	NA
+Victoria	160	Response	32	3461006	15006	0
+Victoria	161	Picture	fix2	3466349	0	1	18681	1	0	next	other	0
+Victoria	161	Pulse	199	3470000	3651	NA
+Victoria	161	Pulse	199	3480000	13651	NA
+Victoria	162	Picture	feedback	3485030	0	1	20349	1	0	next	other	0
+Victoria	162	Pulse	199	3490000	4970	NA
+Victoria	162	Pulse	199	3500000	14970	NA
+Victoria	163	Picture	fix	3505379	0	1	31024	1	0	next	other	0
+Victoria	163	Pulse	199	3510000	4621	NA
+Victoria	163	Pulse	199	3520000	14621	NA
+Victoria	163	Pulse	199	3530000	24621	NA
+Victoria	165	Picture	stim	3536403	0	1	20516	1	0	20000	incorrect	517
+Victoria	165	Pulse	199	3540000	3597	NA
+Victoria	165	Response	32	3546139	9736	0
+Victoria	165	Pulse	199	3550000	13597	NA
+Victoria	166	Picture	fix2	3556919	0	1	16012	1	0	next	other	0
+Victoria	166	Pulse	199	3560000	3081	NA
+Victoria	166	Pulse	199	3570000	13081	NA
+Victoria	167	Picture	feedback	3572932	0	1	20349	1	0	next	other	0
+Victoria	167	Pulse	199	3580000	7068	NA
+Victoria	167	Pulse	199	3590000	17068	NA
+Victoria	168	Picture	fix	3593281	0	1	27355	1	0	next	other	0
+Victoria	168	Pulse	199	3600000	6719	NA
+Victoria	168	Pulse	199	3610000	16719	NA
+Victoria	168	Pulse	199	3620000	26719	NA
+Victoria	170	Picture	stim	3620635	0	1	20182	1	0	20000	miss	0
+Victoria	170	Pulse	199	3630000	9365	NA
+Victoria	170	Pulse	199	3640000	19365	NA
+Victoria	171	Picture	fix2	3640818	0	1	22684	1	0	next	other	0
+Victoria	171	Response	16	3642314	1496	0
+Victoria	171	Pulse	199	3650000	9182	NA
+Victoria	171	Pulse	199	3660000	19182	NA
+Victoria	172	Picture	feedback	3663502	0	1	20349	1	0	next	other	0
+Victoria	172	Pulse	199	3670000	6498	NA
+Victoria	172	Pulse	199	3680000	16498	NA
+Victoria	173	Picture	fix	3683851	0	1	19182	1	0	next	other	0
+Victoria	173	Pulse	199	3690000	6149	NA
+Victoria	173	Pulse	199	3700000	16149	NA
+Victoria	175	Picture	stim	3703033	0	1	20182	1	0	20000	hit	544
+Victoria	175	Pulse	199	3710000	6967	NA
+Victoria	175	Response	16	3716085	13053	0
+Victoria	175	Pulse	199	3720000	16967	NA
+Victoria	176	Picture	fix2	3723215	0	1	22851	1	0	next	other	0
+Victoria	176	Pulse	199	3730000	6785	NA
+Victoria	176	Pulse	199	3740000	16785	NA
+Victoria	177	Picture	feedback	3746066	0	1	20349	1	0	next	other	0
+Victoria	177	Pulse	199	3750000	3934	NA
+Victoria	177	Pulse	199	3760000	13934	NA
+Victoria	178	Picture	fix	3766415	0	1	24185	1	0	next	other	0
+Victoria	178	Pulse	199	3770000	3585	NA
+Victoria	178	Pulse	199	3780000	13585	NA
+Victoria	178	Pulse	199	3790000	23585	NA
+Victoria	180	Picture	stim	3790601	0	1	20349	1	0	20000	hit	557
+Victoria	180	Response	16	3799377	8776	0
+Victoria	180	Pulse	199	3800000	9399	NA
+Victoria	180	Pulse	199	3810000	19399	NA
+Victoria	181	Picture	fix2	3810950	0	1	25687	1	0	next	other	0
+Victoria	181	Pulse	199	3820000	9050	NA
+Victoria	181	Pulse	199	3830000	19050	NA
+Victoria	182	Picture	feedback	3836636	0	1	20349	1	0	next	other	0
+Victoria	182	Pulse	199	3840000	3364	NA
+Victoria	182	Pulse	199	3850000	13364	NA
+Victoria	183	Picture	fix	3856986	0	1	28856	1	0	next	other	0
+Victoria	183	Pulse	199	3860000	3014	NA
+Victoria	183	Pulse	199	3870000	13014	NA
+Victoria	183	Pulse	199	3880000	23014	NA
+Victoria	185	Picture	stim	3885841	0	1	20349	1	0	20000	incorrect	572
+Victoria	185	Pulse	199	3890000	4159	NA
+Victoria	185	Response	32	3895872	10031	0
+Victoria	185	Pulse	199	3900000	14159	NA
+Victoria	186	Picture	fix2	3906190	0	1	22017	1	0	next	other	0
+Victoria	186	Pulse	199	3910000	3810	NA
+Victoria	186	Pulse	199	3920000	13810	NA
+Victoria	187	Picture	feedback	3928207	0	1	20349	1	0	next	other	0
+Victoria	187	Pulse	199	3930000	1793	NA
+Victoria	187	Pulse	199	3940000	11793	NA
+Victoria	188	Picture	fix	3948557	0	1	24686	1	0	next	other	0
+Victoria	188	Pulse	199	3950000	1443	NA
+Victoria	188	Pulse	199	3960000	11443	NA
+Victoria	188	Pulse	199	3970000	21443	NA
+Victoria	190	Picture	stim	3973242	0	1	20349	1	0	20000	hit	586
+Victoria	190	Pulse	199	3980000	6758	NA
+Victoria	190	Response	16	3980925	7683	0
+Victoria	190	Pulse	199	3990000	16758	NA
+Victoria	191	Picture	fix2	3993592	0	1	23685	1	0	next	other	0
+Victoria	191	Pulse	199	4000000	6408	NA
+Victoria	191	Pulse	199	4010000	16408	NA
+Victoria	192	Picture	feedback	4017277	0	1	20349	1	0	next	other	0
+Victoria	192	Pulse	199	4020000	2723	NA
+Victoria	192	Pulse	199	4030000	12723	NA
+Victoria	193	Picture	fix	4037626	0	1	25353	1	0	next	other	0
+Victoria	193	Pulse	199	4040000	2374	NA
+Victoria	193	Pulse	199	4050000	12374	NA
+Victoria	193	Pulse	199	4060000	22374	NA
+Victoria	195	Picture	stim	4062979	0	1	20349	1	0	20000	incorrect	600
+Victoria	195	Pulse	199	4070000	7021	NA
+Victoria	195	Response	32	4074700	11721	0
+Victoria	195	Pulse	199	4080000	17021	NA
+Victoria	196	Picture	fix2	4083328	0	1	20016	1	0	next	other	0
+Victoria	196	Pulse	199	4090000	6672	NA
+Victoria	196	Pulse	199	4100000	16672	NA
+Victoria	197	Picture	feedback	4103343	0	1	20349	1	0	next	other	0
+Victoria	197	Pulse	199	4110000	6657	NA
+Victoria	197	Pulse	199	4120000	16657	NA
+Victoria	198	Picture	fix	4123692	0	1	27021	1	0	next	other	0
+Victoria	198	Pulse	199	4130000	6308	NA
+Victoria	198	Pulse	199	4140000	16308	NA
+Victoria	198	Pulse	199	4150000	26308	NA
+Victoria	200	Picture	stim	4150713	0	1	20349	1	0	20000	hit	613
+Victoria	200	Response	16	4159031	8318	0
+Victoria	200	Pulse	199	4160000	9287	NA
+Victoria	200	Pulse	199	4170000	19287	NA
+Victoria	201	Picture	fix2	4171063	0	1	16513	1	0	next	other	0
+Victoria	201	Pulse	199	4180000	8937	NA
+Victoria	202	Picture	feedback	4187575	0	1	20182	1	0	next	other	0
+Victoria	202	Pulse	199	4190000	2425	NA
+Victoria	202	Pulse	199	4200000	12425	NA
+Victoria	203	Picture	100	4207758	0	1	80229	1	0	80000	other	0
+Victoria	203	Pulse	199	4210000	2242	NA
+Victoria	203	Pulse	199	4220000	12242	NA
+Victoria	203	Pulse	199	4230000	22242	NA
+Victoria	203	Pulse	199	4240000	32242	NA
+Victoria	203	Pulse	199	4250000	42242	NA
+Victoria	203	Pulse	199	4260000	52242	NA
+Victoria	203	Pulse	199	4270000	62242	NA
+Victoria	203	Pulse	199	4280000	72242	NA

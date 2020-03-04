@@ -1,5 +1,5 @@
 <ver>20.1</ver>
-<efn>N:\studies\AllRead\Tasks\FB_Learning_2.0\FB_Learning_A2.1\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.exp</efn>
+<efn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex.exp</efn>
 <author></author>
 <con>
 <pause>P</pause>
@@ -40,12 +40,13 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>N:\studies\AllRead\Tasks\FB_Learning_2.0\FB_Learning_A2.1\Task_FeedLearn_MRI_5x8_noRep\Stimulus Files</dsd>
+<dsd>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\Stimulus Files</dsd>
 <dxv>8</dxv>
 <efs>
-<filename>N:\studies\AllRead\Tasks\FB_Learning_2.0\FB_Learning_A2.1\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.sce</filename>
-<filename>N:\studies\AllRead\Tasks\FB_Learning_2.0\FB_Learning_A2.1\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.exp</filename>
-<filename>N:\studies\AllRead\Tasks\FB_Learning_2.0\FB_Learning_A2.1\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.pcl</filename>
+<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex.sce</filename>
+<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex.pcl</filename>
+<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.pcl</filename>
+<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.sce</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version></exp_version>
@@ -83,7 +84,13 @@
 <pass></pass>
 <ssa>
 <asn>
-<sid>-1</sid>
+<sid>-2</sid>
+</asn>
+<asn>
+<sid>-2</sid>
+</asn>
+<asn>
+<sid>-2</sid>
 </asn>
 <asn>
 <sid>-2</sid>
@@ -101,6 +108,8 @@
 <ftp>
 <ccc>0</ccc>
 <do_upload>
+<sce>1</sce>
+<sce>1</sce>
 <sce>1</sce>
 <sce>1</sce>
 </do_upload>
@@ -133,7 +142,7 @@
 <pindex>4294967295</pindex>
 </chan>
 </ip_chans>
-<lfd>N:\studies\AllRead\Tasks\FB_Learning_2.0\FB_Learning_A2.1\Task_FeedLearn_MRI_5x8_noRep\Log Files</lfd>
+<lfd>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\Log Files</lfd>
 <lnb>2</lnb>
 <lno>3</lno>
 <log>
@@ -205,21 +214,21 @@
 <axis>
 <max>1000</max>
 <min>-1000</min>
-<name>X-Achse</name>
+<name>X-axis</name>
 <restricted>1</restricted>
 <scale>1</scale>
 </axis>
 <axis>
 <max>1000</max>
 <min>-1000</min>
-<name>Y-Achse</name>
+<name>Y-axis</name>
 <restricted>1</restricted>
 <scale>1</scale>
 </axis>
 <axis>
 <max>1000</max>
 <min>-1000</min>
-<name>Lenkrad</name>
+<name>Wheel</name>
 <restricted>1</restricted>
 <scale>1</scale>
 </axis>
@@ -227,12 +236,12 @@
 <dx_device_type>18</dx_device_type>
 <max_raw_pos>65535</max_raw_pos>
 <min_raw_pos>0</min_raw_pos>
-<name>Maus</name>
+<name>Mouse</name>
 </device>
 <device>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<name>Tastatur</name>
+<name>Keyboard</name>
 </device>
 <device>
 <device_type>3</device_type>
@@ -284,17 +293,12 @@
 <device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>USB Keyboard</name>
+<name>HP Elite USB Keyboard</name>
 </device>
 <device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>USB Keyboard 1</name>
-</device>
-<device>
-<device_type>4</device_type>
-<dx_device_type>17</dx_device_type>
-<name>USB Keyboard 2</name>
+<name>HP Elite USB Keyboard 1</name>
 </device>
 <device>
 <axis>
@@ -454,54 +458,96 @@
 <rts>1</rts>
 <sce>
 <idv>
-<device_type>2</device_type>
-<dx_device_type>18</dx_device_type>
-<ibn>Taste 0</ibn>
-<ibn>Taste 1</ibn>
-<idn>Maus</idn>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Z</ibn>
+<ibn>N</ibn>
+<ibn>Enter</ibn>
+<idn>Keyboard</idn>
 <index>0</index>
 <index>1</index>
+<index>2</index>
 <label></label>
 <label></label>
-<offset>12</offset>
-<offset>13</offset>
+<label></label>
+<offset>44</offset>
+<offset>49</offset>
+<offset>28</offset>
 </idv>
 <overrides></overrides>
 <sfn>all_scenarios</sfn>
 </sce>
 <sce>
 <idv>
-<device_type>2</device_type>
-<dx_device_type>18</dx_device_type>
-<ibn>Taste 0</ibn>
-<ibn>Taste 1</ibn>
-<idn>Maus</idn>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Z</ibn>
+<ibn>N</ibn>
+<idn>Keyboard</idn>
 <index>0</index>
 <index>1</index>
 <label></label>
 <label></label>
-<offset>12</offset>
-<offset>13</offset>
+<offset>44</offset>
+<offset>49</offset>
 </idv>
 <overrides></overrides>
-<sfn>N:\studies\AllRead\Tasks\FB_Learning_2.0\FB_Learning_A2.1\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.sce</sfn>
+<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex.sce</sfn>
 </sce>
 <sce>
 <idv>
-<device_type>2</device_type>
-<dx_device_type>18</dx_device_type>
-<ibn>Taste 0</ibn>
-<ibn>Taste 1</ibn>
-<idn>Maus</idn>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Z</ibn>
+<ibn>N</ibn>
+<ibn>Enter</ibn>
+<idn>Keyboard</idn>
+<index>0</index>
+<index>1</index>
+<index>2</index>
+<label></label>
+<label></label>
+<label></label>
+<offset>44</offset>
+<offset>49</offset>
+<offset>28</offset>
+</idv>
+<overrides></overrides>
+<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex.pcl</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Z</ibn>
+<ibn>N</ibn>
+<idn>Keyboard</idn>
 <index>0</index>
 <index>1</index>
 <label></label>
 <label></label>
-<offset>12</offset>
-<offset>13</offset>
+<offset>44</offset>
+<offset>49</offset>
 </idv>
 <overrides></overrides>
-<sfn>N:\studies\AllRead\Tasks\FB_Learning_2.0\FB_Learning_A2.1\Task_FeedLearn_MRI_5x8_noRep\FeedLearn_MRI_5x8_noRep.exp</sfn>
+<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.pcl</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Z</ibn>
+<ibn>N</ibn>
+<idn>Keyboard</idn>
+<index>0</index>
+<index>1</index>
+<label></label>
+<label></label>
+<offset>44</offset>
+<offset>49</offset>
+</idv>
+<overrides></overrides>
+<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.sce</sfn>
 </sce>
 <sct>
 <capture_device>
@@ -546,7 +592,7 @@
 <side_speakers>1</side_speakers>
 <use_rewind_distance>0</use_rewind_distance>
 </sde>
-<sdv>Primärer Soundtreiber</sdv>
+<sdv>Primary Sound Driver</sdv>
 <show_dis>1</show_dis>
 <show_parm>1</show_parm>
 <show_term>1</show_term>
