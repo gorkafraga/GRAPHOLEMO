@@ -35,9 +35,25 @@ begin;
 # -------------------------------------------------------------
 # Stimuli definitions 
 # -------------------------------------------------------------
-
 #start screen
 picture { bitmap { filename = "test.bmp"; } pict; x=0; y=0;} pstim;
+
+#Instruction text 
+picture { text { caption="<b> Herzlich Willkommen! </b>														
+				 Gleich wirst du eine Fantasieschrift lernen. 
+				
+				 Drücke auf die <b> blaue Taste (links) </b>, wenn du denkst, dass der Laut, den du hörst, zum linken Symbol gehört. 
+				 Drücke auf die <b> gelbe Taste (rechts) </b>, wenn du denkst, dass der Laut, den du hörst, zum rechten Symbol gehört.  
+				
+				 Wenn du richtig entschieden hast, wird dir ein Smiley angezeigt:
+				😊 bedeutet, dass du richtig gedrückt hast, 
+				😕 bedeutet, dass du falsch gedrückt hast.
+				
+				
+				Drücke jeweils so schnell du kannst!
+		 
+				<i> Drücke um zu starten</i>"; font_size=25;text_align=align_left; font_color=0,0,0;}instr_txt; x=0; y=0;} instr_txt_pic;
+
 # fixation
 picture { text { caption="+"; font_size=38; font_color=0,0,0;}cross; x=0; y=0;} fix;
 picture { text { caption="."; font_size=48; font_color=0,0,0;}; x=0; y=0; } fix2;
@@ -45,18 +61,15 @@ picture { text { caption="."; font_size=48; font_color=0,0,0;}; x=0; y=0; } fix2
 picture { text { caption="☺"; font_size=98; font_color=0,0,0;} fb_pict; x=0; y=0; }feed_pic;
 
 # stimuli from main trial
-sound { wavefile { filename = "u_long.wav"; preload=true;} snd;} astim;
-picture { text { caption="V1";font_size=80;} vTXT1; x=0; y=0;}  vstim1; # for testing purposes, use the stim identifier instead of the actual pictue/sound
-picture { text { caption="V2";font_size=80;} vTXT2; x=0; y=0;} vstim2;
-
+sound { wavefile { filename = "norm_ä.wav"; preload=true;} snd;} astim;
+picture { text { caption="V1"; } vTXT1; x=0; y=0;} vstim1; # for testing purposes, use the stim identifier instead of the actual pictue/sound
+picture { text { caption="V2";} vTXT2; x=0; y=0;} vstim2;
 # combine pics from main trial
 picture{ text  cross; x=0; y=0;
-			text  vTXT1; x=-400; y=-0;
+			text  vTXT1; x=-400; y=0;
 			text  vTXT2; x=400; y=0;
-	} main_pic;
+	}     main_pic; 
 	
-
-
 
 #NOW WITH CUES
 $wdth = 80;
@@ -70,12 +83,25 @@ picture{bitmap {filename="question_mark.jpg";width=$wdth;height=$hght;preload=tr
 picture{bitmap {filename="question_mark.jpg";width=$wdth;height=$hght;preload=true;alpha=-1;}; x=600; y=0;
 		  bitmap {filename="question_mark.jpg";width=$wdth;height=$hght;preload=true;alpha=-1;};x=-600; y=0;	
 		  text  fb_pict; x=0; y=0;} feed_pic_cue;
+
+#Audio test
+picture { text { caption="Zu Beginn kontrollieren wir kurz, ob die Funkverbindung zu den Aliens bereit ist.
+
+Merke dir dazu die 3 Laute, die du im Folgenden hören wirst"; font_size=13; font_color=0,0,0;}audiotest_txt; x=0; y=0;} audiotest_txt_pic;
+	
+picture{	text audiotest_txt; x=0; y=200;
+			bitmap {filename="headphones.png";preload=true;width=150;height=110;alpha=-1;};x=0; y=0;
+	} audiotest_pic;
+	
+picture { text { caption="Welche Laute hast du gehört?"; font_size=13; font_color=0,0,0;}abfrage_txt; x=0; y=0;} abfrage_txt_pic;
+	 
+picture{	text abfrage_txt; x=0; y=200;
+			bitmap {filename="headphones.png";preload=true;width=150;height=110;alpha=-1;};x=0; y=0;
+	} abfrage_pic;	
+
 # ------------------------------------------------------------------------------------------------
 # Trial definition 
-# ------------------------------------------------------------------------------------------------
-
-				
-				
+# ------------------------------------------------------------------------------------------------	
 # wait for MR pulse
 	 trial{	stimulus_event	{picture	{text{caption="+";font_size=48;font_color=0,102,51;};x=0;y=0;};duration=8000;code="100";}event_wait;}wait;
 	
@@ -104,17 +130,30 @@ picture{bitmap {filename="question_mark.jpg";width=$wdth;height=$hght;preload=tr
 	trial {
 		trial_type=fixed;
 		all_responses=false; 	#prevents terminating trial by an early button press	
-		trial_duration = 2200;
+		trial_duration = 2000;
 		stimulus_event {
 			picture main_pic; 
 			time = 0; 
-			duration = 2200;
+			duration = 2000;
 			target_button=1;
 			response_active=true; 
 			code="stim";  
 		} main_stim;
 	} main_trial;	
- 
+	
+ # main trial self-paced
+	trial {
+		trial_type=first_response;
+		trial_duration = forever;
+		stimulus_event {
+			picture main_pic; 
+			time = 0; 
+			target_button=1;
+			response_active=true; 
+			code="stim";  
+		} main_stim_selfpaced;
+	} main_trial_selfpaced;		
+	
 # Fixation before feedback (jittered in pcl)
 	trial {
 		trial_type=fixed;
@@ -138,37 +177,44 @@ picture{bitmap {filename="question_mark.jpg";width=$wdth;height=$hght;preload=tr
 		} fb_event;
 	} feedback;
 
+
+#---- other trials
+	
+# audiotest
+	trial {
+		trial_type=first_response;
+		trial_duration=forever;
+		terminator_button = 1;
+		stimulus_event {
+			picture audiotest_pic;
+			code="audiotest";
+		} start_audiotest;
+	} audiotest;	
+	
+# abfrage
+	trial {
+		trial_type=first_response;
+		trial_duration=forever;
+		terminator_button = 1;
+		stimulus_event {
+			picture abfrage_pic;
+			code="abfrage";
+		} start_abfrage;
+	} abfrage;		
+	
 # Instruction trials: instructions depend upon variable respMatch (defined in pop-up at start )
 	
 	 trial {
 			trial_duration = forever;
 			trial_type = first_response;
 			terminator_button = 1;
-			picture { 
-			text 	{ caption = 
-			 "<b> Herzlich Willkommen! </b>														
-			 Gleich wirst du eine Fantasieschrift lernen. 
-			
-			 Drücke auf die <b> blaue Taste (links) </b>, wenn du denkst, dass der Laut, den du hörst, zum linken Symbol gehört. 
-			 Drücke auf die <b> gelbe Taste (rechts) </b>, wenn du denkst, dass der Laut, den du hörst, zum rechten Symbol gehört.  
-			
-			 Wenn du richtig entschieden hast, wird dir ein Smiley angezeigt:
-			😊 bedeutet, dass du richtig gedrückt hast, 
-			😕 bedeutet, dass du falsch gedrückt hast.
-			
-			
-			Drücke jeweils so schnell du kannst!
-	 
-			<i> Drücke um zu starten</i>";
-		font_size = 40; font = "Arial"; text_align=align_left;  
-					};
-					x = 0 ; y = 0;	
-			};
-	} instr_task;
+			stimulus_event { 
+				picture instr_txt_pic;
+				} instr_pic;
+			} instr;
 	
- 
 #[ MRI Pulse terminated start screen] 
-#----------------------------------------------------------------
+
 # Screen indicating the current block
 	picture { text { caption= ""; font_size=48; font_color=0,102,51;} block_screen_txt ; x=0; y=0; } block_screen_pic;#fill in later in pcl part with block no.
 	trial {
@@ -198,6 +244,8 @@ picture{bitmap {filename="question_mark.jpg";width=$wdth;height=$hght;preload=tr
 	mri_pulse = 1;                    #this should terminate the trial by the fMRI pulse
 	duration = 4000;
 	} pauzeBeforeEnd; 
+	
+  
 #====================================================================================#====================================================================================
 #			 BEGIN PCL (It will execute the pcl file to execute randomization 
 #====================================================================================#====================================================================================
@@ -243,33 +291,70 @@ bool random_feedback=false;
 double totalResponse=0.0;
 int nrCorrect=0;
 int avgResponse = 2000;
+#Some variables to keep track of things
+int correct;
+
  
 #=================================================================================================================================================================================
-#        BEGIN MAIN TASK   																																							_m_d[°_°]b_m_
+#     																																							_m_d[°_°]b_m_
 #=================================================================================================================================================================================
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+#================================================
 #
-# [ P R A C T I C E ] 
+# [ I N S T R U C T I O N ] 
 #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+#================================================
+# practice block or the real stuff
+if (blockNum == 0) then 
+	audiotest.present();
+	block_screen_txt.set_caption("Starte Audiotest", true); 
+	block_screen.present(); 
+	int aStim = 0;
+	array <string> activeSnd[3]= {"norm_ü.wav", "norm_n.wav","norm_g.wav"};	
+	array <int> practiceOrder[9]= {1,1,2,3,1,2,3,3,2};
+	
+	# Loop through the pairOrder array and depending on the value select 
+	loop int i = 1 until i> 9 begin			
+		aStim = practiceOrder[i];
+		snd.set_filename(activeSnd[aStim]);
+		snd.load();	
+		iti_fix_trial.set_duration(iti[i]); #iti trial duration jittered
+		iti_fix_trial.present();
+		sound_event.set_port_code(55);
+		main_trial_audio.present();	
+		i=i+1;
+	end;
+	abfrage.present()
+else
+
+
+
+#================================================
+#
+# L O N G     P R A C T I C E  -  OUTSIDE SCANNER 
+#
+#================================================
 # practice block or the real stuff
 
 
-if (blockNum == 0) then 
-	instr_task.present();
+if (blockNum == 99) then 
+	instr.present();
+	#start.present();
+		int nrCorrect_practice = 0;
 		int aStim = 0;
 		int vStim1 = 0; 
 		int vStim2 = 0; 
 		string pairOrderStr;
-		array <string> activePict[2] = {"თx","xდ"};
-		array <string> activeSnd[2]= {"DEU_ä.wav", "DEU_o_short_1.wav"};	
+		array <string> activePict[4] = {"R","S","T","U"};
+		array <string> activeSnd[4]= {"norm_b.wav", "norm_h.wav","norm_Ã¤u.wav", "norm_Ã¶.wav"};	
 		
-		array <int> practiceOrder[6]= {112,121,212,221,112,121};	
+		array <int> practiceOrder[20]= {112,113,141,221,212,114,223,221,343,434,112,224,414,323,313,441,131,343,424,442};	
 	
 		# Loop through the pairOrder array and depending on the value select 
-		loop int i = 1 until i> 6 begin
-		 	vTXT1.set_font_size(100);  # this resets the font size for each trial. A conditional loop will adjust font sizes for specific symbols
-			vTXT2.set_font_size(100);		
+		loop int i = 1 until i> 20 begin
+			vTXT1.set_font("graph2");vTXT2.set_font("graph2");
+		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50); 	
+		   vTXT2.set_width(600);
+			
 			pairOrderStr = string(practiceOrder[i]);		
 			aStim = int(pairOrderStr.substring(1,1));
 			vStim1 = int(pairOrderStr.substring(2,1));
@@ -280,10 +365,135 @@ if (blockNum == 0) then
 			snd.load();			
 			if (aStim == vStim1) then
 				target_button=16; 
+				correct = vStim1;
 				main_stim.set_port_code(11);
+				#rw_extension.set_port_code(11);
 			else
 				target_button=32; 
+				correct = vStim2;
 				main_stim.set_port_code(22);
+				#rw_extension.set_port_code(22);
+			end;
+				
+			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				# present the time critical trial:
+				iti_fix_trial.set_duration(iti[i]); #iti trial duration jittered
+				iti_fix_trial.present();
+				# Audio (should continue to next trial so audio and visual appear together 
+				sound_event.set_port_code(55);
+				main_trial_audio.present();
+				int stim_ct = stimulus_manager.stimulus_count();
+				#Visual
+				if (i <=5) then
+					main_trial_selfpaced.present();
+				else
+					main_trial.present();
+				end;
+			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				stimulus_data sd = stimulus_manager.get_stimulus_data( stim_ct + 1 );
+				int RT=sd.reaction_time();	
+				int button=sd.button();
+				int respOnset = 0;
+				int FB=0;						
+				if (button==0) then
+					fb_pict.set_font_color(0,0,0);
+					fb_pict.set_font_size(20);
+					fb_pict.set_caption("Schneller!", true);
+					fb_event.set_port_code(196);
+					FB = 2;	
+				else
+						if (	(target_button==16 && button==1) || 
+							(target_button==32 && button==2)	) then
+							FB=1;
+							fb_pict.set_font_color(0,0,0);
+							fb_pict.set_font_size(80);
+							fb_pict.set_caption("😊", true); #positive feedback, richtig entschieden
+							fb_event.set_port_code(64);
+							nrCorrect_practice = nrCorrect_practice + 1;
+						
+						else	
+							FB=0;
+							fb_pict.set_font_color(0,0,0);
+							fb_pict.set_font_size(80);
+							fb_pict.set_caption("😕", true); #negative feedback, falsch entschieden
+							fb_event.set_port_code(128);
+							nrCorrect_practice = 0;
+						
+					end;	
+				end;
+			 #~~~~~~~~~~~~Present feedback ~~~~~~~~~~~~~~~~~~~~~~~
+				fixBeforeFeedback_trial.set_duration(itifeedback[i]); #iti trial duration jittered
+				fixBeforeFeedback_trial.present();
+				#Present
+				feedback.present();				
+			
+		#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Print out stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				# Output file:	 
+				out_file.print(blockNum); out_file.print("\t"); 	# block nr
+				out_file.print(i); out_file.print("\t"); 			# trial nr
+				out_file.print(string(vStim1)); out_file.print("\t"); 	# visual stimulus nr, 1,2,3 or 4
+				out_file.print(string(vStim2)); out_file.print("\t");
+				out_file.print(aStim); out_file.print("\t"); 	# auditive stimulus nr, 1,2,3 or 4	
+				out_file.print(button); out_file.print("\t"); 					# response button
+				out_file.print(RT); out_file.print("\t"); 						# response time
+				out_file.print(FB); out_file.print("\t"); 						# feedback type (0=wrong, 1=good , 2= faster!)
+				out_file.print(iti[i]); out_file.print("\t"); 		
+				out_file.print(itifeedback[i]); out_file.print("\t"); 		
+				out_file.print(activePict[vStim1]); out_file.print("\t");		
+				out_file.print(activePict[vStim2]); out_file.print("\t");
+				out_file.print(activePict[correct]); out_file.print("\t");		
+				out_file.print(activeSnd[aStim]);out_file.print("\t");		# get_filename(snd.filename()));	# filename of the sound
+				out_file.print("practice");	out_file.print("\t");				# stimulus onset from 1st pulse
+				out_file.print("practice");	out_file.print("\t");				# response onset from 1st pulse
+				out_file.print("practice"); 										# feedback onset from 1st pulse
+				out_file.print("\n");
+				
+				i=i+1;
+				term.print_line("Correct answers: " + string(nrCorrect_practice));
+				if (nrCorrect_practice == 8) then
+					break;
+				end;	
+		end;	
+
+#================================================
+#
+# S H O R T    P R A C T I C E  -  INSIDE SCANNER  
+#
+#================================================
+elseif (blockNum == 100) then 
+	#practice_instr.present();
+	#start.present();
+		int aStim = 0;
+		int vStim1 = 0; 
+		int vStim2 = 0; 
+		string pairOrderStr;
+		array <string> activePict[4] = {"A","B","G","H"};
+		array <string> activeSnd[4]= {"norm_b.wav", "norm_h.wav","norm_äu.wav", "norm_ö.wav"};	
+		
+		array <int> practiceOrder[5]= {113,221,212,114,343,331};	
+	
+		# Loop through the pairOrder array and depending on the value select 
+		loop int i = 1 until i> 5 begin
+			vTXT1.set_font("graph2");vTXT2.set_font("graph2");
+		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50);		
+			pairOrderStr = string(practiceOrder[i]);		
+			aStim = int(pairOrderStr.substring(1,1));
+			vStim1 = int(pairOrderStr.substring(2,1));
+			vStim2 = int(pairOrderStr.substring(3,1));		
+			vTXT1.set_caption(activePict[vStim1], true); 
+			vTXT2.set_caption(activePict[vStim2], true); 
+			snd.set_filename(activeSnd[aStim]);
+			snd.load();			
+			if (aStim == vStim1) then
+				target_button=16; 
+				correct = vStim1;
+				main_stim.set_port_code(11);
+				#rw_extension.set_port_code(11);
+			else
+				target_button=32; 
+				correct = vStim2;
+				main_stim.set_port_code(22);
+				#rw_extension.set_port_code(22);
 		end;
 				
 			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -294,12 +504,13 @@ if (blockNum == 0) then
 				sound_event.set_port_code(55);
 				main_trial_audio.present();
 				#Visual
+				int stim_ct = stimulus_manager.stimulus_count(); 
 				main_trial.present();
 				
 			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 					
 				# Analyse responses and generate appropriate feedback 
-				stimulus_data sd=stimulus_manager.last_stimulus_data();
+				stimulus_data sd = stimulus_manager.get_stimulus_data( stim_ct + 1 );
 				int RT=sd.reaction_time();
 				int button=sd.button();
 				int respOnset = 0;
@@ -307,23 +518,23 @@ if (blockNum == 0) then
 				
 				if (button==0) then
 					fb_pict.set_font_color(0,0,0);
-					fb_pict.set_font_size(48);
-					fb_pict.set_caption("Drücke ein wenig schneller!", true);
+					fb_pict.set_font_size(20);
+					fb_pict.set_caption("Schneller!", true);
 					fb_event.set_port_code(196);
 					FB = 2;	
 				else
 						if (	(target_button==16 && button==1) || 
 							(target_button==32 && button==2)	) then
 							FB=1;
-							fb_pict.set_font_color(0,102,51);
-							fb_pict.set_font_size(168);
-							fb_pict.set_caption("☺", true); #positive feedback, richtig entschieden
+							fb_pict.set_font_color(0,0,0);
+							fb_pict.set_font_size(80);
+							fb_pict.set_caption("😊", true); #positive feedback, richtig entschieden
 							fb_event.set_port_code(64);
 						
 						else	
 							FB=0;
 							fb_pict.set_font_color(0,0,0);
-							fb_pict.set_font_size(168);
+							fb_pict.set_font_size(80);
 							fb_pict.set_caption("😕", true); #negative feedback, falsch entschieden
 							fb_event.set_port_code(128);
 						
@@ -340,14 +551,17 @@ if (blockNum == 0) then
 			# Output file:	 
 				out_file.print(blockNum); out_file.print("\t"); 	# block nr
 				out_file.print(i); out_file.print("\t"); 			# trial nr
-				out_file.print(string(vStim1)+string(vStim2)); out_file.print("\t"); 	# visual stimulus nr, 1,2,3 or 4
+				out_file.print(string(vStim1)); out_file.print("\t"); 	# visual stimulus nr, 1,2,3 or 4
+				out_file.print(string(vStim2)); out_file.print("\t");
 				out_file.print(aStim); out_file.print("\t"); 	# auditive stimulus nr, 1,2,3 or 4	
 				out_file.print(button); out_file.print("\t"); 					# response button
 				out_file.print(RT); out_file.print("\t"); 						# response time
 				out_file.print(FB); out_file.print("\t"); 						# feedback type (0=wrong, 1=good , 2= faster!)
 				out_file.print(iti[i]); out_file.print("\t"); 		
-				out_file.print(itifeedback[i]); out_file.print("\t"); 	
-				out_file.print(activePict[vStim1]+activePict[vStim2]);out_file.print("\t");		# get_filename(pict.filename()));	# filename of the picture
+				out_file.print(itifeedback[i]); out_file.print("\t");	
+				out_file.print(activePict[vStim1]); out_file.print("\t");		
+				out_file.print(activePict[vStim2]); out_file.print("\t");
+				out_file.print(activePict[correct]); out_file.print("\t"); 	
 				out_file.print(activeSnd[aStim]);out_file.print("\t");		# get_filename(snd.filename()));	# filename of the sound
 				out_file.print("practice");	out_file.print("\t");				# stimulus onset from 1st pulse
 				out_file.print("practice");	out_file.print("\t");				# response onset from 1st pulse
@@ -356,7 +570,8 @@ if (blockNum == 0) then
 				
 				i=i+1;	
 		end;
-else	
+else		 
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 #
 # [ M A I N    T A S K    S T A R T S  ] 
@@ -368,7 +583,7 @@ else
 		itifeedback.shuffle();
 		iti.shuffle();	
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
-	instr_task.present();
+	instr.present();
 	#Present screen indicating block	 [MRI PULSE TERMINATED!]
 			block_screen_txt.set_caption("Start block " + string(blockNum), true); 
 			block_screen.present(); 	
@@ -454,7 +669,7 @@ switchplaces.shuffle();
 				aStim = soundOrder[i];
 				
 				#Get the index of the stimuli from the stimuli array
-				string tmpMatch = string(matchOrderB1[i]);
+				string tmpMatch = string(matchOrder[i]);
 				int colidxMatch = int(tmpMatch.substring(1,1));
 				int rowidxMatch =  int(tmpMatch.substring(2,1));
 				vStim1 = ((colidxMatch-1)*3)+ rowidxMatch; 
@@ -592,4 +807,5 @@ switchplaces.shuffle();
 					
 					i=i+1;	
 		end; # End trial loop
+end;
 end;

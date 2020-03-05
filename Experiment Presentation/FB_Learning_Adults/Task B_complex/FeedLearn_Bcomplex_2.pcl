@@ -32,19 +32,19 @@ array <string> pict_file[4][9] =   												# REQUIRES SPECIAL FONT!
 
 {  {"S","T","U",
 	"W","X","Y",
-	 "N","O","P"}, 	# symbol set 1 (set font to ¨FBLearning¨)
+	 "N","O","P"}, 
 	
-	{"0L","4L","6L",
-	"0B","4B","6B",
-	 "0G","4G","6G"}, 	# symbol set 1 (set font to ¨FBLearning¨)
+	{"f","g","h", 
+	"j","k","l",
+	"b","c","d"}, 	 
 	
-	{"0L","4L","6L",
-	"0B","4B","6B",
-	 "0G","4G","6G"}, 	# symbol set 1 (set font to ¨FBLearning¨)
+	{"B","C","D", 
+	"F","G","H",
+	"J","K","L"}, 	
 
-	{"0L","4L","6L",
-	"0B","4B","6B",
-	 "0G","4G","6G"} 	# symbol set 1 (set font to ¨FBLearning¨)
+	{"S","T","U",
+	"W","X","Y",
+	 "N","O","P"} 	
 };
 
 

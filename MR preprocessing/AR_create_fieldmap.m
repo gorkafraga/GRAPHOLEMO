@@ -1,5 +1,5 @@
 function AR_create_fieldmap(studyPath,b0Path, epiPath, b0index,T1template)
-% create_fieldmap  Creates the vdm5*.nii file for a given fieldmap sequence
+% create_fieldmap  Creates the vdm5*.nii file (voxel displacement file) for a given fieldmap sequence
 % and a given EPI image. If there are more than one b0 images stored, you
 % have to provide the mr-sequence number from the scanning session.
 % e.g. mr3672_pmdd06_31072018_105457_2_1_wipepi_b0_ec1_typ0.nii has the
