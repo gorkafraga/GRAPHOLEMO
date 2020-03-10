@@ -19,11 +19,11 @@ array <int> missmatchOrderB4[48] = 	{5,3,6,4,2,1,3,5,3,5,4,2,6,3,2,3,4,6,2,5,3,1
 #=== Arrays with the poll of stimuli===========================================================
 
 array <string> pict_file[4][6] =   												# REQUIRES SPECIAL FONT! 
-{  {"S","T","U",
-	"W","X","Y"},
+{ 	"B","G","A",
+	"C", "H","E"},
 	
-	{"0L","4L","6L",
-	"0B","4B","6B"}, 	
+	{"J","K","I",
+	"L","M","O"}, 	
 	
 	{"0L","4L","6L",
 	"0B","4B","6B"}, 	
@@ -35,7 +35,7 @@ array <string> pict_file[4][6] =   												# REQUIRES SPECIAL FONT!
 
 #add more sounds! atm they are repeating
 array <string> sound_file[4][6] =
-{	{"norm_a.wav","norm_k.wav","norm_u.wav","norm_q.wav","norm_n.wav","norm_au.wav"},	# sound set 1 
+{	{"norm_a.wav","norm_u.wav","norm_r.wav","norm_l.wav","norm_sch.wav"},	# sound set 1 
 	{"norm_a.wav","norm_k.wav","norm_u.wav","norm_q.wav","norm_n.wav","norm_au.wav"},
 	{"norm_a.wav","norm_k.wav","norm_u.wav","norm_q.wav","norm_n.wav","norm_au.wav"},
 	{"norm_a.wav","norm_k.wav","norm_u.wav","norm_q.wav","norm_n.wav","norm_au.wav"}

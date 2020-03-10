@@ -93,6 +93,10 @@ for i = 1:sum(contains(paths.epis,'eread')+contains(paths.epis,'learn')*2+contai
         matlabbatch{2}.spm.spatial.realignunwarp.data(i).scans(1) = cfg_dep('Slice Timing: Slice Timing Corr. Images (Sess 2)', substruct('.','val', '{}',{idx}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('()',{2}, '.','files'));
         matlabbatch{2}.spm.spatial.realignunwarp.data(i).pmscan = b0.learn;
         idx = idx + 1;
+    elseif  contains(current_scan,'learn')
+        matlabbatch{2}.spm.spatial.realignunwarp.data(i).scans(1) = cfg_dep('Slice Timing: Slice Timing Corr. Images (Sess 2)', substruct('.','val', '{}',{idx}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('()',{2}, '.','files'));
+        matlabbatch{2}.spm.spatial.realignunwarp.data(i).pmscan = b0.learn;
+        idx = idx + 1;
     elseif  contains(current_scan,'implicit')
         matlabbatch{2}.spm.spatial.realignunwarp.data(i).scans(1) = cfg_dep(['Slice Timing: Slice Timing Corr. Images (Sess 1, ' task_order{i} ')'], substruct('.','val', '{}',{idx}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('()',{1}, '.','files'));
         matlabbatch{2}.spm.spatial.realignunwarp.data(i).pmscan = b0.implicit;

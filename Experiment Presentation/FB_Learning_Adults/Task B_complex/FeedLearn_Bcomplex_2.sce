@@ -463,6 +463,7 @@ if (blockNum == 99) then
 elseif (blockNum == 100) then 
 	#practice_instr.present();
 	#start.present();
+		
 		int aStim = 0;
 		int vStim1 = 0; 
 		int vStim2 = 0; 
@@ -578,6 +579,124 @@ else
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+#  [ REFRESH SYMBOL KNOWLEDGE FROM PREVIOUS TASK WITH SELFPACED PRACTICE!
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	int aStim = 0;
+	int vStim1 = 0; 
+	int vStim2 = 0; 
+	string pairOrderStr;	
+		
+	if (blockNum == 1) then   
+		array <string> activePict[3] = {"B","G","E"};
+		array <string> activeSnd[3]= {"norm_a.wav", "norm_u.wav","norm_r.wav"};	
+		array <int> practiceOrder[9]= {223,212,323,113,121,331,331,112,232};	
+	elseif (blockNum == 2) then   
+		array <string> activePict[3] = {"K","L","O"};
+		array <string> activeSnd[3]= {"norm_o.wav", "norm_e.wav","norm_sch.wav"};	
+		array <int> practiceOrder[9]= {223,212,323,113,121,331,331,112,232};
+	end
+	
+		loop int i = 1 until i> 9 begin
+			vTXT1.set_font("FBlearning");vTXT2.set_font("FBlearning");
+		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50);		
+			pairOrderStr = string(practiceOrder[i]);		
+			aStim = int(pairOrderStr.substring(1,1));
+			vStim1 = int(pairOrderStr.substring(2,1));
+			vStim2 = int(pairOrderStr.substring(3,1));		
+			vTXT1.set_caption(activePict[vStim1], true); 
+			vTXT2.set_caption(activePict[vStim2], true); 
+			snd.set_filename(activeSnd[aStim]);
+			snd.load();			
+			if (aStim == vStim1) then
+				target_button=16; 
+				correct = vStim1;
+				main_stim.set_port_code(11);
+				#rw_extension.set_port_code(11);
+			else
+				target_button=32; 
+				correct = vStim2;
+				main_stim.set_port_code(22);
+				#rw_extension.set_port_code(22);
+		end;
+				
+			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				# present the time critical trial:
+				iti_fix_trial.set_duration(iti[i]); #iti trial duration jittered
+				iti_fix_trial.present();
+				# Audio (should continue to next trial so audio and visual appear together 
+				sound_event.set_port_code(55);
+				main_trial_audio.present();
+				#Visual
+				int stim_ct = stimulus_manager.stimulus_count(); 
+				main_trial_selfpaced.present();
+				
+			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+					
+				# Analyse responses and generate appropriate feedback 
+				stimulus_data sd = stimulus_manager.get_stimulus_data( stim_ct + 1 );
+				int RT=sd.reaction_time();
+				int button=sd.button();
+				int respOnset = 0;
+				int FB=0;						
+				
+				if (button==0) then
+					fb_pict.set_font_color(0,0,0);
+					fb_pict.set_font_size(20);
+					fb_pict.set_caption("Schneller!", true);
+					fb_event.set_port_code(196);
+					FB = 2;	
+				else
+						if (	(target_button==16 && button==1) || 
+							(target_button==32 && button==2)	) then
+							FB=1;
+							fb_pict.set_font_color(0,0,0);
+							fb_pict.set_font_size(80);
+							fb_pict.set_caption("😊", true); #positive feedback, richtig entschieden
+							fb_event.set_port_code(64);
+						
+						else	
+							FB=0;
+							fb_pict.set_font_color(0,0,0);
+							fb_pict.set_font_size(80);
+							fb_pict.set_caption("😕", true); #negative feedback, falsch entschieden
+							fb_event.set_port_code(128);
+						
+					end;	
+				end;
+			 #~~~~~~~~~~~~Present feedback ~~~~~~~~~~~~~~~~~~~~~~~
+				#fixBeforeFeedback_trial.set_duration(itifeedback[i]); #iti trial duration jittered
+				#fixBeforeFeedback_trial.present();
+				#Present
+				feedback.present();				
+			
+		#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Print out stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		
+			# Output file:	 
+				out_file.print(blockNum); out_file.print("\t"); 	# block nr
+				out_file.print(i); out_file.print("\t"); 			# trial nr
+				out_file.print(string(vStim1)); out_file.print("\t"); 	# visual stimulus nr, 1,2,3 or 4
+				out_file.print(string(vStim2)); out_file.print("\t");
+				out_file.print(aStim); out_file.print("\t"); 	# auditive stimulus nr, 1,2,3 or 4	
+				out_file.print(button); out_file.print("\t"); 					# response button
+				out_file.print(RT); out_file.print("\t"); 						# response time
+				out_file.print(FB); out_file.print("\t"); 						# feedback type (0=wrong, 1=good , 2= faster!)
+				out_file.print(iti[i]); out_file.print("\t"); 		
+				out_file.print(itifeedback[i]); out_file.print("\t");	
+				out_file.print(activePict[vStim1]); out_file.print("\t");		
+				out_file.print(activePict[vStim2]); out_file.print("\t");
+				out_file.print(activePict[correct]); out_file.print("\t"); 	
+				out_file.print(activeSnd[aStim]);out_file.print("\t");		# get_filename(snd.filename()));	# filename of the sound
+				out_file.print("practice");	out_file.print("\t");				# stimulus onset from 1st pulse
+				out_file.print("practice");	out_file.print("\t");				# response onset from 1st pulse
+				out_file.print("practice"); 										# feedback onset from 1st pulse
+				out_file.print("\n");
+				
+				i=i+1;	
+		end;
+	end;
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 #some initial shuffling
 
 		itifeedback.shuffle();
@@ -637,13 +756,11 @@ switchplaces.shuffle();
 				missmatchOrder = missmatchOrderB4;
 	end;  
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
-#  d['=_=']b
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 	
+
 	#Create an array with the selected stimuli for this block 
-		int vStim1 = 0;
-		int vStim2 = 0;
-		int aStim = 0;
+		vStim1 = 0;
+		vStim2 = 0;
+		aStim = 0;
 		#string soundOrderStr;
 		#string matchOrderStr;
 		#string missmatchOrderStr;

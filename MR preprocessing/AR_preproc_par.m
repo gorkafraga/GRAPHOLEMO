@@ -18,10 +18,10 @@
 
 clear matlabbatch batch current_paths paths subjects;
 spm_jobman('initcfg');
-addpath ('N:\studies\Grapholemo\Scripts\grapholemo\MR preprocessing')
+addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR preprocessing\')
 %% INPUTS 
 % input subjects list
-subjects = {'AR1003','AR1005','AR1014','AR1015','AR1017','AR1019','AR1028','AR1034','AR1052','AR1053'}; 
+subjects = {'AR1003'}; 
 %subjects = {'AR1038','AR1042','AR1045','AR1046','AR1048','AR1055','AR1056'}; 
 %subjects = {'AR1002','AR1004','AR1006','AR1007','AR1008','AR1009','AR1011','AR1016','AR1018','AR1021','AR1023','AR1025','AR1031','AR1035','AR1036','AR1038','AR1042','AR1045','AR1046','AR1048','AR1055','AR1056'}; 
 %subjects = {'AR1002','AR1004','AR1006','AR1007','AR1008','AR1009','AR1011','AR1016','AR1018','AR1021','AR1023','AR1025','AR1028','AR1031','AR1035','AR1036','AR1038','AR1042','AR1045','AR1046','AR1048','AR1055','AR1056'};
@@ -30,7 +30,7 @@ subjects = {'AR1003','AR1005','AR1014','AR1015','AR1017','AR1019','AR1028','AR10
     useB0               = 1;
 %input task(s)
     tasklist            =  {'learn'}; % [eread, learn, localizer, symCtrl]
-% some files needed    
+% some files needed   
     T1template = 'O:\studies\grapholemo\Allread_FBL\Analysis\mri\Template_KiGa_T2_T3\TPM_Age7.1526.nii'; % Called by 'AR_create_fieldmap.m'
 %Paths (end character should be \ )
     studyPath = 'O:\studies\grapholemo\Allread_FBL\Analysis\mri\'; %main path to this study 
