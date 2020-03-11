@@ -24,7 +24,7 @@ for i = 1:length(subjects)
         errordlg(['no logfiles found for ', subject,' in ',paths.logs, '!!!']);
         break
     else
-    onset_tables= gather_FBL_onsets (logfiles,paths.logs);
+    onsets= gather_FBL_onsets (logfiles,paths.logs);
     %% find corresponding SCANS
     for j = 1:size(logfiles,1)
       %take a pattern from logfile that can identify its corresponding mr file
@@ -53,32 +53,31 @@ for i = 1:length(subjects)
 
     % loop through sessions (= blocks)
     for s=1:2
-        onsets= onset_tables{s};% take onsets for current sessions
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).scans = cellstr(spm_select('ExtFPList', [paths.mri,'\',subject], scans(s,:), 1:nscans));
         
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).name = 'stimPos';
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).onset = cell2mat({onsets.stimOnset_cor});
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).name = 'stimOnset_pos';
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).onset =cell2mat({onsets(s).stimOnset_pos});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).tmod = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).pmod = struct('name', {}, 'param', {}, 'poly', {});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).orth = 0;
 
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).name = 'stimNeg';
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).onset = cell2mat({onsets.stimOnset_inc});
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).name = 'stimOnset_neg';
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).onset = cell2mat({onsets(s).stimOnset_neg});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).tmod = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).pmod = struct('name', {}, 'param', {}, 'poly', {});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).orth = 0;
 
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).name = 'feedPos';
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).onset = cell2mat({onsets.fbOnset_cor});
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).name = 'fbOnset_pos';
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).onset = cell2mat({onsets(s).fbOnset_pos});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).tmod = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).pmod = struct('name', {}, 'param', {}, 'poly', {});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).orth = 0;
 
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).name = 'feedNeg';
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).onset = cell2mat({onsets.fbOnset_inc});
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).name = 'fbOnset_neg';
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).onset = cell2mat({onsets(s).fbOnset_neg});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).tmod = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).pmod = struct('name', {}, 'param', {}, 'poly', {});
@@ -112,19 +111,19 @@ for i = 1:length(subjects)
      matlabbatch{3}.spm.stats.con.consess{1}.fcon.sessrep = 'repl';
 
     matlabbatch{3}.spm.stats.con.consess{2}.tcon.name = 'pos > neg stimulus';
-    matlabbatch{3}.spm.stats.con.consess{2}.tcon.weights = [.5 -.5];
+    matlabbatch{3}.spm.stats.con.consess{2}.tcon.weights = [1 -1 0 0];
     matlabbatch{3}.spm.stats.con.consess{2}.tcon.sessrep = 'repl';
 
     matlabbatch{3}.spm.stats.con.consess{3}.tcon.name = 'neg > pos stimulus';
-    matlabbatch{3}.spm.stats.con.consess{3}.tcon.weights = [-.5 .5];
+    matlabbatch{3}.spm.stats.con.consess{3}.tcon.weights = [-1 1 0 0];
     matlabbatch{3}.spm.stats.con.consess{3}.tcon.sessrep = 'repl';
 
     matlabbatch{3}.spm.stats.con.consess{4}.tcon.name = 'pos > neg feedback';
-    matlabbatch{3}.spm.stats.con.consess{4}.tcon.weights = [0 0 .5 -.5];
+    matlabbatch{3}.spm.stats.con.consess{4}.tcon.weights = [0 0 1 -1];
     matlabbatch{3}.spm.stats.con.consess{4}.tcon.sessrep = 'repl';
 
     matlabbatch{3}.spm.stats.con.consess{5}.tcon.name = 'neg > pos feedback';
-    matlabbatch{3}.spm.stats.con.consess{5}.tcon.weights = [0 0 -.5 .5];
+    matlabbatch{3}.spm.stats.con.consess{5}.tcon.weights = [0 0 -1 1];
     matlabbatch{3}.spm.stats.con.consess{5}.tcon.sessrep = 'repl';
 
     %% Run

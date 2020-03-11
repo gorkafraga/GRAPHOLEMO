@@ -19,7 +19,7 @@ for i = 1:length(subjects)
         errordlg(['no logfiles found for ', subject,' in ',paths.logs, '!!!']);
         break
     else
-    onset_tables= gather_FBL_onsets (logfiles,paths.logs);
+    onsets = gather_FBL_onsets (logfiles,paths.logs);
     %% find corresponding SCANS
     for j = 1:size(logfiles,1)
       %take a pattern from logfile that can identify its corresponding mr file
@@ -51,17 +51,17 @@ for i = 1:length(subjects)
 
     % loop through sessions (= blocks)
     for s=1:2
-        onsets= onset_tables{s};% take onsets for current sessions
+        
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).scans = cellstr(spm_select('ExtFPList', [paths.mri,'\',subject], scans(s,:), 1:nscans));
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).name = 'stimulus_onset';
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).onset = cell2mat({onsets.stimOnset});
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).onset = cell2mat({onsets(s).stimOnset});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).tmod = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).pmod = struct('name', {}, 'param', {}, 'poly', {});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).orth = 0;
 
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).name = 'feedback_onset';
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).onset = cell2mat({onsets.feedbackOnset});
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).onset = cell2mat({onsets(s).feedbackOnset});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).tmod = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).pmod = struct('name', {}, 'param', {}, 'poly', {});
@@ -69,7 +69,7 @@ for i = 1:length(subjects)
 
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).multi = {''};
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).regress = struct('name', {}, 'val', {});
-         matlabbatch{1}.spm.stats.fmri_spec.sess(s).multi_reg = cellstr(char([paths.mri,'\',subject,'\',rpfiles(s,:)]));
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).multi_reg = cellstr(char([paths.mri,'\',subject,'\',rpfiles(s,:)]));
         %matlabbatch{1}.spm.stats.fmri_spec.sess(s).multi_reg = cellstr(char(rp{s},bad_scans{s}));
     end
     %%
