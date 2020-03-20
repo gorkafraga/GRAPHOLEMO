@@ -46,16 +46,15 @@ info = {'AR1002',{'eread','learn','symctrl'},[2 5 11];
         'AR1055',{'eread','learn','symctrl'},[2 5 10];  
         'AR1056',{'eread','learn','symctrl'},[2 6 10];
         };
-
 % Arrange in structural array
 S = struct('subjID',info(:,1),'file',info(:,2),'b0maps', info(:,3));
 
 %% Find indices of current subject and tasks in struct array
-if ~isempty(find(strcmp(subject,{S.subjID})));
+if ~isempty(find(strcmp(subject,{S.subjID})))
     subidx = find(strcmp(subject,{S.subjID}));
    else
       disp(join(['Cannot find ',subject,' in b0 table !!! [S T O P]']));
-      return
+   return
 end
 
 taskidx=[];

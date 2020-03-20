@@ -48,6 +48,7 @@ for k = 1:numel(tasklist)
         tr = 1.250;
         blocks = 1;
         smoothSize = 6; % smoothing factor in mm
+ 
         timings = [fliplr(round([0:29.76*2:1220.23])),fliplr(round([0:29.76*2:1220.23]))];  
         
     elseif strcmp(tasklist{k},'faceloc')
@@ -56,7 +57,6 @@ for k = 1:numel(tasklist)
         nslices = 42;
         tr = 1.250;
         blocks = 1;
-        smoothSize = 6; % smoothing factor in mm
         timings = [fliplr(round([0:29.76*2:1220.23])),fliplr(round([0:29.76*2:1220.23]))];
         
     end

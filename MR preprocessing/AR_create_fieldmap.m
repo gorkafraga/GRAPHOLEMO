@@ -1,4 +1,4 @@
-function AR_create_fieldmap(studyPath,b0Path, epiPath, b0index,T1template)
+function AR_create_fieldmap(studyPath,b0Path, epiPath, b0index,anatTemplate)
 % create_fieldmap  Creates the vdm5*.nii file (voxel displacement file) for a given fieldmap sequence
 % and a given EPI image. If there are more than one b0 images stored, you
 % have to provide the mr-sequence number from the scanning session.
@@ -22,6 +22,7 @@ function AR_create_fieldmap(studyPath,b0Path, epiPath, b0index,T1template)
 % Original: (c) David Willinger 2018/08/02
 % Adapted by Gorka Fraga Gonzalez (Dec 2019)
     clear matlabbatch
+    
     %studyPath = 'O:\studies\allread\mri\';
     b0Dir = b0Path{1};
     epiDir = [studyPath 'preprocessing\' epiPath{1}];
@@ -139,7 +140,7 @@ function AR_create_fieldmap(studyPath,b0Path, epiPath, b0index,T1template)
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.uflags.fwhm = 10;
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.uflags.pad = 0;
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.uflags.ws = 1;
-        matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.mflags.template = {T1template};
+        matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.mflags.template = {anatTemplate};
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.mflags.fwhm = 5;
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.mflags.nerode = 2;
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.mflags.ndilate = 4;
@@ -151,8 +152,9 @@ function AR_create_fieldmap(studyPath,b0Path, epiPath, b0index,T1template)
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.writeunwarped = 0;
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.anat = '';
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.matchanat = 0;
-        
-        %spm_jobman('interactive', matlabbatch);
+        %spm_jobman('run', matlabbatch);
+       fprintf('>> Created Fieldmap (vdm5*%i*.nii)in %s.\n',b0index,b0Dir)
+
     else
         fprintf('>> WARNING: Fieldmap (vdm5*%i*.nii) already exists in %s, skipping.\n',b0index,b0Dir);
     end

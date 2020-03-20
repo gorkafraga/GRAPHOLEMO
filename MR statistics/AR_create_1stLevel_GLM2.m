@@ -13,8 +13,8 @@ subjects = {'AR1005'};
 %% Begin subject loop    
 for i = 1:length(subjects)
     subject = subjects{i}; 
-     %% set subject output path
-        pathSubject = fullfile(paths.analysis,'\1stlev_GLM2',subject);
+     % set subject output path
+        pathSubject = fullfile(paths.analysis,'\FirstLevel_GLM2',subject);
         if ~isdir(pathSubject)
             mkdir(pathSubject);
         end
@@ -39,9 +39,7 @@ for i = 1:length(subjects)
       patternId = logfiles(k,end-6:end); % block id is used to find correct rp file
       rpfiles(k,:) = ls([paths.mri,'\',subject,'\rp_amr*',patternId]);
     end
-    % ORDER of rp files should correspond to sequence order of Log files!
-   
-  
+    % ORDER of rp files should correspond to sequence order of Log files!  
     %%    SPECIFY 1ST LEVEL %%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     matlabbatch=[];

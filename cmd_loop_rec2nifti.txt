@@ -1,0 +1,30 @@
+for /F %i in ('dir /b /s *.rec') do perl N:\studies\Grapholemo\Methods\Scripts\grapholemo\rec2nifti.pl -s %i
+
+
+for /F %i in ('dir /b /s *_epi_*.rec *_b0_*.rec *_t1_*.rec') do perl N:\studies\Grapholemo\Methods\Scripts\grapholemo\rec2nifti.pl -s %i
+for /F %i in ('dir /b /s *_dti_*.rec') do perl N:\studies\Grapholemo\Methods\Scripts\grapholemo\rec2nifti.pl %i
+
+
+
+
+
+
+
+
+
+
+for /F %i in ('dir /b /s *rec') do perl N:\studies\Grapholemo\Methods\Scripts\grapholemo\rec2nifti.pl -s %i
+
+for /F %i in ('dir /b /s *rec') do ech %i
+
+
+
+for /F %i in ('O:\studies\allread\mri\raw_OK\\eread *') do echo %i
+
+dir /b /s *rec
+
+for /F %i in ('dir /b /s *.nii') do echo %i
+
+for /F %i in ('dir /b /s *.rec') do echo %i
+
+dir /b /s *_epi_*.rec *_b0_*.rec *_t1_*.rec
