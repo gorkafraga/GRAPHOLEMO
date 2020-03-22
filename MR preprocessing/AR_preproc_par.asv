@@ -31,46 +31,42 @@ operationLog = fullfile([studyPath,'preprocessing'], ['Preprocessing_log_',dates
 fid = fopen(operationLog,'wt');
 msg = 'AR_preproc_par started at ';
 fprintf(fid, [msg, datestr(now, 0),'\n']);
-%% BEGIN LOOP 1st thru task, 2nd thru subjects
-for t=1:length(task)
-currTask = tasklist{t};
-paths.task = ['O:\studies\grapholemo\Allread_FBL\Analysis\mri\preprocessing\',currTask];
+%% BEGIN LO
+batch = cell(length(subjects));
+for i=1:length(subjects)
      
-    batch = cell(length(subjects));
-    for i=1:length(subjects)
-         currsubject              = subjects{i};
-         fprintf(fid, ['\nBegin ',currsubject]); %log info
-         b0files = ls([paths.task,'\',currsubject,'\*_b0_*.nii']);
-         %% Do the b0 preprocessing: call CREATE FIELDMAP
-          AR_create_fieldmap(paths.preprocessing,paths.task,anatTemplate)
-                     fprintf(fid,['\n....AR_create_fieldmap run for task: ',tasklist{j}]);
-                end
-         % current_paths.timepoint  = fullfile(paths.prep);
-            %current_paths.epis       = fullfile(paths.epis,currsubject);
-            %current_paths.structural = fullfile(paths.structural,currsubject);
-            % Get b0 info (calls other script to find b0 maps) 
-           % current_b0               = AR_get_b0(currsubject,paths.epis); 
-           % fprintf(fid,['...b0 maps for ',strjoin(tasklist,' and '),'[',num2str(current_b0),'] found']);
-         % Create FIELDMAP FILES (loop thru task files)
-             % current_paths.b0  = fullfile(paths.b0,subjects(i));
-          %for j = 1:length(current_paths.epis) % look thru tasks
-                    %create_simple_fieldmap(current_paths.b0,current_paths.epis(j));
-                    % b0Path = current_paths.b0;
-                     %epiPath = current_paths.epis(j);
-                     %b0index = current_b0(j);
-                     %AR_create_fieldmap(studyPath,current_paths.b0,current_paths.epis(j),current_b0(j),T1template);
-               AR_create_fieldmap(paths.preprocessing,paths.task,anatTemplate)
-                     fprintf(fid,['\n....AR_create_fieldmap run for task: ',tasklist{j}]);
-                end
-         else
-            current_paths.b0 = {''};
-         end
-         [batch{i},batchLog] = AR_create_matlabbatch(current_paths,tasklist);
-          fprintf(fid,['\n....batch for ',subjects{i},' created']);
+    currsubject              = subjects{i};
+    current_paths.timepoint  = fullfile(paths.timepoint);
+    current_paths.epis       = fullfile(paths.epis,currsubject);
+    current_paths.structural = fullfile(paths.structural,currsubject);
+    fprintf(fid, ['\nBegin ',currsubject]);
+    disp(['---~~~[]~~~~~-------']);
+    disp(['START ',currsubject]);
+    
+    % Get b0 info (calls other script to find b0 maps) 
+    current_b0               = AR_get_b0(currsubject,paths.epis); 
+    fprintf(fid,['...b0 maps for ',strjoin(tasklist,' and '),'[',num2str(current_b0),'] found']);
 
+ % Create FIELDMAP FILES (loop thru task files)
+ if useB0
+        current_paths.b0     = fullfile(paths.b0,subjects(i));
+        for j = 1:length(current_paths.epis) % look thru tasks
+            %create_simple_fieldmap(current_paths.b0,current_paths.epis(j));
+            % b0Path = current_paths.b0;
+             %epiPath = current_paths.epis(j);
+             %b0index = current_b0(j);
+             %AR_create_fieldmap(studyPath,current_paths.b0,current_paths.epis(j),current_b0(j),T1template);
+             AR_create_fieldmap(studyPath,current_paths.b0, current_paths.epis(j), current_b0(j),anatTemplate)
+             fprintf(fid,['\n....AR_create_fieldmap run for task: ',tasklist{j}]);
         end
-        fclose(fid);
+ else
+    current_paths.b0 = {''};
+ end
+ [batch{i},batchLog] = AR_create_matlabbatch(current_paths,tasklist);
+  fprintf(fid,['\n....batch for ',subjects{i},' created']);
+
 end
+fclose(fid);
 %%
 if ~isempty(gcp('nocreate'))
     delete(gcp('nocreate'));  
