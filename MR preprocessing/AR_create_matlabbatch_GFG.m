@@ -6,6 +6,7 @@ function [matlabbatch] = AR_create_matlabbatch_GFG(paths,currTask,currsubject,an
 % Needs paths to b0, T1 and epi data.
 %(c) David Willinger. Gorka Fraga Gonzalez (March 2020)
  % function input check
+ clear matlabbatch 
 if nargin < 1
     sprintf('No paths provided!');
     return;
@@ -134,7 +135,7 @@ end
    %% Segmentation  (time consuming. note if running several task batches in parallel may crash)
     %------------------------------------------------------------------------------------------------ 
    %find tissues
-    matlabbatch{3}.spm.spatial.preproc.channel.vols = cellstr(spm_select('FPList',t1Dir, '^mr.*t1.*.nii'));
+    matlabbatch{3}.spm.spatial.preproc.channel.vols = cellstr(spm_select('FPList',t1Dir, '^mr.*.t1.*.nii'));
     matlabbatch{3}.spm.spatial.preproc.channel.biasreg = 0.001;
     matlabbatch{3}.spm.spatial.preproc.channel.biasfwhm = 60;
     matlabbatch{3}.spm.spatial.preproc.channel.write = [0 1];
@@ -204,11 +205,13 @@ end
     matlabbatch{7}.spm.spatial.normalise.write.woptions.vox = [voxelSize voxelSize voxelSize]; % change this 
     matlabbatch{7}.spm.spatial.normalise.write.woptions.interp = 7;
     matlabbatch{7}.spm.spatial.normalise.write.woptions.prefix = 'w';  
+    % Normalized 
     matlabbatch{8}.spm.spatial.smooth.data(1) = cfg_dep('Normalise: Write: Normalised Images (Subj 1)', substruct('.','val', '{}',{7}, '.','val', '{}',{1}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('()',{1}, '.','files'));
     matlabbatch{8}.spm.spatial.smooth.fwhm = [smoothSize smoothSize smoothSize]; 
     matlabbatch{8}.spm.spatial.smooth.dtype = 0;
     matlabbatch{8}.spm.spatial.smooth.im = 0;
     matlabbatch{8}.spm.spatial.smooth.prefix = ['s',num2str(smoothSize)];
+    
     matlabbatch{9}.spm.spatial.normalise.write.subj.def(1) = cfg_dep('Segment: Forward Deformations', substruct('.','val', '{}',{3}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','fordef', '()',{':'}));
     matlabbatch{9}.spm.spatial.normalise.write.subj.resample(1) = cfg_dep('Image Calculator: ImCalc Computed Image: Brain', substruct('.','val', '{}',{5}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','files'));
     matlabbatch{9}.spm.spatial.normalise.write.woptions.bb = [-90 -126 -72

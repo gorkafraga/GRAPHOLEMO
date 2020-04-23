@@ -1,0 +1,38 @@
+%Script to save T1 image of repeated T1 scans
+%clear; close all
+spm fmri
+
+dirinput= 'O:\studies\allread\mri\analysis_GFG\preprocessing\learn_1\t1w';
+destinationFolder = 'O:\studies\allread\mri\analysis_GFG\preprocessing\T1w_QA';
+
+% find source subject folders
+cd (dirinput)
+%subjects
+files=dir([dirinput,'\AR*']);
+subject={files.name};
+%% FIND NIFTIs from epi and copy them into "realignment_check" folder
+for i=1:numel(subject)
+  sfiles = dir([dirinput,'\',subject{i},'\mr*.nii']);
+       for f = 1:length(sfiles)
+        copyfile([sfiles(f).folder,'\',sfiles(f).name],[destinationFolder,'\',sfiles(f).name])     
+       % Check Reg T1 and save figure
+        cd (destinationFolder)
+        spm_check_registration([destinationFolder,'\',sfiles(f).name]);
+        spm_orthviews('Xhairs','off');
+       
+        % RUN 
+         spm_figure('GetWin','Graphics');
+         figure(gcf)
+        % save plot
+          gcf
+          saveas(gcf,strrep([subject{i},'_',sfiles(f).name],'.nii', '.jpg'))
+          %saveas(gcf,strrep(['T1',sfiles(f).name],'.nii','.fig'))
+        % remove nifti file from realignment check
+        tmpfiles = [dir([destinationFolder,'\*.mat']);dir([destinationFolder,'\*.nii']);dir([destinationFolder,'\*.ps'])];
+        if ~isempty(tmpfiles)
+            cd (destinationFolder)
+            cellfun(@delete, {tmpfiles.name})
+        end
+       end
+   
+end

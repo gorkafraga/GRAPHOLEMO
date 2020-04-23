@@ -3,21 +3,22 @@
 rm(list=ls(all=TRUE)) # remove all variables (!)
 Packages <- c("readr", "data.table", "ggplot2","tibble","nlme","lme4","pwr","dplyr","cowplot","tidyr","psych","ggpubr","gridExtra")
 lapply(Packages, require, character.only = TRUE)
-source("N:/Developmental_Neuroimaging/Scripts/Misc R/R-plots and stats/Geom_flat_violin.R")
+source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
 
 #set ins and outs
-dirinput <- "O:/studies/grapholemo/Allread_FBL/Logs" 
-diroutput <-"O:/studies/grapholemo/Allread_FBL/Logs/Plots_per_file" 
+dirinput <-"O:/studies/allread/mri/analysis_GFG/stats/1stLevel_GLM2/learn_12" 
+diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task_performance/learn_12/perSubject" 
 task <- "FeedLearn"
 ntrials <- 40
 
 
 #loop thru files
 setwd(dirinput)
-files <- dir(pattern=paste("*.",task,".*.txt",sep=""))
+files <- dir(dirinput,'*._4stim_.*.txt',recursive = TRUE)
 
+setwd(dirinput)
 for (i in 1:length(files)){
-  #Read File 
+  #Read File ge
   D <- read_delim(files[i],"\t", escape_double = FALSE, locale = locale(), trim_ws = TRUE, skip_empty_rows=TRUE)
   
   if (dim(D)[1] != ntrials) {
@@ -77,7 +78,7 @@ for (i in 1:length(files)){
   
   # Count correct  trials in quartile
   hits_per_quart <-  D[which(D$fb==1),] %>%  group_by(quartile,.drop = FALSE) %>% tally()
-  propHits_per_quart<- cbind(hits_per_quart,round(hits_per_quart$n/(dim(D)[1]/4),2))
+  propHits_per_quart<- cbind(hits_per_quart,round(hits_per_quart$n/(dim(D)[1]/4),2)) 
   colnames(propHits_per_quart)[3] <- "hit_prop"
   
   # RT summary
@@ -89,7 +90,7 @@ for (i in 1:length(files)){
   
   colnames(propHits_per_quart)[3] <- "hit_prop"
   
-  #button presses (to explore biases):
+  # bias in button presses (explore if subject pressed always the same):
   buttons <- D %>% group_by(resp) %>% tally()
   buttons$proportion <- buttons$n/dim(D)[1]
   colnames(buttons)<- c("button","count","proportion")
@@ -223,7 +224,11 @@ combo <-  annotate_figure(combo,text_grob(files[i], color = "blue", face = "bold
        
 # SAVE ~~~~~O ~~O 
 setwd(diroutput)
-outputname <- paste("FIG_",gsub(".txt",".jpg",files[i]),sep="")
+
+subject <- strsplit(files[i],'/')[[1]][1]
+filename <- strsplit(files[i],'/')[[1]][2]
+outputname <- gsub('.txt','.jpg',paste('Performance_',subject,substr(filename,nchar(filename)-6,nchar(filename)),sep=''))
+
 ggsave(outputname,combo,width = 350, height = 310, dpi=300, units = "mm")
 cat(i,"-done.\n")
 setwd(dirinput)

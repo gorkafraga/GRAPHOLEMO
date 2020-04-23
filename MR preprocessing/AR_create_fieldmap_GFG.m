@@ -16,8 +16,7 @@ function AR_create_fieldmap_GFG(currsubject,paths,currTask,anatTemplate)
     epiDir = [paths.task,'epis\',currsubject];
     % work around to find epi filename. Not all our tasks contain 'epi' in the name
     %find all .nii in folder and exclude b0 files
-    epifilename =  dir([epiDir,'\mr*nii']); 
-    epifilename =  epifilename.name;
+     
  %% BEGIN
     overwrite = 1;
     if ~isempty(dir([ b0Dir,'\vdm5*_1_*'])) && overwrite==0
@@ -39,7 +38,7 @@ function AR_create_fieldmap_GFG(currsubject,paths,currTask,anatTemplate)
     %% RETRIEVE SUBJECT ECHO TIMES
     %---------------------------------
     % Find par file with the pattern of current b0
-    parfile = dir([epiDir,'\*.par']);
+    parfile = dir([b0Dir,'\*.par']);
      if length(parfile)~= 1 
        fprintf ('Check your par files ABORT!!!')  
      else
@@ -127,7 +126,7 @@ function AR_create_fieldmap_GFG(currsubject,paths,currTask,anatTemplate)
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.mflags.ndilate = 4;
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.mflags.thresh = 0.5;
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.mflags.reg = 0.02;     
-        matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.session.epi = cellstr(spm_select('ExtFPList', epiDir,epifilename,1)); %first volume of epi file. 
+        matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.session.epi = cellstr(spm_select('ExtFPList', epiDir,'^mr.*.nii',1)); %first volume of epi file. 
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.matchvdm = 1;
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.sessname = 'session';
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.writeunwarped = 0;
@@ -135,7 +134,7 @@ function AR_create_fieldmap_GFG(currsubject,paths,currTask,anatTemplate)
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.matchanat = 0;
 
         % RUN BATCH IN SPM
-        %======================
+        %============================================================
          spm_jobman('run', matlabbatch);
          fprintf('>> Created Fieldmap (vdm5*%i*.nii)in %s.\n',b0Dir)
 

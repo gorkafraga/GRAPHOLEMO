@@ -1,20 +1,20 @@
 
 #Load libraries
 rm(list=ls(all=TRUE)) # remove all variables (!)
-Packages <- c("readr", "data.table", "ggplot2","tibble","nlme","lme4","pwr","dplyr","cowplot","tidyr","psych","ggpubr","gridExtra")
+Packages <- c("readr", "data.table", "ggplot2","tibble","nlme","lme4","pwr","dplyr","cowplot","tidyr","psych","ggpubr","gridExtra","xlsx")
 lapply(Packages, require, character.only = TRUE)
-source("N:/Developmental_Neuroimaging/Scripts/Misc R/R-plots and stats/Geom_flat_violin.R")
+source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
 
 #set ins and outs
-dirinput <- "O:/studies/grapholemo/Allread_FBL/Logs" 
-diroutput <- "O:/studies/grapholemo/Allread_FBL" 
+dirinput <-"O:/studies/allread/mri/analysis_GFG/stats/1stLevel_GLM2/learn_12" 
+diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task_performance/learn_12" 
 task <- "FeedLearn"
 ntrials <- 40
 
 
 #loop thru files
 setwd(dirinput)
-files <- dir(pattern=paste("*.",task,".*.txt",sep=""))
+files <- dir(dirinput,'*._4stim_.*.txt',recursive = TRUE)
 
 dataList<-list()
 cumuList<-list()
@@ -140,9 +140,50 @@ idx_miss <- which(DAT$fb==2)
 
 # CUMULATIVE SCORE Avg per subject to add to plot
 SUCUMU <- CUMU %>% group_by(subjID,rep,stim) %>%  summarise(subAvg=mean(value))
-
-
 nsubjects<- length(unique(DAT$subjID))
+
+#-------------------------------------------------------
+# ======================================================
+#                     Summary 
+# ======================================================
+#------------------------------------------------------
+# Code sessions (1 or 2)
+DAT$session <- DAT$block
+allSubjects <- unique(DAT$subjID)
+for (ss in 1:length(allSubjects)){
+  currSession <- DAT[which(DAT$subjID==allSubjects[ss]),session]
+  currSession[which(currSession==min(currSession))] <- 1
+  currSession[which(currSession==max(currSession))] <- 2
+  
+  DAT$session[which(DAT$subjID==allSubjects[ss])] <- currSession
+  print('ok')
+}
+DAT$session <- as.integer(DAT$session)
+
+tab2save <- cbind(DAT %>%  group_by(subjID,session,fb,.drop=FALSE) %>% tally())
+
+Session1 <- cbind(DAT %>% filter(session==1) %>% filter(fb==0) %>% group_by(subjID,.drop=FALSE) %>% tally(),
+                  DAT %>%  filter(session==1) %>% filter(fb==1) %>% group_by(subjID,.drop=FALSE) %>% tally(),
+                  DAT %>%  filter(session==1) %>% filter(fb==2) %>% group_by(subjID,.drop=FALSE) %>% tally())
+           Session1 <- Session1[,c(1,2,4,6)]
+           colnames(Session1)<-c('subjID','Task_Learn1_inc','Task_Learn1_con','Task_Learn1_miss')
+           
+ Session2 <- cbind(DAT %>% filter(session==2) %>% filter(fb==0) %>% group_by(subjID,.drop=FALSE) %>% tally(),
+                 DAT %>%  filter(session==2) %>% filter(fb==1) %>% group_by(subjID,.drop=FALSE) %>% tally(),
+                 DAT %>%  filter(session==2) %>% filter(fb==2) %>% group_by(subjID,.drop=FALSE) %>% tally())
+            Session2 <- Session2[,c(1,2,4,6)]
+            colnames(Session2) <-c('subjID','Task_Learn2_inc','Task_Learn2_con','Task_Learn2_miss')
+            
+ AllSessions <- cbind(DAT %>%  filter(fb==0) %>% group_by(subjID,.drop=FALSE) %>% tally(),
+                      DAT %>% filter(fb==1) %>% group_by(subjID,.drop=FALSE) %>% tally(),
+                      DAT %>% filter(fb==2) %>% group_by(subjID,.drop=FALSE) %>% tally())
+                AllSessions <- AllSessions[,c(1,2,4,6)]
+                colnames(AllSessions) <-c('subjID','Task_Learn12_inc','Task_Learn12_con','Task_Learn12_miss')
+
+# aggregate and save
+tab2save <- cbind(AllSessions,Session1,Session2)
+write.xlsx(tab2save,paste(diroutput,"/Performance_summary.xls",sep=""),row.names = FALSE)
+ 
 #-------------------------------------------------------
 # ======================================================
 #                     PLOT 
@@ -302,7 +343,13 @@ nsubjects<- length(unique(DAT$subjID))
     
     # SAVE ~~~~~O ~~O 
     setwd(diroutput)
-    outputname <- paste("GroupFIG (",nsubjects,"ss).jpg",sep="")
+    
+    
+    subject <- strsplit(files[i],'/')[[1]][1]
+    filename <- strsplit(files[i],'/')[[1]][2]
+    outputname <- gsub('.txt','.jpg',paste('GroupPerformance_',nsubjects,'ss',substr(filename,nchar(filename)-3,nchar(filename)),sep=''))
+    
+    
     ggsave(outputname,combo,width = 350, height = 310, dpi=300, units = "mm")
     cat("Done. File",outputname, " Saved in ", diroutput,"\n")
     setwd(dirinput)
