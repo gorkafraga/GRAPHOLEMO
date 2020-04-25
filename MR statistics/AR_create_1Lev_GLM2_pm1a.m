@@ -1,10 +1,10 @@
-function [matlabbatch] =  AR_create_1stLevel_GLM2(pathSubject,scans,onsets,nsessions,pcorr,pthresh,nvoxels)
+function [matlabbatch] =  AR_create_1Lev_GLM2_pm1a(pathSubject,scans,onsets,nsessions,pcorr,pthresh,nvoxels)
     if nargin < 1
         sprintf('No paths provided!');
         return;
     else
     end  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %% BATCH FOR 2nd LEVEL %%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     matlabbatch=[];

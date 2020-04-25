@@ -12,9 +12,12 @@
 %-------------------------------------------------------------------------
 clear all
 %path to preprocess data / epis . 
-preprocessingDir= 'O:\studies\allread\mri\analysis_GFG\preprocessing\learn_1\epis\'; % slash '\' at the end! EPIS directory! not its parent dir 
+preprocessingDir= 'G:\local_prepro\learn_2\epis\'; % slash '\' at the end! EPIS directory! not its parent dir 
 %subject list
-subject =  {'AR1005'}%{'AR1005','AR1016','AR1017','AR1022','AR1025','AR1026','AR1027','AR1028','AR1036','AR1037','AR1038','AR1041','AR1042','AR1043','AR1047','AR1048',...
+files = dir('G:\local_prepro\learn_1\epis\AR*');
+files = files(~contains({files.name},'AR1026')); 
+subject = {files.name};
+%{'AR1005','AR1016','AR1017','AR1022','AR1025','AR1026','AR1027','AR1028','AR1036','AR1037','AR1038','AR1041','AR1042','AR1043','AR1047','AR1048',...
             %'AR1052','AR1055','AR1056','AR1062',...
           % 'AR1063','AR1066','AR1068','AR1069'};
 cd (preprocessingDir)

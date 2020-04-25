@@ -1,4 +1,4 @@
-function [matlabbatch] =  AR_create_1stLevel_GLM1(pathSubject,scans,onsets,nsessions,pcorr,pthresh,nvoxels)
+function [matlabbatch] =  AR_create_1Lev_GLM1(pathSubject,scans,onsets,nsessions,pcorr,pthresh,nvoxels)
 if nargin < 1
     sprintf('No paths provided!');
     return;

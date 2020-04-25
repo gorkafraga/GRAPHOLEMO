@@ -20,7 +20,7 @@ elseif  chooseGLM==11
      paths.analysis = 'O:\studies\allread\mri\analysis_GFG\stats\1stLevel_GLM1pm\learn_12';
 elseif  chooseGLM==2
      paths.analysis = 'O:\studies\allread\mri\analysis_GFG\stats\1stLevel_GLM2\learn_12';
-elseif  chooseGLM==21
+elseif  chooseGLM==211
      paths.analysis = 'O:\studies\allread\mri\analysis_GFG\stats\1stLevel_GLM2pm\learn_12';
 else 
     disp('Specify your GLM!')
@@ -106,11 +106,11 @@ for i =1:length(subjects)
      disp(['><((((^>  Skipping ',subject,'! No negative feedback found in at least one session.'])            
   else
       if chooseGLM ==1 
-        matlabbatch = AR_create_1stLevel_GLM1(pathSubject,scans,onsets,nsessions,pcorr,pthresh,nvoxels);
+        matlabbatch = AR_create_1Lev_GLM1(pathSubject,scans,onsets,nsessions,pcorr,pthresh,nvoxels);
       elseif   chooseGLM ==2 
-         matlabbatch = AR_create_1stLevel_GLM2(pathSubject,scans,onsets,nsessions,pcorr,pthresh,nvoxels);
-      elseif  chooseGLM==21
-         matlabbatch = AR_create_1stLevel_GLM2pm(pathSubject,scans,onsets,params,nsessions,pcorr,pthresh,nvoxels);
+         matlabbatch = AR_create_1Lev_GLM2(pathSubject,scans,onsets,nsessions,pcorr,pthresh,nvoxels);
+      elseif  chooseGLM==211
+         matlabbatch = AR_create_1Lev_GLM2_pm11(pathSubject,scans,onsets,params,nsessions,pcorr,pthresh,nvoxels);
       end
 
       spm_jobman('run',matlabbatch);

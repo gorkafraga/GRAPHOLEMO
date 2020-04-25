@@ -15,11 +15,14 @@ spm_jobman('initcfg');
 addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR preprocessing\') 
 % Inputs setup
 %------------------------------
-subjects =  {'AR1005','AR1016','AR1017','AR1022','AR1025','AR1026','AR1027','AR1028','AR1036','AR1037','AR1038',...
-     'AR1041','AR1042','AR1043','AR1047','AR1048','AR1052','AR1055','AR1056','AR1062','AR1063','AR1066','AR1068','AR1069'}; %subjects = {'AR1038','AR1042','AR1045','AR1046','AR1048','AR1055','AR1056'}; %subjects = {'AR1002','AR1004','AR1006','AR1007','AR1008','AR1009','AR1011','AR1016','AR1018','AR1021','AR1023','AR1025','AR1031','AR1035','AR1036','AR1038','AR1042','AR1045','AR1046','AR1048','AR1055','AR1056'}; 
-tasklist =  {'learn_2'}; %Recommended to take one task at a time.  [eread, learn, localizer, symCtrl]   
+ files = dir('G:\local_prepro\learn_1\epis\AR*');
+ files = files(~contains({files.name},'AR1026')); 
+ subjects = {files.name};
+%subjects =  {'AR1005','AR1016','AR1017','AR1022','AR1025','AR1026','AR1027','AR1028','AR1036','AR1037','AR1038',...
+ %    'AR1041','AR1042','AR1043','AR1047','AR1048','AR1052','AR1055','AR1056','AR1062','AR1063','AR1066','AR1068','AR1069'}; %subjects = {'AR1038','AR1042','AR1045','AR1046','AR1048','AR1055','AR1056'}; %subjects = {'AR1002','AR1004','AR1006','AR1007','AR1008','AR1009','AR1011','AR1016','AR1018','AR1021','AR1023','AR1025','AR1031','AR1035','AR1036','AR1038','AR1042','AR1045','AR1046','AR1048','AR1055','AR1056'}; 
+tasklist =  {'learn_1','learn_2'}; %Recommended to take one task at a time.  [eread, learn, localizer, symCtrl]   
 % PATHS (end character should be \ )
-paths.preprocessing = 'O:\studies\allread\mri\analysis_GFG\preprocessing\';
+paths.preprocessing = 'G:\local_prepro\';
 
 %% BEGIN TASK LOOP
 cd (paths.preprocessing)
