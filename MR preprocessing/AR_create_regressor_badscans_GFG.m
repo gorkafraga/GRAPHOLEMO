@@ -10,12 +10,12 @@
 % - Another output text file shows percent and count of flagged scans 
 
 clear all; close all;  %clear workspace
-epipath = 'O:\studies\allread\mri\analysis_GFG\preprocessing\learn_2\epis\'; % epis parent folder 
+epipath = 'O:\studies\allread\mri\analysis_GFG\preprocessing\learn_1\epis\'; % epis parent folder 
 %subject =   {'AR1005','AR1016','AR1017','AR1022','AR1025','AR1026','AR1027','AR1028','AR1036','AR1037','AR1038',...
 %     'AR1041','AR1042','AR1043','AR1047','AR1048','AR1052','AR1055','AR1056','AR1062','AR1063','AR1066','AR1068','AR1069'};
-
-
-%subject={'AR1025'}
+files = dir([epipath,'\AR*']);
+subject= {files.name};
+subject={'AR1026'}
 N_scans=273; % number of dynamic scans, change this for the different tasks!
 %%
 for i=1:length(subject) % loop over all subjects

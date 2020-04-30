@@ -1,4 +1,5 @@
-function [matlabbatch] =  AR_create_1Lev_GLM2_pm1a(pathSubject,scans,onsets,nsessions,pcorr,pthresh,nvoxels)
+function [matlabbatch] =  AR_create_1Lev_GLM2_pm1a(pathSubject,scans,onsets,params,nsessions,pcorr,pthresh,nvoxels)
+                                                    
     if nargin < 1
         sprintf('No paths provided!');
         return;
@@ -23,15 +24,21 @@ function [matlabbatch] =  AR_create_1Lev_GLM2_pm1a(pathSubject,scans,onsets,nses
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).onset = onsets(s).stimOnset_pos;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).tmod = 0;
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).pmod = struct('name', {}, 'param', {}, 'poly', {});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).orth = 0;
+            %    parametric modulator
+            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).pmod(1).name = 'RT_pos';
+            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).pmod(1).param = params(s).rt_pos;
+            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).pmod(1).poly = 1;
         % onsets2 
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).name = 'stimOnset_neg';
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).onset = onsets(s).stimOnset_neg;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).tmod = 0;
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).pmod = struct('name', {}, 'param', {}, 'poly', {});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).orth = 0;
+           %parametric modulator
+            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).pmod(1).name = 'RT_neg';
+            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).pmod(1).param = params(s).rt_neg;
+            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).pmod(1).poly = 1;
         % onsets3 
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).name = 'fbOnset_pos';
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).onset = onsets(s).fbOnset_pos;
@@ -71,23 +78,23 @@ function [matlabbatch] =  AR_create_1Lev_GLM2_pm1a(pathSubject,scans,onsets,nses
     matlabbatch{3}.spm.stats.con.spmmat(1) = cfg_dep('Model estimation: SPM.mat File', substruct('.','val', '{}',{2}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','spmmat'));
     %fcontrast
     matlabbatch{3}.spm.stats.con.consess{1}.fcon.name = 'Effects of interest';
-    matlabbatch{3}.spm.stats.con.consess{1}.fcon.weights = eye(4);
+    matlabbatch{3}.spm.stats.con.consess{1}.fcon.weights = eye(6);
     matlabbatch{3}.spm.stats.con.consess{1}.fcon.sessrep = 'repl';
     %t-contrasts 1 
     matlabbatch{3}.spm.stats.con.consess{2}.tcon.name = 'pos > neg stimulus';
-    matlabbatch{3}.spm.stats.con.consess{2}.tcon.weights = [1 -1 0 0];
+    matlabbatch{3}.spm.stats.con.consess{2}.tcon.weights = [1 0 -1 0 0 0];
     matlabbatch{3}.spm.stats.con.consess{2}.tcon.sessrep = 'repl';
     %t-contrasts 2 
     matlabbatch{3}.spm.stats.con.consess{3}.tcon.name = 'neg > pos stimulus';
-    matlabbatch{3}.spm.stats.con.consess{3}.tcon.weights = [-1 1 0 0];
+    matlabbatch{3}.spm.stats.con.consess{3}.tcon.weights = [-1 0 1 0 0 0];
     matlabbatch{3}.spm.stats.con.consess{3}.tcon.sessrep = 'repl';
     %t-contrasts 3
     matlabbatch{3}.spm.stats.con.consess{4}.tcon.name = 'pos > neg feedback';
-    matlabbatch{3}.spm.stats.con.consess{4}.tcon.weights = [0 0 1 -1];
+    matlabbatch{3}.spm.stats.con.consess{4}.tcon.weights = [0 0 0 0 1 -1];
     matlabbatch{3}.spm.stats.con.consess{4}.tcon.sessrep = 'repl';
     %t-contrasts 4
     matlabbatch{3}.spm.stats.con.consess{5}.tcon.name = 'neg > pos feedback';
-    matlabbatch{3}.spm.stats.con.consess{5}.tcon.weights = [0 0 -1 1];
+    matlabbatch{3}.spm.stats.con.consess{5}.tcon.weights = [0 0 0 0 -1 1];
     matlabbatch{3}.spm.stats.con.consess{5}.tcon.sessrep = 'repl';
    
     % print some output pictures %%%%%%%%
