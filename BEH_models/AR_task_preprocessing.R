@@ -12,8 +12,8 @@ lapply(Packages, require, character.only = TRUE)
 #--------------------------------------------------------------------------------------------
 # REFS: e.g. From Pederson et al.,2017 https://github.com/gbiele/RLDDM/blob/master/RLDDM.jags.txt 
 #set dirs
-dirinput <- "O:/studies/grapholemo/Allread_FBL/Logs"
-diroutput <- "O:/studies/grapholemo/Analysis/models"
+dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/logs"
+diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/preprocessed"
 setwd(dirinput)
 #Some starting info
 nblocks <- 3 #number of blocks
@@ -21,6 +21,7 @@ ntrials <- 40   # number of trials per block
 stims_per_block <- 4 # number of stimuli to be learned per block
 RTbound <- 0.15 #set a limit to 'too fast' responses
 files <- dir(pattern=paste("*.4stim_.*",".txt",sep=""), recursive=TRUE)
+#files <-sapply(strsplit(files,"/"),"[",2) #take just filename without subject's directory
 taskpattern<- "FeedLearn_MRI"
 
 # Sanity check! Check that subjects have more than nblocks blocks
@@ -30,11 +31,17 @@ for (i in 1:length(files)){
   subjects[i] <-substr(files[i],1,(regexpr(taskpattern,files[i])[[1]]-2)) # find pattern of task and take preceding characters
 }
 subjects <- unique(subjects)
+`%!in%` = Negate(`%in%`) 
+#subjects <- subjects[which(subjects %!in% "AR1025")] # exclude bad subjects
+
 nsubjects <- length(unique(subjects))
 for (j in 1:length(unique(subjects))){
   if  (length(grep(subjects[j],files))>nblocks) {  cat(subjects[j]," has more than",nblocks," blocks!\n") }
   else { cat(subjects[j],"is OK. n blocks =",length(grep(subjects[j],files)),"\n")           }
 }
+
+
+
 # Gather all data 
 # -------------------
 datalist <- list()
@@ -57,7 +64,8 @@ for (f in 1:length(files)){
     break  }
   
   # Add to list 
-  ssInf <- rep(substr(files[f],1,(regexpr(taskpattern,files[f])[[1]]-2)),dim(raw)[1])
+  ssInf<- rep(sapply(strsplit(files[f],'/'),'[',1),dim(raw)[1]) #repeat subject name each row
+  #ssInf <- rep(substr(files[f],1,(regexpr(taskpattern,files[f])[[1]]-2)),dim(raw)[1])
   datalist[[f]] <- cbind(ssInf,raw)
 }
 rawG <- data.table::rbindlist(datalist) # combine all data frames in on
@@ -70,7 +78,7 @@ colnames(rawG)[1] <- "subjID"
 rawG$rt <- rawG$rt/1000
 names(rawG)[names(rawG)=="rt"] <- "RT"
 
-# Remove response trials and too quick responses
+# Remove response trials with too quick responses
 T <- filter(rawG,fb!=2)
 T <- filter(T,RT>RTbound)
 T <- data.table(T)
@@ -146,10 +154,15 @@ dat <- list("N" = n_subj, "T"=n_trials,"RTbound" = 0.15,"minRT" = minRT,
             "RT" = T$RT, "first" = first, "last" = last, "value"=value, 
             "n_stims"=stims_per_block*blocks)
 
+
+#Save 
+#####################################
 #save list as file to read later
 setwd(diroutput)
 save(dat,file="Gathered_list_for_Stan")
 save(T,file="Gathered_data")
+
+write.csv(T,file="Gathered_data.csv",row.names = FALSE)
 
 
 
