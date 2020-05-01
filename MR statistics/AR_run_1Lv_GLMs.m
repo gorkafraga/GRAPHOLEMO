@@ -12,7 +12,7 @@ clear all
 close all
 
 %Chooice your GLM of interest
-selectedGLM = 'GLM2';
+selectedGLM = 'GLM1';
 %Specifies the folders assigned to each GLM 
 diroutputChoices = containers.Map({'GLM0','GLM1','GLM1_pm1a','GLM2','GLMDUMMY'},...
         {'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM0\learn_12',... 

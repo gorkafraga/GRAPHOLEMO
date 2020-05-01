@@ -20,63 +20,41 @@ function [matlabbatch] =  AR_create_1Lv_GLM1_pm1a(pathSubject,scans,onsets,param
         %Scans
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).scans =  scans{s}; 
         % onsets1 
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).name = 'stimOnset_pos';
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).name = 'stim_pos';
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).onset = onsets(s).stimOnset_pos;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).tmod = 0;
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).pmod = struct('name', {}, 'param', {}, 'poly', {});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).orth = 0;
-            %    parametric modulator
-            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).pmod(1).name = 'RT_pos';
-            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).pmod(1).param = params(s).rt_pos;
-            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(1).pmod(1).poly = 1;
         % onsets2 
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).name = 'stimOnset_neg';
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).name = 'stim_neg';
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).onset = onsets(s).stimOnset_neg;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).tmod = 0;
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).pmod = struct('name', {}, 'param', {}, 'poly', {});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).orth = 0;
-           %parametric modulator
-            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).pmod(1).name = 'RT_neg';
-            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).pmod(1).param = params(s).rt_neg;
-            matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(2).pmod(1).poly = 1;
-            
         % onsets3 
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).name = 'fbOnset_pos';
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).name = 'fb_pos';
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).onset = onsets(s).fbOnset_pos;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).tmod = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).pmod = struct('name', {}, 'param', {}, 'poly', {});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(3).orth = 0;
         % onsets4
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).name = 'fbOnset_neg';
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).name = 'fb_neg';
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).onset = onsets(s).fbOnset_neg;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).tmod = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).pmod = struct('name', {}, 'param', {}, 'poly', {});
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(4).orth = 0;    
-         %
-        % onsets5 
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(5).name = 'respOnset_pos';
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(5).onset = onsets(s).respOnset_pos;
+        
+        % onsets 5: stimuli and feedback onsets for trials with missing(or too late)  responses
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(5).name = 'miss';
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(5).onset = sort([onsets(s).stimOnset_miss;onsets(s).fbOnset_miss],'ascend');
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(5).duration = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(5).tmod = 0;
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(5).pmod = struct('name', {}, 'param', {}, 'poly', {});
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(5).orth = 0;
-        % onsets6
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(6).name = 'respOnset_neg';
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(6).onset = onsets(s).respOnset_neg;
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(6).duration = 0;
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(6).tmod = 0;
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(6).pmod = struct('name', {}, 'param', {}, 'poly', {});
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(6).orth = 0; 
-        
-        % onsets 7: stimuli and feedback onsets for trials with missing(or too late)  responses
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(7).name = 'stimANDfb_miss';
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(7).onset = sort([onsets(s).stimOnset_miss;onsets(s).fbOnset_miss],'ascend');
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(7).duration = 0;
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(7).tmod = 0;
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(7).pmod = struct('name', {}, 'param', {}, 'poly', {});
-        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(7).orth = 0;  
+        matlabbatch{1}.spm.stats.fmri_spec.sess(s).cond(5).orth = 0;   
         %Multiregressors
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).multi = {''};
         matlabbatch{1}.spm.stats.fmri_spec.sess(s).regress = struct('name', {}, 'val', {});
