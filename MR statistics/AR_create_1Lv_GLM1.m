@@ -5,7 +5,7 @@ function [matlabbatch] =  AR_create_1Lv_GLM1(pathSubject,scans,onsets,nsessions)
     else
     end  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
-%% BATCH FOR 2nd LEVEL %%%%%%%%
+%% BATCH FOR 1st LEVEL %%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     matlabbatch=[];
     matlabbatch{1}.spm.stats.fmri_spec.dir = cellstr(pathSubject);

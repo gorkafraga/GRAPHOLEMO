@@ -95,6 +95,7 @@ end
             delete(gcp('nocreate'));  
     end
 
+ 
     if length(contrast) < 8
         parpool(length(contrast));
     else
@@ -106,8 +107,7 @@ end
     end    
 %% Save table with contrasts run and subjects
 contrast_table = struct2table(contrast);
-writetable(contrast_table,[diroutput,'\Codebook_contrasts_from',selectedGLM,'.csv']);
+writetable(contrast_table,[diroutput,'\Codebook_contrasts_from',selectedGLM,'.csv'])
 
 subjects_table = cell2table(subjects');
-subjects_table.Properties.VariableNames = {'subjects'};
-writetable(subjects_table,[diroutput,'\Subjects_from',selectedGLM,['_n',num2str(length(subjects))],'.csv']);
+writetable(contrast_table,[diroutput,'\Subjects_from',selectedGLM,'.csv'])

@@ -6,7 +6,8 @@ rm(list=ls(all=TRUE)) # remove all variables (!)
 Packages <- c("readr","tidyr","dplyr","viridis","data.table","StanHeaders","rstan",
               "hBayesDM","Rcpp","rstanarm","boot","loo","bayesplot","cowplot","ggpubr")
 lapply(Packages, require, character.only = TRUE)
-source("N:/Developmental_Neuroimaging/Scripts/Misc R/R-plots and stats/Geom_flat_violin.R")
+
+source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
 #=====================================================================================
 # RUN MODEL (with Stan)
 #=====================================================================================
@@ -16,26 +17,56 @@ source("N:/Developmental_Neuroimaging/Scripts/Misc R/R-plots and stats/Geom_flat
 # 
 #--------------------------------------------------------------------------------------------
 # REFS: e.g. From Pederson et al.,2017 https://github.com/gbiele/RLDDM/blob/master/RLDDM.jags.txt 
-#set dirs
-dirinput <- "O:/studies/grapholemo/Analysis/models"
+#------------------------------------------------------------------------------------------------
+# Set inputs 
+source('N:/studies/Grapholemo/Methods/Scripts/grapholemo/BEH_models/run_rlddm.R')
+dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/preprocessed"
 diroutput <- dirinput
-model_path <- "N:/studies/Grapholemo/Scripts/grapholemo/RLDDM_v01_GFG.stan"
+modelpath <- "N:/studies/Grapholemo/Methods/Scripts/grapholemo/BEH_models/Stan"
+choiceModel <- 'rlddm1'
 
-
+#------------------------------------------------------------------------------------------------
+# Get preprocessed input data and list of variables and settings for the  model
 setwd(dirinput)
-load("Gathered_data") #read gathered data (that will be combined with model parameters later)
-load("Gathered_list_for_Stan") #read list with gather data input for model
+load("Gathered_data") 
+load("Gathered_list_for_Stan") 
 
-# LOAD MODEL  #
-###############
-# rstan_options(auto_write = TRUE)
-# options(mc.cores = parallel::detectCores())
-# Sys.setenv(LOCAL_CPPFLAGS = '-march=native')
+# Execution settings for faster processing 
+#options(mc.cores = parallel::detectCores()) # for execution on local, multicore CPU with excess RAM
+#options(mc.cores = 4)
+rstan_options(auto_write = TRUE) #avoid recompilation of unchanged Stan programs
+#Sys.setenv(LOCAL_CPPFLAGS = '-march=corei7 -mtune=corei7') # Comment this if you get errors.But else, this could improve execution times
 
-stanmodel <- rstan::stan_model(model_path)
+# Create STANMODEL object with our model 
+if (!exists("stanmodel")){
+  stanmodel <- rstan::stan_model(paste0('N:/studies/Grapholemo/Methods/Scripts/grapholemo/BEH_models/Stan/',choiceModel,'.stan'))
+} else { cat("It seems you already created a model??\n")
+}
 
+## Model sampling inputs 
+myparameters <- c("a","v_mod","tau","eta_pos","eta_neg","mu_a","mu_v_mod","mu_tau","mu_eta_pos","mu_eta_neg","sigma","sigma_eta",
+                  "v_hat", "pe_tot_hat", "pe_pos_hat", "pe_neg_hat",  "log_lik")
+mychains <- 4 # numer of mcmc chains
+myiter <- 10000
+mywarmup <- 4000 # from iterations, how many will be warm ups
 
-fit <- rstan::sampling(object  = stanmodel,
+###### Fit model ##    _m_d('_')b_m_  (draws samples, takes time)
+#-------------------------------------------------------------------------------------
+cat("Fitting model",basename(choiceModel),"...\n")
+stanfit <- rstan::sampling(object  = stanmodel,
+                           data    = dat,
+                           pars    = myparameters,
+                           chains  = mychains,
+                           iter    = myiter,
+                           warmup  = mywarmup,
+                           thin    = 1,
+                           init_r =  1,
+                           save_warmup = FALSE,
+                           control = list(adapt_delta   = 0.99,stepsize = 0.01,max_treedepth = 12),
+                           verbose =FALSE)
+#-------------------------------------------------------------------------------------
+
+fit <- rstan::sampling(object  = model,
                        data    = dat,
                        pars    = c("alpha","v_mod","tau","assoc_active_pair",
                                    "assoc_inactive_pair","delta_hat","pe_hat",

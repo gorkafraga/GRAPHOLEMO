@@ -74,11 +74,13 @@ function AR_create_fieldmap_GFG(currsubject,paths,currTask,anatTemplate)
         if strcmp(currTask,'eread')
             epifactor  = 31; % EPI factor
             matrixsize_phase_enc_dir = 62; % nr of echos (y value of scan resolution in .par file)
-            water_fat_shift_pixel = 8.90;       
+            water_fat_shift_pixel = 8.90;     
+            sensefactor                 = 2;        
         elseif strcmp(currTask,'learn_1')             
             epifactor  = 31; % EPI factor
             matrixsize_phase_enc_dir = 62; % nr of echos (y value of scan resolution in .par file)
             water_fat_shift_pixel = 12.47; 
+            sensefactor                 = 2;        
         elseif strcmp(currTask,'learn_2') 
             epifactor  = 31; % EPI factor
             matrixsize_phase_enc_dir = 62; % nr of echos (y value of scan resolution in .par file)
@@ -86,22 +88,24 @@ function AR_create_fieldmap_GFG(currsubject,paths,currTask,anatTemplate)
         elseif strcmp(currTask,'learn_3')           
             epifactor  = 31; % EPI factor
             matrixsize_phase_enc_dir = 62; % nr of echos (y value of scan resolution in .par file)
-            water_fat_shift_pixel = 12.47;             
+            water_fat_shift_pixel = 12.47;   
+            sensefactor                 = 2;        
         elseif strcmp(currTask,'symCtrl')              
             epifactor  = 33; % EPI factor
             matrixsize_phase_enc_dir = 66; %nr of echos (y value of scan resolution in .par file)
             water_fat_shift_pixel = 9.68;
+            sensefactor                 = 2;        
         elseif strcmp(currTask,'localizer')           
             epifactor  =  33; % EPI factor
             matrixsize_phase_enc_dir = 66; % nr of echos (y value of scan resolution in .par file)
             water_fat_shift_pixel = 9.68; 
+            sensefactor                 = 2;        
         end
         
        %FIXED parameters
         resonance_freq_mhz_tesla    = 42.576; % gyromagnetic ratio for proton (1H)
         fieldstrength_tesla         = 3.0;  % magnetic field strength (T)
         water_fat_diff_ppm          = 3.35; % Haacke et al: 3.35ppm. Bernstein et al (pg. 960): Chemical shifts (ppm, using protons in tetramethyl silane Si(CH3)4 as a reference). Protons in lipids ~1.3, protons in water 4.7, difference: 4.7 - 1.3 = 3.4.
-        sensefactor                 = 2;        
         water_fat_shift_hz          = fieldstrength_tesla * water_fat_diff_ppm * resonance_freq_mhz_tesla; % water_fat_shift_hz 3T = 427.8888 Hz?
         %More task-dependent calculations
         echo_train_length           = epifactor + 1;
