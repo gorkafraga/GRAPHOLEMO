@@ -40,8 +40,8 @@ transformed parameters {
   vector<lower=RTbound, upper=max(minRT)>[N] tau; // // tau (ter): Nondecision time + Motor response time + encoding time
 
   a = exp(mu_pr[1] + sigma[1] * a_pr); //
-  eta_pos = 0.1*Phi_approx(mu_eta_pr[1] + sigma_eta[1] * eta_pos_pr);
-  eta_neg = 0.1*Phi_approx(mu_eta_pr[2] + sigma_eta[2] * eta_neg_pr);
+  eta_pos = 0.05*Phi_approx(mu_eta_pr[1] + sigma_eta[1] * eta_pos_pr);
+  eta_neg = 0.05*Phi_approx(mu_eta_pr[2] + sigma_eta[2] * eta_neg_pr);
   a_mod = exp(mu_pr[2] + sigma[2] * a_mod_pr);
   v_mod = exp(mu_pr[3] + sigma[3] * v_mod_pr);
   for (s in 1:N) {
@@ -68,16 +68,16 @@ model {
   tau_pr   ~ normal(0, 1);
   // Begin subject loop
   // until second last 
-  for (s in 1:N) {
-    for(p in 1:n_stims[s]){
-      // ev for pos values
+  for (s in 1:N) {  
+    for(p in 1:n_stims[s]){      
+      // ev for pos values starts in 0.5 for all stimuli of this subject
       ev[first[s],p] = 0.5;
     }
     for(trial in (first[s]):(last[s]-1)) {
       for(p in 1:n_stims[s]){
-        ev[trial+1,p] = ev[trial,p];
+        ev[trial+1,p] = ev[trial,p]; 
       }
-      // if lower bound
+      // if lower bound (incorrect resp,that is response= 1)
       if (response[trial]==1){
         v[trial] = -((ev[trial,stim_assoc[trial]] + ev[trial,stim_nassoc[trial]])/2 * v_mod[s]);
         RT[trial] ~  wiener(a[s] * pow(iter[trial]/10,a_mod[s]),tau[s] ,0.5,v[trial]);

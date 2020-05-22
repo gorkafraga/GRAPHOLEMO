@@ -1,10 +1,11 @@
-%Script to save T1 image of repeated T1 scans
-%clear; close all
+%Script to save T1 image 
+clear; close all
+
 spm fmri
 
 dirinput= 'O:\studies\allread\mri\analysis_GFG\preprocessing\learn_1\t1w';
 destinationFolder = 'O:\studies\allread\mri\analysis_GFG\preprocessing\T1w_QA';
-
+mkdir(destinationFolder)
 % find source subject folders
 cd (dirinput)
 %subjects

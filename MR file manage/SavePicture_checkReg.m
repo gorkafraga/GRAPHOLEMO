@@ -3,9 +3,9 @@
 spm fmri
 
 dirinput= 'O:\studies\allread\mri\analysis_GFG\preprocessing\learn_2\epis';
-t1dirinput = 'O:\studies\allread\mri\analysis_GFG\preprocessing\learn_2\t1w'
+t1dirinput = 'O:\studies\allread\mri\analysis_GFG\preprocessing\learn_2\t1w';
 destinationFolder = 'O:\studies\allread\mri\analysis_GFG\preprocessing\QA_checkReg\learn_2';
-%mkdir(destinationFolder)
+mkdir(destinationFolder)
 % find source subject folders
 cd (dirinput)
 cd (destinationFolder)

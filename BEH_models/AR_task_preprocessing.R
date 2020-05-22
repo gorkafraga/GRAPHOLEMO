@@ -11,41 +11,43 @@ lapply(Packages, require, character.only = TRUE)
 # - Save formatted and gathered data as txt file
 #--------------------------------------------------------------------------------------------
 # REFS: e.g. From Pederson et al.,2017 https://github.com/gbiele/RLDDM/blob/master/RLDDM.jags.txt 
+
 #set dirs
 dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/logs"
-diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/preprocessed"
+diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/model"
+dirmrfirstlevel <- "O:/studies/allread/mri/analysis_GFG/stats/mri/1Lv_GLM1/learn_12" # use this to find your subjects
+
 setwd(dirinput)
 #Some starting info
-nblocks <- 3 #number of blocks
-ntrials <- 40   # number of trials per block
-stims_per_block <- 4 # number of stimuli to be learned per block
-RTbound <- 0.15 #set a limit to 'too fast' responses
+nblocks <- 3              
+ntrials <- 40             # trials per block
+stims_per_block <- 4      # number of stimuli to be learned per block
+RTbound <- 0.15           # set a limit for implausibly fast responses 
 files <- dir(pattern=paste("*.4stim_.*",".txt",sep=""), recursive=TRUE)
+#files <- basename(dir(pattern=paste("*.4stim_.*",".txt",sep=""), recursive=TRUE))
 #files <-sapply(strsplit(files,"/"),"[",2) #take just filename without subject's directory
 taskpattern<- "FeedLearn_MRI"
 
-# Sanity check! Check that subjects have more than nblocks blocks
+# Select subjects  + sanity check of number of blocks
 #--------------------------------------------------------------------
-subjects <- files    
-for (i in 1:length(files)){
-  subjects[i] <-substr(files[i],1,(regexpr(taskpattern,files[i])[[1]]-2)) # find pattern of task and take preceding characters
-}
-subjects <- unique(subjects)
+subjects <- dir(paste(dirmrfirstlevel,'',paste='')) # find subjects with first level mr analysis
 `%!in%` = Negate(`%in%`) 
-#subjects <- subjects[which(subjects %!in% "AR1025")] # exclude bad subjects
-
-nsubjects <- length(unique(subjects))
-for (j in 1:length(unique(subjects))){
-  if  (length(grep(subjects[j],files))>nblocks) {  cat(subjects[j]," has more than",nblocks," blocks!\n") }
-  else { cat(subjects[j],"is OK. n blocks =",length(grep(subjects[j],files)),"\n")           }
+subjects <- subjects[which(subjects %!in% c("AR1025","AR1063"))] # use this to exclude subjects
+files <- files[which(substr(files,1,6) %in% subjects)]  # take log files of those subjects
+#print number of blocks
+for (i in 1:length(subjects)){
+  if  (length(grep(subjects[i],files))>nblocks) {  cat(subjects[i]," has more than",nblocks," blocks!\n") }
+  else { cat(subjects[i],"is OK. n blocks =",length(grep(subjects[i],files)),"\n")         
+  }
 }
 
 
-
-# Gather all data 
-# -------------------
+# Gather all data before preprocessing
+# ------------------------------------
+setwd(dirinput)
 datalist <- list()
 for (f in 1:length(files)){
+  
   raw <- read_delim(files[f],"\t", escape_double = FALSE, locale = locale(), trim_ws = TRUE)
   # minor fix for some files with inconsistent headers
   if (length(which(colnames(raw)=="vSymbols"))!=0) {
@@ -79,58 +81,59 @@ rawG$rt <- rawG$rt/1000
 names(rawG)[names(rawG)=="rt"] <- "RT"
 
 # Remove response trials with too quick responses
-T <- filter(rawG,fb!=2)
-T <- filter(T,RT>RTbound)
-T <- data.table(T)
-T$response <- T$fb
-T$trial<-as.integer(T$trial)
+datTable <- filter(rawG,fb!=2)
+datTable <- filter(datTable,RT>RTbound)
+datTable <- data.table(datTable)
+datTable$response <- datTable$fb
+datTable$trial<-as.integer(datTable$trial)
 #Count of trials per subject 
-DT_trials <- T[,.N,by = subjID]
+DT_trials <- datTable[,.N,by = subjID]
 subjs <- DT_trials$subjID
 n_subj    <- length(subjs)
 # Reasign trial index (we excluded observations)
 for (ss in subjs){
-  subidx <- which(T$subjID==ss)
-  T[subidx,]$trial <- seq.int(nrow(T[subidx,]))
+  subidx <- which(datTable$subjID==ss)
+  datTable[subidx,]$trial <- seq.int(nrow(datTable[subidx,]))
 }
 
 # recode blocks (so for all subjects they are 1 and 2,or 1)
-DT_trials_per_block <- T[, .N, by = list(subjID,block)]
-T$block <- as.factor(T$block)
+DT_trials_per_block <- datTable[, .N, by = list(subjID,block)]
+datTable$block <- as.factor(datTable$block)
 for (ss in subjs){
-  subidx <- which(T$subjID==ss)
+  subidx <- which(datTable$subjID==ss)
   n1 <- DT_trials_per_block[which(DT_trials_per_block==ss),]$N[1]
   b1 <-rep("1",n1)
   
   n2 <- DT_trials_per_block[which(DT_trials_per_block==ss),]$N[2]
   if (is.na(n2)) {
     cat(ss, " has only one block!\n")
-    T[subidx]$block <- c(b1)
+    datTable[subidx]$block <- c(b1)
   } else {
     b2 <- rep("2",n2)
-    T[subidx]$block <- c(b1,b2)
+    datTable[subidx]$block <- c(b1,b2)
   }
 }
-T$block <- as.integer(T$block)
+datTable$block <- as.integer(datTable$block)
 
 # Some nr formatting adjusts
-T$response <- T$fb+1 # Responses 0 becomes 1 (incorrect) and 1 becomes 2 (correct)
-T$aStim <- as.double(T$aStim)
-T$vStim1 <- as.double(T$vStim1)
-T$vStim2 <- as.double(T$vStim2)
-# Because stimuli change in each block, give unique numbers for stimuli for each block
-T[which(T$block==2),]$aStim = T[which(T$block==2),]$aStim + (stims_per_block)
-T[which(T$block==2),]$vStim1 = T[which(T$block==2),]$vStim1 + (stims_per_block)
-T[which(T$block==2),]$vStim2 = T[which(T$block==2),]$vStim2 + (stims_per_block)
+datTable$response <- datTable$fb+1 # Responses 0 becomes 1 (incorrect) and 1 becomes 2 (correct)
+datTable$aStim <- as.double(datTable$aStim)
+datTable$vStim1 <- as.double(datTable$vStim1)
+datTable$vStim2 <- as.double(datTable$vStim2)
 
+# Because stimuli change in each block, give unique numbers for stimuli for each block
+datTable[which(datTable$block==2),]$aStim = datTable[which(datTable$block==2),]$aStim + (stims_per_block)
+datTable[which(datTable$block==2),]$vStim1 = datTable[which(datTable$block==2),]$vStim1 + (stims_per_block)
+datTable[which(datTable$block==2),]$vStim2 = datTable[which(datTable$block==2),]$vStim2 + (stims_per_block)
 #Log in each trial which v-stimuli is correctly mapped to audio and which not
-T$vStimNassoc <- ifelse(T$aStim==T$vStim1,T$vStim2,T$vStim1)
+datTable$vStimNassoc <- ifelse(datTable$aStim==datTable$vStim1,datTable$vStim2,datTable$vStim1)
+
 # get minRT per subject
-minRT <- with(T, aggregate(RT, by = list(y = subjID), FUN = min)[["x"]])
+minRT <- with(datTable, aggregate(RT, by = list(y = subjID), FUN = min)[["x"]])
 ifelse(is.null(dim(minRT)),minRT<-as.array(minRT))
 
 # Get index of first and last trial per subject 
-first <- as.double(which(T$trial==1))
+first <- as.double(which(datTable$trial==1))
 # if N=1 transform int to 1-d array
 first<-as.array(first)
 # last is a Sx1 matrix identifying all last trials of a subject for each choice
@@ -138,31 +141,37 @@ last <- (first + DT_trials$N - 1)
 # if N=1 transform int to 1-d array
 last<-as.array(last)
 # define the values for the rewards: if upper resp, value = 1
-value <- ifelse(T$response==2, 1, 0)
-n_trials <- nrow(T)
+value <- ifelse(datTable$response==2, 1, 0)
+n_trials <- nrow(datTable)
 
 #Count number of blocks
-blocks <- aggregate(T$block ~ T$subjID, FUN = max )[2]
-blocks <- blocks$`T$block`
+blocks <- aggregate(datTable$block ~ datTable$subjID, FUN = max )[2]
+blocks <- blocks$`datTable$block`
 ifelse(is.null(dim(blocks)),blocks<-as.array(blocks))
 
 # Final list for STAN
 # ----------------------------------------------------
-dat <- list("N" = n_subj, "T"=n_trials,"RTbound" = 0.15,"minRT" = minRT, 
-            "iter" = T$trial, "response" = T$response, 
-            "stim_assoc" = T$aStim, "stim_nassoc" = T$vStimNassoc, 
-            "RT" = T$RT, "first" = first, "last" = last, "value"=value, 
+datList <- list("N" = n_subj, "T"=n_trials,"RTbound" = 0.15,"minRT" = minRT, 
+            "iter" = datTable$trial, "response" = datTable$response, 
+            "stim_assoc" = datTable$aStim, "stim_nassoc" = datTable$vStimNassoc, 
+            "RT" = datTable$RT, "first" = first, "last" = last, "value"=value, 
             "n_stims"=stims_per_block*blocks)
 
 
 #Save 
 #####################################
-#save list as file to read later
-setwd(diroutput)
-save(dat,file="Gathered_list_for_Stan")
-save(T,file="Gathered_data")
+# Create folder with timeand date stamp
+#destinationDir <- paste("Preproc_",n_subj,'ss',format(Sys.time(),'_%Y%m%d_%H%M'),sep="")
+destinationDir <- paste(diroutput,"/Preproc_",n_subj,'ss',sep="")
+dir.create(destinationDir)
+setwd(destinationDir)
+#R vars
+save(datList,file="Preproc_list")
+save(datTable,file="Preproc_data")
+#csv file
+write.csv(datTable,file="Preproc_data.csv",row.names = FALSE)
+write(subjects,file="Preproc_subjects.txt")
 
-write.csv(T,file="Gathered_data.csv",row.names = FALSE)
 
 
 

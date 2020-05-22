@@ -20,14 +20,14 @@ modelChoice = containers.Map({'GLM0','GLM1','GLM1_pm1a','GLM2'},...
 
 % set input dir, create output dir 
 dirinput =  modelChoice(selectedGLM); 
-diroutput = strrep(dirinput,['1Lv_',selectedGLM],['2Lv_',selectedGLM]);
+diroutput = strrep(dirinput,['1Lv_',selectedGLM],['2Lv_',selectedGLM,'_ok']);
 mkdir(diroutput)
 
 % Read t-test contrasts for that model 
 tmp = dir([dirinput,'\**\spm.mat']);
 load([tmp(1).folder,'\',tmp(1).name]); % load first spm file in input directory
-contrast=struct();  % gather description and file names of all t-contrasts in that analysis 
 
+contrast=struct();  % gather description and file names of all t-contrasts in that analysis c=1;
 c=1;
 for i = 1:length(SPM.xCon)
     if contains(SPM.xCon(i).Vcon.fname,'con_000')
@@ -43,8 +43,8 @@ clear SPM
 %% Begin subject loop 
 files = dir([dirinput,'\AR*']);
 subjects= {files.name};
-excludedSubj = {'AR1016','AR1022','AR1037'};
-subjects(cell2mat(cellfun(@(c)find(strcmp(c,subjects)),excludedSubj,'UniformOutput',false)))=[]; %find index and exclude subjects
+%excludedSubj = {'AR1016','AR1022','AR1037'};
+%subjects(cell2mat(cellfun(@(c)find(strcmp(c,subjects)),excludedSubj,'UniformOutput',false)))=[]; %find index and exclude subjects
 
 %% loop thru contrasts
 batches={};
@@ -52,13 +52,12 @@ for c = 1: length(contrast)
         
     currDiroutput = [diroutput,'\',strrep(strrep(cell2mat(contrast(c).fname),'.nii',''),'con_','from_1Lv_con')];
     %mkdir(diroutput)
-    
     matlabbatch{1}.spm.stats.factorial_design.dir = {currDiroutput};
     matlabbatch{1}.spm.stats.factorial_design.des.t1.scans = {};
    
     % take the con_000* files from each subject
     for s=1:length(subjects)
-        conFile = dir([dirinput, '\' subjects{s} '\'  cell2mat(contrast(c).fname)]);
+        conFile = dir([dirinput, '\' subjects{s} '\'  cell2mat(contrast(c).fname)]) ;
         if isempty(conFile)
             disp(['Could NOT find ', cell2mat(contrast(c).fname),' in ',subjects{s}]) 
         else 
@@ -88,25 +87,22 @@ for c = 1: length(contrast)
     batches{c} = matlabbatch;
 
 end
-    %% spm_jobman('interactive',batches{2})
-    %return;
-    
+   
+%%  Run in parallel port  
+
     if ~isempty(gcp('nocreate'))
             delete(gcp('nocreate'));  
-    end
-
-    if length(contrast) < 8
-        parpool(length(contrast));
-    else
-        parpool(8);
-    end
-
+    end 
+    parpool(8);        
     parfor i = 1: length(contrast)
         spm_jobman('run',batches{i});
+        
     end    
 %% Save table with contrasts run and subjects
 contrast_table = struct2table(contrast);
+ 
 writetable(contrast_table,[diroutput,'\Codebook_contrasts_from',selectedGLM,'.csv']);
+
 
 subjects_table = cell2table(subjects');
 subjects_table.Properties.VariableNames = {'subjects'};

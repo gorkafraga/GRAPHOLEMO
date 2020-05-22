@@ -28,6 +28,24 @@ params={};
         %add session info(= actual block number, not necessarily block id)
         currLog.session = repmat(i,size(currLog,1),1);
 
+        % Stim and fb onsets for halfs and quartiles of trials ------------------------------------------------------
+        ntrials = height(currLog) ;
+        onsets(i).stimOnset_half1 = onsets(i).stimOnset(1:ntrials/2);
+        onsets(i).stimOnset_half2 = onsets(i).stimOnset(1+(ntrials/2):ntrials); % second half
+          
+        onsets(i).feedbackOnset_half1 = onsets(i).feedbackOnset(1:ntrials/2);
+        onsets(i).feedbackOnset_half2 = onsets(i).feedbackOnset(1+(ntrials/2):ntrials); % second half
+        
+        onsets(i).stimOnset_quartile1 = onsets(i).stimOnset(1:ntrials/4); % 1st quartile
+        onsets(i).stimOnset_quartile2 = onsets(i).stimOnset(1+(ntrials/4):(ntrials/2)); % 2nd quartile  
+        onsets(i).stimOnset_quartile3 = onsets(i).stimOnset(1+(ntrials/2):(ntrials - (ntrials/4)));  % 3rd quartile
+        onsets(i).stimOnset_quartile4 = onsets(i).stimOnset(1+(ntrials - (ntrials/4)):ntrials);   % 4th quartile
+
+        onsets(i).feedbackOnset_quartile1 = onsets(i).feedbackOnset(1:ntrials/4); % 1st quartile
+        onsets(i).feedbackOnset_quartile2 = onsets(i).feedbackOnset(1+(ntrials/4):(ntrials/2)); % 2nd quartile  
+        onsets(i).feedbackOnset_quartile3 = onsets(i).feedbackOnset(1+(ntrials/2):(ntrials - (ntrials/4)));  % 3rd quartile
+        onsets(i).feedbackOnset_quartile4 = onsets(i).feedbackOnset(1+(ntrials - (ntrials/4)):ntrials);   % 4th quartile
+
         % Parametric modulators  ------------------------------------------
         params(i).rt = currLog.rt/1000;
         params(i).rt(currLog.fb==2) = 2.5;

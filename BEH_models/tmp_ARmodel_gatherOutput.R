@@ -1,21 +1,33 @@
+#
+#  GATHER OUTPUT FROM RLDDM MODEL 
+# --------------------------------------
+#  - Write a table per subject with parameters per trial
+#  - Write table with subject-level parameters
+#  - Parameters can be mean centered (optional setting)
+#
+#=====================================================================================
 
-.libPaths()
-assign(".lib.loc", "C:/Program Files/R/R-3.6.1/library", envir = environment(.libPaths))
+#.libPaths()
+#assign(".lib.loc", "C:/Program Files/R/R-3.6.1/library", envir = environment(.libPaths))
 #Clear all and Load libraries
 rm(list=ls(all=TRUE)) # remove all variables (!)
 Packages <- c("readr","tidyr","dplyr","viridis","data.table","StanHeaders","rstan","hBayesDM","Rcpp","rstanarm","boot","loo","bayesplot","cowplot","ggpubr")
 lapply(Packages, require, character.only = TRUE)
-source("N:/Developmental_Neuroimaging/Scripts/Misc R/R-plots and stats/Geom_flat_violin.R")
-#=====================================================================================
+#source("N:/Developmental_Neuroimaging/Scripts/Misc R/R-plots and stats/Geom_flat_violin.R")
+#--------------------------------------
 #set dirs
-dirinput <- "O:/studies/grapholemo/Allread_FBL/Analysis/models"
+choiceModel <- 'rlddm1'
+dirinput <- paste("O:/studies/allread/mri/analysis_GFG/stats/task/model/Preproc_19ss/output_",choiceModel,sep="")
+dirPreprocessed <- "O:/studies/allread/mri/analysis_GFG/stats/task/model/Preproc_19ss"
 diroutput <- dirinput
-model_path <- "N:/studies/Grapholemo/Scripts/grapholemo/Learning models/RLDDM_v01_GFG.stan"
-
+#modelpath <- "N:/studies/Grapholemo/Methods/Scripts/grapholemo/BEH_models/Stan"
+# Some settings
+meancenter=1
+#
 setwd(dirinput)
-load("Gathered_data") #read gathered data (that will be combined with model parameters later)
-load("Gathered_list_for_Stan") #read list with gather data input for model
-fit <- readRDS(paste(dirinput,"/fit_rlddm_gfg.rds",sep="")) # read model output
+load(paste(dirPreprocessed,"/Preproc_data",sep="")) #read gathered data (that will be combined with model parameters later)
+load(paste(dirPreprocessed,"/Preproc_list",sep="")) #read list with gather data input for model
+fit <- readRDS(paste(dirinput,"/fit_rlddm.rds",sep="")) # read model output
 
 #----------------------------------------------------------------------------
 # GET  DATA 

@@ -80,7 +80,7 @@ for i = 1:length(subjects)
           mrfilenameSplit = split(mrfilename.folder,'\');
           sessionID  =  mrfilenameSplit{find(contains(mrfilenameSplit,'learn'))};
           % Read flagged bad scans (if file found, else create a vector of zeros) 
-           badscans = dir([paths.mri,'\',sessionID,'\epis\',subject,'\ART\*flagscans.mat']);
+           badscans = dir([paths.mri,'\',sessionID,'\epis\',subject,'\ART\*flagscans_inBlock.mat']);
            if ~isempty(badscans) % If it doesn't find a flagscan file it will use zeroes
                load([badscans.folder,'\',badscans.name]);  % load variable Regr_badscans from file
                logInfBadscans = [badscans.folder,'\',badscans.name];  
