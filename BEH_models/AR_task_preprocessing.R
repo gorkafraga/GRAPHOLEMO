@@ -98,6 +98,7 @@ for (ss in subjs){
 
 # recode blocks (so for all subjects they are 1 and 2,or 1)
 DT_trials_per_block <- datTable[, .N, by = list(subjID,block)]
+# seq.int(DT_trials_per_block[1]$N)                                                                      !!!!!!!!!!! 
 datTable$block <- as.factor(datTable$block)
 for (ss in subjs){
   subidx <- which(datTable$subjID==ss)

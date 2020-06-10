@@ -30,12 +30,13 @@ params={};
 
         % Stim and fb onsets for halfs and quartiles of trials ------------------------------------------------------
         ntrials = height(currLog) ;
+        % half
         onsets(i).stimOnset_half1 = onsets(i).stimOnset(1:ntrials/2);
         onsets(i).stimOnset_half2 = onsets(i).stimOnset(1+(ntrials/2):ntrials); % second half
           
         onsets(i).feedbackOnset_half1 = onsets(i).feedbackOnset(1:ntrials/2);
         onsets(i).feedbackOnset_half2 = onsets(i).feedbackOnset(1+(ntrials/2):ntrials); % second half
-        
+        %quartiles
         onsets(i).stimOnset_quartile1 = onsets(i).stimOnset(1:ntrials/4); % 1st quartile
         onsets(i).stimOnset_quartile2 = onsets(i).stimOnset(1+(ntrials/4):(ntrials/2)); % 2nd quartile  
         onsets(i).stimOnset_quartile3 = onsets(i).stimOnset(1+(ntrials/2):(ntrials - (ntrials/4)));  % 3rd quartile
@@ -46,6 +47,17 @@ params={};
         onsets(i).feedbackOnset_quartile3 = onsets(i).feedbackOnset(1+(ntrials/2):(ntrials - (ntrials/4)));  % 3rd quartile
         onsets(i).feedbackOnset_quartile4 = onsets(i).feedbackOnset(1+(ntrials - (ntrials/4)):ntrials);   % 4th quartile
 
+        %thirds (excluding 1st trial so it's divisible by 3)
+        stepsizethirds = (ntrials-1)/3;
+        onsets(i).stimOnset_third1 = onsets(i).stimOnset(2:stepsizethirds+1); % 1st third
+        onsets(i).stimOnset_third2 = onsets(i).stimOnset(2+stepsizethirds:(1+2*stepsizethirds)); % 2nd third 
+        onsets(i).stimOnset_third3 = onsets(i).stimOnset((2+2*stepsizethirds):ntrials);  % 3nd third
+        
+        
+        onsets(i).feedbackOnset_third1 = onsets(i).feedbackOnset(2:stepsizethirds+1); % 1st third
+        onsets(i).feedbackOnset_third2 = onsets(i).feedbackOnset(2+stepsizethirds:(1+2*stepsizethirds)); % 2nd third 
+        onsets(i).feedbackOnset_third3 = onsets(i).feedbackOnset((2+2*stepsizethirds):ntrials);  % 3nd third
+                
         % Parametric modulators  ------------------------------------------
         params(i).rt = currLog.rt/1000;
         params(i).rt(currLog.fb==2) = 2.5;

@@ -6,8 +6,8 @@ lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
 
 #set ins and outs
-dirinput <-"O:/studies/allread/mri/analysis_GFG/stats/task/logs/" 
-diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task_performance/" 
+dirinput <-"O:/studies/allread/mri/analyses_NF/mri_analyses_NF/first_level_NF/task/logs" 
+diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task/performance/learn_12_fromNada/individual" 
 task <- "FeedLearn"
 ntrials <- 40
 
@@ -15,6 +15,7 @@ ntrials <- 40
 #loop thru files
 setwd(dirinput)
 files <- dir(dirinput,'*._4stim_.*.txt',recursive = TRUE)
+files <- files[grep('^AR*',files)]
 
 setwd(dirinput)
 for (i in 1:length(files)){

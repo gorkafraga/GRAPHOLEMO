@@ -7,11 +7,10 @@ source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots an
 
 #set ins and outs
 dirinput <-"O:/studies/allread/mri/analysis_GFG/stats/task/logs" 
-diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task/performance/learn_12_19ss" 
+diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task/performance/Learn_12_19ss" 
 task <- "FeedLearn"
 ntrials <- 40
-
-
+ 
 #loop thru files
 setwd(dirinput)
 files <- dir(dirinput,'*._4stim_.*.txt',recursive = TRUE)
@@ -54,22 +53,20 @@ for (i in 1:length(files)){
     D$respType[idx_err] <- 'error'  
     D$respType <- as.factor(D$respType)
     
-    # Gather counts per respType per stimuli
-    hits_per_sound <-  D %>% 
-      filter(fb==1) %>%
-      group_by(aStim,.drop = FALSE) %>%
-      tally() 
-    
-    errors_per_sound <-  D %>% 
-      filter(fb==0) %>%
-      group_by(aStim,.drop = FALSE) %>%
-      tally() 
-    
-    miss_per_sound <-  D %>% 
-      filter(fb==2) %>%
-      group_by(aStim,.drop = FALSE) %>%
-      tally() 
-    
+    # # Gather counts per respType per stimuli
+     hits_per_sound <-  D %>% 
+       filter(fb==1) %>%
+       group_by(aStim,.drop = FALSE) %>%
+       tally() 
+     errors_per_sound <-  D %>% 
+       filter(fb==0) %>%
+       group_by(aStim,.drop = FALSE) %>%
+       tally() 
+     miss_per_sound <-  D %>% 
+       filter(fb==2) %>%
+       group_by(aStim,.drop = FALSE) %>%
+       tally() 
+     
     
     # Gather cumulative probability per stimuli
     D$fbmin <- D$fb   
@@ -121,16 +118,14 @@ T_ACCU$hit_prop <- round(as.numeric(T_ACCU$hit_prop),2)
 
 # RT summary
 rts_per_quart <- DAT %>%  group_by(subjID,block,quartile,fb,.drop = FALSE) %>%  summarize(meanRT = mean(rt))
-rts_per_quart$meanRT <-round(as.numeric(rts_per_quart$meanRT),2)
+rts_per_quart$meanRT <-round(as.numeric(rts_per_quart$meanRT),3)
 RT <- filter(rts_per_quart,fb<2) 
-
-
 T_RT <- RT %>% group_by(quartile) %>% summarize(meanRT=mean(meanRT))
+
 tmp <- cbind("overall",mean(T_RT$meanRT))
 colnames(tmp)<-colnames(T_RT)
 T_RT <- rbind(T_RT,tmp)
 T_RT$meanRT <- round(as.numeric(T_RT$meanRT),3)
-
 # combine 
 T <- tableGrob(cbind(T_ACCU,T_RT),rows=NULL)
 
@@ -161,29 +156,66 @@ for (ss in 1:length(allSubjects)){
 }
 DAT$session <- as.integer(DAT$session)
 
+
+# Gather counts of corr, incorr and missing
 tab2save <- cbind(DAT %>%  group_by(subjID,session,fb,.drop=FALSE) %>% tally())
 
-Session1 <- cbind(DAT %>% filter(session==1) %>% filter(fb==0) %>% group_by(subjID,.drop=FALSE) %>% tally(),
-                  DAT %>%  filter(session==1) %>% filter(fb==1) %>% group_by(subjID,.drop=FALSE) %>% tally(),
-                  DAT %>%  filter(session==1) %>% filter(fb==2) %>% group_by(subjID,.drop=FALSE) %>% tally())
-           Session1 <- Session1[,c(1,2,4,6)]
-           colnames(Session1)<-c('subjID','Task_Learn1_inc','Task_Learn1_con','Task_Learn1_miss')
-           
- Session2 <- cbind(DAT %>% filter(session==2) %>% filter(fb==0) %>% group_by(subjID,.drop=FALSE) %>% tally(),
-                 DAT %>%  filter(session==2) %>% filter(fb==1) %>% group_by(subjID,.drop=FALSE) %>% tally(),
-                 DAT %>%  filter(session==2) %>% filter(fb==2) %>% group_by(subjID,.drop=FALSE) %>% tally())
-            Session2 <- Session2[,c(1,2,4,6)]
-            colnames(Session2) <-c('subjID','Task_Learn2_inc','Task_Learn2_con','Task_Learn2_miss')
-            
- AllSessions <- cbind(DAT %>%  filter(fb==0) %>% group_by(subjID,.drop=FALSE) %>% tally(),
-                      DAT %>% filter(fb==1) %>% group_by(subjID,.drop=FALSE) %>% tally(),
-                      DAT %>% filter(fb==2) %>% group_by(subjID,.drop=FALSE) %>% tally())
-                AllSessions <- AllSessions[,c(1,2,4,6)]
-                colnames(AllSessions) <-c('subjID','Task_Learn12_inc','Task_Learn12_con','Task_Learn12_miss')
+session1 <- tab2save %>% filter(session==1) %>% spread(fb,n)
+  colnames(session1)<- c('subjID','session','L1_inc','L1_corr','L1_miss')
+session2 <- tab2save %>% filter(session==2) %>% spread(fb,n)
+  colnames(session2)<- c('subjID','session','L2_inc','L2_corr','L2_miss')
+session12 <-  cbind(DAT %>%  group_by(subjID,fb,.drop=FALSE) %>% tally()) %>% spread(fb,n)
+  colnames(session12)<- c('subjID','L12_inc','L12_corr','L12_miss')
 
-# aggregate and save
-tab2save <- cbind(AllSessions,Session1,Session2)
-write.xlsx(tab2save,paste(diroutput,"/Performance_summary.xls",sep=""),row.names = FALSE)
+  
+summaries <-  data.frame(matrix(ncol = 6, nrow = nsubjects))
+  for (s in 1:nsubjects){
+    sDat <- DAT[which(DAT$subjID==unique(DAT$subjID)[s])]
+    # RTs
+    sDatses1 <- sDat[which(sDat$session==1),]
+      L1_rt_inc <- mean(sDatses1$rt[which(sDatses1$fb==0)])
+      L1_rt_corr <- mean(sDatses1$rt[which(sDatses1$fb==1)])
+    sDatses2 <- sDat[which(sDat$session==2),]
+      L2_rt_inc <- mean(sDatses2$rt[which(sDatses2$fb==0)])
+      L2_rt_corr <- mean(sDatses2$rt[which(sDatses2$fb==1)])
+      
+    L12_rt_inc <- mean(sDat$rt[which(sDat$fb==0)])
+    L12_rt_corr <- mean(sDat$rt[which(sDat$fb==1)])
+    
+    sRTs <-  cbind(L1_rt_corr,L1_rt_inc,L2_rt_corr,L2_rt_inc,L12_rt_corr,L12_rt_inc)
+    summaries[s,] <-  sRTs
+  }
+  colnames(summaries)  <- colnames(sRTs)
+  
+  
+# RTs
+DATses1 <- DAT[which(DAT$session==1),]
+  L1_rt_inc <- mean(DATses1$rt[which(DATses1$fb==0)])
+  L1_rt_corr <- mean(DATses1$rt[which(DATses1$fb==1)])
+  DATses2 <- DAT[which(DAT$session==2),]
+  L2_rt_inc <- mean(DATses2$rt[which(DATses2$fb==0)])
+  L2_rt_corr <- mean(DATses2$rt[which(DATses2$fb==1)])
+  
+  L12_rt_inc <- mean(DAT$rt[which(DAT$fb==0)])
+  L12_rt_corr <- mean(DAT$rt[which(DAT$fb==1)])
+  
+# RTs
+DATses1 <- DAT[which(DAT$session==1),]
+  L1_rt_inc <- mean(DATses1$rt[which(DATses1$fb==0)])
+  L1_rt_corr <- mean(DATses1$rt[which(DATses1$fb==1)])
+DATses2 <- DAT[which(DAT$session==2),]
+  L2_rt_inc <- mean(DATses2$rt[which(DATses2$fb==0)])
+  L2_rt_corr <- mean(DATses2$rt[which(DATses2$fb==1)])
+  
+  L12_rt_inc <- mean(DAT$rt[which(DAT$fb==0)])
+  L12_rt_corr <- mean(DAT$rt[which(DAT$fb==1)])
+  
+
+ x<-  cbind(L1_rt_corr,L1_rt_inc,L2_rt_corr,L2_rt_inc,L12_rt_corr,L12_rt_inc)
+  
+# Combine accu and RT summary table
+sumTable <- as.data.frame(cbind(session1[c(1,3:5)],session2[3:5],session12[2:4],session12_RT[2:length(session12_RT)]))
+write.xlsx(sumTable,paste(diroutput,"/Performance_summary.xlsx",sep=""),row.names = FALSE,showNA = FALSE)
  
 #-------------------------------------------------------
 # ======================================================
@@ -300,7 +332,8 @@ write.xlsx(tab2save,paste(diroutput,"/Performance_summary.xls",sep=""),row.names
             axis.text.x = element_text(angle = 45,size=10,color="black"),
             axis.text.y = element_text(size=10,color="black"),
             axis.title.x = element_text(size=10,color="black")) 
-    cat("cum_lines plot created\n")       
+    cat("cum_lines plot created\n")   
+    
     #PLOT: overall performance plot and info
     #------------------------------------------------------------------------------
     title_accu <- paste("Overall accuracy (N = ",nsubjects,")",sep="")
