@@ -31,8 +31,8 @@ taskpattern<- "FeedLearn_MRI"
 # Select subjects  + sanity check of number of blocks
 #--------------------------------------------------------------------
 subjects <- dir(paste(dirmrfirstlevel,'',paste='')) # find subjects with first level mr analysis
-`%!in%` = Negate(`%in%`) 
-subjects <- subjects[which(subjects %!in% c("AR1025","AR1063"))] # use this to exclude subjects
+#`%!in%` = Negate(`%in%`) 
+#subjects <- subjects[which(subjects %!in% c("AR1025","AR1063"))] # use this to exclude subjects
 files <- files[which(substr(files,1,6) %in% subjects)]  # take log files of those subjects
 #print number of blocks
 for (i in 1:length(subjects)){
@@ -152,12 +152,36 @@ ifelse(is.null(dim(blocks)),blocks<-as.array(blocks))
 
 # Final list for STAN
 # ----------------------------------------------------
-datList <- list("N" = n_subj, "T"=n_trials,"RTbound" = 0.15,"minRT" = minRT, 
-            "iter" = datTable$trial, "response" = datTable$response, 
-            "stim_assoc" = datTable$aStim, "stim_nassoc" = datTable$vStimNassoc, 
-            "RT" = datTable$RT, "first" = first, "last" = last, "value"=value, 
-            "n_stims"=stims_per_block*blocks)
+datList <- list("N" = n_subj,
+                "T"=n_trials,
+                "RTbound" = 0.15,
+                "minRT" = minRT, 
+                "iter" = datTable$trial,
+                "response" = datTable$response, 
+                "stim_assoc" = datTable$aStim,
+                "stim_nassoc" = datTable$vStimNassoc, 
+                "RT" = datTable$RT, 
+                 "first" = first, 
+                 "last" = last,
+                "value"=value, 
+                "n_stims"=stims_per_block*blocks,
+                "trials" = DT_trials$N) 
 
+# Vaiable description: 
+#---------------------
+#T  (1 number: total count of trials)
+#RTbound 	(minimum RT allowed)
+#minRT 	(minimum RT per subject)
+#iter 	(trial indexes per subject, across blocks)
+#response	 (response incorrect 1, correct 2)
+#stim_assoc  	(auditory stimuli,  or correct vstim)
+#stim_nassoc 	(incorrect visual stimuli in a trial)
+#RT 	( reaction time in sec)
+#First	(first trial in each subject, across blocks)
+#last 	(last trial in each subject, across blocks)
+#value	('reward' 0 or 1)
+#n_stims	 (number blocks x 4 stim per block )
+#Trials	(total number of trials each subject has)
 
 #Save 
 #####################################

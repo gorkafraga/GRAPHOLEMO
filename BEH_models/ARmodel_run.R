@@ -26,7 +26,7 @@ lapply(Packages, require, character.only = TRUE)
 dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/model/Preproc_19ss"
 diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/model/Preproc_19ss"
 modelpath <- "N:/studies/Grapholemo/Methods/Scripts/grapholemo/BEH_models/Stan"
-choiceModel <- 'rlddm_v21'
+choiceModel <- 'rlddm_v31'
 
 # Get preprocessed input data and list of variables and settings for the  model
 setwd(dirinput)
@@ -45,8 +45,8 @@ if (!exists("stanmodel")){
 myparameters <- c("a","v_mod","tau","eta_pos","eta_neg","mu_a","mu_v_mod","mu_tau","mu_eta_pos","mu_eta_neg","sigma_pr","sigma_eta_pr",
                   "v_hat", "pe_tot_hat", "pe_pos_hat", "pe_neg_hat","as_active","as_inactive", "as_chosen","lp_","log_lik")
 mychains <- 4 # numer of mcmc chains
-myiter <- 1000#10000
-mywarmup <- 700#4000 # from iterations, how many will be warm ups
+myiter <- 10000#10000
+mywarmup <- 4000#4000 # from iterations, how many will be warm ups
 
 # FIT THE MODEL - draw samples.  _m_d('_')b_m_  (time consuming)
 #-------------------------------------------------------------------------------------
@@ -65,7 +65,7 @@ stanfit <- rstan::sampling(object  = stanmodel,
                            thin    = 1,
                            init_r =  1,
                            save_warmup = FALSE,
-                           control = list(adapt_delta = 0.999, stepsize = 0.01,max_treedepth = 12),
+                           control = list(adapt_delta = 0.999, stepsize = 0.01, max_treedepth = 12),
                            verbose =FALSE)
 
 # save model

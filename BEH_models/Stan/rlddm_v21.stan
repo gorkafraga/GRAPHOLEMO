@@ -24,6 +24,7 @@ data {
   int stim_assoc[T];   // index of associated sound-symbol pair
   int stim_nassoc[T];  // index of presented non-associated symbol
   int n_stims[N];      // number of items learned by each subject (represents # blocks)
+  int trials[N];       //total number of trials per subject
 }
 // ------------------------------------------------------------
 parameters {
@@ -102,14 +103,14 @@ model {
      // if lower bound (incorrect resp,that is response= 1)
       if (response[trial]==1){
         v[trial] = -((ev[trial,stim_assoc[trial]] + ev[trial,stim_nassoc[trial]])/2 * v_mod[s]);
-        RT[trial] ~  wiener(a[s] * pow(iter[trial]/10,a_mod[s]),tau[s] ,beta,v[trial]);  
+        RT[trial] ~  wiener(a[s] - ((iter[trial]/trials[s])*a_mod[s]),tau[s] ,beta,v[trial]);  
         ev[trial+1,stim_nassoc[trial]] = ev[trial,stim_nassoc[trial]] + (eta[s] * fabs(value[trial]-(1-ev[trial,stim_nassoc[trial]]))); // adjust expected values for each stimuli pair in this trial
         ev[trial+1,stim_assoc[trial]] = ev[trial,stim_assoc[trial]] + (eta[s] * fabs(value[trial]-ev[trial,stim_assoc[trial]]));
       }
       // if upper bound (resp = 2)
       else{
         v[trial] = (ev[trial,stim_assoc[trial]] + ev[trial,stim_nassoc[trial]])/2 * v_mod[s];
-        RT[trial] ~  wiener(a[s] - ((iter[trial]/10)*a_mod[s]),tau[s] ,beta,v[trial]);
+        RT[trial] ~  wiener(a[s] - ((iter[trial]/trials[s])*a_mod[s]),tau[s] ,beta,v[trial]);
         ev[trial+1,stim_nassoc[trial]] = ev[trial,stim_nassoc[trial]] + (eta[s] * (value[trial]-(1-ev[trial,stim_nassoc[trial]])));
         ev[trial+1,stim_assoc[trial]] = ev[trial,stim_assoc[trial]] + (eta[s] * (value[trial]-ev[trial,stim_assoc[trial]]));
       }
@@ -117,11 +118,11 @@ model {
     // Updates in last trial (no update of expected value) ~~~~~~
     if (response[last[s]]==1){
       v[last[s]] = -((ev[last[s]-1,stim_assoc[last[s]]] - ev[last[s]-1,stim_nassoc[last[s]]])/2 * v_mod[s]);
-      RT[last[s]] ~  wiener(a[s] - ((iter[last[s]]/10)*a_mod[s]),tau[s] ,beta,v[last[s]]);
+      RT[last[s]] ~  wiener(a[s] - ((iter[last[s]]/trials[s])*a_mod[s]),tau[s] ,beta,v[last[s]]);
     }
     if (response[last[s]]==2){
       v[last[s]] = (ev[last[s]-1,stim_assoc[last[s]]] - ev[last[s]-1,stim_nassoc[last[s]]])/2 * v_mod[s];
-      RT[last[s]] ~  wiener(a[s] - ((iter[last[s]]/10)*a_mod[s]),tau[s] ,beta,v[last[s]]);
+      RT[last[s]] ~  wiener(a[s] - ((iter[last[s]]/trials[s])*a_mod[s]),tau[s] ,beta,v[last[s]]);
     }
   } // end subject loop
 } // end of model
@@ -180,7 +181,7 @@ generated quantities {
         pe_pos_hat[trial] = 0;
         ev_hat[trial+1,stim_nassoc[trial]] = ev_hat[trial,stim_nassoc[trial]] + (eta[s] * fabs(value[trial]-(1-ev_hat[trial,stim_nassoc[trial]])));
         ev_hat[trial+1,stim_assoc[trial]] = ev_hat[trial,stim_assoc[trial]] + (eta[s] * fabs(value[trial]-ev_hat[trial,stim_assoc[trial]]));
-        log_lik[trial] = wiener_lpdf(RT[trial] | a[s] - ((iter[trial]/10)*a_mod[s]),tau[s],z,v_hat[trial]);
+        log_lik[trial] = wiener_lpdf(RT[trial] | a[s] - ((iter[trial]/trials[s])*a_mod[s]),tau[s],z,v_hat[trial]);
       }
       // if upper bound (resp = 2)
       else{
@@ -191,7 +192,7 @@ generated quantities {
         pe_neg_hat[trial] = 0;
         ev_hat[trial+1,stim_nassoc[trial]] = ev_hat[trial,stim_nassoc[trial]] + (eta[s] * (value[trial]-(1-ev_hat[trial,stim_nassoc[trial]])));
         ev_hat[trial+1,stim_assoc[trial]] = ev_hat[trial,stim_assoc[trial]] + (eta[s] * (value[trial]-ev_hat[trial,stim_assoc[trial]]));
-        log_lik[trial] = wiener_lpdf(RT[trial] | a[s] - ((iter[trial]/10)*a_mod[s]),tau[s],z,v_hat[trial]);
+        log_lik[trial] = wiener_lpdf(RT[trial] | a[s] - ((iter[trial]/trials[s])*a_mod[s]),tau[s],z,v_hat[trial]);
       }
     }
     // Updates in last trial (no update of expected value) ~~~~~
@@ -203,7 +204,7 @@ generated quantities {
       pe_tot_hat[last[s]] = value[last[s]]-(ev_hat[last[s],stim_nassoc[last[s]]]);
       pe_neg_hat[last[s]] = value[last[s]]-(ev_hat[last[s],stim_nassoc[last[s]]]);
       pe_pos_hat[last[s]] = 0;
-      log_lik[last[s]] = wiener_lpdf(RT[last[s]] | a[s] - ((iter[last[s]]/10)*a_mod[s]),tau[s],z,v_hat[last[s]]);
+      log_lik[last[s]] = wiener_lpdf(RT[last[s]] | a[s] - ((iter[last[s]]/trials[s])*a_mod[s]),tau[s],z,v_hat[last[s]]);
     }
     else{
       v_hat[last[s]] = (ev_hat[last[s]-1,stim_assoc[last[s]]] + ev_hat[last[s]-1,stim_nassoc[last[s]]])/2 * v_mod[s];
@@ -211,7 +212,7 @@ generated quantities {
       pe_tot_hat[last[s]] = value[last[s]]-(ev_hat[last[s],stim_assoc[last[s]]]);
       pe_pos_hat[last[s]] = value[last[s]]-(ev_hat[last[s],stim_assoc[last[s]]]);
       pe_neg_hat[last[s]] = 0;
-      log_lik[last[s]] = wiener_lpdf(RT[last[s]] | a[s] - ((iter[last[s]]/10)*a_mod[s]),tau[s],z,v_hat[last[s]]);
+      log_lik[last[s]] = wiener_lpdf(RT[last[s]] | a[s] - ((iter[last[s]]/trials[s])*a_mod[s]),tau[s],z,v_hat[last[s]]);
     }
   }
 } // end generated quantities

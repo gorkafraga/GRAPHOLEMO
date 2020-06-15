@@ -6,8 +6,8 @@ lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
 
 #set ins and outs
-dirinput <-"O:/studies/allread/mri/analysis_GFG/stats/task/logs" 
-diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task/performance/Learn_12_19ss" 
+dirinput <-"O:/studies/allread/mri/analysis_GFG/stats/task/logs_fromNada" 
+diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task/performance/Learn_12_allFromNada" 
 task <- "FeedLearn"
 ntrials <- 40
  
@@ -156,66 +156,41 @@ for (ss in 1:length(allSubjects)){
 }
 DAT$session <- as.integer(DAT$session)
 
-
-# Gather counts of corr, incorr and missing
-tab2save <- cbind(DAT %>%  group_by(subjID,session,fb,.drop=FALSE) %>% tally())
-
-session1 <- tab2save %>% filter(session==1) %>% spread(fb,n)
-  colnames(session1)<- c('subjID','session','L1_inc','L1_corr','L1_miss')
-session2 <- tab2save %>% filter(session==2) %>% spread(fb,n)
-  colnames(session2)<- c('subjID','session','L2_inc','L2_corr','L2_miss')
-session12 <-  cbind(DAT %>%  group_by(subjID,fb,.drop=FALSE) %>% tally()) %>% spread(fb,n)
-  colnames(session12)<- c('subjID','L12_inc','L12_corr','L12_miss')
-
-  
-summaries <-  data.frame(matrix(ncol = 6, nrow = nsubjects))
+# Get mean reaction time per session (block) and participant. Same  for accuracy
+ summary <-  data.frame(matrix(ncol = 15, nrow = nsubjects))
   for (s in 1:nsubjects){
     sDat <- DAT[which(DAT$subjID==unique(DAT$subjID)[s])]
-    # RTs
+    # RTs and ACCU per session and over both 
     sDatses1 <- sDat[which(sDat$session==1),]
-      L1_rt_inc <- mean(sDatses1$rt[which(sDatses1$fb==0)])
-      L1_rt_corr <- mean(sDatses1$rt[which(sDatses1$fb==1)])
-    sDatses2 <- sDat[which(sDat$session==2),]
-      L2_rt_inc <- mean(sDatses2$rt[which(sDatses2$fb==0)])
-      L2_rt_corr <- mean(sDatses2$rt[which(sDatses2$fb==1)])
+      L1_rt_inc <- mean(sDatses1$rt[which(sDatses1$fb==0)],na.rm=TRUE)
+      L1_rt_corr <- mean(sDatses1$rt[which(sDatses1$fb==1)],na.rm=TRUE)
+      L1_n_inc <- length(sDatses1$fb[which(sDatses1$fb==0)])
+      L1_n_corr <- length(sDatses1$fb[which(sDatses1$fb==1)])
+      L1_n_miss <- length(sDatses1$fb[which(sDatses1$fb==2)])
       
-    L12_rt_inc <- mean(sDat$rt[which(sDat$fb==0)])
-    L12_rt_corr <- mean(sDat$rt[which(sDat$fb==1)])
+    sDatses2 <- sDat[which(sDat$session==2),]
+      L2_rt_inc <- mean(sDatses2$rt[which(sDatses2$fb==0)],na.rm=TRUE)
+      L2_rt_corr <- mean(sDatses2$rt[which(sDatses2$fb==1)],na.rm=TRUE)
+      L2_n_inc <- length(sDatses2$fb[which(sDatses2$fb==0)])
+      L2_n_corr <- length(sDatses2$fb[which(sDatses2$fb==1)])
+      L2_n_miss <- length(sDatses2$fb[which(sDatses2$fb==2)])
+    #both sessions  
+    L12_rt_inc <- mean(mean(c(L1_rt_inc,L2_rt_inc)),na.rm=TRUE)
+    L12_rt_corr <- mean(mean(c(L1_rt_corr,L2_rt_corr)),na.rm=TRUE)
+    L12_n_inc <- length(sDat$fb[which(sDat$fb==0)])
+    L12_n_corr <- length(sDat$fb[which(sDat$fb==1)])
+    L12_n_miss <- length(sDat$fb[which(sDat$fb==2)])
     
-    sRTs <-  cbind(L1_rt_corr,L1_rt_inc,L2_rt_corr,L2_rt_inc,L12_rt_corr,L12_rt_inc)
-    summaries[s,] <-  sRTs
+    combined <-  cbind(L1_rt_corr,L1_rt_inc,L2_rt_corr,L2_rt_inc,L12_rt_corr,L12_rt_inc,L1_n_corr,L1_n_inc,L1_n_miss,L2_n_corr,L2_n_inc,L2_n_miss,L12_n_corr,L12_n_inc,L12_n_miss)
+    summary[s,]<- combined
+    header  <- colnames(combined)
+   
   }
-  colnames(summaries)  <- colnames(sRTs)
-  
-  
-# RTs
-DATses1 <- DAT[which(DAT$session==1),]
-  L1_rt_inc <- mean(DATses1$rt[which(DATses1$fb==0)])
-  L1_rt_corr <- mean(DATses1$rt[which(DATses1$fb==1)])
-  DATses2 <- DAT[which(DAT$session==2),]
-  L2_rt_inc <- mean(DATses2$rt[which(DATses2$fb==0)])
-  L2_rt_corr <- mean(DATses2$rt[which(DATses2$fb==1)])
-  
-  L12_rt_inc <- mean(DAT$rt[which(DAT$fb==0)])
-  L12_rt_corr <- mean(DAT$rt[which(DAT$fb==1)])
-  
-# RTs
-DATses1 <- DAT[which(DAT$session==1),]
-  L1_rt_inc <- mean(DATses1$rt[which(DATses1$fb==0)])
-  L1_rt_corr <- mean(DATses1$rt[which(DATses1$fb==1)])
-DATses2 <- DAT[which(DAT$session==2),]
-  L2_rt_inc <- mean(DATses2$rt[which(DATses2$fb==0)])
-  L2_rt_corr <- mean(DATses2$rt[which(DATses2$fb==1)])
-  
-  L12_rt_inc <- mean(DAT$rt[which(DAT$fb==0)])
-  L12_rt_corr <- mean(DAT$rt[which(DAT$fb==1)])
-  
-
- x<-  cbind(L1_rt_corr,L1_rt_inc,L2_rt_corr,L2_rt_inc,L12_rt_corr,L12_rt_inc)
+  summary <- cbind(unique(DAT$subjID),summary)
+  colnames(summary)  <- c("subjID",header)
   
 # Combine accu and RT summary table
-sumTable <- as.data.frame(cbind(session1[c(1,3:5)],session2[3:5],session12[2:4],session12_RT[2:length(session12_RT)]))
-write.xlsx(sumTable,paste(diroutput,"/Performance_summary.xlsx",sep=""),row.names = FALSE,showNA = FALSE)
+write.xlsx(summary,paste(diroutput,"/Perform_summary.xlsx",sep=""),row.names = FALSE,showNA = FALSE)
  
 #-------------------------------------------------------
 # ======================================================
