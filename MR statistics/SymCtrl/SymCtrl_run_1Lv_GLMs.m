@@ -17,16 +17,16 @@ close all
 addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR statistics\SymCtrl');% set path to this script and associated functions 
 % Set up directories and some variables 
 %do NOT use '\' at the end of directories
-paths.analysis =  'O:\studies\allread\mri\analyses_EH\first_level\GLM1'; %this sets your 
-paths.mri = 'O:\studies\allread\mri\analyses_EH\preprocessing_EH\symCtrl';% This is your preprocessing  data parent folder
-paths.logs = 'O:\studies\allread\mri\analyses_EH\first_level\logs'; % Folder with your SELECTED LOG files
+paths.analysis =  'O:\studies\allread\mri\analyses_EH\02_first_level\GLM1'; %this sets your 
+paths.mri = 'O:\studies\allread\mri\analyses_EH\01_preprocessing\symCtrl';% This is your preprocessing  data parent folder
+paths.logs = 'O:\studies\allread\mri\analyses_EH\02_first_level\logs'; % Folder with your SELECTED LOG files
 nscans = 408;
 mkdir(paths.analysis)
 cd (paths.analysis)
 %%  Find subjects in your LOGS directory  begin subject loop 
 files = dir([paths.logs,'\AR*']);
 subjects= {files.name};
-subjects = {'AR1021'};
+subjects = {'AR1077'};
 % Uncomment the following lines if you want to exclude subjects
 %excludedSubj = {'AR1025'};
 %subjects(cell2mat(cellfun(@(c)find(strcmp(c,subjects)),excludedSubj,'UniformOutput',false)))=[]; %find index and exclude subjects
@@ -200,4 +200,4 @@ for i = 1:length(subjects)
     clear scans
 end
 
-
+aaaa

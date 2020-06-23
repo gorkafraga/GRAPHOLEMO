@@ -6,8 +6,8 @@ lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
 
 #set ins and outs
-dirinput <-"O:/studies/allread/mri/analyses_NF/mri_analyses_NF/first_level_NF/task/logs_fromNada" 
-diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task/performance/learn_12_fromNada/individual" 
+dirinput <-"O:/studies/allread/mri/analyses_NF/mri_analyses_NF/first_level_NF/task/all_logs" 
+diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task/performance/learn_12_allFromNada/individual" 
 task <- "FeedLearn"
 ntrials <- 40
 
