@@ -17,7 +17,7 @@ source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots an
 #
 #=============================================================================================================================
 # INPUTS
-choiceModel <- 'rlddm_v31'
+choiceModel <- 'rlddm_v12'
 
 dirinput <- paste("O:/studies/allread/mri/analysis_GFG/stats/task/model/Preproc_19ss/output_",choiceModel,sep="")
 dirPreprocessed <- "O:/studies/allread/mri/analysis_GFG/stats/task/model/Preproc_19ss"
@@ -27,7 +27,7 @@ diroutput <- dirinput
 list_param_bySubject <- c("a","a_mod","tau","v_mod") 
 list_param_byTrial <- c("as_chosen","as_active","as_inactive","pe_tot_hat","pe_pos_hat","pe_neg_hat","v_hat")  #, "ev_hat"
 
-# SETTINGS 
+# SETTINGS ???
 meancenter=1
 givemeplots = 1
 

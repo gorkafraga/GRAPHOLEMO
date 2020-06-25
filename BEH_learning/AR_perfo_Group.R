@@ -6,8 +6,8 @@ lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
 
 #set ins and outs
-dirinput <-"O:/studies/allread/mri/analyses_NF/mri_analyses_NF/first_level_NF/task/all_logs" 
-diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task/performance/Learn_12_allFromNada" 
+dirinput <-"O:/studies/allread/mri/analyses_NF/mri_analyses_NF/first_level_NF/task/logs" 
+diroutput <-"O:/studies/allread/mri/analyses_NF/mri_analyses_NF/first_level_NF/task/testGFG" 
 task <- "FeedLearn"
 ntrials <- 40
  
@@ -16,12 +16,20 @@ setwd(dirinput)
 files <- dir(dirinput,'*._4stim_.*.txt',recursive = TRUE)
 files <- files[grep('^AR*',files)]
 
+
+#`%!in%` = Negate(`%in%`) 
+#files <- files[which(substr(files,1,6) %!in% c("AR1025","AR1063"))] # use this to exclude subjects
+#files <- files[which(substr(files,1,6) %in% c("AR1025","AR1063"))] # use tthis to include subjects from a list of subjects
+#subjects <- subjects[which(subjects %!in% c("AR1025","AR1063"))] # use this to exclude subjects
+
+
 dataList<-list()
 cumuList<-list()
 for (i in 1:length(files)){
   #Read File 
   D <- read_delim(files[i],"\t", escape_double = FALSE, locale = locale(), trim_ws = TRUE, skip_empty_rows=TRUE)
   subject <- substr(files[i],1,6)
+  
   if (dim(D)[1] != ntrials) {
     cat("This file has ",dim(D)[1]," trials instead of ",ntrials,"!!",
         "\nAborting file ",files[i],"!!")
@@ -148,18 +156,22 @@ DAT$session <- DAT$block
 allSubjects <- unique(DAT$subjID)
 for (ss in 1:length(allSubjects)){
   currSession <- DAT[which(DAT$subjID==allSubjects[ss]),session]
-  currSession[which(currSession==min(currSession))] <- 1
-  currSession[which(currSession==max(currSession))] <- 2
-  
+  if (length(unique(currSession) == 2)) {
+    currSession[which(currSession==max(currSession))] <- 2
+    currSession[which(currSession==min(currSession))] <- 1
+  } else {
+    currSession[] <- 1 
+  }
   DAT$session[which(DAT$subjID==allSubjects[ss])] <- currSession
-  print('ok')
+  print(paste(length(unique(currSession)),' sessions',sep=""))
 }
 DAT$session <- as.integer(DAT$session)
 
 # Get mean reaction time per session (block) and participant. Same  for accuracy
- summary <-  data.frame(matrix(ncol = 15, nrow = nsubjects))
+ summary <-  data.frame(matrix(ncol = 17, nrow = nsubjects))
   for (s in 1:nsubjects){
     sDat <- DAT[which(DAT$subjID==unique(DAT$subjID)[s])]
+    
     # RTs and ACCU per session and over both 
     sDatses1 <- sDat[which(sDat$session==1),]
       L1_rt_inc <- mean(sDatses1$rt[which(sDatses1$fb==0)],na.rm=TRUE)
@@ -167,6 +179,9 @@ DAT$session <- as.integer(DAT$session)
       L1_n_inc <- length(sDatses1$fb[which(sDatses1$fb==0)])
       L1_n_corr <- length(sDatses1$fb[which(sDatses1$fb==1)])
       L1_n_miss <- length(sDatses1$fb[which(sDatses1$fb==2)])
+      L1_blockId <- unique(sDatses1$block)
+      if (length(L1_blockId)==0) { L1_blockId<- NaN}
+      
       
     sDatses2 <- sDat[which(sDat$session==2),]
       L2_rt_inc <- mean(sDatses2$rt[which(sDatses2$fb==0)],na.rm=TRUE)
@@ -174,6 +189,9 @@ DAT$session <- as.integer(DAT$session)
       L2_n_inc <- length(sDatses2$fb[which(sDatses2$fb==0)])
       L2_n_corr <- length(sDatses2$fb[which(sDatses2$fb==1)])
       L2_n_miss <- length(sDatses2$fb[which(sDatses2$fb==2)])
+      L2_blockId <- unique(sDatses2$block)
+      if (length(L2_blockId)==0) { L2_blockId<- NaN}
+      
     #both sessions  
     L12_rt_inc <- mean(mean(c(L1_rt_inc,L2_rt_inc)),na.rm=TRUE)
     L12_rt_corr <- mean(mean(c(L1_rt_corr,L2_rt_corr)),na.rm=TRUE)
@@ -181,7 +199,10 @@ DAT$session <- as.integer(DAT$session)
     L12_n_corr <- length(sDat$fb[which(sDat$fb==1)])
     L12_n_miss <- length(sDat$fb[which(sDat$fb==2)])
     
-    combined <-  cbind(L1_rt_corr,L1_rt_inc,L2_rt_corr,L2_rt_inc,L12_rt_corr,L12_rt_inc,L1_n_corr,L1_n_inc,L1_n_miss,L2_n_corr,L2_n_inc,L2_n_miss,L12_n_corr,L12_n_inc,L12_n_miss)
+    
+    
+    combined <-  cbind(L1_blockId,L2_blockId,L1_rt_corr,L1_rt_inc,L2_rt_corr,L2_rt_inc,L12_rt_corr,L12_rt_inc,
+                       L1_n_corr,L1_n_inc,L1_n_miss,L2_n_corr,L2_n_inc,L2_n_miss,L12_n_corr,L12_n_inc,L12_n_miss)
     summary[s,]<- combined
     header  <- colnames(combined)
    
@@ -191,10 +212,11 @@ DAT$session <- as.integer(DAT$session)
   
 # Combine accu and RT summary table
 write.xlsx(summary,paste(diroutput,"/Perform_summary.xlsx",sep=""),row.names = FALSE,showNA = FALSE)
+
  
 #-------------------------------------------------------
 # ======================================================
-#                     PLOT 
+#                     PLOT S
 # ======================================================
 #------------------------------------------------------
 

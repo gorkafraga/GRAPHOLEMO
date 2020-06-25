@@ -15,12 +15,19 @@ params={};
         onsets(i).stimOnset_pos = currLog.stimOnset(currLog.fb ==1)/1000;
         onsets(i).stimOnset_neg = currLog.stimOnset(currLog.fb ==0)/1000;
         onsets(i).stimOnset_miss = currLog.stimOnset(currLog.fb ==2)/1000;
+           %take 10 first and 10 last for positive
+           onsets(i).stimOnset_pos_first10 = onsets(i).stimOnset_pos(1:10);
+           onsets(i).stimOnset_pos_last10 = onsets(i).stimOnset_pos(end-9:end);
         
         % Separate feedbackOnset for correct and incorrect trials
         onsets(i).fbOnset_pos = currLog.feedbackOnset(currLog.fb ==1)/1000;
         onsets(i).fbOnset_neg = currLog.feedbackOnset(currLog.fb ==0)/1000;
         onsets(i).fbOnset_miss = currLog.feedbackOnset(currLog.fb ==2)/1000;
-
+           %take 10 first and 10 last for positive
+           onsets(i).fbOnset_pos_first10 = onsets(i).fbOnset_pos(1:10);
+           onsets(i).fbOnset_pos_last10 = onsets(i).fbOnset_pos(end-9:end);
+        
+        
         % Separate Response for correct and incorrect trials
         onsets(i).respOnset_pos = currLog.respOnset(currLog.fb ==1)/1000;
         onsets(i).respOnset_neg = currLog.respOnset(currLog.fb ==0)/1000;
