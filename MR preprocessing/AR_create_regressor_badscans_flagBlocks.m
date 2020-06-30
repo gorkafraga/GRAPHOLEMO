@@ -10,7 +10,7 @@
 % - Another output text file shows percent and count of flagged scans 
 
 clear all; close all;  %clear workspace
-epipath = 'O:\studies\allread\mri\analysis_GFG\preprocessing\learn_1\epis\'; % epis parent folder 
+epipath = 'O:\studies\allread\mri\analysis_GFG\preprocessing\learn_2\epis\'; % epis parent folder 
 files = dir([epipath,'\AR*']);
 subject= {files.name};
 %subject={'AR1037'};
@@ -70,9 +70,12 @@ for i=1:length(subject) % loop over all subjects
         %countBadTable = cell2table(countBad,'VariableNames',{'percentRepaired','percentFlagged','nRepaired','nFlagged'});      
         nRepNotFlagged =  length(badscans{1}) - ( length(flag)-length(gaps));
         percentRepNotFlagged = sprintf('%.2f',(100*(nRepNotFlagged/N_scans)));
+        ngaps = length(gaps);
+        percentgaps =  sprintf('%.2f',(100*(ngaps/N_scans)));
         
-         countBad = [{sprintf('%.2f',(100*length(badscans{1})/N_scans))},{sprintf('%.2f',(100*length(flag)/N_scans))},percentRepNotFlagged, length(badscans{1}),length(flag),nRepNotFlagged];
-         countBadTable = cell2table(countBad,'VariableNames',{'percentRepaired','percentFlagged','percentRepNotFlagged','nRepaired','nFlagged','nRepNotFlagged'});      
+        
+         countBad = [{sprintf('%.2f',(100*length(badscans{1})/N_scans))},{sprintf('%.2f',(100*length(flag)/N_scans))},percentRepNotFlagged, percentgaps,length(badscans{1}),length(flag),nRepNotFlagged,ngaps];
+         countBadTable = cell2table(countBad,'VariableNames',{'ARTrepaired_pr','Flagged_pr','RepairedInAnalysis_pr','gapScansFromFlagged_pr','ARTrepaired_n','Flagged_n','RepairedInAnalysis_n','gapScansFromFlagged_n'});      
          countbadfile =  strrep(file_repair,'art_repaired.txt','countBadScans_inBlock_v2.txt');
          writetable(countBadTable, countbadfile,'delimiter','\t') 
         end 

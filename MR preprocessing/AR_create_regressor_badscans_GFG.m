@@ -71,7 +71,7 @@ for i=1:length(subject) % loop over all subjects
         %Count repaired scans, flag scans and percentages  
            %countBad = [{sprintf('%.2f',(100*length(badscans{1})/N_scans))},{sprintf('%.2f',(100*length(flag)/N_scans))},length(badscans{1}),length(flag)];
            %countBadTable = cell2table(countBad,'VariableNames',{'percentRepaired','percentFlagged','nRepaired','nFlagged'});      
-             countBad = [{sprintf('%.2f',(100*length(badscans{1})/N_scans))},{sprintf('%.2f',(100*length([badscans{1}',gaps])/N_scans))},length(badscans{1}),length([badscans{1}',gaps])];
+           countBad = [{sprintf('%.2f',(100*length(badscans{1})/N_scans))},{sprintf('%.2f',(100*length([badscans{1}',gaps])/N_scans))},length(badscans{1}),length([badscans{1}',gaps])];
            countBadTable = cell2table(countBad,'VariableNames',{'percentRepaired','percentFlagged','nRepaired','nFlagged'});      
            countbadfile =  strrep(file_repair,'art_repaired.txt','countBadScans.txt');
            writetable(countBadTable, countbadfile,'delimiter','\t') 
