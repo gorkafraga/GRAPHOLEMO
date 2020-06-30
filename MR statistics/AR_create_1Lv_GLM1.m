@@ -115,6 +115,7 @@ function [matlabbatch] =  AR_create_1Lv_GLM1(pathSubject,scans,onsets,nsessions)
     matlabbatch{3}.spm.stats.con.consess{9}.tcon.name = 'fb neg';
     matlabbatch{3}.spm.stats.con.consess{9}.tcon.weights = [0 0 0 1 0];
     matlabbatch{3}.spm.stats.con.consess{9}.tcon.sessrep = 'repl';
+    
     % print some output pictures %%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % design matrix

@@ -14,17 +14,15 @@
 clear all
 close all
 %Chooice your GLM of interest
-selectedGLM = 'GLM1';
+selectedGLM = 'GLM0';
 
-%Specifies the INPUT folders assigned to each GLM 
-modelChoice = containers.Map({'GLM0','GLM1','GLM1_pm1a','GLM2'},...
-        {'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM0\learn_12',... 
-        'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM1\learn_12',...
-        'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM1_pm1a\learn_12',...
-        'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM2\learn_12'} );
-
-% set input dir, create output dir 
-dirinput =  modelChoice(selectedGLM); 
+% set input dir  based on GLM of interest
+parentDir = 'O:\studies\allread\mri\analyses_NF\mri_analyses_NF\first_level_NF';
+listFolders = dir(strcat(parentDir,'\1Lv_',selectedGLM,'*'));
+[indx,tf] = listdlg('PromptString','Select source 1st level folder','ListString',{listFolders.name});
+dirinput = strcat([listFolders(indx).folder,'\',listFolders(indx).name]) ;
+ 
+%create output dir  
 diroutput = strrep(dirinput,['1Lv_',selectedGLM],['2Lv_',selectedGLM,'_ok']);
 mkdir(diroutput)
 

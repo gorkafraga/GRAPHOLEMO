@@ -6,17 +6,16 @@ lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
 
 #set ins and outs
-dirinput <-"O:/studies/allread/mri/analyses_NF/mri_analyses_NF/first_level_NF/task/logs" 
-diroutput <-"O:/studies/allread/mri/analyses_NF/mri_analyses_NF/first_level_NF/task/testGFG" 
+dirinput <-"O:/studies/allread/mri/analysis_GFG/stats/task/logs/Nada" 
+diroutput <-"O:/studies/allread/mri/analysis_GFG/stats/task/logs/Nada" 
 task <- "FeedLearn"
 ntrials <- 40
- 
+winDialog("ok", "HI THERE!! Do all subjects have 2 log files? If not the Plot will be blank. But table will still be OK.")
+
 #loop thru files
 setwd(dirinput)
 files <- dir(dirinput,'*._4stim_.*.txt',recursive = TRUE)
 files <- files[grep('^AR*',files)]
-
-
 #`%!in%` = Negate(`%in%`) 
 #files <- files[which(substr(files,1,6) %!in% c("AR1025","AR1063"))] # use this to exclude subjects
 #files <- files[which(substr(files,1,6) %in% c("AR1025","AR1063"))] # use tthis to include subjects from a list of subjects
@@ -110,7 +109,7 @@ for (i in 1:length(files)){
 DAT <- data.table::rbindlist(dataList) 
 CUMU <- data.table::rbindlist(cumuList) 
 
-# Summary Tables
+# Summary Tables for plot 
 #------------------------------------------------------------------------------
 # ACCU summary Count proportion correct  trials in quartile
 D_per_quart <- DAT %>%  group_by(subjID,block,quartile,fb,.drop = FALSE) %>% tally()
@@ -148,7 +147,7 @@ nsubjects<- length(unique(DAT$subjID))
 
 #-------------------------------------------------------
 # ======================================================
-#                     Summary 
+#      Summary  TABLE TO SAVE
 # ======================================================
 #------------------------------------------------------
 # Code sessions (1 or 2)
@@ -156,12 +155,18 @@ DAT$session <- DAT$block
 allSubjects <- unique(DAT$subjID)
 for (ss in 1:length(allSubjects)){
   currSession <- DAT[which(DAT$subjID==allSubjects[ss]),session]
-  if (length(unique(currSession) == 2)) {
-    currSession[which(currSession==max(currSession))] <- 2
-    currSession[which(currSession==min(currSession))] <- 1
-  } else {
+  if (length(unique(currSession)) == 2) {
+    minidx <- which(currSession==min(currSession))
+    maxidx <- which(currSession==max(currSession))
+    
+    currSession[minidx] <- 1
+    currSession[maxidx] <- 2
+    
+  } else if (length(unique(currSession)) == 1)  {
+    print(paste("One session in ", allSubjects[ss],sep=""))
     currSession[] <- 1 
   }
+  
   DAT$session[which(DAT$subjID==allSubjects[ss])] <- currSession
   print(paste(length(unique(currSession)),' sessions',sep=""))
 }
@@ -180,7 +185,11 @@ DAT$session <- as.integer(DAT$session)
       L1_n_corr <- length(sDatses1$fb[which(sDatses1$fb==1)])
       L1_n_miss <- length(sDatses1$fb[which(sDatses1$fb==2)])
       L1_blockId <- unique(sDatses1$block)
-      if (length(L1_blockId)==0) { L1_blockId<- NaN}
+      if (length(L1_blockId)==0) { 
+        L1_blockId<- NaN
+        L1_n_corr<- NaN
+        L1_n_inc<- NaN
+        L1_n_miss<- NaN}
       
       
     sDatses2 <- sDat[which(sDat$session==2),]
@@ -190,16 +199,18 @@ DAT$session <- as.integer(DAT$session)
       L2_n_corr <- length(sDatses2$fb[which(sDatses2$fb==1)])
       L2_n_miss <- length(sDatses2$fb[which(sDatses2$fb==2)])
       L2_blockId <- unique(sDatses2$block)
-      if (length(L2_blockId)==0) { L2_blockId<- NaN}
+      if (length(L2_blockId)==0) { 
+        L2_blockId<- NaN
+        L2_n_corr<- NaN
+        L2_n_inc<- NaN
+        L2_n_miss<- NaN}
       
     #both sessions  
-    L12_rt_inc <- mean(mean(c(L1_rt_inc,L2_rt_inc)),na.rm=TRUE)
-    L12_rt_corr <- mean(mean(c(L1_rt_corr,L2_rt_corr)),na.rm=TRUE)
-    L12_n_inc <- length(sDat$fb[which(sDat$fb==0)])
-    L12_n_corr <- length(sDat$fb[which(sDat$fb==1)])
-    L12_n_miss <- length(sDat$fb[which(sDat$fb==2)])
-    
-    
+      L12_rt_inc <- mean(mean(c(L1_rt_inc,L2_rt_inc)),na.rm=TRUE)
+      L12_rt_corr <- mean(mean(c(L1_rt_corr,L2_rt_corr)),na.rm=TRUE)
+      L12_n_inc <- length(sDat$fb[which(sDat$fb==0)])
+      L12_n_corr <- length(sDat$fb[which(sDat$fb==1)])
+      L12_n_miss <- length(sDat$fb[which(sDat$fb==2)])
     
     combined <-  cbind(L1_blockId,L2_blockId,L1_rt_corr,L1_rt_inc,L2_rt_corr,L2_rt_inc,L12_rt_corr,L12_rt_inc,
                        L1_n_corr,L1_n_inc,L1_n_miss,L2_n_corr,L2_n_inc,L2_n_miss,L12_n_corr,L12_n_inc,L12_n_miss)
@@ -216,7 +227,7 @@ write.xlsx(summary,paste(diroutput,"/Perform_summary.xlsx",sep=""),row.names = F
  
 #-------------------------------------------------------
 # ======================================================
-#                     PLOT S
+#                     PLOTS
 # ======================================================
 #------------------------------------------------------
 

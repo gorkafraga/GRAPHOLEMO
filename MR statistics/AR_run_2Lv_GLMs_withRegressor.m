@@ -12,18 +12,17 @@
 %G.Fraga Gonzalez(2020)
 clear all
 close all
-%Choose your 1st level GLM of interest
-selectedGLM = 'GLM1';
-readRegreFromTable = 1; % set as 0 if you want to input your vector with input dialogue
-%Specifies the INPUT folders assigned to each GLM 
-modelChoice = containers.Map({'GLM0','GLM1','GLM1_pm1a','GLM2'},...
-        {'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM0\learn_12',... 
-        'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM1\learn_12',...
-        'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM1_pm1a\learn_12',...
-        'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM2\learn_12'} );
+ readRegreFromTable = 1; % set as 0 if you want to input your vector with input dialogue
+%Chooice your GLM of interest
+selectedGLM = 'GLM0';
 
-% set input dir, create output dir 
-dirinput =  modelChoice(selectedGLM); 
+% set input dir  based on GLM of interest
+parentDir = 'O:\studies\allread\mri\analyses_NF\mri_analyses_NF\first_level_NF';
+listFolders = dir(strcat(parentDir,'\1Lv_',selectedGLM,'*'));
+[indx,tf] = listdlg('PromptString','Select source 1st level folder','ListString',{listFolders.name});
+dirinput = strcat([listFolders(indx).folder,'\',listFolders(indx).name]) ;
+
+% create dir output
 diroutput = strrep(dirinput,['1Lv_',selectedGLM],['2Lv_',selectedGLM,'_Regre']);
 mkdir(diroutput)
 
@@ -44,9 +43,9 @@ clear SPM
 
  %% Read subject files
 files = dir([dirinput,'\AR*']);
-subjects= {files.name};
+%subjects= {files.name};
 %excludedSubj = {'AR1016','AR1022','AR1037'};
-%subjects(cell2mat(cellfun(@(c)find(strcmp(c,subjects)),excludedSubj,'UniformOutput',false)))=[]; %find index and exclude subjects
+subjects(cell2mat(cellfun(@(c)find(strcmp(c,subjects)),excludedSubj,'UniformOutput',false)))=[]; %find index and exclude subjects
  
 %% read Regressor from table 
 if readRegreFromTable == 1

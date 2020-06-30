@@ -6,8 +6,8 @@
 % %G.Fraga-Gonzalez(2020)
 %------------------------------------------------------------------------- 
 clear all
-dirinput = '\\kjpd-nas01.d.uzh.ch\BrainMap$\studies\allread\mri\analyses_NF\mri_analyses_NF\first_level_NF\task\all_logs' ;
-diroutput = '\\kjpd-nas01.d.uzh.ch\BrainMap$\studies\allread\mri\analyses_NF\BEH_learning\task_performance\learn_12\group_all_allblocks' ;
+dirinput = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs_raw' ;
+diroutput = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs_raw' ;
 blocks2read  = {'B1','B2','B3','B4','B1-1','B2-2','B3-1','B4-1'};
 cd (dirinput)
 sfiles = dir([dirinput,'\*AR*']);
@@ -54,4 +54,4 @@ Tstats.Properties.VariableNames = header;
 
 %save 
 cd(diroutput)
-writetable(Tstats,'Performance_raw_stats.xlsx')
+writetable(Tstats,'_Performance_raw_stats.xlsx')

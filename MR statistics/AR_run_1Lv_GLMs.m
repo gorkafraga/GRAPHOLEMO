@@ -10,7 +10,7 @@
 %--------------------------------------------------------------------------------------------------------------
 clear all
 close all
-
+masterfile = 'O:\studies\allread\mri\analysis_GFG\Allread_MasterFile_GFG.xlsx'; % for reading subjects
 %Chooice your GLM of interest
 selectedGLM = 'GLM1';
 %Specifies the folders assigned to each GLM 
@@ -26,19 +26,32 @@ diroutputChoices = containers.Map({'GLM0','GLM1','GLM1_pm1a','GLM2','GLMDUMMY'},
 paths.analysis =  diroutputChoices(selectedGLM);  
 addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR statistics');% set path to this script and associated functions
 paths.mri = 'O:\studies\allread\mri\analysis_GFG\preprocessing';% This should have subfolders learn_1 and learn_2
-paths.logs = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
+paths.logs = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs\GFG'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
 nscans = 273;
 
+%% Begin subject selection and loop
+
+T = readtable(masterfile,'sheet','Lists_subsamples'); 
+[indx,tf] = listdlg('PromptString','Select a list of participants:','ListString', T.Properties.VariableNames); % popup 
+if (isempty(indx))
+    groupName = 'manual';
+    files = dir([dirinput,'\AR*']);
+    subjects= {files.name};
+    %subjects = subjects(~contains(subjects,'AR1025'));
+    %excludedSubj = {'AR1025'};
+    %subjects(cell2mat(cellfun(@(c)find(strcmp(c,subjects)),excludedSubj,'UniformOutput',false)))=[]; %find index and exclude subjects
+else 
+    groupName = T.Properties.VariableNames(indx);
+    Tcolumn = T{:,indx};
+    subjects = Tcolumn(~cellfun('isempty',Tcolumn))'
+end
+
+% Add grouping info to output path and create output path
+paths.analysis = strcat(paths.analysis,'_',cell2mat(groupName));
 mkdir(paths.analysis)
 cd (paths.analysis)
-%% Begin subject loop
 
-files = dir([paths.logs,'\AR*']);
-subjects= {files.name};
-%subjects = subjects(~contains(subjects,'AR1025'));
-excludedSubj = {'AR1025'};
-subjects(cell2mat(cellfun(@(c)find(strcmp(c,subjects)),excludedSubj,'UniformOutput',false)))=[]; %find index and exclude subjects
-
+%% RUN 
 spm('defaults','fMRI')
 for i = 1:length(subjects)
     subject = subjects{i}; 
@@ -56,9 +69,7 @@ for i = 1:length(subjects)
     nsessions = length(logfiles);
     currPathLogs = [paths.logs,'\',subject];
     [onsets,params] = AR_gather_onsets(logfiles,currPathLogs);
-    
-    
-    
+        
     % find SCANS matching with log files
     fprintf(logfileID,strcat(['[[',subject,']]\r\n'])); 
     for j = 1:length(logfiles)
