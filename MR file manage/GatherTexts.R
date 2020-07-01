@@ -5,7 +5,7 @@ Packages <- c("xlsx")
 lapply(Packages, require, character.only = TRUE)
 
 dirinput <- 'O:/studies/allread/mri/analysis_GFG/preprocessing/learn_1'
-diroutput <- 'O:/studies/allread/mri/analysis_GFG/preprocessing/'
+diroutput <- 'O:/studies/allread/mri/analysis_GFG/preprocessing/learn_1'
 
 files <- dir(dirinput,pattern = '*countBadScans_inBlock_v2.txt',recursive=TRUE)
 
