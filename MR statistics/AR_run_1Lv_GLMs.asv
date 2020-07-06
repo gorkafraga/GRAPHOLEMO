@@ -13,19 +13,20 @@ close all
 masterfile = 'O:\studies\allread\mri\analysis_GFG\Allread_MasterFile_GFG.xlsx'; % for reading subjects
 %Chooice your GLM of interest
 selectedGLM = 'GLM1';
-% Specifies the folders assigned to each GLM 
+%Specifies the folders assigned to each GLM 
 diroutputChoices = containers.Map({'GLM0','GLM1','GLM1_pm1a','GLM2','GLMDUMMY'},...
         {'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM0',... 
         'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM1',...
         'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM1_pm1a',...
         'O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_GLM2',...
          'O:\studies\allread\mri\analysis_GFG\stats\mri\GLMDUMMY' });
-     
+    
+    
 % Set up directories and some variables 
 paths.analysis =  diroutputChoices(selectedGLM);  
 addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR statistics');% set path to this script and associated functions
 paths.mri = 'O:\studies\allread\mri\analysis_GFG\preprocessing';% This should have subfolders learn_1 and learn_2
-paths.logs = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs_raw'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
+paths.logs = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs\GFG'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
 nscans = 273;
 
 %% Begin subject selection
@@ -44,10 +45,13 @@ else
     subjects = Tcolumn(~cellfun('isempty',Tcolumn))'
 end
 
-% Find index of selected blocks for selected subjects
-TT = readtable(masterfile,'sheet','MR_Learn_QA');
-[indx2,tf2]= listdlg('PromptString','Choose variable with block selection','ListString', TT.Properties.VariableNames); % popup 
-blocks2use = TT(contains(TT.subjID,subjects),indx2);
+% Find index of selected blocks 
+TT = readtable(masterfile,'sheet','MR_');
+
+
+
+
+
 
 % Add grouping info to output path and create output path
 paths.analysis = strcat(paths.analysis,'_',cell2mat(groupName));
@@ -64,15 +68,12 @@ for i = 1:length(subjects)
     end
     cd(pathSubject)
     logfileID = fopen('LOG_firstLevel.txt','w');
-   % Get block indexes for this subject
-    currBlocks = split(blocks2use(i),',');
+
    %% PREPARE INPUTS 
-   nsessions = length(currBlocks);
    %Gather onsets from log files. Times need to be in seconds
-    for b = 1:nsessions
-      logfilesTMP = dir([paths.logs,'\',subject,'\*FeedLearn*','b',currBlocks{b},'.txt']);
-      logfiles(b) = {logfilesTMP.name}  ;       
-    end
+    logfilesTMP = dir([paths.logs,'\',subject,'\*FeedLearn*.txt']);
+    logfiles = {logfilesTMP.name}  ;  
+    nsessions = length(logfiles);
     currPathLogs = [paths.logs,'\',subject];
     [onsets,params] = AR_gather_onsets(logfiles,currPathLogs);
         
@@ -82,20 +83,20 @@ for i = 1:length(subjects)
           %take a pattern from logfile that can identify its corresponding mr file
           logfilesChar = logfiles{j};
           patternId = logfilesChar(end-6:end-4); % block id is used to find correct mr file
-          mrfilename = dir([paths.mri,'\block*\epis\',subject,'\ART\vs6wuamr*',patternId,'*.nii']);
+          mrfilename = dir([paths.mri,'\**\epis\',subject,'\ART\vs6wuamr*',patternId,'*.nii']);
           
           % select scans 
           scans{j} =  cellstr(spm_select('ExtFPList',mrfilename.folder, mrfilename.name, Inf))  ;
           
           % Read the corresponding RP file
-          rpfile = dir([paths.mri,'\block*\epis\',subject,'\rp_amr*',patternId,'*.txt']);
+          rpfile = dir([paths.mri,'\**\epis\',subject,'\rp_amr*',patternId,'*.txt']);
           formatSpec = '%16f%16f%16f%16f%16f%16f%[^\n\r]';
           fileID = fopen([rpfile.folder,'\',rpfile.name],'r');
           rpdat = textscan(fileID, formatSpec, 'Delimiter', '', 'WhiteSpace', '', 'TextType', 'string',  'ReturnOnError', false);
           fclose(fileID);
 
           mrfilenameSplit = split(mrfilename.folder,'\');
-          sessionID  =  mrfilenameSplit{find(contains(mrfilenameSplit,'block'))};
+          sessionID  =  mrfilenameSplit{find(contains(mrfilenameSplit,'learn'))};
           % Read flagged bad scans (if file found, else create a vector of zeros) 
            badscans = dir([paths.mri,'\',sessionID,'\epis\',subject,'\ART\*flagscans_inBlock.mat']);
            if ~isempty(badscans) % If it doesn't find a flagscan file it will use zeroes
