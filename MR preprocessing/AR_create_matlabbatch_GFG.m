@@ -69,7 +69,19 @@ elseif strcmp(currTask,'learn_3')
     water_fat_shift_pixel = 12.47;  
     voxelSize = 3;
     smoothSize = 6; % smoothing factor in mm
-
+     
+elseif strcmp(currTask,'learn_4')
+    scansList = { cellstr(spm_select('ExtFPList',epiDir, '^mr.*.epi_learn.*.nii$', Inf)) };
+    nslices = 42;
+    tr = 1.330;
+    blocks = 1;  
+    timings = [fliplr(round([0:31.66*2:1298.33])),fliplr(round([0:31.66*2:1298.33]))];
+    epifactor  = 31; % EPI factor
+    scanresolution = 62; % (y value of scan resolution in .par file)
+    water_fat_shift_pixel = 12.47;  
+    voxelSize = 3;
+    smoothSize = 6; % smoothing factor in mm
+    
 elseif strcmp(currTask,'symCtrl') % this was called implicit before
     scansList = { cellstr(spm_select('ExtFPList',epiDir, '^mr.*.epi_symctrl.*.nii$', Inf)) };
     nslices = 42;

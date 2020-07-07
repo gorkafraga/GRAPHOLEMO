@@ -29,7 +29,7 @@ cd (paths.preprocessing)
 for t=1:length(tasklist)
 currTask = tasklist{t};
 paths.task = [paths.preprocessing,currTask,'\'];
-     %empty batch for all subjects
+     %start an empty batch for all subjects
      batch = cell(length(subjects));
      for i=1:length(subjects)   
             currsubject = subjects{i};
