@@ -13,33 +13,46 @@ lapply(Packages, require, character.only = TRUE)
 # REFS: e.g. From Pederson et al.,2017 https://github.com/gbiele/RLDDM/blob/master/RLDDM.jags.txt 
 
 #set dirs
-dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/logs"
-diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/model"
-dirmrfirstlevel <- "O:/studies/allread/mri/analysis_GFG/stats/mri/1Lv_GLM1/learn_12" # use this to find your subjects
-
+dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/logs/GFG"
+diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/models_rtbound500"
+masterfile  <- "O:/studies/allread/mri/analysis_GFG/Allread_MasterFile_GFG.xlsx" # use this to find your subjects
 setwd(dirinput)
 #Some starting info
 nblocks <- 3              
 ntrials <- 40             # trials per block
 stims_per_block <- 4      # number of stimuli to be learned per block
-RTbound <- 0.15           # set a limit for implausibly fast responses 
-files <- dir(pattern=paste("*.4stim_.*",".txt",sep=""), recursive=TRUE)
+RTbound <- 0.300           # set a limit for implausibly fast responses  (previously 150 ms)
 #files <- basename(dir(pattern=paste("*.4stim_.*",".txt",sep=""), recursive=TRUE))
 #files <-sapply(strsplit(files,"/"),"[",2) #take just filename without subject's directory
 taskpattern<- "FeedLearn_MRI"
 
-# Select subjects  + sanity check of number of blocks
+# READ SUBJECTS LIST
 #--------------------------------------------------------------------
-subjects <- dir(paste(dirmrfirstlevel,'',paste='')) # find subjects with first level mr analysis
-#`%!in%` = Negate(`%in%`) 
-#subjects <- subjects[which(subjects %!in% c("AR1025","AR1063"))] # use this to exclude subjects
+T <- xlsx::read.xlsx(file = masterfile,sheetName= "Lists_subsamples")
+selection <- menu(colnames(T),graphics=TRUE,title="Choose list")
+
+subjects  <- T[selection]
+subjects <- subjects[!is.na(subjects)]
+
+# select log/txt files from selected subjects
+#--------------------------------------------------------------------
+files <- dir(pattern=paste("*.4stim_.*",".txt",sep=""), recursive=TRUE)
 files <- files[which(substr(files,1,6) %in% subjects)]  # take log files of those subjects
-#print number of blocks
+
+# print number of blocks for checking
 for (i in 1:length(subjects)){
   if  (length(grep(subjects[i],files))>nblocks) {  cat(subjects[i]," has more than",nblocks," blocks!\n") }
   else { cat(subjects[i],"is OK. n blocks =",length(grep(subjects[i],files)),"\n")         
   }
 }
+
+
+#`%nin%` = Negate(`%in%`) 
+#assign(targetGroup,T[which(T %nin% "")]) # remove empty cells and assign the value to a variable with the name contained in 'targetgroup' variable... 
+#`%!in%` = Negate(`%in%`) 
+#subjects <- subjects[which(subjects %!in% c("AR1025","AR1063"))] # use this to exclude subjects
+
+
 
 
 # Gather all data before preprocessing
@@ -154,7 +167,7 @@ ifelse(is.null(dim(blocks)),blocks<-as.array(blocks))
 # ----------------------------------------------------
 datList <- list("N" = n_subj,
                 "T"=n_trials,
-                "RTbound" = 0.15,
+                "RTbound" = RTbound,
                 "minRT" = minRT, 
                 "iter" = datTable$trial,
                 "response" = datTable$response, 

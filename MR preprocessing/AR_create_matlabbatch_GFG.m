@@ -34,7 +34,7 @@ if strcmp(currTask,'eread')
     voxelSize = 3;
     smoothSize = 6; % smoothing factor in mm
     
-elseif strcmp(currTask,'learn_1')
+elseif strcmp(currTask,'block_1')
     scansList = { cellstr(spm_select('ExtFPList', epiDir, '^mr.*.epi_learn.*.nii$', Inf)) };
     nslices = 42;
     tr = 1.330;
@@ -46,7 +46,7 @@ elseif strcmp(currTask,'learn_1')
     voxelSize = 3;
     smoothSize = 6; % smoothing factor in mm
     
-elseif strcmp(currTask,'learn_2')
+elseif strcmp(currTask,'block_2')
     scansList = { cellstr(spm_select('ExtFPList', epiDir, '^mr.*.epi_learn.*.nii$', Inf)) };
     nslices = 42;
     tr = 1.330;
@@ -58,7 +58,7 @@ elseif strcmp(currTask,'learn_2')
     voxelSize = 3;
     smoothSize = 6; % smoothing factor in mm
      
-elseif strcmp(currTask,'learn_3')
+elseif strcmp(currTask,'block_3')
     scansList = { cellstr(spm_select('ExtFPList',epiDir, '^mr.*.epi_learn.*.nii$', Inf)) };
     nslices = 42;
     tr = 1.330;
@@ -70,7 +70,7 @@ elseif strcmp(currTask,'learn_3')
     voxelSize = 3;
     smoothSize = 6; % smoothing factor in mm
      
-elseif strcmp(currTask,'learn_4')
+elseif strcmp(currTask,'block_4')
     scansList = { cellstr(spm_select('ExtFPList',epiDir, '^mr.*.epi_learn.*.nii$', Inf)) };
     nslices = 42;
     tr = 1.330;

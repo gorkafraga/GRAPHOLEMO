@@ -76,16 +76,22 @@ function AR_create_fieldmap_GFG(currsubject,paths,currTask,anatTemplate)
             matrixsize_phase_enc_dir = 62; % nr of echos (y value of scan resolution in .par file)
             water_fat_shift_pixel = 8.90;     
             sensefactor                 = 2;        
-        elseif strcmp(currTask,'learn_1')             
+        elseif strcmp(currTask,'block_1')             
             epifactor  = 31; % EPI factor
             matrixsize_phase_enc_dir = 62; % nr of echos (y value of scan resolution in .par file)
             water_fat_shift_pixel = 12.47; 
             sensefactor                 = 2;        
-        elseif strcmp(currTask,'learn_2') 
+        elseif strcmp(currTask,'block_2') 
             epifactor  = 31; % EPI factor
             matrixsize_phase_enc_dir = 62; % nr of echos (y value of scan resolution in .par file)
             water_fat_shift_pixel = 12.47;
-        elseif strcmp(currTask,'learn_3')           
+            sensefactor                 = 2;   
+       elseif strcmp(currTask,'block_3') 
+            epifactor  = 31; % EPI factor
+            matrixsize_phase_enc_dir = 62; % nr of echos (y value of scan resolution in .par file)
+            water_fat_shift_pixel = 12.47;
+            sensefactor                 = 2;   
+        elseif strcmp(currTask,'block_4')           
             epifactor  = 31; % EPI factor
             matrixsize_phase_enc_dir = 62; % nr of echos (y value of scan resolution in .par file)
             water_fat_shift_pixel = 12.47;   

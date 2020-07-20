@@ -3,13 +3,13 @@ Model versions:
 -----------------------------
 		a_mod  LR
 
-rlddm_v11	exp     1            
+rlddm_v11	exp	1            
 rlddm_v21	lin	1
 rlddm_v31	NA	1
 
-rlddm_v12	exp     2
+rlddm_v12	exp	2
 rlddm_v22	lin	2
-rlddm_v32	NA      2
+rlddm_v32	NA	2
 ----------------------------- 
 
 a_mod = decision boundary modifier

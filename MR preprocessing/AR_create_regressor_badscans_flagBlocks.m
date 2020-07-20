@@ -10,7 +10,7 @@
 % - Another output text file shows percent and count of flagged scans 
 
 clear all; close all;  %clear workspace
-epipath = 'O:\studies\allread\mri\analysis_GFG\preprocessing\learn_2\epis\'; % epis parent folder 
+epipath = 'G:\preprocessing\block_1\epis\'; % epis parent folder 
 files = dir([epipath,'\AR*']);
 subject= {files.name};
 %subject={'AR1037'};

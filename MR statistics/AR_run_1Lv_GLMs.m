@@ -24,7 +24,7 @@ diroutputChoices = containers.Map({'GLM0','GLM1','GLM1_pm1a','GLM2','GLMDUMMY'},
 % Set up directories and some variables 
 paths.analysis =  diroutputChoices(selectedGLM);  
 addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR statistics');% set path to this script and associated functions
-paths.mri = 'O:\studies\allread\mri\analysis_GFG\preprocessing';% This should have subfolders learn_1 and learn_2
+paths.mri = 'G:\preprocessing';% 
 paths.logs = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs_raw'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
 nscans = 273;
 
@@ -47,7 +47,7 @@ end
 % Find index of selected blocks for selected subjects
 TT = readtable(masterfile,'sheet','MR_Learn_QA');
 [indx2,tf2]= listdlg('PromptString','Choose variable with block selection','ListString', TT.Properties.VariableNames); % popup 
-blocks2use = TT(contains(TT.subjID,subjects),indx2);
+blocks2use = table2cell(TT(contains(TT.subjID,subjects),indx2));
 
 % Add grouping info to output path and create output path
 paths.analysis = strcat(paths.analysis,'_',cell2mat(groupName));
@@ -65,7 +65,7 @@ for i = 1:length(subjects)
     cd(pathSubject)
     logfileID = fopen('LOG_firstLevel.txt','w');
    % Get block indexes for this subject
-    currBlocks = split(blocks2use(i),',');
+    currBlocks = split(blocks2use{i},',');
    %% PREPARE INPUTS 
    nsessions = length(currBlocks);
    %Gather onsets from log files. Times need to be in seconds

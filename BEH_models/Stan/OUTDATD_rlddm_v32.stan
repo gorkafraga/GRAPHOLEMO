@@ -6,9 +6,9 @@
 //  _| |  \ \_  _| |__/ | _| |_.' /_| |_.' /_| |_\/_| |_      
 // |____| |___||________||______.'|______.'|_____||_____|
 //
-// Version 3.1: 
+// Version 3.2: 
 //  - Modulation of decision boundary (none) 
-//  - learning rate (x1)  
+//  - learning rate (x2)   
 // -------------------------------------------------------------------- 
 data {
   int<lower=1> N;      // Number of subjects
@@ -17,7 +17,7 @@ data {
   int last[N];         // last trial of subject
   int<lower=1> T;      // Number of observations
   real RTbound;        // lower bound of RT across all subjects (e.g., 0.1 second)
-  real iter[T];        // trial of given observation (from 1 to a max trial in a given subject)
+  real iter[T];        // trial of given observation
   int response[T];     // encodes successful trial [1: lower bound (incorrect), 2: upper bound(correct)]
   real RT[T];          // reaction time
   int value[T];        // value of trial: successful / unsuccessful  1 or 0
@@ -31,33 +31,39 @@ parameters {
   vector[2] mu_eta_pr; // group priors mean and stdev for learning rates 
   vector<lower=0>[2] sigma_eta_pr;   
 
-  vector[3] mu_pr; // group prior means and SDs for v_mo, tau, a  
-  vector<lower=0>[3] sigma_pr; 
+  vector[4] mu_pr; // group prior means and SDs for v_mo, tau, a , a_mod
+  vector<lower=0>[4] sigma_pr; 
 
   // SUBJECT LEVEL  raw parameters
-  vector[N] eta_pr; // learning rate  
-   
+  vector[N] eta_pos_pr; // learning rate correct trials
+  vector[N] eta_neg_pr;// learning rate incorrrect trials
+  
   vector[N] v_mod_pr; //drift rate modulator scaling parameter
   vector[N] tau_pr; //   tau (ter): Nondecision time + Motor response time + encoding time
   vector[N] a_pr; // decision boundary, boundary separation or Speed-accuracy trade-off 
- }
+  vector[N] a_mod_pr; // choice consistency or modulator for decision boundary
+}
 // ------------------------------------------------------------
 transformed parameters {
  //  SUBJECT LEVEL transformed parameters  
  // Declare
-  vector[N] eta; 
-   
+  vector[N] eta_pos; 
+  vector[N] eta_neg; 
+  
   vector<lower=0>[N] a; //(a): Boundary separation or Speed-accuracy trade-off 
+  vector[N] a_mod; 
   vector<lower=0, upper=10>[N] v_mod;             
   vector<lower=RTbound, upper=max(minRT)>[N] tau; //
           
   //Constrain
-  eta = 0.1*Phi_approx(mu_eta_pr[1] + sigma_eta_pr[1] * eta_pr);  
-   
+  eta_pos = Phi_approx(mu_eta_pr[1] + sigma_eta_pr[1] * eta_pos_pr);  
+  eta_neg = Phi_approx(mu_eta_pr[2] + sigma_eta_pr[2] * eta_neg_pr);
+  
   a = exp(mu_pr[1] + sigma_pr[1] * a_pr); 
-   v_mod = exp(mu_pr[2] + sigma_pr[2] * v_mod_pr);
+  a_mod = exp(mu_pr[2] + sigma_pr[2] * a_mod_pr);
+  v_mod = exp(mu_pr[3] + sigma_pr[3] * v_mod_pr);
   for (s in 1:N) {
-    tau[s]  = Phi_approx(mu_pr[3] + sigma_pr[3] * tau_pr[s]) * (minRT[s] - RTbound) + RTbound; // tau depends upon subjects' minimum RT 
+    tau[s]  = Phi_approx(mu_pr[4] + sigma_pr[4] * tau_pr[s]) * (minRT[s] - RTbound) + RTbound; // tau depends upon subjects' minimum RT 
     tau[s] = fabs(tau[s]);
   } 
 }
@@ -75,8 +81,10 @@ model {
   sigma_pr ~ normal(0, 0.2);
 
  // SUBJECT LEVEL priors 
-  eta_pr ~ normal(0,1.5); 
+  eta_pos_pr ~ normal(0,1); 
+  eta_neg_pr ~ normal(0,1); 
   a_pr ~ normal(0, 1);
+  a_mod_pr ~ normal(0, 1);
   v_mod_pr ~ normal(0, 1);
   tau_pr   ~ normal(0, 1);
  
@@ -97,28 +105,16 @@ model {
      // if lower bound (incorrect resp,that is response= 1)
       if (response[trial]==1){
         v[trial] = -((ev[trial,stim_assoc[trial]] + ev[trial,stim_nassoc[trial]])/2 * v_mod[s]);
-        RT[trial] ~  wiener(a[s],tau[s] ,beta,v[trial]);  
-        ev[trial+1,stim_nassoc[trial]] = ev[trial,stim_nassoc[trial]] + (eta[s] * fabs(value[trial]-(1-ev[trial,stim_nassoc[trial]]))); // adjust expected values for each stimuli pair in this trial
-        if (ev[trial+1,stim_nassoc[trial]]>1){
-          ev[trial+1,stim_nassoc[trial]]=1;
-        }
-        ev[trial+1,stim_assoc[trial]] = ev[trial,stim_assoc[trial]] + (eta[s] * fabs(value[trial]-ev[trial,stim_assoc[trial]]));
-         if (ev[trial+1,stim_assoc[trial]]>1){
-          ev[trial+1,stim_assoc[trial]]=1;
-        }
+        RT[trial] ~  wiener(a[s],tau[s],beta,v[trial]); 
+        ev[trial+1,stim_nassoc[trial]] = ev[trial,stim_nassoc[trial]] + (eta_neg[s] * fabs(value[trial]-(1-ev[trial,stim_nassoc[trial]]))); // adjust expected values for each stimuli pair in this trial
+        ev[trial+1,stim_assoc[trial]] = ev[trial,stim_assoc[trial]] + (eta_neg[s] * fabs(value[trial]-ev[trial,stim_assoc[trial]]));
       }
       // if upper bound (resp = 2)
       else{
         v[trial] = (ev[trial,stim_assoc[trial]] + ev[trial,stim_nassoc[trial]])/2 * v_mod[s];
         RT[trial] ~  wiener(a[s],tau[s] ,beta,v[trial]);
-        ev[trial+1,stim_nassoc[trial]] = ev[trial,stim_nassoc[trial]] + (eta[s] * (value[trial]-(1-ev[trial,stim_nassoc[trial]])));
-         if (ev[trial+1,stim_nassoc[trial]]>1){
-          ev[trial+1,stim_nassoc[trial]]=1;
-        }
-        ev[trial+1,stim_assoc[trial]] = ev[trial,stim_assoc[trial]] + (eta[s] * (value[trial]-ev[trial,stim_assoc[trial]]));
-         if (ev[trial+1,stim_assoc[trial]]>1){
-          ev[trial+1,stim_assoc[trial]]=1;
-        }
+        ev[trial+1,stim_nassoc[trial]] = ev[trial,stim_nassoc[trial]] + (eta_pos[s] * (value[trial]-(1-ev[trial,stim_nassoc[trial]])));
+        ev[trial+1,stim_assoc[trial]] = ev[trial,stim_assoc[trial]] + (eta_pos[s] * (value[trial]-ev[trial,stim_assoc[trial]]));
       }
     }
     // Updates in last trial (no update of expected value) ~~~~~~
@@ -137,9 +133,10 @@ model {
 generated quantities {
   // Declare SUBJECT level parameters
   real z = 0.5; // constant bias to responses
-  real<lower=0> mu_eta;                  
-
+  real<lower=0> mu_eta_pos;                  
+  real<lower=0> mu_eta_neg;  
   real<lower=0> mu_a;                   
+  real<lower=0> mu_a_mod; 
   real<lower=0> mu_v_mod;                   
   real<lower=RTbound, upper=max(minRT)> mu_tau;  
                    
@@ -155,10 +152,12 @@ generated quantities {
   vector[T] log_lik; // log likelihood, fit estimate for model comparison 
   
   // Assign SUBJECT LEVEL  parameter values
-  mu_eta = 0.1*Phi_approx(mu_eta_pr[1]);
+  mu_eta_pos = Phi_approx(mu_eta_pr[1]);
+  mu_eta_neg = Phi_approx(mu_eta_pr[2]);
   mu_a = exp(mu_pr[1]);
-  mu_v_mod =  exp(mu_pr[2]);
-  mu_tau = Phi_approx(mu_pr[3]) * (mean(minRT)-RTbound) + RTbound; // explain this last part
+  mu_a_mod =  exp(mu_pr[2]);
+  mu_v_mod =  exp(mu_pr[3]);
+  mu_tau = Phi_approx(mu_pr[4]) * (mean(minRT)-RTbound) + RTbound; // explain this last part
   
   // Assign TRIAL LEVEL  parameter values
   // Begin subject loop 
@@ -182,14 +181,8 @@ generated quantities {
         pe_tot_hat[trial] = value[trial]-(ev_hat[trial,stim_nassoc[trial]]);
         pe_neg_hat[trial] = value[trial]-(ev_hat[trial,stim_nassoc[trial]]);
         pe_pos_hat[trial] = 0;
-        ev_hat[trial+1,stim_nassoc[trial]] = ev_hat[trial,stim_nassoc[trial]] + (eta[s] * fabs(value[trial]-(1-ev_hat[trial,stim_nassoc[trial]])));
-         if (ev_hat[trial+1,stim_nassoc[trial]]>1){
-          ev_hat[trial+1,stim_nassoc[trial]]=1;
-        }
-        ev_hat[trial+1,stim_assoc[trial]] = ev_hat[trial,stim_assoc[trial]] + (eta[s] * fabs(value[trial]-ev_hat[trial,stim_assoc[trial]]));
-        if (ev_hat[trial+1,stim_assoc[trial]]>1){
-          ev_hat[trial+1,stim_assoc[trial]]=1;
-        }
+        ev_hat[trial+1,stim_nassoc[trial]] = ev_hat[trial,stim_nassoc[trial]] + (eta_neg[s] * fabs(value[trial]-(1-ev_hat[trial,stim_nassoc[trial]])));
+        ev_hat[trial+1,stim_assoc[trial]] = ev_hat[trial,stim_assoc[trial]] + (eta_neg[s] * fabs(value[trial]-ev_hat[trial,stim_assoc[trial]]));
         log_lik[trial] = wiener_lpdf(RT[trial] |a[s],tau[s],z,v_hat[trial]);
       }
       // if upper bound (resp = 2)
@@ -199,14 +192,8 @@ generated quantities {
         pe_tot_hat[trial] = value[trial]-(ev_hat[trial,stim_assoc[trial]]);
         pe_pos_hat[trial] = value[trial]-(ev_hat[trial,stim_assoc[trial]]);
         pe_neg_hat[trial] = 0;
-        ev_hat[trial+1,stim_nassoc[trial]] = ev_hat[trial,stim_nassoc[trial]] + (eta[s] * (value[trial]-(1-ev_hat[trial,stim_nassoc[trial]])));
-        if (ev_hat[trial+1,stim_nassoc[trial]]>1){
-          ev_hat[trial+1,stim_nassoc[trial]]=1;
-        }
-        ev_hat[trial+1,stim_assoc[trial]] = ev_hat[trial,stim_assoc[trial]] + (eta[s] * (value[trial]-ev_hat[trial,stim_assoc[trial]]));
-        if (ev_hat[trial+1,stim_assoc[trial]]>1){
-          ev_hat[trial+1,stim_assoc[trial]]=1;
-        }
+        ev_hat[trial+1,stim_nassoc[trial]] = ev_hat[trial,stim_nassoc[trial]] + (eta_pos[s] * (value[trial]-(1-ev_hat[trial,stim_nassoc[trial]])));
+        ev_hat[trial+1,stim_assoc[trial]] = ev_hat[trial,stim_assoc[trial]] + (eta_pos[s] * (value[trial]-ev_hat[trial,stim_assoc[trial]]));
         log_lik[trial] = wiener_lpdf(RT[trial] | a[s],tau[s],z,v_hat[trial]);
       }
     }
