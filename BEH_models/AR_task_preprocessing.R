@@ -14,7 +14,7 @@ lapply(Packages, require, character.only = TRUE)
 
 #set dirs
 dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/logs/GFG"
-diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/models_rtbound500"
+diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/models_rtbound300"
 masterfile  <- "O:/studies/allread/mri/analysis_GFG/Allread_MasterFile_GFG.xlsx" # use this to find your subjects
 setwd(dirinput)
 #Some starting info

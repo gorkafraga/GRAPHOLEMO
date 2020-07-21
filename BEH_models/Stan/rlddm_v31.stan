@@ -71,11 +71,12 @@ model {
  // GROUP LEVEL priors 
   mu_pr  ~ normal(0, 1);
   mu_eta_pr ~ normal(0, 0.3);
-  sigma_eta_pr ~ normal(0, 0.5); //
+  
+  sigma_eta_pr ~ normal(0, 0.1); //
   sigma_pr ~ normal(0, 0.2);
 
  // SUBJECT LEVEL priors 
-  eta_pr ~ normal(0,1.5); 
+  eta_pr ~ normal(0,1); 
   a_pr ~ normal(0, 1);
   v_mod_pr ~ normal(0, 1);
   tau_pr   ~ normal(0, 1);
