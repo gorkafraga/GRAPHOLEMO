@@ -28,8 +28,8 @@ data {
 // ------------------------------------------------------------
 parameters {
   //  GROUP LEVEL raw Hyperparameters
-  vector[2] mu_eta_pr; // group priors mean and stdev for learning rates 
-  vector<lower=0>[2] sigma_eta_pr;   
+  vector[1] mu_eta_pr; // group priors mean and stdev for learning rates 
+  vector<lower=0>[1] sigma_eta_pr;   
 
   vector[3] mu_pr; // group prior means and SDs for v_mo, tau, a  
   vector<lower=0>[3] sigma_pr; 
