@@ -49,7 +49,7 @@ if (!exists("stanmodel")){
 #myparameters <- c("lp_","log_lik")
 
 mychains <- 4 # numer of mcmc chains
-myiter <- 1000#10000
+myiter <- 700#10000
 mywarmup <- 200#4000 # from iterations, how many will be warm ups
 
 # FIT THE MODEL - draw samples.  _m_d('_')b_m_  (time consuming)
