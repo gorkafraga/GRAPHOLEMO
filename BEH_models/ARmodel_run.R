@@ -23,8 +23,8 @@ lapply(Packages, require, character.only = TRUE)
 # REFS: e.g. From Pederson et al.,2017 https://github.com/gbiele/RLDDM/blob/master/RLDDM.jags.txt 
 #------------------------------------------------------------------------------------------------
 # Set inputs 
-dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/models_rtbound300/Preproc_18ss"
-diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/models_rtbound300/Preproc_18ss"
+dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/model_rtb300/Preproc_18ss"
+diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/model_rtb300/Preproc_18ss"
 modelpath <- "N:/studies/Grapholemo/Methods/Scripts/grapholemo/BEH_models/Stan"
 choiceModel <- 'rlddm_v31'
 

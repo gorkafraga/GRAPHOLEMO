@@ -17,7 +17,7 @@ data {
   int last[N];         // last trial of subject
   int<lower=1> T;      // Number of observations
   real RTbound;        // lower bound of RT across all subjects (e.g., 0.1 second)
-  real iter[T];        // trial of given observation (from 1 to a max trial in a given subject)
+  real trial[T];        // trial of given observation (from 1 to a max trial in a given subject)
   int response[T];     // encodes successful trial [1: lower bound (incorrect), 2: upper bound(correct)]
   real RT[T];          // reaction time
   int value[T];        // value of trial: successful / unsuccessful  1 or 0
@@ -90,39 +90,39 @@ model {
       ev[first[s],p] = 0.5; // expected value starts in 0.5 for all stimuli in each subject
     }
     
-    for(trial in (first[s]):(last[s]-1)) {
+    for(t in (first[s]):(last[s]-1)) {
       for(p in 1:n_stims[s]){
-        ev[trial+1,p] = ev[trial,p]; // expected value starts the same as preceding trial
+        ev[t+1,p] = ev[t,p]; // expected value starts the same as preceding t
       }
       // Trials from first to one before last  ~~~~~~
      // if lower bound (incorrect resp,that is response= 1)
-      if (response[trial]==1){
-        v[trial] = -((ev[trial,stim_assoc[trial]] + ev[trial,stim_nassoc[trial]])/2 * v_mod[s]);
-        RT[trial] ~  wiener(a[s],tau[s] ,beta,v[trial]);  
-        ev[trial+1,stim_nassoc[trial]] = ev[trial,stim_nassoc[trial]] + (eta[s] * fabs(value[trial]-(1-ev[trial,stim_nassoc[trial]]))); // adjust expected values for each stimuli pair in this trial
-        if (ev[trial+1,stim_nassoc[trial]]>1){
-          ev[trial+1,stim_nassoc[trial]]=1;
+      if (response[t]==1){
+        v[t] = -((ev[t,stim_assoc[t]] + ev[t,stim_nassoc[t]])/2 * v_mod[s]);
+        RT[t] ~  wiener(a[s],tau[s] ,beta,v[t]);  
+        ev[t+1,stim_nassoc[t]] = ev[t,stim_nassoc[t]] + (eta[s] * fabs(value[t]-(1-ev[t,stim_nassoc[t]]))); // adjust expected values for each stimuli pair in this t
+        if (ev[t+1,stim_nassoc[t]]>1){
+          ev[t+1,stim_nassoc[t]]=1;
         }
-        ev[trial+1,stim_assoc[trial]] = ev[trial,stim_assoc[trial]] + (eta[s] * fabs(value[trial]-ev[trial,stim_assoc[trial]]));
-         if (ev[trial+1,stim_assoc[trial]]>1){
-          ev[trial+1,stim_assoc[trial]]=1;
+        ev[t+1,stim_assoc[t]] = ev[t,stim_assoc[t]] + (eta[s] * fabs(value[t]-ev[t,stim_assoc[t]]));
+         if (ev[t+1,stim_assoc[t]]>1){
+          ev[t+1,stim_assoc[t]]=1;
         }
       }
       // if upper bound (resp = 2)
       else{
-        v[trial] = (ev[trial,stim_assoc[trial]] + ev[trial,stim_nassoc[trial]])/2 * v_mod[s];
-        RT[trial] ~  wiener(a[s],tau[s] ,beta,v[trial]);
-        ev[trial+1,stim_nassoc[trial]] = ev[trial,stim_nassoc[trial]] + (eta[s] * (value[trial]-(1-ev[trial,stim_nassoc[trial]])));
-         if (ev[trial+1,stim_nassoc[trial]]>1){
-          ev[trial+1,stim_nassoc[trial]]=1;
+        v[t] = (ev[t,stim_assoc[t]] + ev[t,stim_nassoc[t]])/2 * v_mod[s];
+        RT[t] ~  wiener(a[s],tau[s] ,beta,v[t]);
+        ev[t+1,stim_nassoc[t]] = ev[t,stim_nassoc[t]] + (eta[s] * (value[t]-(1-ev[t,stim_nassoc[t]])));
+         if (ev[t+1,stim_nassoc[t]]>1){
+          ev[t+1,stim_nassoc[t]]=1;
         }
-        ev[trial+1,stim_assoc[trial]] = ev[trial,stim_assoc[trial]] + (eta[s] * (value[trial]-ev[trial,stim_assoc[trial]]));
-         if (ev[trial+1,stim_assoc[trial]]>1){
-          ev[trial+1,stim_assoc[trial]]=1;
+        ev[t+1,stim_assoc[t]] = ev[t,stim_assoc[t]] + (eta[s] * (value[t]-ev[t,stim_assoc[t]]));
+         if (ev[t+1,stim_assoc[t]]>1){
+          ev[t+1,stim_assoc[t]]=1;
         }
       }
     }
-    // Updates in last trial (no update of expected value) ~~~~~~
+    // Updates in last t (no update of expected value) ~~~~~~
     if (response[last[s]]==1){
       v[last[s]] = -((ev[last[s]-1,stim_assoc[last[s]]] - ev[last[s]-1,stim_nassoc[last[s]]])/2 * v_mod[s]);
       RT[last[s]] ~  wiener(a[s],tau[s] ,beta,v[last[s]]);
@@ -144,7 +144,7 @@ generated quantities {
   real<lower=0> mu_v_mod;                   
   real<lower=RTbound, upper=max(minRT)> mu_tau;  
                    
-  // Declare TRIAL LEVEL estimates
+  // Declare t LEVEL estimates
   real ev_hat[T,max(n_stims)]; // estimate of expected value
   real pe_pos_hat[T]; // estimate of  prediction error for trials positive, negative and both
   real pe_neg_hat[T];
@@ -170,45 +170,45 @@ generated quantities {
       ev_hat[first[s],p] = 0.5; // estimate expected value starts in 0.5 for all stimuli in each subject
     }
     // Trials from first to one before last  ~~~~~
-    for(trial in (first[s]):(last[s]-1)) {
+    for(t in (first[s]):(last[s]-1)) {
       for(p in 1:n_stims[s]){
-        ev_hat[trial+1,p] = ev_hat[trial,p];
+        ev_hat[t+1,p] = ev_hat[t,p];
       }
-      as_active[trial] = ev_hat[trial,stim_assoc[trial]];  // estimate association strength for correct incorrect
-      as_inactive[trial] = ev_hat[trial,stim_nassoc[trial]];
+      as_active[t] = ev_hat[t,stim_assoc[t]];  // estimate association strength for correct incorrect
+      as_inactive[t] = ev_hat[t,stim_nassoc[t]];
       // if lower bound
-      if (response[trial]==1){
-        v_hat[trial] = -((ev_hat[trial,stim_assoc[trial]] + ev_hat[trial,stim_nassoc[trial]])/2 * v_mod[s]);
-        as_chosen[trial] = ev_hat[trial,stim_nassoc[trial]];
-        pe_tot_hat[trial] = value[trial]-(ev_hat[trial,stim_nassoc[trial]]);
-        pe_neg_hat[trial] = value[trial]-(ev_hat[trial,stim_nassoc[trial]]);
-        pe_pos_hat[trial] = 0;
-        ev_hat[trial+1,stim_nassoc[trial]] = ev_hat[trial,stim_nassoc[trial]] + (eta[s] * fabs(value[trial]-(1-ev_hat[trial,stim_nassoc[trial]])));
-         if (ev_hat[trial+1,stim_nassoc[trial]]>1){
-          ev_hat[trial+1,stim_nassoc[trial]]=1;
+      if (response[t]==1){
+        v_hat[t] = -((ev_hat[t,stim_assoc[t]] + ev_hat[t,stim_nassoc[t]])/2 * v_mod[s]);
+        as_chosen[t] = ev_hat[t,stim_nassoc[t]];
+        pe_tot_hat[t] = value[t]-(ev_hat[t,stim_nassoc[t]]);
+        pe_neg_hat[t] = value[t]-(ev_hat[t,stim_nassoc[t]]);
+        pe_pos_hat[t] = 0;
+        ev_hat[t+1,stim_nassoc[t]] = ev_hat[t,stim_nassoc[t]] + (eta[s] * fabs(value[t]-(1-ev_hat[t,stim_nassoc[t]])));
+         if (ev_hat[t+1,stim_nassoc[t]]>1){
+          ev_hat[t+1,stim_nassoc[t]]=1;
         }
-        ev_hat[trial+1,stim_assoc[trial]] = ev_hat[trial,stim_assoc[trial]] + (eta[s] * fabs(value[trial]-ev_hat[trial,stim_assoc[trial]]));
-        if (ev_hat[trial+1,stim_assoc[trial]]>1){
-          ev_hat[trial+1,stim_assoc[trial]]=1;
+        ev_hat[t+1,stim_assoc[t]] = ev_hat[t,stim_assoc[t]] + (eta[s] * fabs(value[t]-ev_hat[t,stim_assoc[t]]));
+        if (ev_hat[t+1,stim_assoc[t]]>1){
+          ev_hat[t+1,stim_assoc[t]]=1;
         }
-        log_lik[trial] = wiener_lpdf(RT[trial] |a[s],tau[s],z,v_hat[trial]);
+        log_lik[t] = wiener_lpdf(RT[t] |a[s],tau[s],z,v_hat[t]);
       }
       // if upper bound (resp = 2)
       else{
-        v_hat[trial] = (ev_hat[trial,stim_assoc[trial]] + ev_hat[trial,stim_nassoc[trial]])/2 * v_mod[s];
-        as_chosen[trial] = ev_hat[trial,stim_assoc[trial]];
-        pe_tot_hat[trial] = value[trial]-(ev_hat[trial,stim_assoc[trial]]);
-        pe_pos_hat[trial] = value[trial]-(ev_hat[trial,stim_assoc[trial]]);
-        pe_neg_hat[trial] = 0;
-        ev_hat[trial+1,stim_nassoc[trial]] = ev_hat[trial,stim_nassoc[trial]] + (eta[s] * (value[trial]-(1-ev_hat[trial,stim_nassoc[trial]])));
-        if (ev_hat[trial+1,stim_nassoc[trial]]>1){
-          ev_hat[trial+1,stim_nassoc[trial]]=1;
+        v_hat[t] = (ev_hat[t,stim_assoc[t]] + ev_hat[t,stim_nassoc[t]])/2 * v_mod[s];
+        as_chosen[t] = ev_hat[t,stim_assoc[t]];
+        pe_tot_hat[t] = value[t]-(ev_hat[t,stim_assoc[t]]);
+        pe_pos_hat[t] = value[t]-(ev_hat[t,stim_assoc[t]]);
+        pe_neg_hat[t] = 0;
+        ev_hat[t+1,stim_nassoc[t]] = ev_hat[t,stim_nassoc[t]] + (eta[s] * (value[t]-(1-ev_hat[t,stim_nassoc[t]])));
+        if (ev_hat[t+1,stim_nassoc[t]]>1){
+          ev_hat[t+1,stim_nassoc[t]]=1;
         }
-        ev_hat[trial+1,stim_assoc[trial]] = ev_hat[trial,stim_assoc[trial]] + (eta[s] * (value[trial]-ev_hat[trial,stim_assoc[trial]]));
-        if (ev_hat[trial+1,stim_assoc[trial]]>1){
-          ev_hat[trial+1,stim_assoc[trial]]=1;
+        ev_hat[t+1,stim_assoc[t]] = ev_hat[t,stim_assoc[t]] + (eta[s] * (value[t]-ev_hat[t,stim_assoc[t]]));
+        if (ev_hat[t+1,stim_assoc[t]]>1){
+          ev_hat[t+1,stim_assoc[t]]=1;
         }
-        log_lik[trial] = wiener_lpdf(RT[trial] | a[s],tau[s],z,v_hat[trial]);
+        log_lik[t] = wiener_lpdf(RT[t] | a[s],tau[s],z,v_hat[t]);
       }
     }
     // Updates in last trial (no update of expected value) ~~~~~

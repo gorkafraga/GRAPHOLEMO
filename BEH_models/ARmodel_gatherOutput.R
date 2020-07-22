@@ -1,5 +1,4 @@
-#.libPaths() #assign(".lib.loc", "C:/Program Files/R/R-3.6.1/library", envir = environment(.libPaths))
-rm(list=ls(all=TRUE)) # remove all variables (!)
+rm(list=ls(all=TRUE)) # re all 
 Packages <- c("readr","tidyr","dplyr","viridis","data.table","StanHeaders","rstan","hBayesDM","Rcpp","rstanarm","boot","loo","bayesplot","cowplot","ggpubr")
 lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
@@ -19,14 +18,14 @@ source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots an
 # INPUTS
 choiceModel <- 'rlddm_v31'
 
-dirinput <- paste("O:/studies/allread/mri/analysis_GFG/stats/task/models_rtbound500/Preproc_18ss/output_",choiceModel,sep="")
-dirPreprocessed <- "O:/studies/allread/mri/analysis_GFG/stats/task/models_rtbound500/Preproc_18ss"
+dirinput <- paste("O:/studies/allread/mri/analysis_GFG/stats/task/model_rtb300/Preproc_18ss/output_",choiceModel,sep="")
+dirPreprocessed <- "O:/studies/allread/mri/analysis_GFG/stats/task/model_rtb300/Preproc_18ss"
 diroutput <- dirinput
 
 # Parameters of interest
 #list_param_bySubject <- c("a","a_mod","tau","v_mod","eta")
-list_param_bySubject <- c("a","a_mod","tau","v_mod","eta") 
-list_param_byTrial <- c("as_chosen","as_active","as_inactive","pe_tot_hat","pe_pos_hat","pe_neg_hat","v_hat","ev_hat")  #, "ev_hat"
+list_param_bySubject <- c("a","tau","v_mod","eta") 
+list_param_byTrial <- c("as_chosen","as_active","as_inactive","pe_tot_hat","pe_pos_hat","pe_neg_hat","v_hat")  #, "ev_hat"
 
 # SETTINGS ???
 meancenter=1
@@ -70,6 +69,19 @@ colnames(param_bySubject) <- list_param_bySubject
 param_bySubject <- cbind(subjs, param_bySubject)
 param_bySubject$subjID <- as.factor(param_bySubject$subjID)
 
+#  Expected values
+ev_hat_values<- array("",c(datList$T,unique(datList$n_stims)))
+for (i in 1:unique(max(datList$n_stims))){
+ for (ii in 1:datList$T){  
+      dim(datTable)[1]
+      currpara<- paste0("ev_hat","[",ii,",",i,"]")
+      #print(currpara)
+      ev_hat_values[ii,i]  <- round( rstan::summary(fit,pars=currpara)$summary[1],6)
+ }
+}
+colnames(ev_hat_values) <- paste0("ev_hat_stim",1:unique(datList$n_stims))
+datTable_ev <- cbind(ev_hat_values)
+
 #  per trial
 param_byTrial<- array("NA",dim=c(datList$T,length(list_param_byTrial)))
 for (i in 1:length(list_param_byTrial)){
@@ -97,7 +109,7 @@ if (meancenter == 1){
     }
   }
 
-gData <- cbind(datTable_pm,datTable_mc) # Gather per trial and their mean-centered transform into the main data table
+gData <- cbind(datTable_pm,datTable_mc,datTable_ev) # Gather per trial and their mean-centered transform into the main data table
 
 
 ###### save tables 
@@ -118,9 +130,9 @@ if (givemeplots ==1){
     for (ss in 1:dim(subjs)[1]){ #subject loop
       tmpT <-gData[which(gData$subjID  %in%  subjs[ss])]
        for (tt in unique(tmpT$aStim)){   #trial type loop
-         tmpT[which( tmpT$aStim== tt)]$trialPerStim <- seq.int(nrow(tmpT[which(tmpT$aStim== tt)]))
+         tmpT$trialPerStim[which(tmpT$aStim== tt)] <- seq.int(nrow(tmpT[which(tmpT$aStim== tt)]))
       }
-      gData[which(gData$subjID  %in%  subjs[ss])] <-tmpT
+      gData$trialPerStim[which(gData$subjID  %in%  subjs[ss])] <- tmpT$trialPerStim
     }
     
     # New trial index that resets at block 2 (needed for some plots )
@@ -129,7 +141,7 @@ if (givemeplots ==1){
       subidx <- which(gData$subjID %in% subjs[ss]) 
       
       for (b in unique(gData[subidx,]$block)){ #block loop
-        gData[which(gData$subjID %in% subjs[ss] & gData$block==b)]$newTrialIdx <- seq.int(nrow(gData[which(gData$subjID %in% subjs[ss] & gData$block==b)]))
+        gData$newTrialIdx[which(gData$subjID %in% subjs[ss] & gData$block==b)] <- seq.int(nrow(gData[which(gData$subjID %in% subjs[ss] & gData$block==b)]))
       }
     }
 
@@ -247,7 +259,8 @@ combo <-  annotate_figure(combo,text_grob(paste(fit@model_name," had ",nchains,"
    }
    
    
-    # PARAMETERS PER SUBJECT
+   # PARAMETERS PER SUBJECT
+   #----------------------------------------------------------------------------------------------------------
    param2plot <- list_param_bySubject
    #param_bySubject_long <- gather(param_bySubject,condition,value,list_param_bySubject,factor_key = TRUE)
    #rainbow <-  c("orange","darkgreen","dodgerblue4","firebrick4")
@@ -258,12 +271,13 @@ combo <-  annotate_figure(combo,text_grob(paste(fit@model_name," had ",nchains,"
    for (j in 1:length(param2plot)){
       print(j)
 
-       #PLO[[j]] <- 
+       PLO[[j]] <- 
       PLO[[j]] <-  local ({
                      ydat <-  as.numeric(unlist(select(param_bySubject,param2plot[j])))
                      
-                     plo1 <- ggplot(data=param_bySubject, aes(x=xdat,y=ydat)) +
-                     geom_flat_violin(stat='ydensity', position = position_nudge(x = 0.0, y = 0.02), adjust = .5, trim = FALSE, alpha = .7,colour=rainbow[j],fill=rainbow[j]) +
+                     plo1 <- 
+                        ggplot(data=param_bySubject, aes(x=xdat,y=ydat)) +
+                     geom_flat_violin(stat='ydensity', adjust = .5, trim = FALSE, alpha = .7,colour=rainbow[j],fill=rainbow[j]) +
                      geom_point(aes(x=as.numeric(xdat)-0.06),fill = rainbow[j], color="black",position=position_jitter(0.05,0,3), size = 2.5, alpha=.5,shape=21) +
                      geom_boxplot(aes(x=as.numeric(xdat)-0.15),width = .03,size=.8, fill=rainbow[j],outlier.size = .7, outlier.shape = 8,outlier.alpha = 1, alpha = 0.4) +
                      stat_summary(aes(x=as.numeric(xdat)+0.06,y=ydat),position=position_dodge(0.03),fun.data = mean_cl_boot,geom = "errorbar",width=.02,size = 0.9,alpha = 1) +  
@@ -310,7 +324,8 @@ combo <-  annotate_figure(combo,text_grob(paste(fit@model_name," had ",nchains,"
      xdat <- gData$trialPerStim
       
      TRIALPLO[[i]] <- local({
-       trialplo1<-ggplot(data=gData, aes_string(x=xdat,y=as.numeric(pull(gData,reg2plot[i])))) +
+       
+       trialplo1<- ggplot(data=gData, aes_string(x=xdat,y=as.numeric(pull(gData,reg2plot[i])))) +
        geom_point(fill="black",alpha=.3,size=1.5) +
        #scale_fill_manual(values = cols ) +
        #scale_colour_manual(values = cols ) +
@@ -410,7 +425,7 @@ combo <-  annotate_figure(combo,text_grob(paste(fit@model_name," had ",nchains,"
    #-------------------------------------------------------------------------------------------------------------------------------------------
    #    
    #-------------------------------------------------------------------------------------------------------------------------------------------
-   reg2plot <- c( "mc_v_hat","ev_hat")
+   reg2plot <- c( "mc_v_hat")
   # reg2plot <- c( "mc_v_hat")
    rainbow2 <-  c("orange","darkgreen","dodgerblue4")
    
@@ -458,8 +473,8 @@ combo <-  annotate_figure(combo,text_grob(paste(fit@model_name," had ",nchains,"
    
    trialCombo <- 
       ggdraw() +
-      draw_plot(TRIALPLO[[1]], x = 0, y = 0, width = 1 , height = 1/3) +
-      draw_plot(TRIALPLO[[2]], x = 0 , y = 1/3, width = 1  , height = 1/3)  
+      draw_plot(TRIALPLO[[1]], x = 0, y = 0, width = 1 , height = 1/3) 
+      #draw_plot(TRIALPLO[[2]], x = 0 , y = 1/3, width = 1  , height = 1/3)  
    #draw_plot(TRIALPLO[[4]], x = 0, y = 3/4, width = 1 , height = 1/4) 
    
    trialCombo <- annotate_figure(trialCombo,text_grob(paste(fit@model_name," had ",nchains," chains of ",niterations, " iterations (",nburnin, " burn-in)"),color = "purple", face = "bold", size = 12)) #+ 
@@ -468,4 +483,56 @@ combo <-  annotate_figure(combo,text_grob(paste(fit@model_name," had ",nchains,"
    outputname <- paste("trialParam_",choiceModel,".jpg",sep="")
    ggsave(outputname,trialCombo,width = 350, height = 310, dpi=150, units = "mm")
    #   
-  
+   #-------------------------------------------------------------------------------------------------------------------------------------------
+   #    
+   #-------------------------------------------------------------------------------------------------------------------------------------------
+   
+   idxs <- grep(pattern = "ev_hat",colnames(gData))
+   gData_long <- gather(gData,condition,colnames(gData)[idxs],value = value,factor_key = TRUE)
+   
+   gData_long$value <- as.numeric(gData_long$value)
+   gData_long$condition <- as.factor(gData_long$condition)
+    
+   #evplot<-
+      ggplot(data=gData_long, aes(x=1:10,y=value,color=condition)) +
+            geom_point()+
+            geom_line(aes(group=subjID)) + 
+            facet_wrap(~condition, nrow = 4)+
+            #coord_flip()+ 
+            theme_bw(12)+ 
+            stat_summary(position=position_dodge(0.03),fun.data = mean_cl_boot,geom = "line",size = 1,color="darkorange",alpha = .8) +
+            stat_summary(position=position_dodge(0.03),fun.data = mean_cl_boot,geom = "ribbon",size = 1,fill="darkorange",alpha = .2) +
+            stat_summary(position=position_dodge(0.03),fun.data = mean_cl_boot,geom = "point",shape=21,size = 1,fill="darkorange",color="black",alpha = 1) +
+         #labs(x="repetition",y=reg2plot[i])+
+            theme(title = element_text(size=10),
+                  axis.line.y = element_line(color = gray.colors(10)[3], size = 1, linetype = "solid"),
+                  axis.line.x = element_line(color = gray.colors(10)[3], size = 1, linetype = "solid"),
+                  axis.text.x = element_text(angle = 45,size=10,color="black"),
+                  axis.text.y = element_text(size=10,color="black"),
+                  axis.title.x = element_text(size=10,color="white"),
+                  plot.caption = element_text(colour ="red"))  #+ 
+         # scale_x_continuous(breaks = seq(0,length(unique(T$trialIdxPerStim)),1))  # play with y axis ticks and range 
+         if (i == length(reg2plot)){
+            
+            trialplo1 <-  trialplo1  + theme(axis.title.x=element_text(color="black"))
+         }
+         print(trialplo1)
+         #rm(ydat)
+         
+      
+   }
+   
+   
+   trialCombo <- 
+      ggdraw() +
+      draw_plot(TRIALPLO[[1]], x = 0, y = 0, width = 1 , height = 1/3) 
+   #draw_plot(TRIALPLO[[2]], x = 0 , y = 1/3, width = 1  , height = 1/3)  
+   #draw_plot(TRIALPLO[[4]], x = 0, y = 3/4, width = 1 , height = 1/4) 
+   
+   trialCombo <- annotate_figure(trialCombo,text_grob(paste(fit@model_name," had ",nchains," chains of ",niterations, " iterations (",nburnin, " burn-in)"),color = "purple", face = "bold", size = 12)) #+ 
+   # Save 
+   setwd(diroutput)
+   outputname <- paste("trialParam_",choiceModel,".jpg",sep="")
+   ggsave(outputname,trialCombo,width = 350, height = 310, dpi=150, units = "mm")
+   #   
+   

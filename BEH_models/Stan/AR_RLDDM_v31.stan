@@ -12,7 +12,7 @@
 // -------------------------------------------------------------------- 
 data {
   int<lower=1> N;      // Number of subjects
-  real minRT[N];       // minimum RT for each subject of the observed data
+  real minRT[N];       // lowest RT for each subject of the observed data
   int first[N];        // first trial of subject
   int last[N];         // last trial of subject
   int<lower=1> T;      // Number of observations
