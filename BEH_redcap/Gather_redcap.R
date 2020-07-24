@@ -20,28 +20,29 @@ mergeCases = 1 # if = 1 it will read cases from your master file
 masterfile = 'O:/studies/allread/mri/analysis_GFG/Allread_MasterFile_GFG.xlsx'
 #Set directories and output name 
 #############################################################################################################################
-dirinput <-'O:/studies/allread/mri/analysis_GFG/stats/cognitive_tests'
-diroutput <-'O:/studies/allread/mri/analysis_GFG/stats/cognitive_tests'
+dirinput <-'N:/Users/gfraga/Teaching/2020-MSc Elia Montevecchi/Data for Elia'
+diroutput <-'N:/Users/gfraga/Teaching/2020-MSc Elia Montevecchi/Data for Elia'
 outputfilename <- 'BehData_3TPs.xlsx'
 setwd(dirinput)
 
 # read data sets
-D1 = read.delim("Allreaddata_DATA_2020-06-10_T1.csv", sep = "\t", header=TRUE)
-D2 = read.delim("Allreaddata_DATA_2020-06-10_T2.csv", sep = "\t",header=TRUE)
-D3 = read.delim("Allreaddata_DATA_2020-06-10_T3.csv",sep = "\t" , header=TRUE)
+D1 = read.delim("AllreaddataNEWREEVAL_DATA_2020-07-22_1643_T1.csv", sep = "\t", header=TRUE)
+D2 = read.delim("AllreaddataNEWREEVAL_DATA_2020-07-22_1644_T2.csv", sep = "\t",header=TRUE)
+D3 = read.delim("AllreaddataNEWREEVAL_DATA_2020-07-22_1644_T3.csv",sep = "\t" , header=TRUE)
 
 #read questionnaires
-Q1 =  read.delim("AllReadFragebogen_DATA_2020-05-27_1425_T1.csv", sep = "\t", header=TRUE)
-Q1_idList <- unlist(lapply(strsplit(Q1$email,'@'),'[[',1))
-Q1$subjID <- Q1_idList
-Q1trim <- Q1[grep('^VP*.[[:digit:]]{4}$',Q1$subjID),] #Take only those rows where the email user identifier is expectly "VP+4 numbers" (6 characters)
-Q1trim$subjID <- gsub("VP","AR",Q1trim$subjID)
-newQ1names  <- gsub(pattern = '^klasse_schulstufe$',replacement = 'class',colnames(Q1trim),ignore.case = FALSE, perl = TRUE)
-newQ1names  <- gsub(pattern = '^typ_der_klasse$',replacement = 'class_type',newQ1names,ignore.case = FALSE, perl = TRUE)
-newQ1names  <- gsub(pattern = '^kind_klasse_wiederholt$',replacement = 'class_repeat',newQ1names,ignore.case = FALSE, perl = TRUE)
-colnames(Q1trim) <- newQ1names
+#Q1 =  read.delim("AllReadFragebogen_DATA_2020-05-27_1425_T1.csv", sep = "\t", header=TRUE)
+#Q1_idList <- unlist(lapply(strsplit(Q1$email,'@'),'[[',1))
+#Q1$subjID <- Q1_idList
+##Q1trim <- Q1[grep('^VP*.[[:digit:]]{4}$',Q1$subjID),] #Take only those rows where the email user identifier is expectly "VP+4 numbers" (6 characters)
+#Q1trim$subjID <- gsub("VP","AR",Q1trim$subjID)
+#newQ1names  <- gsub(pattern = '^klasse_schulstufe$',replacement = 'class',colnames(Q1trim),ignore.case = FALSE, perl = TRUE)
+#newQ1names  <- gsub(pattern = '^typ_der_klasse$',replacement = 'class_type',newQ1names,ignore.case = FALSE, perl = TRUE)
+#newQ1names  <- gsub(pattern = '^kind_klasse_wiederholt$',replacement = 'class_repeat',newQ1names,ignore.case = FALSE, perl = TRUE)
+#colnames(Q1trim) <- newQ1names#
 
-Q1trim[1,c("subjID"),with =FALSE]
+#Q1trim[1,c("subjID"),with =FALSE]
+
 #small fix in first variable name...
 colnames(D1)[1] <-'vp'
 colnames(D2)[1] <-'vp'

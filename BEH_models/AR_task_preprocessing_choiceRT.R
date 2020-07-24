@@ -3,23 +3,26 @@ Packages <- c("readr","tidyr","dplyr","viridis","data.table","BH")
 lapply(Packages, require, character.only = TRUE)
 
 #=====================================================================================
-# GATHER DATA  + FORMAT FOR MODEL (in STAN)
-#==========================================4===========================================
-# - Concatenate all text files (given they have 40 trials)
-# - Trim trials with no response ("too slow trials")
-# - Select columns and code new ones needed for model in Stan
-# - Save formatted and gathered data as txt file
+# GATHER DATA  + FORMAT FOR CHOICE RT  MODEL  
+#=====================================================================================
+# https://rdrr.io/cran/hBayesDM/man/choiceRT_ddm.html
+# Data should be assigned a character value specifying the full path and name (including extension information, e.g. ".txt") of the file that contains the behavioral data-set of all subjects of interest for the current analysis. The file should be a tab-delimited text file, whose rows represent trial-by-trial observations and columns represent variables.
+#For the Choice Reaction Time Task, there should be 3 columns of data with the labels "subjID", "choice", "RT". It is not necessary for the columns to be in this particular order, however it is necessary that they be labeled correctly and contain the information below:
+# -  subjID (A unique identifier for each subject in the data-set.)
+# - choice (Choice made for the current trial, coded as 1/2 to indicate lower/upper boundary or left/right choices (e.g., 1 1 1 2 1 2))
+# - RT (Choice reaction time for the current trial, in **seconds** (e.g., 0.435 0.383 0.314 0.309, etc.).
+# *Note: The file may contain other columns of data (e.g. "ReactionTime", "trial_number", etc.), but only the data within the column names listed above will be used during the modeling. As long as the necessary columns mentioned above are present and labeled correctly, there is no need to remove other miscellaneous data columns.
 #--------------------------------------------------------------------------------------------
 #set dirs
-dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/logs/GFG"
-diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/model_rtb300"
+dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/logs/Nada"
+diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/modelling/model_choiceRT"
 masterfile  <- "O:/studies/allread/mri/analysis_GFG/Allread_MasterFile_GFG.xlsx" # use this to find your subjects
 setwd(dirinput)
 #Some starting info
 nblocks <- 2              
 ntrials <- 40             # trials per block
 stims_per_block <- 4      # number of stimuli to be learned per block
-RTbound <- 0.300           # set a limit for implausibly fast responses  (previously 150 ms)
+RTbound <- 0.100           # set a limit for implausibly fast responses  (previously 150 ms)
 taskpattern<- "FeedLearn_MRI"
 
 # READ SUBJECTS LIST
@@ -75,28 +78,28 @@ rawG <- data.table::rbindlist(datalist) # combine all data frames in on
 # Format gathered data for Stan
 # ----------------------------------------------------
 colnames(rawG)[1] <- "subjID"
-rawG$rt <- rawG$rt/1000
+rawG$rt <- rawG$rt/1000 # RTs in seconds
 names(rawG)[names(rawG)=="rt"] <- "RT"
 
 # Remove response trials with too quick responses
 datTable <- filter(rawG,fb!=2)
 datTable <- filter(datTable,RT>RTbound)
 datTable <- data.table(datTable)
-datTable$response <- datTable$fb
+datTable$choice <- datTable$fb
 datTable$trial<-as.integer(datTable$trial)
 #Count of trials per subject 
 DT_trials <- datTable[,.N,by = subjID]
 subjs <- DT_trials$subjID
 n_subj    <- length(subjs)
+
 # Reasign trial index (we excluded observations)
-for (ss in subjs){
+for (ss in subjs){ 
   subidx <- which(datTable$subjID==ss)
   datTable[subidx,]$trial <- seq.int(nrow(datTable[subidx,]))
 }
-
-# recode blocks (so for all subjects they are 1 and 2,or 1)
+ 
+### recode blocks (so in all subjects they are recoded to 1 and 2,or 1)
 DT_trials_per_block <- datTable[, .N, by = list(subjID,block)]
-# seq.int(DT_trials_per_block[1]$N)                                                                      !!!!!!!!!!! 
 datTable$block <- as.factor(datTable$block)
 for (ss in subjs){
   subidx <- which(datTable$subjID==ss)
@@ -105,7 +108,7 @@ for (ss in subjs){
   
   n2 <- DT_trials_per_block[which(DT_trials_per_block==ss),]$N[2]
   if (is.na(n2)) {
-    cat(ss, " has only one block!\n")
+    cat(ss, " has only one block\n")
     datTable[subidx]$block <- c(b1)
   } else {
     b2 <- rep("2",n2)
@@ -115,13 +118,13 @@ for (ss in subjs){
 datTable$block <- as.integer(datTable$block)
 
 # Some nr formatting adjusts
-datTable$response <- datTable$fb+1 # Responses 0 becomes 1 (incorrect) and 1 becomes 2 (correct)
+datTable$choice <- datTable$fb+1 # Responses 0 becomes 1 (incorrect) and 1 becomes 2 (correct)
 datTable$aStim <- as.double(datTable$aStim)
 datTable$vStim1 <- as.double(datTable$vStim1)
 datTable$vStim2 <- as.double(datTable$vStim2)
 
 # Because stimuli change in each block, give unique numbers for stimuli for each block
-datTable[which(datTable$block==2),]$aStim = datTable[which(datTable$block==2),]$aStim + (stims_per_block)
+datTable[which(datTable$block==2),]$aStim = datTable[which(datTable$block==2),]$aStim + (stims_per_block) #sums the number of stimuli perblock
 datTable[which(datTable$block==2),]$vStim1 = datTable[which(datTable$block==2),]$vStim1 + (stims_per_block)
 datTable[which(datTable$block==2),]$vStim2 = datTable[which(datTable$block==2),]$vStim2 + (stims_per_block)
 
@@ -141,7 +144,7 @@ last <- (first + DT_trials$N - 1)
 # if N=1 transform int to 1-d array
 last<-as.array(last)
 # define the values for the rewards: if upper resp, value = 1
-value <- ifelse(datTable$response==2, 1, 0)
+value <- ifelse(datTable$choice==2, 1, 0)
 n_trials <- nrow(datTable)
 
 #Count number of blocks
@@ -149,23 +152,28 @@ blocks <- aggregate(datTable$block ~ datTable$subjID, FUN = max )[2]
 blocks <- blocks$`datTable$block`
 ifelse(is.null(dim(blocks)),blocks<-as.array(blocks))
 
+
+# save for choice RT ##### 
+T2save <- datTable[,c('subjID','RT','choice')]
+destinationDir <- paste(diroutput,"/Preproc_ChoiceRTddm_",n_subj,'ss',sep="")
+dir.create(destinationDir)
+setwd(destinationDir)
+write.table(T2save,"datTable.txt",sep = "\t",row.names = FALSE)
+
+#######################
+
 # Final list for STAN
 # ----------------------------------------------------
-datList <- list("N" = n_subj,
-                "T"=n_trials,
-                 "Nu_max" = 
-                "RTbound" = RTbound,
-                "minRT" = minRT, 
-                "trial" = datTable$trial,
-                "response" = datTable$response, 
-                "stim_assoc" = datTable$aStim,
-                "stim_nassoc" = datTable$vStimNassoc, 
-                "RT" = datTable$RT, 
-                "first" = first, 
-                "last" = last,
-                "value"=value, 
-                "n_stims"=stims_per_block*blocks,
-                "ntrials" = DT_trials$N) 
+# datList <- list("T"=n_trials,
+#                 "Nu_max" = max(datTable[which(choice==2), .N, by = list(subjID,choice)]$N),
+#                 "Nl_max" = max(datTable[which(choice==1), .N, by = list(subjID,choice)]$N),
+#                 "Nu" = datTable[which(choice==2), .N, by = list(subjID,choice)]$N,
+#                  "Nl" = datTable[which(choice==1), .N, by = list(subjID,choice)]$N,
+#                 "RTu" =  
+#                 "RTl" = 
+#                 "minRT" = minRT,   
+#                 "RTbound" = RTbound)
+#                  
 
 # Vaiable description: 
 #---------------------
@@ -183,21 +191,21 @@ datList <- list("N" = n_subj,
 #n_stims	 (number blocks x 4 stim per block )
 #Trials	(total number of trials each subject has)
 
-#Save 
-#####################################
-# Create folder with timeand date stamp
-#destinationDir <- paste("Preproc_",n_subj,'ss',format(Sys.time(),'_%Y%m%d_%H%M'),sep="")
-destinationDir <- paste(diroutput,"/Preproc_",n_subj,'ss',sep="")
-dir.create(destinationDir)
-setwd(destinationDir)
-#R vars
-save(datList,file="Preproc_list")
-save(datTable,file="Preproc_data")
-#csv file
-write.csv(datTable,file="Preproc_data.csv",row.names = FALSE)
-write(subjects,file="Preproc_subjects.txt")
-
-
+# #Save 
+# #####################################
+# # Create folder with timeand date stamp
+# #destinationDir <- paste("Preproc_",n_subj,'ss',format(Sys.time(),'_%Y%m%d_%H%M'),sep="")
+# destinationDir <- paste(diroutput,"/Preproc_ChoiceRTddm_",n_subj,'ss',sep="")
+# dir.create(destinationDir)
+# setwd(destinationDir)
+# #R vars
+# save(datList,file="Preproc_list")
+# save(datTable,file="Preproc_data")
+# #csv file
+# write.csv(datTable,file="Preproc_data.csv",row.names = FALSE)
+# write(subjects,file="Preproc_subjects.txt")
+# 
+# 
 
 
  
