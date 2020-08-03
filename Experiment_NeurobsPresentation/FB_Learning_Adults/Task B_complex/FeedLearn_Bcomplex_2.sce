@@ -32,6 +32,7 @@ pulse_width=5;
 response_port_output=true;
 
 begin;	
+
 # -------------------------------------------------------------
 # Stimuli definitions 
 # -------------------------------------------------------------
@@ -178,7 +179,7 @@ picture{	text abfrage_txt; x=0; y=200;
 	} feedback;
 
 
-#---- other trials
+#---- additional trials
 	
 # audiotest
 	trial {
@@ -273,7 +274,7 @@ logfile.set_filename(logfilename);
 
 	
 #create .txt outputfile
-string scenarioName = "FeedLearn_Bcomplex";
+string scenarioName = "FeedLearn_Bcomplex_2";
 output_file out_file = new output_file;
 if (logfile.subject().count()>0) then out_file.open(logfilename.replace(".log",".txt"));
 else out_file.open("NoSubj_"+scenarioName+"_"+"B"+string(blockNum)+".txt"); end;
@@ -294,51 +295,36 @@ int avgResponse = 2000;
 #Some variables to keep track of things
 int correct;
 
- 
-#=================================================================================================================================================================================
-#     																																							_m_d[°_°]b_m_
-#=================================================================================================================================================================================
-#================================================
-#
-# [ I N S T R U C T I O N ] 
-#
-#================================================
+# Basic practice
+# --------------
 # practice block or the real stuff
 if (blockNum == 0) then 
-	audiotest.present();
-	block_screen_txt.set_caption("Starte Audiotest", true); 
-	block_screen.present(); 
-	int aStim = 0;
-	array <string> activeSnd[3]= {"norm_ü.wav", "norm_n.wav","norm_g.wav"};	
-	array <int> practiceOrder[9]= {1,1,2,3,1,2,3,3,2};
-	
-	# Loop through the pairOrder array and depending on the value select 
-	loop int i = 1 until i> 9 begin			
-		aStim = practiceOrder[i];
-		snd.set_filename(activeSnd[aStim]);
-		snd.load();	
-		iti_fix_trial.set_duration(iti[i]); #iti trial duration jittered
-		iti_fix_trial.present();
-		sound_event.set_port_code(55);
-		main_trial_audio.present();	
-		i=i+1;
-	end;
-	abfrage.present()
+		audiotest.present();
+		block_screen_txt.set_caption("Starte Audiotest", true); 
+		block_screen.present(); 
+		int aStim = 0;
+		array <string> activeSnd[3]= {"norm_ü.wav", "norm_n.wav","norm_g.wav"};	
+		array <int> practiceOrder[9]= {1,1,2,3,1,2,3,3,2};
+		
+		# Loop through the pairOrder array and depending on the value select 
+		loop int i = 1 until i> 9 begin			
+			aStim = practiceOrder[i];
+			snd.set_filename(activeSnd[aStim]);
+			snd.load();	
+			iti_fix_trial.set_duration(iti[i]); #iti trial duration jittered
+			iti_fix_trial.present();
+			sound_event.set_port_code(55);
+			main_trial_audio.present();	
+			i=i+1;
+		end;
+		abfrage.present()
+
 else
-
-
-
-#================================================
-#
-# L O N G     P R A C T I C E  -  OUTSIDE SCANNER 
-#
-#================================================
-# practice block or the real stuff
-
-
-if (blockNum == 99) then 
-	instr.present();
-	#start.present();
+# Long practice outside the scanner 
+#----------------------------------------
+	if (blockNum == 99) then 
+		instr.present();
+		#start.present();
 		int nrCorrect_practice = 0;
 		int aStim = 0;
 		int vStim1 = 0; 
@@ -346,21 +332,21 @@ if (blockNum == 99) then
 		string pairOrderStr;
 		array <string> activePict[4] = {"R","S","T","U"};
 		array <string> activeSnd[4]= {"norm_b.wav", "norm_h.wav","norm_Ã¤u.wav", "norm_Ã¶.wav"};	
-		
 		array <int> practiceOrder[20]= {112,113,141,221,212,114,223,221,343,434,112,224,414,323,313,441,131,343,424,442};	
 	
-		# Loop through the pairOrder array and depending on the value select 
+		# Loop through  pairOrder array and depending on the value select stimuli for 20 trials
 		loop int i = 1 until i> 20 begin
-			vTXT1.set_font("graph2");vTXT2.set_font("graph2");
+			vTXT1.set_font("grapholemo3");vTXT2.set_font("grapholemo3");
 		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50); 	
-		   vTXT2.set_width(600);
-			
+		   vTXT2.set_width(600);			
 			pairOrderStr = string(practiceOrder[i]);		
+			
 			aStim = int(pairOrderStr.substring(1,1));
 			vStim1 = int(pairOrderStr.substring(2,1));
 			vStim2 = int(pairOrderStr.substring(3,1));		
 			vTXT1.set_caption(activePict[vStim1], true); 
 			vTXT2.set_caption(activePict[vStim2], true); 
+				
 			snd.set_filename(activeSnd[aStim]);
 			snd.load();			
 			if (aStim == vStim1) then
@@ -374,9 +360,8 @@ if (blockNum == 99) then
 				main_stim.set_port_code(22);
 				#rw_extension.set_port_code(22);
 			end;
-				
-			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-				# present the time critical trial:
+				#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+				# Present the time critical trial 
 				iti_fix_trial.set_duration(iti[i]); #iti trial duration jittered
 				iti_fix_trial.present();
 				# Audio (should continue to next trial so audio and visual appear together 
@@ -389,7 +374,7 @@ if (blockNum == 99) then
 				else
 					main_trial.present();
 				end;
-			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				stimulus_data sd = stimulus_manager.get_stimulus_data( stim_ct + 1 );
 				int RT=sd.reaction_time();	
 				int button=sd.button();
@@ -421,13 +406,12 @@ if (blockNum == 99) then
 						
 					end;	
 				end;
-			 #~~~~~~~~~~~~Present feedback ~~~~~~~~~~~~~~~~~~~~~~~
+				#~~~~~~~~~~~~Present feedback ~~~~~~~~~~~~~~~~~~~~~~~
 				fixBeforeFeedback_trial.set_duration(itifeedback[i]); #iti trial duration jittered
 				fixBeforeFeedback_trial.present();
 				#Present
-				feedback.present();				
-			
-		#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Print out stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				feedback.present();							
+				#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Print out stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				# Output file:	 
 				out_file.print(blockNum); out_file.print("\t"); 	# block nr
 				out_file.print(i); out_file.print("\t"); 			# trial nr
@@ -455,27 +439,21 @@ if (blockNum == 99) then
 				end;	
 		end;	
 
-#================================================
-#
-# S H O R T    P R A C T I C E  -  INSIDE SCANNER  
-#
-#================================================
-elseif (blockNum == 100) then 
+	elseif (blockNum == 100) then 
+	# Short practice inside the scanner 
+	# ----------------------------------------------------
 	#practice_instr.present();
 	#start.present();
-		
 		int aStim = 0;
 		int vStim1 = 0; 
 		int vStim2 = 0; 
 		string pairOrderStr;
 		array <string> activePict[4] = {"A","B","G","H"};
-		array <string> activeSnd[4]= {"norm_b.wav", "norm_h.wav","norm_äu.wav", "norm_ö.wav"};	
-		
+		array <string> activeSnd[4]= {"norm_b.wav", "norm_h.wav","norm_äu.wav", "norm_ö.wav"};			
 		array <int> practiceOrder[5]= {113,221,212,114,343,331};	
-	
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 5 begin
-			vTXT1.set_font("graph2");vTXT2.set_font("graph2");
+			vTXT1.set_font("grapholemo3");vTXT2.set_font("grapholemo3");
 		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50);		
 			pairOrderStr = string(practiceOrder[i]);		
 			aStim = int(pairOrderStr.substring(1,1));
@@ -495,8 +473,7 @@ elseif (blockNum == 100) then
 				correct = vStim2;
 				main_stim.set_port_code(22);
 				#rw_extension.set_port_code(22);
-		end;
-				
+			end; 
 			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				# present the time critical trial:
 				iti_fix_trial.set_duration(iti[i]); #iti trial duration jittered
@@ -506,10 +483,8 @@ elseif (blockNum == 100) then
 				main_trial_audio.present();
 				#Visual
 				int stim_ct = stimulus_manager.stimulus_count(); 
-				main_trial.present();
-				
-			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-					
+				main_trial.present(); 
+			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 				# Analyse responses and generate appropriate feedback 
 				stimulus_data sd = stimulus_manager.get_stimulus_data( stim_ct + 1 );
 				int RT=sd.reaction_time();
@@ -545,10 +520,8 @@ elseif (blockNum == 100) then
 				fixBeforeFeedback_trial.set_duration(itifeedback[i]); #iti trial duration jittered
 				fixBeforeFeedback_trial.present();
 				#Present
-				feedback.present();				
-			
-		#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Print out stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		
+				feedback.present();			 
+			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Print out stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			# Output file:	 
 				out_file.print(blockNum); out_file.print("\t"); 	# block nr
 				out_file.print(i); out_file.print("\t"); 			# trial nr
@@ -571,42 +544,47 @@ elseif (blockNum == 100) then
 				
 				i=i+1;	
 		end;
-else		 
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
-#
-# [ M A I N    T A S K    S T A R T S  ] 
-#
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
-#  [ REFRESH SYMBOL KNOWLEDGE FROM PREVIOUS TASK WITH SELFPACED PRACTICE!
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	else		 
+	#=================================================================================================================================================================================
+	#  MAIN TASK    																																																							_m_d[°_°]b_m_
+	#=================================================================================================================================================================================
+	#[ first refresh symbol knowledge from previous task! ] 
+	# ..............................
 	int aStim = 0;
 	int vStim1 = 0; 
 	int vStim2 = 0; 
 	string pairOrderStr;	
-		
-	if (blockNum == 1) then   
-		array <string> activePict[3] = {"B","G","E"};
-		array <string> activeSnd[3]= {"norm_a.wav", "norm_u.wav","norm_r.wav"};	
-		array <int> practiceOrder[9]= {223,212,323,113,121,331,331,112,232};	
-	elseif (blockNum == 2) then   
-		array <string> activePict[3] = {"K","L","O"};
-		array <string> activeSnd[3]= {"norm_o.wav", "norm_e.wav","norm_sch.wav"};	
-		array <int> practiceOrder[9]= {223,212,323,113,121,331,331,112,232};
-	end
-	
-		loop int i = 1 until i> 9 begin
+	array <string> activePictRepractice[3] = {"B","G","E"};
+	array <string> activeSndRepractice[3]= {"norm_a.wav", "norm_u.wav","norm_r.wav"};	
+	array <int> practiceOrder[9]= {223,212,323,113,121,331,331,112,232};	
+		 if (blockNum == 1) then   
+				activePictRepractice = {"B","G","E"};
+				activeSndRepractice = {"norm_a.wav", "norm_u.wav","norm_r.wav"};	
+				practiceOrder= {223,212,323,113,121,331,331,112,232};	
+			elseif (blockNum == 2) then   
+				activePictRepractice = {"K","L","O"};
+				activeSndRepractice = {"norm_o.wav", "norm_e.wav","norm_sch.wav"};	
+				practiceOrder = {223,212,323,113,121,331,331,112,232};
+			elseif (blockNum == 3) then   
+				activePictRepractice = {"K","L","O"};
+				activeSndRepractice = {"norm_o.wav", "norm_e.wav","norm_sch.wav"};	
+				practiceOrder = {223,212,323,113,121,331,331,112,232};
+			elseif (blockNum == 4) then   
+				activePictRepractice = {"K","L","O"};
+				activeSndRepractice = {"norm_o.wav", "norm_e.wav","norm_sch.wav"};	
+				practiceOrder = {223,212,323,113,121,331,331,112,232};
+			end;
+		 
+		loop int i = 1 until i> 2  begin
 			vTXT1.set_font("FBlearning");vTXT2.set_font("FBlearning");
 		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50);		
 			pairOrderStr = string(practiceOrder[i]);		
 			aStim = int(pairOrderStr.substring(1,1));
 			vStim1 = int(pairOrderStr.substring(2,1));
 			vStim2 = int(pairOrderStr.substring(3,1));		
-			vTXT1.set_caption(activePict[vStim1], true); 
-			vTXT2.set_caption(activePict[vStim2], true); 
-			snd.set_filename(activeSnd[aStim]);
+			vTXT1.set_caption(activePictRepractice[vStim1], true); 
+			vTXT2.set_caption(activePictRepractice[vStim2], true); 
+			snd.set_filename(activeSndRepractice[aStim]);
 			snd.load();			
 			if (aStim == vStim1) then
 				target_button=16; 
@@ -618,7 +596,7 @@ else
 				correct = vStim2;
 				main_stim.set_port_code(22);
 				#rw_extension.set_port_code(22);
-		end;
+			end;
 				
 			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				# present the time critical trial:
@@ -683,10 +661,10 @@ else
 				out_file.print(FB); out_file.print("\t"); 						# feedback type (0=wrong, 1=good , 2= faster!)
 				out_file.print(iti[i]); out_file.print("\t"); 		
 				out_file.print(itifeedback[i]); out_file.print("\t");	
-				out_file.print(activePict[vStim1]); out_file.print("\t");		
-				out_file.print(activePict[vStim2]); out_file.print("\t");
-				out_file.print(activePict[correct]); out_file.print("\t"); 	
-				out_file.print(activeSnd[aStim]);out_file.print("\t");		# get_filename(snd.filename()));	# filename of the sound
+				out_file.print(activePictRepractice[vStim1]); out_file.print("\t");		
+				out_file.print(activePictRepractice[vStim2]); out_file.print("\t");
+				out_file.print(activePictRepractice[correct]); out_file.print("\t"); 	
+				out_file.print(activeSndRepractice[aStim]);out_file.print("\t");		# get_filename(snd.filename()));	# filename of the sound
 				out_file.print("practice");	out_file.print("\t");				# stimulus onset from 1st pulse
 				out_file.print("practice");	out_file.print("\t");				# response onset from 1st pulse
 				out_file.print("practice"); 										# feedback onset from 1st pulse
@@ -694,14 +672,11 @@ else
 				
 				i=i+1;	
 		end;
-	end;
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#some initial shuffling
-
-		itifeedback.shuffle();
-		iti.shuffle();	
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+		
+	# ACTUAL stimuli begins
+	#-----------------------------------------------
+	itifeedback.shuffle();
+	iti.shuffle();	
 	instr.present();
 	#Present screen indicating block	 [MRI PULSE TERMINATED!]
 			block_screen_txt.set_caption("Start block " + string(blockNum), true); 
@@ -717,55 +692,54 @@ else
 				term.print(clock.time());term.print("\n");
 			end;
 			*/
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
-array <int> soundOrder[48] = { 0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-										
-array <int> matchOrder[48] = { 0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-										
-array <int> missmatchOrder[48] = {0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-										0,0,0,0,0,0,0,0,0,0,0,0,0,0};	
-									
-array <int> switchplaces[48] = { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-											0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};														
-											
-switchplaces.shuffle();
-
-	if (blockNum == 1) then   
-				soundOrder = soundOrderB1;
-				matchOrder = matchOrderB1;
-				missmatchOrder = missmatchOrderB1;
-		elseif (blockNum == 2)  then
-				soundOrder = soundOrderB2;
-				matchOrder = matchOrderB2;
-				missmatchOrder = missmatchOrderB2;
-		elseif (blockNum == 3) then 
-				soundOrder = soundOrderB3;
-				matchOrder = matchOrderB3;
-				missmatchOrder = missmatchOrderB3;
-		elseif (blockNum == 4) then 
-				soundOrder = soundOrderB4;
-				matchOrder = matchOrderB4;
-				missmatchOrder = missmatchOrderB4;
-	end;  
-
-
-	#Create an array with the selected stimuli for this block 
+			array <int> soundOrder[48] = { 0,0,0,0,0,0,0,0,0,0,
+													0,0,0,0,0,0,0,0,0,0,
+													0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+													0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+													
+			array <int> matchOrder[48] = { 0,0,0,0,0,0,0,0,0,0,
+													0,0,0,0,0,0,0,0,0,0,
+													0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+													0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+													
+			array <int> missmatchOrder[48] = {0,0,0,0,0,0,0,0,0,0,
+													0,0,0,0,0,0,0,0,0,0,
+													0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+													0,0,0,0,0,0,0,0,0,0,0,0,0,0};	
+												
+			array <int> switchplaces[48] = { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+														0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};														
+														
+			switchplaces.shuffle();
+ 		
+		if (blockNum == 1) then   
+					soundOrder = soundOrderB1;
+					matchOrder = matchOrderB1;
+					missmatchOrder = missmatchOrderB1;
+			elseif (blockNum == 2)  then
+					soundOrder = soundOrderB2;
+					matchOrder = matchOrderB2;
+					missmatchOrder = missmatchOrderB2;
+			elseif (blockNum == 3) then 
+					soundOrder = soundOrderB3;
+					matchOrder = matchOrderB3;
+					missmatchOrder = missmatchOrderB3;
+			elseif (blockNum == 4) then 
+					soundOrder = soundOrderB4;
+					matchOrder = matchOrderB4;
+					missmatchOrder = missmatchOrderB4;
+		end;  
+		#Create an array with the selected stimuli for this block 
+		array <string> activePict[9]; 
+		array <string> activeSnd[9]; 
 		vStim1 = 0;
 		vStim2 = 0;
 		aStim = 0;
 		#string soundOrderStr;
 		#string matchOrderStr;
 		#string missmatchOrderStr;
-		array <string> activePict[9];
-		array <string> activeSnd[6];	
+		#array <string> activePict[9];
+		#array <string> activeSnd[6];	
 		
 		loop int j=1 until j> 9 begin 	                    # NOTE  !  9 unique symbol + marker combination (from those, only 5 unique matching pairs!)
 			activePict[j] = pict_file[blockNum][j];
@@ -779,9 +753,9 @@ switchplaces.shuffle();
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 48 begin
 				vTXT1.set_font_size(100);  # this resets the font size for each trial. A conditional loop will adjust font sizes for specific symbols # Original value: 100
-				vTXT1.set_font("graph2");
+				vTXT1.set_font("grapholemo3");
 				vTXT2.set_font_size(100);
-				vTXT2.set_font("graph2");	
+				vTXT2.set_font("grapholemo3");	
 				 
 				aStim = soundOrder[i];
 				
@@ -924,5 +898,5 @@ switchplaces.shuffle();
 					
 					i=i+1;	
 		end; # End trial loop
-end;
+  end;
 end;

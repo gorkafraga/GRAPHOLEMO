@@ -35,7 +35,7 @@ array <string> pict_file[4][6] =   												# REQUIRES SPECIAL FONT!
 
 #add more sounds! atm they are repeating
 array <string> sound_file[4][6] =
-{	{"norm_a.wav","norm_u.wav","norm_r.wav","norm_l.wav","norm_sch.wav"},	# sound set 1 
+{	{"norm_a.wav","norm_u.wav","norm_r.wav","norm_l.wav","norm_sch.wav"},	# FIX sound set 1 
 	{"norm_a.wav","norm_k.wav","norm_u.wav","norm_q.wav","norm_n.wav","norm_au.wav"},
 	{"norm_a.wav","norm_k.wav","norm_u.wav","norm_q.wav","norm_n.wav","norm_au.wav"},
 	{"norm_a.wav","norm_k.wav","norm_u.wav","norm_q.wav","norm_n.wav","norm_au.wav"}

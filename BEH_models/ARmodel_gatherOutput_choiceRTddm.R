@@ -9,7 +9,7 @@ source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots an
 #=============================================================================================================================
 
 
-dirinput <- choose.dir('O:/studies/allread/mri/analysis_GFG/stats/task/modelling/model_choiceRT/Preproc_ChoiceRTddm_84ss/')
+dirinput <- choose.dir('O:/studies/allread/mri/analysis_GFG/stats/task/modelling/model_choiceRT_fixedBeta/Preproc_ChoiceRTddm_Group012_75ss')
 dirPreprocessed <-dirinput
 diroutput <- dirinput
 fileinput <- "ddm_fit.rds" # model to read
@@ -20,6 +20,9 @@ setwd(dirinput)
 datTable <- read.table("datTable.txt")
 fit <- readRDS(fileinput) # read model output
 
+#----------> save table
+write.table(fit$allIndPars,"Parameters_per_subject.xls",row.names = FALSE,sep="\t")
+
 # retrive some info from the current model 
 modelname<- fit$fit@model_name
 niterations <- fit$fit@stan_args[[1]]$iter
@@ -27,13 +30,12 @@ nburnin <- fit$fit@stan_args[[1]]$warmup
 nchains <-  length(fit$fit@stan_args)
 found_parameters <- names(fit$parVals)
    
- 
-maintitle <- paste(modelname," had ",nchains," chains of ",niterations, " iterations (",nburnin, " burn-in)")
+ maintitle <- paste(modelname," had ",nchains," chains of ",niterations, " iterations (",nburnin, " burn-in)")
 # PLOTS
 #----------------------------------------------------------------------------------------------------------
 # basic histograms
 setwd(diroutput)
-jpeg(file="Histograms.jpg",width = 300,height = 250,units = 'mm', res = 150)
+jpeg(file="Histograms_hyper.jpg",width = 300,height = 250,units = 'mm', res = 150)
 plot.new()
 plot(fit)
 title(main=maintitle,line = +3)
@@ -62,6 +64,7 @@ for (p in 1:length(paranames)){
                         })
 }
 # traces
+#---------------------------------------------------------------------------------------------------
 traces <- as.grob(traceplot(fit$fit,pars=c("mu_alpha","mu_beta","mu_delta","mu_tau")))
 # put together
 combo <- ggdraw() + 
@@ -73,4 +76,6 @@ combo <- ggdraw() +
 
 combo <-  annotate_figure(combo,text_grob(maintitle,color = "purple", face = "bold", size = 12))
 ggsave("Summary.jpg",combo,width = 350, height = 310, dpi=150, units = "mm")
+
+
 

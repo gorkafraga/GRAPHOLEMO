@@ -1,0 +1,86 @@
+Scenario - FeedLearn_Bcomplex.sce
+Logfile written - 07/28/2020 09:28:36
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test	0	Pulse	199	0	0	NA
+test	0	Pulse	199	10000	10000	NA
+test	1	Pulse	199	20000	9167	NA
+test	1	Pulse	199	30000	19167	NA
+test	1	Pulse	199	40000	29167	NA
+test	1	Response	16	40665	29831	0
+test	2	Pulse	199	50000	9289	NA
+test	2	Pulse	199	60000	19289	NA
+test	2	Response	32	69064	28353	0
+test	2	Pulse	199	70000	29289	NA
+test	2	Response	16	73305	32593	0
+test	2	Pulse	199	80000	39289	NA
+test	2	Pulse	199	90000	49289	NA
+test	3	Picture	fix	91062	0	1	32692	2	0	next	other	0
+test	3	Pulse	199	100000	8938	NA
+test	3	Pulse	199	110000	18938	NA
+test	3	Pulse	199	120000	28938	NA
+test	5	Picture	stim	123754	0	1	20516	1	0	20000	hit	20
+test	5	Pulse	199	130000	6246	NA
+test	5	Response	16	138425	14671	0
+test	5	Pulse	199	140000	16246	NA
+test	6	Picture	fix2	144270	0	1	12343	1	0	next	other	0
+test	6	Pulse	199	150000	5730	NA
+test	7	Picture	feedback	156613	0	1	20516	1	0	next	other	0
+test	7	Pulse	199	160000	3387	NA
+test	7	Pulse	199	170000	13387	NA
+test	8	Picture	fix	177129	0	1	28856	1	0	next	other	0
+test	8	Pulse	199	180000	2871	NA
+test	8	Pulse	199	190000	12871	NA
+test	8	Pulse	199	200000	22871	NA
+test	10	Picture	stim	205985	0	1	20182	1	0	20000	hit	33
+test	10	Pulse	199	210000	4015	NA
+test	10	Response	16	210664	4679	0
+test	10	Pulse	199	220000	14015	NA
+test	11	Picture	fix2	226334	0	1	16178	2	0	next	other	0
+test	11	Pulse	199	230000	3666	NA
+test	11	Pulse	199	240000	13666	NA
+test	12	Picture	feedback	242512	0	2	20350	2	0	next	other	0
+test	12	Pulse	199	250000	7488	NA
+test	12	Pulse	199	260000	17488	NA
+test	13	Picture	fix	262862	0	1	24686	1	0	next	other	0
+test	13	Response	16	268344	5482	0
+test	13	Pulse	199	270000	7138	NA
+test	13	Pulse	199	280000	17138	NA
+test	15	Picture	stim	287548	0	1	20349	1	0	20000	hit	47
+test	15	Pulse	199	290000	2452	NA
+test	15	Response	16	291545	3997	0
+test	15	Pulse	199	300000	12452	NA
+test	16	Picture	fix2	307897	0	1	18681	1	0	next	other	0
+test	16	Pulse	199	310000	2103	NA
+test	16	Response	16	319385	11488	0
+test	16	Pulse	199	320000	12103	NA
+test	17	Picture	feedback	326578	0	1	20683	1	0	next	other	0
+test	17	Pulse	199	330000	3422	NA
+test	17	Pulse	199	340000	13422	NA
+test	18	Picture	fix	347261	0	1	22851	1	0	next	other	0
+test	18	Pulse	199	350000	2739	NA
+test	18	Pulse	199	360000	12739	NA
+test	18	Pulse	199	370000	22739	NA
+test	20	Picture	stim	370112	0	1	20349	1	0	20000	miss	0
+test	20	Pulse	199	380000	9888	NA
+test	20	Pulse	199	390000	19888	NA
+test	21	Picture	fix2	390461	0	1	21851	1	0	next	other	0
+test	21	Pulse	199	400000	9539	NA
+test	21	Pulse	199	410000	19539	NA
+test	22	Picture	feedback	412311	0	1	20683	1	0	next	other	0
+test	22	Pulse	199	420000	7689	NA
+test	22	Pulse	199	430000	17689	NA
+test	23	Picture	fix	432994	0	1	30690	1	0	next	other	0
+test	23	Pulse	199	440000	7006	NA
+test	23	Pulse	199	450000	17006	NA
+test	23	Pulse	199	460000	27006	NA
+test	25	Picture	stim	463684	0	1	20349	2	0	20000	miss	0
+test	25	Pulse	199	470000	6316	NA
+test	25	Pulse	199	480000	16316	NA
+test	26	Picture	fix2	484033	0	2	16012	2	0	next	other	0
+test	26	Pulse	199	490000	5967	NA
+test	26	Pulse	199	500000	15967	NA
+test	27	Picture	feedback	500046	0	1	26131	1	0	next	other	0
+test	27	Pulse	199	510000	9954	NA
+test	27	Quit		519384	19339	NA

@@ -1,9 +1,8 @@
-#bPaths()
-#assign(".lib.loc", "C:/Program Files/R/R-3.6.1/library", envir = environment(.libPaths)) 
+#.libPaths()
+assign(".lib.loc", "C:/Program Files/R/R-4.0.2/library", envir = environment(.libPaths)) 
 #Clear all and Load libraries
 rm(list=ls(all=TRUE)) # remove all variables (!)
-Packages <- c("readr","tidyr","dplyr","viridis","data.table","StanHeaders","rstan","rstantools",
-              "hBayesDM","Rcpp","rstanarm","boot","loo","bayesplot","cowplot","ggpubr", "data.table","tibble")
+Packages <- c("readr","tidyr","dplyr","viridis","data.table","StanHeaders","rstan","rstantools","hBayesDM","Rcpp","rstanarm","boot","loo","bayesplot","cowplot","ggpubr","tibble")
 
 lapply(Packages, require, character.only = TRUE)
 #source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
@@ -23,17 +22,18 @@ lapply(Packages, require, character.only = TRUE)
 # REFS: e.g. From Pederson et al.,2017 https://github.com/gbiele/RLDDM/blob/master/RLDDM.jags.txt 
 #------------------------------------------------------------------------------------------------
 # Set inputs 
-dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/modelling/model_choiceRT/Preproc_ChoiceRTddm_84ss"
-diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/modelling/model_choiceRT/Preproc_ChoiceRTddm_84ss"
+dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/modelling/DDM_hBayesDM/Preproc_ChoiceRTddm_Group0_31ss"
+diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/modelling/DDM_hBayesDM/Preproc_ChoiceRTddm_Group0_31ss"
 
 # Get preprocessed input data and list of variables and settings for the  model
 setwd(diroutput)
 mychains <- 4 # numer of mcmc chains
-myiter <- 4000#10000
+myiter <-  10000
 mywarmup <- 1000#4000 # from iterations, how many will be warm ups
 
 # FIT THE MODEL - draw samples.  _m_d('_')b_m_  (time consuming)
 #-------------------------------------------------------------------------------------
+options(mc.cores = parallel::detectCores())
 ddmfit <- choiceRT_ddm(data = "choose", niter = myiter, nwarmup = mywarmup, nchain = mychains,
                        ncore = 4, nthin = 1, inits = "vb", indPars = "mean",
                        modelRegressor = FALSE, vb = FALSE, inc_postpred = FALSE,

@@ -1,0 +1,6 @@
+block	trial	vStims	aStim	resp	rt	fb	iti	feedJitter	vSymbols	aFile	stimOnset	respOnset	feedbackOnset
+3	1	2	3	2	1	636	1	1852	1592	L	O	L	norm_e.wav	practice	practice	practice
+3	2	1	2	2	1	1428	0	3200	1066	K	L	L	norm_e.wav	practice	practice	practice
+3	1	3_6	2	0	0	2	1852	2924	D_H_switched	k_asp_cut.wav	19866	0	24840
+3	2	4_2	3	0	0	2	2871	2035	F_C_switched	u_long.wav	29775	0	33858
+3	3	8_9	5	1	897	0	3387	1574	K_L_switched	norm_n.wav	39314	40211	42938

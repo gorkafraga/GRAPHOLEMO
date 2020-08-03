@@ -14,7 +14,7 @@ lapply(Packages, require, character.only = TRUE)
 # *Note: The file may contain other columns of data (e.g. "ReactionTime", "trial_number", etc.), but only the data within the column names listed above will be used during the modeling. As long as the necessary columns mentioned above are present and labeled correctly, there is no need to remove other miscellaneous data columns.
 #--------------------------------------------------------------------------------------------
 #set dirs
-dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/logs/Nada"
+dirinput <- "O:/studies/allread/mri/analysis_GFG/stats/task/logs/2blocks"
 diroutput <- "O:/studies/allread/mri/analysis_GFG/stats/task/modelling/model_choiceRT"
 masterfile  <- "O:/studies/allread/mri/analysis_GFG/Allread_MasterFile_GFG.xlsx" # use this to find your subjects
 setwd(dirinput)
@@ -155,10 +155,11 @@ ifelse(is.null(dim(blocks)),blocks<-as.array(blocks))
 
 # save for choice RT ##### 
 T2save <- datTable[,c('subjID','RT','choice')]
-destinationDir <- paste(diroutput,"/Preproc_ChoiceRTddm_",n_subj,'ss',sep="")
+destinationDir <- paste(diroutput,"/Preproc_ChoiceRTddm_",colnames(T)[selection],'_',n_subj,'ss',sep="")
 dir.create(destinationDir)
 setwd(destinationDir)
 write.table(T2save,"datTable.txt",sep = "\t",row.names = FALSE)
+write.table(aggregate(datTable$block ~ datTable$subjID, FUN = max ),"subjects_blocks.txt",sep = "\t",row.names = FALSE)
 
 #######################
 

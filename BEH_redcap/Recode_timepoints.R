@@ -35,7 +35,8 @@ myvars2 <- gsub("_T3","_T2",myvars3)
 
 mynewvarspre <- gsub("_T1","_PRE",myvars1)
 mynewvarspost <- gsub("_T1","_POST",myvars1)
-mynewvarswait <-  gsub("_T1","_WAIT",myvars1)
+mynewvarswait <-  gsub("_T1","_WAITpre",myvars1)
+mynewvarswaitpost <-  gsub("_T1","_WAITpost",myvars1)
 
 TG1subjIDX <-which(T$Group=="1")
 TG2subjIDX <- which(T$Group=="2")
@@ -57,15 +58,23 @@ for (i in 1:length(myvars1)){
   T<-cbind(T,tmp)
   rm(tmp)
 }
-# WAIT
+# WAIT PRE
 for (i in 1:length(myvars1)){
-  tmp <- as.data.frame(T[,myvars3[i]])  # for TG2 this is T1
+  tmp <- as.data.frame(T[,myvars2[i]])  # for TG2 this is T1
   colnames(tmp)<-mynewvarswait[i]
   tmp[TG2subjIDX,1] <- T[TG2subjIDX,myvars1[i]]  # for TG1 is T3
   #tmp[TG2subjIDX,1] <- T[TG2subjIDX,myvars2[i]]
   T<-cbind(T,tmp)
 }
 
+# WAIT POST
+for (i in 1:length(myvars1)){
+  tmp <- as.data.frame(T[,myvars3[i]])  # for TG2 this is T1
+  colnames(tmp)<-mynewvarswaitpost[i]
+  tmp[TG2subjIDX,1] <- T[TG2subjIDX,myvars2[i]]  # for TG1 is T3
+  #tmp[TG2subjIDX,1] <- T[TG2subjIDX,myvars2[i]]
+  T<-cbind(T,tmp)
+}
 
 setwd(diroutput)
 write.xlsx(T,"TP_recoded.xlsx")
