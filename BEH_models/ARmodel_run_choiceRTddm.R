@@ -1,5 +1,5 @@
 #.libPaths()
-assign(".lib.loc", "C:/Program Files/R/R-4.0.2/library", envir = environment(.libPaths)) 
+#assign(".lib.loc",  envir = environment(.libPaths)) 
 #Clear all and Load libraries
 rm(list=ls(all=TRUE)) # remove all variables (!)
 Packages <- c("readr","tidyr","dplyr","viridis","data.table","StanHeaders","rstan","rstantools","hBayesDM","Rcpp","rstanarm","boot","loo","bayesplot","cowplot","ggpubr","tibble")

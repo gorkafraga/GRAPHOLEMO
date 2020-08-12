@@ -22,7 +22,7 @@ while (length(which(diff(seqSound)==0))>0){
 #-----------------------------
 seqMatch <- rep(0,length(seqSound))
 for (i in 1:length(seqMatch)){
-       if (seqSound[i]==1) { seqMatch[i] <- 11      # assign predetermined code (1 number is symbol, 2 number is marker) depending on the sound in a given trial
+  if (seqSound[i]==1) { seqMatch[i] <- 11      # assign predetermined code (1 number is symbol, 2 number is marker) depending on the sound in a given trial
   }else if(seqSound[i]==2) {seqMatch[i] <- 13
   }else if(seqSound[i]==3) {seqMatch[i] <- 21
   }else if(seqSound[i]==4) {seqMatch[i] <- 22
@@ -54,6 +54,5 @@ seq <-cbind(seqSound,seqMatch,seqMissmatch)
 ## COUNT specific type of trials
 #-----------------------------------------
 sameSymbol <-  which(as.numeric(substr(seqMatch,1,1))-as.numeric(substr(seqMissmatch,1,1))==0)
-
 sameMarker <-  which(as.numeric(substr(seqMatch,2,2))-as.numeric(substr(seqMissmatch,2,2))==0)
 
