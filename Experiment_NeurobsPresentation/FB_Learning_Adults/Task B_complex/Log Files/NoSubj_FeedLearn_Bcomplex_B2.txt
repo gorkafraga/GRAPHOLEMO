@@ -1,2 +1,0 @@
-block	trial	vStims	aStim	resp	rt	fb	iti	feedJitter	vSymbols	aFile	stimOnset	respOnset	feedbackOnset
-2	1	1_5	1	0	0	2	2335	899	f_k	a_long.wav	9398	0	12340

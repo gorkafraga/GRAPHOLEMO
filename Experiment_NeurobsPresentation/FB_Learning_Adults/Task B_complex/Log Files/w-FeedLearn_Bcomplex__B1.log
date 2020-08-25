@@ -1,9 +1,0 @@
-Scenario - FeedLearn_Bcomplex.sce
-Logfile written - 07/28/2020 10:35:00
-
-Subject	Pulse	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
-
-w	1	Pulse	199	0	0	NA
-w	2	Pulse	199	10000	10000	NA
-w	3	Pulse	199	20000	20000	NA
-w	3	Quit		24627	24627	NA

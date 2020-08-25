@@ -1,5 +1,5 @@
 <ver>20.1</ver>
-<efn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex.exp</efn>
+<efn>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex.exp</efn>
 <author></author>
 <con>
 <pause>P</pause>
@@ -40,13 +40,11 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\Stimulus Files</dsd>
+<dsd>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task B_complex\Stimulus Files</dsd>
 <dxv>8</dxv>
 <efs>
-<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex.sce</filename>
-<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex.pcl</filename>
-<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.pcl</filename>
-<filename>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.sce</filename>
+<filename>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.pcl</filename>
+<filename>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.sce</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version></exp_version>
@@ -89,12 +87,6 @@
 <asn>
 <sid>-2</sid>
 </asn>
-<asn>
-<sid>-2</sid>
-</asn>
-<asn>
-<sid>-2</sid>
-</asn>
 </ssa>
 </man>
 </exparam>
@@ -108,8 +100,6 @@
 <ftp>
 <ccc>0</ccc>
 <do_upload>
-<sce>1</sce>
-<sce>1</sce>
 <sce>1</sce>
 <sce>1</sce>
 </do_upload>
@@ -142,7 +132,7 @@
 <pindex>4294967295</pindex>
 </chan>
 </ip_chans>
-<lfd>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\Log Files</lfd>
+<lfd>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task B_complex\Log Files</lfd>
 <lnb>2</lnb>
 <lno>3</lno>
 <log>
@@ -193,6 +183,23 @@
 <piai>COM1</piai>
 <pian>Serial Port</pian>
 <pihpn>COM1</pihpn>
+</device>
+<device>
+<parameters>
+<cts>0</cts>
+<dsrin>0</dsrin>
+<dsrout>0</dsrout>
+<dtr>disable</dtr>
+<rts>disable</rts>
+<set_fifo>1</set_fifo>
+<spd></spd>
+<spp></spp>
+<spr></spr>
+<sps></sps>
+</parameters>
+<piai>COM3</piai>
+<pian>Serial Port</pian>
+<pihpn>COM3</pihpn>
 </device>
 </port_devices>
 <rdl>
@@ -293,12 +300,12 @@
 <device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>HP Elite USB Keyboard</name>
+<name>USB Keyboard</name>
 </device>
 <device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>HP Elite USB Keyboard 1</name>
+<name>USB Keyboard 1</name>
 </device>
 <device>
 <axis>
@@ -462,17 +469,13 @@
 <dx_device_type>19</dx_device_type>
 <ibn>Z</ibn>
 <ibn>N</ibn>
-<ibn>Enter</ibn>
 <idn>Keyboard</idn>
 <index>0</index>
 <index>1</index>
-<index>2</index>
-<label></label>
 <label></label>
 <label></label>
 <offset>44</offset>
 <offset>49</offset>
-<offset>28</offset>
 </idv>
 <overrides></overrides>
 <sfn>all_scenarios</sfn>
@@ -492,28 +495,7 @@
 <offset>49</offset>
 </idv>
 <overrides></overrides>
-<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex.sce</sfn>
-</sce>
-<sce>
-<idv>
-<device_type>3</device_type>
-<dx_device_type>19</dx_device_type>
-<ibn>Z</ibn>
-<ibn>N</ibn>
-<ibn>Enter</ibn>
-<idn>Keyboard</idn>
-<index>0</index>
-<index>1</index>
-<index>2</index>
-<label></label>
-<label></label>
-<label></label>
-<offset>44</offset>
-<offset>49</offset>
-<offset>28</offset>
-</idv>
-<overrides></overrides>
-<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex.pcl</sfn>
+<sfn>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.pcl</sfn>
 </sce>
 <sce>
 <idv>
@@ -530,24 +512,7 @@
 <offset>49</offset>
 </idv>
 <overrides></overrides>
-<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.pcl</sfn>
-</sce>
-<sce>
-<idv>
-<device_type>3</device_type>
-<dx_device_type>19</dx_device_type>
-<ibn>Z</ibn>
-<ibn>N</ibn>
-<idn>Keyboard</idn>
-<index>0</index>
-<index>1</index>
-<label></label>
-<label></label>
-<offset>44</offset>
-<offset>49</offset>
-</idv>
-<overrides></overrides>
-<sfn>N:\studies\Grapholemo\Scripts\grapholemo\Experiment Presentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.sce</sfn>
+<sfn>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task B_complex\FeedLearn_Bcomplex_2.sce</sfn>
 </sce>
 <sct>
 <capture_device>

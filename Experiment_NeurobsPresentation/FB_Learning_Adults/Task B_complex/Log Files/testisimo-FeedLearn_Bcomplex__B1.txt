@@ -1,2 +1,0 @@
-block	trial	vStims	aStim	resp	rt	fb	iti	feedJitter	vSymbols	aFile	stimOnset	respOnset	feedbackOnset
-1	1	4_2	3	0	0	2	3164	1968	0B4L	norm_n.wav	10281	0	14310

@@ -12,18 +12,29 @@
 %G.Fraga Gonzalez(2020)
 clear all
 close all
- readRegreFromTable = 1; % set as 0 if you want to input your vector with input dialogue
-%Chooice your GLM of interest
-selectedGLM = 'GLM0';
-
+readRegreFromTable = 1; % set as 0 if you want to input your vector with input dialogue
+selectedGLM = 'GLM1';%Chooice your GLM of interest
 % set input dir  based on GLM of interest
-parentDir = 'O:\studies\allread\mri\analyses_NF\mri_analyses_NF\first_level_NF';
+parentDir = 'O:\studies\allread\mri\analysis_GFG\stats\mri';
 listFolders = dir(strcat(parentDir,'\1Lv_',selectedGLM,'*'));
 [indx,tf] = listdlg('PromptString','Select source 1st level folder','ListString',{listFolders.name});
 dirinput = strcat([listFolders(indx).folder,'\',listFolders(indx).name]) ;
+selectedGLM = listFolders(indx).name;
 
+% POP UP Input vector with regressor
+prompt = {'Enter contrast weights:'};
+dlgtitle = 'Input'; dims = [1 100];
+definput = {'0 1'};
+answer = inputdlg(prompt,dlgtitle,dims,definput);
+contrastWeights = str2num(answer{1});  
+
+if contrastWeights(2)>0 
+    suffixsign = 'Pos';
+elseif     contrastWeights(2)<0
+    suffixsign= 'Neg'; 
+end
 % create dir output
-diroutput = strrep(dirinput,['1Lv_',selectedGLM],['2Lv_',selectedGLM,'_Regre']);
+diroutput = strrep(dirinput,[selectedGLM],['2Lv_regre',suffixsign,'_',strrep(selectedGLM,'1Lv_','')]);
 mkdir(diroutput)
 
 % Read t-test contrasts for that model 
@@ -39,13 +50,11 @@ for i = 1:length(SPM.xCon)
     end
 end
 clear SPM
-
-
  %% Read subject files
 files = dir([dirinput,'\AR*']);
-%subjects= {files.name};
+subjects= {files.name};
 %excludedSubj = {'AR1016','AR1022','AR1037'};
-subjects(cell2mat(cellfun(@(c)find(strcmp(c,subjects)),excludedSubj,'UniformOutput',false)))=[]; %find index and exclude subjects
+%subjects(cell2mat(cellfun(@(c)find(strcmp(c,subjects)),excludedSubj,'UniformOutput',false)))=[]; %find index and exclude subjects
  
 %% read Regressor from table 
 if readRegreFromTable == 1
@@ -111,19 +120,20 @@ for c = 1: length(contrast)
     matlabbatch{2}.spm.stats.fmri_est.method.Classical = 1;
     %contrasts
     matlabbatch{3}.spm.stats.con.spmmat(1) = cfg_dep('Model estimation: SPM.mat File', substruct('.','val', '{}',{2}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','spmmat'));
-    matlabbatch{3}.spm.stats.con.consess = {};
+    matlabbatch{3}.spm.stats.con.consess{1}.tcon.name = cell2mat(contrast(c).descript);
+    matlabbatch{3}.spm.stats.con.consess{1}.tcon.weights = contrastWeights;
+    matlabbatch{3}.spm.stats.con.consess{1}.tcon.sessrep = 'none';
     matlabbatch{3}.spm.stats.con.delete = 0;
     batches{c} = matlabbatch;
 end
-
 %%  Run in parallel port  
     if ~isempty(gcp('nocreate'))
             delete(gcp('nocreate'));  
     end 
     parpool(8);        
     parfor i = 1: length(contrast)
-        spm_jobman('run',batches{i});
-        
+         spm_jobman('run',batches{i});
+        %spm_jobman('interactive',batches{i});       
     end    
  %% Save table with contrasts codebook, subjects and regressor
 contrast_table = struct2table(contrast);

@@ -37,20 +37,20 @@ begin;
 picture { bitmap { filename = "test.bmp"; } pict; x=0; y=0;} pstim;
 
 #Instruction text 
-picture { text { caption="<b> Herzlich Willkommen! </b>														
-				 Gleich wirst du eine Fantasieschrift lernen. 
+picture { text { caption="<b> Herzlich willkommen! </b>														
+				 Gleich werden Sie eine Fantasieschrift lernen. 
 				
-				 Drücke auf die <b> blaue Taste (links) </b>, wenn du denkst, dass der Laut, den du hörst, zum linken Symbol gehört. 
-				 Drücke auf die <b> gelbe Taste (rechts) </b>, wenn du denkst, dass der Laut, den du hörst, zum rechten Symbol gehört.  
+				 Drücken Sie auf die <b> blaue Taste (links) </b>, wenn Sie denken, dass der Laut, den Sie hören, zum linken Symbol gehört. 
+				 Drücken Sie auf die <b> gelbe Taste (rechts) </b>, wenn Sie denken, dass der Laut, den Sie hören, zum rechten Symbol gehört.  
 				
-				 Wenn du richtig entschieden hast, wird dir ein Smiley angezeigt:
-				😊 bedeutet, dass du richtig gedrückt hast, 
-				😕 bedeutet, dass du falsch gedrückt hast.
+				 Wenn Sie richtig entschieden haben, wird Ihnen ein Smiley angezeigt:
+				😊 bedeutet, dass Sie richtig gedrückt haben, 
+				😕 bedeutet, dass Sie falsch gedrückt haben.
 				
 				
-				Drücke jeweils so schnell du kannst!
+				Drücken Sie jeweils so schnell Sie können!
 		 
-				<i> Drücke um zu starten</i>"; font_size=25;text_align=align_left; font_color=0,0,0;}instr_txt; x=0; y=0;} instr_txt_pic;
+				<i> Drücken Sie um zu starten</i>"; font_size=25;text_align=align_left; font_color=0,0,0;}instr_txt; x=0; y=0;} instr_txt_pic;
 
 # fixation
 picture { text { caption="+"; font_size=38; font_color=0,0,0;}cross; x=0; y=0;} fix;
@@ -59,7 +59,7 @@ picture { text { caption="."; font_size=48; font_color=0,0,0;}; x=0; y=0; } fix2
 picture { text { caption="☺"; font_size=98; font_color=0,0,0;} fb_pict; x=0; y=0; }feed_pic;
 
 # stimuli from main trial
-sound { wavefile { filename = "norm_ä.wav"; preload=true;} snd;} astim;
+sound { wavefile { filename = "a_short_2_2.wav"; preload=true;} snd;} astim;
 picture { text { caption="V1"; } vTXT1; x=0; y=0;} vstim1; # for testing purposes, use the stim identifier instead of the actual pictue/sound
 picture { text { caption="V2";} vTXT2; x=0; y=0;} vstim2;
 # combine pics from main trial
@@ -305,7 +305,7 @@ if (blockNum == 0) then
 	block_screen_txt.set_caption("Starte Audiotest", true); 
 	block_screen.present(); 
 	int aStim = 0;
-	array <string> activeSnd[3]= {"norm_ü.wav", "norm_n.wav","norm_g.wav"};	
+	array <string> activeSnd[3]= {"t_2_1.wav", "z_2_2.wav","ch_2_3.wav"};	
 	array <int> practiceOrder[9]= {1,1,2,3,1,2,3,3,2};
 	
 	# Loop through the pairOrder array and depending on the value select 
@@ -339,14 +339,14 @@ if (blockNum == 99) then
 		int vStim1 = 0; 
 		int vStim2 = 0; 
 		string pairOrderStr;
-		array <string> activePict[4] = {"R","S","T","U"};
+		array <string> activePict[4] = {"a","c","6","3"};
 		array <string> activeSnd[4]= {"norm_b.wav", "norm_h.wav","norm_Ã¤u.wav", "norm_Ã¶.wav"};	
 		
 		array <int> practiceOrder[20]= {112,113,141,221,212,114,223,221,343,434,112,224,414,323,313,441,131,343,424,442};	
 	
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 20 begin
-			vTXT1.set_font("graph2");vTXT2.set_font("graph2");
+			vTXT1.set_font("FBLearning");vTXT2.set_font("FBLearning");
 		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50); 	
 		   vTXT2.set_width(600);
 			
@@ -393,7 +393,7 @@ if (blockNum == 99) then
 				if (button==0) then
 					fb_pict.set_font_color(0,0,0);
 					fb_pict.set_font_size(20);
-					fb_pict.set_caption("Schneller!", true);
+					fb_pict.set_caption("Drücken Sie ein wenig schneller!", true);
 					fb_event.set_port_code(196);
 					FB = 2;	
 				else
@@ -469,7 +469,7 @@ elseif (blockNum == 100) then
 	
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 5 begin
-			vTXT1.set_font("graph2");vTXT2.set_font("graph2");
+			vTXT1.set_font("BACS1");vTXT2.set_font("BACS1");
 		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50);		
 			pairOrderStr = string(practiceOrder[i]);		
 			aStim = int(pairOrderStr.substring(1,1));
@@ -514,7 +514,7 @@ elseif (blockNum == 100) then
 				if (button==0) then
 					fb_pict.set_font_color(0,0,0);
 					fb_pict.set_font_size(20);
-					fb_pict.set_caption("Schneller!", true);
+					fb_pict.set_caption("Drücken Sie ein wenig schneller!", true);
 					fb_event.set_port_code(196);
 					FB = 2;	
 				else
@@ -601,9 +601,9 @@ array <int> missmatchOrder[48] = {0,0,0,0,0,0,0,0,0,0,
 											0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 											0,0,0,0,0,0,0,0,0,0,0,0,0,0};	
 									
-array <int> switchplaces[48] = { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-											0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};														
-											
+array <int> switchplaces[48] = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+										0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};		
+						 											
 switchplaces.shuffle();
 
 	#Select 
@@ -646,50 +646,45 @@ switchplaces.shuffle();
 			
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 48 begin
-			vTXT1.set_font_size(100);vTXT2.set_font_size(100);  # this resets the font size for each trial. A conditional loop will adjust font sizes for specific symbols # Original value: 100
-			vTXT1.set_font("graph2");vTXT2.set_font("graph2");	
-			
-			#Get the index of the stimuli from the stimuli array 
-			aStim = soundOrder[i];
-			vStim1 = matchOrderB1[i];
-			vStim2 = missmatchOrderB1[i];
-								
-			vTXT1.set_caption(activePict[vStim1], true); 
-			vTXT2.set_caption(activePict[vStim2], true); 
-			snd.set_filename(activeSnd[aStim]);
-			snd.load();
+			 				vTXT1.set_font_size(100);  # this resets the font size for each trial. A conditional loop will adjust font sizes for specific symbols # Original value: 100
+				vTXT1.set_font("grapholemo5");
+				vTXT2.set_font_size(100);
+				vTXT2.set_font("grapholemo5");	
+				 
+				aStim = soundOrder[i];
+				vStim1 = matchOrderB1[i];
+				vStim2 = missmatchOrderB1[i];
 				
-			#Switch vstim 1 and vstim2 in some cases to alternate presentation order				
-			if (switchplaces[i]==1)	then
-				vStim1 = missmatchOrderB1[i];
-				vStim2 = matchOrderB1[i];
 				vTXT1.set_caption(activePict[vStim1], true); 
 				vTXT2.set_caption(activePict[vStim2], true); 
-			end;
-			term.print(switchplaces[i]);
-			
-			if ((aStim == 1 && vStim1 == 1)) ||
-					((aStim == 2 && vStim1 == 2)) ||
-					((aStim == 3 && vStim1 == 3)) ||
-					((aStim == 4 && vStim1 == 4)) ||
-					((aStim == 5 && vStim1 == 5)) ||
-            	((aStim == 6 && vStim1 == 6)) then
-					target_button=32; 
-					main_stim.set_port_code(22);
-						if (switchplaces[i]==1)then #Switch buttons depending on presentation order
-							target_button=16; 
-							main_stim.set_port_code(11)
-						end;
-				else
+				snd.set_filename(activeSnd[aStim]);
+				snd.load();
+				
+				#Switch vstim 1 and vstim2 in some cases to alternate presentation order				
+				if (switchplaces[i]==1)	then
+					vStim1 = missmatchOrderB1[i]; 	
+					vStim2 = matchOrderB1[i];
+					vTXT1.set_caption(activePict[vStim1], true); 
+					vTXT2.set_caption(activePict[vStim2], true); 
+				end;
+				term.print(switchplaces[i]);
+				
+				if (aStim == vStim1)  then
 					target_button=16; 
 					main_stim.set_port_code(11);
-					if (switchplaces[i]==1)then 
+						/*if (switchplaces[i]==1)then #Switch buttons depending on presentation order
+							target_button=16; 
+							main_stim.set_port_code(11)
+						end;*/
+				else
+					target_button=32; 
+					main_stim.set_port_code(22);
+					/*if (switchplaces[i]==1)then 
 							target_button=32; 
 							main_stim.set_port_code(22)
-					end;
-			 end;
-			 
-					
+					end;*/
+			   end;
+		      term.print("target_button");term.print(target_button); term.print("_Astim ");term.print(aStim);term.print("_Vstim1 ");term.print(vStim1); term.print("_Vstim2 ");term.print(vStim2); term.print("\n");
 			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~					
 			#				 TRIAL PRESENTATION
 			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -703,13 +698,13 @@ switchplaces.shuffle();
 					
 				#Visual
 				int stimOnset = clock.time()-t0;
-				 main_trial.present();
+				main_trial.present();
 				
 			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 					
 				# Analyse responses and generate appropriate feedback 
 				stimulus_data sd=stimulus_manager.last_stimulus_data();
-				int RT=sd.reaction_time();
+				int RT= sd.reaction_time();
 				int button=sd.button();
 				int respOnset = 0;
 				int FB=0;						
@@ -717,12 +712,11 @@ switchplaces.shuffle();
 				if (button==0) then
 					fb_pict.set_font_color(0,0,0);
 					fb_pict.set_font_size(48);
-					fb_pict.set_caption("Drücke ein wenig schneller!", true);
+					fb_pict.set_caption("Drücken Sie ein wenig schneller!", true);
 					fb_event.set_port_code(196);
 					FB = 2;	
 				else
-						if (	(target_button==16 && button==1) || 
-							(target_button==32 && button==2)	) then
+						if (	(target_button==16 && button==1) || (target_button==32 && button==2)	) then
 							FB=1;
 							fb_pict.set_font_color(0,102,51);
 							fb_pict.set_font_size(168);
@@ -730,6 +724,7 @@ switchplaces.shuffle();
 							fb_event.set_port_code(64);
 						#register the response onset 
 							respOnset = stimOnset+RT;
+				
 						else	
 							FB=0;
 							fb_pict.set_font_color(0,0,0);
@@ -738,11 +733,13 @@ switchplaces.shuffle();
 							fb_event.set_port_code(128);
 						#register the response onset 
 							respOnset = stimOnset+RT;
+														
 						end;
 					
 				end;
 			 #~~~~~~~~~~~~Present feedback ~~~~~~~~~~~~~~~~~~~~~~~
 				fixBeforeFeedback_trial.set_duration(itifeedback[i]); #iti trial duration jittered
+				
 				fixBeforeFeedback_trial.present();
 				#register feedbackOnset
 				int feedbackOnset = clock.time()-t0;
@@ -755,8 +752,7 @@ switchplaces.shuffle();
 				
 		#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Print out stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		#..............................................................................................
-		
-			# Output file:	 
+		   	# Output file:	 
 				out_file.print(blockNum); out_file.print("\t"); 	# block nr
 				out_file.print(i); out_file.print("\t"); 			# trial nr
 				out_file.print(string(vStim1)+"_"+string(vStim2)); out_file.print("\t"); 	# visual stimulus nr, 1,2,3 or 4
@@ -766,7 +762,10 @@ switchplaces.shuffle();
 				out_file.print(FB); out_file.print("\t"); 						# feedback type (0=wrong, 1=good , 2= faster!)
 				out_file.print(iti[i]); out_file.print("\t"); 		
 				out_file.print(itifeedback[i]); out_file.print("\t"); 	
-				out_file.print(activePict[vStim1]+activePict[vStim2]);out_file.print("\t");		# get_filename(pict.filename()));	# filename of the picture
+				if (switchplaces[i]==1) then 	
+							out_file.print(activePict[vStim2]+"_"+activePict[vStim1]+"_switched");out_file.print("\t");		# get_filename(pict.filename()));	# filename of the picture
+					else 	out_file.print(activePict[vStim1]+"_"+activePict[vStim2]);out_file.print("\t");
+				end;
 				out_file.print(activeSnd[aStim]);out_file.print("\t");		# get_filename(snd.filename()));	# filename of the sound
 				out_file.print(stimOnset);	out_file.print("\t");				# stimulus onset from 1st pulse
 				out_file.print(respOnset);	out_file.print("\t");				# response onset from 1st pulse
