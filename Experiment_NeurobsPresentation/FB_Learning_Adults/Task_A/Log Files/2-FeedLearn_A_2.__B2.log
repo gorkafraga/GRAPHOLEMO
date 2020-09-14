@@ -1,0 +1,66 @@
+Scenario - FeedLearn_A_2.sce
+Logfile written - 09/07/2020 10:19:27
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+2	0	Pulse	199	0	0	NA
+2	0	Pulse	199	10000	10000	NA
+2	1	Response	16	16203	6036	0
+2	2	Pulse	199	20000	3791	NA
+2	2	Response	16	28684	12475	0
+2	2	Pulse	199	30000	13791	NA
+2	2	Pulse	199	40000	23791	NA
+2	2	Pulse	199	50000	33791	NA
+2	2	Response	16	52682	36473	0
+2	2	Pulse	199	60000	43791	NA
+2	3	Picture	fix	66877	0	1	22184	1	0	next	other	0
+2	3	Pulse	199	70000	3123	NA
+2	3	Pulse	199	80000	13123	NA
+2	5	Picture	stim	89061	0	1	20349	1	0	20000	hit	17
+2	5	Pulse	199	90000	939	NA
+2	5	Pulse	199	100000	10939	NA
+2	5	Response	16	104202	15141	0
+2	6	Picture	fix2	109410	0	1	18181	1	0	next	other	0
+2	6	Pulse	199	110000	590	NA
+2	6	Pulse	199	120000	10590	NA
+2	7	Picture	feedback	127591	0	1	20516	1	0	next	other	0
+2	7	Pulse	199	130000	2409	NA
+2	7	Pulse	199	140000	12409	NA
+2	8	Picture	fix	148107	0	1	27021	1	0	next	other	0
+2	8	Pulse	199	150000	1893	NA
+2	8	Pulse	199	160000	11893	NA
+2	8	Pulse	199	170000	21893	NA
+2	10	Picture	stim	175128	0	1	20349	1	0	20000	hit	30
+2	10	Pulse	199	180000	4872	NA
+2	10	Response	16	184763	9636	0
+2	10	Pulse	199	190000	14872	NA
+2	11	Picture	fix2	195477	0	1	17680	1	0	next	other	0
+2	11	Pulse	199	200000	4523	NA
+2	11	Pulse	199	210000	14523	NA
+2	12	Picture	feedback	213157	0	1	20516	1	0	next	other	0
+2	12	Pulse	199	220000	6843	NA
+2	12	Pulse	199	230000	16843	NA
+2	13	Picture	fix	233673	0	1	26521	1	0	next	other	0
+2	13	Pulse	199	240000	6327	NA
+2	13	Pulse	199	250000	16327	NA
+2	14	Pulse	199	260000	6	NA
+2	15	Picture	stim	260194	0	1	20349	1	0	20000	incorrect	44
+2	15	Pulse	199	270000	9806	NA
+2	15	Response	32	275244	15050	0
+2	15	Pulse	199	280000	19806	NA
+2	16	Picture	fix2	280543	0	1	21684	1	0	next	other	0
+2	16	Pulse	199	290000	9457	NA
+2	16	Pulse	199	300000	19457	NA
+2	17	Picture	feedback	302226	0	1	20349	1	0	next	other	0
+2	17	Pulse	199	310000	7774	NA
+2	17	Pulse	199	320000	17774	NA
+2	18	Picture	fix	322576	0	1	26854	1	0	next	other	0
+2	18	Pulse	199	330000	7424	NA
+2	18	Pulse	199	340000	17424	NA
+2	20	Picture	stim	349430	0	1	20349	1	0	20000	hit	58
+2	20	Pulse	199	350000	570	NA
+2	20	Pulse	199	360000	10570	NA
+2	20	Response	16	365164	15734	0
+2	21	Picture	fix2	369779	0	1	16397	1	0	next	other	0
+2	21	Pulse	199	370000	221	NA
+2	21	Quit		379564	9785	NA

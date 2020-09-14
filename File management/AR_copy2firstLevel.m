@@ -6,8 +6,13 @@ close all
 dirinput= ' ';
 diroutput= 'O:\studies\allread\mri\analysis_GFG\1stLevel_GLM1\learn_12';
 
+%%
+
+%%
+
 folderNames = {'learn'};
 subfolderNames = {'logs'};%{'rec_par','nifti','realign_check','logs'};
+
 % find subjects
 subjectFiles = dir([dirinput,'\AR*']);
 files = subjectFiles(find(cellfun(@length, {subjectFiles.name})==6));%take only file names with characters

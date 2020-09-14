@@ -1,0 +1,84 @@
+# Basic arrays with stimuli codes
+#----------------------------------------
+# The arrays contain a value per trial presented. There are three arrays of equal lengh for each item presented in the trial:
+# - Sound array. Coded with a single number from 1 to n unique sounds presented in a block. 
+# - MatchOrder array: has two numbers per trial, the first is the code for the symbol ("fake letter") and the second code for the marker (diacritic mark) 
+# - MissmatchOrder array. Same as the above but shows the code for the incorrect symbol-marker pair. 
+# The position of match/missmatch pairs on screen (left or right) is defined in the scenario file with a conditional loop and the binary array (shuffled) "switchplaces". 
+# Sequences are defined so no consecutive trials present the same sound/matching pair. 
+
+
+array <int> soundOrderB1[48] = 		{4, 5, 4, 1, 2, 1, 3, 6, 4, 5, 2, 5, 3, 1, 2, 6, 4, 2, 4, 6, 3, 2, 6, 3, 5, 1, 5, 3, 5, 1, 6, 4, 1, 6, 4, 3, 2, 3, 1, 5, 2, 4, 2, 6, 3, 6, 1, 5} ;
+array <int> matchOrderB1[48] = 		{22,32,22,11,13,11,21,33,22,32,13,32,21,11,13,33,22,13,22,33,21,13,33,21,32,11,32,21,32,11,33,22,11,33,22,21,13,21,11,32,13,22,13,33,21,33,11,32}; #first digit is symbol, second digit is marker
+array <int> missmatchOrderB1[48] = 	{33,11,12,23,33,21,13,12,32,33,11,12,31,13,12,21,11,32,13,22,33,23,21,22,13,22,21,32,31,33,21,31,23,13,32,22,11,31,21,11,23,31,32,31,22,11,23,12};
+
+array <int> soundOrderB2[48] = 		{1, 4, 2, 1, 3, 6, 3, 5, 1, 5, 3, 4, 6, 5, 1, 6, 4, 5, 2, 6, 5, 3, 4, 5, 2, 5, 6, 2, 6, 4, 6, 1, 3, 4, 5, 3, 2, 3, 2, 4, 1, 3, 4, 1, 6, 2, 1, 2} ;
+array <int> matchOrderB2[48] = 		{11,22,13,11,21,33,21,32,11,32,21,22,33,32,11,33,22,32,13,33,32,21,22,32,13,32,33,13,33,22,33,11,21,22,32,21,13,21,13,22,11,21,22,11,33,13,11,13};
+array <int> missmatchOrderB2[48] = 	{22,32,22,12,11,13,22,33,31,21,33,11,22,11,31,11,13,21,23,13,31,33,13,22,31,23,32,23,11,21,32,21,13,21,23,11,12,32,12,31,12,33,32,21,23,31,12,33};
+
+array <int> soundOrderB3[48] = 		{2, 3, 5, 6, 1, 2, 1, 2, 3, 6, 3, 5, 3, 4, 1, 2, 6, 4, 6, 2, 1, 5, 4, 1, 4, 5, 3, 5, 2, 4, 3, 1, 5, 4, 5, 1, 6, 3, 4, 6, 4, 6, 2, 3, 2, 1, 6, 5} ;
+array <int> matchOrderB3[48] = 		{13,21,32,33,11,13,11,13,21,33,21,32,21,22,11,13,33,22,33,13,11,32,22,11,22,32,21,32,13,22,21,11,32,22,32,11,33,21,22,33,22,33,13,21,13,11,33,32};
+array <int> missmatchOrderB3[48] = 	{23,12,33,23,13,11,32,22,11,32,22,23,32,31,22,11,12,33,31,21,33,22,21,31,11,12,13,31,12,31,11,21,13,33,22,23,21,11,33,31,12,21,32,13,32,21,23,13};
+
+array <int> soundOrderB4[48] = 		{6, 4, 5, 4, 1, 4, 1, 4, 5, 3, 2, 5, 3, 6, 4, 2, 5, 2, 3, 5, 6, 1, 6, 2, 3, 2, 6, 3, 4, 3, 1, 6, 5, 1, 2, 4, 1, 6, 4, 1, 5, 3, 6, 2, 3, 2, 5, 1} ;
+array <int> matchOrderB4[48] = 		{33,22,32,22,11,22,11,22,32,21,13,32,21,33,22,13,32,13,21,32,33,11,33,13,21,13,33,21,22,21,11,33,32,11,13,22,11,33,22,11,32,21,33,13,21,13,32,11}; 
+array <int> missmatchOrderB4[48] = 	{12,32,13,11,31,32,21,11,23,11,31,11,31,13,21,11,22,33,13,23,12,33,32,31,22,12,22,31,21,13,31,22,23,32,22,23,21,13,21,32,23,33,21,33,12,33,11,12};
+
+
+#---------------
+
+#=== Arrays with the poll of stimuli===========================================================
+array <string> pict_file[4][9] =   												# REQUIRES SPECIAL FONT! 
+
+{  {"O","P","Q", 
+	"S","T","U",
+	"W","X","Y"}, 
+	
+	{"B","C","D", 
+	"F","G","H",
+	"J","K","L"}, 
+	
+	{"j","k","b",
+	"h","l","d",
+	"f","g","c"}, 	 
+	
+	{"s","p","o",
+	 "t","x","u",
+	"w","y","q"} 	
+};
+
+
+#add more sounds! atm they are repeating
+array <string> sound_file[4][6] =
+{	{"a_long_2_3_loudCheck.wav","un_short_2_1_loudCheck.wav","e_long_2_2.wav","sche_2_1.wav","st_2_2_loudCheck.wav","wö_2_2_loudCheck.wav"},	# sound set 1 
+	{"ki_short_2_1.wav","ka_loudCheck.wav","zi_2_2.wav","schl_2_1.wav","pf_2_1_loudCheck.wav","wa_short_2_2.wav"},
+	{"o_long_2_1_loudCheck.wav","i_long_2_1_loudCheck.wav","sp_2_1_loudCheck.wav","scho_2_1.wav","ur_short_2_1_loudCheck.wav","vö_2_2_loudCheck.wav"},
+	{"fa_2_2.wav","ga_short_2_2.wav","fi_2_2_loudCheck.wav","di_2_1_loudCheck.wav","x_2_2.wav","cht_2_1.wav"}
+};
+
+#loop int i = 1 until i > 4
+#begin
+	#sound_file[i].shuffle(1,5);
+#	i = i + 1;
+#end;
+
+#=== Array with the ITIs to be shuffled ==============================================
+# Matlab: normrnd(2500,500,1,36)
+array <int> iti[48] = 
+{	1852,3200,2458,2134,2182,2350,2885,2195,
+	2035,2269,2532,3114,3387,3581,2586,2639,
+	2720,1927,2010,3315,1738,2671,2503,1991,
+	2871,2678,2836,2881,2632,2911,2670,1889,
+	2786,2448,2954,2335,3066,1760,2364,3740,
+   2334,2466,2925,2221,2841,2219,2986,1615};
+
+
+#Matlab: normrnd(2000,500,1,48)
+array<int> itifeedback[48] = 
+{	1592,1066,1996,2130,1628,2619,1582,2173,
+	1320,1380,1796,2602,1599,2220,1795,1654,
+	1105,1453,1718,2151,2189,2035,2244,2123,
+	2754,2341,899,2155,2324,2924,1465,1670,
+	1509,2041,1639,2582,2131,1395,1855,2422,
+	1289,2898,2576,1146,1574,1656,1779,2403};
+		

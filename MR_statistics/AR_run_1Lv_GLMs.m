@@ -26,7 +26,7 @@ paths.analysis =  diroutputChoices(selectedGLM);
 addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR statistics');% set path to this script and associated functions
 paths.mri = 'G:\preprocessing';% 
 paths.logs = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs_raw'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
-nscans = 273;
+%nscans = 273;
 
 %% Begin subject selection
 T = readtable(masterfile,'sheet','Lists_subsamples'); 

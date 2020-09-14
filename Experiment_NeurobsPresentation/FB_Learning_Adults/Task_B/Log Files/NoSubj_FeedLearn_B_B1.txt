@@ -1,0 +1,7 @@
+block	trial	vStims	aStim	resp	rt	fb	iti	feedJitter	vSymbols	aFile	stimOnset	respOnset	feedbackOnset
+1	1	2	3	2	1	738	1	1852	1592	R	V	R	e_short_2_2.wav	practice	practice	practice
+1	2	1	2	2	2	381	1	3200	1066	N	R	R	e_short_2_2.wav	practice	practice	practice
+1	3	2	3	3	2	324	1	2458	1996	R	V	V	t_2_1_loudCheck.wav	practice	practice	practice
+1	4	1	3	1	2	259	0	2134	2130	N	V	N	a_short_2_2.wav	practice	practice	practice
+1	5	2	1	1	2	11	1	2182	1628	R	N	N	a_short_2_2.wav	practice	practice	practice
+1	6	3	1	3	2	221	0	2350	2619	V	N	V	t_2_1_loudCheck.wav	practice	practice	practice

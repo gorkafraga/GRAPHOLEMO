@@ -13,11 +13,11 @@
 % Last version: Gorka Fraga (March 2020) adapted from original by David Willinger 
 clear all; close all; %clear matlabbatch batch;
 spm_jobman('initcfg');
-addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR preprocessing') 
+addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_preprocessing') 
 %% Inputs setup
 %------------------------------
 tic
-tasklist =  {'block_4'}; %Recommended to take one task at a time.  [eread, learn, localizer, symCtrl]   
+tasklist =  {'block_2'}; %Recommended to take one task at a time.  [eread, learn, localizer, symCtrl]   
 anatTemplate = 'G:\preprocessing\anatomical_templates\from_TOM8\TPM_Age8_7.nii'; % Called by 'AR_create_fieldmap.m'
 % PATHS (end character should be \ )
 paths.preprocessing = 'G:\preprocessing\';
@@ -25,7 +25,7 @@ paths.preprocessing = 'G:\preprocessing\';
 
 files =  (dir([paths.preprocessing,tasklist{1},'\**\AR*']));
 subjects = unique({files.name});
-%subjects = {'AR1002','AR1003','AR1004','AR1005','AR1006','AR1007','AR1008','AR1009'};
+subjects = {'AR1091'}; %,'AR1003','AR1004','AR1005','AR1006','AR1007','AR1008','AR1009'};
 %% BEGIN TASK LOOP
 cd (paths.preprocessing)
 for t=1:length(tasklist)

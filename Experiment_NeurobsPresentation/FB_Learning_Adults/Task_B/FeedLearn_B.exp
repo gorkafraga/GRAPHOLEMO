@@ -1,5 +1,5 @@
 <ver>20.1</ver>
-<efn>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_A\FeedLearn_A.exp</efn>
+<efn>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_B\FeedLearn_B.exp</efn>
 <author></author>
 <con>
 <pause>P</pause>
@@ -40,11 +40,11 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_A\Stimulus Files</dsd>
+<dsd>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_B\Stimulus Files</dsd>
 <dxv>8</dxv>
 <efs>
-<filename>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_A\FeedLearn_A.pcl</filename>
-<filename>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_A\FeedLearn_A.sce</filename>
+<filename>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_B\FeedLearn_B.sce</filename>
+<filename>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_B\FeedLearn_B.pcl</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version></exp_version>
@@ -132,7 +132,7 @@
 <pindex>4294967295</pindex>
 </chan>
 </ip_chans>
-<lfd>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_A\Log Files</lfd>
+<lfd>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_B\Log Files</lfd>
 <lnb>2</lnb>
 <lno>3</lno>
 <log>
@@ -478,7 +478,7 @@
 <offset>49</offset>
 </idv>
 <overrides></overrides>
-<sfn>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_A\FeedLearn_A.pcl</sfn>
+<sfn>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_B\FeedLearn_B.sce</sfn>
 </sce>
 <sce>
 <idv>
@@ -495,7 +495,7 @@
 <offset>49</offset>
 </idv>
 <overrides></overrides>
-<sfn>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_A\FeedLearn_A.sce</sfn>
+<sfn>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_B\FeedLearn_B.pcl</sfn>
 </sce>
 <sct>
 <capture_device>
@@ -514,7 +514,7 @@
 <combine>0</combine>
 <ignore>1000</ignore>
 <isr>0</isr>
-<max_rec_dur>60</max_rec_dur>
+<max_rec_dur>10</max_rec_dur>
 <md></md>
 <mio></mio>
 <off_inter>200</off_inter>
