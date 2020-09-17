@@ -1,4 +1,4 @@
-function [stats Tstats] = AR_gather_performance(logfiles,currPathLogs)
+function [stats, Tstats] = AR_gather_performance(logfiles,currPathLogs)
 stats ={};
 ncols = 8;
 
@@ -9,7 +9,7 @@ ncols = 8;
         if ~isempty(file2read) 
         T = readtable([file2read.folder,'\',file2read.name]);
             % Gather (if not enought trials in this block fill the stats with NAs)
-              if size(T,1) ~= 40 && size(T,1) ~=39 && size(T,1) ~=38
+              if size(T,1) ~= 48 && size(T,1) ~=47 && size(T,1) ~=46
                   disp([file2read.name,' skipped. It had ',num2str(size(T,1)),' trials'])
               else
                   % separate types of trials 

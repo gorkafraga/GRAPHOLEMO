@@ -1,0 +1,32 @@
+Scenario - FeedLearn_B.sce
+Logfile written - 09/15/2020 09:42:54
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+p001	0	Pulse	199	0	0	NA
+p001	0	Pulse	199	10000	10000	NA
+p001	1	Pulse	199	20000	9500	NA
+p001	1	Pulse	199	30000	19500	NA
+p001	1	Pulse	199	40000	29500	NA
+p001	1	Response	16	47085	36585	0
+p001	2	Picture	fix	48363	0	1	19515	1	0	next	other	0
+p001	2	Pulse	199	50000	1637	NA
+p001	2	Pulse	199	60000	11637	NA
+p001	4	Picture	stim	67878	0	1	15846	1	0	next	hit	13
+p001	4	Pulse	199	70000	2122	NA
+p001	4	Pulse	199	80000	12122	NA
+p001	4	Response	16	83325	15447	0
+p001	5	Picture	feedback	83723	0	1	20182	1	0	next	other	0
+p001	5	Pulse	199	90000	6277	NA
+p001	5	Pulse	199	100000	16277	NA
+p001	6	Picture	fix	103906	0	1	32192	1	0	next	other	0
+p001	6	Pulse	199	110000	6094	NA
+p001	6	Pulse	199	120000	16094	NA
+p001	6	Pulse	199	130000	26094	NA
+p001	6	Response	32	133724	29818	0
+p001	8	Picture	stim	136097	0	1	3169	1	0	next	incorrect	23
+p001	8	Response	32	139004	2907	0
+p001	9	Picture	feedback	139267	0	1	14064	1	0	next	other	0
+p001	9	Pulse	199	140000	733	NA
+p001	9	Response	32	140684	1417	0
+p001	9	Quit		147324	8058	NA

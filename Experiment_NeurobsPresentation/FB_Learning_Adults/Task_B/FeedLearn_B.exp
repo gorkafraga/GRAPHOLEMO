@@ -560,7 +560,7 @@
 <attenuation>0.2</attenuation>
 <do_attenuation>0</do_attenuation>
 <do_volume>1</do_volume>
-<volume>0.2</volume>
+<volume>0.5</volume>
 </svl>
 <swp>1</swp>
 <text_encoding>utf8</text_encoding>

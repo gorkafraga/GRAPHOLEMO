@@ -38,18 +38,21 @@ picture { bitmap { filename = "test.bmp"; } pict; x=0; y=0;} pstim;
 
 #Instruction text 
 picture { text { caption="<b> Willkommen! </b>														
-				 In diesem Experiment lernst Du eine Fantasieschrift.
+				 In diesem Experiment lernen Sie eine Fantasieschrift.
 				
-				 Du wirst auf beiden Seiten des Bildschirmes ein Symbole sehen und dazu einen Laut hören. 
-				Darauf wählst Du ein Zeichen, welches zum Laut gehört, indem Du den passenden Knopf drückst (rechts oder links).
+				Sie werden auf beiden Seiten des Bildschirmes ein Symbole sehen und dazu einen Laut hören. 
+				Darauf wählen Sie ein Zeichen, welches zum Laut gehört, indem Sie den passenden Knopf drücken (rechts oder links).
 				
-				Nach jeder Antwort kriegst Du ein Feedback, welches Dir anzeigt, wie Du gedrückt hast: 
-				korrekt (😊), inkorrekt (😕) oder ‘schneller’, wenn Du zuviel Zeit gebraucht hast. Dadurch wirst Du die korrekte Symbol-Laut Verknüpfungen lernen. 
+				Nach jeder Antwort kriegen Sie ein Feedback, welches Ihnen anzeigt, wie Sie gedrückt haben: 
+				korrekt (😊), inkorrekt (😕) oder ‘schneller’, wenn Sie zuviel Zeit gebraucht haben.
+         
+Dadurch werden Sie die korrekten Symbol-Laut Verknüpfungen lernen. 
 				
 				
-				Versuch so schnell als möglich zu antworten.
+				Versuchen Sie so schnell als möglich zu antworten.
 		 
-				<i> Drück einen Knopf um fortzufahren. </i>"; font_size=25;text_align=align_left; font_color=0,0,0;}instr_txt; x=0; y=0;} instr_txt_pic;
+		
+				<i> Drücken Sie einen Knopf um fortzufahren. </i>"; font_size=25;text_align=align_left; font_color=0,0,0;}instr_txt; x=0; y=0;} instr_txt_pic;
 
 # fixation
 picture { text { caption="+"; font_size=38; font_color=0,0,0;}cross; x=0; y=0;} fix;
@@ -127,11 +130,11 @@ picture{	text abfrage_txt; x=0; y=200;
 	trial {
 		trial_type=fixed;
 		all_responses=false; 	#prevents terminating trial by an early button press	
-		trial_duration = 2000;
+		trial_duration = 2500;
 		stimulus_event {
 			picture main_pic; 
 			time = 0; 
-			duration = 2000;
+			duration = 2500;
 			target_button=1;
 			response_active=true; 
 			code="stim";  

@@ -42,28 +42,28 @@ picture { bitmap { filename = "test.bmp"; } pict; x=0; y=0;} pstim;
 #Instruction text 
 picture { text { caption="<b> Willkommen zurück! </b>
 													
-			Jetzt wirst Du nochmals die gleichen Symbole sehen, aber diesmal mit Markierungen (diakritische Zeichen), die ihre Laute verändern. 
+			Jetzt werden Sie nochmals die gleichen Symbole sehen, aber diesmal mit Markierungen (diakritische Zeichen), die ihre Laute verändern. 
 			Zum Beispiel <i>à</i> or <i>ä</i> wechselt den <i>a</i>  Laut.
 
-			Wenn Du den Knopf für das korrekte Paar drückst, erhält du ein positives Feedback (😊), ansonsten erscheint (😕) oder «schneller».
+			Wenn Sie den Knopf für das korrekte Paar drücken, erhälten Sie ein positives Feedback (😊), ansonsten erscheint (😕) oder «schneller».
 
-			Zuerst starten wir mit einer kurzen Auffrischung der Symbole und Laute, die Du gerade gelernt hast.
+			Zuerst starten wir mit einer kurzen Auffrischung der Symbole und Laute, die Sie gerade gelernt haben.
 				
 	 
-			<i> Drücke einen Knopf, um fortzufahren.</i>"; font_size=25;text_align=align_left; font_color=0,0,0;}refresh_txt; x=0; y=0;} refresh_txt_pic;
+			<i> Drücken Sie einen Knopf, um fortzufahren.</i>"; font_size=25;text_align=align_left; font_color=0,0,0;}refresh_txt; x=0; y=0;} refresh_txt_pic;
 
 
 picture { text { caption="<b> Gut gemacht! </b>														
 				Nun beginnen wir mit der aktuellen Aufgabe. 
 				
-			 	Nach jeder Antwort kriegst Du ein Feedback, welches Dir anzeigt, wie Du gedrückt hast:  
-				korrekt (😊), inkorrekt (😕) oder ‘schneller’, wenn Du zuviel Zeit gebraucht hast. 
+			 	Nach jeder Antwort kriegen Sie ein Feedback, welches Ihnen anzeigt, wie Sie gedrückt haben:  
+				korrekt (😊), inkorrekt (😕) oder ‘schneller’, wenn Sie zuviel Zeit gebraucht haben. 
 				
-				Dadurch wirst Du die korrekte Symbol-Laut Verknüpfungen lernen. 
+				Dadurch werden Sie die korrekten Symbol-Laut Verknüpfungen lernen. 
 								
-				Versuch so schnell als möglich zu antworten.
+				Versuchen Sie so schnell als möglich zu antworten.
 		 
-				<i> Drück einen Knopf um fortzufahren </i>"; font_size=25;text_align=align_left; font_color=0,0,0;}instr_txt; x=0; y=0;} instr_txt_pic;
+				<i> Drücken Sie einen Knopf um fortzufahren </i>"; font_size=25;text_align=align_left; font_color=0,0,0;}instr_txt; x=0; y=0;} instr_txt_pic;
 # fixation
 picture { text { caption="+"; font_size=38; font_color=0,0,0;}cross; x=0; y=0;} fix;
 picture { text { caption="."; font_size=48; font_color=0,0,0;}; x=0; y=0; } fix2;
@@ -140,11 +140,11 @@ picture{	text abfrage_txt; x=0; y=200;
 	trial {
 		trial_type=fixed;
 		all_responses=false; 	#prevents terminating trial by an early button press	
-		trial_duration = 2000;
+		trial_duration = 2500;
 		stimulus_event {
 			picture main_pic; 
 			time = 0; 
-			duration = 2000;
+			duration = 2500;
 			target_button=1;
 			response_active=true; 
 			code="stim";  

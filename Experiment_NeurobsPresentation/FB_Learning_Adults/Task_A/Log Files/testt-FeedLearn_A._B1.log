@@ -1,0 +1,27 @@
+Scenario - FeedLearn_A.sce
+Logfile written - 09/15/2020 12:27:10
+
+Subject	Pulse	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+testt	1	Pulse	199	0	0	NA
+testt	2	Pulse	199	10000	10000	NA
+testt	3	Pulse	199	20000	20000	NA
+testt	4	Pulse	199	30000	30000	NA
+testt	5	Pulse	199	40000	40000	NA
+testt	6	Pulse	199	50000	50000	NA
+testt	7	Pulse	199	60000	60000	NA
+testt	8	Pulse	199	70000	70000	NA
+testt	9	Pulse	199	80000	80000	NA
+testt	10	Pulse	199	90000	90000	NA
+testt	11	Pulse	199	100000	100000	NA
+testt	12	Pulse	199	110000	110000	NA
+testt	13	Pulse	199	120000	120000	NA
+testt	14	Pulse	199	130000	130000	NA
+testt	15	Pulse	199	140000	140000	NA
+testt	16	Pulse	199	150000	150000	NA
+testt	17	Pulse	199	160000	160000	NA
+testt	18	Pulse	199	170000	170000	NA
+testt	19	Pulse	199	180000	180000	NA
+testt	20	Pulse	199	190000	190000	NA
+testt	21	Pulse	199	200000	200000	NA
+testt	21	Quit		203240	203240	NA
