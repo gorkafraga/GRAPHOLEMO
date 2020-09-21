@@ -1,0 +1,5 @@
+In all versions Task A is single symbol-speech sound associations. Task B repeats symbols from A but adds marks to change the phonemes.
+
+TASK VERSIONS
+- Version0. Contains 8 repetitions of 6 stimuli: 48 trials. No distractors.
+- Version1. 

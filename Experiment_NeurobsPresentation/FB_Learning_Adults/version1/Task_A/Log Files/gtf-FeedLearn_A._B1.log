@@ -1,0 +1,44 @@
+Scenario - FeedLearn_A.sce
+Logfile written - 09/15/2020 10:47:33
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+gtf	0	Pulse	199	0	0	NA
+gtf	0	Pulse	199	10000	10000	NA
+gtf	1	Pulse	199	20000	9168	NA
+gtf	1	Pulse	199	30000	19168	NA
+gtf	1	Pulse	199	40000	29168	NA
+gtf	1	Pulse	199	50000	39168	NA
+gtf	1	Pulse	199	60000	49168	NA
+gtf	1	Pulse	199	70000	59168	NA
+gtf	1	Pulse	199	80000	69168	NA
+gtf	1	Pulse	199	90000	79168	NA
+gtf	1	Pulse	199	100000	89168	NA
+gtf	1	Pulse	199	110000	99168	NA
+gtf	1	Pulse	199	120000	109168	NA
+gtf	1	Pulse	199	130000	119168	NA
+gtf	1	Pulse	199	140000	129168	NA
+gtf	1	Pulse	199	150000	139168	NA
+gtf	1	Pulse	199	160000	149168	NA
+gtf	1	Pulse	199	170000	159168	NA
+gtf	1	Pulse	199	180000	169168	NA
+gtf	1	Response	16	182178	171346	1
+gtf	2	Pulse	199	190000	7760	NA
+gtf	2	Pulse	199	200000	17760	NA
+gtf	2	Response	16	209855	27615	1
+gtf	2	Pulse	199	210000	27760	NA
+gtf	2	Pulse	199	220000	37760	NA
+gtf	2	Pulse	199	230000	47760	NA
+gtf	3	Picture	fix	233143	0	1	30119	1	0	next	other	0
+gtf	3	Pulse	199	240000	6857	NA
+gtf	3	Pulse	199	250000	16857	NA
+gtf	4	Pulse	199	260000	132	NA
+gtf	5	Picture	stim	263261	0	1	25293	1	0	25000	hit	34
+gtf	5	Pulse	199	270000	6739	NA
+gtf	5	Pulse	199	280000	16739	NA
+gtf	5	Response	16	280791	17530	1
+gtf	6	Picture	fix2	288554	0	1	10816	1	0	next	other	0
+gtf	6	Pulse	199	290000	1446	NA
+gtf	7	Picture	feedback	299370	0	1	16636	1	0	next	other	0
+gtf	7	Pulse	199	300000	630	NA
+gtf	7	Quit		308804	9434	NA

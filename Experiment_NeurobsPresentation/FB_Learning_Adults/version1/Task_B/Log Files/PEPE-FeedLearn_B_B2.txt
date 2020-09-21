@@ -1,0 +1,2 @@
+block	trial	vStims	aStim	resp	rt	fb	iti	feedJitter	vSymbols	aFile	stimOnset	respOnset	feedbackOnset
+2	1	2	3	2	1	368	1	1852	1592	I	A	I	w_2_2.wav	practice	practice	practice
