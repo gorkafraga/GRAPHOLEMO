@@ -28,7 +28,7 @@ array <int> missmatchOrderB4[48] = 	{12,32,13,11,31,32,21,11,23,11,31,11,31,13,2
 #---------------
 
 #=== Arrays with the poll of stimuli===========================================================
-array <string> pict_file[4][9] =   												# REQUIRES SPECIAL FONT! 
+array <string> pict_file[4][9] =   									
 
 {  {"O","P","Q", 
 	"S","T","U",
@@ -48,7 +48,7 @@ array <string> pict_file[4][9] =   												# REQUIRES SPECIAL FONT!
 };
 
 
-#add more sounds! atm they are repeating
+
 array <string> sound_file[4][6] =
 {	{"a_long_2_3_loudCheck.wav","un_short_2_1_loudCheck.wav","e_long_2_2.wav","sche_2_1.wav","st_2_2_loudCheck.wav","wö_2_2_loudCheck.wav"},	# sound set 1 
 	{"ki_short_2_1.wav","ka_loudCheck.wav","zi_2_2.wav","schl_2_1.wav","pf_2_1_loudCheck.wav","wa_short_2_2.wav"},

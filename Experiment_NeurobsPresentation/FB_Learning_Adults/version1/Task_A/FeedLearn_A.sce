@@ -259,6 +259,7 @@ preset int blockNum;
 # LOG AND OUTPUTFILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 string  logfilename = logfile.filename();
 logfile.set_filename(logfilename.replace(".log",+"_B"+string(blockNum)+".log"));
+logfile.set_filename(logfilename.replace("FeedLearn_A.","FBL_taskA"));
 logfilename = logfile.filename();		
 
 if (file_exists(logfilename)) then 
@@ -275,7 +276,7 @@ logfile.set_filename(logfilename);
 string scenarioName = "FBL_taskA";
 output_file out_file = new output_file;
 if (logfile.subject().count()>0) then out_file.open(logfilename.replace(".log",".txt"));
-else out_file.open("NoSubj_"+scenarioName+"_"+"_B"+string(blockNum)+".txt"); end;
+else out_file.open("NoSubj_"+scenarioName+"_B"+string(blockNum)+".txt"); end;
 
 #headers in txt file
 out_file.print("block\ttrial\tvStims\taStim\tresp\trt\tfb\titi\tfeedJitter\tvSymbols\taFile\tstimOnset\trespOnset\tfeedbackOnset\n");
@@ -637,7 +638,7 @@ switchplaces.shuffle();
 		array <string> activePict[8];
 		array <string> activeSnd[6];	
 		
-		loop int j=1 until j> 6 begin
+		loop int j=1 until j> 8 begin
 			activePict[j] = pict_file[blockNum][j];
 			j = j+1
 		end;

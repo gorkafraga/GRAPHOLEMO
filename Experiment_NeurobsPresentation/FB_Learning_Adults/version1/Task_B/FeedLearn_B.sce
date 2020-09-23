@@ -291,7 +291,7 @@ logfile.set_filename(logfilename);
 
 	
 #create .txt outputfile
-string scenarioName = "FeedLearn_B";
+string scenarioName = "FBL_taskB";
 output_file out_file = new output_file;
 if (logfile.subject().count()>0) then out_file.open(logfilename.replace(".log",".txt"));
 else out_file.open("NoSubj_"+scenarioName+"_"+"B"+string(blockNum)+".txt"); end;

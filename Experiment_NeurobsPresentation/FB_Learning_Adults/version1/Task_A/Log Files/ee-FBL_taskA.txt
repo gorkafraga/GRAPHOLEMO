@@ -1,0 +1,11 @@
+block	trial	vStims	aStim	resp	rt	fb	iti	feedJitter	vSymbols	aFile	stimOnset	respOnset	feedbackOnset
+1	1	6_3	3	0	0	2	3581	1796	V_5_switched	t_2_1_loudCheck.wav	17341	0	21677
+1	2	6_8	6	0	0	2	2466	2220	5_d1a	in_short_2_1_loudCheck.wav	26284	0	31041
+1	3	2_1	2	0	0	2	2134	2324	R_N	e_short_2_2.wav	35259	0	40135
+1	4	1_7	1	0	0	2	3740	1453	N_d1a	a_short_2_2.wav	45989	0	50006
+1	5	4_5	5	0	0	2	2586	2189	4_3_switched	b_2_1.wav	54709	0	59432
+1	6	1_2	2	0	0	2	2841	1718	R_N_switched	e_short_2_2.wav	64321	0	68568
+1	7	2_5	5	0	0	2	2182	1592	4_R_switched	b_2_1.wav	72903	0	77032
+1	8	4_6	4	0	0	2	2639	2898	3_5	l_2_2_loudCheck.wav	81816	0	87245
+1	9	1_5	1	0	0	2	2670	1574	N_4	a_short_2_2.wav	92038	0	96146
+1	10	3_4	3	0	0	2	2836	2131	V_3	t_2_1_loudCheck.wav	101044	0	105710

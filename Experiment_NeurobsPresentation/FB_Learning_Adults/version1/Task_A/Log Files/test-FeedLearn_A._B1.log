@@ -1,0 +1,354 @@
+Scenario - FeedLearn_A.sce
+Logfile written - 09/21/2020 11:19:59
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test	0	Pulse	199	0	0	NA
+test	0	Pulse	199	10000	10000	NA
+test	1	Pulse	199	20000	8833	NA
+test	1	Pulse	199	30000	18833	NA
+test	1	Response	32	39228	28061	0
+test	2	Pulse	199	40000	710	NA
+test	2	Pulse	199	50000	10710	NA
+test	2	Response	32	50429	11139	0
+test	2	Pulse	199	60000	20710	NA
+test	2	Pulse	199	70000	30710	NA
+test	2	Pulse	199	80000	40710	NA
+test	2	Pulse	199	90000	50710	NA
+test	3	Picture	fix	90562	0	1	36695	1	0	next	other	0
+test	3	Pulse	199	100000	9438	NA
+test	3	Pulse	199	110000	19438	NA
+test	3	Pulse	199	120000	29438	NA
+test	5	Picture	stim	127257	0	1	25353	1	0	25000	miss	0
+test	5	Pulse	199	130000	2743	NA
+test	5	Pulse	199	140000	12743	NA
+test	5	Pulse	199	150000	22743	NA
+test	6	Picture	fix2	152610	0	1	20683	1	0	next	other	0
+test	6	Pulse	199	160000	7390	NA
+test	6	Pulse	199	170000	17390	NA
+test	7	Picture	feedback	173292	0	1	20683	1	0	next	other	0
+test	7	Pulse	199	180000	6708	NA
+test	7	Pulse	199	190000	16708	NA
+test	8	Picture	fix	193975	0	1	34026	1	0	next	other	0
+test	8	Pulse	199	200000	6025	NA
+test	8	Pulse	199	210000	16025	NA
+test	8	Pulse	199	220000	26025	NA
+test	10	Picture	stim	228001	0	1	25353	1	0	25000	miss	0
+test	10	Pulse	199	230000	1999	NA
+test	10	Pulse	199	240000	11999	NA
+test	10	Pulse	199	250000	21999	NA
+test	11	Picture	fix2	253354	0	1	23518	1	0	next	other	0
+test	11	Pulse	199	260000	6646	NA
+test	11	Pulse	199	270000	16646	NA
+test	12	Picture	feedback	276872	0	1	20849	1	0	next	other	0
+test	12	Pulse	199	280000	3128	NA
+test	12	Pulse	199	290000	13128	NA
+test	13	Picture	fix	297722	0	1	29690	1	0	next	other	0
+test	13	Pulse	199	300000	2278	NA
+test	13	Pulse	199	310000	12278	NA
+test	13	Pulse	199	320000	22278	NA
+test	15	Picture	stim	327411	0	1	25186	1	0	25000	miss	0
+test	15	Pulse	199	330000	2589	NA
+test	15	Pulse	199	340000	12589	NA
+test	15	Pulse	199	350000	22589	NA
+test	16	Picture	fix2	352598	0	1	22184	1	0	next	other	0
+test	16	Pulse	199	360000	7402	NA
+test	16	Pulse	199	370000	17402	NA
+test	17	Picture	feedback	374781	0	1	20683	1	0	next	other	0
+test	17	Pulse	199	380000	5219	NA
+test	17	Pulse	199	390000	15219	NA
+test	18	Picture	fix	395464	0	1	20516	1	0	next	other	0
+test	18	Pulse	199	400000	4536	NA
+test	18	Pulse	199	410000	14536	NA
+test	20	Picture	stim	415980	0	1	25353	1	0	25000	miss	0
+test	20	Pulse	199	420000	4020	NA
+test	20	Pulse	199	430000	14020	NA
+test	20	Pulse	199	440000	24020	NA
+test	21	Picture	fix2	441333	0	1	26354	1	0	next	other	0
+test	21	Pulse	199	450000	8667	NA
+test	21	Pulse	199	460000	18667	NA
+test	22	Picture	feedback	467686	0	1	21183	1	0	next	other	0
+test	22	Pulse	199	470000	2314	NA
+test	22	Pulse	199	480000	12314	NA
+test	23	Picture	fix	488869	0	1	28022	1	0	next	other	0
+test	23	Pulse	199	490000	1131	NA
+test	23	Pulse	199	500000	11131	NA
+test	23	Pulse	199	510000	21131	NA
+test	25	Picture	stim	516891	0	1	25353	1	0	25000	miss	0
+test	25	Pulse	199	520000	3109	NA
+test	25	Pulse	199	530000	13109	NA
+test	25	Pulse	199	540000	23109	NA
+test	26	Picture	fix2	542411	0	1	16846	1	0	next	other	0
+test	26	Pulse	199	550000	7589	NA
+test	27	Picture	feedback	559257	0	1	20516	1	0	next	other	0
+test	27	Pulse	199	560000	743	NA
+test	27	Pulse	199	570000	10743	NA
+test	28	Picture	fix	579773	0	1	17847	1	0	next	other	0
+test	28	Pulse	199	580000	227	NA
+test	28	Pulse	199	590000	10227	NA
+test	30	Picture	stim	597620	0	1	25186	1	0	25000	miss	0
+test	30	Pulse	199	600000	2380	NA
+test	30	Pulse	199	610000	12380	NA
+test	30	Pulse	199	620000	22380	NA
+test	31	Picture	fix2	622806	0	1	21517	1	0	next	other	0
+test	31	Pulse	199	630000	7194	NA
+test	31	Pulse	199	640000	17194	NA
+test	32	Picture	feedback	644323	0	1	20349	1	0	next	other	0
+test	32	Pulse	199	650000	5677	NA
+test	32	Pulse	199	660000	15677	NA
+test	33	Picture	fix	664672	0	1	22017	1	0	next	other	0
+test	33	Pulse	199	670000	5328	NA
+test	33	Pulse	199	680000	15328	NA
+test	35	Picture	stim	686689	0	1	25186	1	0	25000	miss	0
+test	35	Pulse	199	690000	3311	NA
+test	35	Pulse	199	700000	13311	NA
+test	35	Pulse	199	710000	23311	NA
+test	36	Picture	fix2	711875	0	1	15845	1	0	next	other	0
+test	36	Pulse	199	720000	8125	NA
+test	37	Picture	feedback	727720	0	1	20683	1	0	next	other	0
+test	37	Pulse	199	730000	2280	NA
+test	37	Pulse	199	740000	12280	NA
+test	38	Picture	fix	748403	0	1	28856	1	0	next	other	0
+test	38	Pulse	199	750000	1597	NA
+test	38	Pulse	199	760000	11597	NA
+test	38	Pulse	199	770000	21597	NA
+test	40	Picture	stim	777259	0	1	25353	1	0	25000	miss	0
+test	40	Pulse	199	780000	2741	NA
+test	40	Pulse	199	790000	12741	NA
+test	40	Pulse	199	800000	22741	NA
+test	41	Picture	fix2	802612	0	1	20516	1	0	next	other	0
+test	41	Pulse	199	810000	7388	NA
+test	41	Pulse	199	820000	17388	NA
+test	42	Picture	feedback	823128	0	1	20683	1	0	next	other	0
+test	42	Pulse	199	830000	6872	NA
+test	42	Pulse	199	840000	16872	NA
+test	43	Picture	fix	843810	0	1	25186	1	0	next	other	0
+test	43	Pulse	199	850000	6190	NA
+test	43	Pulse	199	860000	16190	NA
+test	45	Picture	stim	868996	0	1	25353	1	0	25000	miss	0
+test	45	Pulse	199	870000	1004	NA
+test	45	Pulse	199	880000	11004	NA
+test	45	Pulse	199	890000	21004	NA
+test	46	Picture	fix2	894349	0	1	21683	1	0	next	other	0
+test	46	Pulse	199	900000	5651	NA
+test	46	Pulse	199	910000	15651	NA
+test	47	Picture	feedback	916033	0	1	21350	1	0	next	other	0
+test	47	Pulse	199	920000	3967	NA
+test	47	Pulse	199	930000	13967	NA
+test	48	Picture	fix	937382	0	1	23518	1	0	next	other	0
+test	48	Pulse	199	940000	2618	NA
+test	48	Pulse	199	950000	12618	NA
+test	48	Pulse	199	960000	22618	NA
+test	50	Picture	stim	960901	0	1	25186	1	0	25000	miss	0
+test	50	Pulse	199	970000	9099	NA
+test	50	Pulse	199	980000	19099	NA
+test	51	Picture	fix2	986253	0	1	15345	1	0	next	other	0
+test	51	Pulse	199	990000	3747	NA
+test	51	Pulse	199	1000000	13747	NA
+test	52	Picture	feedback	1001599	0	1	20349	1	0	next	other	0
+test	52	Pulse	199	1010000	8401	NA
+test	52	Pulse	199	1020000	18401	NA
+test	53	Picture	fix	1021948	0	1	28522	1	0	next	other	0
+test	53	Pulse	199	1030000	8052	NA
+test	53	Pulse	199	1040000	18052	NA
+test	53	Pulse	199	1050000	28052	NA
+test	55	Picture	stim	1050470	0	1	25186	1	0	25000	miss	0
+test	55	Pulse	199	1060000	9530	NA
+test	55	Pulse	199	1070000	19530	NA
+test	56	Picture	fix2	1075656	0	1	16513	1	0	next	other	0
+test	56	Pulse	199	1080000	4344	NA
+test	56	Pulse	199	1090000	14344	NA
+test	57	Picture	feedback	1092169	0	1	21183	1	0	next	other	0
+test	57	Pulse	199	1100000	7831	NA
+test	57	Pulse	199	1110000	17831	NA
+test	58	Picture	fix	1113352	0	1	30023	1	0	next	other	0
+test	58	Pulse	199	1120000	6648	NA
+test	58	Pulse	199	1130000	16648	NA
+test	58	Pulse	199	1140000	26648	NA
+test	60	Picture	stim	1143375	0	1	25186	1	0	25000	miss	0
+test	60	Pulse	199	1150000	6625	NA
+test	60	Pulse	199	1160000	16625	NA
+test	61	Picture	fix2	1168561	0	1	18181	1	0	next	other	0
+test	61	Pulse	199	1170000	1439	NA
+test	61	Pulse	199	1180000	11439	NA
+test	62	Picture	feedback	1186742	0	1	21016	1	0	next	other	0
+test	62	Pulse	199	1190000	3258	NA
+test	62	Pulse	199	1200000	13258	NA
+test	63	Picture	fix	1207758	0	1	20349	1	0	next	other	0
+test	63	Pulse	199	1210000	2242	NA
+test	63	Pulse	199	1220000	12242	NA
+test	65	Picture	stim	1228107	0	1	25186	1	0	25000	miss	0
+test	65	Pulse	199	1230000	1893	NA
+test	65	Pulse	199	1240000	11893	NA
+test	65	Pulse	199	1250000	21893	NA
+test	66	Picture	fix2	1253627	0	1	10842	1	0	next	other	0
+test	66	Pulse	199	1260000	6373	NA
+test	67	Picture	feedback	1264468	0	1	20849	1	0	next	other	0
+test	67	Pulse	199	1270000	5532	NA
+test	67	Pulse	199	1280000	15532	NA
+test	68	Picture	fix	1285318	0	1	27021	1	0	next	other	0
+test	68	Pulse	199	1290000	4682	NA
+test	68	Pulse	199	1300000	14682	NA
+test	68	Pulse	199	1310000	24682	NA
+test	70	Picture	stim	1312339	0	1	25186	1	0	25000	miss	0
+test	70	Pulse	199	1320000	7661	NA
+test	70	Pulse	199	1330000	17661	NA
+test	71	Picture	fix2	1337525	0	1	18848	1	0	next	other	0
+test	71	Pulse	199	1340000	2475	NA
+test	71	Pulse	199	1350000	12475	NA
+test	72	Picture	feedback	1356373	0	1	20516	1	0	next	other	0
+test	72	Pulse	199	1360000	3627	NA
+test	72	Pulse	199	1370000	13627	NA
+test	73	Picture	fix	1376888	0	1	27355	1	0	next	other	0
+test	73	Pulse	199	1380000	3112	NA
+test	73	Pulse	199	1390000	13112	NA
+test	73	Pulse	199	1400000	23112	NA
+test	75	Picture	stim	1404243	0	1	25186	1	0	25000	miss	0
+test	75	Pulse	199	1410000	5757	NA
+test	75	Pulse	199	1420000	15757	NA
+test	76	Picture	fix2	1429429	0	1	14178	1	0	next	other	0
+test	76	Pulse	199	1430000	571	NA
+test	76	Pulse	199	1440000	10571	NA
+test	77	Picture	feedback	1443607	0	1	20683	1	0	next	other	0
+test	77	Pulse	199	1450000	6393	NA
+test	77	Pulse	199	1460000	16393	NA
+test	78	Picture	fix	1464289	0	1	26020	1	0	next	other	0
+test	78	Pulse	199	1470000	5711	NA
+test	78	Pulse	199	1480000	15711	NA
+test	78	Pulse	199	1490000	25711	NA
+test	80	Picture	stim	1490309	0	1	25186	1	0	25000	miss	0
+test	80	Pulse	199	1500000	9691	NA
+test	80	Pulse	199	1510000	19691	NA
+test	81	Picture	fix2	1515496	0	1	16680	1	0	next	other	0
+test	81	Pulse	199	1520000	4505	NA
+test	81	Pulse	199	1530000	14505	NA
+test	82	Picture	feedback	1532175	0	1	20349	1	0	next	other	0
+test	82	Pulse	199	1540000	7825	NA
+test	82	Pulse	199	1550000	17825	NA
+test	83	Picture	fix	1552524	0	1	26521	1	0	next	other	0
+test	83	Pulse	199	1560000	7476	NA
+test	83	Pulse	199	1570000	17476	NA
+test	85	Picture	stim	1579045	0	1	25186	1	0	25000	miss	0
+test	85	Pulse	199	1580000	955	NA
+test	85	Pulse	199	1590000	10955	NA
+test	85	Pulse	199	1600000	20955	NA
+test	86	Picture	fix2	1604231	0	1	26020	1	0	next	other	0
+test	86	Pulse	199	1610000	5769	NA
+test	86	Pulse	199	1620000	15769	NA
+test	86	Pulse	199	1630000	25769	NA
+test	87	Picture	feedback	1630251	0	1	21350	1	0	next	other	0
+test	87	Pulse	199	1640000	9749	NA
+test	87	Pulse	199	1650000	19749	NA
+test	88	Picture	fix	1651601	0	1	25520	1	0	next	other	0
+test	88	Pulse	199	1660000	8399	NA
+test	88	Pulse	199	1670000	18399	NA
+test	90	Picture	stim	1677120	0	1	25186	1	0	25000	miss	0
+test	90	Pulse	199	1680000	2880	NA
+test	90	Pulse	199	1690000	12880	NA
+test	90	Pulse	199	1700000	22880	NA
+test	91	Picture	fix2	1702306	0	1	11676	1	0	next	other	0
+test	91	Pulse	199	1710000	7694	NA
+test	92	Picture	feedback	1713982	0	1	20849	1	0	next	other	0
+test	92	Pulse	199	1720000	6018	NA
+test	92	Pulse	199	1730000	16018	NA
+test	93	Picture	fix	1734831	0	1	21517	1	0	next	other	0
+test	93	Pulse	199	1740000	5169	NA
+test	93	Pulse	199	1750000	15169	NA
+test	95	Picture	stim	1756348	0	1	25186	1	0	25000	miss	0
+test	95	Pulse	199	1760000	3652	NA
+test	95	Pulse	199	1770000	13652	NA
+test	95	Pulse	199	1780000	23652	NA
+test	96	Picture	fix2	1781534	0	1	20182	1	0	next	other	0
+test	96	Pulse	199	1790000	8466	NA
+test	96	Pulse	199	1800000	18466	NA
+test	97	Picture	feedback	1801716	0	1	20349	1	0	next	other	0
+test	97	Pulse	199	1810000	8284	NA
+test	97	Pulse	199	1820000	18284	NA
+test	98	Picture	fix	1822065	0	1	20015	1	0	next	other	0
+test	98	Pulse	199	1830000	7935	NA
+test	98	Pulse	199	1840000	17935	NA
+test	100	Picture	stim	1842081	0	1	25186	1	0	25000	miss	0
+test	100	Pulse	199	1850000	7919	NA
+test	100	Pulse	199	1860000	17919	NA
+test	101	Picture	fix2	1867267	0	1	9174	1	0	next	other	0
+test	101	Pulse	199	1870000	2733	NA
+test	102	Picture	feedback	1876441	0	1	20683	1	0	next	other	0
+test	102	Pulse	199	1880000	3559	NA
+test	102	Pulse	199	1890000	13559	NA
+test	103	Picture	fix	1897123	0	1	18681	1	0	next	other	0
+test	103	Pulse	199	1900000	2877	NA
+test	103	Pulse	199	1910000	12877	NA
+test	105	Picture	stim	1915805	0	1	25186	1	0	25000	miss	0
+test	105	Pulse	199	1920000	4195	NA
+test	105	Pulse	199	1930000	14195	NA
+test	105	Pulse	199	1940000	24195	NA
+test	106	Picture	fix2	1940991	0	1	26187	1	0	next	other	0
+test	106	Pulse	199	1950000	9009	NA
+test	106	Pulse	199	1960000	19009	NA
+test	107	Picture	feedback	1967178	0	1	21016	1	0	next	other	0
+test	107	Pulse	199	1970000	2822	NA
+test	107	Pulse	199	1980000	12822	NA
+test	108	Picture	fix	1988194	0	1	26853	2	0	next	other	0
+test	108	Pulse	199	1990000	1806	NA
+test	108	Pulse	199	2000000	11806	NA
+test	108	Pulse	199	2010000	21806	NA
+test	110	Picture	stim	2015047	0	2	25187	2	0	25000	miss	0
+test	110	Pulse	199	2020000	4953	NA
+test	110	Pulse	199	2030000	14953	NA
+test	110	Pulse	199	2040000	24953	NA
+test	111	Picture	fix2	2040234	0	1	14178	1	0	next	other	0
+test	111	Pulse	199	2050000	9766	NA
+test	112	Picture	feedback	2054412	0	1	21183	1	0	next	other	0
+test	112	Pulse	199	2060000	5588	NA
+test	112	Pulse	199	2070000	15588	NA
+test	113	Picture	fix	2075595	0	1	33359	1	0	next	other	0
+test	113	Pulse	199	2080000	4406	NA
+test	113	Pulse	199	2090000	14406	NA
+test	113	Pulse	199	2100000	24406	NA
+test	115	Picture	stim	2108954	0	1	25186	1	0	25000	miss	0
+test	115	Pulse	199	2110000	1046	NA
+test	115	Pulse	199	2120000	11046	NA
+test	115	Pulse	199	2130000	21046	NA
+test	116	Picture	fix2	2134140	0	1	24185	1	0	next	other	0
+test	116	Pulse	199	2140000	5860	NA
+test	116	Pulse	199	2150000	15860	NA
+test	117	Picture	feedback	2158325	0	1	21016	1	0	next	other	0
+test	117	Pulse	199	2160000	1675	NA
+test	117	Pulse	199	2170000	11675	NA
+test	118	Picture	fix	2179341	0	1	23685	1	0	next	other	0
+test	118	Pulse	199	2180000	659	NA
+test	118	Pulse	199	2190000	10659	NA
+test	118	Pulse	199	2200000	20659	NA
+test	120	Picture	stim	2203026	0	1	25186	1	0	25000	miss	0
+test	120	Pulse	199	2210000	6974	NA
+test	120	Pulse	199	2220000	16974	NA
+test	121	Picture	fix2	2228212	0	1	21350	1	0	next	other	0
+test	121	Pulse	199	2230000	1788	NA
+test	121	Pulse	199	2240000	11788	NA
+test	122	Picture	feedback	2249562	0	1	21350	1	0	next	other	0
+test	122	Pulse	199	2250000	438	NA
+test	122	Pulse	199	2260000	10438	NA
+test	122	Pulse	199	2270000	20438	NA
+test	123	Picture	fix	2270912	0	1	29022	1	0	next	other	0
+test	123	Pulse	199	2280000	9088	NA
+test	123	Pulse	199	2290000	19088	NA
+test	125	Picture	stim	2299934	0	1	25186	1	0	25000	miss	0
+test	125	Pulse	199	2300000	66	NA
+test	125	Pulse	199	2310000	10066	NA
+test	125	Pulse	199	2320000	20066	NA
+test	126	Picture	fix2	2325121	0	1	22684	1	0	next	other	0
+test	126	Pulse	199	2330000	4880	NA
+test	126	Pulse	199	2340000	14880	NA
+test	127	Picture	feedback	2347805	0	1	20516	1	0	next	other	0
+test	127	Pulse	199	2350000	2195	NA
+test	127	Pulse	199	2360000	12195	NA
+test	128	Picture	fix	2368321	0	1	22351	1	0	next	other	0
+test	128	Pulse	199	2370000	1679	NA
+test	128	Pulse	199	2380000	11679	NA
+test	128	Pulse	199	2390000	21679	NA
+test	130	Picture	stim	2390671	0	1	25186	1	0	25000	miss	0
+test	130	Pulse	199	2400000	9329	NA
+test	130	Pulse	199	2410000	19329	NA
+test	131	Picture	fix2	2415857	0	1	14325	1	0	next	other	0
+test	131	Pulse	199	2420000	4143	NA
+test	131	Quit		2423383	7525	NA
