@@ -43,9 +43,9 @@ picture { bitmap { filename = "test.bmp"; } pict; x=0; y=0;} pstim;
 picture { text { caption="<b> Willkommen zurück! </b>
 													
 			Jetzt werden Sie nochmals die gleichen Symbole sehen, aber diesmal mit Markierungen (diakritische Zeichen), die ihre Laute verändern. 
-			Zum Beispiel <i>à</i> or <i>ä</i> wechselt den <i>a</i>  Laut.
+			Zum Beispiel <i>à</i> oder <i>ä</i> wechselt den <i>a</i>  Laut.
 
-			Wenn Sie den Knopf für das korrekte Paar drücken, erhälten Sie ein positives Feedback (😊), ansonsten erscheint (😕) oder «schneller».
+			Wenn Sie den Knopf für das korrekte Paar drücken, erhalten Sie ein positives Feedback (😊), ansonsten erscheint (😕) oder «schneller».
 
 			Zuerst starten wir mit einer kurzen Auffrischung der Symbole und Laute, die Sie gerade gelernt haben.
 				
@@ -325,8 +325,8 @@ if (blockNum == 100) then
 		array <int> practiceOrder[5]= {113,221,212,114,343,331};	
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 5 begin
-			vTXT1.set_font("grapholemo5");vTXT2.set_font("grapholemo5");
-		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50);		
+			vTXT1.set_font("lemo6");vTXT2.set_font("lemo6");
+		 	vTXT1.set_font_size(100); vTXT2.set_font_size(100);		
 			pairOrderStr = string(practiceOrder[i]);		
 			aStim = int(pairOrderStr.substring(1,1));
 			vStim1 = int(pairOrderStr.substring(2,1));
@@ -366,8 +366,8 @@ if (blockNum == 100) then
 				
 				if (button==0) then
 					fb_pict.set_font_color(0,0,0);
-					fb_pict.set_font_size(20);
-					fb_pict.set_caption("Drücken Sie ein wenig schneller!", true);
+					fb_pict.set_font_size(50);
+					fb_pict.set_caption("Schneller!", true);
 					fb_event.set_port_code(196);
 					FB = 2;	
 				else
@@ -375,14 +375,14 @@ if (blockNum == 100) then
 							(target_button==32 && button==2)	) then
 							FB=1;
 							fb_pict.set_font_color(0,102,51);
-							fb_pict.set_font_size(80);
+							fb_pict.set_font_size(100);
 							fb_pict.set_caption("😊", true); #positive feedback, richtig entschieden
 							fb_event.set_port_code(64);
 						
 						else	
 							FB=0;
 							fb_pict.set_font_color(0,0,0);
-							fb_pict.set_font_size(80);
+							fb_pict.set_font_size(100);
 							fb_pict.set_caption("😕", true); #negative feedback, falsch entschieden
 							fb_event.set_port_code(128);
 						
@@ -450,8 +450,8 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 			end;
 		 
 		loop int i = 1 until i> 6  begin
-			vTXT1.set_font("grapholemo5");vTXT2.set_font("grapholemo5");
-		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50);		
+			vTXT1.set_font("lemo6");vTXT2.set_font("lemo6");
+		 	vTXT1.set_font_size(100); vTXT2.set_font_size(100);		
 			pairOrderStr = string(practiceOrder[i]);		
 			aStim = int(pairOrderStr.substring(1,1));
 			vStim1 = int(pairOrderStr.substring(2,1));
@@ -494,8 +494,8 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 				
 				if (button==0) then
 					fb_pict.set_font_color(0,0,0);
-					fb_pict.set_font_size(20);
-					fb_pict.set_caption("Drücken Sie ein wenig schneller!", true);
+					fb_pict.set_font_size(50);
+					fb_pict.set_caption("Schneller!", true);
 					fb_event.set_port_code(196);
 					FB = 2;	
 				else
@@ -503,14 +503,14 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 							(target_button==32 && button==2)	) then
 							FB=1;
 							fb_pict.set_font_color(0,102,51);
-							fb_pict.set_font_size(80);
+							fb_pict.set_font_size(100);
 							fb_pict.set_caption("😊", true); #positive feedback, richtig entschieden
 							fb_event.set_port_code(64);
 						
 						else	
 							FB=0;
 							fb_pict.set_font_color(0,0,0);
-							fb_pict.set_font_size(80);
+							fb_pict.set_font_size(100);
 							fb_pict.set_caption("😕", true); #negative feedback, falsch entschieden
 							fb_event.set_port_code(128);
 						
@@ -604,7 +604,7 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 					missmatchOrder = missmatchOrderB4;
 		end;  
 		#Create an array with the selected stimuli for this block 
-		array <string> activePict[9]; 
+		array <string> activePict[16]; 
 		array <string> activeSnd[9]; 
 		vStim1 = 0;
 		vStim2 = 0;
@@ -615,7 +615,7 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 		#array <string> activePict[9];
 		#array <string> activeSnd[6];	
 		
-		loop int j=1 until j> 9 begin 	                    # NOTE  !  9 unique symbol + marker combination (from those, only 5 unique matching pairs!)
+		loop int j=1 until j> 16 begin 	                    # NOTE  !  9 unique symbol + marker combination (from those, only 5 unique matching pairs!)
 			activePict[j] = pict_file[blockNum][j];
 			j = j+1
 		end;
@@ -626,10 +626,10 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 			
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 48 begin
-				vTXT1.set_font_size(50);  # this resets the font size for each trial. A conditional loop will adjust font sizes for specific symbols # Original value: 100
-				vTXT1.set_font("grapholemo5");
-				vTXT2.set_font_size(50);
-				vTXT2.set_font("grapholemo5");	
+				vTXT1.set_font_size(100);  # this resets the font size for each trial. A conditional loop will adjust font sizes for specific symbols # Original value: 100
+				vTXT1.set_font("lemo6");
+				vTXT2.set_font_size(100);
+				vTXT2.set_font("lemo6");	
 				 
 				aStim = soundOrder[i];
 				
@@ -637,12 +637,12 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 				string tmpMatch = string(matchOrder[i]);
 				int colidxMatch = int(tmpMatch.substring(1,1));
 				int rowidxMatch =  int(tmpMatch.substring(2,1));
-				vStim1 = ((colidxMatch-1)*3)+ rowidxMatch; 
+				vStim1 = ((colidxMatch-1)*4)+ rowidxMatch; 
 				
 				string tmpMissmatch = string(missmatchOrder[i]);
 				int colidxMissmatch = int(tmpMissmatch.substring(1,1));
 				int rowidxMissmatch =  int(tmpMissmatch.substring(2,1));
-				vStim2 = ((colidxMissmatch-1)*3)+ rowidxMissmatch ; 
+				vStim2 = ((colidxMissmatch-1)*4)+ rowidxMissmatch ; 
 				
 				vTXT1.set_caption(activePict[vStim1], true); 
 				vTXT2.set_caption(activePict[vStim2], true); 
@@ -651,8 +651,8 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 				
 				#Switch vstim 1 and vstim2 in some cases to alternate presentation order				
 				if (switchplaces[i]==1)	then
-					vStim1 = ((colidxMissmatch-1)*3)+ rowidxMissmatch ; 	
-					vStim2 = ((colidxMatch-1)*3)+ rowidxMatch; 
+					vStim1 = ((colidxMissmatch-1)*4)+ rowidxMissmatch ; 	
+					vStim2 = ((colidxMatch-1)*4)+ rowidxMatch; 
 					vTXT1.set_caption(activePict[vStim1], true); 
 					vTXT2.set_caption(activePict[vStim2], true); 
 				end;
@@ -705,8 +705,8 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 					
 					if (button==0) then
 						fb_pict.set_font_color(0,0,0);
-						fb_pict.set_font_size(20);
-						fb_pict.set_caption("Drücken Sie ein wenig schneller!", true);
+						fb_pict.set_font_size(50);
+						fb_pict.set_caption("Schneller!", true);
 						fb_event.set_port_code(196);
 						FB = 2;	
 					else
@@ -714,7 +714,7 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 								(target_button==32 && button==2)	) then
 								FB=1;
 								fb_pict.set_font_color(0,102,51);
-								fb_pict.set_font_size(80);
+								fb_pict.set_font_size(100);
 								fb_pict.set_caption("😊", true); #positive feedback, richtig entschieden
 								fb_event.set_port_code(64);
 							#register the response onset 
@@ -723,7 +723,7 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 							else	
 								FB=0;
 								fb_pict.set_font_color(0,0,0);
-								fb_pict.set_font_size(80);
+								fb_pict.set_font_size(100);
 								fb_pict.set_caption("😕", true); #negative feedback, falsch entschieden
 								fb_event.set_port_code(128);
 							#register the response onset 

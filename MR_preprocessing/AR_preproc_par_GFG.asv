@@ -17,7 +17,7 @@ addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_preprocessing')
 %% Inputs setup
 %------------------------------
 tic
-tasklist =  {'block_2'}; %Recommended to take one task at a time.  [eread, learn, localizer, symCtrl]   
+tasklist =  {'block_1'}; %Recommended to take one task at a time.  [eread, learn, localizer, symCtrl]   
 anatTemplate = 'G:\preprocessing\anatomical_templates\from_TOM8\TPM_Age8_7.nii'; % Called by 'AR_create_fieldmap.m'
 % PATHS (end character should be \ )
 paths.preprocessing = 'G:\preprocessing\';

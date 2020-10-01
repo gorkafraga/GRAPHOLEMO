@@ -1,4 +1,4 @@
-<ver>20.1</ver>
+<ver>22</ver>
 <efn>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\version1\Task_B\FeedLearn_B.exp</efn>
 <author></author>
 <con>
@@ -23,6 +23,7 @@
 <ddi>0</ddi>
 <dds>
 <icm_profile></icm_profile>
+<orient>0</orient>
 <use_icm>0</use_icm>
 </dds>
 <ddv>Primary Display Driver</ddv>
@@ -41,6 +42,7 @@
 </docs>
 <dp_list></dp_list>
 <dsd>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\version1\Task_B\Stimulus Files</dsd>
+<dwm>0</dwm>
 <dxv>8</dxv>
 <efs>
 <filename>N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\version1\Task_B\FeedLearn_B.sce</filename>
@@ -166,25 +168,7 @@
 <out_encrypt_key></out_encrypt_key>
 <pi_list></pi_list>
 <plat>1</plat>
-<port_devices>
-<device>
-<parameters>
-<cts>0</cts>
-<dsrin>0</dsrin>
-<dsrout>0</dsrout>
-<dtr>disable</dtr>
-<rts>disable</rts>
-<set_fifo>1</set_fifo>
-<spd></spd>
-<spp></spp>
-<spr></spr>
-<sps></sps>
-</parameters>
-<piai>COM1</piai>
-<pian>Serial Port</pian>
-<pihpn>COM1</pihpn>
-</device>
-</port_devices>
+<port_devices></port_devices>
 <rdl>
 <device>
 <abs_axis>
@@ -239,6 +223,58 @@
 <name>HID Keyboard Device</name>
 </device>
 <device>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<name>HID Keyboard Device 1</name>
+</device>
+<device>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<name>Standard PS/2 Keyboard</name>
+</device>
+<device>
+<abs_axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>X-axis</name>
+<saturation>1</saturation>
+</abs_axis>
+<abs_axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>Y-axis</name>
+<saturation>1</saturation>
+</abs_axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>X-axis</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>Y-axis</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>Wheel</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<device_type>2</device_type>
+<dx_device_type>0</dx_device_type>
+<max_raw_pos>65535</max_raw_pos>
+<min_raw_pos>0</min_raw_pos>
+<name>Synaptics SMBus TouchPad</name>
+</device>
+<device>
 <abs_axis>
 <dead_zone>0</dead_zone>
 <max>1000</max>
@@ -291,6 +327,21 @@
 <name>USB Keyboard 1</name>
 </device>
 <device>
+<device_type>4</device_type>
+<dx_device_type>17</dx_device_type>
+<name>Wireless Receiver</name>
+</device>
+<device>
+<device_type>4</device_type>
+<dx_device_type>17</dx_device_type>
+<name>Wireless Receiver 1</name>
+</device>
+<device>
+<device_type>4</device_type>
+<dx_device_type>17</dx_device_type>
+<name>HP Wireless Button Driver</name>
+</device>
+<device>
 <axis>
 <dead_zone>0</dead_zone>
 <max>1000</max>
@@ -320,8 +371,12 @@
 <name>Speech Recognition</name>
 <speech>
 <engine_class></engine_class>
+<lang></lang>
 <mc>0</mc>
+<prerecord>0</prerecord>
 <rw>0</rw>
+<sil>0</sil>
+<srgs></srgs>
 <uwd>0</uwd>
 <vocab></vocab>
 </speech>
@@ -450,14 +505,10 @@
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>Z</ibn>
 <ibn>N</ibn>
 <idn>Keyboard</idn>
 <index>0</index>
-<index>1</index>
 <label></label>
-<label></label>
-<offset>44</offset>
 <offset>49</offset>
 </idv>
 <overrides></overrides>
@@ -467,14 +518,10 @@
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>Z</ibn>
 <ibn>N</ibn>
 <idn>Keyboard</idn>
 <index>0</index>
-<index>1</index>
 <label></label>
-<label></label>
-<offset>44</offset>
 <offset>49</offset>
 </idv>
 <overrides></overrides>
@@ -484,14 +531,10 @@
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>Z</ibn>
 <ibn>N</ibn>
 <idn>Keyboard</idn>
 <index>0</index>
-<index>1</index>
 <label></label>
-<label></label>
-<offset>44</offset>
 <offset>49</offset>
 </idv>
 <overrides></overrides>
@@ -502,10 +545,14 @@
 <abort_on_max_drops>0</abort_on_max_drops>
 <bps></bps>
 <chan></chan>
+<closest_match>0</closest_match>
+<closest_match_max></closest_match_max>
+<closest_match_min>1, 16, 8000</closest_match_min>
 <do_rec_vol>0</do_rec_vol>
 <freq></freq>
 <ignore_drops>1</ignore_drops>
 <max_drops>250</max_drops>
+<max_rec_dur>60</max_rec_dur>
 <name>None</name>
 <rec_vol>1</rec_vol>
 <show_drops>1</show_drops>
@@ -514,7 +561,6 @@
 <combine>0</combine>
 <ignore>1000</ignore>
 <isr>0</isr>
-<max_rec_dur>10</max_rec_dur>
 <md></md>
 <mio></mio>
 <off_inter>200</off_inter>
@@ -560,7 +606,7 @@
 <attenuation>0.2</attenuation>
 <do_attenuation>0</do_attenuation>
 <do_volume>1</do_volume>
-<volume>0.5</volume>
+<volume>0.2</volume>
 </svl>
 <swp>1</swp>
 <text_encoding>utf8</text_encoding>

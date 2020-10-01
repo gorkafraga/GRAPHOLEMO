@@ -40,8 +40,8 @@ picture { bitmap { filename = "test.bmp"; } pict; x=0; y=0;} pstim;
 picture { text { caption="<b> Willkommen! </b>														
 				 In diesem Experiment lernen Sie eine Fantasieschrift.
 				
-				Sie werden auf beiden Seiten des Bildschirmes ein Symbole sehen und dazu einen Laut hören. 
-				Darauf wählen Sie ein Zeichen, welches zum Laut gehört, indem Sie den passenden Knopf drücken (rechts oder links).
+				Sie werden auf beiden Seiten des Bildschirmes Symbole sehen und dazu einen Laut hören. 
+				Darauf wählen Sie ein Symbol, welches zum Laut gehört, indem Sie den passenden Knopf drücken (rechts oder links).
 				
 				Nach jeder Antwort kriegen Sie ein Feedback, welches Ihnen anzeigt, wie Sie gedrückt haben: 
 				korrekt (😊), inkorrekt (😕) oder ‘schneller’, wenn Sie zuviel Zeit gebraucht haben.
@@ -350,7 +350,7 @@ if (blockNum == 99) then
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 20 begin
 			vTXT1.set_font("FBLearning");vTXT2.set_font("FBLearning");
-		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50); 	
+		 	vTXT1.set_font_size(100); vTXT2.set_font_size(100); 	
 		   vTXT2.set_width(600);
 			
 			pairOrderStr = string(practiceOrder[i]);		
@@ -395,8 +395,8 @@ if (blockNum == 99) then
 				int FB=0;						
 				if (button==0) then
 					fb_pict.set_font_color(0,0,0);
-					fb_pict.set_font_size(20);
-					fb_pict.set_caption("Drücken Sie ein wenig schneller!", true);
+					fb_pict.set_font_size(50);
+					fb_pict.set_caption("Schneller!", true);
 					fb_event.set_port_code(196);
 					FB = 2;	
 				else
@@ -404,7 +404,7 @@ if (blockNum == 99) then
 							(target_button==32 && button==2)	) then
 							FB=1;
 							fb_pict.set_font_color(0,0,0);
-							fb_pict.set_font_size(80);
+							fb_pict.set_font_size(100);
 							fb_pict.set_caption("😊", true); #positive feedback, richtig entschieden
 							fb_event.set_port_code(64);
 							nrCorrect_practice = nrCorrect_practice + 1;
@@ -412,7 +412,7 @@ if (blockNum == 99) then
 						else	
 							FB=0;
 							fb_pict.set_font_color(0,0,0);
-							fb_pict.set_font_size(80);
+							fb_pict.set_font_size(100);
 							fb_pict.set_caption("😕", true); #negative feedback, falsch entschieden
 							fb_event.set_port_code(128);
 							nrCorrect_practice = 0;
@@ -473,7 +473,7 @@ elseif (blockNum == 100) then
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 5 begin
 			vTXT1.set_font("BACS1");vTXT2.set_font("BACS1");
-		 	vTXT1.set_font_size(50); vTXT2.set_font_size(50);		
+		 	vTXT1.set_font_size(100); vTXT2.set_font_size(100);		
 			pairOrderStr = string(practiceOrder[i]);		
 			aStim = int(pairOrderStr.substring(1,1));
 			vStim1 = int(pairOrderStr.substring(2,1));
@@ -516,8 +516,8 @@ elseif (blockNum == 100) then
 				
 				if (button==0) then
 					fb_pict.set_font_color(0,0,0);
-					fb_pict.set_font_size(20);
-					fb_pict.set_caption("Drücken Sie ein wenig schneller!", true);
+					fb_pict.set_font_size(50);
+					fb_pict.set_caption("Schneller!", true);
 					fb_event.set_port_code(196);
 					FB = 2;	
 				else
@@ -525,14 +525,14 @@ elseif (blockNum == 100) then
 							(target_button==32 && button==2)	) then
 							FB=1;
 							fb_pict.set_font_color(0,0,0);
-							fb_pict.set_font_size(80);
+							fb_pict.set_font_size(100);
 							fb_pict.set_caption("😊", true); #positive feedback, richtig entschieden
 							fb_event.set_port_code(64);
 						
 						else	
 							FB=0;
 							fb_pict.set_font_color(0,0,0);
-							fb_pict.set_font_size(80);
+							fb_pict.set_font_size(100);
 							fb_pict.set_caption("😕", true); #negative feedback, falsch entschieden
 							fb_event.set_port_code(128);
 						
@@ -650,9 +650,9 @@ switchplaces.shuffle();
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 48 begin
 			 				vTXT1.set_font_size(100);  # this resets the font size for each trial. A conditional loop will adjust font sizes for specific symbols # Original value: 100
-				vTXT1.set_font("grapholemo5");
+				vTXT1.set_font("lemo6");
 				vTXT2.set_font_size(100);
-				vTXT2.set_font("grapholemo5");	
+				vTXT2.set_font("lemo6");	
 				 
 				aStim = soundOrder[i];
 				vStim1 = matchOrder[i];
@@ -714,15 +714,15 @@ switchplaces.shuffle();
 				
 				if (button==0) then
 					fb_pict.set_font_color(0,0,0);
-					fb_pict.set_font_size(20);
-					fb_pict.set_caption("Drücken Sie ein wenig schneller!", true);
+					fb_pict.set_font_size(50);
+					fb_pict.set_caption("Schneller!", true);
 					fb_event.set_port_code(196);
 					FB = 2;	
 				else
 						if (	(target_button==16 && button==1) || (target_button==32 && button==2)	) then
 							FB=1;
 							fb_pict.set_font_color(0,102,51);
-							fb_pict.set_font_size(80);
+							fb_pict.set_font_size(100);
 							fb_pict.set_caption("😊", true); #positive feedback, richtig entschieden
 							fb_event.set_port_code(64);
 						#register the response onset 
@@ -731,7 +731,7 @@ switchplaces.shuffle();
 						else	
 							FB=0;
 							fb_pict.set_font_color(0,0,0);
-							fb_pict.set_font_size(80);
+							fb_pict.set_font_size(100);
 							fb_pict.set_caption("😕", true); #negative feedback, falsch entschieden
 							fb_event.set_port_code(128);
 						#register the response onset 
