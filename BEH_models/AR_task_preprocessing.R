@@ -201,6 +201,7 @@ datList <- list("N" = n_subj,
 #####################################
 # Create folder with timeand date stamp
 #destinationDir <- paste("Preproc_",n_subj,'ss',format(Sys.time(),'_%Y%m%d_%H%M'),sep="")
+
 destinationDir <- paste(diroutput,"/Preproc_",n_subj,'ss',sep="")
 dir.create(destinationDir)
 setwd(destinationDir)

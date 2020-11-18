@@ -272,8 +272,7 @@ begin_pcl;
 #Pop-up  window asking for input on response order (counterbalanced)
 #preset string scenarioName = "FeedLearn-GFG";
 preset int blockNum;
-
-
+string scenarioName = "FBL_taskB";
 # LOG AND OUTPUTFILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 string  logfilename = logfile.filename();
 logfile.set_filename(logfilename.replace(".log",+"_B"+string(blockNum)+".log"));
@@ -291,7 +290,6 @@ logfile.set_filename(logfilename);
 
 	
 #create .txt outputfile
-string scenarioName = "FBL_taskB";
 output_file out_file = new output_file;
 if (logfile.subject().count()>0) then out_file.open(logfilename.replace(".log",".txt"));
 else out_file.open("NoSubj_"+scenarioName+"_"+"B"+string(blockNum)+".txt"); end;
@@ -325,7 +323,7 @@ if (blockNum == 100) then
 		array <int> practiceOrder[5]= {113,221,212,114,343,331};	
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 5 begin
-			vTXT1.set_font("lemo6");vTXT2.set_font("lemo6");
+			vTXT1.set_font("lemo7");vTXT2.set_font("lemo7");
 		 	vTXT1.set_font_size(100); vTXT2.set_font_size(100);		
 			pairOrderStr = string(practiceOrder[i]);		
 			aStim = int(pairOrderStr.substring(1,1));
@@ -395,8 +393,8 @@ if (blockNum == 100) then
 				feedback.present();			 
 			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Print out stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			# Output file:	 
-				out_file.print(blockNum); out_file.print("\t"); 	# block nr
-				out_file.print(i); out_file.print("\t"); 			# trial nr
+				out_file.print("practice"); out_file.print("\t"); 	# block nr
+				out_file.print(0); out_file.print("\t"); 			# trial nr
 				out_file.print(string(vStim1)); out_file.print("\t"); 	# visual stimulus nr, 1,2,3 or 4
 				out_file.print(string(vStim2)); out_file.print("\t");
 				out_file.print(aStim); out_file.print("\t"); 	# auditive stimulus nr, 1,2,3 or 4	
@@ -409,9 +407,6 @@ if (blockNum == 100) then
 				out_file.print(activePict[vStim2]); out_file.print("\t");
 				out_file.print(activePict[correct]); out_file.print("\t"); 	
 				out_file.print(activeSnd[aStim]);out_file.print("\t");		# get_filename(snd.filename()));	# filename of the sound
-				out_file.print("practice");	out_file.print("\t");				# stimulus onset from 1st pulse
-				out_file.print("practice");	out_file.print("\t");				# response onset from 1st pulse
-				out_file.print("practice"); 										# feedback onset from 1st pulse
 				out_file.print("\n");
 				
 				i=i+1;	
@@ -450,7 +445,7 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 			end;
 		 
 		loop int i = 1 until i> 6  begin
-			vTXT1.set_font("lemo6");vTXT2.set_font("lemo6");
+			vTXT1.set_font("lemo7");vTXT2.set_font("lemo7");
 		 	vTXT1.set_font_size(100); vTXT2.set_font_size(100);		
 			pairOrderStr = string(practiceOrder[i]);		
 			aStim = int(pairOrderStr.substring(1,1));
@@ -627,9 +622,9 @@ elseif (blockNum == 1 || blockNum == 2 || blockNum == 3 || blockNum == 4) 	 then
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 48 begin
 				vTXT1.set_font_size(100);  # this resets the font size for each trial. A conditional loop will adjust font sizes for specific symbols # Original value: 100
-				vTXT1.set_font("lemo6");
+				vTXT1.set_font("lemo7");
 				vTXT2.set_font_size(100);
-				vTXT2.set_font("lemo6");	
+				vTXT2.set_font("lemo7");	
 				 
 				aStim = soundOrder[i];
 				

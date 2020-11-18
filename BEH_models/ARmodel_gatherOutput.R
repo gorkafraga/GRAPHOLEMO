@@ -62,7 +62,7 @@ param_bySubject<- array("NA",dim=c(datList$N,length(list_param_bySubject)))
 for (i in 1:length(list_param_bySubject)){
   for (ii in 1:datList$N){
     currpara<- paste0(list_param_bySubject[i],"[",ii,"]")
-    param_bySubject[ii,i] <- round(rstan::summary(fit,pars=currpara)$summary[1],6)
+    param_bySubject[ii,i] <- rstan::summary(fit,pars=currpara)$summary[1]
   }
 }
 colnames(param_bySubject) <- list_param_bySubject
@@ -76,7 +76,7 @@ for (i in 1:unique(max(datList$n_stims))){
       dim(datTable)[1]
       currpara<- paste0("ev_hat","[",ii,",",i,"]")
       #print(currpara)
-      ev_hat_values[ii,i]  <- round( rstan::summary(fit,pars=currpara)$summary[1],6)
+      ev_hat_values[ii,i]  <-  rstan::summary(fit,pars=currpara)$summary[1]
  }
 }
 colnames(ev_hat_values) <- paste0("ev_hat_stim",1:unique(datList$n_stims))
@@ -88,7 +88,7 @@ for (i in 1:length(list_param_byTrial)){
     for (ii in 1:datList$T){  
       currpara<- paste0(list_param_byTrial[i],"[",ii,"]")
       #print(currpara)
-      param_byTrial[ii,i] <- round( rstan::summary(fit,pars=currpara)$summary[1],6)
+      param_byTrial[ii,i] <- rstan::summary(fit,pars=currpara)$summary[1]
     }
 }
 colnames(param_byTrial) <- list_param_byTrial
@@ -520,7 +520,7 @@ combo <-  annotate_figure(combo,text_grob(paste(fit@model_name," had ",nchains,"
          #rm(ydat)
          
       
-   }
+  
    
    
    trialCombo <- 

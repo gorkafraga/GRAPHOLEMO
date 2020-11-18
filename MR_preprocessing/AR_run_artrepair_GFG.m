@@ -12,16 +12,18 @@
 %-------------------------------------------------------------------------
 clear all
 %path to preprocess data / epis . 
-preprocessingDir= 'G:\preprocessing\block_2\epis\'; % slash '\' at the end! EPIS directory! not its parent dir 
+
+preprocessingDir= ['G:\preprocessing\block_3\epis\']; % slash '\' at the end! EPIS directory! not its parent dir 
 %subject list
-files = dir('G:\preprocessing\block_2\epis\AR107*');
+files = dir([preprocessingDir,'AR*'])
 %files = files(~contains({files.name},'AR1026')); 
 subject = {files.name};
 %subject= {'AR1087','AR1089','AR1090','AR1091','AR1092','AR1093','AR1094','AR1097','AR1099','AR1100','AR1102'}
 %{'AR1005','AR1016','AR1017','AR1022','AR1025','AR1026','AR1027','AR1028','AR1036','AR1037','AR1038','AR1041','AR1042','AR1043','AR1047','AR1048',...
             %'AR1052','AR1055','AR1056','AR1062',...
           % 'AR1063','AR1066','AR1068','AR1069'};
-subject = {'AR1091'}
+%subject = {'AR1051','AR1058','AR1059','AR1070','AR1071','AR1075','AR1076','AR1088','AR1098','AR1104','AR1105','AR1107','AR1108'};
+subject = {'AR1109'}
 cd (preprocessingDir)
 %% Loop thru subjects
  for ss = 1:numel(subject)
@@ -49,7 +51,12 @@ cd (preprocessingDir)
 
             %% Find output of function, add a unique prefix based on source nifti and move to a ART folder
               % new folder
-              newDir = [subjectDir,'\ART\'];
+              if RepairType==1 
+                newDir = [subjectDir,'\ART\'];
+              elseif RepairType==2 
+                 newDir = [subjectDir,'\2ART\'];
+              end                     
+              
               mkdir (newDir);
               % create file identifier
               fileID_split = strsplit(epis(e).name,'_'); 

@@ -17,7 +17,7 @@ addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_preprocessing')
 %% Inputs setup
 %------------------------------
 tic
-tasklist =  {'block_2'}; %Recommended to take one task at a time.  [eread, learn, localizer, symCtrl]   
+tasklist =  {'block_3'}; %Recommended to take one task at a time.  [eread, learn, localizer, symCtrl]   
 anatTemplate = 'G:\preprocessing\anatomical_templates\from_TOM8\TPM_Age8_7.nii'; % Called by 'AR_create_fieldmap.m'
 % PATHS (end character should be \ )
 paths.preprocessing = 'G:\preprocessing\';
@@ -25,7 +25,9 @@ paths.preprocessing = 'G:\preprocessing\';
 
 files =  (dir([paths.preprocessing,tasklist{1},'\**\AR*']));
 subjects = unique({files.name});
-subjects = {'AR1051','AR1058','AR1059','AR1070','AR1071','AR1075','AR1076','AR1088','AR1098','AR1104','AR1105','AR1107','AR1108'};
+%subjects = {'AR1051','AR1058','AR1059','AR1070','AR1071','AR1075','AR1076','AR1088','AR1098','AR1104','AR1105','AR1107','AR1108'};
+%subjects = {'AR1088','AR1098','AR1104','AR1105','AR1107'};
+subjects = {'AR1109'};
 %% BEGIN TASK LOOP
 cd (paths.preprocessing)
 for t=1:length(tasklist)
@@ -54,17 +56,21 @@ paths.task = [paths.preprocessing,currTask,'\'];
             delete(gcp('nocreate'));  
  end
         % if you use parallel for-loop: uncomment (make sure your computers has 8 cores!! If not, change this number to 4 or 2)
-        parpool(8);
-        batch =  batch(find(~cellfun(@isempty,batch)));% the batch will be have an empty cell for those subjects where no data was found. Get rid of these
-        parfor i=length(batch) 
-       %for i=1:length(subjects)  % use this if you deactivate parallel
-         try
-                 data_out{i} =  spm_jobman('run',batch{i})
-         catch
-                  data_out{i} = disp('error during preprocessing - check the batch')
-          end    
-       end
+      %  parpool(4);
+        %batch =  batch(find(~cellfun(@isempty,batch)));% the batch will be have an empty cell for those subjects where no data was found. Get rid of these
+        for ii=1:length(subjects) 
+            spm_jobman('run',batch{ii})
+        end 
+        %parfor i=length(batch) 
+        %for i=1:length(subjects)  % use this if you deactivate parallel
+         %try
+           %     data_out{i} =  spm_jobman('run',batch{i})
+         %catch
+          %       data_out{i} = disp('error during preprocessing - check the batch')
+          %end    
+      % end
  %save([paths.preprocessing,['Batch_',currTask,'_',datestr(now,'mmddyyyy-HHMM'),'.mat']],'batch')
 clear batch
 end
 toc
+ 

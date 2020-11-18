@@ -6,21 +6,25 @@ lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
 
 #set ins and outs
-dirinput <-"N:/studies/Grapholemo/Methods/Scripts/grapholemo/Experiment_NeurobsPresentation/FB_Learning_Adults/Task_A/Log Files" 
-diroutput <-"N:/studies/Grapholemo/Methods/Scripts/grapholemo/Experiment_NeurobsPresentation/FB_Learning_Adults/Task_A/Log Files/summary" 
+dirinput <-"O:/studies/grapholemo/LEMO_Pilot/B" 
+diroutput <-"O:/studies/grapholemo/LEMO_Pilot/gathered" 
+
 task <- "FeedLearn"
 ntrials <- 48
 
 
 #loop thru files
 setwd(dirinput)
-files <- dir(dirinput,'*.FeedLearn_.*.txt',recursive = TRUE)
-files <- files[grep('^Whole_*',files)]
+files <- dir(dirinput,'*.task.*.txt',recursive = TRUE)
+#files <- files[grep('^Whole_*',files)]
 
 setwd(dirinput)
 for (i in 1:length(files)){
   #Read File ge
   D <- read_delim(files[i],"\t", escape_double = FALSE, locale = locale(), trim_ws = TRUE, skip_empty_rows=TRUE)
+  if (dim(D)[1] > ntrials) {
+      D <-  D[7:dim(D)[1],]
+  }
   
   if (dim(D)[1] != ntrials) {
     cat("This file has ",dim(D)[1]," trials instead of ",ntrials,"!!",

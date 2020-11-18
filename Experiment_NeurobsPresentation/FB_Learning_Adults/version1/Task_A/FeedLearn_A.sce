@@ -342,8 +342,8 @@ if (blockNum == 99) then
 		int vStim1 = 0; 
 		int vStim2 = 0; 
 		string pairOrderStr;
-		array <string> activePict[4] = {"a","c","6","3"};
-		array <string> activeSnd[4]= {"norm_b.wav", "norm_h.wav","norm_Ã¤u.wav", "norm_Ã¶.wav"};	
+		array <string> activePict[4] = {"a","b","0","1"};
+		array <string> activeSnd[4]= {"äu_2_3.wav", "au_2_2.wav","ü_short_2_2.wav", "m_2_1.wav"};	
 		
 		array <int> practiceOrder[20]= {112,113,141,221,212,114,223,221,343,434,112,224,414,323,313,441,131,343,424,442};	
 	
@@ -375,14 +375,14 @@ if (blockNum == 99) then
 				
 			#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				# present the time critical trial:
-				iti_fix_trial.set_duration(iti[i]); #iti trial duration jittered
+				iti_fix_trial.set_duration(iti[i]-1000); #iti trial duration jittered
 				iti_fix_trial.present();
 				# Audio (should continue to next trial so audio and visual appear together 
 				sound_event.set_port_code(55);
 				main_trial_audio.present();
 				int stim_ct = stimulus_manager.stimulus_count();
 				#Visual
-				if (i <=5) then
+				if (i <=0) then
 					main_trial_selfpaced.present();
 				else
 					main_trial.present();
@@ -403,8 +403,8 @@ if (blockNum == 99) then
 						if (	(target_button==16 && button==1) || 
 							(target_button==32 && button==2)	) then
 							FB=1;
-							fb_pict.set_font_color(0,0,0);
-							fb_pict.set_font_size(100);
+							fb_pict.set_font_color(0,102,51);
+							fb_pict.set_font_size(140);
 							fb_pict.set_caption("😊", true); #positive feedback, richtig entschieden
 							fb_event.set_port_code(64);
 							nrCorrect_practice = nrCorrect_practice + 1;
@@ -412,7 +412,7 @@ if (blockNum == 99) then
 						else	
 							FB=0;
 							fb_pict.set_font_color(0,0,0);
-							fb_pict.set_font_size(100);
+							fb_pict.set_font_size(140);
 							fb_pict.set_caption("😕", true); #negative feedback, falsch entschieden
 							fb_event.set_port_code(128);
 							nrCorrect_practice = 0;
@@ -420,7 +420,7 @@ if (blockNum == 99) then
 					end;	
 				end;
 			 #~~~~~~~~~~~~Present feedback ~~~~~~~~~~~~~~~~~~~~~~~
-				fixBeforeFeedback_trial.set_duration(itifeedback[i]); #iti trial duration jittered
+				fixBeforeFeedback_trial.set_duration(itifeedback[i]-1000); #iti trial duration jittered
 				fixBeforeFeedback_trial.present();
 				#Present
 				feedback.present();				
@@ -650,9 +650,9 @@ switchplaces.shuffle();
 		# Loop through the pairOrder array and depending on the value select 
 		loop int i = 1 until i> 48 begin
 			 				vTXT1.set_font_size(100);  # this resets the font size for each trial. A conditional loop will adjust font sizes for specific symbols # Original value: 100
-				vTXT1.set_font("lemo6");
+				vTXT1.set_font("lemo7");
 				vTXT2.set_font_size(100);
-				vTXT2.set_font("lemo6");	
+				vTXT2.set_font("lemo7");	
 				 
 				aStim = soundOrder[i];
 				vStim1 = matchOrder[i];

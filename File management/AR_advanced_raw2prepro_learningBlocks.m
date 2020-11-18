@@ -22,7 +22,8 @@ colIdxsB0 = {'Block1_b0seq','Block2_b0seq','Block3_b0seq','Block4_b0seq'};
 rawfolders= dir([rawDir,'AR*']);
 subjects = {rawfolders.name};
 %subjects = {'AR1051','AR1058','AR1059','AR1070','AR1071','AR1075','AR1076','AR1088','AR1098','AR1104','AR1105','AR1106','AR1107','AR1108'};
-subjects = {'AR1098'};
+%subjects = {'AR1074','AR1087','AR1088','AR1089','AR1090'};
+subjects = {'AR1109'};
 % Loop thru subjects, then thru blocks
 for i= 1:length(subjects)
     vpdat =  dat(contains(dat.subjID,subjects(i)),:);

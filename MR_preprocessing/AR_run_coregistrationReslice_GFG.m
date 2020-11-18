@@ -14,6 +14,7 @@ clear all %clear matlabbatch batch;
 spm_jobman('initcfg');
 addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_preprocessing')
 
+
 % Inputs setup
 %------------------------------
  %files = dir('G:\local_prepro\Block_1\epis\AR*');
@@ -22,13 +23,17 @@ addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_preprocessing')
 %subjects =  {'AR1005','AR1016','AR1017','AR1022','AR1025','AR1026','AR1027','AR1028','AR1036','AR1037','AR1038',...
  %    'AR1041','AR1042','AR1043','AR1047','AR1048','AR1052','AR1055','AR1056','AR1062','AR1063','AR1066','AR1068','AR1069'}; %subjects = {'AR1038','AR1042','AR1045','AR1046','AR1048','AR1055','AR1056'}; %subjects = {'AR1002','AR1004','AR1006','AR1007','AR1008','AR1009','AR1011','AR1016','AR1018','AR1021','AR1023','AR1025','AR1031','AR1035','AR1036','AR1038','AR1042','AR1045','AR1046','AR1048','AR1055','AR1056'}; 
 
-tasklist =  {'block_3'}; %Recommended to take one task at a time.  [eread, learn, localizer, symCtrl]   
+tasklist =  {'block_2'}; %Recommended to take one task at a time.  [eread, learn, localizer, symCtrl]   
  % PATHS (end character should be \ )
 paths.preprocessing = 'G:\preprocessing\';
 
 files =  (dir([paths.preprocessing,tasklist{1},'\epis\AR*']));
 subjects = {files.name};
-subjects = {'AR1074','AR1078'}
+%subjects = {'AR1051','AR1058','AR1059','AR1070','AR1071','AR1075','AR1076','AR1088','AR1098','AR1104','AR1105','AR1107','AR1108'};
+%subjects = {'AR1051','AR1058','AR1059','AR1070','AR1071','AR1075','AR1076','AR1088','AR1098','AR1104','AR1105','AR1107','AR1108'};
+subjects = {'AR1109'};
+
+
 %% BEGIN TASK LOOP
 cd (paths.preprocessing)
 for t=1:length(tasklist)
@@ -66,9 +71,10 @@ paths.task = [paths.preprocessing,currTask,'\'];
  if ~isempty(gcp('nocreate'))
             delete(gcp('nocreate'));  
  end
+        batch =  batch(find(~cellfun(@isempty,batch)));% the batch will be have an empty cell for those subjects where no data was found. Get rid of these
         % if you use parallel for-loop: uncomment (make sure your computers has 8 cores!! If not, change this number to 4 or 2)
         parpool(8);
-        parfor i=1:length(subjects)
+        parfor i=1:length(batch)
        % for i=1:length(subjects)  % use this if you deactivate parallel
             spm_jobman('run',batch{i})
             %spm_jobman('interactive',batch{i})           

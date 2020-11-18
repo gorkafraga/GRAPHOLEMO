@@ -14,10 +14,10 @@
 clear all
 close all
 %Chooice your GLM of interest
-selectedGLM = 'GLM0';
+selectedGLM = 'GLM0_mopa';
 
 % set input dir  based on GLM of interest
-parentDir = 'O:\studies\allread\mri\analyses_NF\mri_analyses_NF\first_level_NF';
+parentDir = 'O:\studies\allread\mri\analyses_NF\mri_analyses_NF\first_level_NF\_scripts\model_based\test';
 listFolders = dir(strcat(parentDir,'\1Lv_',selectedGLM,'*'));
 [indx,tf] = listdlg('PromptString','Select source 1st level folder','ListString',{listFolders.name});
 dirinput = strcat([listFolders(indx).folder,'\',listFolders(indx).name]) ;

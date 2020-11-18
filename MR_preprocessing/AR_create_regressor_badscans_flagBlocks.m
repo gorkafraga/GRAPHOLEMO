@@ -10,14 +10,19 @@
 % - Another output text file shows percent and count of flagged scans 
 
 clear all; close all;  %clear workspace
-epipath = 'G:\preprocessing\block_1\epis\'; % epis parent folder 
+epipath = 'G:\preprocessing\block_4\epis\'; % epis parent folder 
 files = dir([epipath,'\AR*']);
 subject= {files.name};
-%subject={'AR1037'};
-%N_scans=408; % number of dynamic scans, change this for the different tasks!
-N_scans = 273; % FILL IN THE CORRECT NUMBER OF SCANS !!!!!!!!!!!!
+% subject={'AR1100'};
+N_scans = 273;
 %%
 for i=1:length(subject) % loop over all subjects
+    % read number of scans from RP file (COMMENTED: percentages computed over the number of trials in design 
+   % rpfile = dir([epipath,subject{i},'\rp_*.txt']); 
+   % rpdat = load([rpfile.folder,'\',rpfile.name]);
+   % N_scans = size(rpdat,1);
+    
+    %read ART data
     art_repaired = dir([epipath,subject{i},'\ART\','*art_repaired.txt']); % name of txt file
     %  In case multiple art_repair.txt are present in folder. 
      for f = 1:length(art_repaired)   

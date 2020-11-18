@@ -1,0 +1,3 @@
+TASK B: 
+- CHECK Fix output text file  column names
+- CHECK: output file names in Task A and B should include the task name! 

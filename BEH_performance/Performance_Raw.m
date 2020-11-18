@@ -1,3 +1,4 @@
+clear all
 %.-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-. 
 %
 % GATHER RAW PERFORMANCE FROM LEARNING TASK
@@ -5,25 +6,32 @@
 %.-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-. 
 % %G.Fraga-Gonzalez(2020)
 %------------------------------------------------------------------------- 
-clear all
-dirinput = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs_raw' ;
-diroutput = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs_raw' ;
+
+dirinput = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs\raw' ;
+diroutput = 'O:\studies\allread\mri\analysis_GFG\stats\task\logs' ;
+master ='O:\studies\allread\mri\analysis_GFG\Allread_MasterFile_GFG.xlsx';
+SS =             readtable(master,'sheet','Learn_performance'); 
+SS = SS.subjID;
+refsubjects =      SS(~cellfun('isempty',SS))';
+
 blocks2read  = {'B1','B2','B3','B4','B1-1','B2-2','B3-1','B4-1'};
 cd (dirinput)
 sfiles = dir([dirinput,'\*AR*']);
-subjects = unique({sfiles.name});
-% LOOP THRU SUBJECTS AND BLOCKS 
+%subjects = unique({sfiles.name});
+%% LOOP THRU SUBJECTS AND BLOCKS 
 stats ={};
 ncols = 8;
-for i = 1:length(subjects) 
+
+for i = 1:length(refsubjects) 
     for ii=1:length(blocks2read)
-        file2read = dir([dirinput,'\*',subjects{i},'\*',blocks2read{ii},'.txt']);
+        file2read = dir([dirinput,'\*',refsubjects{i},'\*',blocks2read{ii},'.txt']);
         % read data 
         if ~isempty(file2read) 
         T = readtable([file2read.folder,'\',file2read.name]);
             % Gather (if not enought trials in this block fill the stats with NAs)
-              if size(T,1) ~= 40 && size(T,1) ~=39 && size(T,1) ~=38
-                  disp([file2read.name,' skipped. It had ',num2str(size(T,1)),' trials'])
+              %if size(T,1) ~= 40 && size(T,1) ~=39 && size(T,1) ~=38
+              if size(T,1) < 30
+                  disp([file2read.name,' skipped. It had ',num2str(size(T,1)),' trials']) 
               else
                   % separate types of trials 
                   Thits =  T(T.fb == 1,:);
@@ -33,10 +41,11 @@ for i = 1:length(subjects)
                   dat2add = {numel(Thits.rt),round(mean(Thits.rt),3),round(std(Thits.rt),3),...
                             numel(Terrors.rt),round(mean(Terrors.rt),3),round(std(Terrors.rt),3),numel(Tmiss.rt)};
                   stats(i,1:ncols,ii) = [file2read.name,dat2add];
-                  disp(['printing subj ', num2str(i),' block ',num2str(ii)])
+                  disp(['printing subj ', refsubjects{i},' block ',num2str(ii)])
                end
         else 
             disp([file2read.name,' is empty'])
+            stats(i,1:ncols,ii) = cell(1,ncols);
         end
     end
 end
@@ -51,7 +60,7 @@ end
 % Combine in a table
 Tstats = cell2table(stats);
 Tstats.Properties.VariableNames = header;
-
+%%
 %save 
 cd(diroutput)
-writetable(Tstats,'_Performance_raw_stats.xlsx')
+writetable(Tstats,'_Performance_raw.xlsx')

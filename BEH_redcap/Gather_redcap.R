@@ -20,15 +20,15 @@ mergeCases = 1 # if = 1 it will read cases from your master file
 masterfile = 'O:/studies/allread/mri/analysis_GFG/Allread_MasterFile_GFG.xlsx'
 #Set directories and output name 
 #############################################################################################################################
-dirinput <-'N:/Users/gfraga/Teaching/2020-MSc Elia Montevecchi/Data for Elia'
-diroutput <-'N:/Users/gfraga/Teaching/2020-MSc Elia Montevecchi/Data for Elia'
+dirinput <-'O:/studies/allread/mri/analysis_GFG/stats/cognitive_tests'
+diroutput <-'O:/studies/allread/mri/analysis_GFG/stats/cognitive_tests'
 outputfilename <- 'BehData_3TPs.xlsx'
 setwd(dirinput)
 
 # read data sets
-D1 = read.delim("AllreaddataNEWREEVAL_DATA_2020-07-22_1643_T1.csv", sep = "\t", header=TRUE)
-D2 = read.delim("AllreaddataNEWREEVAL_DATA_2020-07-22_1644_T2.csv", sep = "\t",header=TRUE)
-D3 = read.delim("AllreaddataNEWREEVAL_DATA_2020-07-22_1644_T3.csv",sep = "\t" , header=TRUE)
+D1 = read.delim("AllreaddataNEWREEVAL_DATA_2020-10-23_T1.csv", sep = "\t", header=TRUE)
+D2 = read.delim("AllreaddataNEWREEVAL_DATA_2020-10-23_T2.csv", sep = "\t",header=TRUE)
+D3 = read.delim("AllreaddataNEWREEVAL_DATA_2020-10-23_T3.csv",sep = "\t" , header=TRUE)
 
 #read questionnaires
 #Q1 =  read.delim("AllReadFragebogen_DATA_2020-05-27_1425_T1.csv", sep = "\t", header=TRUE)

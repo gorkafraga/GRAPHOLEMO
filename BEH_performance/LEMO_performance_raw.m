@@ -7,8 +7,8 @@ close all
 %--------------------------------------------------------------------------------------------------------------
 scripts= ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_statistics');
 addpath(scripts)
-dirinput = 'N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_A\Log Files';
-diroutput = 'N:\studies\Grapholemo\Methods\Scripts\grapholemo\Experiment_NeurobsPresentation\FB_Learning_Adults\Task_A\Log Files\summary' ;
+dirinput = 'O:\studies\grapholemo\LEMO_Pilot\A';
+diroutput = 'O:\studies\grapholemo\LEMO_Pilot\gathered' ;
 files = dir([dirinput,'\*.txt']);
 selectedFiles = {}; % If selected files = {} a  window for selection will popup
 
@@ -18,7 +18,8 @@ selectedFiles = {}; % If selected files = {} a  window for selection will popup
     [indices, values] = listdlg('PromptString',prompttxt,'ListString', {files.name},'ListSize',[10*length(prompttxt), 100*length({files.name}) ]); % popup       
     selectedFiles = {files(indices).name};
  end
-    
+
+  
 %%  loop thru
  for i=1:length(selectedFiles)
     logfile = selectedFiles{i};
@@ -28,6 +29,13 @@ selectedFiles = {}; % If selected files = {} a  window for selection will popup
     if ~isempty(file2read) 
     % read data     
         T = readtable([file2read.folder,'\',file2read.name]);
+     % fix those variable names
+     fid = fopen([file2read.folder,'\',file2read.name]);
+     filehead = textscan(fid, '%s', 'delimiter', '\t','MultipleDelimsAsOne', 1);
+     filehead = filehead{1};
+     filehead = filehead(1:size(T,2))';
+     T.Properties.VariableNames = filehead;
+     
             % Gather (if not enought trials in this block fill the stats with NAs)
               if size(T,1) ~= 48 && size(T,1) ~=47 && size(T,1) ~=46
                   disp([file2read.name,' skipped. It had ',num2str(size(T,1)),' trials'])
@@ -58,6 +66,7 @@ selectedFiles = {}; % If selected files = {} a  window for selection will popup
     %save 
     %writetable(Tstats,['Summary_',file2read.name])
     %writetable(Tstats,strrep(['Summary_',file2read.name],'.txt','.xls'))
+    cd(diroutput)
     writetable(Tstats,strrep(['Summary_',file2read.name],'.txt','.csv'))
         
  end
