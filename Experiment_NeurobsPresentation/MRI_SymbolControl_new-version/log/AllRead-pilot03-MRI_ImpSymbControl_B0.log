@@ -1,0 +1,1117 @@
+Scenario - 
+Logfile written - 08/02/2019 15:38:40
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+AllRead-pilot03	1	Response	21	57370	57192	0
+AllRead-pilot03	2	Response	21	100790	43367	0
+AllRead-pilot03	3	Response	21	256830	155851	0
+AllRead-pilot03	4	Pulse	199	1278962	1022132	0
+AllRead-pilot03	4	Picture	100	1279126	1022296	1	50134	1	0	50000	other	0
+AllRead-pilot03	4	Pulse	199	1290962	1034132	0
+AllRead-pilot03	4	Pulse	199	1302962	1046132	0
+AllRead-pilot03	4	Pulse	199	1314962	1058132	0
+AllRead-pilot03	4	Pulse	199	1326962	1070132	0
+AllRead-pilot03	5	Picture	70	1329438	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	6	Picture	40	1336727	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	7	Picture	70	1338682	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	7	Pulse	199	1338963	280	0
+AllRead-pilot03	8	Picture	40	1345971	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	9	Picture	70	1348282	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	9	Pulse	199	1350963	2680	0
+AllRead-pilot03	10	Picture	40	1355571	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	11	Picture	70	1360016	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	11	Pulse	199	1362962	2946	0
+AllRead-pilot03	12	Picture	40	1367305	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	13	Picture	70	1371749	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	13	Pulse	199	1374962	3213	0
+AllRead-pilot03	14	Picture	40	1379038	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	15	Response	21	1385463	3580	0
+AllRead-pilot03	15	Pulse	199	1386962	5079	0
+AllRead-pilot03	16	Picture	40	1389172	0	1	2845	1	0	2830	other	0
+AllRead-pilot03	17	Picture	70	1392194	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	17	Pulse	199	1398963	6769	0
+AllRead-pilot03	18	Picture	40	1399483	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	19	Picture	70	1400905	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	20	Picture	40	1408194	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	20	Pulse	199	1410963	2769	0
+AllRead-pilot03	21	Picture	70	1413172	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	22	Picture	40	1420461	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	23	Picture	70	1422772	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	23	Pulse	199	1422963	191	0
+AllRead-pilot03	24	Picture	40	1430061	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	25	Picture	70	1432550	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	25	Pulse	199	1434963	2413	0
+AllRead-pilot03	26	Picture	40	1439839	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	27	Picture	70	1441795	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	27	Pulse	199	1446962	5168	0
+AllRead-pilot03	28	Picture	40	1449084	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	29	Picture	70	1450684	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	30	Picture	40	1457973	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	30	Pulse	199	1458962	990	0
+AllRead-pilot03	31	Picture	70	1461528	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	32	Picture	40	1468817	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	33	Picture	70	1470950	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	33	Pulse	199	1470963	13	0
+AllRead-pilot03	34	Picture	40	1478239	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	35	Picture	70	1481795	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	35	Pulse	199	1482963	1168	0
+AllRead-pilot03	36	Picture	40	1489084	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	37	Picture	70	1490862	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	37	Pulse	199	1494963	4101	0
+AllRead-pilot03	38	Picture	40	1498151	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	39	Response	21	1503833	3371	0
+AllRead-pilot03	39	Pulse	199	1506963	6501	0
+AllRead-pilot03	40	Picture	40	1507751	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	41	Picture	50	1510595	0	1	70223	1	0	next	other	0
+AllRead-pilot03	41	Pulse	199	1518963	8367	0
+AllRead-pilot03	41	Pulse	199	1530962	20367	0
+AllRead-pilot03	41	Pulse	199	1542963	32367	0
+AllRead-pilot03	41	Pulse	199	1554963	44367	0
+AllRead-pilot03	41	Pulse	199	1566963	56367	0
+AllRead-pilot03	41	Pulse	199	1578963	68368	0
+AllRead-pilot03	42	Picture	80	1580818	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	43	Picture	40	1588107	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	43	Pulse	199	1590961	2853	2
+AllRead-pilot03	44	Response	21	1596193	5063	0
+AllRead-pilot03	45	Picture	40	1598419	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	46	Picture	80	1600730	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	46	Pulse	199	1602963	2233	0
+AllRead-pilot03	47	Picture	40	1608019	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	48	Picture	80	1609619	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	48	Pulse	199	1614962	5344	0
+AllRead-pilot03	49	Picture	40	1616908	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	50	Picture	80	1620463	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	50	Pulse	199	1626963	6499	0
+AllRead-pilot03	51	Picture	40	1627752	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	52	Picture	80	1631308	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	53	Picture	40	1638597	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	53	Pulse	199	1638963	366	0
+AllRead-pilot03	54	Picture	80	1640552	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	55	Picture	40	1647841	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	56	Picture	80	1650330	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	56	Pulse	199	1650963	633	0
+AllRead-pilot03	57	Picture	40	1657619	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	58	Picture	80	1660464	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	58	Pulse	199	1662963	2499	0
+AllRead-pilot03	59	Picture	40	1667753	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	60	Picture	80	1670064	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	60	Pulse	199	1674963	4899	0
+AllRead-pilot03	61	Picture	40	1677353	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	62	Picture	80	1680197	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	62	Pulse	199	1686963	6765	0
+AllRead-pilot03	63	Picture	40	1687486	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	64	Picture	80	1689797	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	65	Picture	40	1697086	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	65	Pulse	199	1698962	1876	0
+AllRead-pilot03	66	Picture	80	1699042	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	67	Picture	40	1706331	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	68	Picture	80	1710776	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	68	Pulse	199	1710963	187	0
+AllRead-pilot03	69	Picture	40	1718064	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	70	Response	21	1722463	2621	0
+AllRead-pilot03	70	Pulse	199	1722963	3120	0
+AllRead-pilot03	71	Picture	40	1727131	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	72	Picture	80	1728554	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	72	Pulse	199	1734963	6410	0
+AllRead-pilot03	73	Picture	40	1735843	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	74	Picture	80	1740820	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	74	Pulse	199	1746963	6143	0
+AllRead-pilot03	75	Picture	40	1748109	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	76	Picture	80	1752554	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	76	Pulse	199	1758963	6409	0
+AllRead-pilot03	77	Picture	40	1759843	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	78	Picture	50	1761976	0	1	90312	1	0	next	other	0
+AllRead-pilot03	78	Pulse	199	1770963	8986	0
+AllRead-pilot03	78	Pulse	199	1782963	20986	0
+AllRead-pilot03	78	Pulse	199	1794963	32987	0
+AllRead-pilot03	78	Pulse	199	1806963	44987	0
+AllRead-pilot03	78	Pulse	199	1818963	56987	0
+AllRead-pilot03	78	Pulse	199	1830963	68987	0
+AllRead-pilot03	78	Pulse	199	1842963	80987	0
+AllRead-pilot03	79	Picture	90	1852288	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	79	Pulse	199	1854963	2675	0
+AllRead-pilot03	80	Picture	40	1859577	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	81	Picture	90	1861888	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	81	Pulse	199	1866963	5075	0
+AllRead-pilot03	82	Picture	40	1869177	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	83	Picture	90	1871133	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	84	Picture	40	1878422	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	84	Pulse	199	1878964	542	0
+AllRead-pilot03	85	Picture	90	1882866	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	86	Picture	40	1890155	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	86	Pulse	199	1890964	808	0
+AllRead-pilot03	87	Picture	90	1891933	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	88	Picture	40	1899222	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	88	Pulse	199	1902964	3742	0
+AllRead-pilot03	89	Picture	90	1903667	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	90	Picture	40	1910956	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	91	Picture	90	1912556	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	91	Pulse	199	1914964	2408	0
+AllRead-pilot03	92	Picture	40	1919845	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	93	Picture	90	1922156	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	93	Pulse	199	1926964	4808	0
+AllRead-pilot03	94	Picture	40	1929445	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	95	Picture	90	1931934	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	95	Pulse	199	1938964	7030	0
+AllRead-pilot03	96	Picture	40	1939223	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	97	Picture	90	1941534	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	98	Picture	40	1948823	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	98	Pulse	199	1950963	2140	0
+AllRead-pilot03	99	Response	21	1954553	2886	0
+AllRead-pilot03	100	Picture	40	1958956	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	101	Picture	90	1962512	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	101	Pulse	199	1962964	452	0
+AllRead-pilot03	102	Picture	40	1969801	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	103	Picture	90	1971756	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	103	Pulse	199	1974974	3217	0
+AllRead-pilot03	104	Picture	40	1979045	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	105	Picture	90	1980468	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	105	Pulse	199	1986974	6506	0
+AllRead-pilot03	106	Picture	40	1987757	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	107	Picture	90	1991312	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	108	Picture	40	1998601	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	108	Pulse	199	1998974	373	0
+AllRead-pilot03	109	Picture	90	2003579	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	110	Picture	40	2010868	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	110	Pulse	199	2010974	106	0
+AllRead-pilot03	111	Picture	90	2013001	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	112	Picture	40	2020290	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	112	Pulse	199	2022967	2677	6
+AllRead-pilot03	113	Picture	50	2023135	0	1	70223	1	0	next	other	0
+AllRead-pilot03	113	Pulse	199	2034973	11838	0
+AllRead-pilot03	113	Pulse	199	2046974	23839	0
+AllRead-pilot03	113	Pulse	199	2058974	35839	0
+AllRead-pilot03	113	Pulse	199	2070974	47839	0
+AllRead-pilot03	113	Pulse	199	2082974	59839	0
+AllRead-pilot03	114	Picture	60	2093358	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	114	Pulse	199	2094974	1616	0
+AllRead-pilot03	115	Picture	40	2100647	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	116	Picture	60	2102247	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	116	Pulse	199	2106973	4727	0
+AllRead-pilot03	117	Picture	40	2109536	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	118	Picture	60	2111847	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	118	Pulse	199	2118968	7122	5
+AllRead-pilot03	119	Picture	40	2119136	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	120	Picture	60	2122692	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	121	Picture	40	2129981	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	121	Pulse	199	2130974	994	0
+AllRead-pilot03	122	Picture	60	2132114	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	123	Picture	40	2139403	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	124	Picture	60	2141181	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	124	Pulse	199	2142974	1794	0
+AllRead-pilot03	125	Picture	40	2148470	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	126	Picture	60	2152914	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	126	Pulse	199	2154974	2060	0
+AllRead-pilot03	127	Picture	40	2160203	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	128	Picture	60	2162159	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	128	Pulse	199	2166975	4816	0
+AllRead-pilot03	129	Picture	40	2169448	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	130	Picture	60	2171759	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	130	Pulse	199	2178974	7215	0
+AllRead-pilot03	131	Picture	40	2179048	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	132	Picture	60	2182603	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	133	Picture	40	2189892	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	133	Pulse	199	2190974	1081	0
+AllRead-pilot03	134	Picture	60	2192203	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	135	Picture	40	2199492	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	136	Picture	60	2202337	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	136	Pulse	199	2202974	637	0
+AllRead-pilot03	137	Picture	40	2209626	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	138	Picture	60	2212115	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	138	Pulse	199	2214974	2859	0
+AllRead-pilot03	139	Picture	40	2219404	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	140	Picture	60	2221359	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	140	Pulse	199	2226974	5615	0
+AllRead-pilot03	141	Picture	40	2228648	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	142	Picture	60	2233626	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	142	Pulse	199	2238974	5348	0
+AllRead-pilot03	143	Picture	40	2240915	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	144	Picture	60	2242337	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	145	Picture	40	2249626	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	145	Pulse	199	2250974	1348	0
+AllRead-pilot03	146	Picture	50	2252649	0	1	70045	1	0	next	other	0
+AllRead-pilot03	146	Pulse	199	2262974	10325	0
+AllRead-pilot03	146	Pulse	199	2274974	22325	0
+AllRead-pilot03	146	Pulse	199	2286975	34326	0
+AllRead-pilot03	146	Pulse	199	2298975	46326	0
+AllRead-pilot03	146	Pulse	199	2310975	58326	0
+AllRead-pilot03	147	Picture	60	2322694	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	147	Pulse	199	2322975	281	0
+AllRead-pilot03	148	Picture	40	2329983	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	149	Picture	60	2332827	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	149	Pulse	199	2334975	2147	0
+AllRead-pilot03	150	Picture	40	2340116	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	151	Picture	60	2342072	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	151	Pulse	199	2346974	4902	0
+AllRead-pilot03	152	Picture	40	2349361	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	153	Picture	60	2352383	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	153	Pulse	199	2358974	6591	0
+AllRead-pilot03	154	Picture	40	2359672	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	155	Picture	60	2361983	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	156	Picture	40	2369272	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	157	Picture	60	2370695	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	157	Pulse	199	2370975	280	0
+AllRead-pilot03	158	Picture	40	2377983	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	159	Picture	60	2380117	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	159	Pulse	199	2382975	2858	0
+AllRead-pilot03	160	Picture	40	2387406	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	161	Picture	60	2389361	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	161	Pulse	199	2394975	5614	0
+AllRead-pilot03	162	Picture	40	2396650	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	163	Picture	60	2401095	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	163	Pulse	199	2406975	5880	0
+AllRead-pilot03	164	Picture	40	2408384	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	165	Response	21	2416404	3576	0
+AllRead-pilot03	165	Pulse	199	2418974	6146	0
+AllRead-pilot03	166	Picture	40	2420117	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	167	Picture	60	2425095	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	167	Pulse	199	2430974	5879	0
+AllRead-pilot03	168	Picture	40	2432384	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	169	Picture	60	2434873	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	170	Picture	40	2442162	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	170	Pulse	199	2442974	812	0
+AllRead-pilot03	171	Picture	60	2445718	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	172	Picture	40	2453007	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	173	Picture	60	2454607	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	173	Pulse	199	2454975	369	0
+AllRead-pilot03	174	Picture	40	2461896	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	175	Picture	60	2464207	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	175	Pulse	199	2466975	2768	0
+AllRead-pilot03	176	Picture	40	2471496	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	177	Picture	60	2475051	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	177	Pulse	199	2478975	3924	0
+AllRead-pilot03	178	Picture	40	2482340	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	179	Picture	60	2485185	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	179	Pulse	199	2490975	5790	0
+AllRead-pilot03	180	Picture	40	2492474	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	181	Picture	50	2494785	0	1	70223	1	0	next	other	0
+AllRead-pilot03	181	Pulse	199	2502974	8189	0
+AllRead-pilot03	181	Pulse	199	2514974	20189	0
+AllRead-pilot03	181	Pulse	199	2526974	32189	0
+AllRead-pilot03	181	Pulse	199	2538975	44190	0
+AllRead-pilot03	181	Pulse	199	2550975	56190	0
+AllRead-pilot03	181	Pulse	199	2562975	68190	0
+AllRead-pilot03	182	Picture	70	2565008	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	183	Picture	40	2572297	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	183	Pulse	199	2574975	2678	0
+AllRead-pilot03	184	Picture	70	2575852	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	185	Picture	40	2583141	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	186	Picture	70	2585453	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	186	Pulse	199	2586975	1522	0
+AllRead-pilot03	187	Picture	40	2592742	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	188	Picture	70	2595053	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	188	Pulse	199	2598975	3922	0
+AllRead-pilot03	189	Picture	40	2602342	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	190	Picture	70	2604119	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	190	Pulse	199	2610975	6855	0
+AllRead-pilot03	191	Picture	40	2611408	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	192	Response	21	2617916	2951	0
+AllRead-pilot03	193	Picture	40	2622253	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	193	Pulse	199	2622975	722	0
+AllRead-pilot03	194	Picture	70	2626698	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	195	Picture	40	2633987	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	195	Pulse	199	2634975	989	0
+AllRead-pilot03	196	Picture	70	2635942	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	197	Picture	40	2643231	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	198	Picture	70	2644831	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	198	Pulse	199	2646975	2144	0
+AllRead-pilot03	199	Picture	40	2652120	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	200	Picture	70	2656565	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	200	Pulse	199	2658975	2411	0
+AllRead-pilot03	201	Picture	40	2663854	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	202	Picture	70	2665809	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	202	Pulse	199	2670975	5166	0
+AllRead-pilot03	203	Picture	40	2673098	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	204	Picture	70	2678076	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	204	Pulse	199	2682975	4899	0
+AllRead-pilot03	205	Picture	40	2685365	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	206	Picture	70	2688209	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	206	Pulse	199	2694975	6766	0
+AllRead-pilot03	207	Picture	40	2695498	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	208	Picture	70	2697987	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	209	Picture	40	2705276	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	209	Pulse	199	2706976	1699	0
+AllRead-pilot03	210	Picture	70	2708121	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	211	Picture	40	2715410	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	212	Picture	70	2717543	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	212	Pulse	199	2718976	1433	0
+AllRead-pilot03	213	Picture	40	2724832	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	214	Picture	70	2727143	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	214	Pulse	199	2730976	3833	0
+AllRead-pilot03	215	Picture	40	2734432	0	1	1245	1	0	1180	other	0
+AllRead-pilot03	216	Picture	50	2735854	0	1	90134	1	0	next	other	0
+AllRead-pilot03	216	Pulse	199	2742976	7121	0
+AllRead-pilot03	216	Pulse	199	2754975	19121	0
+AllRead-pilot03	216	Pulse	199	2766975	31121	0
+AllRead-pilot03	216	Pulse	199	2778975	43121	0
+AllRead-pilot03	216	Pulse	199	2790976	55121	0
+AllRead-pilot03	216	Pulse	199	2802976	67122	0
+AllRead-pilot03	216	Pulse	199	2814976	79122	0
+AllRead-pilot03	217	Picture	80	2825989	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	217	Pulse	199	2826975	987	0
+AllRead-pilot03	218	Picture	40	2833278	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	219	Response	21	2838285	3407	0
+AllRead-pilot03	219	Pulse	199	2838975	4097	0
+AllRead-pilot03	220	Picture	40	2842167	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	221	Picture	80	2844478	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	221	Pulse	199	2850975	6497	0
+AllRead-pilot03	222	Picture	40	2851767	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	223	Picture	80	2854611	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	224	Picture	40	2861900	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	224	Pulse	199	2862976	1076	0
+AllRead-pilot03	225	Picture	80	2866345	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	226	Picture	40	2873634	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	226	Pulse	199	2874976	1342	0
+AllRead-pilot03	227	Picture	80	2875945	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	228	Picture	40	2883234	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	229	Picture	80	2886078	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	229	Pulse	199	2886976	898	0
+AllRead-pilot03	230	Picture	40	2893367	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	231	Picture	80	2895501	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	231	Pulse	199	2898975	3475	0
+AllRead-pilot03	232	Picture	40	2902790	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	233	Picture	80	2904567	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	233	Pulse	199	2910976	6408	0
+AllRead-pilot03	234	Picture	40	2911856	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	235	Picture	80	2914879	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	236	Picture	40	2922168	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	236	Pulse	199	2922975	808	0
+AllRead-pilot03	237	Picture	80	2927146	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	238	Picture	40	2934434	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	238	Pulse	199	2934975	541	0
+AllRead-pilot03	239	Picture	80	2936390	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	240	Picture	40	2943679	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	240	Pulse	199	2946976	3297	0
+AllRead-pilot03	241	Picture	80	2947235	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	242	Picture	40	2954524	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	243	Picture	80	2958079	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	243	Pulse	199	2958976	897	0
+AllRead-pilot03	244	Picture	40	2965368	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	245	Picture	80	2969813	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	245	Pulse	199	2970976	1164	0
+AllRead-pilot03	246	Picture	40	2977102	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	247	Picture	80	2979591	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	247	Pulse	199	2982976	3386	0
+AllRead-pilot03	248	Picture	40	2986880	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	249	Picture	80	2989191	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	249	Pulse	199	2994976	5785	0
+AllRead-pilot03	250	Picture	40	2996480	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	251	Picture	50	2998435	0	1	70045	1	0	next	other	0
+AllRead-pilot03	251	Pulse	199	3006975	8540	0
+AllRead-pilot03	251	Pulse	199	3018975	20540	0
+AllRead-pilot03	251	Pulse	199	3030976	32541	0
+AllRead-pilot03	251	Pulse	199	3042976	44541	0
+AllRead-pilot03	251	Pulse	199	3054976	56541	0
+AllRead-pilot03	251	Pulse	199	3066976	68541	0
+AllRead-pilot03	252	Picture	90	3068481	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	253	Picture	40	3075770	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	253	Pulse	199	3078976	3207	0
+AllRead-pilot03	254	Picture	90	3080214	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	255	Picture	40	3087503	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	255	Pulse	199	3090976	3473	0
+AllRead-pilot03	256	Picture	90	3092481	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	257	Picture	40	3099770	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	257	Pulse	199	3102976	3206	0
+AllRead-pilot03	258	Picture	90	3103325	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	259	Picture	40	3110614	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	260	Picture	90	3112748	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	260	Pulse	199	3114976	2228	0
+AllRead-pilot03	261	Picture	40	3120037	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	262	Picture	90	3122348	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	262	Pulse	199	3126977	4629	0
+AllRead-pilot03	263	Picture	40	3129637	0	1	2134	1	0	2020	other	0
+AllRead-pilot03	264	Picture	90	3131948	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	264	Pulse	199	3138977	7029	0
+AllRead-pilot03	265	Picture	40	3139237	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	266	Picture	90	3141192	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	267	Picture	40	3148481	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	268	Picture	90	3150970	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	268	Pulse	199	3150976	6	0
+AllRead-pilot03	269	Picture	40	3158259	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	270	Pulse	199	3162976	2761	0
+AllRead-pilot03	270	Response	21	3163686	3471	0
+AllRead-pilot03	271	Picture	40	3167504	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	272	Picture	90	3171948	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	272	Pulse	199	3174976	3028	0
+AllRead-pilot03	273	Picture	40	3179237	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	274	Picture	90	3182793	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	274	Pulse	199	3186977	4184	0
+AllRead-pilot03	275	Picture	40	3190082	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	276	Picture	90	3191860	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	276	Pulse	199	3198977	7117	0
+AllRead-pilot03	277	Picture	40	3199149	0	1	2845	1	0	2830	other	0
+AllRead-pilot03	278	Picture	90	3202171	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	279	Picture	40	3209460	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	279	Pulse	199	3210976	1516	0
+AllRead-pilot03	280	Picture	90	3212305	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	281	Picture	40	3219593	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	282	Picture	90	3222438	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	282	Pulse	199	3222977	539	0
+AllRead-pilot03	283	Picture	40	3229727	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	284	Picture	90	3232038	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	284	Pulse	199	3234976	2938	0
+AllRead-pilot03	285	Picture	40	3239327	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	286	Picture	50	3240927	0	1	90312	1	0	next	other	0
+AllRead-pilot03	286	Pulse	199	3246976	6049	0
+AllRead-pilot03	286	Pulse	199	3258976	18049	0
+AllRead-pilot03	286	Pulse	199	3270977	30050	0
+AllRead-pilot03	286	Pulse	199	3282977	42050	0
+AllRead-pilot03	286	Pulse	199	3294977	54050	0
+AllRead-pilot03	286	Pulse	199	3306977	66050	0
+AllRead-pilot03	286	Pulse	199	3318976	78049	0
+AllRead-pilot03	286	Pulse	199	3330971	90044	7
+AllRead-pilot03	287	Picture	70	3331239	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	288	Picture	40	3338528	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	289	Picture	70	3340484	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	289	Pulse	199	3342976	2493	0
+AllRead-pilot03	290	Picture	40	3347773	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	291	Response	21	3353946	4040	0
+AllRead-pilot03	291	Pulse	199	3354977	5070	0
+AllRead-pilot03	292	Picture	40	3357195	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	293	Picture	70	3358795	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	294	Picture	40	3366084	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	294	Pulse	199	3366977	893	0
+AllRead-pilot03	295	Picture	70	3368395	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	296	Picture	40	3375684	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	296	Pulse	199	3378977	3293	0
+AllRead-pilot03	297	Picture	70	3379240	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	298	Picture	40	3386529	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	299	Picture	70	3389373	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	299	Pulse	199	3390977	1604	0
+AllRead-pilot03	300	Picture	40	3396662	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	301	Picture	70	3398973	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	301	Pulse	199	3402977	4003	0
+AllRead-pilot03	302	Picture	40	3406262	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	303	Picture	70	3411240	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	303	Pulse	199	3414977	3736	0
+AllRead-pilot03	304	Picture	40	3418529	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	305	Picture	70	3420485	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	305	Pulse	199	3426977	6492	0
+AllRead-pilot03	306	Picture	40	3427774	0	1	2845	1	0	2830	other	0
+AllRead-pilot03	307	Picture	70	3430796	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	308	Picture	40	3438085	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	308	Pulse	199	3438977	892	0
+AllRead-pilot03	309	Picture	70	3440574	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	310	Picture	40	3447863	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	310	Pulse	199	3450977	3115	0
+AllRead-pilot03	311	Picture	70	3452307	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	312	Picture	40	3459596	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	313	Picture	70	3461196	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	313	Pulse	199	3462978	1781	0
+AllRead-pilot03	314	Picture	40	3468485	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	315	Picture	70	3470263	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	315	Pulse	199	3474977	4714	0
+AllRead-pilot03	316	Picture	40	3477552	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	317	Picture	70	3480397	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	317	Pulse	199	3486977	6580	0
+AllRead-pilot03	318	Picture	40	3487685	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	319	Picture	70	3492130	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	319	Pulse	199	3498977	6847	0
+AllRead-pilot03	320	Picture	40	3499419	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	321	Picture	50	3501730	0	1	90134	1	0	next	other	0
+AllRead-pilot03	321	Pulse	199	3510977	9247	0
+AllRead-pilot03	321	Pulse	199	3522977	21247	0
+AllRead-pilot03	321	Pulse	199	3534977	33247	0
+AllRead-pilot03	321	Pulse	199	3546977	45247	0
+AllRead-pilot03	321	Pulse	199	3558977	57247	0
+AllRead-pilot03	321	Pulse	199	3570977	69247	0
+AllRead-pilot03	321	Pulse	199	3582977	81247	0
+AllRead-pilot03	322	Picture	60	3591864	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	322	Pulse	199	3594977	3113	0
+AllRead-pilot03	323	Picture	40	3599153	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	324	Picture	60	3601465	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	324	Pulse	199	3606977	5513	0
+AllRead-pilot03	325	Picture	40	3608754	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	326	Picture	60	3613198	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	326	Pulse	199	3618978	5780	0
+AllRead-pilot03	327	Picture	40	3620487	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	328	Picture	60	3622620	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	329	Picture	40	3629909	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	329	Pulse	199	3630977	1068	0
+AllRead-pilot03	330	Picture	60	3632398	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	331	Picture	40	3639687	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	331	Pulse	199	3642977	3290	0
+AllRead-pilot03	332	Picture	60	3643243	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	333	Picture	40	3650532	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	334	Picture	60	3653554	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	334	Pulse	199	3654977	1423	0
+AllRead-pilot03	335	Picture	40	3660843	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	336	Picture	60	3663154	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	336	Pulse	199	3666977	3823	0
+AllRead-pilot03	337	Picture	40	3670443	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	338	Picture	60	3672399	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	338	Pulse	199	3678988	6589	0
+AllRead-pilot03	339	Picture	40	3679688	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	340	Picture	60	3681643	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	341	Picture	40	3688932	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	341	Pulse	199	3690988	2056	0
+AllRead-pilot03	342	Picture	60	3693910	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	343	Picture	40	3701199	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	344	Picture	60	3702977	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	344	Pulse	199	3702988	11	0
+AllRead-pilot03	345	Picture	40	3710266	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	346	Picture	60	3712577	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	346	Pulse	199	3714988	2411	0
+AllRead-pilot03	347	Picture	40	3719866	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	348	Picture	60	3723422	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	348	Pulse	199	3726987	3566	0
+AllRead-pilot03	349	Picture	40	3730711	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	350	Picture	60	3733555	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	350	Pulse	199	3738987	5432	0
+AllRead-pilot03	351	Picture	40	3740844	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	352	Picture	60	3743689	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	353	Picture	40	3750978	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	353	Pulse	199	3750988	11	0
+AllRead-pilot03	354	Picture	50	3752578	0	1	70045	1	0	next	other	0
+AllRead-pilot03	354	Pulse	199	3762988	10411	0
+AllRead-pilot03	354	Pulse	199	3774988	22410	0
+AllRead-pilot03	354	Pulse	199	3786988	34410	0
+AllRead-pilot03	354	Pulse	199	3798988	46410	0
+AllRead-pilot03	354	Pulse	199	3810988	58410	0
+AllRead-pilot03	355	Picture	90	3822623	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	355	Pulse	199	3822988	365	0
+AllRead-pilot03	356	Picture	40	3829912	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	357	Picture	90	3831867	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	357	Pulse	199	3834988	3121	0
+AllRead-pilot03	358	Picture	40	3839156	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	359	Picture	90	3843601	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	359	Pulse	199	3846988	3388	0
+AllRead-pilot03	360	Picture	40	3850890	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	361	Picture	90	3853023	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	361	Pulse	199	3858988	5965	0
+AllRead-pilot03	362	Picture	40	3860312	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	363	Picture	90	3862623	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	364	Picture	40	3869912	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	364	Pulse	199	3870988	1076	0
+AllRead-pilot03	365	Picture	90	3872935	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	366	Picture	40	3880223	0	1	1245	1	0	1180	other	0
+AllRead-pilot03	367	Picture	90	3881646	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	367	Pulse	199	3882988	1343	0
+AllRead-pilot03	368	Picture	40	3888935	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	369	Pulse	199	3894988	3564	0
+AllRead-pilot03	369	Response	21	3895039	3615	0
+AllRead-pilot03	370	Picture	40	3898713	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	371	Picture	90	3900668	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	371	Pulse	199	3906988	6320	0
+AllRead-pilot03	372	Picture	40	3907957	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	373	Picture	90	3910268	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	374	Picture	40	3917557	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	374	Pulse	199	3918989	1431	0
+AllRead-pilot03	375	Picture	90	3922535	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	376	Picture	40	3929824	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	376	Pulse	199	3930989	1164	0
+AllRead-pilot03	377	Picture	90	3931602	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	378	Picture	40	3938891	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	379	Picture	90	3942447	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	379	Pulse	199	3942989	542	0
+AllRead-pilot03	380	Picture	40	3949735	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	381	Picture	90	3953291	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	381	Pulse	199	3954989	1698	0
+AllRead-pilot03	382	Picture	40	3960580	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	383	Picture	90	3963424	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	383	Pulse	199	3966988	3564	0
+AllRead-pilot03	384	Picture	40	3970713	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	385	Picture	90	3975158	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	385	Pulse	199	3978988	3830	0
+AllRead-pilot03	386	Picture	40	3982447	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	387	Picture	90	3985291	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	387	Pulse	199	3990988	5697	0
+AllRead-pilot03	388	Picture	40	3992580	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	389	Picture	50	3994180	0	1	90134	1	0	next	other	0
+AllRead-pilot03	389	Pulse	199	4002989	8808	0
+AllRead-pilot03	389	Pulse	199	4014989	20808	0
+AllRead-pilot03	389	Pulse	199	4026989	32808	0
+AllRead-pilot03	389	Pulse	199	4038988	44808	0
+AllRead-pilot03	389	Pulse	199	4050988	56808	0
+AllRead-pilot03	389	Pulse	199	4062988	68808	0
+AllRead-pilot03	389	Pulse	199	4074988	80808	0
+AllRead-pilot03	390	Picture	80	4084315	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	390	Pulse	199	4086989	2674	0
+AllRead-pilot03	391	Picture	40	4091604	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	392	Picture	80	4095159	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	392	Pulse	199	4098989	3830	0
+AllRead-pilot03	393	Picture	40	4102448	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	394	Picture	80	4104760	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	394	Pulse	199	4110989	6230	0
+AllRead-pilot03	395	Picture	40	4112048	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	396	Picture	80	4117204	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	396	Pulse	199	4122989	5785	0
+AllRead-pilot03	397	Picture	40	4124493	0	1	1245	1	0	1180	other	0
+AllRead-pilot03	398	Picture	80	4125915	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	399	Picture	40	4133204	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	399	Pulse	199	4134986	1781	3
+AllRead-pilot03	400	Picture	80	4135160	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	401	Picture	40	4142449	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	402	Picture	80	4144760	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	402	Pulse	199	4146988	2229	0
+AllRead-pilot03	403	Picture	40	4152049	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	404	Picture	80	4154893	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	404	Pulse	199	4158989	4096	0
+AllRead-pilot03	405	Picture	40	4162182	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	406	Picture	80	4165738	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	406	Pulse	199	4170989	5251	0
+AllRead-pilot03	407	Picture	40	4173027	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	408	Picture	80	4175871	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	408	Pulse	199	4182989	7118	0
+AllRead-pilot03	409	Picture	40	4183160	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	410	Picture	80	4187605	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	411	Picture	40	4194894	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	411	Pulse	199	4194989	95	0
+AllRead-pilot03	412	Picture	80	4199338	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	413	Picture	40	4206627	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	413	Pulse	199	4206989	362	0
+AllRead-pilot03	414	Picture	80	4209116	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	415	Picture	40	4216405	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	416	Picture	80	4218361	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	416	Pulse	199	4218988	628	0
+AllRead-pilot03	417	Picture	40	4225650	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	418	Picture	80	4227961	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	418	Pulse	199	4230989	3028	0
+AllRead-pilot03	419	Picture	40	4235250	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	420	Picture	80	4237383	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	420	Pulse	199	4242989	5606	0
+AllRead-pilot03	421	Picture	40	4244672	0	1	2845	1	0	2830	other	0
+AllRead-pilot03	422	Picture	50	4247695	0	1	70045	1	0	next	other	0
+AllRead-pilot03	422	Pulse	199	4254989	7295	0
+AllRead-pilot03	422	Pulse	199	4266989	19295	0
+AllRead-pilot03	422	Pulse	199	4278989	31295	0
+AllRead-pilot03	422	Pulse	199	4290989	43294	0
+AllRead-pilot03	422	Pulse	199	4302989	55294	0
+AllRead-pilot03	422	Pulse	199	4314989	67294	0
+AllRead-pilot03	423	Picture	90	4317740	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	424	Picture	40	4325029	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	425	Picture	90	4326807	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	425	Pulse	199	4326989	183	0
+AllRead-pilot03	426	Picture	40	4334096	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	426	Pulse	199	4338989	4894	0
+AllRead-pilot03	427	Picture	90	4339073	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	428	Picture	40	4346362	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	429	Picture	90	4349918	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	429	Pulse	199	4350989	1071	0
+AllRead-pilot03	430	Picture	40	4357207	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	431	Pulse	199	4362989	3471	0
+AllRead-pilot03	431	Response	21	4363969	4451	0
+AllRead-pilot03	432	Picture	40	4366807	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	433	Picture	90	4369652	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	433	Pulse	199	4374989	5338	0
+AllRead-pilot03	434	Picture	40	4376941	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	435	Picture	90	4378363	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	436	Picture	40	4385652	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	436	Pulse	199	4386989	1337	0
+AllRead-pilot03	437	Picture	90	4387785	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	438	Picture	40	4395074	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	438	Pulse	199	4398989	3915	0
+AllRead-pilot03	439	Picture	90	4399519	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	440	Picture	40	4406808	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	441	Picture	90	4408763	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	441	Pulse	199	4410989	2226	0
+AllRead-pilot03	442	Picture	40	4416052	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	443	Picture	90	4418363	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	443	Pulse	199	4422989	4626	0
+AllRead-pilot03	444	Picture	40	4425652	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	445	Picture	90	4427252	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	446	Picture	40	4434541	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	446	Pulse	199	4434989	448	0
+AllRead-pilot03	447	Picture	90	4437386	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	448	Picture	40	4444675	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	448	Pulse	199	4446986	2311	4
+AllRead-pilot03	449	Picture	90	4447164	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	450	Picture	40	4454453	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	451	Picture	90	4456408	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	451	Pulse	199	4458990	2582	0
+AllRead-pilot03	452	Picture	40	4463697	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	453	Picture	90	4466719	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	453	Pulse	199	4470989	4270	0
+AllRead-pilot03	454	Picture	40	4474008	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	455	Picture	90	4477564	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	455	Pulse	199	4482989	5426	0
+AllRead-pilot03	456	Picture	40	4484853	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	457	Picture	50	4487164	0	1	70223	1	0	next	other	0
+AllRead-pilot03	457	Pulse	199	4494989	7825	0
+AllRead-pilot03	457	Pulse	199	4506990	19826	0
+AllRead-pilot03	457	Pulse	199	4518990	31826	0
+AllRead-pilot03	457	Pulse	199	4530990	43826	0
+AllRead-pilot03	457	Pulse	199	4542990	55826	0
+AllRead-pilot03	457	Pulse	199	4554989	67825	0
+AllRead-pilot03	458	Picture	70	4557387	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	459	Picture	40	4564676	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	459	Pulse	199	4566990	2314	0
+AllRead-pilot03	460	Picture	70	4567521	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	461	Picture	40	4574810	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	462	Picture	70	4577121	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	462	Pulse	199	4578990	1869	0
+AllRead-pilot03	463	Picture	40	4584410	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	464	Picture	70	4585832	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	464	Pulse	199	4590990	5158	0
+AllRead-pilot03	465	Picture	40	4593121	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	466	Picture	70	4598099	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	466	Pulse	199	4602990	4892	0
+AllRead-pilot03	467	Picture	40	4605388	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	468	Picture	70	4607877	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	468	Pulse	199	4614991	7114	1
+AllRead-pilot03	469	Picture	40	4615166	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	470	Picture	70	4617121	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	471	Picture	40	4624410	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	472	Picture	70	4626721	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	472	Pulse	199	4626990	269	0
+AllRead-pilot03	473	Picture	40	4634010	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	474	Picture	70	4636144	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	474	Pulse	199	4638990	2846	0
+AllRead-pilot03	475	Picture	40	4643433	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	476	Picture	70	4645744	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	476	Pulse	199	4650990	5247	0
+AllRead-pilot03	477	Picture	40	4653033	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	478	Picture	70	4657477	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	478	Pulse	199	4662990	5513	0
+AllRead-pilot03	479	Picture	40	4664766	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	480	Picture	70	4668322	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	480	Pulse	199	4674990	6669	0
+AllRead-pilot03	481	Picture	40	4675611	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	482	Picture	70	4678633	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	483	Picture	40	4685922	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	483	Pulse	199	4686990	1068	0
+AllRead-pilot03	484	Picture	70	4690366	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	485	Picture	40	4697655	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	485	Pulse	199	4698990	1335	0
+AllRead-pilot03	486	Picture	70	4699611	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	487	Picture	40	4706900	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	488	Picture	70	4710456	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	488	Pulse	199	4710990	534	0
+AllRead-pilot03	489	Picture	40	4717745	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	490	Picture	50	4720589	0	1	70045	1	0	next	other	0
+AllRead-pilot03	490	Pulse	199	4722990	2401	0
+AllRead-pilot03	490	Pulse	199	4734990	14401	0
+AllRead-pilot03	490	Pulse	199	4746990	26401	0
+AllRead-pilot03	490	Pulse	199	4758990	38401	0
+AllRead-pilot03	490	Pulse	199	4770991	50401	0
+AllRead-pilot03	490	Pulse	199	4782990	62401	0
+AllRead-pilot03	491	Picture	60	4790634	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	491	Pulse	199	4794990	4356	0
+AllRead-pilot03	492	Picture	40	4797923	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	493	Picture	60	4801479	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	493	Pulse	199	4806990	5511	0
+AllRead-pilot03	494	Picture	40	4808768	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	495	Picture	60	4811079	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	496	Picture	40	4818368	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	496	Pulse	199	4818991	623	0
+AllRead-pilot03	497	Picture	60	4819968	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	498	Picture	40	4827257	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	499	Picture	60	4830101	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	499	Pulse	199	4830991	889	0
+AllRead-pilot03	500	Picture	40	4837390	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	501	Picture	60	4840235	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	501	Pulse	199	4842991	2756	0
+AllRead-pilot03	502	Picture	40	4847524	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	503	Picture	60	4848946	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	503	Pulse	199	4854991	6045	0
+AllRead-pilot03	504	Picture	40	4856235	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	505	Picture	60	4858724	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	506	Picture	40	4866013	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	506	Pulse	199	4866991	978	0
+AllRead-pilot03	507	Picture	60	4868146	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	508	Picture	40	4875435	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	509	Picture	60	4877391	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	509	Pulse	199	4878990	1599	0
+AllRead-pilot03	510	Picture	40	4884680	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	511	Picture	60	4886991	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	511	Pulse	199	4890991	4000	0
+AllRead-pilot03	512	Picture	40	4894280	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	513	Response	21	4902651	3926	0
+AllRead-pilot03	513	Pulse	199	4902991	4266	0
+AllRead-pilot03	514	Picture	40	4906013	0	1	2845	1	0	2830	other	0
+AllRead-pilot03	515	Picture	60	4909036	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	515	Pulse	199	4914991	5955	0
+AllRead-pilot03	516	Picture	40	4916325	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	517	Picture	60	4918636	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	518	Picture	40	4925925	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	518	Pulse	199	4926991	1066	0
+AllRead-pilot03	519	Picture	60	4927880	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	520	Picture	40	4935169	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	520	Pulse	199	4938991	3821	0
+AllRead-pilot03	521	Picture	60	4939614	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	522	Picture	40	4946903	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	523	Picture	60	4948681	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	523	Pulse	199	4950991	2310	0
+AllRead-pilot03	524	Picture	40	4955970	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	525	Picture	50	4960947	0	1	90134	1	0	next	other	0
+AllRead-pilot03	525	Pulse	199	4962990	2043	0
+AllRead-pilot03	525	Pulse	199	4974991	14044	0
+AllRead-pilot03	525	Pulse	199	4986991	26044	0
+AllRead-pilot03	525	Pulse	199	4998991	38044	0
+AllRead-pilot03	525	Pulse	199	5010991	50044	0
+AllRead-pilot03	525	Pulse	199	5022991	62043	0
+AllRead-pilot03	525	Pulse	199	5034990	74043	0
+AllRead-pilot03	525	Pulse	199	5046990	86043	0
+AllRead-pilot03	526	Picture	80	5051082	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	527	Picture	40	5058371	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	527	Pulse	199	5058991	620	0
+AllRead-pilot03	528	Picture	80	5060682	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	529	Picture	40	5067971	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	529	Pulse	199	5070991	3020	0
+AllRead-pilot03	530	Picture	80	5070993	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	531	Picture	40	5078282	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	532	Picture	80	5080060	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	532	Pulse	199	5082991	2931	0
+AllRead-pilot03	533	Picture	40	5087349	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	534	Picture	80	5092327	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	534	Pulse	199	5094991	2664	0
+AllRead-pilot03	535	Picture	40	5099616	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	536	Picture	80	5104060	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	536	Pulse	199	5106991	2931	0
+AllRead-pilot03	537	Picture	40	5111349	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	538	Picture	80	5113305	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	538	Pulse	199	5118991	5686	0
+AllRead-pilot03	539	Picture	40	5120594	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	540	Response	21	5126381	3654	0
+AllRead-pilot03	541	Picture	40	5130016	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	541	Pulse	199	5130991	975	0
+AllRead-pilot03	542	Picture	80	5131616	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	543	Picture	40	5138905	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	544	Picture	80	5141750	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	544	Pulse	199	5142992	1242	0
+AllRead-pilot03	545	Picture	40	5149039	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	546	Picture	80	5153483	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	546	Pulse	199	5154992	1508	0
+AllRead-pilot03	547	Picture	40	5160772	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	548	Response	21	5166681	3598	0
+AllRead-pilot03	548	Pulse	199	5166991	3908	0
+AllRead-pilot03	549	Picture	40	5170372	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	550	Picture	80	5173928	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	550	Pulse	199	5178992	5064	0
+AllRead-pilot03	551	Picture	40	5181217	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	552	Picture	80	5184061	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	552	Pulse	199	5190991	6930	0
+AllRead-pilot03	553	Picture	40	5191350	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	554	Picture	80	5193306	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	555	Picture	40	5200595	0	1	1245	1	0	1180	other	0
+AllRead-pilot03	556	Picture	80	5202017	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	556	Pulse	199	5202991	974	0
+AllRead-pilot03	557	Picture	40	5209306	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	558	Picture	80	5211617	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	558	Pulse	199	5214991	3374	0
+AllRead-pilot03	559	Picture	40	5218906	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	560	Picture	80	5221395	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	560	Pulse	199	5226992	5597	0
+AllRead-pilot03	561	Picture	40	5228684	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	562	Picture	50	5232240	0	1	70035	189	0	next	other	0
+AllRead-pilot03	562	Pulse	199	5238991	6752	0
+AllRead-pilot03	562	Pulse	199	5250992	18752	0
+AllRead-pilot03	562	Pulse	199	5262991	30752	0
+AllRead-pilot03	562	Pulse	199	5274991	42752	0
+AllRead-pilot03	562	Pulse	199	5286991	54751	0
+AllRead-pilot03	562	Pulse	199	5298992	66752	0
+AllRead-pilot03	563	Picture	80	5302274	0	189	7122	189	0	7000	other	0
+AllRead-pilot03	564	Picture	40	5309574	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	564	Pulse	199	5310992	1418	0
+AllRead-pilot03	565	Picture	80	5311174	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	566	Picture	40	5318463	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	567	Picture	80	5320774	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	567	Pulse	199	5323002	2228	0
+AllRead-pilot03	568	Picture	40	5328063	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	569	Picture	80	5330196	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	569	Pulse	199	5335002	4806	0
+AllRead-pilot03	570	Picture	40	5337485	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	571	Picture	80	5340507	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	571	Pulse	199	5347002	6494	0
+AllRead-pilot03	572	Picture	40	5347796	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	573	Response	21	5356911	4137	0
+AllRead-pilot03	573	Pulse	199	5359001	6227	0
+AllRead-pilot03	574	Picture	40	5360063	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	575	Picture	80	5362374	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	576	Picture	40	5369663	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	576	Pulse	199	5371002	1338	0
+AllRead-pilot03	577	Picture	80	5372152	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	578	Picture	40	5379441	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	579	Picture	80	5382997	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	579	Pulse	199	5383002	5	0
+AllRead-pilot03	580	Picture	40	5390286	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	581	Picture	80	5394730	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	581	Pulse	199	5395002	272	0
+AllRead-pilot03	582	Picture	40	5402019	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	583	Picture	80	5403975	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	583	Pulse	199	5407002	3027	0
+AllRead-pilot03	584	Picture	40	5411264	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	585	Picture	80	5414108	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	585	Pulse	199	5419002	4894	0
+AllRead-pilot03	586	Picture	40	5421397	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	587	Picture	80	5424242	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	587	Pulse	199	5431002	6760	0
+AllRead-pilot03	588	Picture	40	5431531	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	589	Picture	80	5435975	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	589	Pulse	199	5443002	7026	0
+AllRead-pilot03	590	Picture	40	5443264	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	591	Picture	80	5445575	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	592	Picture	40	5452864	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	593	Picture	80	5454820	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	593	Pulse	199	5455002	182	0
+AllRead-pilot03	594	Picture	40	5462109	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	595	Picture	80	5463531	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	595	Pulse	199	5467002	3471	0
+AllRead-pilot03	596	Picture	40	5470820	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	597	Picture	50	5472598	0	1	70045	1	0	next	other	0
+AllRead-pilot03	597	Pulse	199	5479002	6404	0
+AllRead-pilot03	597	Pulse	199	5491002	18404	0
+AllRead-pilot03	597	Pulse	199	5503002	30404	0
+AllRead-pilot03	597	Pulse	199	5515002	42404	0
+AllRead-pilot03	597	Pulse	199	5527002	54404	0
+AllRead-pilot03	597	Pulse	199	5539002	66404	0
+AllRead-pilot03	598	Response	21	5546612	3969	0
+AllRead-pilot03	599	Picture	40	5549932	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	599	Pulse	199	5551002	1070	0
+AllRead-pilot03	600	Picture	90	5551888	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	601	Picture	40	5559177	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	601	Pulse	199	5563002	3826	0
+AllRead-pilot03	602	Picture	90	5563621	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	603	Picture	40	5570910	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	604	Picture	90	5572866	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	604	Pulse	199	5575002	2137	0
+AllRead-pilot03	605	Picture	40	5580155	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	606	Picture	90	5581933	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	606	Pulse	199	5587002	5070	0
+AllRead-pilot03	607	Picture	40	5589222	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	608	Picture	90	5592244	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	608	Pulse	199	5599002	6759	0
+AllRead-pilot03	609	Picture	40	5599533	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	610	Picture	90	5601133	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	611	Picture	40	5608422	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	611	Pulse	199	5610992	2570	10
+AllRead-pilot03	612	Picture	90	5611266	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	613	Picture	40	5618555	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	614	Picture	90	5619977	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	614	Pulse	199	5623002	3025	0
+AllRead-pilot03	615	Picture	40	5627266	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	616	Picture	90	5630111	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	616	Pulse	199	5635003	4892	0
+AllRead-pilot03	617	Picture	40	5637400	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	618	Picture	90	5639711	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	619	Picture	40	5647000	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	619	Pulse	199	5647003	3	0
+AllRead-pilot03	620	Picture	90	5649311	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	621	Picture	40	5656600	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	621	Pulse	199	5659003	2403	0
+AllRead-pilot03	622	Picture	90	5661044	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	623	Picture	40	5668334	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	624	Picture	90	5670645	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	624	Pulse	199	5671002	358	0
+AllRead-pilot03	625	Picture	40	5677934	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	626	Picture	90	5680067	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	626	Pulse	199	5683003	2935	0
+AllRead-pilot03	627	Picture	40	5687356	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	628	Picture	90	5690912	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	628	Pulse	199	5695002	4090	0
+AllRead-pilot03	629	Picture	40	5698201	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	630	Picture	90	5701756	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	630	Pulse	199	5707003	5247	0
+AllRead-pilot03	631	Picture	40	5709045	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	632	Picture	50	5714023	0	1	90134	1	0	next	other	0
+AllRead-pilot03	632	Pulse	199	5719003	4980	0
+AllRead-pilot03	632	Pulse	199	5731003	16980	0
+AllRead-pilot03	632	Pulse	199	5743003	28980	0
+AllRead-pilot03	632	Pulse	199	5755003	40980	0
+AllRead-pilot03	632	Pulse	199	5767002	52979	0
+AllRead-pilot03	632	Pulse	199	5779002	64979	0
+AllRead-pilot03	632	Pulse	199	5791003	76980	0
+AllRead-pilot03	632	Pulse	199	5803003	88980	0
+AllRead-pilot03	633	Picture	60	5804157	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	634	Picture	40	5811446	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	635	Picture	60	5815002	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	635	Pulse	199	5815003	1	0
+AllRead-pilot03	636	Picture	40	5822291	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	637	Picture	60	5824602	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	637	Pulse	199	5827003	2401	0
+AllRead-pilot03	638	Picture	40	5831891	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	639	Picture	60	5834380	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	639	Pulse	199	5839003	4623	0
+AllRead-pilot03	640	Picture	40	5841669	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	641	Picture	60	5845225	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	641	Pulse	199	5851003	5778	0
+AllRead-pilot03	642	Picture	40	5852514	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	643	Picture	60	5854469	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	644	Picture	40	5861758	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	644	Pulse	199	5863003	1245	0
+AllRead-pilot03	645	Picture	60	5863536	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	646	Picture	40	5870825	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	647	Picture	60	5872780	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	647	Pulse	199	5875003	2223	0
+AllRead-pilot03	648	Picture	40	5880069	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	649	Picture	60	5882381	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	649	Pulse	199	5887003	4623	0
+AllRead-pilot03	650	Picture	40	5889670	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	651	Picture	60	5894114	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	651	Pulse	199	5899003	4889	0
+AllRead-pilot03	652	Picture	40	5901403	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	653	Picture	60	5905848	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	653	Pulse	199	5911003	5156	0
+AllRead-pilot03	654	Picture	40	5913136	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	655	Picture	60	5914736	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	656	Picture	40	5922025	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	656	Pulse	199	5923003	978	0
+AllRead-pilot03	657	Picture	60	5923448	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	658	Picture	40	5930737	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	659	Picture	60	5933581	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	659	Pulse	199	5935003	1422	0
+AllRead-pilot03	660	Picture	40	5940870	0	1	2667	1	0	2550	other	0
+AllRead-pilot03	661	Picture	60	5943715	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	661	Pulse	199	5947003	3289	0
+AllRead-pilot03	662	Picture	40	5951004	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	663	Picture	60	5953137	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	663	Pulse	199	5959003	5866	0
+AllRead-pilot03	664	Picture	40	5960426	0	1	2845	1	0	2830	other	0
+AllRead-pilot03	665	Picture	50	5963448	0	1	70045	1	0	next	other	0
+AllRead-pilot03	665	Pulse	199	5971003	7555	0
+AllRead-pilot03	665	Pulse	199	5983003	19555	0
+AllRead-pilot03	665	Pulse	199	5995003	31555	0
+AllRead-pilot03	665	Pulse	199	6007003	43555	0
+AllRead-pilot03	665	Pulse	199	6019003	55555	0
+AllRead-pilot03	665	Pulse	199	6031003	67555	0
+AllRead-pilot03	666	Response	21	6038163	4669	0
+AllRead-pilot03	667	Picture	40	6040782	0	1	4800	1	0	4720	other	0
+AllRead-pilot03	667	Pulse	199	6043003	2221	0
+AllRead-pilot03	668	Picture	70	6045760	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	669	Picture	40	6053049	0	1	2844	1	0	2830	other	0
+AllRead-pilot03	669	Pulse	199	6055003	1954	0
+AllRead-pilot03	670	Picture	70	6056072	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	671	Picture	40	6063361	0	1	2133	1	0	1990	other	0
+AllRead-pilot03	672	Picture	70	6065672	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	672	Pulse	199	6067003	1332	0
+AllRead-pilot03	673	Picture	40	6072961	0	1	2667	1	0	2570	other	0
+AllRead-pilot03	674	Picture	70	6075805	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	674	Pulse	199	6079004	3199	0
+AllRead-pilot03	675	Picture	40	6083094	0	1	4267	1	0	4230	other	0
+AllRead-pilot03	676	Picture	70	6087539	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	676	Pulse	199	6091003	3465	0
+AllRead-pilot03	677	Picture	40	6094828	0	1	4267	1	0	4080	other	0
+AllRead-pilot03	678	Picture	70	6099272	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	678	Pulse	199	6103004	3732	0
+AllRead-pilot03	679	Picture	40	6106561	0	1	1956	1	0	1900	other	0
+AllRead-pilot03	680	Picture	70	6108694	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	680	Pulse	199	6115004	6309	0
+AllRead-pilot03	681	Picture	40	6115983	0	1	1244	1	0	1180	other	0
+AllRead-pilot03	682	Picture	70	6117406	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	683	Picture	40	6124695	0	1	2133	1	0	2020	other	0
+AllRead-pilot03	683	Pulse	199	6127004	2309	0
+AllRead-pilot03	684	Picture	70	6127006	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	685	Picture	40	6134295	0	1	1778	1	0	1630	other	0
+AllRead-pilot03	686	Picture	70	6136250	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	686	Pulse	199	6139003	2753	0
+AllRead-pilot03	687	Picture	40	6143539	0	1	3378	1	0	3210	other	0
+AllRead-pilot03	688	Picture	70	6147095	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	688	Pulse	199	6151003	3909	0
+AllRead-pilot03	689	Picture	40	6154384	0	1	1422	1	0	1270	other	0
+AllRead-pilot03	690	Picture	70	6155984	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	690	Pulse	199	6163003	7020	0
+AllRead-pilot03	691	Picture	40	6163273	0	1	2311	1	0	2150	other	0
+AllRead-pilot03	692	Picture	70	6165762	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	693	Picture	40	6173051	0	1	3378	1	0	3330	other	0
+AllRead-pilot03	693	Pulse	199	6175003	1953	0
+AllRead-pilot03	694	Picture	70	6176606	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	695	Picture	40	6183895	0	1	1600	1	0	1510	other	0
+AllRead-pilot03	696	Picture	70	6185673	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	696	Pulse	199	6187003	1330	0
+AllRead-pilot03	697	Picture	40	6192962	0	1	2133	1	0	2070	other	0
+AllRead-pilot03	698	Picture	70	6195273	0	1	7111	1	0	7000	other	0
+AllRead-pilot03	699	Picture	40	6202562	0	1	1778	1	0	1640	other	0
+AllRead-pilot03	700	Picture	50	6204518	0	1	90134	1	0	next	other	0
+AllRead-pilot03	701	Picture	200	6294652	134	1	80179	1	0	80000	other	0
+AllRead-pilot03	702	Response	21	6439894	64885	0

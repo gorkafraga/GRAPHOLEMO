@@ -14,17 +14,24 @@
 clear all
 close all
 %Chooice your GLM of interest
-selectedGLM = 'GLM0_mopa';
+selectedGLM = 'GLM0_mopa_vpe';
+selectedGroup = 'GoodPerf_72';
+modelversion =   'AR_rlddm_v11';
 
 % set input dir  based on GLM of interest
-parentDir = 'O:\studies\allread\mri\analyses_NF\mri_analyses_NF\first_level_NF\_scripts\model_based\test';
-listFolders = dir(strcat(parentDir,'\1Lv_',selectedGLM,'*'));
+parentDir = 'O:\studies\allread\mri\analysis_GFG\stats\mri';% NO \ as last character
+
+if  contains(selectedGLM,'_mopa')
+    listFolders = dir(strcat(parentDir,'\',selectedGroup,'\',modelversion,'\1Lv_',selectedGLM,'*'));  
+else
+    listFolders = dir(strcat(parentDir,'\',selectedGroup,'\1Lv_',selectedGLM,'*'));   
+end
+%create input and output dir  
 [indx,tf] = listdlg('PromptString','Select source 1st level folder','ListString',{listFolders.name});
 dirinput = strcat([listFolders(indx).folder,'\',listFolders(indx).name]) ;
- 
-%create output dir  
-diroutput = strrep(dirinput,['1Lv_',selectedGLM],['2Lv_',selectedGLM,'_ok']);
+diroutput = strrep(dirinput,['1Lv_',selectedGLM],['2Lv_',selectedGLM]);
 mkdir(diroutput)
+
 
 % Read t-test contrasts for that model 
 tmp = dir([dirinput,'\**\spm.mat']);
@@ -50,8 +57,9 @@ subjects= {files.name};
 %% loop thru contrasts
 batches={};
 for c = 1: length(contrast) 
-        
-    currDiroutput = [diroutput,'\',strrep(strrep(cell2mat(contrast(c).fname),'.nii',''),'con_','from_1Lv_con')];
+    %contrastname = strrep(strrep(cell2mat(contrast(c).fname),'.nii',''),'Contrast ','Con')
+    contrastname = strrep(strrep(strrep(strrep(strrep(cell2mat(contrast(c).descript),'Contrast ','con'),': ','_'),' - ','_'),' ',''),'onset','')
+    currDiroutput = [diroutput,'\',contrastname];
     %mkdir(diroutput)
     matlabbatch{1}.spm.stats.factorial_design.dir = {currDiroutput};
     matlabbatch{1}.spm.stats.factorial_design.des.t1.scans = {};
@@ -91,20 +99,18 @@ end
    
 %%  Run in parallel port  
 
-    if ~isempty(gcp('nocreate'))
-            delete(gcp('nocreate'));  
-    end 
-    parpool(8);        
-    parfor i = 1: length(contrast)
+    %if ~isempty(gcp('nocreate'))
+    %        delete(gcp('nocreate'));  
+   % end 
+   % parpool(8);        
+   %parfor i = 1: length(contrast)
+   for i = 1: length(contrast)
         spm_jobman('run',batches{i});
         
     end    
 %% Save table with contrasts run and subjects
 contrast_table = struct2table(contrast);
- 
 writetable(contrast_table,[diroutput,'\Codebook_contrasts_from',selectedGLM,'.csv']);
-
-
 subjects_table = cell2table(subjects');
 subjects_table.Properties.VariableNames = {'subjects'};
 writetable(subjects_table,[diroutput,'\Subjects_from',selectedGLM,['_n',num2str(length(subjects))],'.csv']);

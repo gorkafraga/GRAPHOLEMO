@@ -1,0 +1,10 @@
+trial	block	stimIndex	Condition	VstimCaption	ISIjitter
+1	1	1	FFnew	f	199	
+2	1	2	FFnew	d	366	
+3	1	3	FFnew	c	249	
+4	1	4	FFnew	FFnewTarget	213	
+5	1	5	FFnew	e	214	
+6	1	6	FFnew	b	178	
+7	1	7	FFnew	g	269	
+8	1	9	FFnew	a	331	
+9	1	10	FFnew	h	435	

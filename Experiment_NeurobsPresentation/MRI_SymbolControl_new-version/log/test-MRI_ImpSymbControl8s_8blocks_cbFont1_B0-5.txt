@@ -1,0 +1,9 @@
+trial	block	stimIndex	Condition	VstimCaption	ISIjitter
+1	1	1	letter	e	178	
+2	1	2	letter	b	249	
+3	1	3	letter	z	366	
+4	1	4	letter	u	213	
+5	1	5	letter	t	269	
+6	1	6	letter	m	286	
+7	1	7	letter	g	199	
+8	1	9	letter	p	214	

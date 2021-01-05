@@ -1,0 +1,112 @@
+Scenario - 
+Logfile written - 09/04/2019 11:04:09
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test	0	Pulse	199	0	0	NA
+test	1	Response	20	5819	5319	1
+test	2	Response	20	8297	2130	1
+test	3	Picture	100	8667	369	1	50171	1	0	50000	other	0
+test	3	Pulse	199	10000	1702	NA
+test	3	Pulse	199	20000	11702	NA
+test	3	Pulse	199	30000	21702	NA
+test	3	Pulse	199	40000	31702	NA
+test	3	Pulse	199	50000	41702	NA
+test	4	Picture	60	59172	0	1	7501	1	0	7000	other	0
+test	4	Pulse	199	60000	828	NA
+test	5	Picture	40	66839	0	1	2334	1	0	2130	other	0
+test	6	Picture	60	69340	0	1	7334	1	0	7000	other	0
+test	6	Pulse	199	70000	660	NA
+test	7	Picture	40	76840	0	1	2167	1	0	1990	other	0
+test	8	Picture	60	79174	0	1	7334	1	0	7000	other	0
+test	8	Pulse	199	80000	826	NA
+test	9	Picture	40	86675	0	1	3000	1	0	2860	other	0
+test	10	Picture	60	89842	0	1	7501	1	0	7000	other	0
+test	10	Pulse	199	90000	158	NA
+test	11	Picture	40	97509	0	1	4500	1	0	4350	other	0
+test	11	Pulse	199	100000	2491	NA
+test	12	Picture	60	102176	0	1	7334	1	0	7000	other	0
+test	13	Picture	40	109677	0	1	3834	1	0	3310	other	0
+test	13	Pulse	199	110000	323	NA
+test	14	Picture	60	113677	0	1	7167	1	0	7000	other	0
+test	14	Pulse	199	120000	6323	NA
+test	15	Picture	40	121344	0	1	3834	1	0	3660	other	0
+test	16	Picture	60	125512	0	1	7167	1	0	7000	other	0
+test	16	Pulse	199	130000	4488	NA
+test	17	Picture	40	133012	0	1	3000	1	0	2690	other	0
+test	18	Picture	60	136179	0	1	7334	1	0	7000	other	0
+test	18	Pulse	199	140000	3821	NA
+test	19	Picture	40	143680	0	1	2667	1	0	2490	other	0
+test	20	Picture	50	146847	0	1	30503	1	0	next	other	0
+test	20	Pulse	199	150000	3153	NA
+test	20	Pulse	199	160000	13153	NA
+test	20	Pulse	199	170000	23153	NA
+test	21	Picture	70	177350	0	1	7334	1	0	7000	other	0
+test	21	Pulse	199	180000	2650	NA
+test	22	Picture	40	184850	0	1	2667	1	0	2490	other	0
+test	23	Picture	70	187851	0	1	7167	1	0	7000	other	0
+test	23	Pulse	199	190000	2149	NA
+test	24	Picture	40	195351	0	1	3500	1	0	3310	other	0
+test	25	Picture	70	199352	0	1	7167	1	0	7000	other	0
+test	25	Pulse	199	200000	648	NA
+test	26	Picture	40	206852	0	1	2000	1	0	1780	other	0
+test	27	Picture	70	209019	0	1	7167	1	0	7000	other	0
+test	27	Pulse	199	210000	981	NA
+test	28	Picture	40	216353	0	1	3834	1	0	3660	other	0
+test	28	Pulse	199	220000	3647	NA
+test	29	Picture	70	220520	0	1	7167	1	0	7000	other	0
+test	30	Picture	40	228021	0	1	4500	1	0	4350	other	0
+test	30	Pulse	199	230000	1979	NA
+test	31	Picture	70	232855	0	1	7501	1	0	7000	other	0
+test	31	Pulse	199	240000	7145	NA
+test	32	Picture	40	240522	0	1	2500	1	0	2130	other	0
+test	33	Picture	70	243189	0	1	7334	1	0	7000	other	0
+test	33	Pulse	199	250000	6811	NA
+test	34	Picture	40	250690	0	1	2167	1	0	1990	other	0
+test	35	Picture	70	253024	0	1	7334	1	0	7000	other	0
+test	35	Pulse	199	260000	6977	NA
+test	36	Picture	40	260524	0	1	3000	1	0	2690	other	0
+test	37	Picture	75	263691	0	1	7334	1	0	7000	hit	65
+test	37	Response	25	268252	4560	1
+test	37	Pulse	199	270000	6309	NA
+test	38	Picture	40	271192	0	1	3000	1	0	2860	miss	0
+test	39	Picture	50	274526	0	1	50171	1	0	next	other	0
+test	39	Pulse	199	280000	5474	NA
+test	39	Pulse	199	290000	15474	NA
+test	39	Pulse	199	300000	25474	NA
+test	39	Pulse	199	310000	35474	NA
+test	39	Pulse	199	320000	45474	NA
+test	40	Picture	90	324697	0	1	7334	1	0	7000	other	0
+test	40	Pulse	199	330000	5303	NA
+test	41	Picture	40	332198	0	1	3167	1	0	2860	miss	0
+test	42	Picture	90	335531	0	1	7334	1	0	7000	other	0
+test	42	Pulse	199	340000	4469	NA
+test	43	Picture	40	343032	0	1	2667	1	0	2490	miss	0
+test	44	Picture	90	345866	0	1	7167	1	0	7000	other	0
+test	44	Pulse	199	350000	4134	NA
+test	45	Picture	40	353200	0	1	2167	1	0	1990	miss	0
+test	46	Picture	95	355533	0	1	7334	1	0	7000	hit	85
+test	46	Pulse	199	360000	4467	NA
+test	46	Response	25	360180	4647	1
+test	47	Picture	40	363034	0	1	2334	1	0	2130	miss	0
+test	48	Picture	90	365534	0	1	7334	1	0	7000	other	0
+test	48	Pulse	199	370000	4466	NA
+test	49	Picture	40	373035	0	1	3000	1	0	2690	miss	0
+test	50	Picture	90	376202	0	1	7167	1	0	7000	other	0
+test	50	Pulse	199	380000	3798	NA
+test	51	Picture	40	383869	0	1	4667	1	0	4350	miss	0
+test	52	Picture	90	388870	0	1	7501	1	0	7000	other	0
+test	52	Pulse	199	390000	1130	NA
+test	53	Picture	40	396537	0	1	3834	1	0	3310	miss	0
+test	53	Pulse	199	400000	3463	NA
+test	54	Picture	90	400537	0	1	7167	1	0	7000	other	0
+test	55	Picture	40	408038	0	1	2334	1	0	2140	miss	0
+test	55	Pulse	199	410000	1962	NA
+test	56	Picture	90	410538	0	1	7501	1	0	7000	other	0
+test	56	Response	20	415387	4848	1
+test	57	Picture	40	418206	0	1	2167	1	0	1780	miss	0
+test	57	Pulse	199	420000	1794	NA
+test	58	Picture	50	420539	0	1	34300	1	0	next	other	0
+test	58	Pulse	199	430000	9461	NA
+test	58	Pulse	199	440000	19461	NA
+test	58	Quit		448442	27902	NA

@@ -15,6 +15,9 @@ rlddm_v32	NA      2
 a_mod = decision boundary modifier
 LR = learning rates
 
+
+
+Some old notes: 
 Learning rate multiplier = 0.05 instead of 0.1 (trying to limit max assoc strength)
 
 For exponential decision boundary modifier:

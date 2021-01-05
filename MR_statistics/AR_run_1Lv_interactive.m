@@ -5,63 +5,52 @@ close all
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % script for analyzing tasks on first level
 % - Requires 'AR_gather_onsets" to gather onset info
-% - Requires 'AR_create_1stLevel_GLM1..n' to create the matlabbatch
+% - Requires 'AR_create_1stLevel_GLM1*.n' to create the matlabbatch
 % - Output dir and specific GLM function defined in variable "chooseGLM" 
 % - POPUPs to confirm master file and manual selection of a subject list
 % %G.Fraga Gonzalez(2020)
 %--------------------------------------------------------------------------------------------------------------
+masterfile =        'O:\studies\allread\mri\analysis_GFG\Allread_MasterFile_GFG.xlsx';
+paths.mri =         'O:\studies\allread\mri\preprocessed_LearningTask';% 
+paths.logs =        'O:\studies\allread\mri\analysis_GFG\stats\task\logs\normperf_72'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
+modelversion =       'AR_rlddm_v11';
+modeloutputfile =   ['O:\studies\allread\mri\analysis_GFG\stats\task\modelling\RLDDM_fromLocal\GoodPerf_72\outputs\out_',modelversion,'\Parameters_perTrial.csv'] ;
+
 scripts= ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_statistics');
 addpath('N:\studies\Grapholemo\Methods\Scripts\grapholemo\BEH_performance') % path to function to gather performance
 addpath(scripts)
-%% POPUP to confirm inputs files. 
-prompt = {'Masterfile:',...
-            'Sheet with subjects:',...
-            'Sheet with blocks',...
-            'Variable with subject id',...
-            'Variable with blocks'};      
-def    = {'O:\studies\allread\mri\analysis_GFG\Allread_MasterFile_GFG.xlsx',...
-           'Lists_subsamples',...
-           'MR_Learn_QA',...
-           'subjID',...
-           'Nada_selection_blocks'};       
-answer = inputdlg(prompt,'Confirm inputs',[1,60],def,'on');
-masterfile =        answer{1};
-sheetSubjects =     answer{2};
-sheetBlocks =       answer{3};
-variableSubjects =  answer{4};
-variableBlocks =    answer{5};
+%% Select GLM from 1lv scripts available
 
-%% POPUP Select list of subjects from file 
-T =             readtable(masterfile,'sheet',sheetSubjects); 
-[indx,tf] =     listdlg('PromptString','Select a list of participants:','ListString', T.Properties.VariableNames); % popup 
-groupName =     T.Properties.VariableNames(indx);
-Tcolumn =       T{:,indx};
-subjects =      Tcolumn(~cellfun('isempty',Tcolumn))';
-
-% Find block indices for subjects
-T2 =            readtable(masterfile,'sheet',sheetBlocks);
-allsubs =       T2(:,contains(T2.Properties.VariableNames,variableSubjects));
-allblocks =     T2(:,contains(T2.Properties.VariableNames,variableBlocks));
-blocks =        allblocks(contains(table2array(allsubs),subjects),:);
-blocks2use = table2cell(blocks);
-summary = [allsubs(contains(table2array(allsubs),subjects),:),blocks];
-
-disp(strcat('[[*** ',groupName,' ***]]')) % m_(-.-)_m ..
-disp(summary)
-
-%% Main paths and inputs
-%Select GLM from 1lv scripts available
 GLMs =  dir(strcat([scripts,'\*create_1Lv_*']));
 idx2 =  listdlg('PromptString','Select GLM','ListString', {GLMs.name}); % popup 
 selectedGLM =   strrep(strrep(GLMs(idx2).name,'AR_create_1Lv_',''),'.m','');
 disp(['Selected 1st Level: ',selectedGLM])
 
-paths.mri =     'O:\studies\allread\mri\preprocessed_LearningTask';% 
-paths.logs =    'O:\studies\allread\mri\analysis_GFG\stats\task\logs\raw'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
-paths.analysis = strcat('O:\studies\allread\mri\analysis_GFG\stats\mri\1Lv_',selectedGLM,'\',cell2mat(groupName));
-mkdir(paths.analysis)
-cd (paths.analysis)
- 
+%% POPUP Select SUBJECTS and BLOCKS from masterfile columns 
+T =             readtable(masterfile,'sheet','Lists_subsamples'); 
+[indx,tf] =     listdlg('PromptString','Select a list of participants:','ListString', T.Properties.VariableNames); % popup 
+groupName =     T.Properties.VariableNames(indx);
+Tcolumn =       T{:,indx};
+subjects =      Tcolumn(~cellfun('isempty',Tcolumn))';
+% blocks
+T2 =            readtable(masterfile,'sheet','Learn_performance');
+allsubs =       T2(:,contains(T2.Properties.VariableNames,'subjID'));
+allblocks =     T2(:,contains(T2.Properties.VariableNames,'BlockSelectXerrors'));
+blocks =        allblocks(contains(table2array(allsubs),subjects),:);
+blocks2use = table2cell(blocks);
+summary = [allsubs(contains(table2array(allsubs),subjects),:),blocks];
+disp(strcat('[[subject list =  ',groupName,' ]]')) % m_(-.-)_m ..
+disp(summary)
+
+% Set up output paths
+  if  contains(selectedGLM,'_mopa')
+        paths.analysis = strcat('O:\studies\allread\mri\analysis_GFG\stats\mri\',cell2mat(groupName),'\',modelversion,'\1Lv_',selectedGLM);
+        mkdir(paths.analysis)
+  else 
+       paths.analysis = strcat('O:\studies\allread\mri\analysis_GFG\stats\mri\',cell2mat(groupName),'\1Lv_',selectedGLM);
+        mkdir(paths.analysis)
+  end 
+  
 %% RUN 
 spm('defaults','fMRI')
 for i = 1:length(subjects)
@@ -76,7 +65,6 @@ for i = 1:length(subjects)
     currBlocks = split(blocks2use{i},',');
   %% PREPARE INPUTS 
    nsessions = length(currBlocks);  
-   
    % ONSETS  % ----------------------------------------------------------------------
    %Gather onsets from log files. Times need to be in seconds
    for b = 1:nsessions
@@ -84,15 +72,23 @@ for i = 1:length(subjects)
       logfiles(b) = {logfilesTMP.name} ;       
     end
     currPathLogs = [paths.logs,'\',subject];
-    % call "gather onsets" and "gather performance" (will  save a table)
-     [onsets,params] = AR_gather_onsets(logfiles,currPathLogs);                 % function call
-     AR_gather_performance(logfiles,currPathLogs);                              % function call
-      
-    
-    % SCANS----------------------------------------------------------------------
+   % call "gather onsets" and "gather performance" (will  save a table)
+    [onsets,params] = AR_gather_onsets(logfiles,currPathLogs);                 % call function  
+    AR_function_gather_performance(logfiles,currPathLogs);                              %  call function
+     
+    % SESSIONS /SCANS----------------------------------------------------------------------
     % find SCANS matching with log files
     fprintf(logfileID,strcat(['[[',subject,']]\r\n'])); 
     for j = 1:length(logfiles)
+        
+         %-------if you chose a model-based 1st level: read table with model output 
+         if  contains(selectedGLM,'_mopa')
+            Tmodel = readtable(modeloutputfile);
+            Tmodel = Tmodel(contains(Tmodel.subjID,subject),:);
+            % modeloutput{j} = T(find(T.block==str2num(strrep(patternId,'_B',''))),:);        
+            modeloutput{j} = Tmodel(find(Tmodel.block==j),:);        
+         end
+
           %take a pattern from logfile that can identify its corresponding mr file
           logfilesChar = logfiles{j};
           patternId = logfilesChar(end-6:end-4); % block id is used to find correct mr file
@@ -130,6 +126,7 @@ for i = 1:length(subjects)
           writetable(cell2table(num2cell(multireg)),[pathSubject,'\multiReg_',num2str(j),'.txt'],'WriteVariableNames',false)   
      %----------------------------------------------------------------------------------------
          %Write log 
+         fprintf(logfileID,strcat(['Model output read: ',strrep(modeloutputfile,'\','\\'),'\r\n\r\n'])); 
          fprintf(logfileID,strcat(['...',strrep([mrfilename.folder,'\',mrfilename.name],'\','\\'),'\r\n'])); 
          fprintf(logfileID,strcat(['...',strrep([paths.logs,'\',logfiles{j}],'\','\\'),'\r\n'])); 
          fprintf(logfileID,strcat(['...',strrep(logInfBadscans,'\','\\'),'\r\n'])); 
@@ -166,6 +163,12 @@ for i = 1:length(subjects)
               else
                 matlabbatch = AR_create_1Lv_GLM1(pathSubject,scans,onsets,nsessions);     
                end
+               
+   elseif strcmp('GLM0_mopa',selectedGLM)
+             matlabbatch = AR_create_1Lv_GLM0_mopa(pathSubject,modeloutput,scans,onsets,nsessions);
+             
+    elseif strcmp('GLM0_mopa_vpe',selectedGLM)
+             matlabbatch = AR_create_1Lv_GLM0_mopa_vpe(pathSubject,modeloutput,scans,onsets,nsessions);
    %%%
    elseif  strcmp('GLM1_pm1a',selectedGLM)
                 matlabbatch = AR_create_1Lv_GLM1_pm1a(pathSubject,scans,onsets,params,nsessions);      
@@ -177,7 +180,7 @@ for i = 1:length(subjects)
       disp(['_m_d[^_^]b_m Start running ',selectedGLM, ' for ',subject,'...'])
       spm_jobman('run',matlabbatch);
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      movefile(ls('*_001.jpg'),strrep(ls('*_001.jpg'),'_001.jpg','_design.jpg'))
+      movefile(ls([paths.analysis,'\',subject,'\*_001.jpg']),strrep(ls('*_001.jpg'),'_001.jpg','_design.jpg'))
       clear matlabbatch scans  rpdat
       fclose(logfileID);
       disp('done.')

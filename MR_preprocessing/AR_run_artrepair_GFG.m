@@ -13,7 +13,7 @@
 clear all
 %path to preprocess data / epis . 
 
-preprocessingDir= ['G:\preprocessing\block_3\epis\']; % slash '\' at the end! EPIS directory! not its parent dir 
+preprocessingDir= ['O:\studies\allread\mri\preprocessed_LearningTask\block_1\epis\']; % slash '\' at the end! EPIS directory! not its parent dir 
 %subject list
 files = dir([preprocessingDir,'AR*'])
 %files = files(~contains({files.name},'AR1026')); 
@@ -23,7 +23,7 @@ subject = {files.name};
             %'AR1052','AR1055','AR1056','AR1062',...
           % 'AR1063','AR1066','AR1068','AR1069'};
 %subject = {'AR1051','AR1058','AR1059','AR1070','AR1071','AR1075','AR1076','AR1088','AR1098','AR1104','AR1105','AR1107','AR1108'};
-subject = {'AR1109'}
+subject = {'AR1051'}
 cd (preprocessingDir)
 %% Loop thru subjects
  for ss = 1:numel(subject)
