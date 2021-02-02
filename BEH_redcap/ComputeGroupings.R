@@ -13,8 +13,8 @@ library(pracma)
 # - Threshold: poor < 16 good > 25  ('gap' those in between)
 # ----------------------------------------------------------------------------------------------------------------------------
 masterfile = 'O:/studies/allread/mri/analysis_GFG/Allread_MasterFile_GFG.xlsx'
-dirinput <-'O:/studies/allread/mri/analysis_GFG/stats/cognitive_tests'
-diroutput <-'O:/studies/allread/mri/analysis_GFG/stats/cognitive_tests'
+dirinput <-'O:/studies/allread/mri/analysis_GFG/stats/cognitive_tests/2021'
+diroutput <-'O:/studies/allread/mri/analysis_GFG/stats/cognitive_tests/2021'
 outputfilename <- 'grouping_computed.xls'
 
 setwd(dirinput)

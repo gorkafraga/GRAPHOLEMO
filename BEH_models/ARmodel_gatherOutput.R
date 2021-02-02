@@ -11,13 +11,13 @@ source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots an
 #
 #=============================================================================================================================
 # INPUTS
-model <- 'AR_rlddm_v31'
+model <- 'AR_rlddm_v12'
 
 #dirinput <- paste0("O:/studies/allread/mri/analysis_GFG/stats/task/modelling/RLDDM_fromLocal/GoodPerf_72/outputs/out_",model,"/")
-dirinput <- paste0("O:/studies/allread/mri/analyses_NF/rlddm_analyses_NF/RLDDM/normPerf72_no0/outputs/out_",model,"/")
+dirinput <- paste0("G:/local_models/RLDDM_phtests/GoodPerf_72/Outputs_cmdstan/weak_out_",model,"/")
 #dirPreprocessed <-"O:/studies/allread/mri/analysis_GFG/stats/task/modelling/RLDDM_fromLocal/GoodPerf_72/"
-dirPreprocessed <-"O:/studies/allread/mri/analyses_NF/rlddm_analyses_NF/RLDDM/normPerf72_no0/"
-diroutput <- paste0("O:/studies/allread/mri/analyses_NF/rlddm_analyses_NF/RLDDM/normPerf72_no0/outputs/out_",model,"/test2")
+dirPreprocessed <-"G:/local_models/RLDDM_phtests/GoodPerf_72/"
+diroutput <- paste0("G:/local_models/RLDDM_phtests/GoodPerf_72/Outputs_cmdstan/weak_out_",model)
 
 # Parameters of interest
 
@@ -45,7 +45,7 @@ center_colmeans <- function(x) {
 setwd(dirinput)
 load(paste(dirPreprocessed,"/Preproc_data.rda",sep="")) #read gathered data (that will be combined with model parameters later)
 load(paste(dirPreprocessed,"/Preproc_list.rda",sep="")) #read list with gather data input for model
-fit <- readRDS(paste(dirinput,model,sep="")) # read model output
+fit <- readRDS(paste(dirinput,model,'.rds',sep="")) # read model output
 fitX <- extract(fit) # extract values  in list
 found_parameters <- unique(sapply(strsplit(names(fit),'[',fixed = TRUE),"[",1)) # list of unique parameters in the fit (lp_ = log posterior )
 
