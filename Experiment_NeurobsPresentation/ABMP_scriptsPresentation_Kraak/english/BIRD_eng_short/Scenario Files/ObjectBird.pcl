@@ -1,0 +1,327 @@
+
+array <int> VA[4][50];      # V/A pairs for every stimulus in a block
+array <int> V_order[200]= 
+{
+	1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 
+	1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 
+	1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 
+	1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 
+	1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 
+	1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 
+	1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 
+	1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 
+	1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 
+	1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4, 1,2,3,4
+};
+
+#=== practice variables ========================================
+
+array <int> practice[60] = 
+{
+	1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,
+	1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,
+	1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4
+};
+
+loop int i=1 until i>60
+begin
+	practice.shuffle(i,i+3);
+	i=i+4;
+end;	
+
+array <string> pract_pict[4] = { "poli_8sides 21_whiteLine3.jpg", "poli_8sides 22_whiteLine3.jpg", "poli_8sides 23_whiteLine3.jpg", "poli_8sides 24_whiteLine3.jpg" }; 
+array <string> pract_snd[4] =  { "Practice1_b27_cut1_mono.wav", "Practice2_b27_cut2_mono.wav", "Practice3_b26_cut1_mono.wav", "Practice4_b26_mono.wav" }; 
+
+pract_pict.shuffle();
+pract_snd.shuffle();
+
+#=== end practice setup ==============================================
+
+array <int> pos_feedback[2][50];
+
+array <int> iti[200] = 
+{ 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 750, 1000, 500, 750, 1000, 500, 750, 1000, 
+	500, 1000
+};
+
+#loop int i=1 until i>200 begin
+#	term.print(V_order[i]);
+#	term.print("\t");
+#	i=i+1;
+#end;	
+#term.print("\n");
+#term.print("\n");
+	
+sub randomize_block
+begin	
+	array <int> V1[50];      # V/A pairs for every stimulus in a block
+	array <int> Vmm[1];
+	Vmm.resize(nA2+nA3+nA4);
+
+	# randomize the Visual stimulus order
+	V_order.shuffle(1,4);
+	loop int i=1 until i>49 begin
+		V_order.shuffle(i*4+1,i*4+4);
+		loop until V_order[i*4] != V_order[i*4+1] begin V_order.shuffle(i*4+1,i*4+4); end;
+		i=i+1;
+	end;	
+		
+	loop int i=0 until i>12 begin
+		iti.shuffle(i*9+1,i*9+9);
+		i=i+1;
+	end;	
+	iti.shuffle(199,200);
+	
+	loop int ii=1 until ii>4 begin
+
+		# randomisation of the match/mismatch pairs
+		# first randomise the V1 array with only match/(any)mismatch
+		# then, build the mismatch array with the three different mismatch types
+		# then randomise the mismatch order
+		# then replace the fixed mismatches in the V1 array with the mismatch array Vmm
+
+		V1.fill(1,nA1,1,0);         	# put '1' in the array -> match
+		V1.fill(nA1+1,50,2,0);			# put '2' in the array -> mismatch 
+
+		Vmm.fill(1,nA2,2,0);
+		Vmm.fill(nA2+1,nA2+nA3,3,0); 
+		Vmm.fill(nA2+nA3+1,nA2+nA3+nA4,4,0); 
+
+		bool re_shuffle=true;
+	
+		# randomize the mismatch type, making sure no more than two follow each other per pict type
+		loop until re_shuffle==false begin
+			V1.shuffle();
+			re_shuffle=false;
+			loop int i=1 until i>48 begin
+				if (V1[i]==1 && V1[i+1]==1 && V1[i+2]==1) then re_shuffle=true; i=50; end;
+				i=i+1;
+			end;
+		end;	
+			
+		re_shuffle=true;
+			
+		# randomize the mismatch speech sounds	
+		loop until re_shuffle==false begin
+			Vmm.shuffle();
+			re_shuffle=false;
+			loop int i=1 until i>(nA2+nA3+nA4-3) begin
+				if (Vmm[i]==Vmm[i+1] && Vmm[i+1]==Vmm[i+2] && Vmm[i+2]==Vmm[i+3]) then re_shuffle=true; i=50; end;
+				i=i+1;
+			end;
+		end;	
+			
+		# we set the mismatch type in the V1 array fixed to '2'
+		# here we adjust this value to the correct speech sound 
+		loop 
+			int i=1; 
+			int j=1; 
+		until i>50 begin
+			if (V1[i]==2) then V1[i]=Vmm[j]; j=j+1; end;
+			i=i+1;
+		end;		
+		
+		# the VA is the array that we finally use to select the stimuli per trial
+		# here, we load the stimulus order per stimulus type for each block
+		loop int i=1 until i>50 begin
+			VA[ii][i]=V1[i]; 
+			i=i+1;
+		end;
+			
+#		loop int i=1 until i>50 begin
+#			term.print(VA[ii][i]);
+#			term.print("\t");
+#			i=i+1;
+#		end;
+#		term.print("\n");
+		
+		ii=ii+1;
+	end;	
+		
+	#=== RANDOM FEEDBACK FOR INCONSISTENT V/A PAIRS
+
+	int nr_pos=(percentage_positive*50)/100;
+
+
+	pos_feedback[1].fill(1,nr_pos,1,0);
+	pos_feedback[1].fill(nr_pos+1,pos_feedback[1].count(),0,0);
+
+	pos_feedback[2].fill(1,nr_pos,1,0);
+	pos_feedback[2].fill(nr_pos+1,pos_feedback[1].count(),0,0);
+
+	pos_feedback[1].shuffle();
+	pos_feedback[1].shuffle();
+	pos_feedback[2].shuffle();
+	pos_feedback[2].shuffle();
+
+#	loop int i=1 until i>50 begin
+#		term.print(pos_feedback[1][i]);
+#		term.print("\t");
+#		i=i+1;
+#	end;
+
+end;	
+
+sub randomize_simple_block
+begin
+	array <int> V1[50];      # V/A pairs for every stimulus in a block
+ 
+	# randomize the Visual stimulus order
+	V_order.shuffle(1,4);
+	loop int i=1 until i>49 begin
+		V_order.shuffle(i*4+1,i*4+4);
+		loop until V_order[i*4] != V_order[i*4+1] begin V_order.shuffle(i*4+1,i*4+4); end;
+		i=i+1;
+	end;	
+		
+	loop int i=0 until i>12 begin
+		iti.shuffle(i*9+1,i*9+9);
+		i=i+1;
+	end;	
+	iti.shuffle(199,200);
+	
+	loop int ii=1 until ii>4 begin
+
+		# randomisation of the match/mismatch pairs
+		# first randomise the V1 array with only match/(any)mismatch
+		# then, build the mismatch array with the three different mismatch types
+		# then randomise the mismatch order
+		# then replace the fixed mismatches in the V1 array with the mismatch array Vmm
+
+		loop int i=1 until i>50
+		begin
+			V1.fill(i,i+1,1,1);
+			V1.shuffle(i,i+1);
+			i=i+2;
+		end;	
+
+		# the VA is th array that we finally use to select the stimuli per trial
+		# here, we load the stimulus order per stimulus type for each block
+		loop int i=1 until i>50 begin
+			if ( ii<3 ) then 
+				VA[ii][i]=V1[i]; 
+			else
+				VA[ii][i]=V1[i]+2; 
+			end;
+			i=i+1;
+		end;
+			
+#		loop int i=1 until i>50 begin
+#			term.print(VA[ii][i]);
+#			term.print("\t");
+#			i=i+1;
+#		end;
+#		term.print("\n");
+		
+		ii=ii+1;
+	end;	
+	
+	#=== RANDOM FEEDBACK FOR INCONSISTENT V/A PAIRS
+
+	int nr_pos=(percentage_positive*50)/100;
+
+
+	pos_feedback[1].fill(1,nr_pos,1,0);
+	pos_feedback[1].fill(nr_pos+1,pos_feedback[1].count(),0,0);
+
+	pos_feedback[2].fill(1,nr_pos,1,0);
+	pos_feedback[2].fill(nr_pos+1,pos_feedback[1].count(),0,0);
+
+	pos_feedback[1].shuffle();
+	pos_feedback[1].shuffle();
+	pos_feedback[2].shuffle();
+	pos_feedback[2].shuffle();
+end;
+
+	
+#=== array with the filenames of pictures and sounds  
+     
+#array <string> pict_file[24] = 
+#{
+#	"cs+1a.jpg", "cs+1b.jpg", "cs+1c.jpg", "cs+1d.jpg", 
+#	"cs-2a.jpg", "cs-2b.jpg", "cs-2c.jpg", "cs-2d.jpg",
+#	
+#	"cs-2a.jpg", "cs-2b.jpg", "cs-2c.jpg", "cs-2d.jpg",
+#	
+#	"cs+1a.jpg", "cs+1b.jpg", "cs+1c.jpg", "cs+1d.jpg", 
+#	"cs-2a.jpg", "cs-2b.jpg", "cs-2c.jpg", "cs-2d.jpg"
+#};
+array <string> pict_file[20] = 
+{
+ "poli_8sides 1_whiteLine3.jpg", "poli_8sides 2_whiteLine3.jpg", "poli_8sides 3_whiteLine3.jpg", "poli_8sides 4_whiteLine3.jpg", 
+ "poli_8sides 5_whiteLine3.jpg", "poli_8sides 6_whiteLine3.jpg", "poli_8sides 7_whiteLine3.jpg", "poli_8sides 8_whiteLine3.jpg",
+	
+ "poli_8sides 9_whiteLine3.jpg", "poli_8sides 10_whiteLine3.jpg", "poli_8sides 11_whiteLine3.jpg", "poli_8sides 12_whiteLine3.jpg",
+	
+ "poli_8sides 13_whiteLine3.jpg", "poli_8sides 14_whiteLine3.jpg", "poli_8sides 15_whiteLine3.jpg", "poli_8sides 16_whiteLine3.jpg",
+ "poli_8sides 17_whiteLine3.jpg", "poli_8sides 18_whiteLine3.jpg", "poli_8sides 19_whiteLine3.jpg", "poli_8sides 20_whiteLine3.jpg"
+};
+
+array <string> sound_file[20] =
+{
+	
+	"Short_b23_cut1_mono.wav", "Short_b22_cut1_mono.wav", "Short_b20_cut1_mono.wav", "Short_b09_cut1_mono.wav", 
+
+"MediumLong_e19_mono.wav", "MediumLong_e04_mono.wav", "MediumLong_b23_cut4_ML_mono.wav", "MediumLong_b10_cut2_L_mono.wav", 
+  "Medium_e26_mono.wav", "Medium_e21_mono.wav", "Medium_e13_mono.wav", "Medium_e01_cut1_mono.wav", 
+
+ "MediumShort_e22_cut1_mono.wav", "MediumShort_e16_cut1_mono.wav", "MediumShort_b16_cut3_MS_mono.wav", "MediumShort_b10_cut1_MS_mono.wav",
+
+   "Long_s10_cut2_l_mono.wav", "Long_e24_cut1_mono.wav", "Long_e17_cut2_mono.wav", "Long_b01_cut2_L_mono.wav" 
+};
+
+
+# sound_file.shuffle();
+sound_file.shuffle( 1, 4);
+sound_file.shuffle( 5, 12);
+sound_file.shuffle(13,16);
+sound_file.shuffle(17,20);
+
+
+array <int> snd_array_offset[5]= {0,4,8,12,16};
+snd_array_offset.shuffle();
+
+pict_file.shuffle( 1, 20);
+#pict_file.shuffle( 5, 8);
+#pict_file.shuffle( 9,12);
+#pict_file.shuffle(13,16);
+#pict_file.shuffle(17,20);
+#pict_file.shuffle(21,24);
+
+array <int> pict_array_offset[5]= {0,4,8,12,16};
+pict_array_offset.shuffle();
+
+
+array <string> activePict[4];
+array <string> activeSnd[4];
+
+sub string get_filename(string s)
+begin
+	array <string> parts[0];
+	s.split("\\", parts);
+	return parts[parts.count()];
+end;
+
+

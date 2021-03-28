@@ -1,0 +1,744 @@
+Scenario - FeedLearn_A.sce
+Logfile written - 09/28/2020 13:22:14
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Fionn	0	Pulse	199	0	0	NA
+Fionn	0	Pulse	199	10000	10000	NA
+Fionn	1	Pulse	199	20000	9833	NA
+Fionn	1	Pulse	199	30000	19833	NA
+Fionn	1	Pulse	199	40000	29833	NA
+Fionn	1	Pulse	199	50000	39833	NA
+Fionn	1	Pulse	199	60000	49833	NA
+Fionn	1	Pulse	199	70000	59833	NA
+Fionn	1	Pulse	199	80000	69833	NA
+Fionn	1	Pulse	199	90000	79833	NA
+Fionn	1	Pulse	199	100000	89833	NA
+Fionn	1	Pulse	199	110000	99833	NA
+Fionn	1	Pulse	199	120000	109833	NA
+Fionn	1	Pulse	199	130000	119833	NA
+Fionn	1	Pulse	199	140000	129833	NA
+Fionn	1	Pulse	199	150000	139833	NA
+Fionn	1	Pulse	199	160000	149833	NA
+Fionn	1	Pulse	199	170000	159833	NA
+Fionn	1	Pulse	199	180000	169833	NA
+Fionn	1	Pulse	199	190000	179833	NA
+Fionn	1	Pulse	199	200000	189833	NA
+Fionn	1	Pulse	199	210000	199833	NA
+Fionn	1	Pulse	199	220000	209833	NA
+Fionn	1	Pulse	199	230000	219833	NA
+Fionn	1	Pulse	199	240000	229833	NA
+Fionn	1	Pulse	199	250000	239833	NA
+Fionn	1	Pulse	199	260000	249833	NA
+Fionn	1	Pulse	199	270000	259833	NA
+Fionn	1	Pulse	199	280000	269833	NA
+Fionn	1	Pulse	199	290000	279833	NA
+Fionn	1	Pulse	199	300000	289833	NA
+Fionn	1	Pulse	199	310000	299833	NA
+Fionn	1	Pulse	199	320000	309833	NA
+Fionn	1	Pulse	199	330000	319833	NA
+Fionn	1	Pulse	199	340000	329833	NA
+Fionn	1	Pulse	199	350000	339833	NA
+Fionn	1	Pulse	199	360000	349833	NA
+Fionn	1	Pulse	199	370000	359833	NA
+Fionn	1	Pulse	199	380000	369833	NA
+Fionn	1	Pulse	199	390000	379833	NA
+Fionn	1	Pulse	199	400000	389833	NA
+Fionn	1	Pulse	199	410000	399833	NA
+Fionn	1	Pulse	199	420000	409833	NA
+Fionn	1	Pulse	199	430000	419833	NA
+Fionn	1	Pulse	199	440000	429833	NA
+Fionn	1	Pulse	199	450000	439833	NA
+Fionn	1	Pulse	199	460000	449833	NA
+Fionn	1	Pulse	199	470000	459833	NA
+Fionn	1	Response	16	475570	465403	1
+Fionn	2	Pulse	199	480000	4421	NA
+Fionn	2	Pulse	199	490000	14421	NA
+Fionn	2	Pulse	199	500000	24421	NA
+Fionn	2	Pulse	199	510000	34421	NA
+Fionn	2	Pulse	199	520000	44421	NA
+Fionn	2	Response	16	524211	48631	1
+Fionn	3	Picture	fix	525848	0	1	33033	1	0	next	other	0
+Fionn	3	Pulse	199	530000	4152	NA
+Fionn	3	Pulse	199	540000	14152	NA
+Fionn	3	Pulse	199	550000	24152	NA
+Fionn	5	Picture	stim	558881	0	1	25192	1	0	25000	miss	0
+Fionn	5	Pulse	199	560000	1119	NA
+Fionn	5	Pulse	199	570000	11119	NA
+Fionn	5	Pulse	199	580000	21119	NA
+Fionn	6	Picture	fix2	584073	0	1	20020	1	0	next	other	0
+Fionn	6	Pulse	199	590000	5927	NA
+Fionn	6	Response	16	596290	12216	1
+Fionn	6	Pulse	199	600000	15927	NA
+Fionn	7	Picture	feedback	604093	0	1	20187	1	0	next	other	0
+Fionn	7	Pulse	199	610000	5907	NA
+Fionn	7	Pulse	199	620000	15907	NA
+Fionn	8	Picture	fix	624280	0	1	20520	1	0	next	other	0
+Fionn	8	Pulse	199	630000	5720	NA
+Fionn	8	Pulse	199	640000	15720	NA
+Fionn	10	Picture	stim	644801	0	1	25192	1	0	25000	incorrect	76
+Fionn	10	Pulse	199	650000	5199	NA
+Fionn	10	Response	32	656450	11649	1
+Fionn	10	Pulse	199	660000	15199	NA
+Fionn	11	Picture	fix2	669992	0	1	16183	1	0	next	other	0
+Fionn	11	Pulse	199	670000	8	NA
+Fionn	11	Pulse	199	680000	10008	NA
+Fionn	12	Picture	feedback	686175	0	1	20187	1	0	next	other	0
+Fionn	12	Pulse	199	690000	3825	NA
+Fionn	12	Pulse	199	700000	13825	NA
+Fionn	13	Picture	fix	706362	0	1	22856	1	0	next	other	0
+Fionn	13	Pulse	199	710000	3638	NA
+Fionn	13	Pulse	199	720000	13638	NA
+Fionn	14	Response	16	729090	37	1
+Fionn	15	Picture	stim	729218	0	1	25192	1	0	25000	miss	0
+Fionn	15	Pulse	199	730000	782	NA
+Fionn	15	Pulse	199	740000	10782	NA
+Fionn	15	Pulse	199	750000	20782	NA
+Fionn	16	Picture	fix2	754577	0	1	23357	1	0	next	other	0
+Fionn	16	Pulse	199	760000	5423	NA
+Fionn	16	Response	16	769570	14993	1
+Fionn	16	Pulse	199	770000	15423	NA
+Fionn	17	Picture	feedback	777934	0	1	20187	1	0	next	other	0
+Fionn	17	Pulse	199	780000	2066	NA
+Fionn	17	Pulse	199	790000	12066	NA
+Fionn	18	Picture	fix	798120	0	1	18685	1	0	next	other	0
+Fionn	18	Pulse	199	800000	1880	NA
+Fionn	18	Pulse	199	810000	11880	NA
+Fionn	20	Picture	stim	816806	0	1	25192	1	0	25000	incorrect	104
+Fionn	20	Pulse	199	820000	3194	NA
+Fionn	20	Response	32	825809	9003	1
+Fionn	20	Pulse	199	830000	13194	NA
+Fionn	20	Pulse	199	840000	23194	NA
+Fionn	21	Picture	fix2	841998	0	1	21355	1	0	next	other	0
+Fionn	21	Pulse	199	850000	8002	NA
+Fionn	21	Pulse	199	860000	18002	NA
+Fionn	22	Picture	feedback	863352	0	1	20187	1	0	next	other	0
+Fionn	22	Pulse	199	870000	6648	NA
+Fionn	22	Pulse	199	880000	16648	NA
+Fionn	23	Picture	fix	883539	0	1	19353	1	0	next	other	0
+Fionn	23	Pulse	199	890000	6461	NA
+Fionn	23	Pulse	199	900000	16461	NA
+Fionn	25	Picture	stim	902892	0	1	25192	1	0	25000	hit	119
+Fionn	25	Pulse	199	910000	7108	NA
+Fionn	25	Pulse	199	920000	17108	NA
+Fionn	25	Response	16	920609	17717	1
+Fionn	26	Picture	fix2	928084	0	1	16350	1	0	next	other	0
+Fionn	26	Pulse	199	930000	1916	NA
+Fionn	26	Pulse	199	940000	11916	NA
+Fionn	27	Picture	feedback	944433	0	1	20187	1	0	next	other	0
+Fionn	27	Pulse	199	950000	5567	NA
+Fionn	27	Pulse	199	960000	15567	NA
+Fionn	28	Picture	fix	964620	0	1	23690	1	0	next	other	0
+Fionn	28	Pulse	199	970000	5380	NA
+Fionn	28	Pulse	199	980000	15380	NA
+Fionn	30	Picture	stim	988310	0	1	25192	1	0	25000	incorrect	132
+Fionn	30	Pulse	199	990000	1690	NA
+Fionn	30	Pulse	199	1000000	11690	NA
+Fionn	30	Response	32	1002609	14298	1
+Fionn	30	Pulse	199	1010000	21690	NA
+Fionn	31	Picture	fix2	1013502	0	1	14848	1	0	next	other	0
+Fionn	31	Pulse	199	1020000	6498	NA
+Fionn	32	Picture	feedback	1028350	0	1	20187	1	0	next	other	0
+Fionn	32	Pulse	199	1030000	1650	NA
+Fionn	32	Pulse	199	1040000	11650	NA
+Fionn	33	Picture	fix	1048537	0	1	23524	1	0	next	other	0
+Fionn	33	Pulse	199	1050000	1463	NA
+Fionn	33	Pulse	199	1060000	11463	NA
+Fionn	33	Pulse	199	1070000	21463	NA
+Fionn	35	Picture	stim	1072061	0	1	25192	1	0	25000	incorrect	146
+Fionn	35	Pulse	199	1080000	7939	NA
+Fionn	35	Pulse	199	1090000	17939	NA
+Fionn	35	Response	32	1090451	18390	1
+Fionn	36	Picture	fix2	1097419	0	1	15849	1	0	next	other	0
+Fionn	36	Pulse	199	1100000	2581	NA
+Fionn	36	Pulse	199	1110000	12581	NA
+Fionn	37	Picture	feedback	1113269	0	1	20187	1	0	next	other	0
+Fionn	37	Pulse	199	1120000	6731	NA
+Fionn	37	Pulse	199	1130000	16731	NA
+Fionn	38	Picture	fix	1133455	0	1	20020	1	0	next	other	0
+Fionn	38	Pulse	199	1140000	6545	NA
+Fionn	38	Pulse	199	1150000	16545	NA
+Fionn	40	Picture	stim	1153475	0	1	25192	1	0	25000	hit	158
+Fionn	40	Pulse	199	1160000	6525	NA
+Fionn	40	Response	16	1164451	10975	1
+Fionn	40	Pulse	199	1170000	16525	NA
+Fionn	41	Picture	fix2	1178667	0	1	13847	1	0	next	other	0
+Fionn	41	Pulse	199	1180000	1333	NA
+Fionn	41	Pulse	199	1190000	11333	NA
+Fionn	42	Picture	feedback	1192514	0	1	20187	1	0	next	other	0
+Fionn	42	Pulse	199	1200000	7486	NA
+Fionn	42	Pulse	199	1210000	17486	NA
+Fionn	43	Picture	fix	1212701	0	1	31198	1	0	next	other	0
+Fionn	43	Pulse	199	1220000	7299	NA
+Fionn	43	Pulse	199	1230000	17299	NA
+Fionn	43	Pulse	199	1240000	27299	NA
+Fionn	45	Picture	stim	1243899	0	1	25192	1	0	25000	incorrect	173
+Fionn	45	Pulse	199	1250000	6101	NA
+Fionn	45	Pulse	199	1260000	16101	NA
+Fionn	45	Response	32	1260211	16312	1
+Fionn	46	Picture	fix2	1269258	0	1	11178	1	0	next	other	0
+Fionn	46	Pulse	199	1270000	742	NA
+Fionn	46	Pulse	199	1280000	10742	NA
+Fionn	47	Picture	feedback	1280436	0	1	20187	1	0	next	other	0
+Fionn	47	Pulse	199	1290000	9564	NA
+Fionn	47	Pulse	199	1300000	19564	NA
+Fionn	48	Picture	fix	1300622	0	1	26860	1	0	next	other	0
+Fionn	48	Pulse	199	1310000	9378	NA
+Fionn	48	Pulse	199	1320000	19378	NA
+Fionn	50	Picture	stim	1327483	0	1	25192	1	0	25000	hit	186
+Fionn	50	Pulse	199	1330000	2517	NA
+Fionn	50	Pulse	199	1340000	12517	NA
+Fionn	50	Response	16	1343571	16088	1
+Fionn	50	Pulse	199	1350000	22517	NA
+Fionn	51	Picture	fix2	1352674	0	1	10844	1	0	next	other	0
+Fionn	51	Pulse	199	1360000	7326	NA
+Fionn	52	Picture	feedback	1363519	0	1	20187	1	0	next	other	0
+Fionn	52	Pulse	199	1370000	6481	NA
+Fionn	52	Pulse	199	1380000	16481	NA
+Fionn	53	Picture	fix	1383705	0	1	29696	1	0	next	other	0
+Fionn	53	Pulse	199	1390000	6295	NA
+Fionn	53	Pulse	199	1400000	16295	NA
+Fionn	53	Pulse	199	1410000	26295	NA
+Fionn	55	Picture	stim	1413402	0	1	25192	1	0	25000	miss	0
+Fionn	55	Pulse	199	1420000	6598	NA
+Fionn	55	Pulse	199	1430000	16598	NA
+Fionn	56	Picture	fix2	1438594	0	1	17351	1	0	next	other	0
+Fionn	56	Pulse	199	1440000	1406	NA
+Fionn	56	Response	32	1442289	3696	1
+Fionn	56	Pulse	199	1450000	11406	NA
+Fionn	57	Picture	feedback	1455944	0	1	20187	1	0	next	other	0
+Fionn	57	Pulse	199	1460000	4056	NA
+Fionn	57	Pulse	199	1470000	14056	NA
+Fionn	58	Picture	fix	1476131	0	1	26527	1	0	next	other	0
+Fionn	58	Pulse	199	1480000	3869	NA
+Fionn	58	Pulse	199	1490000	13869	NA
+Fionn	58	Pulse	199	1500000	23869	NA
+Fionn	60	Picture	stim	1502658	0	1	25192	1	0	25000	hit	213
+Fionn	60	Pulse	199	1510000	7342	NA
+Fionn	60	Response	16	1513169	10512	1
+Fionn	60	Pulse	199	1520000	17342	NA
+Fionn	61	Picture	fix2	1527849	0	1	21688	1	0	next	other	0
+Fionn	61	Pulse	199	1530000	2151	NA
+Fionn	61	Pulse	199	1540000	12151	NA
+Fionn	62	Picture	feedback	1549538	0	1	20187	1	0	next	other	0
+Fionn	62	Pulse	199	1550000	462	NA
+Fionn	62	Pulse	199	1560000	10462	NA
+Fionn	63	Picture	fix	1569725	0	1	28529	1	0	next	other	0
+Fionn	63	Pulse	199	1570000	275	NA
+Fionn	63	Pulse	199	1580000	10275	NA
+Fionn	63	Pulse	199	1590000	20275	NA
+Fionn	65	Picture	stim	1598253	0	1	25192	1	0	25000	incorrect	227
+Fionn	65	Pulse	199	1600000	1747	NA
+Fionn	65	Response	32	1605889	7636	1
+Fionn	65	Pulse	199	1610000	11747	NA
+Fionn	65	Pulse	199	1620000	21747	NA
+Fionn	66	Picture	fix2	1623445	0	1	16016	1	0	next	other	0
+Fionn	66	Pulse	199	1630000	6555	NA
+Fionn	67	Picture	feedback	1639461	0	1	20187	1	0	next	other	0
+Fionn	67	Pulse	199	1640000	539	NA
+Fionn	67	Pulse	199	1650000	10539	NA
+Fionn	68	Picture	fix	1659648	0	1	23690	1	0	next	other	0
+Fionn	68	Pulse	199	1660000	352	NA
+Fionn	68	Pulse	199	1670000	10352	NA
+Fionn	68	Pulse	199	1680000	20352	NA
+Fionn	70	Picture	stim	1683338	0	1	25192	1	0	25000	incorrect	241
+Fionn	70	Pulse	199	1690000	6662	NA
+Fionn	70	Response	32	1698289	14951	1
+Fionn	70	Pulse	199	1700000	16662	NA
+Fionn	71	Picture	fix2	1708530	0	1	26193	1	0	next	other	0
+Fionn	71	Pulse	199	1710000	1470	NA
+Fionn	71	Pulse	199	1720000	11470	NA
+Fionn	71	Pulse	199	1730000	21470	NA
+Fionn	72	Picture	feedback	1734723	0	1	20187	1	0	next	other	0
+Fionn	72	Pulse	199	1740000	5277	NA
+Fionn	72	Pulse	199	1750000	15277	NA
+Fionn	73	Picture	fix	1754910	0	1	24858	1	0	next	other	0
+Fionn	73	Pulse	199	1760000	5090	NA
+Fionn	73	Pulse	199	1770000	15090	NA
+Fionn	75	Picture	stim	1779768	0	1	25192	1	0	25000	incorrect	256
+Fionn	75	Pulse	199	1780000	232	NA
+Fionn	75	Pulse	199	1790000	10232	NA
+Fionn	75	Response	32	1791330	11563	1
+Fionn	75	Pulse	199	1800000	20232	NA
+Fionn	76	Picture	fix2	1804960	0	1	16683	1	0	next	other	0
+Fionn	76	Pulse	199	1810000	5040	NA
+Fionn	76	Pulse	199	1820000	15040	NA
+Fionn	77	Picture	feedback	1821643	0	1	20187	1	0	next	other	0
+Fionn	77	Pulse	199	1830000	8357	NA
+Fionn	77	Pulse	199	1840000	18357	NA
+Fionn	78	Picture	fix	1841830	0	1	26527	1	0	next	other	0
+Fionn	78	Pulse	199	1850000	8170	NA
+Fionn	78	Pulse	199	1860000	18170	NA
+Fionn	80	Picture	stim	1868356	0	1	25192	1	0	25000	incorrect	270
+Fionn	80	Pulse	199	1870000	1644	NA
+Fionn	80	Pulse	199	1880000	11644	NA
+Fionn	80	Response	32	1881570	13213	1
+Fionn	80	Pulse	199	1890000	21644	NA
+Fionn	81	Picture	fix2	1893548	0	1	23524	1	0	next	other	0
+Fionn	81	Pulse	199	1900000	6452	NA
+Fionn	81	Pulse	199	1910000	16452	NA
+Fionn	82	Picture	feedback	1917072	0	1	20187	1	0	next	other	0
+Fionn	82	Pulse	199	1920000	2928	NA
+Fionn	82	Pulse	199	1930000	12928	NA
+Fionn	83	Picture	fix	1937258	0	1	29029	1	0	next	other	0
+Fionn	83	Pulse	199	1940000	2742	NA
+Fionn	83	Pulse	199	1950000	12742	NA
+Fionn	83	Pulse	199	1960000	22742	NA
+Fionn	85	Picture	stim	1966287	0	1	25192	1	0	25000	hit	285
+Fionn	85	Pulse	199	1970000	3713	NA
+Fionn	85	Pulse	199	1980000	13713	NA
+Fionn	85	Response	16	1980290	14002	1
+Fionn	85	Pulse	199	1990000	23713	NA
+Fionn	86	Picture	fix2	1991479	0	1	16683	1	0	next	other	0
+Fionn	86	Pulse	199	2000000	8521	NA
+Fionn	87	Picture	feedback	2008163	0	1	20187	1	0	next	other	0
+Fionn	87	Pulse	199	2010000	1837	NA
+Fionn	87	Pulse	199	2020000	11837	NA
+Fionn	88	Picture	fix	2028349	0	1	26860	1	0	next	other	0
+Fionn	88	Pulse	199	2030000	1651	NA
+Fionn	88	Pulse	199	2040000	11651	NA
+Fionn	88	Pulse	199	2050000	21651	NA
+Fionn	90	Picture	stim	2055210	0	1	25192	1	0	25000	incorrect	298
+Fionn	90	Pulse	199	2060000	4790	NA
+Fionn	90	Response	32	2068049	12840	1
+Fionn	90	Pulse	199	2070000	14790	NA
+Fionn	90	Pulse	199	2080000	24790	NA
+Fionn	91	Picture	fix2	2080401	0	1	13013	1	0	next	other	0
+Fionn	91	Pulse	199	2090000	9599	NA
+Fionn	92	Picture	feedback	2093414	0	1	20187	1	0	next	other	0
+Fionn	92	Pulse	199	2100000	6586	NA
+Fionn	92	Pulse	199	2110000	16586	NA
+Fionn	93	Picture	fix	2113601	0	1	22356	1	0	next	other	0
+Fionn	93	Pulse	199	2120000	6399	NA
+Fionn	93	Pulse	199	2130000	16399	NA
+Fionn	95	Picture	stim	2135957	0	1	25192	1	0	25000	hit	311
+Fionn	95	Pulse	199	2140000	4043	NA
+Fionn	95	Response	16	2149330	13373	1
+Fionn	95	Pulse	199	2150000	14043	NA
+Fionn	95	Pulse	199	2160000	24043	NA
+Fionn	96	Picture	fix2	2161316	0	1	9176	1	0	next	other	0
+Fionn	96	Pulse	199	2170000	8684	NA
+Fionn	97	Picture	feedback	2170491	0	1	20187	1	0	next	other	0
+Fionn	97	Pulse	199	2180000	9509	NA
+Fionn	97	Pulse	199	2190000	19509	NA
+Fionn	98	Picture	fix	2190678	0	1	17518	1	0	next	other	0
+Fionn	98	Pulse	199	2200000	9322	NA
+Fionn	100	Picture	stim	2208196	0	1	25192	1	0	25000	incorrect	324
+Fionn	100	Pulse	199	2210000	1804	NA
+Fionn	100	Pulse	199	2220000	11804	NA
+Fionn	100	Response	32	2226368	18172	1
+Fionn	100	Pulse	199	2230000	21804	NA
+Fionn	101	Picture	fix2	2233388	0	1	14681	1	0	next	other	0
+Fionn	101	Pulse	199	2240000	6612	NA
+Fionn	102	Picture	feedback	2248069	0	1	20187	1	0	next	other	0
+Fionn	102	Pulse	199	2250000	1931	NA
+Fionn	102	Pulse	199	2260000	11931	NA
+Fionn	103	Picture	fix	2268256	0	1	19019	1	0	next	other	0
+Fionn	103	Pulse	199	2270000	1744	NA
+Fionn	103	Pulse	199	2280000	11744	NA
+Fionn	105	Picture	stim	2287275	0	1	25192	1	0	25000	hit	337
+Fionn	105	Pulse	199	2290000	2725	NA
+Fionn	105	Pulse	199	2300000	12725	NA
+Fionn	105	Response	16	2303808	16533	1
+Fionn	105	Pulse	199	2310000	22725	NA
+Fionn	106	Picture	fix2	2312467	0	1	18685	1	0	next	other	0
+Fionn	106	Pulse	199	2320000	7533	NA
+Fionn	106	Pulse	199	2330000	17533	NA
+Fionn	107	Picture	feedback	2331152	0	1	20187	1	0	next	other	0
+Fionn	107	Pulse	199	2340000	8848	NA
+Fionn	107	Pulse	199	2350000	18848	NA
+Fionn	108	Picture	fix	2351339	0	1	20187	1	0	next	other	0
+Fionn	108	Pulse	199	2360000	8661	NA
+Fionn	108	Pulse	199	2370000	18661	NA
+Fionn	110	Picture	stim	2371526	0	1	25192	1	0	25000	incorrect	350
+Fionn	110	Pulse	199	2380000	8474	NA
+Fionn	110	Response	32	2387410	15884	1
+Fionn	110	Pulse	199	2390000	18474	NA
+Fionn	111	Picture	fix2	2396717	0	1	22356	1	0	next	other	0
+Fionn	111	Pulse	199	2400000	3283	NA
+Fionn	111	Pulse	199	2410000	13283	NA
+Fionn	112	Picture	feedback	2419073	0	1	20187	1	0	next	other	0
+Fionn	112	Pulse	199	2420000	927	NA
+Fionn	112	Pulse	199	2430000	10927	NA
+Fionn	113	Picture	fix	2439260	0	1	16350	1	0	next	other	0
+Fionn	113	Pulse	199	2440000	740	NA
+Fionn	113	Pulse	199	2450000	10740	NA
+Fionn	115	Picture	stim	2455610	0	1	25192	1	0	25000	incorrect	363
+Fionn	115	Pulse	199	2460000	4390	NA
+Fionn	115	Response	32	2467810	12200	1
+Fionn	115	Pulse	199	2470000	14390	NA
+Fionn	115	Pulse	199	2480000	24390	NA
+Fionn	116	Picture	fix2	2480801	0	1	22022	1	0	next	other	0
+Fionn	116	Pulse	199	2490000	9199	NA
+Fionn	116	Pulse	199	2500000	19199	NA
+Fionn	117	Picture	feedback	2502823	0	1	20187	1	0	next	other	0
+Fionn	117	Pulse	199	2510000	7177	NA
+Fionn	117	Pulse	199	2520000	17177	NA
+Fionn	118	Picture	fix	2523010	0	1	23524	1	0	next	other	0
+Fionn	118	Pulse	199	2530000	6990	NA
+Fionn	118	Pulse	199	2540000	16990	NA
+Fionn	120	Picture	stim	2546534	0	1	25192	1	0	25000	hit	377
+Fionn	120	Pulse	199	2550000	3466	NA
+Fionn	120	Response	16	2559171	12637	1
+Fionn	120	Pulse	199	2560000	13466	NA
+Fionn	120	Pulse	199	2570000	23466	NA
+Fionn	121	Picture	fix2	2571726	0	1	24358	1	0	next	other	0
+Fionn	121	Pulse	199	2580000	8274	NA
+Fionn	121	Pulse	199	2590000	18274	NA
+Fionn	122	Picture	feedback	2596083	0	1	20187	1	0	next	other	0
+Fionn	122	Pulse	199	2600000	3917	NA
+Fionn	122	Pulse	199	2610000	13917	NA
+Fionn	123	Picture	fix	2616270	0	1	26860	1	0	next	other	0
+Fionn	123	Pulse	199	2620000	3730	NA
+Fionn	123	Pulse	199	2630000	13730	NA
+Fionn	123	Pulse	199	2640000	23730	NA
+Fionn	125	Picture	stim	2643130	0	1	25192	1	0	25000	hit	393
+Fionn	125	Pulse	199	2650000	6870	NA
+Fionn	125	Pulse	199	2660000	16870	NA
+Fionn	125	Response	16	2662291	19161	1
+Fionn	126	Picture	fix2	2668489	0	1	21355	1	0	next	other	0
+Fionn	126	Pulse	199	2670000	1511	NA
+Fionn	126	Pulse	199	2680000	11511	NA
+Fionn	127	Picture	feedback	2689844	0	1	20187	1	0	next	other	0
+Fionn	127	Pulse	199	2690000	156	NA
+Fionn	127	Pulse	199	2700000	10156	NA
+Fionn	127	Pulse	199	2710000	20156	NA
+Fionn	128	Picture	fix	2710030	0	1	28028	1	0	next	other	0
+Fionn	128	Pulse	199	2720000	9970	NA
+Fionn	128	Pulse	199	2730000	19970	NA
+Fionn	130	Picture	stim	2738058	0	1	25192	1	0	25000	incorrect	407
+Fionn	130	Pulse	199	2740000	1942	NA
+Fionn	130	Pulse	199	2750000	11942	NA
+Fionn	130	Response	32	2753811	15752	1
+Fionn	130	Pulse	199	2760000	21942	NA
+Fionn	131	Picture	fix2	2763250	0	1	16850	1	0	next	other	0
+Fionn	131	Pulse	199	2770000	6750	NA
+Fionn	131	Pulse	199	2780000	16750	NA
+Fionn	132	Picture	feedback	2780100	0	1	20187	1	0	next	other	0
+Fionn	132	Pulse	199	2790000	9900	NA
+Fionn	132	Pulse	199	2800000	19900	NA
+Fionn	133	Picture	fix	2800287	0	1	24691	1	0	next	other	0
+Fionn	133	Pulse	199	2810000	9713	NA
+Fionn	133	Pulse	199	2820000	19713	NA
+Fionn	135	Picture	stim	2824979	0	1	25192	1	0	25000	hit	420
+Fionn	135	Pulse	199	2830000	5021	NA
+Fionn	135	Response	16	2835488	10509	1
+Fionn	135	Pulse	199	2840000	15021	NA
+Fionn	135	Pulse	199	2850000	25021	NA
+Fionn	136	Picture	fix2	2850170	0	1	27694	1	0	next	other	0
+Fionn	136	Pulse	199	2860000	9830	NA
+Fionn	136	Pulse	199	2870000	19830	NA
+Fionn	137	Picture	feedback	2877865	0	1	20187	1	0	next	other	0
+Fionn	137	Pulse	199	2880000	2135	NA
+Fionn	137	Pulse	199	2890000	12135	NA
+Fionn	138	Picture	fix	2898052	0	1	32199	1	0	next	other	0
+Fionn	138	Pulse	199	2900000	1948	NA
+Fionn	138	Pulse	199	2910000	11948	NA
+Fionn	138	Pulse	199	2920000	21948	NA
+Fionn	138	Pulse	199	2930000	31948	NA
+Fionn	140	Picture	stim	2930250	0	1	25192	1	0	25000	incorrect	436
+Fionn	140	Pulse	199	2940000	9750	NA
+Fionn	140	Response	32	2941409	11158	1
+Fionn	140	Pulse	199	2950000	19750	NA
+Fionn	141	Picture	fix2	2955609	0	1	15182	1	0	next	other	0
+Fionn	141	Pulse	199	2960000	4391	NA
+Fionn	141	Pulse	199	2970000	14391	NA
+Fionn	142	Picture	feedback	2970791	0	1	20187	1	0	next	other	0
+Fionn	142	Pulse	199	2980000	9209	NA
+Fionn	142	Pulse	199	2990000	19209	NA
+Fionn	143	Picture	fix	2990978	0	1	25192	1	0	next	other	0
+Fionn	143	Pulse	199	3000000	9022	NA
+Fionn	143	Pulse	199	3010000	19022	NA
+Fionn	145	Picture	stim	3016170	0	1	25192	1	0	25000	incorrect	450
+Fionn	145	Pulse	199	3020000	3830	NA
+Fionn	145	Pulse	199	3030000	13830	NA
+Fionn	145	Response	32	3032689	16520	1
+Fionn	145	Pulse	199	3040000	23830	NA
+Fionn	146	Picture	fix2	3041528	0	1	16517	1	0	next	other	0
+Fionn	146	Pulse	199	3050000	8472	NA
+Fionn	147	Picture	feedback	3058045	0	1	20187	1	0	next	other	0
+Fionn	147	Pulse	199	3060000	1955	NA
+Fionn	147	Pulse	199	3070000	11955	NA
+Fionn	148	Picture	fix	3078232	0	1	22356	1	0	next	other	0
+Fionn	148	Pulse	199	3080000	1768	NA
+Fionn	148	Pulse	199	3090000	11768	NA
+Fionn	148	Pulse	199	3100000	21768	NA
+Fionn	150	Picture	stim	3100587	0	1	25192	1	0	25000	hit	463
+Fionn	150	Pulse	199	3110000	9413	NA
+Fionn	150	Response	16	3116209	15621	1
+Fionn	150	Pulse	199	3120000	19413	NA
+Fionn	151	Picture	fix2	3125779	0	1	22523	1	0	next	other	0
+Fionn	151	Pulse	199	3130000	4221	NA
+Fionn	151	Pulse	199	3140000	14221	NA
+Fionn	152	Picture	feedback	3148302	0	1	20187	1	0	next	other	0
+Fionn	152	Pulse	199	3150000	1698	NA
+Fionn	152	Pulse	199	3160000	11698	NA
+Fionn	153	Picture	fix	3168488	0	1	33200	1	0	next	other	0
+Fionn	153	Pulse	199	3170000	1512	NA
+Fionn	153	Pulse	199	3180000	11512	NA
+Fionn	153	Pulse	199	3190000	21512	NA
+Fionn	153	Pulse	199	3200000	31512	NA
+Fionn	155	Picture	stim	3201688	0	1	25192	1	0	25000	hit	478
+Fionn	155	Pulse	199	3210000	8312	NA
+Fionn	155	Response	16	3212369	10681	1
+Fionn	155	Pulse	199	3220000	18312	NA
+Fionn	156	Picture	fix2	3227047	0	1	14014	1	0	next	other	0
+Fionn	156	Pulse	199	3230000	2953	NA
+Fionn	156	Pulse	199	3240000	12953	NA
+Fionn	157	Picture	feedback	3241061	0	1	20187	1	0	next	other	0
+Fionn	157	Pulse	199	3250000	8939	NA
+Fionn	157	Pulse	199	3260000	18939	NA
+Fionn	158	Picture	fix	3261248	0	1	30697	1	0	next	other	0
+Fionn	158	Pulse	199	3270000	8752	NA
+Fionn	158	Pulse	199	3280000	18752	NA
+Fionn	158	Pulse	199	3290000	28752	NA
+Fionn	160	Picture	stim	3291945	0	1	25192	1	0	25000	incorrect	493
+Fionn	160	Pulse	199	3300000	8055	NA
+Fionn	160	Pulse	199	3310000	18055	NA
+Fionn	160	Response	32	3310130	18184	1
+Fionn	161	Picture	fix2	3317137	0	1	15849	1	0	next	other	0
+Fionn	161	Pulse	199	3320000	2863	NA
+Fionn	161	Pulse	199	3330000	12863	NA
+Fionn	162	Picture	feedback	3332986	0	1	20187	1	0	next	other	0
+Fionn	162	Pulse	199	3340000	7014	NA
+Fionn	162	Pulse	199	3350000	17014	NA
+Fionn	163	Picture	fix	3353173	0	1	28529	1	0	next	other	0
+Fionn	163	Pulse	199	3360000	6827	NA
+Fionn	163	Pulse	199	3370000	16827	NA
+Fionn	163	Pulse	199	3380000	26827	NA
+Fionn	165	Picture	stim	3381702	0	1	25192	1	0	25000	incorrect	506
+Fionn	165	Pulse	199	3390000	8298	NA
+Fionn	165	Response	32	3391571	9869	1
+Fionn	165	Pulse	199	3400000	18298	NA
+Fionn	166	Picture	fix2	3406893	0	1	21688	1	0	next	other	0
+Fionn	166	Pulse	199	3410000	3107	NA
+Fionn	166	Pulse	199	3420000	13107	NA
+Fionn	167	Picture	feedback	3428582	0	1	20187	1	0	next	other	0
+Fionn	167	Pulse	199	3430000	1418	NA
+Fionn	167	Pulse	199	3440000	11418	NA
+Fionn	168	Picture	fix	3448769	0	1	25526	1	0	next	other	0
+Fionn	168	Pulse	199	3450000	1232	NA
+Fionn	168	Pulse	199	3460000	11232	NA
+Fionn	168	Pulse	199	3470000	21232	NA
+Fionn	170	Picture	stim	3474294	0	1	25192	1	0	25000	incorrect	520
+Fionn	170	Pulse	199	3480000	5706	NA
+Fionn	170	Response	32	3485650	11356	1
+Fionn	170	Pulse	199	3490000	15706	NA
+Fionn	171	Picture	fix2	3499486	0	1	18018	1	0	next	other	0
+Fionn	171	Pulse	199	3500000	514	NA
+Fionn	171	Pulse	199	3510000	10514	NA
+Fionn	172	Picture	feedback	3517504	0	1	20187	1	0	next	other	0
+Fionn	172	Pulse	199	3520000	2496	NA
+Fionn	172	Pulse	199	3530000	12496	NA
+Fionn	173	Picture	fix	3537691	0	1	37538	1	0	next	other	0
+Fionn	173	Pulse	199	3540000	2309	NA
+Fionn	173	Pulse	199	3550000	12309	NA
+Fionn	173	Pulse	199	3560000	22309	NA
+Fionn	173	Pulse	199	3570000	32309	NA
+Fionn	175	Picture	stim	3575228	0	1	25192	1	0	25000	incorrect	535
+Fionn	175	Pulse	199	3580000	4772	NA
+Fionn	175	Response	32	3585010	9782	1
+Fionn	175	Pulse	199	3590000	14772	NA
+Fionn	175	Pulse	199	3600000	24772	NA
+Fionn	176	Picture	fix2	3600420	0	1	21855	1	0	next	other	0
+Fionn	176	Pulse	199	3610000	9580	NA
+Fionn	176	Pulse	199	3620000	19580	NA
+Fionn	177	Picture	feedback	3622275	0	1	20187	1	0	next	other	0
+Fionn	177	Pulse	199	3630000	7725	NA
+Fionn	177	Pulse	199	3640000	17725	NA
+Fionn	178	Picture	fix	3642462	0	1	21522	1	0	next	other	0
+Fionn	178	Pulse	199	3650000	7538	NA
+Fionn	178	Pulse	199	3660000	17538	NA
+Fionn	180	Picture	stim	3663983	0	1	25192	1	0	25000	hit	549
+Fionn	180	Pulse	199	3670000	6017	NA
+Fionn	180	Response	16	3676769	12785	1
+Fionn	180	Pulse	199	3680000	16017	NA
+Fionn	181	Picture	fix2	3689175	0	1	24191	1	0	next	other	0
+Fionn	181	Pulse	199	3690000	825	NA
+Fionn	181	Pulse	199	3700000	10825	NA
+Fionn	181	Pulse	199	3710000	20825	NA
+Fionn	182	Picture	feedback	3713366	0	1	20187	1	0	next	other	0
+Fionn	182	Pulse	199	3720000	6634	NA
+Fionn	182	Pulse	199	3730000	16634	NA
+Fionn	183	Picture	fix	3733553	0	1	29363	1	0	next	other	0
+Fionn	183	Pulse	199	3740000	6447	NA
+Fionn	183	Pulse	199	3750000	16447	NA
+Fionn	183	Pulse	199	3760000	26447	NA
+Fionn	185	Picture	stim	3762916	0	1	25185	7	0	25000	incorrect	564
+Fionn	185	Pulse	199	3770000	7084	NA
+Fionn	185	Response	32	3772450	9534	1
+Fionn	185	Pulse	199	3780000	17084	NA
+Fionn	186	Picture	fix2	3788101	0	7	20527	7	0	next	other	0
+Fionn	186	Pulse	199	3790000	1899	NA
+Fionn	186	Pulse	199	3800000	11899	NA
+Fionn	187	Picture	feedback	3808628	0	1	20187	1	0	next	other	0
+Fionn	187	Pulse	199	3810000	1372	NA
+Fionn	187	Pulse	199	3820000	11372	NA
+Fionn	188	Picture	fix	3828815	0	1	24525	1	0	next	other	0
+Fionn	188	Pulse	199	3830000	1185	NA
+Fionn	188	Pulse	199	3840000	11185	NA
+Fionn	188	Pulse	199	3850000	21185	NA
+Fionn	190	Picture	stim	3853339	0	1	25192	1	0	25000	hit	578
+Fionn	190	Pulse	199	3860000	6661	NA
+Fionn	190	Response	16	3868049	14710	1
+Fionn	190	Pulse	199	3870000	16661	NA
+Fionn	191	Picture	fix2	3878531	0	1	21355	1	0	next	other	0
+Fionn	191	Pulse	199	3880000	1469	NA
+Fionn	191	Pulse	199	3890000	11469	NA
+Fionn	192	Picture	feedback	3899886	0	1	20187	1	0	next	other	0
+Fionn	192	Pulse	199	3900000	114	NA
+Fionn	192	Pulse	199	3910000	10114	NA
+Fionn	192	Pulse	199	3920000	20114	NA
+Fionn	193	Picture	fix	3920073	0	1	35869	1	0	next	other	0
+Fionn	193	Pulse	199	3930000	9927	NA
+Fionn	193	Pulse	199	3940000	19927	NA
+Fionn	193	Pulse	199	3950000	29927	NA
+Fionn	195	Picture	stim	3955942	0	1	25192	1	0	25000	hit	593
+Fionn	195	Pulse	199	3960000	4058	NA
+Fionn	195	Response	16	3966450	10508	1
+Fionn	195	Pulse	199	3970000	14058	NA
+Fionn	195	Pulse	199	3980000	24058	NA
+Fionn	196	Picture	fix2	3981300	0	1	29363	1	0	next	other	0
+Fionn	196	Pulse	199	3990000	8700	NA
+Fionn	196	Pulse	199	4000000	18700	NA
+Fionn	196	Pulse	199	4010000	28700	NA
+Fionn	197	Picture	feedback	4010663	0	1	20187	1	0	next	other	0
+Fionn	197	Pulse	199	4020000	9337	NA
+Fionn	197	Pulse	199	4030000	19337	NA
+Fionn	198	Picture	fix	4030850	0	1	26026	1	0	next	other	0
+Fionn	198	Pulse	199	4040000	9150	NA
+Fionn	198	Pulse	199	4050000	19150	NA
+Fionn	200	Picture	stim	4056876	0	1	25192	1	0	25000	hit	608
+Fionn	200	Pulse	199	4060000	3124	NA
+Fionn	200	Response	16	4069651	12775	1
+Fionn	200	Pulse	199	4070000	13124	NA
+Fionn	200	Pulse	199	4080000	23124	NA
+Fionn	201	Picture	fix2	4082068	0	1	13347	1	0	next	other	0
+Fionn	201	Pulse	199	4090000	7932	NA
+Fionn	202	Picture	feedback	4095415	0	1	20187	1	0	next	other	0
+Fionn	202	Pulse	199	4100000	4586	NA
+Fionn	202	Pulse	199	4110000	14586	NA
+Fionn	203	Picture	fix	4115601	0	1	17684	1	0	next	other	0
+Fionn	203	Pulse	199	4120000	4399	NA
+Fionn	203	Pulse	199	4130000	14399	NA
+Fionn	205	Picture	stim	4133286	0	1	25192	1	0	25000	hit	621
+Fionn	205	Pulse	199	4140000	6714	NA
+Fionn	205	Response	16	4146850	13565	1
+Fionn	205	Pulse	199	4150000	16714	NA
+Fionn	206	Picture	fix2	4158478	0	1	18018	1	0	next	other	0
+Fionn	206	Pulse	199	4160000	1522	NA
+Fionn	206	Pulse	199	4170000	11522	NA
+Fionn	207	Picture	feedback	4176495	0	1	20187	1	0	next	other	0
+Fionn	207	Pulse	199	4180000	3505	NA
+Fionn	207	Pulse	199	4190000	13505	NA
+Fionn	208	Picture	fix	4196682	0	1	22022	1	0	next	other	0
+Fionn	208	Pulse	199	4200000	3318	NA
+Fionn	208	Pulse	199	4210000	13318	NA
+Fionn	210	Picture	stim	4218704	0	1	25192	1	0	25000	hit	635
+Fionn	210	Pulse	199	4220000	1296	NA
+Fionn	210	Pulse	199	4230000	11296	NA
+Fionn	210	Response	16	4235010	16305	1
+Fionn	210	Pulse	199	4240000	21296	NA
+Fionn	211	Picture	fix2	4244063	0	1	20521	1	0	next	other	0
+Fionn	211	Pulse	199	4250000	5937	NA
+Fionn	211	Pulse	199	4260000	15937	NA
+Fionn	212	Picture	feedback	4264584	0	1	20187	1	0	next	other	0
+Fionn	212	Pulse	199	4270000	5417	NA
+Fionn	212	Pulse	199	4280000	15417	NA
+Fionn	213	Picture	fix	4284770	0	1	30030	1	0	next	other	0
+Fionn	213	Pulse	199	4290000	5230	NA
+Fionn	213	Pulse	199	4300000	15230	NA
+Fionn	213	Pulse	199	4310000	25230	NA
+Fionn	215	Picture	stim	4314800	0	1	25192	1	0	25000	hit	649
+Fionn	215	Pulse	199	4320000	5200	NA
+Fionn	215	Response	16	4324129	9329	1
+Fionn	215	Pulse	199	4330000	15200	NA
+Fionn	216	Picture	fix2	4339992	0	1	25859	1	0	next	other	0
+Fionn	216	Pulse	199	4340000	8	NA
+Fionn	216	Pulse	199	4350000	10008	NA
+Fionn	216	Pulse	199	4360000	20008	NA
+Fionn	217	Picture	feedback	4365851	0	1	20187	1	0	next	other	0
+Fionn	217	Pulse	199	4370000	4149	NA
+Fionn	217	Pulse	199	4380000	14149	NA
+Fionn	218	Picture	fix	4386038	0	1	27361	1	0	next	other	0
+Fionn	218	Pulse	199	4390000	3962	NA
+Fionn	218	Pulse	199	4400000	13962	NA
+Fionn	218	Pulse	199	4410000	23962	NA
+Fionn	220	Picture	stim	4413399	0	1	25192	1	0	25000	hit	664
+Fionn	220	Pulse	199	4420000	6601	NA
+Fionn	220	Response	16	4426129	12730	1
+Fionn	220	Pulse	199	4430000	16601	NA
+Fionn	221	Picture	fix2	4438591	0	1	11512	1	0	next	other	0
+Fionn	221	Pulse	199	4440000	1409	NA
+Fionn	221	Pulse	199	4450000	11409	NA
+Fionn	222	Picture	feedback	4450102	0	1	20187	1	0	next	other	0
+Fionn	222	Pulse	199	4460000	9898	NA
+Fionn	222	Pulse	199	4470000	19898	NA
+Fionn	223	Picture	fix	4470289	0	1	29196	1	0	next	other	0
+Fionn	223	Pulse	199	4480000	9711	NA
+Fionn	223	Pulse	199	4490000	19711	NA
+Fionn	225	Picture	stim	4499485	0	1	25192	1	0	25000	hit	678
+Fionn	225	Pulse	199	4500000	515	NA
+Fionn	225	Pulse	199	4510000	10515	NA
+Fionn	225	Response	16	4514291	14806	1
+Fionn	225	Pulse	199	4520000	20515	NA
+Fionn	226	Picture	fix2	4524677	0	1	26360	1	0	next	other	0
+Fionn	226	Pulse	199	4530000	5323	NA
+Fionn	226	Pulse	199	4540000	15323	NA
+Fionn	226	Pulse	199	4550000	25323	NA
+Fionn	227	Picture	feedback	4551036	0	1	20187	1	0	next	other	0
+Fionn	227	Pulse	199	4560000	8964	NA
+Fionn	227	Pulse	199	4570000	18964	NA
+Fionn	228	Picture	fix	4571223	0	1	22022	1	0	next	other	0
+Fionn	228	Pulse	199	4580000	8777	NA
+Fionn	228	Pulse	199	4590000	18777	NA
+Fionn	230	Picture	stim	4593245	0	1	25192	1	0	25000	incorrect	692
+Fionn	230	Pulse	199	4600000	6755	NA
+Fionn	230	Response	32	4605810	12564	1
+Fionn	230	Pulse	199	4610000	16755	NA
+Fionn	231	Picture	fix2	4618437	0	1	17851	1	0	next	other	0
+Fionn	231	Pulse	199	4620000	1563	NA
+Fionn	231	Pulse	199	4630000	11563	NA
+Fionn	232	Picture	feedback	4636288	0	1	20187	1	0	next	other	0
+Fionn	232	Pulse	199	4640000	3712	NA
+Fionn	232	Pulse	199	4650000	13712	NA
+Fionn	233	Picture	fix	4656475	0	1	28862	1	0	next	other	0
+Fionn	233	Pulse	199	4660000	3525	NA
+Fionn	233	Pulse	199	4670000	13525	NA
+Fionn	233	Pulse	199	4680000	23525	NA
+Fionn	235	Picture	stim	4685337	0	1	25192	1	0	25000	hit	706
+Fionn	235	Pulse	199	4690000	4663	NA
+Fionn	235	Response	16	4694849	9512	1
+Fionn	235	Pulse	199	4700000	14663	NA
+Fionn	235	Pulse	199	4710000	24663	NA
+Fionn	236	Picture	fix2	4710529	0	1	29029	1	0	next	other	0
+Fionn	236	Pulse	199	4720000	9471	NA
+Fionn	236	Pulse	199	4730000	19471	NA
+Fionn	237	Picture	feedback	4739558	0	1	20187	1	0	next	other	0
+Fionn	237	Pulse	199	4740000	442	NA
+Fionn	237	Pulse	199	4750000	10442	NA
+Fionn	238	Picture	fix	4759745	0	1	34034	1	0	next	other	0
+Fionn	238	Pulse	199	4760000	255	NA
+Fionn	238	Pulse	199	4770000	10255	NA
+Fionn	238	Pulse	199	4780000	20255	NA
+Fionn	238	Pulse	199	4790000	30255	NA
+Fionn	240	Picture	stim	4793779	0	1	25192	1	0	25000	hit	723
+Fionn	240	Pulse	199	4800000	6221	NA
+Fionn	240	Pulse	199	4810000	16221	NA
+Fionn	240	Response	16	4814210	20431	1
+Fionn	241	Picture	fix2	4818971	0	1	25859	1	0	next	other	0
+Fionn	241	Pulse	199	4820000	1029	NA
+Fionn	241	Pulse	199	4830000	11029	NA
+Fionn	241	Pulse	199	4840000	21029	NA
+Fionn	242	Picture	feedback	4844830	0	1	20187	1	0	next	other	0
+Fionn	242	Pulse	199	4850000	5170	NA
+Fionn	242	Pulse	199	4860000	15170	NA
+Fionn	243	Picture	100	4865017	0	1	80080	1	0	80000	other	0
+Fionn	243	Pulse	199	4870000	4983	NA
+Fionn	243	Pulse	199	4880000	14983	NA
+Fionn	243	Pulse	199	4890000	24983	NA
+Fionn	243	Pulse	199	4900000	34983	NA
+Fionn	243	Pulse	199	4910000	44983	NA
+Fionn	243	Pulse	199	4920000	54983	NA
+Fionn	243	Pulse	199	4930000	64983	NA
+Fionn	243	Pulse	199	4940000	74983	NA

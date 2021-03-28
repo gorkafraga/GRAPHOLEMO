@@ -1,0 +1,20 @@
+Scenario - 
+Logfile written - 02/16/2017 12:08:55
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Aiksa	1	Response	3	15491	5158	1
+Aiksa	2	Response	3	32931	17265	1
+Aiksa	3	Picture	consistent	38165	5167	1	19999	2	5000	next	miss	0
+Aiksa	4	Picture	pos_feedback	63330	5166	1	14967	3	5000	next	other	0
+Aiksa	4	Pause		75329	17165		163356
+Aiksa	4	Resume		75329	17165
+Aiksa	5	Picture	consistent	88630	5166	1	19999	2	5000	next	miss	0
+Aiksa	6	Picture	pos_feedback	113796	5167	1	14851	2	5000	next	other	0
+Aiksa	6	Pause		115168	6539		16480
+Aiksa	6	Resume		115168	6539
+Aiksa	7	Picture	consistent	141480	5167	1	19999	2	5000	next	miss	0
+Aiksa	8	Picture	pos_feedback	166645	5166	1	14999	2	5000	next	other	0
+Aiksa	9	Picture	consistent	196977	5167	1	19999	2	5000	next	miss	0
+Aiksa	10	Picture	pos_feedback	222142	5166	1	14999	2	5000	next	other	0
+Aiksa	11	Quit		244604	2296

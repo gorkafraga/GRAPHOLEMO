@@ -1,0 +1,19 @@
+block	trial	vStim	aStim	resp	rt	fb	iti	feedJitter	vSymbol	aFile	FBtype	stimOnset	respOnset	feedbackOnset
+1	1	2	3	2	1	3428	1	1852	1592	R	V	R	e_short_2_2.wav	practice	practice	practice
+1	2	1	2	2	1	6222	0	3200	1066	N	R	R	e_short_2_2.wav	practice	practice	practice
+1	3	2	3	3	1	6524	0	2458	1996	R	V	V	t_2_1_loudCheck.wav	practice	practice	practice
+1	4	1	3	1	2	4759	0	2134	2130	N	V	N	a_short_2_2.wav	practice	practice	practice
+1	5	2	1	1	1	2492	0	2182	1628	R	N	N	a_short_2_2.wav	practice	practice	practice
+1	6	3	1	3	1	693	1	2350	2619	V	N	V	t_2_1_loudCheck.wav	practice	practice	practice
+1	1	4	3	0	0	2	2871	2924	e_long_2_2.wav	»	Cong	11664	0	17115
+1	2	5	6	0	0	2	2954	2131	wö_2_2_loudCheck.wav	S	Cong	22090	0	26748
+1	3	3	4	0	0	2	2448	1453	sche_2_1.wav	Q	Cong	31223	0	35223
+1	4	1	1	0	0	2	2881	1574	a_long_2_3_loudCheck.wav	O	Cong	40121	0	44229
+1	5	6	5	0	0	2	2986	2754	st_2_2_loudCheck.wav	T	Cong	49245	0	54528
+1	6	2	2	0	0	2	2335	1582	un_short_2_1_loudCheck.wav	P	Cong	58886	0	62995
+1	7	5	5	0	0	2	1615	1639	st_2_2_loudCheck.wav	S	Cong	66632	0	70796
+1	8	1	2	0	0	2	3387	2035	un_short_2_1_loudCheck.wav	O	Cong	76199	0	80764
+1	9	2	1	1	725	0	2532	1320	a_long_2_3_loudCheck.wav	P	Cong	85318	86043	89168
+1	10	3	3	0	0	2	2134	2403	e_long_2_2.wav	Q	Cong	93318	0	98247
+1	11	5	5	0	0	2	2671	1289	st_2_2_loudCheck.wav	S	Cong	102941	0	106772
+1	12	4	4	0	0	2	2720	1395	sche_2_1.wav	»	Cong	111522	0	115444

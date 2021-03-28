@@ -1,0 +1,8 @@
+trial	block	stimIndex	Condition	VstimCaption	ISIjitter	stimOnset
+1	1	3	FFtrained	0	435	6890	
+2	1	4	FFtrained	E	286	8080	
+3	1	5	FFtrained	3	178	9119	
+4	1	6	FFtrained	N	213	10041	
+5	1	7	FFtrained	A	269	10997	
+6	1	8	FFtrained	R	366	12019	
+7	1	9	FFtrained	I	331	13126	

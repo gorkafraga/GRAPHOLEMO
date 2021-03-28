@@ -1,0 +1,66 @@
+Scenario - 
+Logfile written - 08/08/2019 15:30:38
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test	1	Response	20	124713	124535	0
+test	2	Pulse	199	155104	30303	0
+test	2	Response	20	357313	232512	0
+test	3	Picture	100	357314	1	201	50156	201	0	50000	other	0
+test	4	Picture	60	407648	0	1	7111	1	0	7000	other	0
+test	5	Picture	40	414937	0	1	2311	1	0	2150	other	0
+test	6	Picture	60	417426	0	1	7111	1	0	7000	other	0
+test	7	Picture	40	424715	0	1	1244	1	0	1180	other	0
+test	8	Picture	60	426137	0	1	7111	1	0	7000	other	0
+test	9	Picture	40	433426	0	1	1600	1	0	1510	other	0
+test	10	Picture	60	435204	0	1	7111	1	0	7000	other	0
+test	11	Picture	40	442493	0	1	4800	1	0	4720	other	0
+test	12	Picture	60	447471	0	1	7111	1	0	7000	other	0
+test	13	Picture	40	454760	0	1	1422	1	0	1270	other	0
+test	14	Picture	60	456360	0	1	7111	1	0	7000	other	0
+test	15	Picture	40	463648	0	1	2133	1	0	1990	other	0
+test	16	Picture	60	465960	0	1	7111	1	0	7000	other	0
+test	17	Picture	40	473249	0	1	4267	1	0	4080	other	0
+test	18	Picture	60	477693	0	1	7111	1	0	7000	other	0
+test	19	Picture	40	484982	0	1	3378	1	0	3210	other	0
+test	20	Picture	60	488538	0	1	7111	1	0	7000	other	0
+test	21	Picture	40	495827	0	1	3378	1	0	3330	other	0
+test	22	Picture	60	499382	0	1	7111	1	0	7000	other	0
+test	23	Picture	40	506671	0	1	1778	1	0	1640	other	0
+test	24	Picture	60	508627	0	1	7111	1	0	7000	other	0
+test	25	Picture	40	515916	0	1	1778	1	0	1630	other	0
+test	26	Picture	60	517871	0	1	7111	1	0	7000	other	0
+test	27	Picture	40	525160	0	1	4267	1	0	4230	other	0
+test	28	Picture	60	529604	0	1	7111	1	0	7000	other	0
+test	29	Picture	40	536894	0	1	1956	1	0	1900	other	0
+test	30	Picture	60	539027	0	1	7111	1	0	7000	other	0
+test	31	Picture	40	546316	0	1	2844	1	0	2830	other	0
+test	32	Picture	60	549338	0	1	7111	1	0	7000	other	0
+test	33	Picture	40	556627	0	1	2133	1	0	2020	other	0
+test	34	Picture	60	558938	0	1	7111	1	0	7000	other	0
+test	35	Picture	40	566227	0	1	2133	1	0	2070	other	0
+test	36	Picture	50	568538	0	1	90134	1	0	next	other	0
+test	37	Picture	90	658672	0	1	7111	1	0	7000	other	0
+test	38	Picture	40	665961	0	1	2133	1	0	1990	other	0
+test	39	Picture	90	668273	0	1	7111	1	0	7000	other	0
+test	40	Picture	40	675562	0	1	4267	1	0	4080	other	0
+test	41	Picture	90	680006	0	1	7111	1	0	7000	other	0
+test	42	Picture	40	687295	0	1	2133	1	0	2070	other	0
+test	43	Picture	90	689606	0	1	7111	1	0	7000	other	0
+test	44	Picture	40	696895	0	1	2667	1	0	2550	other	0
+test	45	Picture	90	699739	0	1	7111	1	0	7000	other	0
+test	46	Picture	40	707028	0	1	3378	1	0	3210	other	0
+test	47	Picture	90	710584	0	1	7111	1	0	7000	other	0
+test	48	Picture	40	717873	0	1	2667	1	0	2570	other	0
+test	49	Picture	90	720718	0	1	7111	1	0	7000	other	0
+test	50	Picture	40	728006	0	1	1422	1	0	1270	other	0
+test	51	Picture	90	729606	0	1	7111	1	0	7000	other	0
+test	52	Picture	40	736895	0	1	2311	1	0	2150	other	0
+test	53	Picture	90	739384	0	1	7111	1	0	7000	other	0
+test	54	Picture	40	746673	0	1	2133	1	0	2020	other	0
+test	55	Picture	90	748984	0	1	7111	1	0	7000	other	0
+test	56	Picture	40	756273	0	1	1600	1	0	1510	other	0
+test	57	Picture	90	758051	0	1	7111	1	0	7000	other	0
+test	58	Picture	40	765340	0	1	1778	1	0	1630	other	0
+test	59	Picture	95	767296	0	1	7212	1	0	7000	miss	0
+test	59	Quit		768303	1008	NA

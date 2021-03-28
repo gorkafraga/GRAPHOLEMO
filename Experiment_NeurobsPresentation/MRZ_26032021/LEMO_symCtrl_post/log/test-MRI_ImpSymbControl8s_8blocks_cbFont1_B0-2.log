@@ -1,0 +1,46 @@
+Scenario - 
+Logfile written - 09/03/2019 16:09:56
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test	0	Pulse	199	0	0	NA
+test	1	Response	20	6860	6527	1
+test	2	Response	20	8861	1861	1
+test	3	Picture	100	9001	139	1	50171	1	0	50000	other	0
+test	3	Pulse	199	10000	1139	NA
+test	3	Pulse	199	20000	11139	NA
+test	3	Pulse	199	30000	21139	NA
+test	3	Pulse	199	40000	31139	NA
+test	3	Pulse	199	50000	41139	NA
+test	4	Picture	60	59339	0	1	7167	1	0	7000	other	0
+test	4	Pulse	199	60000	661	NA
+test	5	Picture	40	66673	0	1	3834	1	0	3660	other	0
+test	5	Pulse	199	70000	3327	NA
+test	6	Picture	60	70673	0	1	7167	1	0	7000	other	0
+test	7	Picture	40	78341	0	1	2334	1	0	2140	other	0
+test	7	Pulse	199	80000	1659	NA
+test	8	Picture	60	80841	0	1	7334	1	0	7000	other	0
+test	9	Picture	40	88342	0	1	3167	1	0	2690	other	0
+test	9	Pulse	199	90000	1658	NA
+test	10	Picture	60	91675	0	1	7167	1	0	7000	other	0
+test	11	Picture	40	99009	0	1	3500	1	0	3310	other	0
+test	11	Pulse	199	100000	991	NA
+test	12	Picture	60	102676	0	1	7167	1	0	7000	other	0
+test	12	Pulse	199	110000	7324	NA
+test	13	Picture	40	110010	0	1	2334	1	0	2130	other	0
+test	14	Picture	60	112510	0	1	7167	1	0	7000	other	0
+test	15	Picture	40	119844	0	1	2167	1	0	1990	other	0
+test	15	Pulse	199	120000	156	NA
+test	16	Picture	60	122178	0	1	7167	1	0	7000	other	0
+test	17	Picture	40	129512	0	1	2667	1	0	2490	other	0
+test	17	Pulse	199	130000	488	NA
+test	18	Picture	60	132346	0	1	7167	1	0	7000	other	0
+test	19	Picture	40	139680	0	1	2000	1	0	1780	other	0
+test	19	Pulse	199	140000	320	NA
+test	20	Picture	50	142013	0	1	65074	1	0	next	other	0
+test	20	Pulse	199	150000	7987	NA
+test	20	Pulse	199	160000	17987	NA
+test	20	Pulse	199	170000	27987	NA
+test	20	Pulse	199	180000	37987	NA
+test	20	Pulse	199	190000	47987	NA
+test	20	Quit		199941	57928	NA

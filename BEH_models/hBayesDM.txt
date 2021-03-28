@@ -1,0 +1,2 @@
+httpccs-lab.github.iohBayesDMreferencebandit2arm_delta.html
+https://github.com/CCS-Lab/hBayesDM/blob/master/commons/stan_files/bandit2arm_delta.stan

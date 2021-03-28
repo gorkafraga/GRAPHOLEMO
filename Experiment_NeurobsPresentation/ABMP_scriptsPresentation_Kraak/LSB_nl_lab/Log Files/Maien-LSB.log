@@ -1,0 +1,98 @@
+Scenario - 
+Logfile written - 02/28/2017 17:59:33
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Maien	1	Response	3	527967	517634	1
+Maien	2	Response	3	640923	112789	1
+Maien	3	Picture	consistent	646294	5167	1	17165	2	5000	next	hit	4
+Maien	3	Response	32	663295	22168	2
+Maien	4	Picture	pos_feedback	668626	5167	1	14999	2	5000	next	other	0
+Maien	5	Picture	consistent	693957	5166	2	15999	4	5000	next	hit	7
+Maien	5	Response	16	709845	21054	1
+Maien	6	Picture	pos_feedback	715123	5167	1	14999	2	5000	next	other	0
+Maien	7	Picture	consistent	742954	5166	2	11166	4	5000	next	hit	10
+Maien	7	Response	32	754034	16246	1
+Maien	8	Picture	pos_feedback	759287	5167	1	14999	2	5000	next	other	0
+Maien	9	Picture	consistent	789618	5166	1	17332	3	5000	next	hit	13
+Maien	9	Response	32	806898	22446	1
+Maien	10	Picture	pos_feedback	812117	5167	1	14999	2	5000	next	other	0
+Maien	11	Picture	consistent	837449	5167	1	7499	2	5000	next	hit	16
+Maien	11	Response	16	844887	12605	1
+Maien	12	Picture	pos_feedback	850114	5166	2	15000	3	5000	next	other	0
+Maien	13	Picture	consistent	877946	5166	1	9333	2	5000	next	hit	19
+Maien	13	Response	32	887158	14378	1
+Maien	14	Picture	pos_feedback	892445	5166	1	14999	2	5000	next	other	0
+Maien	15	Picture	consistent	922777	5167	1	9166	2	5000	next	hit	22
+Maien	15	Response	16	931777	14167	1
+Maien	16	Picture	pos_feedback	937109	5166	1	14999	2	5000	next	other	0
+Maien	17	Picture	consistent	962382	5107	92	7725	93	5000	next	hit	25
+Maien	17	Response	16	970029	12754	1
+Maien	18	Picture	pos_feedback	975273	5166	2	15000	3	5000	next	other	0
+Maien	19	Picture	consistent	1003105	5166	1	6333	2	5000	next	hit	28
+Maien	19	Response	32	1009398	11459	1
+Maien	20	Picture	pos_feedback	1014604	5166	2	14999	4	5000	next	other	0
+Maien	21	Picture	consistent	1044936	5166	1	5833	2	5000	next	hit	31
+Maien	21	Response	16	1050603	10833	1
+Maien	22	Picture	pos_feedback	1055935	5166	1	14999	2	5000	next	other	0
+Maien	23	Picture	consistent	1081267	5166	1	10833	2	5000	next	hit	34
+Maien	23	Response	16	1091930	15829	2
+Maien	24	Picture	pos_feedback	1097266	5166	1	14999	2	5000	next	other	0
+Maien	25	Picture	consistent	1125098	5167	1	15165	2	5000	next	hit	37
+Maien	25	Response	16	1140242	20311	1
+Maien	26	Picture	pos_feedback	1145430	5167	1	14999	2	5000	next	other	0
+Maien	27	Picture	consistent	1175761	5166	1	9333	2	5000	next	hit	40
+Maien	27	Response	32	1185010	14415	1
+Maien	28	Picture	pos_feedback	1190172	5078	97	15087	99	5000	next	other	0
+Maien	29	Picture	consistent	1215592	5166	1	9999	3	5000	next	hit	43
+Maien	29	Response	16	1225543	15117	1
+Maien	30	Picture	pos_feedback	1230758	5167	1	14999	2	5000	next	other	0
+Maien	31	Picture	consistent	1258589	5166	2	12833	3	5000	next	hit	46
+Maien	31	Response	16	1271326	17903	1
+Maien	32	Picture	pos_feedback	1276588	5166	2	14999	4	5000	next	other	0
+Maien	33	Picture	consistent	1306920	5167	1	14832	2	5000	next	hit	49
+Maien	33	Response	16	1321661	19908	1
+Maien	34	Picture	pos_feedback	1326919	5167	1	14999	2	5000	next	other	0
+Maien	35	Picture	consistent	1352250	5166	14	9000	15	5000	next	hit	52
+Maien	35	Response	32	1361168	14084	1
+Maien	36	Picture	pos_feedback	1366416	5166	1	14999	2	5000	next	other	0
+Maien	37	Picture	consistent	1394248	5167	1	13999	2	5000	next	hit	55
+Maien	37	Response	32	1408167	19086	1
+Maien	38	Picture	pos_feedback	1413413	5166	1	14999	2	5000	next	other	0
+Maien	39	Picture	consistent	1443745	5167	1	19998	3	5000	next	miss	0
+Maien	40	Response	16	1467307	3564	54
+Maien	40	Picture	pos_feedback	1468910	5167	1	14999	2	5000	next	other	0
+Maien	41	Picture	consistent	1494241	5166	2	11500	3	5000	next	hit	61
+Maien	41	Response	32	1505672	16597	1
+Maien	42	Picture	pos_feedback	1510907	5166	1	14999	2	5000	next	other	0
+Maien	43	Picture	consistent	1538739	5166	1	8833	2	5000	next	hit	64
+Maien	43	Response	32	1547481	13908	1
+Maien	44	Picture	pos_feedback	1552738	5166	1	14999	2	5000	next	other	0
+Maien	45	Picture	consistent	1583069	5166	2	11333	3	5000	next	hit	67
+Maien	45	Response	32	1594279	16376	1
+Maien	46	Picture	pos_feedback	1599568	5166	2	15000	3	5000	next	other	0
+Maien	47	Picture	consistent	1624900	5166	1	6666	3	5000	next	hit	70
+Maien	47	Response	16	1631495	11761	1
+Maien	48	Picture	pos_feedback	1636733	5167	1	14999	2	5000	next	other	0
+Maien	49	Picture	consistent	1664564	5166	2	9833	3	5000	next	hit	73
+Maien	49	Response	32	1674271	14873	1
+Maien	50	Picture	pos_feedback	1679564	5167	1	14999	2	5000	next	other	0
+Maien	51	Picture	consistent	1709895	5166	1	14999	2	5000	next	hit	76
+Maien	51	Response	16	1724718	19989	1
+Maien	52	Picture	pos_feedback	1730060	5166	2	15000	3	5000	next	other	0
+Maien	53	Picture	consistent	1755392	5166	1	7666	3	5000	next	hit	79
+Maien	53	Response	32	1762901	12675	53
+Maien	54	Picture	pos_feedback	1768225	5167	1	14999	2	5000	next	other	0
+Maien	55	Picture	consistent	1796056	5166	2	5333	4	5000	next	hit	82
+Maien	55	Response	16	1801304	10414	1
+Maien	56	Picture	pos_feedback	1806556	5167	1	14999	2	5000	next	other	0
+Maien	57	Picture	consistent	1836887	5166	1	10833	2	5000	next	hit	85
+Maien	57	Response	32	1847564	15843	2
+Maien	58	Picture	pos_feedback	1852886	5166	1	14999	2	5000	next	other	0
+Maien	59	Picture	consistent	1878218	5166	1	11666	2	5000	next	hit	88
+Maien	59	Response	16	1889800	16748	1
+Maien	60	Picture	pos_feedback	1895050	5166	1	14999	3	5000	next	other	0
+Maien	61	Picture	consistent	1922882	5166	1	9333	2	5000	next	hit	91
+Maien	61	Response	32	1932101	14385	1
+Maien	62	Picture	pos_feedback	1937381	5166	1	14999	2	5000	next	other	0
+Maien	63	Quit		2217190	254644

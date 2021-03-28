@@ -1,0 +1,1 @@
+block	trial	vStim	aStim	resp	rt	fb	iti	feedJitter	vSymbol	aFile	FBtype	stimOnset	respOnset	feedbackOnset

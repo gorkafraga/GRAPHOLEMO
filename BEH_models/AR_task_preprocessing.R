@@ -14,7 +14,7 @@ lapply(Packages, require, character.only = TRUE)
 #--------------------------------------------------------------------------------------------
 #set dirs
 logfolder <-  'O:/studies/allread/mri/analysis_GFG/stats/task/logs/normperf_72'
-diroutput <- 'G:/local_models/RLDDM_phtests'
+diroutput <- 'N:/studies/Grapholemo/Methods/Scripts/grapholemo/BEH_models/tests'
 masterfile  <- "O:/studies/allread/mri/analysis_GFG/Allread_MasterFile_GFG.xlsx" # use this to find your subjects
 #Some starting info
 nblocks <- 2              
@@ -206,7 +206,7 @@ if (selection==0){
                     "last" = last,  #last 	(last trial in each subject, across blocks)
                     "value"=value,   #value	('reward' 0 or 1)
                     "n_stims"=stims_per_block*blocks,  #n_stims	 (number blocks x 4 stim per block )
-                    "trials" = DT_trials$N) 
+                    "trials" = trials_block) 
     
     
     #Save 

@@ -1,0 +1,15 @@
+Scenario - 
+Logfile written - 04/20/2016 13:29:01
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Nemo_LR_6	1	Response	3	404690	394524	1
+Nemo_LR_6	2	Response	3	555311	150578	1
+Nemo_LR_6	3	Picture	consistent	560527	5165	1	19995	2	5000	next	miss	0
+Nemo_LR_6	4	Picture	pos_feedback	585687	5165	1	14997	2	5000	next	other	0
+Nemo_LR_6	5	Picture	consistent	611014	5165	1	19995	2	5000	next	miss	0
+Nemo_LR_6	6	Picture	pos_feedback	636175	5166	1	14996	2	5000	next	other	0
+Nemo_LR_6	7	Picture	consistent	666833	5165	2	19995	4	5000	next	miss	0
+Nemo_LR_6	8	Picture	pos_feedback	691994	5166	1	14996	2	5000	next	other	0
+Nemo_LR_6	9	Picture	consistent	722319	5165	2	14687	3	5000	next	miss	0
+Nemo_LR_6	9	Quit		736877	19723

@@ -1,0 +1,41 @@
+Scenario - FBL_B.sce
+Logfile written - 03/24/2021 13:52:57
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+cacahuete	1	Response	16	24455	14120	0
+cacahuete	2	Picture	fix	24751	0	1	18775	1	0	next	other	0
+cacahuete	2	Response	16	36350	11599	0
+cacahuete	2	Response	32	37750	12999	0
+cacahuete	4	Picture	stim	43526	0	1	73422	1	0	next	hit	6
+cacahuete	4	Response	16	116824	73299	0
+cacahuete	5	Picture	feedback	116947	0	1	20116	1	0	next	other	0
+cacahuete	5	Response	16	124023	7076	0
+cacahuete	6	Picture	fix	137063	0	1	32185	1	0	next	other	0
+cacahuete	8	Picture	stim	169248	0	1	2514	1	0	next	hit	11
+cacahuete	8	Response	16	171709	2461	0
+cacahuete	9	Picture	feedback	171762	0	1	20115	1	0	next	other	0
+cacahuete	10	Picture	fix	191878	0	1	24642	1	0	next	other	0
+cacahuete	12	Picture	stim	216519	0	1	5532	1	0	next	hit	16
+cacahuete	12	Pulse	199	220096	3577	0
+cacahuete	12	Response	16	221996	5476	0
+cacahuete	13	Picture	feedback	222051	0	1	20116	1	0	next	other	0
+cacahuete	14	Picture	fix	242167	0	1	21457	1	0	next	other	0
+cacahuete	16	Picture	stim	263623	0	1	1341	1	0	next	hit	20
+cacahuete	16	Response	16	264788	1164	0
+cacahuete	17	Picture	feedback	264964	0	1	20116	1	0	next	other	0
+cacahuete	18	Picture	fix	285080	0	1	21960	1	0	next	other	0
+cacahuete	18	Response	16	304980	19900	0
+cacahuete	20	Picture	stim	307040	0	1	2179	1	0	next	hit	25
+cacahuete	20	Response	16	309181	2141	0
+cacahuete	21	Picture	feedback	309219	0	1	20116	1	0	next	other	0
+cacahuete	22	Picture	fix	329334	0	1	23636	1	0	next	other	0
+cacahuete	24	Picture	stim	352970	0	1	3520	1	0	next	hit	29
+cacahuete	24	Response	16	356377	3407	0
+cacahuete	25	Picture	feedback	356490	0	1	20116	1	0	next	other	0
+cacahuete	26	Response	16	384975	8369	0
+cacahuete	27	Picture	start	385155	0	1	50121	1	0	next	other	0
+cacahuete	27	Response	16	390474	5319	0
+cacahuete	27	Pulse	199	392974	7819	0
+cacahuete	27	Response	32	410074	24919	0
+cacahuete	27	Pulse	199	412175	27020	0

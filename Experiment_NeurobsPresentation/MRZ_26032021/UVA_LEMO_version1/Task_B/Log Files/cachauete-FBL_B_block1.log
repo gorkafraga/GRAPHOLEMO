@@ -1,0 +1,172 @@
+Scenario - FBL_B.sce
+Logfile written - 03/24/2021 13:55:41
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+cachauete	1	Pulse	199	29764	19430	0
+cachauete	1	Response	16	63394	53059	0
+cachauete	2	Picture	fix	63473	0	1	18775	1	0	next	other	0
+cachauete	2	Response	32	68799	5326	0
+cachauete	4	Picture	stim	82248	0	1	4526	1	0	next	incorrect	6
+cachauete	4	Response	32	86615	4367	0
+cachauete	5	Picture	feedback	86774	0	1	20116	1	0	next	other	0
+cachauete	6	Picture	fix	106890	0	1	32185	1	0	next	other	0
+cachauete	6	Response	32	127250	20361	0
+cachauete	6	Response	32	129753	22864	0
+cachauete	6	Response	32	131455	24566	0
+cachauete	6	Response	32	132857	25967	0
+cachauete	6	Response	32	134358	27468	0
+cachauete	6	Response	32	135759	28870	0
+cachauete	6	Response	32	137461	30571	0
+cachauete	8	Picture	stim	139075	0	1	2682	1	0	next	incorrect	17
+cachauete	8	Response	32	141565	2490	0
+cachauete	9	Picture	feedback	141757	0	1	20116	1	0	next	other	0
+cachauete	9	Response	32	142964	1208	0
+cachauete	10	Picture	fix	161872	0	1	24642	1	0	next	other	0
+cachauete	12	Picture	stim	186514	0	1	2682	1	0	next	incorrect	22
+cachauete	12	Response	32	189009	2495	0
+cachauete	13	Picture	feedback	189196	0	1	20116	1	0	next	other	0
+cachauete	14	Picture	fix	209311	0	1	21457	1	0	next	other	0
+cachauete	14	Response	32	228347	19036	0
+cachauete	16	Picture	stim	230768	0	1	2179	1	0	next	incorrect	27
+cachauete	16	Response	32	232754	1986	0
+cachauete	17	Picture	feedback	232947	0	1	20116	1	0	next	other	0
+cachauete	17	Response	32	234056	1108	0
+cachauete	17	Response	32	238862	5915	0
+cachauete	17	Response	32	240263	7316	0
+cachauete	17	Response	32	241765	8817	0
+cachauete	17	Response	32	243366	10419	0
+cachauete	17	Response	32	244868	11921	0
+cachauete	17	Response	32	246470	13523	0
+cachauete	17	Response	32	248072	15125	0
+cachauete	17	Response	32	249374	16426	0
+cachauete	17	Response	32	250975	18028	0
+cachauete	17	Response	32	252877	19930	0
+cachauete	18	Picture	fix	253063	0	1	21960	1	0	next	other	0
+cachauete	18	Response	32	254579	1517	0
+cachauete	18	Response	32	256282	3220	0
+cachauete	18	Response	32	257784	4722	0
+cachauete	18	Response	32	259286	6223	0
+cachauete	18	Response	32	260788	7726	0
+cachauete	18	Response	32	262190	9128	0
+cachauete	18	Response	32	263592	10529	0
+cachauete	18	Response	32	264994	11931	0
+cachauete	18	Response	32	266396	13333	0
+cachauete	18	Response	32	267798	14736	0
+cachauete	18	Response	32	269098	16036	0
+cachauete	18	Response	32	270502	17439	0
+cachauete	18	Response	32	272004	18941	0
+cachauete	18	Response	32	273507	20444	0
+cachauete	20	Response	32	275008	124	0
+cachauete	20	Picture	stim	275022	138	1	168	1	0	next	miss	0
+cachauete	21	Picture	feedback	275190	0	1	20116	1	0	next	other	0
+cachauete	21	Response	32	276510	1321	0
+cachauete	21	Response	32	278013	2823	0
+cachauete	21	Response	32	279412	4223	0
+cachauete	21	Response	32	280917	5727	0
+cachauete	21	Response	32	282519	7329	0
+cachauete	21	Response	32	284124	8934	0
+cachauete	21	Response	32	285723	10534	0
+cachauete	21	Response	32	287226	12036	0
+cachauete	21	Response	32	288828	13638	0
+cachauete	21	Response	32	290328	15139	0
+cachauete	21	Response	32	291932	16743	0
+cachauete	21	Response	32	293435	18245	0
+cachauete	21	Response	32	294935	19745	0
+cachauete	22	Picture	fix	295305	0	1	23636	1	0	next	other	0
+cachauete	22	Response	32	296538	1233	0
+cachauete	22	Response	32	297941	2635	0
+cachauete	22	Response	32	299543	4238	0
+cachauete	22	Response	32	301044	5739	0
+cachauete	22	Response	32	302646	7341	0
+cachauete	22	Response	32	304149	8844	0
+cachauete	22	Response	32	305652	10346	0
+cachauete	22	Response	32	307254	11949	0
+cachauete	22	Response	32	308857	13551	0
+cachauete	22	Response	32	310358	15053	0
+cachauete	22	Response	32	311860	16555	0
+cachauete	22	Response	32	313361	18056	1
+cachauete	22	Response	32	314864	19559	0
+cachauete	22	Response	32	316366	21061	0
+cachauete	22	Response	32	317969	22663	0
+cachauete	24	Picture	stim	318941	0	1	671	1	0	next	incorrect	88
+cachauete	24	Response	32	319571	630	0
+cachauete	25	Picture	feedback	319612	0	1	20116	1	0	next	other	0
+cachauete	25	Response	32	321073	1461	0
+cachauete	25	Response	32	327181	7570	0
+cachauete	25	Response	32	328812	9200	0
+cachauete	25	Response	32	330487	10875	0
+cachauete	25	Response	32	332189	12577	0
+cachauete	25	Response	32	333792	14180	0
+cachauete	25	Response	32	335393	15782	0
+cachauete	25	Response	32	336995	17384	0
+cachauete	25	Response	32	338599	18987	0
+cachauete	26	Response	32	340200	473	0
+cachauete	27	Picture	start	340398	0	1	50121	1	0	next	other	0
+cachauete	27	Response	32	341702	1304	0
+cachauete	27	Response	32	343305	2907	0
+cachauete	27	Response	32	352716	12319	0
+cachauete	27	Response	16	354420	14022	0
+cachauete	27	Pulse	199	357924	17526	0
+cachauete	27	Response	16	360828	20431	0
+cachauete	27	Response	32	363231	22833	0
+cachauete	27	Response	16	364833	24435	0
+cachauete	27	Pulse	199	368237	27840	0
+cachauete	27	Response	16	370040	29642	0
+cachauete	27	Response	32	373744	33346	0
+cachauete	27	Response	16	375246	34849	0
+cachauete	27	Pulse	199	378551	38154	0
+cachauete	27	Response	16	380454	40057	0
+cachauete	27	Response	32	384159	43761	0
+cachauete	27	Response	16	385661	45263	0
+cachauete	27	Pulse	199	389666	49269	0
+cachauete	28	Response	32	417402	26999	0
+cachauete	28	Response	32	434821	44418	0
+cachauete	29	Picture	fix	440808	0	1	19445	1	0	next	other	0
+cachauete	29	Response	32	454544	13736	0
+cachauete	29	Response	32	456447	15639	0
+cachauete	29	Response	32	458047	17239	0
+cachauete	29	Response	32	459650	18842	0
+cachauete	31	Picture	stim	460253	0	1	25144	1	0	25000	incorrect	126
+cachauete	31	Response	32	461153	900	0
+cachauete	31	Response	32	462554	2301	0
+cachauete	31	Response	32	466559	6306	0
+cachauete	31	Response	32	468061	7808	0
+cachauete	31	Response	32	469463	9210	0
+cachauete	31	Response	32	471066	10813	0
+cachauete	31	Response	32	472468	12215	0
+cachauete	31	Response	32	473971	13718	0
+cachauete	31	Response	32	475372	15119	0
+cachauete	31	Response	32	476874	16621	0
+cachauete	31	Response	32	478376	18123	0
+cachauete	31	Response	32	480278	20025	0
+cachauete	31	Response	16	483284	23031	0
+cachauete	32	Picture	fix2	485565	0	1	20451	1	0	next	other	0
+cachauete	32	Response	16	486388	823	0
+cachauete	33	Picture	feedback	506016	0	1	20116	1	0	next	other	0
+cachauete	33	Response	16	508920	2904	0
+cachauete	33	Response	16	510722	4706	0
+cachauete	34	Picture	fix	526132	0	1	20283	1	0	next	other	0
+cachauete	34	Response	16	528246	2114	0
+cachauete	34	Response	16	529747	3615	0
+cachauete	34	Response	16	543666	17535	0
+cachauete	34	Response	16	545068	18936	0
+cachauete	36	Picture	stim	546415	0	1	25144	1	0	25000	hit	150
+cachauete	36	Response	16	546670	256	0
+cachauete	36	Response	16	548372	1958	0
+cachauete	36	Response	16	549673	3258	0
+cachauete	36	Response	16	550975	4561	0
+cachauete	36	Response	16	552478	6063	0
+cachauete	36	Response	16	553980	7565	0
+cachauete	36	Response	16	555383	8968	0
+cachauete	36	Response	16	556884	10470	0
+cachauete	36	Response	16	558387	11973	0
+cachauete	36	Response	16	559990	13575	0
+cachauete	36	Response	16	561492	15078	0
+cachauete	36	Response	16	562994	16580	0
+cachauete	36	Response	16	564497	18083	0
+cachauete	36	Response	16	565999	19585	0
+cachauete	36	Response	16	567502	21087	0
+cachauete	36	Response	16	569004	22590	0
+cachauete	37	Picture	fix2	571559	0	1	10671	1	0	next	other	0
+cachauete	37	Quit		575614	4055	NA

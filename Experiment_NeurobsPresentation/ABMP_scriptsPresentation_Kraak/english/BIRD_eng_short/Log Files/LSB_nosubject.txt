@@ -1,0 +1,4 @@
+block	trial	Vstim	Astim	match	C/I	resp	result	RT	fb	V-file	A-file
+
+avg_resp = 1000
+1	1	4	3	2	I	0	0	0	0	Ⴋ	cut_j.wav

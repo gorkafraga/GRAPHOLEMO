@@ -1,0 +1,2 @@
+block	trial	vStim	aStim	resp	rt	fb	iti	feedJitter	vSymbol	aFile	FBtype	stimOnset	respOnset	feedbackOnset
+2	1	3	4	0	0	2	2632	2924	u_short_2_1.wav	I		11035	0	16491

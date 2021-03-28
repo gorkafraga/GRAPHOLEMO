@@ -1,0 +1,1562 @@
+Scenario - 
+Logfile written - 04/15/2016 15:01:52
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Nemo_LR_3	1	Response	3	134446	124280	1
+Nemo_LR_3	2	Response	3	233839	99206	1
+Nemo_LR_3	3	Picture	consistent	239106	5165	1	19995	2	5000	next	miss	0
+Nemo_LR_3	4	Response	16	262892	3791	1
+Nemo_LR_3	4	Picture	pos_feedback	264266	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	5	Picture	consistent	289593	5165	1	7498	2	5000	next	hit	7
+Nemo_LR_3	5	Response	32	297016	12588	1
+Nemo_LR_3	6	Picture	pos_feedback	302257	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	7	Picture	consistent	330083	5166	1	8997	2	5000	next	hit	10
+Nemo_LR_3	7	Response	16	338909	13992	1
+Nemo_LR_3	8	Picture	pos_feedback	344246	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	9	Picture	consistent	374571	5165	1	8498	2	5000	next	hit	13
+Nemo_LR_3	9	Response	32	382897	13491	1
+Nemo_LR_3	10	Picture	pos_feedback	388234	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	11	Picture	consistent	413561	5165	1	8831	2	5000	next	hit	16
+Nemo_LR_3	11	Response	16	422258	13862	1
+Nemo_LR_3	12	Picture	pos_feedback	427557	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	13	Picture	consistent	455383	5165	1	8498	2	5000	next	hit	19
+Nemo_LR_3	13	Response	32	463826	13608	1
+Nemo_LR_3	14	Picture	pos_feedback	469046	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	15	Picture	consistent	499372	5166	1	3999	2	5000	next	hit	22
+Nemo_LR_3	15	Response	16	503269	9063	1
+Nemo_LR_3	16	Picture	pos_feedback	508536	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	17	Picture	consistent	533863	5165	1	8164	3	5000	next	hit	25
+Nemo_LR_3	17	Response	32	541993	13295	1
+Nemo_LR_3	18	Picture	pos_feedback	547193	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	19	Picture	consistent	575019	5166	1	10497	2	5000	next	hit	28
+Nemo_LR_3	19	Response	16	585454	15601	1
+Nemo_LR_3	20	Picture	pos_feedback	590681	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	21	Picture	consistent	621007	5166	1	8331	2	5000	next	hit	31
+Nemo_LR_3	21	Response	16	629285	13444	1
+Nemo_LR_3	22	Picture	pos_feedback	634503	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	23	Picture	consistent	659830	5165	1	5499	2	5000	next	hit	34
+Nemo_LR_3	23	Response	16	665196	10531	1
+Nemo_LR_3	24	Picture	pos_feedback	670494	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	25	Picture	consistent	698320	5165	1	4499	2	5000	next	hit	37
+Nemo_LR_3	25	Response	16	702713	9558	1
+Nemo_LR_3	26	Picture	pos_feedback	707984	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	27	Picture	consistent	738310	5166	1	5831	3	5000	next	hit	40
+Nemo_LR_3	27	Response	32	744001	10857	1
+Nemo_LR_3	28	Picture	pos_feedback	749307	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	29	Picture	consistent	774633	5165	2	5499	3	5000	next	hit	43
+Nemo_LR_3	29	Response	32	779952	10484	2
+Nemo_LR_3	30	Picture	pos_feedback	785297	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	31	Picture	consistent	813123	5165	2	6665	4	5000	next	hit	46
+Nemo_LR_3	31	Response	16	819684	11726	1
+Nemo_LR_3	32	Picture	pos_feedback	824954	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	33	Picture	consistent	855279	5165	1	10997	2	5000	next	hit	49
+Nemo_LR_3	33	Response	16	866089	15975	1
+Nemo_LR_3	34	Response	32	866448	172	1
+Nemo_LR_3	34	Picture	pos_feedback	871441	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	35	Picture	consistent	896768	5165	1	13830	2	5000	next	hit	53
+Nemo_LR_3	35	Response	16	910478	18875	1
+Nemo_LR_3	36	Picture	pos_feedback	915763	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	37	Picture	consistent	943589	5165	2	9498	3	5000	next	hit	56
+Nemo_LR_3	37	Response	32	952941	14517	1
+Nemo_LR_3	38	Picture	pos_feedback	958252	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	39	Picture	consistent	988578	5166	1	19994	3	5000	next	miss	0
+Nemo_LR_3	40	Picture	pos_feedback	1013738	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	41	Picture	consistent	1039007	5108	75	1890	77	5000	next	hit	61
+Nemo_LR_3	41	Response	32	1040727	6828	1
+Nemo_LR_3	41	Response	16	1040880	6981	1
+Nemo_LR_3	42	Picture	pos_feedback	1046063	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	43	Picture	consistent	1073889	5166	1	6331	3	5000	next	hit	65
+Nemo_LR_3	43	Response	32	1080032	11309	1
+Nemo_LR_3	44	Picture	pos_feedback	1085386	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	45	Picture	consistent	1115711	5165	1	19662	2	5000	next	hit	68
+Nemo_LR_3	45	Response	32	1135262	24716	1
+Nemo_LR_3	46	Picture	pos_feedback	1140538	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	47	Picture	consistent	1165865	5175	1	12830	2	5000	next	hit	71
+Nemo_LR_3	47	Response	16	1178595	17905	1
+Nemo_LR_3	48	Picture	pos_feedback	1183860	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	49	Picture	consistent	1211686	5165	1	13330	2	5000	next	hit	74
+Nemo_LR_3	49	Response	32	1224882	18361	1
+Nemo_LR_3	50	Picture	pos_feedback	1230181	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	51	Picture	consistent	1260507	5165	1	10164	2	5000	next	hit	77
+Nemo_LR_3	51	Response	16	1270512	15170	1
+Nemo_LR_3	52	Picture	pos_feedback	1275836	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	53	Picture	consistent	1301163	5165	1	4499	2	5000	next	hit	80
+Nemo_LR_3	53	Response	32	1305572	9574	1
+Nemo_LR_3	54	Picture	pos_feedback	1310827	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	55	Picture	consistent	1338653	5165	1	7831	3	5000	next	hit	83
+Nemo_LR_3	55	Response	32	1346424	12936	1
+Nemo_LR_3	56	Picture	pos_feedback	1351650	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	57	Picture	consistent	1381975	5165	1	6332	2	5000	next	hit	86
+Nemo_LR_3	57	Response	32	1388188	11378	1
+Nemo_LR_3	58	Picture	pos_feedback	1393472	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	59	Picture	consistent	1418799	5165	1	4994	80	5000	next	hit	89
+Nemo_LR_3	59	Response	32	1423725	10091	1
+Nemo_LR_3	60	Picture	pos_feedback	1428963	5170	1	14996	2	5000	next	other	0
+Nemo_LR_3	61	Picture	consistent	1456789	5165	1	8331	2	5000	next	hit	92
+Nemo_LR_3	61	Response	16	1465067	13443	1
+Nemo_LR_3	62	Picture	pos_feedback	1470285	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	63	Response	3	1628816	133370	2
+Nemo_LR_3	64	Picture	consistent	1636909	5166	1	10497	2	5000	next	hit	96
+Nemo_LR_3	64	Response	16	1647322	15579	2
+Nemo_LR_3	65	Picture	pos_feedback	1652571	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	66	Picture	consistent	1680731	5166	1	9331	2	5000	next	hit	99
+Nemo_LR_3	66	Response	32	1689991	14426	1
+Nemo_LR_3	67	Picture	pos_feedback	1695227	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	68	Picture	consistent	1723386	5165	1	5665	3	5000	next	hit	102
+Nemo_LR_3	68	Response	16	1728955	10734	1
+Nemo_LR_3	69	Picture	pos_feedback	1734217	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	70	Picture	consistent	1762043	5166	1	5998	2	5000	next	hit	105
+Nemo_LR_3	70	Response	16	1767973	11096	1
+Nemo_LR_3	71	Picture	pos_feedback	1773207	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	72	Picture	consistent	1803532	5165	1	6165	2	5000	next	hit	108
+Nemo_LR_3	72	Response	32	1809566	11199	1
+Nemo_LR_3	73	Picture	pos_feedback	1814862	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	74	Picture	consistent	1840470	5113	89	8883	90	5000	next	hit	111
+Nemo_LR_3	74	Response	16	1849175	13818	1
+Nemo_LR_3	75	Picture	pos_feedback	1854519	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	76	Picture	consistent	1884844	5165	1	9164	3	5000	next	hit	114
+Nemo_LR_3	76	Response	32	1893905	14226	1
+Nemo_LR_3	77	Picture	pos_feedback	1899174	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	78	Picture	consistent	1924500	5165	2	8332	3	5000	next	hit	117
+Nemo_LR_3	78	Response	16	1932697	13362	1
+Nemo_LR_3	79	Picture	pos_feedback	1937997	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	80	Picture	consistent	1968322	5165	1	7165	2	5000	next	hit	120
+Nemo_LR_3	80	Response	32	1975362	12205	1
+Nemo_LR_3	81	Picture	pos_feedback	1980652	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	82	Picture	consistent	2005979	5165	1	11164	2	5000	next	hit	123
+Nemo_LR_3	82	Response	16	2016946	16132	1
+Nemo_LR_3	83	Picture	pos_feedback	2022308	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	84	Picture	consistent	2050134	5165	1	3666	2	5000	next	hit	126
+Nemo_LR_3	84	Response	16	2053710	8741	1
+Nemo_LR_3	85	Picture	pos_feedback	2058965	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	86	Picture	consistent	2086791	5165	2	7832	3	5000	next	hit	129
+Nemo_LR_3	86	Response	32	2094508	12882	1
+Nemo_LR_3	87	Picture	pos_feedback	2099788	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	88	Picture	consistent	2125115	5166	1	7165	2	5000	next	hit	132
+Nemo_LR_3	88	Response	16	2132237	12288	1
+Nemo_LR_3	89	Picture	pos_feedback	2137445	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	90	Picture	consistent	2167770	5165	2	7165	3	5000	next	hit	135
+Nemo_LR_3	90	Response	32	2174871	12266	1
+Nemo_LR_3	91	Picture	pos_feedback	2180100	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	92	Picture	consistent	2210426	5165	1	5165	2	5000	next	hit	138
+Nemo_LR_3	92	Response	32	2215538	10277	1
+Nemo_LR_3	93	Picture	pos_feedback	2220756	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	94	Picture	consistent	2246083	5165	1	7832	2	5000	next	hit	141
+Nemo_LR_3	94	Response	32	2253754	12836	1
+Nemo_LR_3	95	Picture	pos_feedback	2259080	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	96	Picture	consistent	2284407	5166	1	6831	2	5000	next	hit	144
+Nemo_LR_3	96	Response	16	2291164	11923	1
+Nemo_LR_3	97	Picture	pos_feedback	2296404	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	98	Picture	consistent	2324229	5165	2	5166	3	5000	next	hit	147
+Nemo_LR_3	98	Response	32	2329299	10235	1
+Nemo_LR_3	99	Picture	pos_feedback	2334560	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	100	Picture	consistent	2364886	5166	1	6998	2	5000	next	hit	150
+Nemo_LR_3	100	Response	16	2371704	11984	1
+Nemo_LR_3	101	Picture	pos_feedback	2377049	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	102	Picture	consistent	2404875	5165	1	6332	2	5000	next	hit	153
+Nemo_LR_3	102	Response	16	2411033	11323	1
+Nemo_LR_3	103	Picture	pos_feedback	2416372	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	104	Picture	consistent	2441699	5165	1	6998	2	5000	next	hit	156
+Nemo_LR_3	104	Response	16	2448518	11984	1
+Nemo_LR_3	105	Picture	pos_feedback	2453862	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	106	Picture	consistent	2484188	5166	1	13163	2	5000	next	hit	159
+Nemo_LR_3	106	Response	32	2497228	18206	1
+Nemo_LR_3	107	Picture	pos_feedback	2502516	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	108	Picture	consistent	2532842	5165	1	4832	2	5000	next	hit	162
+Nemo_LR_3	108	Response	16	2537569	9892	1
+Nemo_LR_3	109	Picture	pos_feedback	2542839	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	110	Picture	consistent	2570665	5165	1	6832	2	5000	next	hit	165
+Nemo_LR_3	110	Response	16	2577362	11862	1
+Nemo_LR_3	111	Picture	pos_feedback	2582662	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	112	Picture	consistent	2612988	5166	1	10497	2	5000	next	hit	168
+Nemo_LR_3	112	Response	32	2623411	15589	1
+Nemo_LR_3	113	Picture	pos_feedback	2628650	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	114	Picture	consistent	2656476	5165	1	11331	2	5000	next	hit	171
+Nemo_LR_3	114	Response	16	2667548	16237	12
+Nemo_LR_3	115	Picture	pos_feedback	2672972	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	116	Picture	consistent	2698299	5166	1	4832	2	5000	next	hit	174
+Nemo_LR_3	116	Response	32	2703041	9908	1
+Nemo_LR_3	117	Picture	pos_feedback	2708296	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	118	Picture	consistent	2733623	5165	1	4832	2	5000	next	hit	177
+Nemo_LR_3	118	Response	16	2738357	9899	1
+Nemo_LR_3	119	Picture	pos_feedback	2743620	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	120	Response	32	2771176	2396	1
+Nemo_LR_3	120	Picture	consistent	2773946	5166	1	17495	2	5000	next	hit	181
+Nemo_LR_3	120	Response	32	2791377	22597	1
+Nemo_LR_3	121	Picture	pos_feedback	2796606	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	122	Picture	consistent	2826932	5166	1	3665	3	5000	next	hit	184
+Nemo_LR_3	122	Response	16	2830468	8702	1
+Nemo_LR_3	123	Picture	pos_feedback	2835763	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	124	Picture	consistent	2863589	5165	1	4499	2	5000	next	hit	187
+Nemo_LR_3	124	Response	32	2867999	9575	1
+Nemo_LR_3	125	Picture	pos_feedback	2873253	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	126	Picture	consistent	2898580	5166	1	3832	2	5000	next	hit	190
+Nemo_LR_3	126	Response	32	2902334	8920	1
+Nemo_LR_3	127	Picture	pos_feedback	2907578	5166	1	14995	3	5000	next	other	0
+Nemo_LR_3	128	Picture	consistent	2935403	5165	2	2666	4	5000	next	hit	193
+Nemo_LR_3	128	Response	32	2938036	7798	1
+Nemo_LR_3	129	Picture	pos_feedback	2943235	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	130	Picture	consistent	2968561	5165	2	5999	3	5000	next	hit	196
+Nemo_LR_3	130	Response	16	2974424	11028	1
+Nemo_LR_3	131	Picture	pos_feedback	2979725	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	132	Picture	consistent	3010051	5166	1	6998	2	5000	next	hit	199
+Nemo_LR_3	132	Response	16	3016976	12091	1
+Nemo_LR_3	133	Picture	pos_feedback	3022214	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	134	Picture	consistent	3047541	5165	1	6498	3	5000	next	hit	202
+Nemo_LR_3	134	Response	16	3053956	11580	1
+Nemo_LR_3	135	Picture	pos_feedback	3059205	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	136	Picture	consistent	3087031	5166	1	3999	2	5000	next	hit	205
+Nemo_LR_3	136	Response	16	3090974	9109	1
+Nemo_LR_3	137	Picture	pos_feedback	3096195	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	138	Picture	consistent	3124021	5165	1	4166	2	5000	next	hit	208
+Nemo_LR_3	138	Response	32	3128103	9247	1
+Nemo_LR_3	139	Picture	pos_feedback	3133352	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	140	Picture	consistent	3163677	5165	2	3499	4	5000	next	hit	211
+Nemo_LR_3	140	Response	32	3167039	8527	1
+Nemo_LR_3	141	Picture	pos_feedback	3172342	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	142	Picture	consistent	3197668	5165	2	4666	3	5000	next	hit	214
+Nemo_LR_3	142	Response	32	3202159	9656	2
+Nemo_LR_3	143	Picture	pos_feedback	3207499	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	144	Picture	consistent	3235325	5165	2	3499	4	5000	next	hit	217
+Nemo_LR_3	144	Response	32	3238654	8494	1
+Nemo_LR_3	145	Picture	pos_feedback	3243990	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	146	Picture	consistent	3271816	5165	1	3499	2	5000	next	hit	220
+Nemo_LR_3	146	Response	16	3275248	8597	1
+Nemo_LR_3	147	Picture	pos_feedback	3280480	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	148	Picture	consistent	3310806	5166	1	3166	2	5000	next	hit	223
+Nemo_LR_3	148	Response	16	3313931	8291	1
+Nemo_LR_3	149	Picture	pos_feedback	3319137	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	150	Picture	consistent	3344464	5166	1	5165	2	5000	next	hit	226
+Nemo_LR_3	150	Response	32	3349520	10222	1
+Nemo_LR_3	151	Picture	pos_feedback	3354794	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	152	Picture	consistent	3385120	5166	1	2999	2	5000	next	hit	229
+Nemo_LR_3	152	Response	16	3388021	8067	1
+Nemo_LR_3	153	Picture	pos_feedback	3393284	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	154	Picture	consistent	3418611	5165	1	3166	2	5000	next	hit	232
+Nemo_LR_3	154	Response	32	3421702	8256	1
+Nemo_LR_3	155	Picture	pos_feedback	3426942	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	156	Picture	consistent	3454768	5165	1	4499	2	5000	next	hit	235
+Nemo_LR_3	156	Response	16	3459225	9622	1
+Nemo_LR_3	157	Picture	pos_feedback	3464432	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	158	Picture	consistent	3489759	5165	1	6832	2	5000	next	hit	238
+Nemo_LR_3	158	Response	32	3496470	11876	1
+Nemo_LR_3	159	Picture	pos_feedback	3501756	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	160	Response	16	3525900	3983	1
+Nemo_LR_3	160	Picture	consistent	3527083	5166	1	19994	3	5000	next	miss	0
+Nemo_LR_3	161	Picture	pos_feedback	3552243	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	162	Picture	consistent	3582568	5165	1	2999	3	5000	next	hit	244
+Nemo_LR_3	162	Response	16	3585488	8085	1
+Nemo_LR_3	163	Picture	pos_feedback	3590731	5164	78	14998	79	5000	next	other	0
+Nemo_LR_3	164	Picture	consistent	3616059	5165	2	1833	4	5000	next	hit	247
+Nemo_LR_3	164	Response	16	3617710	6816	1
+Nemo_LR_3	165	Picture	pos_feedback	3623058	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	166	Picture	consistent	3650884	5166	1	3166	2	5000	next	hit	250
+Nemo_LR_3	166	Response	16	3653980	8262	1
+Nemo_LR_3	167	Picture	pos_feedback	3659215	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	168	Picture	consistent	3689540	5165	1	167	2	5000	next	hit	253
+Nemo_LR_3	168	Response	16	3689558	5183	1
+Nemo_LR_3	169	Picture	pos_feedback	3694872	5165	2	14996	3	5000	next	other	0
+Nemo_LR_3	170	Response	32	3723465	3433	1
+Nemo_LR_3	170	Picture	consistent	3725198	5166	1	7831	2	5000	next	hit	257
+Nemo_LR_3	170	Response	32	3732992	12960	1
+Nemo_LR_3	171	Picture	pos_feedback	3738194	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	171	Response	16	3741393	8364	1
+Nemo_LR_3	172	Picture	consistent	3766020	5165	2	3666	3	5000	next	hit	261
+Nemo_LR_3	172	Response	32	3769557	8702	1
+Nemo_LR_3	173	Response	16	3770047	361	1
+Nemo_LR_3	173	Picture	pos_feedback	3774851	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	174	Picture	consistent	3802677	5165	2	3666	3	5000	next	hit	265
+Nemo_LR_3	174	Response	32	3806161	8649	1
+Nemo_LR_3	175	Picture	pos_feedback	3811509	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	176	Response	16	3836549	2380	1
+Nemo_LR_3	176	Picture	consistent	3839335	5166	1	14996	2	5000	next	hit	269
+Nemo_LR_3	176	Response	32	3854257	20088	1
+Nemo_LR_3	177	Picture	pos_feedback	3859496	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	178	Picture	consistent	3889821	5165	2	2000	3	5000	next	hit	272
+Nemo_LR_3	178	Response	32	3891672	7016	1
+Nemo_LR_3	179	Picture	pos_feedback	3896986	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	180	Picture	consistent	3927312	5166	1	2832	2	5000	next	hit	275
+Nemo_LR_3	180	Response	16	3930006	7860	1
+Nemo_LR_3	181	Picture	pos_feedback	3935310	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	182	Picture	consistent	3960636	5165	2	667	3	5000	next	hit	278
+Nemo_LR_3	182	Response	32	3961231	5760	1
+Nemo_LR_3	183	Picture	pos_feedback	3966468	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	184	Picture	consistent	3996793	5165	2	5166	3	5000	next	hit	281
+Nemo_LR_3	184	Response	16	4001865	10237	1
+Nemo_LR_3	185	Picture	pos_feedback	4007124	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	186	Picture	consistent	4034950	5165	1	8831	2	5000	next	hit	284
+Nemo_LR_3	186	Response	16	4043727	13942	1
+Nemo_LR_3	187	Picture	pos_feedback	4048947	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	188	Picture	consistent	4074273	5165	2	6665	4	5000	next	hit	287
+Nemo_LR_3	188	Response	16	4080865	11757	1
+Nemo_LR_3	189	Picture	pos_feedback	4086104	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	190	Picture	consistent	4111430	5165	1	8665	2	5000	next	hit	290
+Nemo_LR_3	190	Response	32	4120041	13776	1
+Nemo_LR_3	191	Picture	pos_feedback	4125260	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	192	Picture	consistent	4155586	5166	1	10330	3	5000	next	hit	293
+Nemo_LR_3	192	Response	32	4165768	15348	1
+Nemo_LR_3	193	Picture	pos_feedback	4171081	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	194	Picture	consistent	4196408	5165	1	6498	3	5000	next	hit	296
+Nemo_LR_3	194	Response	16	4202822	11579	1
+Nemo_LR_3	195	Picture	pos_feedback	4208072	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	196	Picture	consistent	4233399	5166	1	7498	2	5000	next	hit	299
+Nemo_LR_3	196	Response	16	4240787	12554	1
+Nemo_LR_3	197	Picture	pos_feedback	4246062	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	198	Picture	consistent	4273888	5165	1	10497	2	5000	next	hit	302
+Nemo_LR_3	198	Response	16	4284231	15508	1
+Nemo_LR_3	199	Picture	pos_feedback	4289551	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	200	Picture	consistent	4319876	5165	1	4999	2	5000	next	hit	305
+Nemo_LR_3	200	Response	16	4324746	10035	1
+Nemo_LR_3	201	Picture	pos_feedback	4330040	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	202	Picture	consistent	4357866	5165	1	7332	2	5000	next	hit	308
+Nemo_LR_3	202	Response	32	4365112	12411	1
+Nemo_LR_3	203	Picture	pos_feedback	4370363	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	204	Picture	consistent	4398189	5165	1	6665	2	5000	next	hit	311
+Nemo_LR_3	204	Response	16	4404756	11732	1
+Nemo_LR_3	205	Picture	pos_feedback	4410019	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	206	Picture	consistent	4435346	5165	1	333	2	5000	next	hit	314
+Nemo_LR_3	206	Response	32	4435584	5403	1
+Nemo_LR_3	207	Picture	pos_feedback	4440844	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	208	Picture	consistent	4471170	5165	1	2666	2	5000	next	hit	317
+Nemo_LR_3	208	Response	32	4473654	7649	1
+Nemo_LR_3	209	Picture	pos_feedback	4479001	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	210	Picture	consistent	4509327	5166	1	4165	2	5000	next	hit	320
+Nemo_LR_3	210	Response	32	4513315	9154	1
+Nemo_LR_3	211	Picture	pos_feedback	4518658	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	212	Picture	consistent	4546483	5165	2	5666	3	5000	next	hit	323
+Nemo_LR_3	212	Response	16	4552055	10737	1
+Nemo_LR_3	213	Picture	pos_feedback	4557314	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	214	Picture	consistent	4585140	5165	1	10331	2	5000	next	hit	326
+Nemo_LR_3	214	Response	16	4595351	15376	1
+Nemo_LR_3	215	Picture	pos_feedback	4600636	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	216	Picture	consistent	4625963	5165	1	9331	2	5000	next	hit	329
+Nemo_LR_3	216	Response	16	4635188	14390	1
+Nemo_LR_3	217	Picture	pos_feedback	4640459	5165	2	14996	3	5000	next	other	0
+Nemo_LR_3	218	Picture	consistent	4665786	5166	1	6998	2	5000	next	hit	332
+Nemo_LR_3	218	Response	32	4672650	12030	1
+Nemo_LR_3	219	Picture	pos_feedback	4677949	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	220	Picture	consistent	4708275	5166	1	6331	3	5000	next	hit	335
+Nemo_LR_3	220	Response	16	4714468	11359	1
+Nemo_LR_3	221	Picture	pos_feedback	4719772	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	222	Picture	consistent	4750097	5165	1	4166	2	5000	next	hit	338
+Nemo_LR_3	222	Response	32	4754194	9262	1
+Nemo_LR_3	223	Picture	pos_feedback	4759428	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	224	Picture	consistent	4787254	5165	1	5165	3	5000	next	hit	341
+Nemo_LR_3	224	Response	16	4792367	10278	1
+Nemo_LR_3	225	Picture	pos_feedback	4797585	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	226	Picture	consistent	4822911	5165	2	8998	3	5000	next	hit	344
+Nemo_LR_3	226	Response	16	4831794	14048	1
+Nemo_LR_3	227	Picture	pos_feedback	4837074	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	228	Picture	consistent	4864901	5166	1	12330	2	5000	next	hit	347
+Nemo_LR_3	228	Response	16	4877153	17418	1
+Nemo_LR_3	229	Picture	pos_feedback	4882396	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	230	Picture	consistent	4912721	5165	2	7332	3	5000	next	hit	350
+Nemo_LR_3	230	Response	32	4919928	12372	1
+Nemo_LR_3	231	Picture	pos_feedback	4925218	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	232	Picture	consistent	4950545	5165	2	6665	3	5000	next	hit	353
+Nemo_LR_3	232	Response	16	4957063	11683	1
+Nemo_LR_3	233	Picture	pos_feedback	4962375	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	234	Picture	consistent	4990201	5165	1	5665	3	5000	next	hit	356
+Nemo_LR_3	234	Response	16	4995784	10748	1
+Nemo_LR_3	235	Picture	pos_feedback	5001032	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	236	Picture	consistent	5026358	5165	2	1833	4	5000	next	hit	359
+Nemo_LR_3	236	Response	32	5028057	6864	1
+Nemo_LR_3	237	Picture	pos_feedback	5033357	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	238	Picture	consistent	5058683	5165	2	4333	3	5000	next	hit	362
+Nemo_LR_3	238	Response	16	5062913	9395	1
+Nemo_LR_3	239	Picture	pos_feedback	5068181	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	240	Picture	consistent	5098506	5165	1	2166	3	5000	next	hit	365
+Nemo_LR_3	240	Response	32	5100571	7230	1
+Nemo_LR_3	241	Picture	pos_feedback	5105838	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	242	Picture	consistent	5133664	5165	1	2166	2	5000	next	hit	368
+Nemo_LR_3	242	Response	16	5135692	7193	1
+Nemo_LR_3	243	Picture	pos_feedback	5140995	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	244	Response	32	5169954	3799	1
+Nemo_LR_3	244	Picture	consistent	5171321	5166	1	13163	2	5000	next	hit	372
+Nemo_LR_3	244	Response	32	5184380	18225	2
+Nemo_LR_3	245	Picture	pos_feedback	5189649	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	246	Picture	consistent	5217475	5165	1	4333	2	5000	next	hit	375
+Nemo_LR_3	246	Response	32	5221653	9343	1
+Nemo_LR_3	247	Picture	pos_feedback	5226973	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	248	Picture	consistent	5252300	5166	1	3499	2	5000	next	hit	378
+Nemo_LR_3	248	Response	16	5255667	8533	1
+Nemo_LR_3	249	Picture	pos_feedback	5260964	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	250	Picture	consistent	5288790	5165	1	3999	2	5000	next	hit	381
+Nemo_LR_3	250	Response	32	5292685	9060	1
+Nemo_LR_3	251	Picture	pos_feedback	5297954	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	252	Picture	consistent	5328280	5166	1	6165	2	5000	next	hit	384
+Nemo_LR_3	252	Response	16	5334370	11256	1
+Nemo_LR_3	253	Picture	pos_feedback	5339610	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	254	Picture	consistent	5364937	5165	1	833	2	5000	next	hit	387
+Nemo_LR_3	254	Response	32	5365732	5960	1
+Nemo_LR_3	255	Picture	pos_feedback	5370935	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	256	Picture	consistent	5398761	5165	2	5666	3	5000	next	hit	390
+Nemo_LR_3	256	Response	16	5404265	10669	1
+Nemo_LR_3	257	Picture	pos_feedback	5409592	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	258	Picture	consistent	5439854	5102	102	2563	103	5000	next	hit	393
+Nemo_LR_3	258	Response	32	5442330	7578	1
+Nemo_LR_3	259	Picture	pos_feedback	5447582	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	260	Picture	consistent	5477907	5165	2	3166	3	5000	next	hit	396
+Nemo_LR_3	260	Response	16	5480917	8175	1
+Nemo_LR_3	261	Picture	pos_feedback	5486239	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	262	Picture	consistent	5511565	5165	2	7832	3	5000	next	hit	399
+Nemo_LR_3	262	Response	16	5519324	12924	1
+Nemo_LR_3	263	Picture	pos_feedback	5524562	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	264	Picture	consistent	5554887	5165	1	2999	3	5000	next	hit	402
+Nemo_LR_3	264	Response	32	5557768	8046	1
+Nemo_LR_3	265	Picture	pos_feedback	5563052	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	266	Picture	consistent	5590878	5165	1	9997	3	5000	next	hit	405
+Nemo_LR_3	266	Response	16	5600849	15136	1
+Nemo_LR_3	267	Picture	pos_feedback	5606041	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	268	Picture	consistent	5633867	5166	1	2166	2	5000	next	hit	408
+Nemo_LR_3	268	Response	32	5635990	7289	1
+Nemo_LR_3	269	Picture	pos_feedback	5641198	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	270	Picture	consistent	5671524	5166	1	2499	2	5000	next	hit	411
+Nemo_LR_3	270	Response	16	5673926	7568	1
+Nemo_LR_3	271	Picture	pos_feedback	5679188	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	272	Picture	consistent	5704515	5165	1	10331	2	5000	next	hit	414
+Nemo_LR_3	272	Response	32	5714751	15401	1
+Nemo_LR_3	273	Picture	pos_feedback	5720011	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	274	Picture	consistent	5745338	5166	1	11997	2	5000	next	hit	417
+Nemo_LR_3	274	Response	32	5757199	17027	1
+Nemo_LR_3	275	Picture	pos_feedback	5762500	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	276	Picture	consistent	5790326	5165	1	7665	2	5000	next	hit	420
+Nemo_LR_3	276	Response	16	5797897	12736	1
+Nemo_LR_3	277	Picture	pos_feedback	5803156	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	278	Picture	consistent	5833481	5165	2	13497	3	5000	next	hit	423
+Nemo_LR_3	278	Response	16	5846893	18577	1
+Nemo_LR_3	279	Picture	pos_feedback	5852143	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	280	Picture	consistent	5877470	5165	1	7665	2	5000	next	hit	426
+Nemo_LR_3	280	Response	16	5885066	12761	1
+Nemo_LR_3	281	Picture	pos_feedback	5890300	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	282	Picture	consistent	5915627	5166	1	3832	2	5000	next	hit	429
+Nemo_LR_3	282	Response	32	5919313	8852	1
+Nemo_LR_3	283	Picture	pos_feedback	5924624	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	284	Picture	consistent	5954950	5166	1	4165	3	5000	next	hit	432
+Nemo_LR_3	284	Response	16	5958952	9168	1
+Nemo_LR_3	285	Picture	pos_feedback	5964281	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	286	Picture	consistent	5989607	5165	2	4666	3	5000	next	hit	435
+Nemo_LR_3	286	Response	32	5994101	9659	1
+Nemo_LR_3	287	Picture	pos_feedback	5999438	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	288	Response	16	6029489	4891	1
+Nemo_LR_3	288	Picture	consistent	6029763	5165	2	12997	3	5000	next	hit	439
+Nemo_LR_3	288	Response	16	6042589	17991	1
+Nemo_LR_3	289	Picture	pos_feedback	6047925	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	290	Picture	consistent	6073252	5165	1	12830	2	5000	next	hit	442
+Nemo_LR_3	290	Response	32	6085917	17830	1
+Nemo_LR_3	291	Picture	pos_feedback	6091248	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	292	Picture	consistent	6119074	5166	1	5998	2	5000	next	hit	445
+Nemo_LR_3	292	Response	16	6124979	11071	1
+Nemo_LR_3	293	Picture	pos_feedback	6130237	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	294	Picture	consistent	6158063	5165	2	334	3	5000	next	hit	448
+Nemo_LR_3	294	Response	32	6158307	5409	1
+Nemo_LR_3	295	Picture	pos_feedback	6163562	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	295	Response	16	6184932	26535	1
+Nemo_LR_3	296	Picture	consistent	6193887	5165	2	5999	3	5000	next	hit	452
+Nemo_LR_3	296	Response	32	6199740	11018	1
+Nemo_LR_3	297	Picture	pos_feedback	6205051	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	298	Picture	consistent	6232877	5165	1	833	3	5000	next	hit	455
+Nemo_LR_3	298	Response	16	6233595	5883	1
+Nemo_LR_3	299	Response	32	6233960	250	1
+Nemo_LR_3	299	Picture	pos_feedback	6238876	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	300	Picture	consistent	6264202	5165	2	2167	3	5000	next	hit	459
+Nemo_LR_3	300	Response	32	6266218	7181	1
+Nemo_LR_3	301	Response	16	6266373	4	1
+Nemo_LR_3	301	Picture	pos_feedback	6271534	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	302	Picture	consistent	6299360	5165	1	1333	2	5000	next	hit	463
+Nemo_LR_3	302	Response	16	6300626	6431	1
+Nemo_LR_3	303	Picture	pos_feedback	6305858	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	304	Response	32	6332194	1176	1
+Nemo_LR_3	304	Picture	consistent	6336184	5166	1	4832	2	5000	next	hit	467
+Nemo_LR_3	304	Response	32	6340987	9969	1
+Nemo_LR_3	305	Picture	pos_feedback	6346181	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	306	Picture	consistent	6371508	5166	1	2333	2	5000	next	hit	470
+Nemo_LR_3	306	Response	16	6373801	7459	1
+Nemo_LR_3	307	Picture	pos_feedback	6379006	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	308	Picture	consistent	6406832	5166	1	1333	2	5000	next	hit	473
+Nemo_LR_3	308	Response	16	6408072	6406	1
+Nemo_LR_3	309	Picture	pos_feedback	6413330	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	310	Picture	consistent	6443656	5166	1	1666	2	5000	next	hit	476
+Nemo_LR_3	310	Response	16	6445292	6802	1
+Nemo_LR_3	311	Picture	pos_feedback	6450487	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	312	Picture	consistent	6475814	5165	1	1999	3	5000	next	hit	479
+Nemo_LR_3	312	Response	16	6477785	7136	1
+Nemo_LR_3	313	Picture	pos_feedback	6482979	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	314	Picture	consistent	6510805	5166	1	2499	2	5000	next	hit	482
+Nemo_LR_3	314	Response	32	6513125	7486	1
+Nemo_LR_3	315	Picture	pos_feedback	6518469	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	316	Response	16	6547919	4289	1
+Nemo_LR_3	316	Picture	consistent	6548795	5165	1	7665	2	5000	next	hit	486
+Nemo_LR_3	316	Response	32	6556394	12764	1
+Nemo_LR_3	317	Picture	pos_feedback	6561625	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	318	Picture	consistent	6586952	5166	1	6831	2	5000	next	hit	489
+Nemo_LR_3	318	Response	16	6593742	11956	1
+Nemo_LR_3	319	Picture	pos_feedback	6598949	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	319	Response	32	6603617	9834	1
+Nemo_LR_3	320	Response	16	6625659	4050	1
+Nemo_LR_3	320	Picture	consistent	6626775	5166	1	6498	2	5000	next	hit	494
+Nemo_LR_3	320	Response	32	6633116	11507	1
+Nemo_LR_3	321	Picture	pos_feedback	6638438	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	321	Response	16	6642746	9473	1
+Nemo_LR_3	322	Picture	consistent	6668764	5166	1	2166	2	5000	next	hit	498
+Nemo_LR_3	322	Response	16	6670802	7204	1
+Nemo_LR_3	323	Picture	pos_feedback	6676095	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	324	Picture	consistent	6701422	5166	1	2166	2	5000	next	hit	501
+Nemo_LR_3	324	Response	16	6703484	7228	1
+Nemo_LR_3	325	Picture	pos_feedback	6708753	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	326	Picture	consistent	6736579	5165	1	167	2	5000	next	hit	504
+Nemo_LR_3	326	Response	32	6736701	5287	1
+Nemo_LR_3	327	Picture	pos_feedback	6741911	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	328	Picture	consistent	6772237	5166	1	7831	2	5000	next	hit	507
+Nemo_LR_3	328	Response	32	6780005	12934	1
+Nemo_LR_3	329	Response	16	6780593	525	1
+Nemo_LR_3	329	Picture	pos_feedback	6785233	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	330	Picture	consistent	6810560	5165	1	4499	2	5000	next	hit	511
+Nemo_LR_3	330	Response	16	6814883	9488	1
+Nemo_LR_3	331	Picture	pos_feedback	6820224	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	332	Picture	consistent	6848050	5165	1	3999	2	5000	next	hit	514
+Nemo_LR_3	332	Response	32	6851891	9006	1
+Nemo_LR_3	333	Picture	pos_feedback	6857214	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	334	Picture	consistent	6887540	5165	1	5332	2	5000	next	hit	517
+Nemo_LR_3	334	Response	32	6892724	10349	1
+Nemo_LR_3	335	Picture	pos_feedback	6898037	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	336	Picture	consistent	6923364	5165	1	3999	2	5000	next	hit	520
+Nemo_LR_3	336	Response	16	6927295	9096	1
+Nemo_LR_3	337	Picture	pos_feedback	6932528	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	338	Picture	consistent	6960354	5165	1	4499	2	5000	next	hit	523
+Nemo_LR_3	338	Response	32	6964781	9592	1
+Nemo_LR_3	339	Picture	pos_feedback	6970018	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	340	Response	16	6999082	3903	1
+Nemo_LR_3	340	Picture	consistent	7000344	5165	1	8331	2	5000	next	hit	527
+Nemo_LR_3	340	Response	16	7008494	13315	1
+Nemo_LR_3	341	Picture	pos_feedback	7013840	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	342	Picture	consistent	7039167	5165	1	1500	2	5000	next	hit	530
+Nemo_LR_3	342	Response	32	7040620	6618	1
+Nemo_LR_3	343	Picture	pos_feedback	7045832	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	344	Picture	consistent	7073658	5165	1	4166	2	5000	next	hit	533
+Nemo_LR_3	344	Response	32	7077701	9208	1
+Nemo_LR_3	345	Picture	pos_feedback	7082989	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	346	Response	16	7110345	2196	1
+Nemo_LR_3	346	Picture	consistent	7113314	5165	2	3333	3	5000	next	hit	537
+Nemo_LR_3	346	Response	16	7116496	8347	1
+Nemo_LR_3	347	Picture	pos_feedback	7121812	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	348	Picture	consistent	7147139	5165	1	4999	2	5000	next	hit	540
+Nemo_LR_3	348	Response	32	7152061	10087	2
+Nemo_LR_3	349	Picture	pos_feedback	7157303	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	350	Picture	consistent	7185129	5165	1	4832	2	5000	next	hit	543
+Nemo_LR_3	350	Response	16	7189851	9887	1
+Nemo_LR_3	351	Picture	pos_feedback	7195126	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	352	Picture	consistent	7225452	5165	1	7664	3	5000	next	hit	546
+Nemo_LR_3	352	Response	16	7233002	12715	1
+Nemo_LR_3	353	Picture	pos_feedback	7238282	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	354	Picture	consistent	7263609	5166	1	19994	2	5000	next	miss	0
+Nemo_LR_3	355	Picture	pos_feedback	7288769	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	355	Response	16	7291588	7985	1
+Nemo_LR_3	356	Picture	consistent	7316595	5166	1	5665	2	5000	next	hit	552
+Nemo_LR_3	356	Response	16	7322151	10722	1
+Nemo_LR_3	357	Picture	pos_feedback	7327425	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	358	Picture	consistent	7357751	5166	1	6165	2	5000	next	hit	555
+Nemo_LR_3	358	Response	16	7363871	11286	1
+Nemo_LR_3	359	Picture	pos_feedback	7369081	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	360	Picture	consistent	7394408	5166	1	7831	2	5000	next	hit	558
+Nemo_LR_3	360	Response	32	7402209	12967	1
+Nemo_LR_3	361	Picture	pos_feedback	7407404	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	362	Picture	consistent	7435230	5165	2	9665	3	5000	next	hit	561
+Nemo_LR_3	362	Response	16	7444750	14685	1
+Nemo_LR_3	363	Picture	pos_feedback	7450060	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	364	Picture	consistent	7480385	5165	1	5332	2	5000	next	hit	564
+Nemo_LR_3	364	Response	32	7485528	10308	1
+Nemo_LR_3	365	Picture	pos_feedback	7490883	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	366	Picture	consistent	7516209	5165	1	7332	2	5000	next	hit	567
+Nemo_LR_3	366	Response	16	7523360	12316	1
+Nemo_LR_3	367	Picture	pos_feedback	7528706	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	368	Picture	consistent	7556532	5165	1	1333	2	5000	next	hit	570
+Nemo_LR_3	368	Response	32	7557684	6317	1
+Nemo_LR_3	369	Picture	pos_feedback	7563030	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	370	Picture	consistent	7593356	5166	1	2666	2	5000	next	hit	573
+Nemo_LR_3	370	Response	32	7595871	7681	1
+Nemo_LR_3	371	Picture	pos_feedback	7601187	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	371	Response	16	7606539	10517	1
+Nemo_LR_3	372	Picture	consistent	7626514	5165	1	1000	2	5000	next	hit	577
+Nemo_LR_3	372	Response	16	7627384	6035	1
+Nemo_LR_3	373	Picture	pos_feedback	7632679	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	374	Response	32	7655971	631	1
+Nemo_LR_3	374	Picture	consistent	7660505	5165	1	3499	2	5000	next	hit	581
+Nemo_LR_3	374	Response	32	7663935	8595	1
+Nemo_LR_3	375	Picture	pos_feedback	7669169	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	375	Response	16	7672370	8366	1
+Nemo_LR_3	376	Picture	consistent	7699495	5165	1	4166	2	5000	next	hit	585
+Nemo_LR_3	376	Response	32	7703477	9147	1
+Nemo_LR_3	377	Picture	pos_feedback	7708826	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	378	Picture	consistent	7734153	5166	1	2993	45	5000	next	hit	588
+Nemo_LR_3	378	Response	16	7737015	8028	2
+Nemo_LR_3	379	Picture	pos_feedback	7742317	5171	1	14996	2	5000	next	other	0
+Nemo_LR_3	380	Picture	consistent	7770143	5165	1	3499	2	5000	next	hit	591
+Nemo_LR_3	380	Response	16	7773477	8499	1
+Nemo_LR_3	381	Picture	pos_feedback	7778808	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	382	Picture	consistent	7809133	5165	1	5498	3	5000	next	hit	594
+Nemo_LR_3	382	Response	16	7814467	10499	1
+Nemo_LR_3	383	Picture	pos_feedback	7819797	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	383	Response	16	7820011	5380	1
+Nemo_LR_3	383	Response	16	7824934	10303	1
+Nemo_LR_3	384	Picture	consistent	7845124	5166	1	2666	2	5000	next	hit	599
+Nemo_LR_3	384	Response	32	7847763	7805	1
+Nemo_LR_3	385	Picture	pos_feedback	7852955	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	386	Response	16	7879095	3479	1
+Nemo_LR_3	386	Response	32	7879187	3571	1
+Nemo_LR_3	386	Picture	consistent	7880781	5165	1	4332	2	5000	next	hit	604
+Nemo_LR_3	386	Response	16	7885024	9408	1
+Nemo_LR_3	387	Response	32	7885191	78	1
+Nemo_LR_3	387	Response	16	7888506	3393	1
+Nemo_LR_3	387	Picture	pos_feedback	7890278	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	387	Response	16	7891836	6723	1
+Nemo_LR_3	387	Response	16	7894721	9608	2
+Nemo_LR_3	387	Response	16	7897776	12663	1
+Nemo_LR_3	387	Response	16	7900626	15513	1
+Nemo_LR_3	387	Response	16	7903438	18325	1
+Nemo_LR_3	387	Response	16	7905683	20570	1
+Nemo_LR_3	387	Response	16	7908409	23296	1
+Nemo_LR_3	387	Response	16	7910584	25471	1
+Nemo_LR_3	387	Response	16	7912769	27656	1
+Nemo_LR_3	387	Response	16	7914635	29522	1
+Nemo_LR_3	388	Response	16	7916394	955	1
+Nemo_LR_3	388	Response	16	7918149	2710	1
+Nemo_LR_3	388	Picture	consistent	7920604	5165	1	1999	3	5000	next	hit	621
+Nemo_LR_3	388	Response	32	7922561	7122	1
+Nemo_LR_3	389	Response	16	7923015	412	1
+Nemo_LR_3	389	Response	32	7924531	1928	1
+Nemo_LR_3	389	Response	16	7925016	2413	1
+Nemo_LR_3	389	Response	32	7926238	3635	1
+Nemo_LR_3	389	Response	16	7926717	4114	1
+Nemo_LR_3	389	Picture	pos_feedback	7927769	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	389	Response	32	7927878	5275	1
+Nemo_LR_3	389	Response	16	7928419	5816	1
+Nemo_LR_3	389	Response	32	7929551	6948	1
+Nemo_LR_3	389	Response	16	7930113	7510	1
+Nemo_LR_3	389	Response	32	7931101	8498	1
+Nemo_LR_3	389	Response	16	7931840	9237	1
+Nemo_LR_3	389	Response	32	7932698	10095	1
+Nemo_LR_3	389	Response	16	7933581	10978	1
+Nemo_LR_3	389	Response	32	7934471	11868	1
+Nemo_LR_3	389	Response	16	7935347	12744	1
+Nemo_LR_3	389	Response	16	7937179	14576	1
+Nemo_LR_3	389	Response	32	7937671	15068	1
+Nemo_LR_3	389	Response	16	7938929	16326	1
+Nemo_LR_3	389	Response	32	7939423	16820	1
+Nemo_LR_3	389	Response	16	7940691	18088	1
+Nemo_LR_3	389	Response	32	7941282	18679	1
+Nemo_LR_3	389	Response	16	7942600	19997	1
+Nemo_LR_3	389	Response	32	7943127	20524	1
+Nemo_LR_3	389	Response	16	7944406	21803	1
+Nemo_LR_3	389	Response	32	7944524	21921	1
+Nemo_LR_3	389	Response	32	7946237	23634	1
+Nemo_LR_3	389	Response	16	7946426	23823	1
+Nemo_LR_3	390	Response	32	7948247	317	1
+Nemo_LR_3	390	Response	16	7948427	497	1
+Nemo_LR_3	390	Response	32	7950175	2245	1
+Nemo_LR_3	390	Response	16	7950326	2396	1
+Nemo_LR_3	390	Response	32	7952298	4368	1
+Nemo_LR_3	390	Response	16	7952428	4498	1
+Nemo_LR_3	390	Picture	consistent	7953095	5165	2	1500	3	5000	next	hit	657
+Nemo_LR_3	390	Response	32	7954462	6532	1
+Nemo_LR_3	391	Response	16	7954629	34	1
+Nemo_LR_3	391	Response	32	7956022	1427	1
+Nemo_LR_3	391	Response	16	7957030	2435	1
+Nemo_LR_3	391	Response	32	7958172	3577	1
+Nemo_LR_3	391	Response	16	7958530	3935	1
+Nemo_LR_3	391	Picture	pos_feedback	7959760	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	391	Response	16	7960325	5730	1
+Nemo_LR_3	391	Response	32	7960351	5756	1
+Nemo_LR_3	391	Response	16	7962034	7439	1
+Nemo_LR_3	391	Response	32	7962332	7737	1
+Nemo_LR_3	391	Response	16	7963883	9288	1
+Nemo_LR_3	391	Response	32	7964332	9737	1
+Nemo_LR_3	391	Response	32	7965547	10952	1
+Nemo_LR_3	391	Response	16	7965933	11338	1
+Nemo_LR_3	391	Response	16	7967618	13023	1
+Nemo_LR_3	391	Response	32	7967834	13239	1
+Nemo_LR_3	391	Response	16	7969400	14805	1
+Nemo_LR_3	391	Response	32	7969735	15140	1
+Nemo_LR_3	391	Response	16	7971322	16727	1
+Nemo_LR_3	391	Response	32	7971436	16841	1
+Nemo_LR_3	391	Response	16	7973046	18451	1
+Nemo_LR_3	391	Response	32	7973136	18541	1
+Nemo_LR_3	391	Response	16	7974750	20155	1
+Nemo_LR_3	391	Response	32	7975038	20443	1
+Nemo_LR_3	391	Response	32	7976502	21907	1
+Nemo_LR_3	391	Response	16	7976738	22143	1
+Nemo_LR_3	391	Response	32	7977940	23345	1
+Nemo_LR_3	391	Response	16	7978565	23970	1
+Nemo_LR_3	391	Response	32	7979870	25275	1
+Nemo_LR_3	391	Response	16	7980439	25844	1
+Nemo_LR_3	391	Response	32	7981724	27129	1
+Nemo_LR_3	391	Response	16	7982341	27746	1
+Nemo_LR_3	392	Response	32	7983546	1125	1
+Nemo_LR_3	392	Response	16	7984140	1719	1
+Nemo_LR_3	392	Response	32	7985525	3104	1
+Nemo_LR_3	392	Response	16	7985991	3570	1
+Nemo_LR_3	392	Response	32	7987190	4769	1
+Nemo_LR_3	392	Picture	consistent	7987586	5165	2	500	3	5000	next	hit	696
+Nemo_LR_3	392	Response	16	7987908	5487	1
+Nemo_LR_3	393	Response	32	7988442	356	1
+Nemo_LR_3	393	Response	16	7990005	1919	1
+Nemo_LR_3	393	Response	32	7990342	2256	1
+Nemo_LR_3	393	Response	16	7991921	3835	1
+Nemo_LR_3	393	Response	32	7992343	4257	1
+Nemo_LR_3	393	Picture	pos_feedback	7993252	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	393	Response	16	7993700	5614	1
+Nemo_LR_3	393	Response	32	7994043	5957	1
+Nemo_LR_3	393	Response	16	7995549	7463	1
+Nemo_LR_3	393	Response	32	7995843	7757	2
+Nemo_LR_3	393	Response	32	7997508	9422	1
+Nemo_LR_3	393	Response	16	7997508	9422	1
+Nemo_LR_3	393	Response	16	7999217	11131	1
+Nemo_LR_3	393	Response	32	7999445	11359	1
+Nemo_LR_3	393	Response	16	8000946	12860	1
+Nemo_LR_3	393	Response	32	8001145	13059	1
+Nemo_LR_3	393	Response	16	8002588	14502	1
+Nemo_LR_3	393	Response	32	8002947	14861	1
+Nemo_LR_3	393	Response	16	8004314	16228	1
+Nemo_LR_3	393	Response	32	8004347	16261	1
+Nemo_LR_3	393	Response	16	8006189	18103	1
+Nemo_LR_3	393	Response	32	8006347	18261	1
+Nemo_LR_3	393	Response	16	8007998	19912	1
+Nemo_LR_3	393	Response	32	8008048	19962	1
+Nemo_LR_3	393	Response	16	8009638	21552	1
+Nemo_LR_3	393	Response	32	8010206	22120	1
+Nemo_LR_3	393	Response	16	8011515	23429	1
+Nemo_LR_3	393	Response	32	8012000	23914	1
+Nemo_LR_3	393	Response	16	8013281	25195	2
+Nemo_LR_3	393	Response	32	8013283	25197	1
+Nemo_LR_3	393	Response	16	8014982	26896	1
+Nemo_LR_3	393	Response	32	8015550	27464	1
+Nemo_LR_3	393	Response	16	8016945	28859	1
+Nemo_LR_3	393	Response	32	8017711	29625	1
+Nemo_LR_3	394	Response	16	8018758	346	1
+Nemo_LR_3	394	Response	32	8019481	1069	1
+Nemo_LR_3	394	Response	16	8020503	2091	1
+Nemo_LR_3	394	Response	32	8021643	3231	1
+Nemo_LR_3	394	Response	16	8022439	4027	1
+Nemo_LR_3	394	Response	32	8023136	4724	1
+Nemo_LR_3	394	Picture	consistent	8023577	5165	1	833	2	5000	next	hit	738
+Nemo_LR_3	394	Response	16	8024370	5958	1
+Nemo_LR_3	395	Response	32	8024966	556	1
+Nemo_LR_3	395	Response	16	8026184	1774	1
+Nemo_LR_3	395	Response	32	8026966	2556	1
+Nemo_LR_3	395	Response	16	8028096	3686	1
+Nemo_LR_3	395	Response	32	8028554	4144	1
+Nemo_LR_3	395	Picture	pos_feedback	8029576	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	395	Response	16	8029985	5575	1
+Nemo_LR_3	395	Response	32	8031098	6688	1
+Nemo_LR_3	395	Response	16	8031909	7499	1
+Nemo_LR_3	395	Response	16	8033687	9277	1
+Nemo_LR_3	395	Response	16	8035427	11017	1
+Nemo_LR_3	395	Response	16	8037236	12826	1
+Nemo_LR_3	395	Response	16	8039010	14600	1
+Nemo_LR_3	395	Response	16	8040831	16421	1
+Nemo_LR_3	395	Response	16	8042542	18132	1
+Nemo_LR_3	395	Response	16	8044226	19816	1
+Nemo_LR_3	395	Response	16	8045892	21482	1
+Nemo_LR_3	395	Response	16	8049043	24633	1
+Nemo_LR_3	396	Response	16	8050733	996	1
+Nemo_LR_3	396	Response	16	8053660	3923	1
+Nemo_LR_3	396	Picture	consistent	8054902	5165	1	6998	3	5000	next	hit	760
+Nemo_LR_3	396	Response	16	8061840	12103	2
+Nemo_LR_3	397	Response	16	8063993	2093	1
+Nemo_LR_3	397	Response	16	8065820	3920	1
+Nemo_LR_3	397	Picture	pos_feedback	8067066	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	397	Response	16	8067774	5874	1
+Nemo_LR_3	397	Response	16	8069684	7784	1
+Nemo_LR_3	397	Response	16	8071572	9672	1
+Nemo_LR_3	397	Response	16	8073253	11353	1
+Nemo_LR_3	397	Response	16	8075021	13121	1
+Nemo_LR_3	397	Response	16	8076905	15005	1
+Nemo_LR_3	397	Response	16	8078769	16869	1
+Nemo_LR_3	397	Response	16	8080588	18688	1
+Nemo_LR_3	397	Response	16	8082350	20450	1
+Nemo_LR_3	397	Response	16	8084231	22331	1
+Nemo_LR_3	397	Response	16	8086053	24153	1
+Nemo_LR_3	397	Response	16	8087784	25884	1
+Nemo_LR_3	397	Response	16	8089615	27715	2
+Nemo_LR_3	398	Response	16	8091392	1665	1
+Nemo_LR_3	398	Response	16	8093114	3387	1
+Nemo_LR_3	398	Picture	consistent	8094892	5165	1	166	3	5000	next	hit	780
+Nemo_LR_3	398	Response	16	8094965	5238	1
+Nemo_LR_3	399	Response	16	8096901	1843	1
+Nemo_LR_3	399	Response	16	8098756	3698	1
+Nemo_LR_3	399	Picture	pos_feedback	8100224	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	399	Response	16	8100557	5499	1
+Nemo_LR_3	399	Response	16	8102209	7151	1
+Nemo_LR_3	399	Response	16	8103989	8931	1
+Nemo_LR_3	399	Response	16	8105697	10639	1
+Nemo_LR_3	399	Response	16	8107245	12187	1
+Nemo_LR_3	399	Response	16	8109015	13957	1
+Nemo_LR_3	399	Response	16	8110681	15623	1
+Nemo_LR_3	399	Response	16	8113778	18720	1
+Nemo_LR_3	399	Response	16	8120188	25130	1
+Nemo_LR_3	399	Response	16	8123403	28345	1
+Nemo_LR_3	399	Response	16	8125177	30119	1
+Nemo_LR_3	400	Response	16	8126664	1280	1
+Nemo_LR_3	400	Response	16	8128447	3063	1
+Nemo_LR_3	400	Response	16	8130153	4769	1
+Nemo_LR_3	400	Picture	consistent	8130549	5165	1	1333	2	5000	next	hit	799
+Nemo_LR_3	400	Response	16	8131812	6428	1
+Nemo_LR_3	401	Response	16	8133622	1740	1
+Nemo_LR_3	401	Response	16	8135321	3439	1
+Nemo_LR_3	401	Picture	pos_feedback	8137047	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	401	Response	16	8137251	5369	1
+Nemo_LR_3	401	Response	16	8138940	7058	1
+Nemo_LR_3	401	Response	16	8140841	8959	1
+Nemo_LR_3	401	Response	16	8142584	10702	1
+Nemo_LR_3	401	Response	16	8144458	12576	1
+Nemo_LR_3	401	Response	16	8146293	14411	1
+Nemo_LR_3	401	Response	16	8148159	16277	1
+Nemo_LR_3	401	Response	16	8149920	18038	1
+Nemo_LR_3	401	Response	16	8151603	19721	1
+Nemo_LR_3	402	Response	16	8158155	946	1
+Nemo_LR_3	402	Response	16	8161699	4490	1
+Nemo_LR_3	402	Picture	consistent	8162374	5165	1	2999	3	5000	next	hit	815
+Nemo_LR_3	402	Response	16	8165301	8092	1
+Nemo_LR_3	403	Response	16	8168564	3191	1
+Nemo_LR_3	403	Picture	pos_feedback	8170539	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	403	Response	16	8174253	8880	1
+Nemo_LR_3	403	Response	16	8177632	12259	1
+Nemo_LR_3	403	Response	16	8180237	14864	1
+Nemo_LR_3	403	Response	16	8186321	20948	1
+Nemo_LR_3	403	Response	32	8189136	23763	1
+Nemo_LR_3	403	Response	32	8192667	27294	1
+Nemo_LR_3	404	Response	16	8194696	1508	1
+Nemo_LR_3	404	Response	32	8196265	3077	1
+Nemo_LR_3	404	Picture	consistent	8198198	5010	1	167	2	5000	next	hit	827
+Nemo_LR_3	404	Response	16	8198306	5118	1
+Nemo_LR_3	405	Response	32	8199316	951	1
+Nemo_LR_3	405	Response	16	8201652	3287	1
+Nemo_LR_3	405	Response	32	8201855	3490	1
+Nemo_LR_3	405	Picture	pos_feedback	8203530	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	405	Response	16	8208895	10530	1
+Nemo_LR_3	405	Response	16	8212067	13702	1
+Nemo_LR_3	405	Response	32	8212591	14226	1
+Nemo_LR_3	405	Response	16	8214694	16329	1
+Nemo_LR_3	405	Response	32	8215510	17145	1
+Nemo_LR_3	405	Response	16	8216979	18614	1
+Nemo_LR_3	405	Response	32	8217865	19500	1
+Nemo_LR_3	405	Response	16	8219406	21041	1
+Nemo_LR_3	405	Response	32	8220066	21701	1
+Nemo_LR_3	406	Response	16	8231656	2966	1
+Nemo_LR_3	406	Picture	consistent	8233855	5165	2	334	3	5000	next	hit	843
+Nemo_LR_3	406	Response	16	8234023	5333	1
+Nemo_LR_3	407	Response	32	8235197	1008	1
+Nemo_LR_3	407	Response	16	8236241	2052	1
+Nemo_LR_3	407	Response	32	8237607	3418	1
+Nemo_LR_3	407	Response	16	8238381	4192	1
+Nemo_LR_3	407	Picture	pos_feedback	8239354	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	407	Response	32	8240405	6216	1
+Nemo_LR_3	407	Response	16	8242739	8550	1
+Nemo_LR_3	407	Response	16	8244896	10707	1
+Nemo_LR_3	407	Response	32	8245783	11594	1
+Nemo_LR_3	407	Response	16	8249106	14917	1
+Nemo_LR_3	407	Response	32	8249988	15799	1
+Nemo_LR_3	408	Response	16	8262861	3345	2
+Nemo_LR_3	408	Response	32	8263800	4284	1
+Nemo_LR_3	408	Picture	consistent	8264681	5165	1	19995	2	5000	next	miss	0
+Nemo_LR_3	409	Picture	pos_feedback	8289841	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	409	Response	16	8299413	14737	1
+Nemo_LR_3	410	Picture	consistent	8317667	5165	1	500	2	5000	next	hit	861
+Nemo_LR_3	410	Response	32	8318090	5588	1
+Nemo_LR_3	411	Picture	pos_feedback	8323332	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	412	Picture	consistent	8353658	5166	1	6331	2	5000	next	hit	864
+Nemo_LR_3	412	Response	16	8359812	11320	1
+Nemo_LR_3	413	Picture	pos_feedback	8365155	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	414	Picture	consistent	8390481	5165	2	2333	3	5000	next	hit	867
+Nemo_LR_3	414	Response	32	8392762	7446	1
+Nemo_LR_3	415	Picture	pos_feedback	8397979	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	415	Response	16	8404608	11794	1
+Nemo_LR_3	416	Response	32	8424030	3390	1
+Nemo_LR_3	416	Picture	consistent	8425805	5165	2	2833	3	5000	next	hit	872
+Nemo_LR_3	416	Response	32	8428545	7905	1
+Nemo_LR_3	417	Response	32	8433402	4764	1
+Nemo_LR_3	417	Picture	pos_feedback	8433803	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	418	Response	16	8462413	3449	1
+Nemo_LR_3	418	Picture	consistent	8464129	5165	1	2832	3	5000	next	hit	877
+Nemo_LR_3	418	Response	16	8466829	7865	1
+Nemo_LR_3	419	Response	32	8471045	4084	1
+Nemo_LR_3	419	Picture	pos_feedback	8472127	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	419	Response	32	8475494	8533	1
+Nemo_LR_3	419	Response	16	8478444	11483	1
+Nemo_LR_3	419	Response	16	8481822	14861	1
+Nemo_LR_3	420	Response	16	8494972	2684	1
+Nemo_LR_3	420	Picture	consistent	8497453	5165	2	1000	3	5000	next	hit	885
+Nemo_LR_3	420	Response	16	8498354	6066	1
+Nemo_LR_3	421	Picture	pos_feedback	8503619	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	422	Picture	consistent	8531445	5166	1	6331	2	5000	next	hit	888
+Nemo_LR_3	422	Response	32	8537600	11321	1
+Nemo_LR_3	423	Picture	pos_feedback	8542942	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	423	Response	16	8548037	10261	1
+Nemo_LR_3	423	Response	16	8553205	15429	1
+Nemo_LR_3	423	Response	32	8560871	23095	1
+Nemo_LR_3	424	Response	16	8570843	2741	1
+Nemo_LR_3	424	Picture	consistent	8573267	5165	1	7498	2	5000	next	hit	895
+Nemo_LR_3	424	Response	32	8580713	12611	1
+Nemo_LR_3	425	Picture	pos_feedback	8585930	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	425	Response	16	8589582	8817	1
+Nemo_LR_3	425	Response	32	8596477	15712	2
+Nemo_LR_3	425	Response	32	8602754	21989	1
+Nemo_LR_3	426	Picture	consistent	8611257	5165	1	500	2	5000	next	hit	901
+Nemo_LR_3	426	Response	32	8611705	5613	1
+Nemo_LR_3	427	Picture	pos_feedback	8616922	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	428	Picture	consistent	8644748	5165	2	19995	3	5000	next	miss	0
+Nemo_LR_3	429	Picture	pos_feedback	8669908	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	430	Picture	consistent	8700234	5165	1	5832	2	5000	next	hit	906
+Nemo_LR_3	430	Response	32	8705902	10833	1
+Nemo_LR_3	431	Picture	pos_feedback	8711231	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	432	Picture	consistent	8736558	5166	1	14329	3	5000	next	hit	909
+Nemo_LR_3	432	Response	32	8750806	19414	1
+Nemo_LR_3	433	Picture	pos_feedback	8756053	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	434	Picture	consistent	8783879	5165	1	7498	2	5000	next	hit	912
+Nemo_LR_3	434	Response	16	8791189	12475	1
+Nemo_LR_3	435	Picture	pos_feedback	8796542	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	436	Picture	consistent	8826868	5166	1	14829	2	5000	next	hit	915
+Nemo_LR_3	436	Response	32	8841659	19957	1
+Nemo_LR_3	437	Picture	pos_feedback	8846862	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	438	Response	16	8871174	4150	1
+Nemo_LR_3	438	Picture	consistent	8872189	5165	1	19995	2	5000	next	miss	0
+Nemo_LR_3	439	Picture	pos_feedback	8897349	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	440	Picture	consistent	8925175	5165	1	14163	2	5000	next	hit	921
+Nemo_LR_3	440	Response	32	8939196	19186	1
+Nemo_LR_3	441	Picture	pos_feedback	8944504	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	442	Picture	consistent	8974829	5165	1	6165	2	5000	next	hit	924
+Nemo_LR_3	442	Response	16	8980938	11274	1
+Nemo_LR_3	443	Picture	pos_feedback	8986159	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	444	Picture	consistent	9011486	5165	1	9498	2	5000	next	hit	927
+Nemo_LR_3	444	Response	16	9020851	14530	1
+Nemo_LR_3	445	Picture	pos_feedback	9026149	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	446	Picture	consistent	9053975	5165	1	9164	3	5000	next	hit	930
+Nemo_LR_3	446	Response	32	9062960	14150	2
+Nemo_LR_3	447	Picture	pos_feedback	9068305	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	448	Picture	consistent	9098630	5165	1	8331	2	5000	next	hit	933
+Nemo_LR_3	448	Response	16	9106847	13382	1
+Nemo_LR_3	449	Picture	pos_feedback	9112126	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	450	Picture	consistent	9137453	5165	1	7332	2	5000	next	hit	936
+Nemo_LR_3	450	Response	32	9144627	12339	1
+Nemo_LR_3	451	Picture	pos_feedback	9149950	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	452	Picture	consistent	9177776	5165	1	19995	2	5000	next	miss	0
+Nemo_LR_3	453	Response	16	9201743	3972	1
+Nemo_LR_3	453	Picture	pos_feedback	9202936	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	453	Response	32	9214090	16319	1
+Nemo_LR_3	454	Picture	consistent	9233262	5166	1	12496	2	5000	next	hit	943
+Nemo_LR_3	454	Response	16	9245644	17548	1
+Nemo_LR_3	455	Picture	pos_feedback	9250924	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	456	Picture	consistent	9276250	5165	2	4666	3	5000	next	hit	946
+Nemo_LR_3	456	Response	32	9280737	9652	1
+Nemo_LR_3	457	Picture	pos_feedback	9286081	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	457	Response	16	9291414	10498	1
+Nemo_LR_3	458	Response	16	9313645	4903	1
+Nemo_LR_3	458	Picture	consistent	9313907	5165	1	19995	2	5000	next	miss	0
+Nemo_LR_3	459	Response	32	9338366	4464	1
+Nemo_LR_3	459	Picture	pos_feedback	9339067	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	460	Picture	consistent	9369393	5166	1	7831	2	5000	next	hit	954
+Nemo_LR_3	460	Response	16	9377081	12854	1
+Nemo_LR_3	461	Picture	pos_feedback	9382389	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	462	Picture	consistent	9412715	5166	1	5832	2	5000	next	hit	957
+Nemo_LR_3	462	Response	32	9418437	10888	1
+Nemo_LR_3	463	Picture	pos_feedback	9423712	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	464	Response	3	9528328	84455	1
+Nemo_LR_3	465	Picture	consistent	9536516	5165	1	19995	2	5000	next	miss	0
+Nemo_LR_3	466	Picture	pos_feedback	9561676	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	467	Picture	consistent	9587336	5166	1	6165	2	5000	next	hit	963
+Nemo_LR_3	467	Response	32	9593361	11191	1
+Nemo_LR_3	468	Picture	pos_feedback	9598666	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	469	Picture	consistent	9629325	5165	1	9997	3	5000	next	hit	966
+Nemo_LR_3	469	Response	32	9639215	15055	1
+Nemo_LR_3	470	Picture	pos_feedback	9644488	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	471	Picture	consistent	9675146	5165	2	1000	3	5000	next	hit	969
+Nemo_LR_3	471	Response	16	9675981	6000	1
+Nemo_LR_3	472	Picture	pos_feedback	9681311	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	473	Picture	consistent	9706638	5165	1	19995	2	5000	next	miss	0
+Nemo_LR_3	474	Picture	pos_feedback	9731798	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	475	Picture	consistent	9759624	5165	2	9498	3	5000	next	hit	974
+Nemo_LR_3	475	Response	32	9769002	14543	1
+Nemo_LR_3	476	Picture	pos_feedback	9774287	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	477	Picture	consistent	9799614	5165	1	9331	2	5000	next	hit	977
+Nemo_LR_3	477	Response	16	9808758	14309	1
+Nemo_LR_3	478	Picture	pos_feedback	9814110	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	479	Picture	consistent	9841936	5165	1	3833	2	5000	next	hit	980
+Nemo_LR_3	479	Response	32	9845682	8911	1
+Nemo_LR_3	480	Picture	pos_feedback	9850933	5164	2	14997	3	5000	next	other	0
+Nemo_LR_3	481	Picture	consistent	9878760	5165	1	7665	2	5000	next	hit	983
+Nemo_LR_3	481	Response	16	9886264	12669	1
+Nemo_LR_3	482	Picture	pos_feedback	9891590	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	483	Picture	consistent	9921915	5165	2	5499	3	5000	next	hit	986
+Nemo_LR_3	483	Response	32	9927359	10609	1
+Nemo_LR_3	484	Picture	pos_feedback	9932579	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	485	Picture	consistent	9962905	5166	1	4332	2	5000	next	hit	989
+Nemo_LR_3	485	Response	16	9967214	9475	1
+Nemo_LR_3	486	Picture	pos_feedback	9972402	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	487	Picture	consistent	10002728	5166	1	15820	78	5000	next	hit	992
+Nemo_LR_3	487	Response	16	10018479	20917	1
+Nemo_LR_3	488	Picture	pos_feedback	10023722	5174	1	14996	2	5000	next	other	0
+Nemo_LR_3	489	Picture	consistent	10051548	5165	2	10331	3	5000	next	hit	995
+Nemo_LR_3	489	Response	32	10061794	15411	1
+Nemo_LR_3	490	Picture	pos_feedback	10067044	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	491	Picture	consistent	10092371	5165	1	13996	2	5000	next	hit	998
+Nemo_LR_3	491	Response	32	10106329	19123	1
+Nemo_LR_3	492	Picture	pos_feedback	10111533	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	493	Picture	consistent	10136859	5165	1	7498	3	5000	next	hit	1001
+Nemo_LR_3	493	Response	32	10144315	12621	1
+Nemo_LR_3	494	Picture	pos_feedback	10149523	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	495	Picture	consistent	10177349	5166	1	14996	2	5000	next	hit	1004
+Nemo_LR_3	495	Response	16	10192215	20032	1
+Nemo_LR_3	496	Picture	pos_feedback	10197510	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	497	Picture	consistent	10227836	5166	1	10497	2	5000	next	hit	1007
+Nemo_LR_3	497	Response	16	10238223	15553	1
+Nemo_LR_3	498	Picture	pos_feedback	10243498	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	499	Picture	consistent	10268825	5165	1	5165	2	5000	next	hit	1010
+Nemo_LR_3	499	Response	32	10273929	10269	1
+Nemo_LR_3	500	Picture	pos_feedback	10279156	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	501	Picture	consistent	10306982	5166	1	13663	2	5000	next	hit	1013
+Nemo_LR_3	501	Response	32	10320554	18738	1
+Nemo_LR_3	502	Picture	pos_feedback	10325810	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	503	Picture	consistent	10356135	5165	2	12497	3	5000	next	hit	1016
+Nemo_LR_3	503	Response	32	10368584	17614	1
+Nemo_LR_3	504	Picture	pos_feedback	10373798	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	505	Picture	consistent	10401624	5166	1	11497	2	5000	next	hit	1019
+Nemo_LR_3	505	Response	16	10412963	16505	1
+Nemo_LR_3	506	Picture	pos_feedback	10418286	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	507	Picture	consistent	10443613	5166	1	11330	2	5000	next	hit	1022
+Nemo_LR_3	507	Response	16	10454838	16391	1
+Nemo_LR_3	508	Picture	pos_feedback	10460108	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	509	Picture	consistent	10487934	5165	2	8832	3	5000	next	hit	1025
+Nemo_LR_3	509	Response	32	10496745	13976	1
+Nemo_LR_3	510	Picture	pos_feedback	10501931	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	511	Picture	consistent	10529757	5165	1	5998	3	5000	next	hit	1028
+Nemo_LR_3	511	Response	32	10535654	11062	1
+Nemo_LR_3	512	Picture	pos_feedback	10540921	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	513	Picture	consistent	10571246	5165	1	9831	2	5000	next	hit	1031
+Nemo_LR_3	513	Response	16	10580897	14816	1
+Nemo_LR_3	514	Picture	pos_feedback	10586242	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	515	Picture	consistent	10611569	5165	1	12830	2	5000	next	hit	1034
+Nemo_LR_3	515	Response	32	10624260	17856	2
+Nemo_LR_3	516	Picture	pos_feedback	10629564	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	517	Picture	consistent	10659890	5166	1	8664	2	5000	next	hit	1037
+Nemo_LR_3	517	Response	32	10668430	13706	1
+Nemo_LR_3	518	Picture	pos_feedback	10673719	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	519	Picture	consistent	10699046	5165	1	9331	2	5000	next	hit	1040
+Nemo_LR_3	519	Response	16	10708350	14469	1
+Nemo_LR_3	520	Picture	pos_feedback	10713542	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	521	Picture	consistent	10743701	5066	1	8331	2	5000	next	hit	1043
+Nemo_LR_3	521	Response	32	10751970	13335	1
+Nemo_LR_3	522	Picture	pos_feedback	10757198	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	523	Picture	consistent	10787504	5146	99	5184	100	5000	next	hit	1046
+Nemo_LR_3	523	Response	32	10792580	10222	1
+Nemo_LR_3	524	Picture	pos_feedback	10797854	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	525	Picture	consistent	10825680	5166	1	10497	2	5000	next	hit	1049
+Nemo_LR_3	525	Response	16	10836140	15626	1
+Nemo_LR_3	526	Picture	pos_feedback	10841342	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	527	Picture	consistent	10871668	5166	1	7998	2	5000	next	hit	1052
+Nemo_LR_3	527	Response	16	10879606	13104	1
+Nemo_LR_3	528	Picture	pos_feedback	10884831	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	529	Picture	consistent	10912490	5044	2	13830	3	5000	next	hit	1055
+Nemo_LR_3	529	Response	16	10926258	18812	1
+Nemo_LR_3	530	Picture	pos_feedback	10931485	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	531	Picture	consistent	10956812	5165	1	7165	2	5000	next	hit	1058
+Nemo_LR_3	531	Response	16	10963877	12230	2
+Nemo_LR_3	532	Picture	pos_feedback	10969142	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	533	Picture	consistent	10994469	5165	1	6832	2	5000	next	hit	1061
+Nemo_LR_3	533	Response	16	11001120	11816	1
+Nemo_LR_3	534	Picture	pos_feedback	11006466	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	535	Picture	consistent	11031793	5166	1	5332	2	5000	next	hit	1064
+Nemo_LR_3	535	Response	32	11036954	10327	1
+Nemo_LR_3	536	Picture	pos_feedback	11042290	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	537	Picture	consistent	11070116	5165	1	5998	3	5000	next	hit	1067
+Nemo_LR_3	537	Response	16	11075993	11042	2
+Nemo_LR_3	538	Picture	pos_feedback	11081280	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	539	Picture	consistent	11111605	5165	1	6332	2	5000	next	hit	1070
+Nemo_LR_3	539	Response	32	11117770	11330	1
+Nemo_LR_3	540	Picture	pos_feedback	11123102	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	541	Picture	consistent	11148429	5165	1	8998	2	5000	next	hit	1073
+Nemo_LR_3	541	Response	32	11157327	14063	1
+Nemo_LR_3	542	Picture	pos_feedback	11162592	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	543	Picture	consistent	11192917	5165	1	6665	2	5000	next	hit	1076
+Nemo_LR_3	543	Response	16	11199559	11807	1
+Nemo_LR_3	544	Picture	pos_feedback	11204748	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	545	Picture	consistent	11232574	5166	1	5831	3	5000	next	hit	1079
+Nemo_LR_3	545	Response	16	11238376	10968	1
+Nemo_LR_3	546	Picture	pos_feedback	11243571	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	547	Picture	consistent	11268897	5165	2	12997	3	5000	next	hit	1082
+Nemo_LR_3	547	Response	16	11281860	18128	1
+Nemo_LR_3	548	Picture	pos_feedback	11287059	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	549	Picture	consistent	11317385	5165	1	9831	2	5000	next	hit	1085
+Nemo_LR_3	549	Response	16	11327074	14854	1
+Nemo_LR_3	550	Picture	pos_feedback	11332381	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	551	Picture	consistent	11360207	5165	1	8165	2	5000	next	hit	1088
+Nemo_LR_3	551	Response	16	11368319	13277	1
+Nemo_LR_3	552	Picture	pos_feedback	11373537	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	553	Picture	consistent	11401363	5165	1	7331	3	5000	next	hit	1091
+Nemo_LR_3	553	Response	16	11408612	12414	1
+Nemo_LR_3	554	Picture	pos_feedback	11413860	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	555	Picture	consistent	11439186	5165	2	6499	3	5000	next	hit	1094
+Nemo_LR_3	555	Response	16	11445662	11641	1
+Nemo_LR_3	556	Picture	pos_feedback	11450850	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	557	Picture	consistent	11478676	5165	1	6832	2	5000	next	hit	1097
+Nemo_LR_3	557	Response	16	11485405	11894	1
+Nemo_LR_3	558	Picture	pos_feedback	11490673	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	559	Picture	consistent	11518499	5165	1	7332	2	5000	next	hit	1100
+Nemo_LR_3	559	Response	32	11525785	12451	1
+Nemo_LR_3	560	Picture	pos_feedback	11530996	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	561	Picture	consistent	11558822	5165	1	8498	2	5000	next	hit	1103
+Nemo_LR_3	561	Response	16	11567145	13488	1
+Nemo_LR_3	562	Picture	pos_feedback	11572485	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	563	Picture	consistent	11597812	5166	1	7664	3	5000	next	hit	1106
+Nemo_LR_3	563	Response	32	11605427	12781	1
+Nemo_LR_3	564	Picture	pos_feedback	11610642	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	565	Picture	consistent	11635968	5165	2	7332	3	5000	next	hit	1109
+Nemo_LR_3	565	Response	32	11643120	12317	1
+Nemo_LR_3	566	Picture	pos_feedback	11648465	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	567	Picture	consistent	11678791	5166	1	7331	2	5000	next	hit	1112
+Nemo_LR_3	567	Response	16	11685993	12368	1
+Nemo_LR_3	568	Picture	pos_feedback	11691287	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	569	Picture	consistent	11721613	5166	1	13829	3	5000	next	hit	1115
+Nemo_LR_3	569	Response	16	11735319	18872	1
+Nemo_LR_3	570	Picture	pos_feedback	11740608	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	571	Picture	consistent	11765934	5165	2	7665	3	5000	next	hit	1118
+Nemo_LR_3	571	Response	16	11773481	12712	1
+Nemo_LR_3	572	Picture	pos_feedback	11778764	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	573	Picture	consistent	11809090	5165	1	8331	2	5000	next	hit	1121
+Nemo_LR_3	573	Response	16	11817364	13439	1
+Nemo_LR_3	574	Picture	pos_feedback	11822586	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	575	Picture	consistent	11850413	5166	1	8497	2	5000	next	hit	1124
+Nemo_LR_3	575	Response	16	11858721	13474	1
+Nemo_LR_3	576	Picture	pos_feedback	11864076	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	577	Picture	consistent	11889402	5165	2	8165	3	5000	next	hit	1127
+Nemo_LR_3	577	Response	16	11897506	13269	1
+Nemo_LR_3	578	Picture	pos_feedback	11902732	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	579	Picture	consistent	11933058	5166	1	11330	2	5000	next	hit	1130
+Nemo_LR_3	579	Response	16	11944228	16336	1
+Nemo_LR_3	580	Picture	pos_feedback	11949553	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	581	Picture	consistent	11974880	5165	1	15829	2	5000	next	hit	1133
+Nemo_LR_3	581	Response	16	11990590	20875	1
+Nemo_LR_3	582	Picture	pos_feedback	11995875	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	583	Picture	consistent	12026200	5165	1	9629	40	5000	next	hit	1136
+Nemo_LR_3	583	Response	16	12035770	14735	1
+Nemo_LR_3	584	Picture	pos_feedback	12040863	5034	1	14996	2	5000	next	other	0
+Nemo_LR_3	585	Picture	consistent	12066190	5166	1	5498	2	5000	next	hit	1139
+Nemo_LR_3	585	Response	32	12071569	10545	1
+Nemo_LR_3	586	Picture	pos_feedback	12076853	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	587	Picture	consistent	12104680	5166	1	9164	2	5000	next	hit	1142
+Nemo_LR_3	587	Response	32	12113691	14177	1
+Nemo_LR_3	588	Picture	pos_feedback	12119009	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	589	Picture	consistent	12149335	5166	1	7664	2	5000	next	hit	1145
+Nemo_LR_3	589	Response	16	12156916	12747	1
+Nemo_LR_3	590	Picture	pos_feedback	12162165	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	591	Picture	consistent	12189991	5166	1	11663	2	5000	next	hit	1148
+Nemo_LR_3	591	Response	32	12201516	16691	1
+Nemo_LR_3	592	Picture	pos_feedback	12206820	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	593	Picture	consistent	12232146	5165	1	14326	90	5000	next	hit	1151
+Nemo_LR_3	593	Response	16	12246331	19350	1
+Nemo_LR_3	594	Picture	pos_feedback	12251641	5169	1	14996	2	5000	next	other	0
+Nemo_LR_3	595	Picture	consistent	12281967	5166	1	6498	2	5000	next	hit	1154
+Nemo_LR_3	595	Response	32	12288280	11479	1
+Nemo_LR_3	596	Picture	pos_feedback	12293630	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	597	Picture	consistent	12323956	5166	1	7831	2	5000	next	hit	1157
+Nemo_LR_3	597	Response	32	12331702	12912	1
+Nemo_LR_3	598	Picture	pos_feedback	12336952	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	599	Picture	consistent	12364778	5165	2	13164	3	5000	next	hit	1160
+Nemo_LR_3	599	Response	16	12377796	18183	1
+Nemo_LR_3	600	Picture	pos_feedback	12383107	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	601	Picture	consistent	12408434	5166	1	10663	3	5000	next	hit	1163
+Nemo_LR_3	601	Response	32	12418922	15654	2
+Nemo_LR_3	602	Picture	pos_feedback	12424263	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	603	Picture	consistent	12454588	5165	1	8165	2	5000	next	hit	1166
+Nemo_LR_3	603	Response	16	12462672	13249	1
+Nemo_LR_3	604	Picture	pos_feedback	12467918	5165	1	14955	83	5000	next	other	0
+Nemo_LR_3	605	Picture	consistent	12493245	5165	1	7165	2	5000	next	hit	1169
+Nemo_LR_3	605	Response	16	12500289	12209	1
+Nemo_LR_3	606	Picture	pos_feedback	12505575	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	607	Picture	consistent	12533401	5165	1	5499	2	5000	next	hit	1172
+Nemo_LR_3	607	Response	16	12538831	10595	1
+Nemo_LR_3	608	Picture	pos_feedback	12544065	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	609	Picture	consistent	12571891	5165	1	6165	2	5000	next	hit	1175
+Nemo_LR_3	609	Response	16	12577941	11215	1
+Nemo_LR_3	610	Picture	pos_feedback	12583221	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	611	Picture	consistent	12613547	5165	1	9331	2	5000	next	hit	1178
+Nemo_LR_3	611	Response	16	12622770	14388	1
+Nemo_LR_3	612	Picture	pos_feedback	12628043	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	613	Picture	consistent	12655869	5165	1	9331	2	5000	next	hit	1181
+Nemo_LR_3	613	Response	32	12665067	14363	1
+Nemo_LR_3	614	Picture	pos_feedback	12670365	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	615	Picture	consistent	12700691	5166	1	3666	2	5000	next	hit	1184
+Nemo_LR_3	615	Response	32	12704201	8676	1
+Nemo_LR_3	616	Picture	pos_feedback	12709522	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	617	Picture	consistent	12734849	5166	1	6331	2	5000	next	hit	1187
+Nemo_LR_3	617	Response	16	12741080	11397	1
+Nemo_LR_3	618	Picture	pos_feedback	12746346	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	619	Picture	consistent	12771672	5165	2	11831	3	5000	next	hit	1190
+Nemo_LR_3	619	Response	16	12783388	16881	1
+Nemo_LR_3	620	Picture	pos_feedback	12788668	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	621	Picture	consistent	12816494	5165	1	18828	2	5000	next	hit	1193
+Nemo_LR_3	621	Response	16	12835267	23938	1
+Nemo_LR_3	622	Picture	pos_feedback	12840488	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	623	Picture	consistent	12865814	5165	2	11997	3	5000	next	hit	1196
+Nemo_LR_3	623	Response	32	12877668	17019	1
+Nemo_LR_3	624	Picture	pos_feedback	12882977	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	625	Picture	consistent	12910803	5166	1	10164	2	5000	next	hit	1199
+Nemo_LR_3	625	Response	32	12920888	15251	1
+Nemo_LR_3	626	Picture	pos_feedback	12926132	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	627	Picture	consistent	12956457	5165	2	13497	3	5000	next	hit	1202
+Nemo_LR_3	627	Response	16	12969788	18496	1
+Nemo_LR_3	628	Picture	pos_feedback	12975119	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	629	Picture	consistent	13002945	5165	1	6665	2	5000	next	hit	1205
+Nemo_LR_3	629	Response	32	13009543	11763	1
+Nemo_LR_3	630	Picture	pos_feedback	13014776	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	631	Picture	consistent	13042602	5166	1	8664	2	5000	next	hit	1208
+Nemo_LR_3	631	Response	32	13051185	13749	1
+Nemo_LR_3	632	Picture	pos_feedback	13056431	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	633	Picture	consistent	13081758	5165	1	6998	2	5000	next	hit	1211
+Nemo_LR_3	633	Response	16	13088665	12072	1
+Nemo_LR_3	634	Picture	pos_feedback	13093922	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	635	Picture	consistent	13119248	5165	1	7332	2	5000	next	hit	1214
+Nemo_LR_3	635	Response	16	13126481	12398	1
+Nemo_LR_3	636	Picture	pos_feedback	13131745	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	637	Picture	consistent	13157072	5166	1	8164	3	5000	next	hit	1217
+Nemo_LR_3	637	Response	32	13165183	13277	1
+Nemo_LR_3	638	Picture	pos_feedback	13170402	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	639	Picture	consistent	13198228	5166	1	12330	2	5000	next	hit	1220
+Nemo_LR_3	639	Response	32	13210488	17426	1
+Nemo_LR_3	640	Picture	pos_feedback	13215723	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	641	Picture	consistent	13246048	5165	2	7998	4	5000	next	hit	1223
+Nemo_LR_3	641	Response	16	13253903	13020	1
+Nemo_LR_3	642	Picture	pos_feedback	13259212	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	643	Picture	consistent	13289537	5165	1	6499	2	5000	next	hit	1226
+Nemo_LR_3	643	Response	32	13295899	11527	1
+Nemo_LR_3	644	Picture	pos_feedback	13301201	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	645	Picture	consistent	13331526	5165	1	12997	2	5000	next	hit	1229
+Nemo_LR_3	645	Response	16	13344365	18004	1
+Nemo_LR_3	646	Picture	pos_feedback	13349688	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	647	Picture	consistent	13377514	5165	1	8165	2	5000	next	hit	1232
+Nemo_LR_3	647	Response	32	13385598	13249	1
+Nemo_LR_3	648	Picture	pos_feedback	13390844	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	649	Picture	consistent	13421169	5165	2	10331	3	5000	next	hit	1235
+Nemo_LR_3	649	Response	32	13431327	15323	1
+Nemo_LR_3	650	Picture	pos_feedback	13436666	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	651	Picture	consistent	13466991	5165	1	4999	2	5000	next	hit	1238
+Nemo_LR_3	651	Response	32	13471928	10102	1
+Nemo_LR_3	652	Picture	pos_feedback	13477155	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	653	Picture	consistent	13507480	5165	2	8498	3	5000	next	hit	1241
+Nemo_LR_3	653	Response	16	13515879	13564	1
+Nemo_LR_3	654	Picture	pos_feedback	13521143	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	655	Picture	consistent	13548970	5166	1	6998	2	5000	next	hit	1244
+Nemo_LR_3	655	Response	16	13555944	12140	1
+Nemo_LR_3	656	Picture	pos_feedback	13561133	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	657	Picture	consistent	13586460	5166	1	6165	2	5000	next	hit	1247
+Nemo_LR_3	657	Response	32	13592517	11223	1
+Nemo_LR_3	658	Picture	pos_feedback	13597790	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	659	Picture	consistent	13623117	5165	1	10331	2	5000	next	hit	1250
+Nemo_LR_3	659	Response	16	13633324	15372	1
+Nemo_LR_3	660	Picture	pos_feedback	13638613	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	661	Picture	consistent	13666439	5165	1	6665	2	5000	next	hit	1253
+Nemo_LR_3	661	Response	32	13673029	11755	1
+Nemo_LR_3	662	Picture	pos_feedback	13678269	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	663	Picture	consistent	13703596	5165	1	12997	2	5000	next	hit	1256
+Nemo_LR_3	663	Response	32	13716562	18131	1
+Nemo_LR_3	664	Picture	pos_feedback	13721758	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	665	Picture	consistent	13749584	5165	1	15996	2	5000	next	hit	1259
+Nemo_LR_3	665	Response	32	13765428	21009	1
+Nemo_LR_3	666	Picture	pos_feedback	13770745	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	667	Picture	consistent	13801071	5166	1	13829	2	5000	next	hit	1262
+Nemo_LR_3	667	Response	16	13814745	18840	1
+Nemo_LR_3	668	Picture	pos_feedback	13820066	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	669	Picture	consistent	13845392	5165	1	10164	2	5000	next	hit	1265
+Nemo_LR_3	669	Response	32	13855408	15181	1
+Nemo_LR_3	670	Picture	pos_feedback	13860722	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	671	Picture	consistent	13886048	5165	1	6999	2	5000	next	hit	1268
+Nemo_LR_3	671	Response	32	13892912	12029	2
+Nemo_LR_3	672	Picture	pos_feedback	13898212	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	673	Picture	consistent	13926038	5165	1	7998	2	5000	next	hit	1271
+Nemo_LR_3	673	Response	16	13933874	13001	1
+Nemo_LR_3	674	Picture	pos_feedback	13939201	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	675	Picture	consistent	13964528	5165	1	6332	2	5000	next	hit	1274
+Nemo_LR_3	675	Response	16	13970796	11433	2
+Nemo_LR_3	676	Picture	pos_feedback	13976025	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	676	Response	32	13978412	7552	1
+Nemo_LR_3	677	Picture	consistent	14006350	5165	2	7831	4	5000	next	hit	1278
+Nemo_LR_3	677	Response	32	14014118	12933	1
+Nemo_LR_3	678	Picture	pos_feedback	14019347	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	679	Picture	consistent	14047173	5166	1	19995	2	5000	next	miss	0
+Nemo_LR_3	680	Response	32	14067854	686	1
+Nemo_LR_3	680	Picture	pos_feedback	14072333	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	681	Picture	consistent	14102659	5166	1	19994	2	5000	next	miss	0
+Nemo_LR_3	682	Response	32	14124335	1682	1
+Nemo_LR_3	682	Picture	pos_feedback	14127819	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	683	Picture	consistent	14157977	5022	2	7832	3	5000	next	hit	1287
+Nemo_LR_3	683	Response	32	14165757	12802	1
+Nemo_LR_3	684	Picture	pos_feedback	14170974	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	685	Picture	consistent	14201299	5165	2	7665	3	5000	next	hit	1290
+Nemo_LR_3	685	Response	16	14208846	12712	1
+Nemo_LR_3	686	Picture	pos_feedback	14214129	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	687	Picture	consistent	14239456	5165	1	7665	2	5000	next	hit	1293
+Nemo_LR_3	687	Response	32	14247015	12724	1
+Nemo_LR_3	688	Picture	pos_feedback	14252286	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	689	Picture	consistent	14282612	5166	1	7164	3	5000	next	hit	1296
+Nemo_LR_3	689	Response	16	14289732	12286	1
+Nemo_LR_3	690	Picture	pos_feedback	14294942	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	691	Picture	consistent	14320268	5165	2	12664	3	5000	next	hit	1299
+Nemo_LR_3	691	Response	32	14332753	17650	1
+Nemo_LR_3	692	Picture	pos_feedback	14338097	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	693	Picture	consistent	14363424	5165	1	7998	2	5000	next	hit	1302
+Nemo_LR_3	693	Response	32	14371244	12985	1
+Nemo_LR_3	694	Picture	pos_feedback	14376587	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	695	Picture	consistent	14404413	5165	1	6332	2	5000	next	hit	1305
+Nemo_LR_3	695	Response	32	14410655	11407	1
+Nemo_LR_3	696	Picture	pos_feedback	14415910	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	697	Picture	consistent	14443736	5165	1	19995	2	5000	next	miss	0
+Nemo_LR_3	698	Response	32	14465607	1876	1
+Nemo_LR_3	698	Picture	pos_feedback	14468896	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	699	Picture	consistent	14496722	5165	2	10331	3	5000	next	hit	1311
+Nemo_LR_3	699	Response	32	14506993	15436	1
+Nemo_LR_3	700	Picture	pos_feedback	14512218	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	701	Picture	consistent	14537545	5165	1	7998	2	5000	next	hit	1314
+Nemo_LR_3	701	Response	32	14545449	13069	1
+Nemo_LR_3	702	Picture	pos_feedback	14550708	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	703	Picture	consistent	14578534	5165	2	8665	3	5000	next	hit	1317
+Nemo_LR_3	703	Response	16	14587099	13730	1
+Nemo_LR_3	704	Picture	pos_feedback	14592364	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	705	Picture	consistent	14622689	5165	2	9998	3	5000	next	hit	1320
+Nemo_LR_3	705	Response	16	14632608	15084	1
+Nemo_LR_3	706	Picture	pos_feedback	14637852	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	707	Picture	consistent	14663179	5165	1	6165	2	5000	next	hit	1323
+Nemo_LR_3	707	Response	32	14669321	11307	1
+Nemo_LR_3	708	Picture	pos_feedback	14674509	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	709	Picture	consistent	14702335	5165	2	9831	3	5000	next	hit	1326
+Nemo_LR_3	709	Response	16	14712076	14906	1
+Nemo_LR_3	710	Picture	pos_feedback	14717332	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	711	Picture	consistent	14747657	5165	1	7165	2	5000	next	hit	1329
+Nemo_LR_3	711	Response	16	14754638	12146	1
+Nemo_LR_3	712	Picture	pos_feedback	14759987	5165	2	14996	3	5000	next	other	0
+Nemo_LR_3	713	Picture	consistent	14785314	5165	1	7331	2	5000	next	hit	1332
+Nemo_LR_3	713	Response	32	14792516	12367	1
+Nemo_LR_3	714	Picture	pos_feedback	14797811	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	715	Picture	consistent	14825637	5166	1	7498	2	5000	next	hit	1335
+Nemo_LR_3	715	Response	16	14832967	12496	1
+Nemo_LR_3	716	Picture	pos_feedback	14838300	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	717	Picture	consistent	14868625	5165	2	6999	3	5000	next	hit	1338
+Nemo_LR_3	717	Response	32	14875474	12014	1
+Nemo_LR_3	718	Picture	pos_feedback	14880789	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	719	Picture	consistent	14906116	5166	1	8831	2	5000	next	hit	1341
+Nemo_LR_3	719	Response	32	14914896	13946	1
+Nemo_LR_3	720	Picture	pos_feedback	14920112	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	721	Picture	consistent	14947938	5165	1	13497	2	5000	next	hit	1344
+Nemo_LR_3	721	Response	16	14961327	18554	1
+Nemo_LR_3	722	Picture	pos_feedback	14966600	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	723	Picture	consistent	14996925	5165	1	7832	2	5000	next	hit	1347
+Nemo_LR_3	723	Response	32	15004669	12909	1
+Nemo_LR_3	724	Picture	pos_feedback	15009922	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	725	Picture	consistent	15035249	5166	1	19994	3	5000	next	miss	0
+Nemo_LR_3	726	Picture	pos_feedback	15060409	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	727	Picture	consistent	15088235	5165	1	5332	2	5000	next	hit	1352
+Nemo_LR_3	727	Response	32	15093423	10353	1
+Nemo_LR_3	728	Picture	pos_feedback	15098732	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	729	Picture	consistent	15129058	5166	1	15495	3	5000	next	hit	1355
+Nemo_LR_3	729	Response	32	15144496	20604	1
+Nemo_LR_3	730	Picture	pos_feedback	15149719	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	731	Picture	consistent	15175046	5166	1	12163	2	5000	next	hit	1358
+Nemo_LR_3	731	Response	16	15187187	17307	1
+Nemo_LR_3	732	Picture	pos_feedback	15192374	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	733	Picture	consistent	15220200	5165	2	5499	3	5000	next	hit	1361
+Nemo_LR_3	733	Response	32	15225613	10578	1
+Nemo_LR_3	734	Picture	pos_feedback	15230864	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	735	Picture	consistent	15261190	5166	1	15662	2	5000	next	hit	1364
+Nemo_LR_3	735	Response	32	15276762	20738	1
+Nemo_LR_3	736	Picture	pos_feedback	15282018	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	737	Picture	consistent	15307344	5165	2	5499	3	5000	next	hit	1367
+Nemo_LR_3	737	Response	32	15312670	10491	1
+Nemo_LR_3	738	Picture	pos_feedback	15318008	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	739	Picture	consistent	15345834	5165	1	6665	2	5000	next	hit	1370
+Nemo_LR_3	739	Response	16	15352419	11750	1
+Nemo_LR_3	740	Picture	pos_feedback	15357665	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	741	Picture	consistent	15387990	5165	1	7831	2	5000	next	hit	1373
+Nemo_LR_3	741	Response	32	15395725	12900	1
+Nemo_LR_3	742	Picture	pos_feedback	15400986	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	743	Picture	consistent	15426313	5165	1	10664	2	5000	next	hit	1376
+Nemo_LR_3	743	Response	32	15436836	15688	1
+Nemo_LR_3	744	Picture	pos_feedback	15442142	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	745	Picture	consistent	15469969	5166	1	6664	3	5000	next	hit	1379
+Nemo_LR_3	745	Response	32	15476492	11689	1
+Nemo_LR_3	746	Picture	pos_feedback	15481799	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	747	Picture	consistent	15512124	5165	2	9998	3	5000	next	hit	1382
+Nemo_LR_3	747	Response	32	15521989	15030	1
+Nemo_LR_3	748	Picture	pos_feedback	15527287	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	749	Picture	consistent	15552614	5166	1	7831	2	5000	next	hit	1385
+Nemo_LR_3	749	Response	32	15560329	12881	1
+Nemo_LR_3	750	Picture	pos_feedback	15565610	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	751	Picture	consistent	15593436	5165	2	11997	3	5000	next	hit	1388
+Nemo_LR_3	751	Response	16	15605365	17094	1
+Nemo_LR_3	752	Picture	pos_feedback	15610599	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	753	Picture	consistent	15640924	5165	1	6832	2	5000	next	hit	1391
+Nemo_LR_3	753	Response	32	15647662	11903	1
+Nemo_LR_3	754	Picture	pos_feedback	15652921	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	755	Picture	consistent	15678248	5166	1	16329	2	5000	next	hit	1394
+Nemo_LR_3	755	Response	32	15694438	21356	1
+Nemo_LR_3	756	Picture	pos_feedback	15699742	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	757	Picture	consistent	15727568	5165	1	6498	3	5000	next	hit	1397
+Nemo_LR_3	757	Response	32	15733890	11487	1
+Nemo_LR_3	758	Picture	pos_feedback	15739232	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	759	Picture	consistent	15769557	5165	1	12164	2	5000	next	hit	1400
+Nemo_LR_3	759	Response	16	15781600	17208	1
+Nemo_LR_3	760	Picture	pos_feedback	15786886	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	761	Picture	consistent	15812213	5166	1	9331	2	5000	next	hit	1403
+Nemo_LR_3	761	Response	16	15821509	14462	1
+Nemo_LR_3	762	Picture	pos_feedback	15826709	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	763	Picture	consistent	15854535	5165	1	9497	3	5000	next	hit	1406
+Nemo_LR_3	763	Response	16	15863931	14561	1
+Nemo_LR_3	764	Picture	pos_feedback	15869198	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	765	Picture	consistent	15899523	5165	1	12830	2	5000	next	hit	1409
+Nemo_LR_3	765	Response	16	15912172	17814	1
+Nemo_LR_3	766	Picture	pos_feedback	15917519	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	767	Picture	consistent	15942833	5153	22	8510	23	5000	next	hit	1412
+Nemo_LR_3	767	Response	16	15951160	13480	2
+Nemo_LR_3	768	Picture	pos_feedback	15956508	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	769	Picture	consistent	15984334	5165	2	8831	4	5000	next	hit	1415
+Nemo_LR_3	769	Response	32	15992982	13813	1
+Nemo_LR_3	770	Picture	pos_feedback	15998331	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	771	Picture	consistent	16028656	5165	1	19995	2	5000	next	miss	0
+Nemo_LR_3	772	Picture	pos_feedback	16053816	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	773	Picture	consistent	16079143	5165	1	7831	2	5000	next	hit	1420
+Nemo_LR_3	773	Response	16	16086941	12963	1
+Nemo_LR_3	774	Picture	pos_feedback	16092140	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	775	Picture	consistent	16119966	5166	1	5498	2	5000	next	hit	1423
+Nemo_LR_3	775	Response	32	16125348	10548	1
+Nemo_LR_3	776	Picture	pos_feedback	16130630	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	777	Picture	consistent	16160955	5165	1	8664	3	5000	next	hit	1426
+Nemo_LR_3	777	Response	16	16169442	13652	2
+Nemo_LR_3	778	Picture	pos_feedback	16174785	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	778	Response	32	16176929	7310	1
+Nemo_LR_3	779	Picture	consistent	16200111	5165	2	6165	4	5000	next	hit	1430
+Nemo_LR_3	779	Response	32	16206214	11268	1
+Nemo_LR_3	780	Picture	pos_feedback	16211442	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	781	Picture	consistent	16239268	5165	1	9331	2	5000	next	hit	1433
+Nemo_LR_3	781	Response	16	16248524	14421	1
+Nemo_LR_3	782	Picture	pos_feedback	16253764	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	783	Picture	consistent	16284090	5166	1	6998	2	5000	next	hit	1436
+Nemo_LR_3	783	Response	32	16291017	12093	1
+Nemo_LR_3	784	Picture	pos_feedback	16296253	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	785	Picture	consistent	16321580	5165	1	13330	2	5000	next	hit	1439
+Nemo_LR_3	785	Response	16	16334824	18409	1
+Nemo_LR_3	786	Picture	pos_feedback	16340075	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	787	Picture	consistent	16367901	5165	1	5832	2	5000	next	hit	1442
+Nemo_LR_3	787	Response	32	16373683	10947	1
+Nemo_LR_3	788	Picture	pos_feedback	16378898	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	789	Picture	consistent	16409224	5166	1	9830	3	5000	next	hit	1445
+Nemo_LR_3	789	Response	16	16418984	14926	1
+Nemo_LR_3	790	Picture	pos_feedback	16424220	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	791	Picture	consistent	16449546	5165	2	6165	4	5000	next	hit	1448
+Nemo_LR_3	791	Response	32	16455571	11190	1
+Nemo_LR_3	792	Picture	pos_feedback	16460876	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	793	Picture	consistent	16488703	5165	1	7165	2	5000	next	hit	1451
+Nemo_LR_3	793	Response	32	16495819	12281	1
+Nemo_LR_3	794	Picture	pos_feedback	16501033	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	795	Picture	consistent	16531358	5165	2	4166	3	5000	next	hit	1454
+Nemo_LR_3	795	Response	32	16535487	9294	1
+Nemo_LR_3	796	Picture	pos_feedback	16540689	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	797	Picture	consistent	16566016	5165	1	8331	2	5000	next	hit	1457
+Nemo_LR_3	797	Response	32	16574263	13412	1
+Nemo_LR_3	798	Picture	pos_feedback	16579513	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	799	Picture	consistent	16607339	5166	1	13829	3	5000	next	hit	1460
+Nemo_LR_3	799	Response	16	16621006	18833	1
+Nemo_LR_3	800	Picture	pos_feedback	16626333	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	801	Picture	consistent	16656659	5165	1	8165	2	5000	next	hit	1463
+Nemo_LR_3	801	Response	16	16664733	13239	1
+Nemo_LR_3	802	Picture	pos_feedback	16669989	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	803	Picture	consistent	16695316	5166	1	4998	3	5000	next	hit	1466
+Nemo_LR_3	803	Response	32	16700207	10057	1
+Nemo_LR_3	804	Picture	pos_feedback	16705480	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	805	Picture	consistent	16733306	5166	1	8664	2	5000	next	hit	1469
+Nemo_LR_3	805	Response	32	16741779	13639	2
+Nemo_LR_3	806	Picture	pos_feedback	16747135	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	807	Picture	consistent	16777461	5165	1	5998	3	5000	next	hit	1472
+Nemo_LR_3	807	Response	16	16783371	11075	1
+Nemo_LR_3	808	Picture	pos_feedback	16788625	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	809	Picture	consistent	16813951	5165	2	4999	3	5000	next	hit	1475
+Nemo_LR_3	809	Response	32	16818788	10002	1
+Nemo_LR_3	810	Picture	pos_feedback	16824115	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	811	Picture	consistent	16851941	5165	2	7165	4	5000	next	hit	1478
+Nemo_LR_3	811	Response	16	16858954	12178	1
+Nemo_LR_3	812	Picture	pos_feedback	16864272	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	813	Picture	consistent	16894597	5165	1	8331	2	5000	next	hit	1481
+Nemo_LR_3	813	Response	16	16902806	13374	1
+Nemo_LR_3	814	Picture	pos_feedback	16908093	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	815	Picture	consistent	16933420	5165	1	6332	2	5000	next	hit	1484
+Nemo_LR_3	815	Response	32	16939686	11431	1
+Nemo_LR_3	816	Picture	pos_feedback	16944917	5165	2	14996	4	5000	next	other	0
+Nemo_LR_3	817	Picture	consistent	16972743	5165	2	9331	3	5000	next	hit	1487
+Nemo_LR_3	817	Response	16	16981972	14394	1
+Nemo_LR_3	818	Picture	pos_feedback	16987240	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	819	Picture	consistent	17017565	5165	1	11997	2	5000	next	hit	1490
+Nemo_LR_3	819	Response	16	17029395	16995	1
+Nemo_LR_3	820	Picture	pos_feedback	17034727	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	821	Picture	consistent	17060054	5165	1	8664	2	5000	next	hit	1493
+Nemo_LR_3	821	Response	32	17068668	13779	1
+Nemo_LR_3	822	Picture	pos_feedback	17073884	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	823	Picture	consistent	17101710	5166	1	6998	2	5000	next	hit	1496
+Nemo_LR_3	823	Response	16	17108606	12062	1
+Nemo_LR_3	824	Picture	pos_feedback	17113873	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	825	Picture	consistent	17144199	5175	1	7498	2	5000	next	hit	1499
+Nemo_LR_3	825	Response	32	17151623	12599	1
+Nemo_LR_3	826	Picture	pos_feedback	17156862	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	827	Picture	consistent	17182189	5166	1	6831	2	5000	next	hit	1502
+Nemo_LR_3	827	Response	16	17188902	11879	1
+Nemo_LR_3	828	Picture	pos_feedback	17194186	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	829	Picture	consistent	17222012	5166	1	9664	2	5000	next	hit	1505
+Nemo_LR_3	829	Response	16	17231605	14759	1
+Nemo_LR_3	830	Picture	pos_feedback	17236841	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	831	Picture	consistent	17267167	5166	1	8997	2	5000	next	hit	1508
+Nemo_LR_3	831	Response	16	17276063	14062	1
+Nemo_LR_3	832	Picture	pos_feedback	17281329	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	833	Picture	consistent	17306656	5165	1	7332	2	5000	next	hit	1511
+Nemo_LR_3	833	Response	32	17313832	12341	1
+Nemo_LR_3	834	Picture	pos_feedback	17319153	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	835	Picture	consistent	17346979	5165	1	7831	3	5000	next	hit	1514
+Nemo_LR_3	835	Response	16	17354654	12840	1
+Nemo_LR_3	836	Picture	pos_feedback	17359976	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	837	Picture	consistent	17390301	5165	1	16829	2	5000	next	hit	1517
+Nemo_LR_3	837	Response	32	17406993	21857	1
+Nemo_LR_3	838	Picture	pos_feedback	17412295	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	839	Picture	consistent	17437622	5165	1	16996	2	5000	next	hit	1520
+Nemo_LR_3	839	Response	16	17454483	22026	1
+Nemo_LR_3	840	Picture	pos_feedback	17459783	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	841	Picture	consistent	17487609	5165	1	6998	2	5000	next	hit	1523
+Nemo_LR_3	841	Response	32	17494467	12023	1
+Nemo_LR_3	842	Picture	pos_feedback	17499772	5165	2	14997	3	5000	next	other	0
+Nemo_LR_3	843	Picture	consistent	17530098	5165	1	14663	2	5000	next	hit	1526
+Nemo_LR_3	843	Response	32	17544709	19776	1
+Nemo_LR_3	844	Picture	pos_feedback	17549926	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	845	Picture	consistent	17575253	5166	1	13663	2	5000	next	hit	1529
+Nemo_LR_3	845	Response	16	17588762	18675	1
+Nemo_LR_3	846	Picture	pos_feedback	17594081	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	847	Picture	consistent	17621907	5165	1	7665	2	5000	next	hit	1532
+Nemo_LR_3	847	Response	16	17629441	12699	1
+Nemo_LR_3	848	Picture	pos_feedback	17634737	5165	1	14996	3	5000	next	other	0
+Nemo_LR_3	849	Picture	consistent	17665063	5166	1	13663	2	5000	next	hit	1535
+Nemo_LR_3	849	Response	16	17678637	18740	1
+Nemo_LR_3	850	Picture	pos_feedback	17683891	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	851	Picture	consistent	17709218	5165	1	7665	2	5000	next	hit	1538
+Nemo_LR_3	851	Response	32	17716785	12732	1
+Nemo_LR_3	852	Picture	pos_feedback	17722048	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	853	Picture	consistent	17749874	5165	1	8998	2	5000	next	hit	1541
+Nemo_LR_3	853	Response	16	17758844	14135	1
+Nemo_LR_3	854	Picture	pos_feedback	17764037	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	855	Picture	consistent	17794362	5165	1	5999	2	5000	next	hit	1544
+Nemo_LR_3	855	Response	32	17800219	11022	1
+Nemo_LR_3	856	Picture	pos_feedback	17805526	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	857	Picture	consistent	17830853	5165	1	14829	2	5000	next	hit	1547
+Nemo_LR_3	857	Response	16	17845568	19880	1
+Nemo_LR_3	858	Picture	pos_feedback	17850848	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	859	Picture	consistent	17878674	5166	1	14663	2	5000	next	hit	1550
+Nemo_LR_3	859	Response	16	17893189	19681	1
+Nemo_LR_3	860	Picture	pos_feedback	17898502	5165	1	14996	2	5000	next	other	0
+Nemo_LR_3	861	Picture	consistent	17928827	5165	2	11497	3	5000	next	hit	1553
+Nemo_LR_3	861	Response	16	17940252	16590	1
+Nemo_LR_3	862	Picture	pos_feedback	17945490	5166	1	14996	2	5000	next	other	0
+Nemo_LR_3	863	Picture	consistent	17975815	5165	1	8664	3	5000	next	hit	1556
+Nemo_LR_3	863	Response	16	17984339	13689	2
+Nemo_LR_3	864	Picture	pos_feedback	17989645	5166	1	14996	2	5000	next	other	0

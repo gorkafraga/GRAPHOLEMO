@@ -1,0 +1,7 @@
+block	trial	Vstim	Astim	match	C/I	resp	result	RT	fb	V-file	A-file
+
+LR
+
+0	1	2	4	0	C	0	0	0	0	Ⴢ	cut_eeuw.wav
+0	2	1	1	1	C	0	0	0	0	Ⴋ	cut_g.wav
+0	3	2	3	1	C	0	0	0	0	Ⴢ	cut_ee.wav

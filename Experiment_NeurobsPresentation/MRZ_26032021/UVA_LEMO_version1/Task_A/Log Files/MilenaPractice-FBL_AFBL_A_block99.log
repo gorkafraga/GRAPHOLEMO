@@ -1,0 +1,272 @@
+Scenario - FBL_A.sce
+Logfile written - 03/12/2021 13:47:49
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+MilenaPractice	0	Pulse	199	0	0	NA
+MilenaPractice	0	Pulse	199	10000	10000	NA
+MilenaPractice	1	Pulse	199	20000	9669	NA
+MilenaPractice	1	Pulse	199	30000	19669	NA
+MilenaPractice	1	Pulse	199	40000	29669	NA
+MilenaPractice	1	Pulse	199	50000	39669	NA
+MilenaPractice	1	Pulse	199	60000	49669	NA
+MilenaPractice	1	Pulse	199	70000	59669	NA
+MilenaPractice	1	Pulse	199	80000	69669	NA
+MilenaPractice	1	Pulse	199	90000	79669	NA
+MilenaPractice	1	Pulse	199	100000	89669	NA
+MilenaPractice	1	Pulse	199	110000	99669	NA
+MilenaPractice	1	Pulse	199	120000	109669	NA
+MilenaPractice	1	Pulse	199	130000	119669	NA
+MilenaPractice	1	Pulse	199	140000	129669	NA
+MilenaPractice	1	Pulse	199	150000	139669	NA
+MilenaPractice	1	Pulse	199	160000	149669	NA
+MilenaPractice	1	Pulse	199	170000	159669	NA
+MilenaPractice	1	Pulse	199	180000	169669	NA
+MilenaPractice	1	Pulse	199	190000	179669	NA
+MilenaPractice	1	Pulse	199	200000	189669	NA
+MilenaPractice	1	Pulse	199	210000	199669	NA
+MilenaPractice	1	Pulse	199	220000	209669	NA
+MilenaPractice	1	Pulse	199	230000	219669	NA
+MilenaPractice	1	Pulse	199	240000	229669	NA
+MilenaPractice	1	Pulse	199	250000	239669	NA
+MilenaPractice	1	Pulse	199	260000	249669	NA
+MilenaPractice	1	Pulse	199	270000	259669	NA
+MilenaPractice	1	Response	16	272055	261724	0
+MilenaPractice	2	Picture	fix	272285	0	1	8787	1	0	next	other	0
+MilenaPractice	2	Response	32	273654	1369	0
+MilenaPractice	2	Pulse	199	280000	7715	NA
+MilenaPractice	4	Picture	stim	281072	0	1	25201	1	0	25000	miss	0
+MilenaPractice	4	Pulse	199	290000	8928	NA
+MilenaPractice	4	Pulse	199	300000	18928	NA
+MilenaPractice	5	Picture	fix2	306273	0	1	5969	1	0	next	other	0
+MilenaPractice	5	Response	32	306935	663	0
+MilenaPractice	5	Pulse	199	310000	3727	NA
+MilenaPractice	6	Picture	feedback	312241	0	1	20061	1	0	next	other	0
+MilenaPractice	6	Pulse	199	320000	7759	NA
+MilenaPractice	6	Pulse	199	330000	17759	NA
+MilenaPractice	7	Picture	fix	332302	0	1	22050	1	0	next	other	0
+MilenaPractice	7	Pulse	199	340000	7698	NA
+MilenaPractice	7	Pulse	199	350000	17698	NA
+MilenaPractice	9	Picture	stim	354353	0	1	25035	1	0	25000	incorrect	47
+MilenaPractice	9	Pulse	199	360000	5647	NA
+MilenaPractice	9	Response	32	365495	11142	0
+MilenaPractice	9	Pulse	199	370000	15647	NA
+MilenaPractice	10	Picture	fix2	379553	0	1	829	1	0	next	other	0
+MilenaPractice	10	Pulse	199	380000	447	NA
+MilenaPractice	11	Picture	feedback	380382	0	1	20061	1	0	next	other	0
+MilenaPractice	11	Pulse	199	390000	9618	NA
+MilenaPractice	11	Pulse	199	400000	19618	NA
+MilenaPractice	12	Picture	fix	400443	0	1	14756	1	0	next	other	0
+MilenaPractice	12	Pulse	199	410000	9557	NA
+MilenaPractice	14	Picture	stim	415199	0	1	25035	1	0	25000	hit	59
+MilenaPractice	14	Pulse	199	420000	4801	NA
+MilenaPractice	14	Pulse	199	430000	14801	NA
+MilenaPractice	14	Response	16	432855	17656	0
+MilenaPractice	14	Pulse	199	440000	24801	NA
+MilenaPractice	15	Picture	fix2	440234	0	1	10113	1	0	next	other	0
+MilenaPractice	15	Pulse	199	450000	9766	NA
+MilenaPractice	16	Picture	feedback	450347	0	1	20227	1	0	next	other	0
+MilenaPractice	16	Pulse	199	460000	9653	NA
+MilenaPractice	16	Pulse	199	470000	19653	NA
+MilenaPractice	17	Picture	fix	470574	0	1	11440	1	0	next	other	0
+MilenaPractice	17	Pulse	199	480000	9426	NA
+MilenaPractice	19	Picture	stim	482014	0	1	25035	1	0	25000	hit	70
+MilenaPractice	19	Pulse	199	490000	7986	NA
+MilenaPractice	19	Response	16	496855	14841	0
+MilenaPractice	19	Pulse	199	500000	17986	NA
+MilenaPractice	20	Picture	fix2	507048	0	1	11440	1	0	next	other	0
+MilenaPractice	20	Pulse	199	510000	2952	NA
+MilenaPractice	21	Picture	feedback	518488	0	1	20061	1	0	next	other	0
+MilenaPractice	21	Pulse	199	520000	1512	NA
+MilenaPractice	21	Pulse	199	530000	11512	NA
+MilenaPractice	22	Picture	fix	538549	0	1	11937	1	0	next	other	0
+MilenaPractice	22	Pulse	199	540000	1451	NA
+MilenaPractice	22	Pulse	199	550000	11451	NA
+MilenaPractice	24	Picture	stim	550486	0	1	25035	1	0	25000	incorrect	82
+MilenaPractice	24	Pulse	199	560000	9514	NA
+MilenaPractice	24	Response	32	560695	10208	0
+MilenaPractice	24	Pulse	199	570000	19514	NA
+MilenaPractice	25	Picture	fix2	575521	0	1	6300	1	0	next	other	0
+MilenaPractice	25	Pulse	199	580000	4479	NA
+MilenaPractice	26	Picture	feedback	581821	0	1	20061	1	0	next	other	0
+MilenaPractice	26	Pulse	199	590000	8179	NA
+MilenaPractice	26	Pulse	199	600000	18179	NA
+MilenaPractice	27	Picture	fix	601882	0	1	13595	1	0	next	other	0
+MilenaPractice	27	Pulse	199	610000	8118	NA
+MilenaPractice	29	Picture	stim	615477	0	1	25034	1	0	25000	hit	94
+MilenaPractice	29	Pulse	199	620000	4523	NA
+MilenaPractice	29	Pulse	199	630000	14523	NA
+MilenaPractice	29	Response	16	634295	18817	0
+MilenaPractice	29	Pulse	199	640000	24523	NA
+MilenaPractice	30	Picture	fix2	640512	0	1	16248	1	0	next	other	0
+MilenaPractice	30	Pulse	199	650000	9488	NA
+MilenaPractice	31	Picture	feedback	656760	0	1	20061	1	0	next	other	0
+MilenaPractice	31	Pulse	199	660000	3240	NA
+MilenaPractice	31	Pulse	199	670000	13240	NA
+MilenaPractice	32	Picture	fix	676821	0	1	18900	1	0	next	other	0
+MilenaPractice	32	Pulse	199	680000	3179	NA
+MilenaPractice	32	Pulse	199	690000	13179	NA
+MilenaPractice	34	Picture	stim	695721	0	1	25035	1	0	25000	incorrect	107
+MilenaPractice	34	Pulse	199	700000	4279	NA
+MilenaPractice	34	Pulse	199	710000	14279	NA
+MilenaPractice	34	Response	32	710454	14733	0
+MilenaPractice	34	Pulse	199	720000	24279	NA
+MilenaPractice	35	Picture	fix2	720756	0	1	5969	1	0	next	other	0
+MilenaPractice	36	Picture	feedback	726725	0	1	20061	1	0	next	other	0
+MilenaPractice	36	Pulse	199	730000	3275	NA
+MilenaPractice	36	Pulse	199	740000	13275	NA
+MilenaPractice	37	Picture	fix	746786	0	1	12103	1	0	next	other	0
+MilenaPractice	37	Pulse	199	750000	3214	NA
+MilenaPractice	39	Picture	stim	758889	0	1	25035	1	0	25000	hit	118
+MilenaPractice	39	Pulse	199	760000	1111	NA
+MilenaPractice	39	Pulse	199	770000	11111	NA
+MilenaPractice	39	Response	16	772215	13326	0
+MilenaPractice	39	Pulse	199	780000	21111	NA
+MilenaPractice	40	Picture	fix2	783923	0	1	11771	1	0	next	other	0
+MilenaPractice	40	Pulse	199	790000	6077	NA
+MilenaPractice	41	Picture	feedback	795695	0	1	20227	1	0	next	other	0
+MilenaPractice	41	Pulse	199	800000	4305	NA
+MilenaPractice	41	Pulse	199	810000	14305	NA
+MilenaPractice	42	Picture	fix	815922	0	1	10445	1	0	next	other	0
+MilenaPractice	42	Pulse	199	820000	4078	NA
+MilenaPractice	44	Picture	stim	826367	0	1	25035	1	0	25000	incorrect	129
+MilenaPractice	44	Pulse	199	830000	3633	NA
+MilenaPractice	44	Response	32	839574	13208	0
+MilenaPractice	44	Pulse	199	840000	13633	NA
+MilenaPractice	44	Pulse	199	850000	23633	NA
+MilenaPractice	45	Picture	fix2	851401	0	1	3316	1	0	next	other	0
+MilenaPractice	46	Picture	feedback	854717	0	1	20227	1	0	next	other	0
+MilenaPractice	46	Pulse	199	860000	5283	NA
+MilenaPractice	46	Pulse	199	870000	15283	NA
+MilenaPractice	47	Picture	fix	874944	0	1	12766	1	0	next	other	0
+MilenaPractice	47	Pulse	199	880000	5056	NA
+MilenaPractice	49	Picture	stim	887710	0	1	25035	1	0	25000	hit	141
+MilenaPractice	49	Pulse	199	890000	2290	NA
+MilenaPractice	49	Pulse	199	900000	12290	NA
+MilenaPractice	49	Response	16	901015	13304	0
+MilenaPractice	49	Pulse	199	910000	22290	NA
+MilenaPractice	50	Picture	fix2	912911	0	1	3801	179	0	next	other	0
+MilenaPractice	51	Picture	feedback	916712	0	179	20073	179	0	next	other	0
+MilenaPractice	51	Pulse	199	920000	3288	NA
+MilenaPractice	51	Pulse	199	930000	13288	NA
+MilenaPractice	52	Picture	fix	936785	0	1	15419	1	0	next	other	0
+MilenaPractice	52	Pulse	199	940000	3215	NA
+MilenaPractice	52	Pulse	199	950000	13215	NA
+MilenaPractice	54	Picture	stim	952204	0	1	25035	1	0	25000	hit	152
+MilenaPractice	54	Pulse	199	960000	7796	NA
+MilenaPractice	54	Response	16	964534	12330	0
+MilenaPractice	54	Pulse	199	970000	17796	NA
+MilenaPractice	55	Picture	fix2	977239	0	1	8124	1	0	next	other	0
+MilenaPractice	55	Pulse	199	980000	2761	NA
+MilenaPractice	56	Picture	feedback	985362	0	1	20061	1	0	next	other	0
+MilenaPractice	56	Pulse	199	990000	4638	NA
+MilenaPractice	56	Pulse	199	1000000	14638	NA
+MilenaPractice	57	Picture	fix	1005423	0	1	21222	1	0	next	other	0
+MilenaPractice	57	Pulse	199	1010000	4577	NA
+MilenaPractice	57	Pulse	199	1020000	14577	NA
+MilenaPractice	59	Picture	stim	1026645	0	1	25035	1	0	25000	incorrect	165
+MilenaPractice	59	Pulse	199	1030000	3355	NA
+MilenaPractice	59	Pulse	199	1040000	13355	NA
+MilenaPractice	59	Response	32	1040534	13889	0
+MilenaPractice	59	Pulse	199	1050000	23355	NA
+MilenaPractice	60	Picture	fix2	1051680	0	1	16082	1	0	next	other	0
+MilenaPractice	60	Pulse	199	1060000	8320	NA
+MilenaPractice	61	Picture	feedback	1067762	0	1	20061	1	0	next	other	0
+MilenaPractice	61	Pulse	199	1070000	2238	NA
+MilenaPractice	61	Pulse	199	1080000	12238	NA
+MilenaPractice	62	Picture	fix	1087823	0	1	24040	1	0	next	other	0
+MilenaPractice	62	Pulse	199	1090000	2177	NA
+MilenaPractice	62	Pulse	199	1100000	12177	NA
+MilenaPractice	62	Pulse	199	1110000	22177	NA
+MilenaPractice	64	Picture	stim	1111863	0	1	25035	1	0	25000	incorrect	178
+MilenaPractice	64	Pulse	199	1120000	8137	NA
+MilenaPractice	64	Response	32	1126934	15072	0
+MilenaPractice	64	Pulse	199	1130000	18137	NA
+MilenaPractice	65	Picture	fix2	1136898	0	1	6134	1	0	next	other	0
+MilenaPractice	65	Pulse	199	1140000	3102	NA
+MilenaPractice	66	Picture	feedback	1143032	0	1	20061	1	0	next	other	0
+MilenaPractice	66	Pulse	199	1150000	6968	NA
+MilenaPractice	66	Pulse	199	1160000	16968	NA
+MilenaPractice	67	Picture	fix	1163093	0	1	25864	1	0	next	other	0
+MilenaPractice	67	Pulse	199	1170000	6907	NA
+MilenaPractice	67	Pulse	199	1180000	16907	NA
+MilenaPractice	69	Picture	stim	1188957	0	1	25035	1	0	25000	incorrect	191
+MilenaPractice	69	Pulse	199	1190000	1043	NA
+MilenaPractice	69	Pulse	199	1200000	11043	NA
+MilenaPractice	69	Response	32	1206134	17178	0
+MilenaPractice	69	Pulse	199	1210000	21043	NA
+MilenaPractice	70	Picture	fix2	1214157	0	1	12269	1	0	next	other	0
+MilenaPractice	70	Pulse	199	1220000	5843	NA
+MilenaPractice	71	Picture	feedback	1226426	0	1	20061	1	0	next	other	0
+MilenaPractice	71	Pulse	199	1230000	3574	NA
+MilenaPractice	71	Pulse	199	1240000	13574	NA
+MilenaPractice	72	Picture	fix	1246487	0	1	15916	1	0	next	other	0
+MilenaPractice	72	Pulse	199	1250000	3513	NA
+MilenaPractice	72	Pulse	199	1260000	13513	NA
+MilenaPractice	74	Picture	stim	1262403	0	1	25035	1	0	25000	incorrect	203
+MilenaPractice	74	Pulse	199	1270000	7597	NA
+MilenaPractice	74	Response	32	1272535	10131	0
+MilenaPractice	74	Pulse	199	1280000	17597	NA
+MilenaPractice	75	Picture	fix2	1287438	0	1	8124	1	0	next	other	0
+MilenaPractice	75	Pulse	199	1290000	2562	NA
+MilenaPractice	76	Picture	feedback	1295562	0	1	20061	1	0	next	other	0
+MilenaPractice	76	Pulse	199	1300000	4438	NA
+MilenaPractice	76	Pulse	199	1310000	14438	NA
+MilenaPractice	77	Picture	fix	1315623	0	1	16413	1	0	next	other	0
+MilenaPractice	77	Pulse	199	1320000	4377	NA
+MilenaPractice	77	Pulse	199	1330000	14377	NA
+MilenaPractice	79	Picture	stim	1332036	0	1	25035	1	0	25000	hit	215
+MilenaPractice	79	Pulse	199	1340000	7964	NA
+MilenaPractice	79	Response	16	1347254	15218	0
+MilenaPractice	79	Pulse	199	1350000	17964	NA
+MilenaPractice	80	Picture	fix2	1357071	0	1	6632	1	0	next	other	0
+MilenaPractice	80	Pulse	199	1360000	2929	NA
+MilenaPractice	81	Picture	feedback	1363703	0	1	20061	1	0	next	other	0
+MilenaPractice	81	Pulse	199	1370000	6297	NA
+MilenaPractice	81	Pulse	199	1380000	16297	NA
+MilenaPractice	82	Picture	fix	1383764	0	1	17243	1	0	next	other	0
+MilenaPractice	82	Pulse	199	1390000	6236	NA
+MilenaPractice	82	Pulse	199	1400000	16236	NA
+MilenaPractice	84	Picture	stim	1401006	0	1	25035	1	0	25000	incorrect	227
+MilenaPractice	84	Pulse	199	1410000	8994	NA
+MilenaPractice	84	Response	32	1411574	10568	0
+MilenaPractice	84	Pulse	199	1420000	18994	NA
+MilenaPractice	85	Picture	fix2	1426041	0	1	1161	1	0	next	other	0
+MilenaPractice	86	Picture	feedback	1427202	0	1	20061	1	0	next	other	0
+MilenaPractice	86	Pulse	199	1430000	2798	NA
+MilenaPractice	86	Pulse	199	1440000	12798	NA
+MilenaPractice	87	Picture	fix	1447263	0	1	9450	1	0	next	other	0
+MilenaPractice	87	Pulse	199	1450000	2737	NA
+MilenaPractice	89	Picture	stim	1456713	0	1	25035	1	0	25000	hit	237
+MilenaPractice	89	Pulse	199	1460000	3287	NA
+MilenaPractice	89	Response	16	1466134	9421	0
+MilenaPractice	89	Pulse	199	1470000	13287	NA
+MilenaPractice	89	Pulse	199	1480000	23287	NA
+MilenaPractice	90	Picture	fix2	1481748	0	1	4642	1	0	next	other	0
+MilenaPractice	91	Picture	feedback	1486390	0	1	20061	1	0	next	other	0
+MilenaPractice	91	Pulse	199	1490000	3610	NA
+MilenaPractice	91	Pulse	199	1500000	13610	NA
+MilenaPractice	92	Picture	fix	1506451	0	1	10279	1	0	next	other	0
+MilenaPractice	92	Pulse	199	1510000	3549	NA
+MilenaPractice	94	Picture	stim	1516730	0	1	25035	1	0	25000	incorrect	248
+MilenaPractice	94	Pulse	199	1520000	3270	NA
+MilenaPractice	94	Response	32	1527094	10364	0
+MilenaPractice	94	Pulse	199	1530000	13270	NA
+MilenaPractice	94	Pulse	199	1540000	23270	NA
+MilenaPractice	95	Picture	fix2	1541765	0	1	7295	1	0	next	other	0
+MilenaPractice	96	Picture	feedback	1549060	0	1	20061	1	0	next	other	0
+MilenaPractice	96	Pulse	199	1550000	940	NA
+MilenaPractice	96	Pulse	199	1560000	10940	NA
+MilenaPractice	97	Picture	fix	1569121	0	1	23211	1	0	next	other	0
+MilenaPractice	97	Pulse	199	1570000	879	NA
+MilenaPractice	97	Pulse	199	1580000	10879	NA
+MilenaPractice	97	Pulse	199	1590000	20879	NA
+MilenaPractice	99	Picture	stim	1592332	0	1	25035	1	0	25000	hit	261
+MilenaPractice	99	Pulse	199	1600000	7668	NA
+MilenaPractice	99	Response	16	1607734	15402	0
+MilenaPractice	99	Pulse	199	1610000	17668	NA
+MilenaPractice	100	Picture	fix2	1617367	0	1	11606	1	0	next	other	0
+MilenaPractice	100	Pulse	199	1620000	2633	NA
+MilenaPractice	101	Picture	feedback	1628972	0	1	26503	1	0	next	other	0
+MilenaPractice	101	Pulse	199	1630000	1028	NA
+MilenaPractice	101	Pulse	199	1640000	11028	NA

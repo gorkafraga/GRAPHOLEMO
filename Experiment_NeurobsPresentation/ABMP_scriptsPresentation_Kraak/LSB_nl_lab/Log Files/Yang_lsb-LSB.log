@@ -1,0 +1,696 @@
+Scenario - 
+Logfile written - 02/20/2017 19:14:34
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Yang_lsb	1	Response	3	1560928	1550095	1
+Yang_lsb	2	Response	3	1575488	14417	1
+Yang_lsb	3	Picture	consistent	1580737	5167	1	19998	2	5000	next	miss	0
+Yang_lsb	4	Picture	pos_feedback	1605902	5167	1	14999	2	5000	next	other	0
+Yang_lsb	5	Picture	consistent	1631233	5166	2	19999	3	5000	next	miss	0
+Yang_lsb	6	Picture	pos_feedback	1656399	5167	1	14999	2	5000	next	other	0
+Yang_lsb	7	Picture	consistent	1684230	5166	1	19999	2	5000	next	miss	0
+Yang_lsb	8	Picture	pos_feedback	1709395	5166	1	14999	2	5000	next	other	0
+Yang_lsb	9	Picture	consistent	1739727	5167	1	19999	2	5000	next	miss	0
+Yang_lsb	10	Picture	pos_feedback	1764892	5166	1	14999	2	5000	next	other	0
+Yang_lsb	11	Picture	consistent	1790224	5167	1	19998	3	5000	next	miss	0
+Yang_lsb	12	Response	16	1812886	2664	1
+Yang_lsb	12	Picture	pos_feedback	1815389	5167	1	14872	2	5000	next	other	0
+Yang_lsb	12	Pause		1818999	8777		469265
+Yang_lsb	12	Resume		1818999	8777
+Yang_lsb	13	Picture	consistent	1843093	5166	1	19999	2	5000	next	miss	0
+Yang_lsb	14	Picture	pos_feedback	1868258	5166	2	14999	4	5000	next	other	0
+Yang_lsb	15	Picture	consistent	1898590	5167	1	8833	2	5000	next	hit	19
+Yang_lsb	15	Response	32	1907358	13935	1
+Yang_lsb	16	Picture	pos_feedback	1912589	5166	1	14999	2	5000	next	other	0
+Yang_lsb	17	Picture	consistent	1937921	5167	1	13665	3	5000	next	hit	22
+Yang_lsb	17	Response	16	1951455	18701	1
+Yang_lsb	18	Picture	pos_feedback	1956753	5167	1	14999	2	5000	next	other	0
+Yang_lsb	19	Picture	consistent	1984584	5166	2	13500	3	5000	next	hit	25
+Yang_lsb	19	Response	32	1997930	18512	1
+Yang_lsb	20	Picture	pos_feedback	2003250	5166	1	14999	2	5000	next	other	0
+Yang_lsb	21	Picture	consistent	2033581	5166	2	11166	4	5000	next	hit	28
+Yang_lsb	21	Response	16	2044668	16253	2
+Yang_lsb	22	Picture	pos_feedback	2049914	5167	1	14999	2	5000	next	other	0
+Yang_lsb	23	Picture	consistent	2075246	5167	1	12165	3	5000	next	hit	31
+Yang_lsb	23	Response	16	2087236	17157	2
+Yang_lsb	24	Picture	pos_feedback	2092578	5167	1	14999	2	5000	next	other	0
+Yang_lsb	25	Picture	consistent	2120409	5166	2	10833	3	5000	next	hit	34
+Yang_lsb	25	Response	32	2131123	15880	1
+Yang_lsb	26	Picture	pos_feedback	2136409	5167	1	14999	2	5000	next	other	0
+Yang_lsb	27	Picture	consistent	2166740	5166	1	9333	2	5000	next	hit	37
+Yang_lsb	27	Response	32	2175897	14323	1
+Yang_lsb	28	Picture	pos_feedback	2181239	5166	1	14999	2	5000	next	other	0
+Yang_lsb	29	Picture	consistent	2206571	5167	1	9999	2	5000	next	hit	40
+Yang_lsb	29	Response	16	2216406	15002	2
+Yang_lsb	30	Picture	pos_feedback	2221737	5167	1	14999	2	5000	next	other	0
+Yang_lsb	31	Picture	consistent	2249568	5166	1	10333	2	5000	next	hit	43
+Yang_lsb	31	Response	32	2259762	15360	1
+Yang_lsb	32	Picture	pos_feedback	2265067	5166	1	14999	2	5000	next	other	0
+Yang_lsb	33	Picture	consistent	2295399	5167	1	9999	2	5000	next	hit	46
+Yang_lsb	33	Response	16	2305223	14991	1
+Yang_lsb	34	Picture	pos_feedback	2310564	5166	2	15000	3	5000	next	other	0
+Yang_lsb	35	Picture	consistent	2335896	5166	1	9333	2	5000	next	hit	49
+Yang_lsb	35	Response	32	2345158	14428	1
+Yang_lsb	36	Picture	pos_feedback	2350395	5166	2	14999	4	5000	next	other	0
+Yang_lsb	37	Picture	consistent	2378227	5166	1	15166	2	5000	next	hit	52
+Yang_lsb	37	Response	16	2393213	20152	1
+Yang_lsb	38	Picture	pos_feedback	2398559	5166	1	14999	2	5000	next	other	0
+Yang_lsb	39	Picture	consistent	2428890	5166	2	15000	3	5000	next	hit	55
+Yang_lsb	39	Response	16	2443704	19980	1
+Yang_lsb	40	Picture	pos_feedback	2449056	5166	1	14999	2	5000	next	other	0
+Yang_lsb	41	Picture	consistent	2474388	5167	1	14165	3	5000	next	hit	58
+Yang_lsb	41	Response	16	2488372	19151	1
+Yang_lsb	42	Picture	pos_feedback	2493720	5167	1	14999	2	5000	next	other	0
+Yang_lsb	43	Picture	consistent	2521551	5166	2	11166	4	5000	next	hit	61
+Yang_lsb	43	Response	32	2532692	16307	2
+Yang_lsb	44	Picture	pos_feedback	2537884	5167	1	14999	2	5000	next	other	0
+Yang_lsb	45	Picture	consistent	2568215	5166	1	9833	2	5000	next	hit	64
+Yang_lsb	45	Response	16	2577992	14943	1
+Yang_lsb	46	Picture	pos_feedback	2583214	5166	2	14999	4	5000	next	other	0
+Yang_lsb	47	Picture	consistent	2608546	5166	1	14499	2	5000	next	hit	67
+Yang_lsb	47	Response	16	2622898	19518	1
+Yang_lsb	48	Picture	pos_feedback	2628212	5167	1	14999	2	5000	next	other	0
+Yang_lsb	49	Picture	consistent	2656043	5166	1	19666	2	5000	next	hit	70
+Yang_lsb	49	Response	32	2675686	24809	2
+Yang_lsb	50	Picture	pos_feedback	2680875	5166	1	14999	2	5000	next	other	0
+Yang_lsb	51	Picture	consistent	2711206	5166	2	14666	3	5000	next	hit	73
+Yang_lsb	51	Response	32	2725820	19780	1
+Yang_lsb	52	Picture	pos_feedback	2731039	5167	1	14999	2	5000	next	other	0
+Yang_lsb	53	Picture	consistent	2756370	5166	2	15499	4	5000	next	hit	76
+Yang_lsb	53	Response	16	2771801	20597	1
+Yang_lsb	54	Picture	pos_feedback	2777036	5167	1	14999	2	5000	next	other	0
+Yang_lsb	55	Picture	consistent	2804867	5166	2	9500	3	5000	next	hit	79
+Yang_lsb	55	Response	16	2814214	14513	1
+Yang_lsb	56	Picture	pos_feedback	2819533	5166	1	14999	2	5000	next	other	0
+Yang_lsb	57	Picture	consistent	2849865	5167	1	9666	2	5000	next	hit	82
+Yang_lsb	57	Response	32	2859494	14796	1
+Yang_lsb	58	Picture	pos_feedback	2864697	5166	1	14999	2	5000	next	other	0
+Yang_lsb	59	Picture	consistent	2890029	5167	1	10999	2	5000	next	hit	85
+Yang_lsb	59	Response	32	2900917	16055	1
+Yang_lsb	60	Picture	pos_feedback	2906194	5166	2	15000	3	5000	next	other	0
+Yang_lsb	61	Picture	consistent	2934026	5166	1	12333	2	5000	next	hit	88
+Yang_lsb	61	Response	32	2946225	17365	1
+Yang_lsb	62	Picture	pos_feedback	2951525	5166	1	14999	2	5000	next	other	0
+Yang_lsb	63	Response	3	3065836	89146	1
+Yang_lsb	64	Picture	consistent	3071351	5166	1	16332	2	5000	next	hit	92
+Yang_lsb	64	Response	16	3087515	21330	1
+Yang_lsb	65	Picture	pos_feedback	3092850	5167	1	14999	2	5000	next	other	0
+Yang_lsb	66	Picture	consistent	3118181	5166	2	18499	3	5000	next	hit	95
+Yang_lsb	66	Response	16	3136545	23530	1
+Yang_lsb	67	Picture	pos_feedback	3141847	5167	1	14999	2	5000	next	other	0
+Yang_lsb	68	Picture	consistent	3172345	5167	1	18332	2	5000	next	hit	98
+Yang_lsb	68	Response	16	3190573	23395	1
+Yang_lsb	69	Picture	pos_feedback	3195843	5166	1	14999	2	5000	next	other	0
+Yang_lsb	70	Picture	consistent	3223675	5166	1	14832	2	5000	next	hit	101
+Yang_lsb	70	Response	16	3238465	19956	1
+Yang_lsb	71	Picture	pos_feedback	3243674	5167	1	14999	2	5000	next	other	0
+Yang_lsb	72	Picture	consistent	3274005	5166	1	9333	2	5000	next	hit	104
+Yang_lsb	72	Response	32	3283221	14382	2
+Yang_lsb	73	Picture	pos_feedback	3288504	5166	1	14999	2	5000	next	other	0
+Yang_lsb	74	Picture	consistent	3316336	5167	1	15166	2	5000	next	hit	107
+Yang_lsb	74	Response	32	3331381	20212	1
+Yang_lsb	75	Picture	pos_feedback	3336668	5166	1	14999	2	5000	next	other	0
+Yang_lsb	76	Picture	consistent	3362000	5167	1	19165	2	5000	next	hit	110
+Yang_lsb	76	Response	16	3381038	24205	2
+Yang_lsb	77	Picture	pos_feedback	3386332	5167	1	14999	2	5000	next	other	0
+Yang_lsb	78	Picture	consistent	3414163	5166	1	16999	2	5000	next	hit	113
+Yang_lsb	78	Response	16	3431059	22062	1
+Yang_lsb	79	Picture	pos_feedback	3436328	5166	2	15000	3	5000	next	other	0
+Yang_lsb	80	Picture	consistent	3466660	5166	1	19332	2	5000	next	hit	116
+Yang_lsb	80	Response	32	3485839	24345	2
+Yang_lsb	81	Picture	pos_feedback	3491158	5166	2	14999	4	5000	next	other	0
+Yang_lsb	82	Picture	consistent	3516490	5166	1	14499	2	5000	next	hit	119
+Yang_lsb	82	Response	32	3530917	19593	1
+Yang_lsb	83	Picture	pos_feedback	3536156	5167	1	14999	2	5000	next	other	0
+Yang_lsb	84	Picture	consistent	3566487	5166	1	12499	2	5000	next	hit	122
+Yang_lsb	84	Response	32	3578933	17612	1
+Yang_lsb	85	Picture	pos_feedback	3584153	5167	1	14999	2	5000	next	other	0
+Yang_lsb	86	Picture	consistent	3609484	5166	2	19999	3	5000	next	miss	0
+Yang_lsb	87	Picture	pos_feedback	3634650	5167	1	14999	2	5000	next	other	0
+Yang_lsb	87	Response	32	3636369	6886	1
+Yang_lsb	88	Picture	consistent	3662481	5166	1	13333	2	5000	next	hit	128
+Yang_lsb	88	Response	32	3675696	18381	1
+Yang_lsb	89	Picture	pos_feedback	3680980	5166	1	14999	2	5000	next	other	0
+Yang_lsb	90	Picture	consistent	3711311	5166	2	14666	3	5000	next	hit	131
+Yang_lsb	90	Response	16	3725948	19803	1
+Yang_lsb	91	Picture	pos_feedback	3731144	5167	1	14999	2	5000	next	other	0
+Yang_lsb	92	Picture	consistent	3758975	5166	1	14333	2	5000	next	hit	134
+Yang_lsb	92	Response	32	3773125	19316	1
+Yang_lsb	93	Picture	pos_feedback	3778474	5166	1	14999	2	5000	next	other	0
+Yang_lsb	94	Picture	consistent	3806306	5167	1	10499	2	5000	next	hit	137
+Yang_lsb	94	Response	16	3816719	15580	1
+Yang_lsb	95	Picture	pos_feedback	3821971	5166	2	14999	4	5000	next	other	0
+Yang_lsb	96	Picture	consistent	3847303	5166	1	11999	3	5000	next	hit	140
+Yang_lsb	96	Response	32	3859128	16991	1
+Yang_lsb	97	Picture	pos_feedback	3864469	5167	1	14999	2	5000	next	other	0
+Yang_lsb	98	Picture	consistent	3889801	5167	1	10499	2	5000	next	hit	143
+Yang_lsb	98	Response	16	3900139	15505	2
+Yang_lsb	99	Picture	pos_feedback	3905466	5166	1	14999	2	5000	next	other	0
+Yang_lsb	100	Picture	consistent	3935798	5167	1	11832	2	5000	next	hit	146
+Yang_lsb	100	Response	32	3947576	16945	1
+Yang_lsb	101	Picture	pos_feedback	3952797	5167	1	14999	2	5000	next	other	0
+Yang_lsb	102	Picture	consistent	3980628	5166	1	10166	2	5000	next	hit	149
+Yang_lsb	102	Response	32	3990671	15209	1
+Yang_lsb	103	Picture	pos_feedback	3995961	5167	1	14999	2	5000	next	other	0
+Yang_lsb	104	Picture	consistent	4026292	5166	1	14999	2	5000	next	hit	152
+Yang_lsb	104	Response	32	4041232	20106	1
+Yang_lsb	105	Picture	pos_feedback	4046457	5166	2	15000	3	5000	next	other	0
+Yang_lsb	106	Picture	consistent	4071789	5166	1	9333	2	5000	next	hit	155
+Yang_lsb	106	Response	16	4081033	14410	1
+Yang_lsb	107	Picture	pos_feedback	4086288	5166	2	14999	4	5000	next	other	0
+Yang_lsb	108	Picture	consistent	4116620	5166	1	14332	2	5000	next	hit	158
+Yang_lsb	108	Response	16	4130883	19429	1
+Yang_lsb	109	Picture	pos_feedback	4136119	5167	1	14999	2	5000	next	other	0
+Yang_lsb	110	Picture	consistent	4163950	5166	2	10666	3	5000	next	hit	161
+Yang_lsb	110	Response	32	4174471	15687	1
+Yang_lsb	111	Picture	pos_feedback	4179783	5167	1	14999	2	5000	next	other	0
+Yang_lsb	112	Picture	consistent	4205114	5166	2	11833	3	5000	next	hit	164
+Yang_lsb	112	Response	16	4216850	16902	1
+Yang_lsb	113	Picture	pos_feedback	4222113	5166	2	14999	4	5000	next	other	0
+Yang_lsb	114	Picture	consistent	4247445	5166	1	11499	3	5000	next	hit	167
+Yang_lsb	114	Response	32	4258872	16593	1
+Yang_lsb	115	Picture	pos_feedback	4264111	5167	1	14999	2	5000	next	other	0
+Yang_lsb	116	Picture	consistent	4291942	5166	2	12666	3	5000	next	hit	170
+Yang_lsb	116	Response	32	4304497	17721	1
+Yang_lsb	117	Picture	pos_feedback	4309775	5167	1	14999	2	5000	next	other	0
+Yang_lsb	118	Picture	consistent	4340106	5166	1	9666	2	5000	next	hit	173
+Yang_lsb	118	Response	16	4349713	14773	1
+Yang_lsb	119	Picture	pos_feedback	4354939	5167	1	14999	2	5000	next	other	0
+Yang_lsb	120	Picture	consistent	4385270	5166	1	14499	2	5000	next	hit	176
+Yang_lsb	120	Response	16	4399640	19536	1
+Yang_lsb	121	Picture	pos_feedback	4404935	5166	2	15000	3	5000	next	other	0
+Yang_lsb	122	Picture	consistent	4430267	5166	1	14999	2	5000	next	hit	179
+Yang_lsb	122	Response	32	4445160	20059	1
+Yang_lsb	123	Picture	pos_feedback	4450433	5167	1	14999	2	5000	next	other	0
+Yang_lsb	124	Picture	consistent	4478264	5166	1	12666	2	5000	next	hit	182
+Yang_lsb	124	Response	32	4490763	17665	1
+Yang_lsb	125	Picture	pos_feedback	4496096	5166	2	15000	3	5000	next	other	0
+Yang_lsb	126	Picture	consistent	4521428	5166	1	11999	3	5000	next	hit	185
+Yang_lsb	126	Response	16	4533291	17029	1
+Yang_lsb	127	Picture	pos_feedback	4538594	5167	1	14999	2	5000	next	other	0
+Yang_lsb	128	Picture	consistent	4566425	5166	2	12500	3	5000	next	hit	188
+Yang_lsb	128	Response	16	4578859	17600	2
+Yang_lsb	129	Picture	pos_feedback	4584091	5166	1	14999	2	5000	next	other	0
+Yang_lsb	130	Picture	consistent	4614422	5166	2	10000	3	5000	next	hit	191
+Yang_lsb	130	Response	16	4624336	15080	1
+Yang_lsb	131	Picture	pos_feedback	4629588	5166	1	14999	2	5000	next	other	0
+Yang_lsb	132	Picture	consistent	4659920	5167	1	11999	2	5000	next	hit	194
+Yang_lsb	132	Response	32	4671852	17099	1
+Yang_lsb	133	Picture	pos_feedback	4677085	5166	2	14999	3	5000	next	other	0
+Yang_lsb	134	Picture	consistent	4702417	5166	1	9166	2	5000	next	hit	197
+Yang_lsb	134	Response	16	4711409	14158	1
+Yang_lsb	135	Picture	pos_feedback	4716750	5167	1	14999	2	5000	next	other	0
+Yang_lsb	136	Picture	consistent	4744581	5166	1	10166	2	5000	next	hit	200
+Yang_lsb	136	Response	32	4754640	15225	1
+Yang_lsb	137	Picture	pos_feedback	4759914	5167	1	14999	2	5000	next	other	0
+Yang_lsb	138	Picture	consistent	4787745	5166	1	14666	2	5000	next	hit	203
+Yang_lsb	138	Response	16	4802366	19787	1
+Yang_lsb	139	Picture	pos_feedback	4807577	5166	1	14999	2	5000	next	other	0
+Yang_lsb	140	Picture	consistent	4832909	5166	1	11999	2	5000	next	hit	206
+Yang_lsb	140	Response	16	4844858	17115	1
+Yang_lsb	141	Picture	pos_feedback	4850074	5166	2	15000	3	5000	next	other	0
+Yang_lsb	142	Picture	consistent	4877906	5166	1	12833	2	5000	next	hit	209
+Yang_lsb	142	Response	32	4890656	17916	2
+Yang_lsb	143	Picture	pos_feedback	4895905	5166	1	14999	2	5000	next	other	0
+Yang_lsb	144	Picture	consistent	4926237	5167	1	15832	2	5000	next	hit	212
+Yang_lsb	144	Response	32	4941903	20833	1
+Yang_lsb	145	Picture	pos_feedback	4947235	5166	1	14999	2	5000	next	other	0
+Yang_lsb	146	Picture	consistent	4975067	5166	1	11333	2	5000	next	hit	215
+Yang_lsb	146	Response	16	4986363	16462	1
+Yang_lsb	147	Picture	pos_feedback	4991566	5166	1	14999	2	5000	next	other	0
+Yang_lsb	148	Picture	consistent	5021897	5166	2	10833	3	5000	next	hit	218
+Yang_lsb	148	Response	32	5032699	15968	1
+Yang_lsb	149	Picture	pos_feedback	5037896	5166	2	14999	4	5000	next	other	0
+Yang_lsb	150	Picture	consistent	5068228	5166	1	14332	2	5000	next	hit	221
+Yang_lsb	150	Response	16	5082524	19462	1
+Yang_lsb	151	Picture	pos_feedback	5087727	5167	1	14999	2	5000	next	other	0
+Yang_lsb	152	Picture	consistent	5113058	5166	2	11333	3	5000	next	hit	224
+Yang_lsb	152	Response	32	5124253	16361	1
+Yang_lsb	153	Picture	pos_feedback	5129557	5166	2	14999	4	5000	next	other	0
+Yang_lsb	154	Picture	consistent	5154889	5166	1	9000	2	5000	next	hit	227
+Yang_lsb	154	Response	16	5163773	14050	1
+Yang_lsb	155	Picture	pos_feedback	5169055	5166	1	14999	2	5000	next	other	0
+Yang_lsb	156	Picture	consistent	5199386	5166	2	9000	3	5000	next	hit	230
+Yang_lsb	156	Response	16	5208218	13998	1
+Yang_lsb	157	Picture	pos_feedback	5213552	5166	1	14999	2	5000	next	other	0
+Yang_lsb	158	Picture	consistent	5243884	5167	1	11499	2	5000	next	hit	233
+Yang_lsb	158	Response	32	5255260	16543	1
+Yang_lsb	159	Picture	pos_feedback	5260549	5166	2	14999	4	5000	next	other	0
+Yang_lsb	160	Picture	consistent	5290881	5167	1	14165	3	5000	next	hit	236
+Yang_lsb	160	Response	32	5304954	19240	2
+Yang_lsb	161	Picture	pos_feedback	5310213	5167	1	14999	2	5000	next	other	0
+Yang_lsb	162	Picture	consistent	5338045	5167	1	10166	2	5000	next	hit	239
+Yang_lsb	162	Response	16	5348169	15291	1
+Yang_lsb	163	Picture	pos_feedback	5353377	5166	1	14999	2	5000	next	other	0
+Yang_lsb	164	Picture	consistent	5381209	5167	1	14499	2	5000	next	hit	242
+Yang_lsb	164	Response	32	5395668	19626	1
+Yang_lsb	165	Picture	pos_feedback	5400874	5166	1	14999	2	5000	next	other	0
+Yang_lsb	166	Picture	consistent	5428706	5167	1	11665	3	5000	next	hit	245
+Yang_lsb	166	Response	16	5440342	16803	1
+Yang_lsb	167	Picture	pos_feedback	5445538	5167	1	14999	2	5000	next	other	0
+Yang_lsb	168	Picture	consistent	5470870	5167	1	13832	2	5000	next	hit	248
+Yang_lsb	168	Response	16	5484677	18974	1
+Yang_lsb	169	Picture	pos_feedback	5489868	5166	2	15000	3	5000	next	other	0
+Yang_lsb	170	Picture	consistent	5515200	5166	1	8666	3	5000	next	hit	251
+Yang_lsb	170	Response	32	5523838	13804	1
+Yang_lsb	171	Picture	pos_feedback	5529033	5167	1	14999	2	5000	next	other	0
+Yang_lsb	172	Picture	consistent	5554364	5166	2	11000	3	5000	next	hit	254
+Yang_lsb	172	Response	32	5565292	16094	2
+Yang_lsb	173	Picture	pos_feedback	5570530	5166	1	14999	2	5000	next	other	0
+Yang_lsb	174	Picture	consistent	5598362	5167	1	13166	2	5000	next	hit	257
+Yang_lsb	174	Response	16	5611341	18146	1
+Yang_lsb	175	Picture	pos_feedback	5616694	5166	1	14999	2	5000	next	other	0
+Yang_lsb	176	Picture	consistent	5647025	5166	2	10333	3	5000	next	hit	260
+Yang_lsb	176	Response	16	5657207	15348	1
+Yang_lsb	177	Picture	pos_feedback	5662524	5166	2	15000	3	5000	next	other	0
+Yang_lsb	178	Picture	consistent	5690356	5166	1	14666	2	5000	next	hit	263
+Yang_lsb	178	Response	32	5704937	19747	1
+Yang_lsb	179	Picture	pos_feedback	5710188	5166	1	14999	2	5000	next	other	0
+Yang_lsb	180	Picture	consistent	5740520	5167	1	14665	3	5000	next	hit	266
+Yang_lsb	180	Response	16	5755116	19763	1
+Yang_lsb	181	Picture	pos_feedback	5760352	5167	1	14999	2	5000	next	other	0
+Yang_lsb	182	Picture	consistent	5785683	5166	2	11833	3	5000	next	hit	269
+Yang_lsb	182	Response	16	5797494	16977	1
+Yang_lsb	183	Picture	pos_feedback	5802682	5166	2	15000	3	5000	next	other	0
+Yang_lsb	184	Picture	consistent	5830514	5166	1	13166	2	5000	next	hit	272
+Yang_lsb	184	Response	16	5843505	18157	2
+Yang_lsb	185	Picture	pos_feedback	5848846	5166	1	14999	3	5000	next	other	0
+Yang_lsb	186	Picture	consistent	5874178	5166	1	12333	2	5000	next	hit	275
+Yang_lsb	186	Response	32	5886378	17366	1
+Yang_lsb	187	Picture	pos_feedback	5891677	5166	1	14999	2	5000	next	other	0
+Yang_lsb	188	Picture	consistent	5922008	5166	2	9666	4	5000	next	hit	278
+Yang_lsb	188	Response	16	5931597	14755	1
+Yang_lsb	189	Picture	pos_feedback	5936841	5167	1	14999	2	5000	next	other	0
+Yang_lsb	190	Picture	consistent	5962173	5167	1	11832	2	5000	next	hit	281
+Yang_lsb	190	Response	32	5973902	16896	1
+Yang_lsb	191	Picture	pos_feedback	5979172	5167	1	14999	2	5000	next	other	0
+Yang_lsb	192	Picture	consistent	6004503	5166	2	9166	4	5000	next	hit	284
+Yang_lsb	192	Response	32	6013599	14262	1
+Yang_lsb	193	Picture	pos_feedback	6018836	5167	1	14999	2	5000	next	other	0
+Yang_lsb	194	Picture	consistent	6044168	5167	1	17832	2	5000	next	hit	287
+Yang_lsb	194	Response	16	6061973	22972	1
+Yang_lsb	195	Picture	pos_feedback	6067166	5166	1	14999	2	5000	next	other	0
+Yang_lsb	196	Picture	consistent	6097498	5167	1	9666	2	5000	next	hit	290
+Yang_lsb	196	Response	16	6106984	14653	2
+Yang_lsb	197	Picture	pos_feedback	6112330	5166	1	14999	2	5000	next	other	0
+Yang_lsb	198	Picture	consistent	6137662	5167	1	9499	2	5000	next	hit	293
+Yang_lsb	198	Response	32	6147037	14542	1
+Yang_lsb	199	Picture	pos_feedback	6152328	5167	1	14999	2	5000	next	other	0
+Yang_lsb	200	Picture	consistent	6180159	5166	1	13999	2	5000	next	hit	296
+Yang_lsb	200	Response	16	6194129	19136	1
+Yang_lsb	201	Picture	pos_feedback	6199325	5167	1	14999	2	5000	next	other	0
+Yang_lsb	202	Picture	consistent	6229656	5166	1	13499	2	5000	next	hit	299
+Yang_lsb	202	Response	32	6243002	18512	1
+Yang_lsb	203	Picture	pos_feedback	6248322	5167	1	14999	2	5000	next	other	0
+Yang_lsb	204	Picture	consistent	6276153	5166	1	10166	2	5000	next	hit	302
+Yang_lsb	204	Response	16	6286140	15153	2
+Yang_lsb	205	Picture	pos_feedback	6291486	5167	1	14999	2	5000	next	other	0
+Yang_lsb	206	Picture	consistent	6321817	5166	1	14666	2	5000	next	hit	305
+Yang_lsb	206	Response	32	6336430	19779	1
+Yang_lsb	207	Picture	pos_feedback	6341649	5166	1	14999	2	5000	next	other	0
+Yang_lsb	208	Picture	consistent	6369481	5167	1	9499	2	5000	next	hit	308
+Yang_lsb	208	Response	32	6378839	14525	2
+Yang_lsb	209	Picture	pos_feedback	6384147	5167	1	14999	2	5000	next	other	0
+Yang_lsb	210	Picture	consistent	6409478	5166	2	12000	3	5000	next	hit	311
+Yang_lsb	210	Response	32	6421417	17105	1
+Yang_lsb	211	Picture	pos_feedback	6426644	5166	1	14999	2	5000	next	other	0
+Yang_lsb	212	Picture	consistent	6456975	5166	2	11000	3	5000	next	hit	314
+Yang_lsb	212	Response	32	6467851	16042	1
+Yang_lsb	213	Picture	pos_feedback	6473141	5166	1	14999	2	5000	next	other	0
+Yang_lsb	214	Picture	consistent	6498473	5167	1	9666	2	5000	next	hit	317
+Yang_lsb	214	Response	16	6508073	14767	1
+Yang_lsb	215	Picture	pos_feedback	6513305	5166	1	14999	2	5000	next	other	0
+Yang_lsb	216	Picture	consistent	6538637	5166	1	10333	2	5000	next	hit	320
+Yang_lsb	216	Response	16	6548885	15414	1
+Yang_lsb	217	Picture	pos_feedback	6554136	5166	1	14999	2	5000	next	other	0
+Yang_lsb	218	Picture	consistent	6584467	5166	2	12166	4	5000	next	hit	323
+Yang_lsb	218	Response	16	6596553	17252	1
+Yang_lsb	219	Picture	pos_feedback	6601800	5167	1	14999	2	5000	next	other	0
+Yang_lsb	220	Picture	consistent	6629631	5166	2	9333	3	5000	next	hit	326
+Yang_lsb	220	Response	16	6638934	14469	1
+Yang_lsb	221	Picture	pos_feedback	6644130	5166	2	15000	3	5000	next	other	0
+Yang_lsb	222	Picture	consistent	6671962	5166	1	9500	2	5000	next	hit	329
+Yang_lsb	222	Response	32	6681391	14595	2
+Yang_lsb	223	Picture	pos_feedback	6686628	5166	1	14999	2	5000	next	other	0
+Yang_lsb	224	Picture	consistent	6714460	5167	1	12832	2	5000	next	hit	332
+Yang_lsb	224	Response	16	6727135	17842	1
+Yang_lsb	225	Picture	pos_feedback	6732458	5166	2	14999	4	5000	next	other	0
+Yang_lsb	226	Picture	consistent	6762790	5166	1	15499	2	5000	next	hit	335
+Yang_lsb	226	Response	16	6778240	20616	1
+Yang_lsb	227	Picture	pos_feedback	6783455	5166	1	14999	2	5000	next	other	0
+Yang_lsb	228	Picture	consistent	6808787	5166	1	9166	2	5000	next	hit	338
+Yang_lsb	228	Response	16	6817818	14197	1
+Yang_lsb	229	Picture	pos_feedback	6823119	5166	2	15000	3	5000	next	other	0
+Yang_lsb	230	Picture	consistent	6850951	5166	1	13499	2	5000	next	hit	341
+Yang_lsb	230	Response	32	6864394	18609	2
+Yang_lsb	231	Picture	pos_feedback	6869617	5167	1	14999	2	5000	next	other	0
+Yang_lsb	232	Picture	consistent	6894948	5166	2	10666	3	5000	next	hit	344
+Yang_lsb	232	Response	32	6905475	15693	2
+Yang_lsb	233	Picture	pos_feedback	6910781	5167	1	14999	2	5000	next	other	0
+Yang_lsb	234	Picture	consistent	6941112	5166	1	8833	2	5000	next	hit	347
+Yang_lsb	234	Response	16	6949853	13907	1
+Yang_lsb	235	Picture	pos_feedback	6955111	5166	1	14999	3	5000	next	other	0
+Yang_lsb	236	Picture	consistent	6985443	5167	1	8499	2	5000	next	hit	350
+Yang_lsb	236	Response	16	6993918	13642	1
+Yang_lsb	237	Picture	pos_feedback	6999109	5167	1	14999	2	5000	next	other	0
+Yang_lsb	238	Picture	consistent	7024440	5166	2	10000	3	5000	next	hit	353
+Yang_lsb	238	Response	16	7034353	15079	2
+Yang_lsb	239	Picture	pos_feedback	7039606	5166	1	14999	2	5000	next	other	0
+Yang_lsb	240	Picture	consistent	7069938	5167	1	10166	2	5000	next	hit	356
+Yang_lsb	240	Response	32	7079954	15183	1
+Yang_lsb	241	Picture	pos_feedback	7085270	5166	1	14999	2	5000	next	other	0
+Yang_lsb	242	Picture	consistent	7113101	5166	2	11500	3	5000	next	hit	359
+Yang_lsb	242	Response	32	7124484	16549	1
+Yang_lsb	243	Picture	pos_feedback	7129767	5166	1	14999	2	5000	next	other	0
+Yang_lsb	244	Picture	consistent	7157599	5167	1	10332	3	5000	next	hit	362
+Yang_lsb	244	Response	16	7167753	15321	1
+Yang_lsb	245	Picture	pos_feedback	7173098	5167	1	14999	2	5000	next	other	0
+Yang_lsb	246	Picture	consistent	7198430	5167	1	9499	2	5000	next	hit	365
+Yang_lsb	246	Response	16	7207820	14557	1
+Yang_lsb	247	Picture	pos_feedback	7213095	5166	2	14999	4	5000	next	other	0
+Yang_lsb	248	Picture	consistent	7240927	5166	1	9999	2	5000	next	hit	368
+Yang_lsb	248	Response	32	7250878	15117	1
+Yang_lsb	249	Picture	pos_feedback	7256093	5167	1	14999	2	5000	next	other	0
+Yang_lsb	250	Picture	consistent	7286424	5166	1	12999	2	5000	next	hit	371
+Yang_lsb	250	Response	16	7299362	18104	1
+Yang_lsb	251	Picture	pos_feedback	7304590	5167	1	14999	2	5000	next	other	0
+Yang_lsb	252	Picture	consistent	7334921	5166	1	9166	2	5000	next	hit	374
+Yang_lsb	252	Response	16	7344014	14259	1
+Yang_lsb	253	Picture	pos_feedback	7349254	5167	1	14999	2	5000	next	other	0
+Yang_lsb	254	Picture	consistent	7379585	5166	1	9999	3	5000	next	hit	377
+Yang_lsb	254	Response	16	7389514	15095	2
+Yang_lsb	255	Picture	pos_feedback	7394751	5167	1	14999	2	5000	next	other	0
+Yang_lsb	256	Picture	consistent	7420083	5167	1	8999	2	5000	next	hit	380
+Yang_lsb	256	Response	32	7428927	14011	1
+Yang_lsb	257	Picture	pos_feedback	7434248	5166	2	14999	4	5000	next	other	0
+Yang_lsb	258	Picture	consistent	7462080	5166	1	11333	2	5000	next	hit	383
+Yang_lsb	258	Response	16	7473342	16428	1
+Yang_lsb	259	Picture	pos_feedback	7478579	5166	1	14999	2	5000	next	other	0
+Yang_lsb	260	Picture	consistent	7503911	5167	1	12666	2	5000	next	hit	386
+Yang_lsb	260	Response	16	7516490	17746	1
+Yang_lsb	261	Picture	pos_feedback	7521743	5166	1	14999	2	5000	next	other	0
+Yang_lsb	262	Picture	consistent	7549575	5167	1	12165	3	5000	next	hit	389
+Yang_lsb	262	Response	32	7561671	17263	2
+Yang_lsb	263	Picture	pos_feedback	7566907	5167	1	14999	2	5000	next	other	0
+Yang_lsb	264	Picture	consistent	7597238	5166	1	8333	2	5000	next	hit	392
+Yang_lsb	264	Response	16	7605398	13326	1
+Yang_lsb	265	Picture	pos_feedback	7610737	5166	2	15000	3	5000	next	other	0
+Yang_lsb	266	Picture	consistent	7641069	5166	1	11333	2	5000	next	hit	395
+Yang_lsb	266	Response	16	7652258	16355	1
+Yang_lsb	267	Picture	pos_feedback	7657568	5166	1	14999	2	5000	next	other	0
+Yang_lsb	268	Picture	consistent	7685400	5167	1	8166	2	5000	next	hit	398
+Yang_lsb	268	Response	32	7693477	13244	1
+Yang_lsb	269	Picture	pos_feedback	7698732	5166	1	14999	2	5000	next	other	0
+Yang_lsb	270	Picture	consistent	7724064	5167	1	13999	2	5000	next	hit	401
+Yang_lsb	270	Response	16	7737958	19061	2
+Yang_lsb	271	Picture	pos_feedback	7743229	5166	1	14999	2	5000	next	other	0
+Yang_lsb	272	Picture	consistent	7771061	5167	1	8833	2	5000	next	hit	404
+Yang_lsb	272	Response	32	7779839	13945	1
+Yang_lsb	273	Picture	pos_feedback	7785060	5166	1	14999	2	5000	next	other	0
+Yang_lsb	274	Picture	consistent	7812892	5167	1	9832	2	5000	next	hit	407
+Yang_lsb	274	Response	16	7822621	14896	1
+Yang_lsb	275	Picture	pos_feedback	7827891	5167	1	14999	2	5000	next	other	0
+Yang_lsb	276	Picture	consistent	7858222	5166	1	10000	2	5000	next	hit	410
+Yang_lsb	276	Response	32	7868065	15009	2
+Yang_lsb	277	Picture	pos_feedback	7873388	5166	1	14999	2	5000	next	other	0
+Yang_lsb	278	Picture	consistent	7898720	5167	1	10666	2	5000	next	hit	413
+Yang_lsb	278	Response	16	7909225	15672	1
+Yang_lsb	279	Picture	pos_feedback	7914552	5166	1	14999	2	5000	next	other	0
+Yang_lsb	280	Picture	consistent	7939884	5167	1	11999	2	5000	next	hit	416
+Yang_lsb	280	Response	16	7951696	16979	2
+Yang_lsb	281	Picture	pos_feedback	7957049	5166	2	14999	4	5000	next	other	0
+Yang_lsb	282	Picture	consistent	7982381	5166	1	13166	2	5000	next	hit	419
+Yang_lsb	282	Response	16	7995519	18304	1
+Yang_lsb	283	Picture	pos_feedback	8000713	5166	2	14999	4	5000	next	other	0
+Yang_lsb	284	Picture	consistent	8026045	5166	1	9833	2	5000	next	hit	422
+Yang_lsb	284	Response	16	8035718	14839	1
+Yang_lsb	285	Picture	pos_feedback	8041044	5166	1	14999	2	5000	next	other	0
+Yang_lsb	286	Picture	consistent	8071376	5167	1	14832	2	5000	next	hit	425
+Yang_lsb	286	Response	16	8086081	19872	1
+Yang_lsb	287	Picture	pos_feedback	8091374	5166	2	14999	4	5000	next	other	0
+Yang_lsb	288	Picture	consistent	8116706	5166	1	9166	2	5000	next	hit	428
+Yang_lsb	288	Response	32	8125850	14310	2
+Yang_lsb	289	Picture	pos_feedback	8131039	5167	1	14999	2	5000	next	other	0
+Yang_lsb	290	Picture	consistent	8161370	5166	1	11999	2	5000	next	hit	431
+Yang_lsb	290	Response	32	8173182	16978	1
+Yang_lsb	291	Picture	pos_feedback	8178536	5167	1	14999	2	5000	next	other	0
+Yang_lsb	292	Picture	consistent	8206367	5166	1	7667	2	5000	next	hit	434
+Yang_lsb	292	Response	32	8213944	12743	1
+Yang_lsb	293	Picture	pos_feedback	8219200	5166	1	14999	2	5000	next	other	0
+Yang_lsb	294	Picture	consistent	8247031	5166	2	10333	3	5000	next	hit	437
+Yang_lsb	294	Response	32	8257317	15452	1
+Yang_lsb	295	Picture	pos_feedback	8262530	5166	2	15000	3	5000	next	other	0
+Yang_lsb	296	Picture	consistent	8292862	5166	1	9999	2	5000	next	hit	440
+Yang_lsb	296	Response	16	8302832	15136	1
+Yang_lsb	297	Picture	pos_feedback	8308028	5167	1	14999	2	5000	next	other	0
+Yang_lsb	298	Picture	consistent	8335859	5166	1	8833	2	5000	next	hit	443
+Yang_lsb	298	Response	32	8344655	13962	1
+Yang_lsb	299	Picture	pos_feedback	8349858	5166	2	14999	4	5000	next	other	0
+Yang_lsb	300	Picture	consistent	8375190	5166	1	11333	2	5000	next	hit	446
+Yang_lsb	300	Response	32	8386375	16351	1
+Yang_lsb	301	Picture	pos_feedback	8391689	5166	1	14999	2	5000	next	other	0
+Yang_lsb	302	Picture	consistent	8419521	5167	1	13499	2	5000	next	hit	449
+Yang_lsb	302	Response	16	8432977	18623	2
+Yang_lsb	303	Picture	pos_feedback	8438186	5166	1	14999	2	5000	next	other	0
+Yang_lsb	304	Picture	consistent	8468518	5167	1	15499	2	5000	next	hit	452
+Yang_lsb	304	Response	16	8483994	20643	1
+Yang_lsb	305	Picture	pos_feedback	8489183	5166	1	14999	2	5000	next	other	0
+Yang_lsb	306	Picture	consistent	8514515	5166	1	6333	2	5000	next	hit	455
+Yang_lsb	306	Response	16	8520728	11379	1
+Yang_lsb	307	Picture	pos_feedback	8526014	5166	1	14999	2	5000	next	other	0
+Yang_lsb	308	Picture	consistent	8553846	5167	1	6333	2	5000	next	hit	458
+Yang_lsb	308	Response	16	8560133	11454	1
+Yang_lsb	309	Picture	pos_feedback	8565345	5166	1	14999	2	5000	next	other	0
+Yang_lsb	310	Picture	consistent	8595677	5167	1	10166	2	5000	next	hit	461
+Yang_lsb	310	Response	16	8605707	15197	1
+Yang_lsb	311	Picture	pos_feedback	8611009	5166	1	14999	2	5000	next	other	0
+Yang_lsb	312	Picture	consistent	8636341	5167	1	7999	2	5000	next	hit	464
+Yang_lsb	312	Response	32	8644245	13071	2
+Yang_lsb	313	Picture	pos_feedback	8649507	5167	1	14999	2	5000	next	other	0
+Yang_lsb	314	Picture	consistent	8677338	5166	1	12999	3	5000	next	hit	467
+Yang_lsb	314	Response	32	8690165	17993	2
+Yang_lsb	315	Picture	pos_feedback	8695504	5167	1	14999	2	5000	next	other	0
+Yang_lsb	316	Picture	consistent	8725835	5166	1	13833	2	5000	next	hit	470
+Yang_lsb	316	Response	16	8739596	18927	2
+Yang_lsb	317	Picture	pos_feedback	8744834	5166	1	14999	2	5000	next	other	0
+Yang_lsb	318	Picture	consistent	8770166	5167	1	9999	2	5000	next	hit	473
+Yang_lsb	318	Response	32	8780057	15058	2
+Yang_lsb	319	Picture	pos_feedback	8785332	5167	1	14999	2	5000	next	other	0
+Yang_lsb	320	Picture	consistent	8813163	5166	1	14833	2	5000	next	hit	476
+Yang_lsb	320	Response	16	8827852	19855	1
+Yang_lsb	321	Picture	pos_feedback	8833162	5166	1	14999	2	5000	next	other	0
+Yang_lsb	322	Picture	consistent	8863493	5166	2	11000	3	5000	next	hit	479
+Yang_lsb	322	Response	16	8874323	15996	1
+Yang_lsb	323	Picture	pos_feedback	8879659	5166	1	14999	2	5000	next	other	0
+Yang_lsb	324	Picture	consistent	8904991	5167	1	8833	2	5000	next	hit	482
+Yang_lsb	324	Response	16	8913799	13975	1
+Yang_lsb	325	Picture	pos_feedback	8918990	5166	1	14999	2	5000	next	other	0
+Yang_lsb	326	Picture	consistent	8946822	5167	1	9332	2	5000	next	hit	485
+Yang_lsb	326	Response	32	8955987	14332	1
+Yang_lsb	327	Picture	pos_feedback	8961321	5167	1	14999	2	5000	next	other	0
+Yang_lsb	328	Picture	consistent	8991652	5166	1	9499	3	5000	next	hit	488
+Yang_lsb	328	Response	32	9001044	14558	1
+Yang_lsb	329	Picture	pos_feedback	9006318	5167	1	14999	2	5000	next	other	0
+Yang_lsb	330	Picture	consistent	9031650	5167	1	16999	2	5000	next	hit	491
+Yang_lsb	330	Response	32	9048605	22122	1
+Yang_lsb	331	Picture	pos_feedback	9053815	5166	1	14999	2	5000	next	other	0
+Yang_lsb	332	Picture	consistent	9081646	5166	2	14000	3	5000	next	hit	494
+Yang_lsb	332	Response	16	9095494	19014	1
+Yang_lsb	333	Picture	pos_feedback	9100812	5166	1	14999	2	5000	next	other	0
+Yang_lsb	334	Picture	consistent	9131143	5166	2	15166	3	5000	next	hit	497
+Yang_lsb	334	Response	32	9146130	20153	1
+Yang_lsb	335	Picture	pos_feedback	9151476	5167	1	14999	2	5000	next	other	0
+Yang_lsb	336	Picture	consistent	9176807	5166	1	15833	2	5000	next	hit	500
+Yang_lsb	336	Response	32	9192476	20835	1
+Yang_lsb	337	Picture	pos_feedback	9197806	5166	1	14999	2	5000	next	other	0
+Yang_lsb	338	Picture	consistent	9225638	5167	1	10332	3	5000	next	hit	503
+Yang_lsb	338	Response	32	9235947	15476	1
+Yang_lsb	339	Picture	pos_feedback	9241137	5167	1	14999	2	5000	next	other	0
+Yang_lsb	340	Picture	consistent	9271468	5166	1	11166	2	5000	next	hit	506
+Yang_lsb	340	Response	16	9282612	16310	1
+Yang_lsb	341	Picture	pos_feedback	9287800	5166	2	15000	3	5000	next	other	0
+Yang_lsb	342	Picture	consistent	9313132	5166	1	11499	3	5000	next	hit	509
+Yang_lsb	342	Response	32	9324568	16602	1
+Yang_lsb	343	Picture	pos_feedback	9329798	5167	1	14999	2	5000	next	other	0
+Yang_lsb	344	Picture	consistent	9357629	5166	2	8667	3	5000	next	hit	512
+Yang_lsb	344	Response	16	9366220	13757	1
+Yang_lsb	345	Picture	pos_feedback	9371462	5166	1	14999	2	5000	next	other	0
+Yang_lsb	346	Picture	consistent	9401793	5166	2	10000	3	5000	next	hit	515
+Yang_lsb	346	Response	16	9411763	15136	1
+Yang_lsb	347	Picture	pos_feedback	9416959	5166	1	14999	2	5000	next	other	0
+Yang_lsb	348	Picture	consistent	9442291	5166	1	13666	2	5000	next	hit	518
+Yang_lsb	348	Response	16	9455901	18776	1
+Yang_lsb	349	Picture	pos_feedback	9461123	5166	1	14999	2	5000	next	other	0
+Yang_lsb	350	Picture	consistent	9488955	5167	1	10332	2	5000	next	hit	521
+Yang_lsb	350	Response	32	9499132	15344	1
+Yang_lsb	351	Picture	pos_feedback	9504454	5167	1	14999	2	5000	next	other	0
+Yang_lsb	352	Picture	consistent	9534785	5166	1	12666	2	5000	next	hit	524
+Yang_lsb	352	Response	16	9547402	17783	1
+Yang_lsb	353	Picture	pos_feedback	9552617	5166	2	14999	4	5000	next	other	0
+Yang_lsb	354	Picture	consistent	9577949	5166	1	17499	2	5000	next	hit	527
+Yang_lsb	354	Response	16	9595364	22581	2
+Yang_lsb	355	Picture	pos_feedback	9600614	5166	2	15000	3	5000	next	other	0
+Yang_lsb	356	Picture	consistent	9628446	5166	1	14166	2	5000	next	hit	530
+Yang_lsb	356	Response	32	9642464	19184	2
+Yang_lsb	357	Picture	pos_feedback	9647778	5166	1	14999	2	5000	next	other	0
+Yang_lsb	358	Picture	consistent	9678110	5167	1	10499	2	5000	next	hit	533
+Yang_lsb	358	Response	16	9688500	15557	2
+Yang_lsb	359	Picture	pos_feedback	9693775	5166	1	14999	3	5000	next	other	0
+Yang_lsb	360	Picture	consistent	9719107	5166	1	10666	2	5000	next	hit	536
+Yang_lsb	360	Response	16	9729714	15773	1
+Yang_lsb	361	Picture	pos_feedback	9734939	5166	2	15000	3	5000	next	other	0
+Yang_lsb	362	Picture	consistent	9762771	5166	1	11166	2	5000	next	hit	539
+Yang_lsb	362	Response	16	9773767	16162	1
+Yang_lsb	363	Picture	pos_feedback	9779103	5166	2	14999	4	5000	next	other	0
+Yang_lsb	364	Picture	consistent	9809435	5167	1	15832	2	5000	next	hit	542
+Yang_lsb	364	Response	16	9825223	20955	1
+Yang_lsb	365	Picture	pos_feedback	9830434	5167	1	14999	2	5000	next	other	0
+Yang_lsb	366	Picture	consistent	9855765	5166	1	8333	2	5000	next	hit	545
+Yang_lsb	366	Response	16	9864065	13466	1
+Yang_lsb	367	Picture	pos_feedback	9869265	5167	1	14999	2	5000	next	other	0
+Yang_lsb	368	Picture	consistent	9897096	5166	1	18332	2	5000	next	hit	548
+Yang_lsb	368	Response	16	9915363	23433	1
+Yang_lsb	369	Picture	pos_feedback	9920595	5167	1	14999	2	5000	next	other	0
+Yang_lsb	370	Picture	consistent	9950926	5166	1	11833	2	5000	next	hit	551
+Yang_lsb	370	Response	16	9962597	16837	1
+Yang_lsb	371	Picture	pos_feedback	9967925	5166	1	14999	2	5000	next	other	0
+Yang_lsb	372	Picture	consistent	9993257	5167	1	10166	2	5000	next	hit	554
+Yang_lsb	372	Response	16	10003344	15254	1
+Yang_lsb	373	Picture	pos_feedback	10008589	5166	1	14999	2	5000	next	other	0
+Yang_lsb	374	Picture	consistent	10036421	5167	1	11499	2	5000	next	hit	557
+Yang_lsb	374	Response	16	10047843	16589	1
+Yang_lsb	375	Picture	pos_feedback	10053086	5166	2	15000	3	5000	next	other	0
+Yang_lsb	376	Picture	consistent	10083418	5166	1	14999	2	5000	next	hit	560
+Yang_lsb	376	Response	32	10098336	20084	1
+Yang_lsb	377	Picture	pos_feedback	10103583	5166	1	14999	3	5000	next	other	0
+Yang_lsb	378	Picture	consistent	10128915	5166	1	13666	2	5000	next	hit	563
+Yang_lsb	378	Response	16	10142500	18751	1
+Yang_lsb	379	Picture	pos_feedback	10147747	5166	1	14999	2	5000	next	other	0
+Yang_lsb	380	Picture	consistent	10175579	5167	1	9999	2	5000	next	hit	566
+Yang_lsb	380	Response	32	10185504	15092	1
+Yang_lsb	381	Picture	pos_feedback	10190745	5167	1	14999	2	5000	next	other	0
+Yang_lsb	382	Picture	consistent	10221076	5166	1	12833	2	5000	next	hit	569
+Yang_lsb	382	Response	32	10233724	17814	1
+Yang_lsb	383	Picture	pos_feedback	10239075	5166	1	14999	2	5000	next	other	0
+Yang_lsb	384	Picture	consistent	10264407	5167	1	15332	2	5000	next	hit	572
+Yang_lsb	384	Response	32	10279663	20423	2
+Yang_lsb	385	Picture	pos_feedback	10284905	5166	2	14999	4	5000	next	other	0
+Yang_lsb	386	Picture	consistent	10312737	5166	1	13833	2	5000	next	hit	575
+Yang_lsb	386	Response	16	10326473	18902	1
+Yang_lsb	387	Picture	pos_feedback	10331736	5166	1	14999	2	5000	next	other	0
+Yang_lsb	388	Picture	consistent	10362067	5166	2	13000	3	5000	next	hit	578
+Yang_lsb	388	Response	16	10374982	18081	2
+Yang_lsb	389	Picture	pos_feedback	10380233	5166	1	14999	2	5000	next	other	0
+Yang_lsb	390	Picture	consistent	10405565	5167	1	8666	2	5000	next	hit	581
+Yang_lsb	390	Response	16	10414177	13779	1
+Yang_lsb	391	Picture	pos_feedback	10419397	5166	1	14999	2	5000	next	other	0
+Yang_lsb	392	Picture	consistent	10447229	5167	1	14499	2	5000	next	hit	584
+Yang_lsb	392	Response	32	10461675	19613	1
+Yang_lsb	393	Picture	pos_feedback	10466894	5166	1	14999	2	5000	next	other	0
+Yang_lsb	394	Picture	consistent	10497226	5167	1	13166	2	5000	next	hit	587
+Yang_lsb	394	Response	32	10510283	18224	1
+Yang_lsb	395	Picture	pos_feedback	10515558	5166	1	14999	2	5000	next	other	0
+Yang_lsb	396	Picture	consistent	10540890	5167	1	14832	2	5000	next	hit	590
+Yang_lsb	396	Response	16	10555644	19921	2
+Yang_lsb	397	Picture	pos_feedback	10560888	5166	2	14999	4	5000	next	other	0
+Yang_lsb	398	Picture	consistent	10588720	5166	1	17832	2	5000	next	hit	593
+Yang_lsb	398	Response	16	10606437	22883	1
+Yang_lsb	399	Picture	pos_feedback	10611718	5166	2	15000	3	5000	next	other	0
+Yang_lsb	400	Picture	consistent	10642050	5166	1	15499	2	5000	next	hit	596
+Yang_lsb	400	Response	16	10657500	20616	1
+Yang_lsb	401	Picture	pos_feedback	10662715	5166	2	14999	4	5000	next	other	0
+Yang_lsb	402	Picture	consistent	10688047	5166	1	16666	2	5000	next	hit	599
+Yang_lsb	402	Response	32	10704656	21775	1
+Yang_lsb	403	Picture	pos_feedback	10709879	5166	1	14999	2	5000	next	other	0
+Yang_lsb	404	Picture	consistent	10737711	5167	1	10166	2	5000	next	hit	602
+Yang_lsb	404	Response	32	10747758	15214	1
+Yang_lsb	405	Picture	pos_feedback	10753043	5166	1	14999	2	5000	next	other	0
+Yang_lsb	406	Picture	consistent	10783375	5167	1	11999	2	5000	next	hit	605
+Yang_lsb	406	Response	32	10795270	17062	1
+Yang_lsb	407	Picture	pos_feedback	10800540	5166	1	14999	2	5000	next	other	0
+Yang_lsb	408	Picture	consistent	10825872	5166	1	9333	2	5000	next	hit	608
+Yang_lsb	408	Response	16	10835127	14421	1
+Yang_lsb	409	Picture	pos_feedback	10840371	5166	1	14999	2	5000	next	other	0
+Yang_lsb	410	Picture	consistent	10868203	5167	1	13499	2	5000	next	hit	611
+Yang_lsb	410	Response	16	10881673	18637	2
+Yang_lsb	411	Picture	pos_feedback	10886868	5166	1	14999	2	5000	next	other	0
+Yang_lsb	412	Picture	consistent	10917200	5167	1	15832	2	5000	next	hit	614
+Yang_lsb	412	Response	32	10933010	20977	1
+Yang_lsb	413	Picture	pos_feedback	10938198	5166	2	14999	4	5000	next	other	0
+Yang_lsb	414	Picture	consistent	10963530	5166	1	16166	2	5000	next	hit	617
+Yang_lsb	414	Response	16	10979536	21172	1
+Yang_lsb	415	Picture	pos_feedback	10984862	5166	1	14999	2	5000	next	other	0
+Yang_lsb	416	Picture	consistent	11012694	5167	1	14166	2	5000	next	hit	620
+Yang_lsb	416	Response	16	11026746	19219	2
+Yang_lsb	417	Picture	pos_feedback	11032026	5166	1	14999	2	5000	next	other	0
+Yang_lsb	418	Picture	consistent	11062357	5166	2	11000	3	5000	next	hit	623
+Yang_lsb	418	Response	16	11073199	16008	2
+Yang_lsb	419	Picture	pos_feedback	11078523	5166	1	14999	2	5000	next	other	0
+Yang_lsb	420	Picture	consistent	11103855	5167	1	13499	2	5000	next	hit	626
+Yang_lsb	420	Response	16	11117275	18587	1
+Yang_lsb	421	Picture	pos_feedback	11122520	5166	2	14999	4	5000	next	other	0
+Yang_lsb	422	Picture	consistent	11150352	5166	1	12499	2	5000	next	hit	629
+Yang_lsb	422	Response	32	11162823	17637	2
+Yang_lsb	423	Picture	pos_feedback	11168018	5167	1	14999	2	5000	next	other	0
+Yang_lsb	424	Picture	consistent	11198349	5166	1	10999	2	5000	next	hit	632
+Yang_lsb	424	Response	16	11209231	16048	1
+Yang_lsb	425	Picture	pos_feedback	11214515	5167	1	14999	2	5000	next	other	0
+Yang_lsb	426	Picture	consistent	11239846	5166	2	9166	4	5000	next	hit	635
+Yang_lsb	426	Response	32	11248938	14258	1
+Yang_lsb	427	Picture	pos_feedback	11254179	5167	1	14999	2	5000	next	other	0
+Yang_lsb	428	Picture	consistent	11282010	5166	2	10000	3	5000	next	hit	638
+Yang_lsb	428	Response	16	11291954	15110	1
+Yang_lsb	429	Picture	pos_feedback	11297176	5166	1	14999	2	5000	next	other	0
+Yang_lsb	430	Picture	consistent	11327508	5167	1	13165	3	5000	next	hit	641
+Yang_lsb	430	Response	32	11340557	18216	1
+Yang_lsb	431	Picture	pos_feedback	11345840	5167	1	14999	2	5000	next	other	0
+Yang_lsb	432	Picture	consistent	11371172	5167	1	15665	2	5000	next	hit	644
+Yang_lsb	432	Response	16	11386763	20758	1
+Yang_lsb	433	Picture	pos_feedback	11392004	5167	1	14999	2	5000	next	other	0
+Yang_lsb	434	Picture	consistent	11419835	5166	1	9833	2	5000	next	hit	647
+Yang_lsb	434	Response	16	11429511	14842	1
+Yang_lsb	435	Picture	pos_feedback	11434834	5166	1	14999	3	5000	next	other	0
+Yang_lsb	436	Picture	consistent	11465166	5167	1	9999	2	5000	next	hit	650
+Yang_lsb	436	Response	16	11475086	15087	1
+Yang_lsb	437	Picture	pos_feedback	11480332	5167	1	14999	2	5000	next	other	0
+Yang_lsb	438	Picture	consistent	11505663	5166	1	9500	2	5000	next	hit	653
+Yang_lsb	438	Response	32	11515004	14507	1
+Yang_lsb	439	Picture	pos_feedback	11520329	5166	1	14999	2	5000	next	other	0
+Yang_lsb	440	Picture	consistent	11548161	5167	1	9999	2	5000	next	hit	656
+Yang_lsb	440	Response	16	11557992	14998	2
+Yang_lsb	441	Picture	pos_feedback	11563326	5166	2	14999	4	5000	next	other	0
+Yang_lsb	442	Picture	consistent	11593658	5166	1	9666	2	5000	next	hit	659
+Yang_lsb	442	Response	16	11603162	14670	1
+Yang_lsb	443	Picture	pos_feedback	11608490	5166	1	14999	2	5000	next	other	0
+Yang_lsb	444	Picture	consistent	11633822	5166	1	9833	2	5000	next	hit	662
+Yang_lsb	444	Response	16	11643628	14972	2
+Yang_lsb	445	Picture	pos_feedback	11648821	5166	1	14999	2	5000	next	other	0
+Yang_lsb	446	Picture	consistent	11676653	5167	1	9999	2	5000	next	hit	665
+Yang_lsb	446	Response	32	11686543	15057	1
+Yang_lsb	447	Picture	pos_feedback	11691818	5166	2	15000	3	5000	next	other	0
+Yang_lsb	448	Picture	consistent	11722150	5166	1	9999	2	5000	next	hit	668
+Yang_lsb	448	Response	32	11732094	15110	1
+Yang_lsb	449	Picture	pos_feedback	11737316	5167	1	14999	2	5000	next	other	0
+Yang_lsb	450	Picture	consistent	11762647	5166	2	12166	3	5000	next	hit	671
+Yang_lsb	450	Response	16	11774727	17246	1
+Yang_lsb	451	Picture	pos_feedback	11779980	5167	1	14999	2	5000	next	other	0
+Yang_lsb	452	Picture	consistent	11807811	5166	1	11000	2	5000	next	hit	674
+Yang_lsb	452	Response	32	11818675	16030	2
+Yang_lsb	453	Picture	pos_feedback	11823977	5166	1	14999	2	5000	next	other	0
+Yang_lsb	454	Picture	consistent	11854308	5166	2	14833	3	5000	next	hit	677
+Yang_lsb	454	Response	16	11869088	19946	1
+Yang_lsb	455	Picture	pos_feedback	11874307	5166	1	14999	2	5000	next	other	0
+Yang_lsb	456	Picture	consistent	11899639	5166	1	10333	2	5000	next	hit	680
+Yang_lsb	456	Response	16	11909867	15394	1
+Yang_lsb	457	Picture	pos_feedback	11915138	5166	1	14999	2	5000	next	other	0
+Yang_lsb	458	Picture	consistent	11942970	5167	1	10166	2	5000	next	hit	683
+Yang_lsb	458	Response	32	11953040	15237	2
+Yang_lsb	459	Picture	pos_feedback	11958302	5166	1	14999	2	5000	next	other	0
+Yang_lsb	460	Picture	consistent	11988633	5166	2	9500	3	5000	next	hit	686
+Yang_lsb	460	Response	16	11997988	14521	1
+Yang_lsb	461	Picture	pos_feedback	12003299	5166	1	14999	2	5000	next	other	0
+Yang_lsb	462	Picture	consistent	12033631	5167	1	7999	2	5000	next	hit	689
+Yang_lsb	462	Response	16	12041578	13114	2
+Yang_lsb	463	Picture	pos_feedback	12046796	5166	2	15000	3	5000	next	other	0
+Yang_lsb	464	Quit		25586990	13520028

@@ -1,0 +1,12 @@
+Scenario - 
+Logfile written - 04/22/2016 12:45:46
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Nemo_test	1	Response	3	197397	187231	1
+Nemo_test	2	Response	3	364662	167211	1
+Nemo_test	3	Picture	consistent	370407	5165	1	7665	2	5000	next	hit	4
+Nemo_test	3	Response	16	377965	12723	1
+Nemo_test	4	Picture	pos_feedback	383237	5165	1	14996	2	5000	next	other	0
+Nemo_test	5	Picture	consistent	408731	5166	1	2763	2	5000	next	miss	0
+Nemo_test	5	Quit		411406	7841

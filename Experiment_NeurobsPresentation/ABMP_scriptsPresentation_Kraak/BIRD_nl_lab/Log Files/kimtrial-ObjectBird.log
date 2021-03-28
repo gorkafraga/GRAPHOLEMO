@@ -1,0 +1,33 @@
+Scenario - 
+Logfile written - 05/30/2016 11:30:24
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+kimtrial	1	Response	3	16355	5856	1
+kimtrial	2	Response	3	21154	4655	1
+kimtrial	3	Picture	consistent	26499	5167	1	19999	2	5000	next	miss	0
+kimtrial	4	Picture	pos_feedback	51664	5166	1	14999	3	5000	next	other	0
+kimtrial	5	Picture	consistent	76996	5166	1	19999	2	5000	next	miss	0
+kimtrial	6	Picture	pos_feedback	102162	5167	1	14999	2	5000	next	other	0
+kimtrial	7	Picture	consistent	129993	5166	2	20000	3	5000	next	miss	0
+kimtrial	8	Picture	pos_feedback	155159	5166	1	15000	2	5000	next	other	0
+kimtrial	9	Picture	consistent	185491	5166	1	19999	2	5000	next	miss	0
+kimtrial	10	Picture	pos_feedback	210657	5167	1	14999	2	5000	next	other	0
+kimtrial	11	Picture	consistent	235989	5167	1	19999	2	5000	next	miss	0
+kimtrial	12	Picture	pos_feedback	261154	5166	1	15000	2	5000	next	other	0
+kimtrial	13	Picture	consistent	288986	5166	2	19999	4	5000	next	miss	0
+kimtrial	14	Picture	pos_feedback	314152	5167	1	14999	2	5000	next	other	0
+kimtrial	15	Picture	consistent	344484	5167	1	19999	2	5000	next	miss	0
+kimtrial	16	Picture	pos_feedback	369649	5166	1	15000	2	5000	next	other	0
+kimtrial	17	Picture	consistent	394981	5166	2	19999	4	5000	next	miss	0
+kimtrial	18	Picture	pos_feedback	420147	5167	1	14999	2	5000	next	other	0
+kimtrial	19	Picture	consistent	447979	5166	1	19999	2	5000	next	miss	0
+kimtrial	20	Picture	pos_feedback	473144	5166	2	15000	3	5000	next	other	0
+kimtrial	21	Picture	consistent	503476	5166	2	19999	4	5000	next	miss	0
+kimtrial	22	Picture	pos_feedback	528642	5167	1	14999	2	5000	next	other	0
+kimtrial	23	Picture	consistent	553974	5166	1	2166	3	5000	next	hit	24
+kimtrial	23	Response	32	555967	7159	1
+kimtrial	24	Picture	pos_feedback	561307	5167	1	14999	2	5000	next	other	0
+kimtrial	25	Picture	consistent	589139	5166	1	19999	2	5000	next	miss	0
+kimtrial	26	Picture	pos_feedback	614304	5166	2	15000	3	5000	next	other	0
+kimtrial	26	Quit		632503	23365

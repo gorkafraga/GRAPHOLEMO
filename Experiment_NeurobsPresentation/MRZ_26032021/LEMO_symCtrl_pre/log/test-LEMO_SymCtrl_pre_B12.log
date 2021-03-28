@@ -1,0 +1,207 @@
+Scenario - 
+Logfile written - 03/09/2021 15:59:33
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test	0	Pulse	199	0	0	NA
+test	1	Pulse	199	10000	9833	NA
+test	1	Pulse	199	20000	19833	NA
+test	1	Pulse	199	30000	29833	NA
+test	1	Response	20	33400	33233	0
+test	2	Pulse	199	40000	6474	NA
+test	2	Pulse	199	50000	16474	NA
+test	2	Pulse	199	60000	26474	NA
+test	2	Pulse	199	70000	36474	NA
+test	2	Response	20	74630	41105	0
+test	3	Picture	100	74762	132	1	50121	1	0	50000	other	0
+test	3	Pulse	199	80000	5369	NA
+test	3	Pulse	199	90000	15369	NA
+test	3	Pulse	199	100000	25369	NA
+test	3	Pulse	199	110000	35369	NA
+test	3	Pulse	199	120000	45369	NA
+test	4	Picture	70	125051	0	1	7041	1	0	7000	other	0
+test	4	Pulse	199	130000	4949	NA
+test	5	Picture	40	132259	0	1	2850	1	0	2690	other	0
+test	6	Picture	70	135277	0	1	7041	1	0	7000	other	0
+test	6	Pulse	199	140000	4723	NA
+test	7	Picture	40	142485	0	1	4526	1	0	4350	other	0
+test	8	Picture	70	147178	0	1	7040	1	0	7000	other	0
+test	8	Pulse	199	150000	2822	NA
+test	9	Picture	40	154387	0	1	1844	1	0	1780	other	0
+test	10	Picture	70	156398	0	1	7041	1	0	7000	other	0
+test	10	Pulse	199	160000	3602	NA
+test	11	Picture	40	163606	0	1	3688	1	0	3660	other	0
+test	12	Picture	70	167462	0	1	7040	1	0	7000	other	0
+test	12	Pulse	199	170000	2538	NA
+test	13	Picture	40	174670	0	1	3017	1	0	2860	other	0
+test	14	Picture	70	177855	0	1	7040	1	0	7000	other	0
+test	14	Pulse	199	180000	2145	NA
+test	15	Picture	40	185063	0	1	2179	1	0	2130	other	0
+test	16	Picture	70	187410	0	1	7040	1	0	7000	other	0
+test	16	Pulse	199	190000	2590	NA
+test	17	Picture	40	194618	0	1	2514	1	0	2490	other	0
+test	18	Picture	70	197300	0	1	7040	1	0	7000	other	0
+test	18	Pulse	199	200000	2700	NA
+test	19	Picture	40	204508	0	1	2179	1	0	2140	other	0
+test	20	Picture	70	206855	0	1	7040	1	0	7000	other	0
+test	20	Pulse	199	210000	3145	NA
+test	21	Picture	40	214063	0	1	2012	1	0	1990	other	0
+test	22	Picture	70	216242	0	1	7040	1	0	7000	other	0
+test	22	Pulse	199	220000	3758	NA
+test	23	Picture	40	223450	0	1	3353	1	0	3310	other	0
+test	24	Picture	50	226970	0	1	30844	1	0	next	other	0
+test	24	Pulse	199	230000	3030	NA
+test	24	Pulse	199	240000	13030	NA
+test	24	Pulse	199	250000	23030	NA
+test	25	Picture	80	257814	0	1	7040	1	0	7000	other	0
+test	25	Pulse	199	260000	2186	NA
+test	26	Picture	40	265022	0	1	4526	1	0	4350	other	0
+test	27	Picture	80	269716	0	1	7040	1	0	7000	other	0
+test	27	Pulse	199	270000	284	NA
+test	28	Picture	40	276924	0	1	2179	1	0	2130	other	0
+test	29	Picture	85	279271	0	1	7040	1	0	7000	miss	0
+test	29	Pulse	199	280000	729	NA
+test	30	Picture	40	286479	0	1	2012	1	0	1990	other	0
+test	31	Picture	80	288658	0	1	7040	1	0	7000	other	0
+test	31	Pulse	199	290000	1342	NA
+test	32	Picture	40	295866	0	1	1844	1	0	1780	other	0
+test	33	Picture	80	297878	0	1	7040	1	0	7000	other	0
+test	33	Pulse	199	300000	2122	NA
+test	34	Picture	40	305086	0	1	3353	1	0	3310	other	0
+test	35	Picture	80	308606	0	1	7040	1	0	7000	other	0
+test	35	Pulse	199	310000	1394	NA
+test	36	Picture	40	315814	0	1	3688	1	0	3660	other	0
+test	37	Picture	80	319669	0	1	7040	1	0	7000	other	0
+test	37	Pulse	199	320000	331	NA
+test	38	Picture	40	326878	0	1	2850	1	0	2690	other	0
+test	39	Picture	80	329895	0	1	7041	1	0	7000	other	0
+test	39	Pulse	199	330000	105	NA
+test	40	Picture	40	337103	0	1	2179	1	0	2140	other	0
+test	41	Picture	80	339450	0	1	7040	1	0	7000	other	0
+test	41	Pulse	199	340000	550	NA
+test	42	Picture	40	346658	0	1	2514	1	0	2490	other	0
+test	43	Picture	80	349340	0	1	7040	1	0	7000	other	0
+test	43	Pulse	199	350000	660	NA
+test	44	Picture	40	356548	0	1	3017	1	0	2860	other	0
+test	45	Picture	50	359733	0	1	50121	1	0	next	other	0
+test	45	Pulse	199	360000	267	NA
+test	45	Pulse	199	370000	10267	NA
+test	45	Pulse	199	380000	20267	NA
+test	45	Pulse	199	390000	30267	NA
+test	45	Pulse	199	400000	40267	NA
+test	46	Picture	90	409854	0	1	7041	1	0	7000	other	0
+test	46	Pulse	199	410000	146	NA
+test	47	Picture	40	417062	0	1	2514	1	0	2490	other	0
+test	48	Picture	90	419744	0	1	7040	1	0	7000	other	0
+test	48	Pulse	199	420000	256	NA
+test	49	Picture	40	426953	0	1	2012	1	0	1990	other	0
+test	50	Picture	90	429132	0	1	7040	1	0	7000	other	0
+test	50	Pulse	199	430000	868	NA
+test	51	Picture	40	436340	0	1	2850	1	0	2690	other	0
+test	52	Picture	90	439357	0	1	7040	1	0	7000	other	0
+test	52	Pulse	199	440000	643	NA
+test	53	Picture	40	446565	0	1	1844	1	0	1780	other	0
+test	54	Picture	90	448577	0	1	7040	1	0	7000	other	0
+test	54	Pulse	199	450000	1423	NA
+test	55	Picture	40	455785	0	1	4526	1	0	4350	other	0
+test	55	Pulse	199	460000	4215	NA
+test	56	Picture	90	460478	0	1	7040	1	0	7000	other	0
+test	57	Picture	40	467686	0	1	3017	1	0	2860	other	0
+test	57	Pulse	199	470000	2314	NA
+test	58	Picture	90	470871	0	1	7040	1	0	7000	other	0
+test	59	Picture	40	478080	0	1	3688	1	0	3660	other	0
+test	59	Pulse	199	480000	1920	NA
+test	60	Picture	95	481935	0	1	7040	1	0	7000	miss	0
+test	61	Picture	40	489143	0	1	2179	1	0	2140	other	0
+test	61	Pulse	199	490000	857	NA
+test	62	Picture	90	491490	0	1	7040	1	0	7000	other	0
+test	63	Picture	40	498698	0	1	2179	1	0	2130	other	0
+test	63	Pulse	199	500000	1302	NA
+test	64	Picture	90	501045	0	1	7040	1	0	7000	other	0
+test	65	Picture	40	508253	0	1	3353	1	0	3310	other	0
+test	65	Pulse	199	510000	1747	NA
+test	66	Picture	50	511773	0	1	70069	1	0	next	other	0
+test	66	Pulse	199	520000	8227	NA
+test	66	Pulse	199	530000	18227	NA
+test	66	Pulse	199	540000	28227	NA
+test	66	Pulse	199	550000	38227	NA
+test	66	Pulse	199	560000	48227	NA
+test	66	Pulse	199	570000	58227	NA
+test	66	Pulse	199	580000	68227	NA
+test	67	Picture	60	581842	0	1	7040	1	0	7000	other	0
+test	68	Picture	40	589050	0	1	2012	1	0	1990	other	0
+test	68	Pulse	199	590000	950	NA
+test	69	Picture	60	591230	0	1	7040	1	0	7000	other	0
+test	70	Picture	40	598438	0	1	2179	1	0	2140	other	0
+test	70	Pulse	199	600000	1562	NA
+test	71	Picture	65	600785	0	1	7040	1	0	7000	miss	0
+test	72	Picture	40	607993	0	1	4526	1	0	4350	other	0
+test	72	Pulse	199	610000	2007	NA
+test	73	Picture	60	612686	0	1	7041	1	0	7000	other	0
+test	74	Picture	40	619894	0	1	2514	1	0	2490	other	0
+test	74	Pulse	199	620000	106	NA
+test	75	Picture	60	622576	0	1	7040	1	0	7000	other	0
+test	76	Picture	40	629784	0	1	2850	1	0	2690	other	0
+test	76	Pulse	199	630000	216	NA
+test	77	Picture	60	632802	0	1	7040	1	0	7000	other	0
+test	77	Pulse	199	640000	7198	NA
+test	78	Picture	40	640010	0	1	3688	1	0	3660	other	0
+test	79	Picture	60	643865	0	1	7040	1	0	7000	other	0
+test	79	Pulse	199	650000	6135	NA
+test	80	Picture	40	651073	0	1	2179	1	0	2130	other	0
+test	81	Picture	65	653420	0	1	7040	1	0	7000	miss	0
+test	81	Pulse	199	660000	6580	NA
+test	82	Picture	40	660628	0	1	1844	1	0	1780	other	0
+test	83	Picture	60	662640	0	1	7040	1	0	7000	other	0
+test	84	Picture	40	669848	0	1	3353	1	0	3310	other	0
+test	84	Pulse	199	670000	152	NA
+test	85	Picture	60	673368	0	1	7041	1	0	7000	other	0
+test	85	Pulse	199	680000	6632	NA
+test	86	Picture	40	680576	0	1	3017	1	0	2860	other	0
+test	87	Picture	50	683761	0	1	90185	1	0	next	other	0
+test	87	Pulse	199	690000	6239	NA
+test	87	Pulse	199	700000	16239	NA
+test	87	Pulse	199	710000	26239	NA
+test	87	Pulse	199	720000	36239	NA
+test	87	Pulse	199	730000	46239	NA
+test	87	Pulse	199	740000	56239	NA
+test	87	Pulse	199	750000	66239	NA
+test	87	Pulse	199	760000	76239	NA
+test	87	Pulse	199	770000	86239	NA
+test	88	Picture	70	773946	0	1	7040	1	0	7000	other	0
+test	88	Pulse	199	780000	6054	NA
+test	89	Picture	40	781154	0	1	3688	1	0	3660	other	0
+test	90	Picture	70	785010	0	1	7040	1	0	7000	other	0
+test	90	Pulse	199	790000	4990	NA
+test	91	Picture	40	792218	0	1	2179	1	0	2130	other	0
+test	92	Picture	75	794565	0	1	7040	1	0	7000	miss	0
+test	92	Pulse	199	800000	5436	NA
+test	93	Picture	40	801773	0	1	3353	1	0	3310	other	0
+test	94	Picture	70	805293	0	1	7040	1	0	7000	other	0
+test	94	Pulse	199	810000	4707	NA
+test	95	Picture	40	812501	0	1	2012	1	0	1990	other	0
+test	96	Picture	70	814680	0	1	7040	1	0	7000	other	0
+test	96	Pulse	199	820000	5320	NA
+test	97	Picture	40	821888	0	1	4526	1	0	4350	other	0
+test	98	Picture	70	826582	0	1	7040	1	0	7000	other	0
+test	98	Pulse	199	830000	3418	NA
+test	99	Picture	40	833790	0	1	1844	1	0	1780	other	0
+test	100	Picture	70	835801	0	1	7040	1	0	7000	other	0
+test	100	Pulse	199	840000	4199	NA
+test	101	Picture	40	843010	0	1	2850	1	0	2690	other	0
+test	102	Picture	70	846027	0	1	7040	1	0	7000	other	0
+test	102	Pulse	199	850000	3973	NA
+test	103	Picture	40	853235	0	1	2514	1	0	2490	other	0
+test	104	Picture	70	855917	0	1	7041	1	0	7000	other	0
+test	104	Pulse	199	860000	4083	NA
+test	105	Picture	40	863125	0	1	2179	1	0	2140	other	0
+test	106	Picture	70	865472	0	1	7040	1	0	7000	other	0
+test	106	Pulse	199	870000	4528	NA
+test	107	Picture	40	872680	0	1	3017	1	0	2860	other	0
+test	108	Picture	50	875865	0	1	53912	1	0	next	other	0
+test	108	Pulse	199	880000	4135	NA
+test	108	Pulse	199	890000	14135	NA
+test	108	Pulse	199	900000	24135	NA
+test	108	Pulse	199	910000	34135	NA
+test	108	Pulse	199	920000	44135	NA
+test	108	Quit		924084	48219	NA

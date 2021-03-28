@@ -1,0 +1,15 @@
+Scenario - FBL_A.sce
+Logfile written - 03/24/2021 13:47:48
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+cacahuete	1	Response	16	26453	16119	0
+cacahuete	2	Picture	start	26595	0	1	50121	1	0	next	other	0
+cacahuete	2	Pulse	199	29741	3146	0
+cacahuete	2	Pulse	199	56741	30146	0
+cacahuete	2	Response	32	75172	48577	0
+cacahuete	4	Picture	fix	127005	0	1	18775	1	0	next	other	0
+cacahuete	6	Picture	stim	145780	0	1	25144	1	0	25000	miss	0
+cacahuete	7	Picture	fix2	170924	0	1	21624	1	0	next	other	0
+cacahuete	8	Picture	feedback	192548	0	1	10951	1	0	next	other	0
+cacahuete	8	Quit		197033	4485	NA

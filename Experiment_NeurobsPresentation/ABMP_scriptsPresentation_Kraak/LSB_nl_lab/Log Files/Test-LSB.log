@@ -1,0 +1,28 @@
+Scenario - 
+Logfile written - 02/23/2017 10:46:13
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Test	1	Response	3	14616	4283	1
+Test	2	Response	3	16196	1530	1
+Test	3	Picture	consistent	21832	5166	1	7333	2	5000	next	hit	4
+Test	3	Response	32	29034	12368	1
+Test	4	Picture	pos_feedback	34332	5167	1	14999	2	5000	next	other	0
+Test	5	Picture	consistent	59664	5167	1	19999	2	5000	next	miss	0
+Test	6	Picture	pos_feedback	84829	5166	2	15000	3	5000	next	other	0
+Test	7	Picture	consistent	112638	5143	50	20023	51	5000	next	miss	0
+Test	8	Response	16	135330	2669	1
+Test	8	Picture	pos_feedback	137827	5166	1	15000	2	5000	next	other	0
+Test	8	Response	16	138444	5783	2
+Test	8	Response	16	140522	7861	1
+Test	9	Picture	consistent	168159	5166	1	4833	3	5000	next	hit	14
+Test	9	Response	16	172945	9952	2
+Test	10	Picture	pos_feedback	178159	5167	1	14939	90	5000	next	other	0
+Test	11	Picture	consistent	203491	5166	1	10666	2	5000	next	hit	17
+Test	11	Response	32	214007	15682	1
+Test	12	Picture	pos_feedback	219324	5167	1	14999	2	5000	next	other	0
+Test	13	Picture	consistent	247156	5167	1	19999	2	5000	next	miss	0
+Test	14	Picture	pos_feedback	272321	5166	2	15000	3	5000	next	other	0
+Test	15	Picture	consistent	302653	5166	2	19999	4	5000	next	miss	0
+Test	16	Picture	pos_feedback	327819	5167	1	14999	2	5000	next	other	0
+Test	17	Quit		350011	2026

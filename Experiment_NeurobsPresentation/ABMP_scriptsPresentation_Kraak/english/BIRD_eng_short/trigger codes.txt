@@ -1,0 +1,11 @@
+0	(1)	Consistent/Match
+1	(2)	Consistent/Mismatch
+2	(4)	Inconsistent/Match
+3	(8)	Inconsistent/Mismatch
+4	(16)	Response Left hand
+5	(32)	Response Right hand
+6	(64)	Feedback correct
+7	(128)	Feedback incorrect
+6+7	(192)	Feedback too slow
+
+

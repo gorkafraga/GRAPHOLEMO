@@ -1,0 +1,21 @@
+block	trial	vStim	aStim	resp	rt	fb	iti	feedJitter	vSymbol	aFile	FBtype	stimOnset	respOnset	feedbackOnset
+99	1	1	2	1	0	0	2	1852	1592	a	b	a	äu_2_3.wav	practice	practice	practice
+99	2	1	3	1	2	1114	0	3200	1066	a	0	a	äu_2_3.wav	practice	practice	practice
+99	3	4	1	1	1	1765	0	2458	1996	1	a	a	äu_2_3.wav	practice	practice	practice
+99	4	2	1	2	1	1484	1	2134	2130	b	a	b	au_2_2.wav	practice	practice	practice
+99	5	1	2	2	2	1020	1	2182	1628	a	b	b	au_2_2.wav	practice	practice	practice
+99	6	1	4	1	1	1881	1	2350	2619	a	1	a	äu_2_3.wav	practice	practice	practice
+99	7	2	3	2	2	1473	0	2885	1582	b	0	b	au_2_2.wav	practice	practice	practice
+99	8	2	1	2	1	1332	1	2195	2173	b	a	b	au_2_2.wav	practice	practice	practice
+99	9	4	3	3	2	1320	1	2035	1320	1	0	0	ü_short_2_2.wav	practice	practice	practice
+99	10	3	4	4	1	1330	0	2269	1380	0	1	1	m_2_1.wav	practice	practice	practice
+99	11	1	2	1	1	1232	1	2532	1796	a	b	a	äu_2_3.wav	practice	practice	practice
+99	12	2	4	2	2	1388	0	3114	2602	b	1	b	au_2_2.wav	practice	practice	practice
+99	13	1	4	4	2	1507	1	3387	1599	a	1	1	m_2_1.wav	practice	practice	practice
+99	14	2	3	3	2	1717	1	3581	2220	b	0	0	ü_short_2_2.wav	practice	practice	practice
+99	15	1	3	3	2	1013	1	2586	1795	a	0	0	ü_short_2_2.wav	practice	practice	practice
+99	16	4	1	4	1	1521	1	2639	1654	1	a	1	m_2_1.wav	practice	practice	practice
+99	17	3	1	1	2	1056	1	2720	1105	0	a	a	äu_2_3.wav	practice	practice	practice
+99	18	4	3	3	1	942	0	1927	1453	1	0	0	ü_short_2_2.wav	practice	practice	practice
+99	19	2	4	4	2	1036	1	2010	1718	b	1	1	m_2_1.wav	practice	practice	practice
+99	20	4	2	4	1	1540	1	3315	2151	1	b	1	m_2_1.wav	practice	practice	practice

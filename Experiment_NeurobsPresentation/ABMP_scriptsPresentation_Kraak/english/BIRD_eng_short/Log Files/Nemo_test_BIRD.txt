@@ -1,0 +1,5 @@
+block	trial	Vstim	Astim	match	C/I	resp	result	RT	fb	V-file	A-file
+
+RL
+
+0	1	1	2	0	C	1	0	755	0	poli_8sides 24_whiteLine3.jpg	Practice3_b26_cut1_mono.wav

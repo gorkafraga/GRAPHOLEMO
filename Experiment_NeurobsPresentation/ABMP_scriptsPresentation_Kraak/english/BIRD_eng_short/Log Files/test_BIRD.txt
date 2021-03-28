@@ -1,0 +1,7 @@
+block	trial	Vstim	Astim	match	C/I	resp	result	RT	fb	V-file	A-file
+
+RL
+
+avg_resp = 1000
+1	1	1	2	0	C	0	0	0	0	poli_8sides 17_whiteLine3.jpg	Medium_e01_cut1_mono.wav
+1	2	4	4	2	I	1	0	234	0	poli_8sides 16_whiteLine3.jpg	Medium_e26_mono.wav

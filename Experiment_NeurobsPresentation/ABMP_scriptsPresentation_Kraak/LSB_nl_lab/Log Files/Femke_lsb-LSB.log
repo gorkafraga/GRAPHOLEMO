@@ -1,0 +1,697 @@
+Scenario - 
+Logfile written - 02/17/2017 14:24:06
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+Femke_lsb	1	Response	3	362223	351557	1
+Femke_lsb	2	Response	3	459751	97437	1
+Femke_lsb	3	Picture	consistent	464976	5167	1	19998	3	5000	next	miss	0
+Femke_lsb	4	Picture	pos_feedback	490141	5167	1	14999	2	5000	next	other	0
+Femke_lsb	5	Picture	consistent	515639	5166	2	12167	3	5000	next	hit	6
+Femke_lsb	5	Response	16	527713	17240	1
+Femke_lsb	6	Picture	pos_feedback	532972	5166	1	14999	2	5000	next	other	0
+Femke_lsb	7	Picture	consistent	560804	5167	1	19999	2	5000	next	miss	0
+Femke_lsb	8	Picture	pos_feedback	585969	5166	1	14999	2	5000	next	other	0
+Femke_lsb	9	Picture	consistent	616301	5167	1	9166	2	5000	next	hit	11
+Femke_lsb	9	Response	16	625324	14190	2
+Femke_lsb	10	Picture	pos_feedback	630633	5166	2	15000	3	5000	next	other	0
+Femke_lsb	11	Picture	consistent	655965	5166	2	7333	4	5000	next	hit	14
+Femke_lsb	11	Response	16	663196	12397	1
+Femke_lsb	12	Picture	pos_feedback	668465	5167	1	14999	2	5000	next	other	0
+Femke_lsb	13	Picture	consistent	696297	5167	1	7666	2	5000	next	hit	17
+Femke_lsb	13	Response	32	703850	12720	1
+Femke_lsb	14	Picture	pos_feedback	709129	5166	2	15000	3	5000	next	other	0
+Femke_lsb	15	Picture	consistent	739461	5166	1	11000	2	5000	next	hit	20
+Femke_lsb	15	Response	32	750363	16068	1
+Femke_lsb	16	Picture	pos_feedback	755627	5166	1	14999	2	5000	next	other	0
+Femke_lsb	17	Picture	consistent	780959	5167	1	7666	2	5000	next	hit	23
+Femke_lsb	17	Response	32	788522	12730	1
+Femke_lsb	18	Picture	pos_feedback	793792	5167	1	14999	2	5000	next	other	0
+Femke_lsb	19	Picture	consistent	821623	5166	2	10167	3	5000	next	hit	26
+Femke_lsb	19	Response	16	831683	15226	1
+Femke_lsb	20	Picture	pos_feedback	836956	5166	1	14999	2	5000	next	other	0
+Femke_lsb	21	Picture	consistent	867288	5167	1	7999	2	5000	next	hit	29
+Femke_lsb	21	Response	32	875213	13092	1
+Femke_lsb	22	Picture	pos_feedback	880454	5167	1	14999	2	5000	next	other	0
+Femke_lsb	23	Picture	consistent	905786	5167	1	6333	2	5000	next	hit	32
+Femke_lsb	23	Response	16	911932	11313	1
+Femke_lsb	24	Picture	pos_feedback	917285	5166	1	14999	2	5000	next	other	0
+Femke_lsb	25	Picture	consistent	945117	5166	1	8166	2	5000	next	hit	35
+Femke_lsb	25	Response	32	953182	13231	1
+Femke_lsb	26	Picture	pos_feedback	958450	5167	1	14999	2	5000	next	other	0
+Femke_lsb	27	Picture	consistent	988781	5166	2	10666	4	5000	next	hit	38
+Femke_lsb	27	Response	16	999360	15745	1
+Femke_lsb	28	Picture	pos_feedback	1004614	5167	1	14999	2	5000	next	other	0
+Femke_lsb	29	Picture	consistent	1029946	5167	1	6999	3	5000	next	hit	41
+Femke_lsb	29	Response	16	1036868	12089	1
+Femke_lsb	30	Picture	pos_feedback	1042112	5167	1	14999	2	5000	next	other	0
+Femke_lsb	31	Picture	consistent	1069944	5167	1	9832	3	5000	next	hit	44
+Femke_lsb	31	Response	32	1079724	14947	2
+Femke_lsb	32	Picture	pos_feedback	1084943	5167	1	14999	2	5000	next	other	0
+Femke_lsb	33	Picture	consistent	1115275	5167	1	9332	3	5000	next	hit	47
+Femke_lsb	33	Response	32	1124546	14438	1
+Femke_lsb	34	Picture	pos_feedback	1129774	5167	1	14999	2	5000	next	other	0
+Femke_lsb	35	Picture	consistent	1155106	5166	1	8999	3	5000	next	hit	50
+Femke_lsb	35	Response	32	1164037	14097	1
+Femke_lsb	36	Picture	pos_feedback	1169272	5167	1	14999	2	5000	next	other	0
+Femke_lsb	37	Picture	consistent	1197104	5167	1	6666	2	5000	next	hit	53
+Femke_lsb	37	Response	16	1203657	11720	1
+Femke_lsb	38	Picture	pos_feedback	1208936	5166	2	15000	3	5000	next	other	0
+Femke_lsb	39	Picture	consistent	1239268	5166	1	8333	2	5000	next	hit	56
+Femke_lsb	39	Response	32	1247436	13334	1
+Femke_lsb	40	Picture	pos_feedback	1252767	5166	2	15000	3	5000	next	other	0
+Femke_lsb	41	Picture	consistent	1278099	5166	2	9833	3	5000	next	hit	59
+Femke_lsb	41	Response	16	1287752	14819	1
+Femke_lsb	42	Picture	pos_feedback	1293099	5167	1	14999	2	5000	next	other	0
+Femke_lsb	43	Picture	consistent	1320930	5166	2	7667	3	5000	next	hit	62
+Femke_lsb	43	Response	16	1328410	12646	1
+Femke_lsb	44	Picture	pos_feedback	1333763	5166	1	14999	2	5000	next	other	0
+Femke_lsb	45	Picture	consistent	1364095	5167	1	8166	2	5000	next	hit	65
+Femke_lsb	45	Response	32	1372232	13304	1
+Femke_lsb	46	Picture	pos_feedback	1377427	5166	2	15000	3	5000	next	other	0
+Femke_lsb	47	Picture	consistent	1402760	5167	1	9332	2	5000	next	hit	68
+Femke_lsb	47	Response	16	1412051	14458	2
+Femke_lsb	48	Picture	pos_feedback	1417259	5167	1	14999	2	5000	next	other	0
+Femke_lsb	49	Picture	consistent	1445091	5167	1	7833	2	5000	next	hit	71
+Femke_lsb	49	Response	32	1452899	12975	1
+Femke_lsb	50	Picture	pos_feedback	1458090	5166	1	14999	2	5000	next	other	0
+Femke_lsb	51	Picture	consistent	1488422	5167	1	12499	2	5000	next	hit	74
+Femke_lsb	51	Response	32	1500813	17558	2
+Femke_lsb	52	Picture	pos_feedback	1506087	5166	2	15000	3	5000	next	other	0
+Femke_lsb	53	Picture	consistent	1531419	5166	2	7500	3	5000	next	hit	77
+Femke_lsb	53	Response	32	1538829	12576	1
+Femke_lsb	54	Picture	pos_feedback	1544085	5166	2	15000	3	5000	next	other	0
+Femke_lsb	55	Picture	consistent	1571917	5166	2	8666	4	5000	next	hit	80
+Femke_lsb	55	Response	16	1580487	13736	1
+Femke_lsb	56	Picture	pos_feedback	1585750	5167	1	14999	2	5000	next	other	0
+Femke_lsb	57	Picture	consistent	1616082	5167	1	7666	2	5000	next	hit	83
+Femke_lsb	57	Response	32	1623607	12692	1
+Femke_lsb	58	Picture	pos_feedback	1628914	5166	2	15000	3	5000	next	other	0
+Femke_lsb	59	Picture	consistent	1654246	5166	2	8167	3	5000	next	hit	86
+Femke_lsb	59	Response	16	1662302	13222	1
+Femke_lsb	60	Picture	pos_feedback	1667579	5166	1	14999	2	5000	next	other	0
+Femke_lsb	61	Picture	consistent	1695411	5167	1	7999	2	5000	next	hit	89
+Femke_lsb	61	Response	16	1703325	13081	1
+Femke_lsb	62	Picture	pos_feedback	1708577	5167	1	14999	2	5000	next	other	0
+Femke_lsb	63	Response	3	1865575	131833	1
+Femke_lsb	64	Picture	consistent	1871068	5166	1	11000	2	5000	next	hit	93
+Femke_lsb	64	Response	32	1881976	16074	1
+Femke_lsb	65	Picture	pos_feedback	1887234	5166	1	14999	2	5000	next	other	0
+Femke_lsb	66	Picture	consistent	1917732	5166	2	11167	3	5000	next	hit	96
+Femke_lsb	66	Response	16	1928818	16252	1
+Femke_lsb	67	Picture	pos_feedback	1934065	5166	1	14999	2	5000	next	other	0
+Femke_lsb	68	Picture	consistent	1961897	5167	1	8999	2	5000	next	hit	99
+Femke_lsb	68	Response	16	1970713	13983	1
+Femke_lsb	69	Picture	pos_feedback	1976063	5167	1	14999	2	5000	next	other	0
+Femke_lsb	70	Picture	consistent	2003895	5167	1	9999	2	5000	next	hit	102
+Femke_lsb	70	Response	32	2013804	15076	1
+Femke_lsb	71	Picture	pos_feedback	2019060	5166	2	15000	3	5000	next	other	0
+Femke_lsb	72	Picture	consistent	2044559	5166	1	14333	2	5000	next	hit	105
+Femke_lsb	72	Response	32	2058822	19429	1
+Femke_lsb	73	Picture	pos_feedback	2064058	5166	1	14999	2	5000	next	other	0
+Femke_lsb	74	Picture	consistent	2094390	5167	1	8166	2	5000	next	hit	108
+Femke_lsb	74	Response	16	2102496	13273	1
+Femke_lsb	75	Picture	pos_feedback	2107722	5166	2	15000	3	5000	next	other	0
+Femke_lsb	76	Picture	consistent	2135721	5166	1	8000	2	5000	next	hit	111
+Femke_lsb	76	Response	32	2143621	13066	1
+Femke_lsb	77	Picture	pos_feedback	2148887	5166	1	14999	2	5000	next	other	0
+Femke_lsb	78	Picture	consistent	2174219	5167	1	7999	3	5000	next	hit	114
+Femke_lsb	78	Response	16	2182068	13016	1
+Femke_lsb	79	Picture	pos_feedback	2187385	5167	1	14999	2	5000	next	other	0
+Femke_lsb	80	Picture	consistent	2217717	5167	1	13999	2	5000	next	hit	117
+Femke_lsb	80	Response	16	2231565	19015	1
+Femke_lsb	81	Picture	pos_feedback	2236882	5166	2	14999	4	5000	next	other	0
+Femke_lsb	82	Picture	consistent	2262214	5166	1	9167	2	5000	next	hit	120
+Femke_lsb	82	Response	32	2271210	14162	1
+Femke_lsb	83	Picture	pos_feedback	2276547	5166	1	14999	2	5000	next	other	0
+Femke_lsb	84	Picture	consistent	2301879	5167	1	10833	2	5000	next	hit	123
+Femke_lsb	84	Response	32	2312689	15977	1
+Femke_lsb	85	Picture	pos_feedback	2317878	5166	1	14999	2	5000	next	other	0
+Femke_lsb	86	Picture	consistent	2348210	5167	1	9666	2	5000	next	hit	126
+Femke_lsb	86	Response	32	2357807	14764	1
+Femke_lsb	87	Picture	pos_feedback	2363042	5166	2	15000	3	5000	next	other	0
+Femke_lsb	88	Picture	consistent	2388374	5166	1	7833	2	5000	next	hit	129
+Femke_lsb	88	Response	16	2396081	12873	1
+Femke_lsb	89	Picture	pos_feedback	2401374	5167	1	14999	2	5000	next	other	0
+Femke_lsb	90	Picture	consistent	2431705	5166	2	6833	3	5000	next	hit	132
+Femke_lsb	90	Response	32	2438472	11933	1
+Femke_lsb	91	Picture	pos_feedback	2443705	5167	1	14999	2	5000	next	other	0
+Femke_lsb	92	Picture	consistent	2471537	5167	1	7499	2	5000	next	hit	135
+Femke_lsb	92	Response	16	2478854	12484	1
+Femke_lsb	93	Picture	pos_feedback	2484203	5167	1	14999	2	5000	next	other	0
+Femke_lsb	94	Picture	consistent	2509535	5167	1	7833	2	5000	next	hit	138
+Femke_lsb	94	Response	16	2517206	12838	1
+Femke_lsb	95	Picture	pos_feedback	2522534	5166	1	14999	2	5000	next	other	0
+Femke_lsb	96	Picture	consistent	2552866	5167	1	15166	2	5000	next	hit	141
+Femke_lsb	96	Response	16	2567864	20165	2
+Femke_lsb	97	Picture	pos_feedback	2573198	5166	1	14999	2	5000	next	other	0
+Femke_lsb	98	Picture	consistent	2601030	5167	1	8666	2	5000	next	hit	144
+Femke_lsb	98	Response	16	2609664	13801	1
+Femke_lsb	99	Picture	pos_feedback	2614862	5166	2	15000	3	5000	next	other	0
+Femke_lsb	100	Picture	consistent	2642694	5166	1	9000	2	5000	next	hit	147
+Femke_lsb	100	Response	32	2651641	14113	2
+Femke_lsb	101	Picture	pos_feedback	2656860	5166	1	14999	2	5000	next	other	0
+Femke_lsb	102	Picture	consistent	2687192	5166	1	7333	2	5000	next	hit	150
+Femke_lsb	102	Response	16	2694462	12436	1
+Femke_lsb	103	Picture	pos_feedback	2699691	5166	1	14999	3	5000	next	other	0
+Femke_lsb	104	Picture	consistent	2725023	5166	1	7833	2	5000	next	hit	153
+Femke_lsb	104	Response	16	2732799	12942	1
+Femke_lsb	105	Picture	pos_feedback	2738023	5167	1	14999	2	5000	next	other	0
+Femke_lsb	106	Picture	consistent	2763355	5167	1	7333	2	5000	next	hit	156
+Femke_lsb	106	Response	16	2770623	12435	1
+Femke_lsb	107	Picture	pos_feedback	2775854	5166	1	14999	2	5000	next	other	0
+Femke_lsb	108	Picture	consistent	2803686	5167	1	6999	3	5000	next	hit	159
+Femke_lsb	108	Response	32	2810634	12115	2
+Femke_lsb	109	Picture	pos_feedback	2815852	5167	1	14999	2	5000	next	other	0
+Femke_lsb	110	Picture	consistent	2843684	5167	1	9832	3	5000	next	hit	162
+Femke_lsb	110	Response	16	2853343	14826	1
+Femke_lsb	111	Picture	pos_feedback	2858683	5167	1	14999	2	5000	next	other	0
+Femke_lsb	112	Picture	consistent	2886515	5167	1	10832	3	5000	next	hit	165
+Femke_lsb	112	Response	16	2897233	15885	2
+Femke_lsb	113	Picture	pos_feedback	2902514	5167	1	14999	2	5000	next	other	0
+Femke_lsb	114	Picture	consistent	2927846	5167	1	8666	2	5000	next	hit	168
+Femke_lsb	114	Response	16	2936473	13794	1
+Femke_lsb	115	Picture	pos_feedback	2941678	5166	2	15000	3	5000	next	other	0
+Femke_lsb	116	Picture	consistent	2972010	5166	1	5833	2	5000	next	hit	171
+Femke_lsb	116	Response	32	2977822	10978	1
+Femke_lsb	117	Picture	pos_feedback	2983010	5167	1	14999	2	5000	next	other	0
+Femke_lsb	118	Picture	consistent	3013341	5166	2	9000	3	5000	next	hit	174
+Femke_lsb	118	Response	16	3022292	14117	1
+Femke_lsb	119	Picture	pos_feedback	3027507	5166	2	14999	4	5000	next	other	0
+Femke_lsb	120	Picture	consistent	3052839	5166	1	9333	2	5000	next	hit	177
+Femke_lsb	120	Response	32	3062102	14429	1
+Femke_lsb	121	Picture	pos_feedback	3067339	5167	1	14999	2	5000	next	other	0
+Femke_lsb	122	Picture	consistent	3092671	5167	1	9166	2	5000	next	hit	180
+Femke_lsb	122	Response	16	3101764	14260	1
+Femke_lsb	123	Picture	pos_feedback	3107003	5166	1	14999	2	5000	next	other	0
+Femke_lsb	124	Picture	consistent	3137335	5167	1	10333	2	5000	next	hit	183
+Femke_lsb	124	Response	32	3147612	15444	1
+Femke_lsb	125	Picture	pos_feedback	3152834	5166	1	14999	2	5000	next	other	0
+Femke_lsb	126	Picture	consistent	3183166	5167	1	6666	2	5000	next	hit	186
+Femke_lsb	126	Response	16	3189725	11726	1
+Femke_lsb	127	Picture	pos_feedback	3194998	5166	2	15000	3	5000	next	other	0
+Femke_lsb	128	Picture	consistent	3222830	5166	2	6500	3	5000	next	hit	189
+Femke_lsb	128	Response	16	3229151	11487	2
+Femke_lsb	129	Picture	pos_feedback	3234496	5166	2	15000	3	5000	next	other	0
+Femke_lsb	130	Picture	consistent	3262328	5166	1	7833	2	5000	next	hit	192
+Femke_lsb	130	Response	32	3270085	12923	1
+Femke_lsb	131	Picture	pos_feedback	3275328	5167	1	14999	2	5000	next	other	0
+Femke_lsb	132	Picture	consistent	3300660	5167	1	7333	2	5000	next	hit	195
+Femke_lsb	132	Response	32	3307939	12446	1
+Femke_lsb	133	Picture	pos_feedback	3313159	5166	1	14999	2	5000	next	other	0
+Femke_lsb	134	Picture	consistent	3340991	5167	1	8333	2	5000	next	hit	198
+Femke_lsb	134	Response	16	3349138	13314	1
+Femke_lsb	135	Picture	pos_feedback	3354490	5166	1	14999	2	5000	next	other	0
+Femke_lsb	136	Picture	consistent	3384822	5167	1	6999	3	5000	next	hit	201
+Femke_lsb	136	Response	32	3391760	12105	1
+Femke_lsb	137	Picture	pos_feedback	3396988	5167	1	14999	2	5000	next	other	0
+Femke_lsb	138	Picture	consistent	3424820	5167	1	9333	2	5000	next	hit	204
+Femke_lsb	138	Response	16	3434080	14427	1
+Femke_lsb	139	Picture	pos_feedback	3439319	5166	1	14999	2	5000	next	other	0
+Femke_lsb	140	Picture	consistent	3469651	5167	1	6166	2	5000	next	hit	207
+Femke_lsb	140	Response	32	3475679	11195	1
+Femke_lsb	141	Picture	pos_feedback	3480983	5166	2	15000	3	5000	next	other	0
+Femke_lsb	142	Picture	consistent	3511315	5166	1	9666	2	5000	next	hit	210
+Femke_lsb	142	Response	16	3520816	14667	1
+Femke_lsb	143	Picture	pos_feedback	3526148	5167	1	14999	2	5000	next	other	0
+Femke_lsb	144	Picture	consistent	3551480	5167	1	6999	2	5000	next	hit	213
+Femke_lsb	144	Response	16	3558367	12054	1
+Femke_lsb	145	Picture	pos_feedback	3563646	5167	1	14999	2	5000	next	other	0
+Femke_lsb	146	Picture	consistent	3588978	5167	1	7499	2	5000	next	hit	216
+Femke_lsb	146	Response	16	3596329	12518	1
+Femke_lsb	147	Picture	pos_feedback	3601644	5167	1	14999	2	5000	next	other	0
+Femke_lsb	148	Picture	consistent	3629476	5167	1	7832	3	5000	next	hit	219
+Femke_lsb	148	Response	16	3637281	12972	1
+Femke_lsb	149	Picture	pos_feedback	3642475	5167	1	14999	2	5000	next	other	0
+Femke_lsb	150	Picture	consistent	3670307	5167	1	5166	2	5000	next	hit	222
+Femke_lsb	150	Response	16	3675389	10249	1
+Femke_lsb	151	Picture	pos_feedback	3680640	5167	1	14999	2	5000	next	other	0
+Femke_lsb	152	Picture	consistent	3705972	5167	1	7666	2	5000	next	hit	225
+Femke_lsb	152	Response	32	3713538	12733	2
+Femke_lsb	153	Picture	pos_feedback	3718804	5166	1	14999	3	5000	next	other	0
+Femke_lsb	154	Picture	consistent	3749136	5166	1	6000	2	5000	next	hit	228
+Femke_lsb	154	Response	32	3755084	11114	1
+Femke_lsb	155	Picture	pos_feedback	3760302	5166	1	14999	2	5000	next	other	0
+Femke_lsb	156	Picture	consistent	3788134	5167	1	7999	3	5000	next	hit	231
+Femke_lsb	156	Response	32	3796030	13063	2
+Femke_lsb	157	Picture	pos_feedback	3801300	5167	1	14999	2	5000	next	other	0
+Femke_lsb	158	Picture	consistent	3826632	5167	1	9666	2	5000	next	hit	234
+Femke_lsb	158	Response	32	3836246	14781	1
+Femke_lsb	159	Picture	pos_feedback	3841464	5166	2	15000	3	5000	next	other	0
+Femke_lsb	160	Picture	consistent	3866796	5166	2	6833	4	5000	next	hit	237
+Femke_lsb	160	Response	16	3873547	11917	2
+Femke_lsb	161	Picture	pos_feedback	3878796	5167	1	14999	2	5000	next	other	0
+Femke_lsb	162	Picture	consistent	3906628	5167	1	6166	2	5000	next	hit	240
+Femke_lsb	162	Response	16	3912614	11153	1
+Femke_lsb	163	Picture	pos_feedback	3917960	5166	2	15000	3	5000	next	other	0
+Femke_lsb	164	Picture	consistent	3945792	5166	1	6667	2	5000	next	hit	243
+Femke_lsb	164	Response	32	3952300	11674	1
+Femke_lsb	165	Picture	pos_feedback	3957625	5166	1	14999	2	5000	next	other	0
+Femke_lsb	166	Picture	consistent	3982957	5166	1	9333	2	5000	next	hit	246
+Femke_lsb	166	Response	16	3992186	14395	1
+Femke_lsb	167	Picture	pos_feedback	3997456	5166	1	14999	2	5000	next	other	0
+Femke_lsb	168	Picture	consistent	4027788	5166	1	7666	2	5000	next	hit	249
+Femke_lsb	168	Response	32	4035290	12668	1
+Femke_lsb	169	Picture	pos_feedback	4040621	5167	1	14999	2	5000	next	other	0
+Femke_lsb	170	Picture	consistent	4070952	5166	1	10166	3	5000	next	hit	252
+Femke_lsb	170	Response	16	4081031	15245	2
+Femke_lsb	171	Picture	pos_feedback	4086285	5167	1	14999	2	5000	next	other	0
+Femke_lsb	172	Picture	consistent	4116617	5167	1	6499	2	5000	next	hit	255
+Femke_lsb	172	Response	32	4122959	11509	1
+Femke_lsb	173	Picture	pos_feedback	4128283	5167	1	14999	2	5000	next	other	0
+Femke_lsb	174	Picture	consistent	4153615	5167	1	9332	3	5000	next	hit	258
+Femke_lsb	174	Response	32	4162828	14380	1
+Femke_lsb	175	Picture	pos_feedback	4168114	5167	1	14999	2	5000	next	other	0
+Femke_lsb	176	Picture	consistent	4195946	5167	1	7499	2	5000	next	hit	261
+Femke_lsb	176	Response	16	4203279	12500	1
+Femke_lsb	177	Picture	pos_feedback	4208612	5167	1	14999	2	5000	next	other	0
+Femke_lsb	178	Picture	consistent	4233944	5167	1	6333	2	5000	next	hit	264
+Femke_lsb	178	Response	16	4240191	11414	1
+Femke_lsb	179	Picture	pos_feedback	4245443	5166	1	14999	2	5000	next	other	0
+Femke_lsb	180	Picture	consistent	4270775	5166	1	6000	2	5000	next	hit	267
+Femke_lsb	180	Response	16	4276722	11113	1
+Femke_lsb	181	Picture	pos_feedback	4281941	5166	1	14999	2	5000	next	other	0
+Femke_lsb	182	Picture	consistent	4309773	5166	1	4833	2	5000	next	hit	270
+Femke_lsb	182	Response	16	4314478	9871	2
+Femke_lsb	183	Picture	pos_feedback	4319772	5166	2	15000	3	5000	next	other	0
+Femke_lsb	184	Picture	consistent	4350104	5166	1	5833	2	5000	next	hit	273
+Femke_lsb	184	Response	16	4355797	10859	1
+Femke_lsb	185	Picture	pos_feedback	4361104	5167	1	14999	2	5000	next	other	0
+Femke_lsb	186	Picture	consistent	4391435	5166	2	7667	3	5000	next	hit	276
+Femke_lsb	186	Response	32	4399032	12763	1
+Femke_lsb	187	Picture	pos_feedback	4404268	5166	1	14999	2	5000	next	other	0
+Femke_lsb	188	Picture	consistent	4432100	5167	1	6999	3	5000	next	hit	279
+Femke_lsb	188	Response	16	4439010	12077	1
+Femke_lsb	189	Picture	pos_feedback	4444266	5167	1	14999	2	5000	next	other	0
+Femke_lsb	190	Picture	consistent	4474598	5167	1	8333	2	5000	next	hit	282
+Femke_lsb	190	Response	16	4482831	13400	1
+Femke_lsb	191	Picture	pos_feedback	4488097	5166	1	14999	2	5000	next	other	0
+Femke_lsb	192	Picture	consistent	4513429	5166	1	5833	2	5000	next	hit	285
+Femke_lsb	192	Response	16	4519224	10961	1
+Femke_lsb	193	Picture	pos_feedback	4524428	5166	2	15000	3	5000	next	other	0
+Femke_lsb	194	Picture	consistent	4549760	5166	2	9833	3	5000	next	hit	288
+Femke_lsb	194	Response	16	4559443	14849	2
+Femke_lsb	195	Picture	pos_feedback	4564760	5167	1	14999	2	5000	next	other	0
+Femke_lsb	196	Picture	consistent	4590092	5167	1	7666	2	5000	next	hit	291
+Femke_lsb	196	Response	32	4597645	12720	1
+Femke_lsb	197	Picture	pos_feedback	4602924	5166	1	14999	3	5000	next	other	0
+Femke_lsb	198	Picture	consistent	4630756	5166	1	5000	2	5000	next	hit	294
+Femke_lsb	198	Response	16	4635689	10099	1
+Femke_lsb	199	Picture	pos_feedback	4640922	5166	1	14999	3	5000	next	other	0
+Femke_lsb	200	Picture	consistent	4671254	5166	1	6166	2	5000	next	hit	297
+Femke_lsb	200	Response	16	4677275	11187	1
+Femke_lsb	201	Picture	pos_feedback	4682587	5167	1	14999	2	5000	next	other	0
+Femke_lsb	202	Picture	consistent	4710419	5167	1	7666	2	5000	next	hit	300
+Femke_lsb	202	Response	32	4717967	12715	2
+Femke_lsb	203	Picture	pos_feedback	4723251	5166	1	14999	3	5000	next	other	0
+Femke_lsb	204	Picture	consistent	4753583	5167	1	5500	2	5000	next	hit	303
+Femke_lsb	204	Response	32	4758942	10526	1
+Femke_lsb	205	Picture	pos_feedback	4764249	5166	1	14999	2	5000	next	other	0
+Femke_lsb	206	Picture	consistent	4794581	5167	1	12666	2	5000	next	hit	306
+Femke_lsb	206	Response	16	4807132	17718	1
+Femke_lsb	207	Picture	pos_feedback	4812413	5166	1	14999	2	5000	next	other	0
+Femke_lsb	208	Picture	consistent	4840245	5166	1	6333	2	5000	next	hit	309
+Femke_lsb	208	Response	32	4846507	11428	1
+Femke_lsb	209	Picture	pos_feedback	4851744	5166	2	15000	3	5000	next	other	0
+Femke_lsb	210	Picture	consistent	4879576	5166	1	6333	2	5000	next	hit	312
+Femke_lsb	210	Response	16	4885754	11344	1
+Femke_lsb	211	Picture	pos_feedback	4891076	5167	1	14999	2	5000	next	other	0
+Femke_lsb	212	Picture	consistent	4916408	5167	1	6499	2	5000	next	hit	315
+Femke_lsb	212	Response	16	4922814	11573	1
+Femke_lsb	213	Picture	pos_feedback	4928074	5167	1	14999	2	5000	next	other	0
+Femke_lsb	214	Picture	consistent	4955906	5167	1	6833	2	5000	next	hit	318
+Femke_lsb	214	Response	32	4962590	11851	1
+Femke_lsb	215	Picture	pos_feedback	4967905	5166	1	14999	2	5000	next	other	0
+Femke_lsb	216	Picture	consistent	4998237	5167	1	8333	2	5000	next	hit	321
+Femke_lsb	216	Response	16	5006540	13470	1
+Femke_lsb	217	Picture	pos_feedback	5011736	5166	1	14999	2	5000	next	other	0
+Femke_lsb	218	Picture	consistent	5042068	5167	1	10666	2	5000	next	hit	324
+Femke_lsb	218	Response	16	5052656	15755	1
+Femke_lsb	219	Picture	pos_feedback	5057900	5166	1	14999	3	5000	next	other	0
+Femke_lsb	220	Picture	consistent	5083232	5166	1	7167	2	5000	next	hit	327
+Femke_lsb	220	Response	32	5090305	12239	1
+Femke_lsb	221	Picture	pos_feedback	5095565	5166	1	14999	2	5000	next	other	0
+Femke_lsb	222	Picture	consistent	5120897	5167	1	8833	2	5000	next	hit	330
+Femke_lsb	222	Response	16	5129709	13979	1
+Femke_lsb	223	Picture	pos_feedback	5134896	5166	1	14999	2	5000	next	other	0
+Femke_lsb	224	Picture	consistent	5165228	5167	1	6333	2	5000	next	hit	333
+Femke_lsb	224	Response	16	5171421	11360	1
+Femke_lsb	225	Picture	pos_feedback	5176727	5166	1	14999	3	5000	next	other	0
+Femke_lsb	226	Picture	consistent	5204559	5166	1	7333	2	5000	next	hit	336
+Femke_lsb	226	Response	32	5211759	12366	1
+Femke_lsb	227	Picture	pos_feedback	5217059	5167	1	14999	2	5000	next	other	0
+Femke_lsb	228	Picture	consistent	5247390	5166	1	7000	2	5000	next	hit	339
+Femke_lsb	228	Response	16	5254342	12118	1
+Femke_lsb	229	Picture	pos_feedback	5259556	5166	1	14999	3	5000	next	other	0
+Femke_lsb	230	Picture	consistent	5287388	5166	1	7333	2	5000	next	hit	342
+Femke_lsb	230	Response	16	5294585	12363	1
+Femke_lsb	231	Picture	pos_feedback	5299887	5166	2	15000	3	5000	next	other	0
+Femke_lsb	232	Picture	consistent	5325219	5166	2	7500	3	5000	next	hit	345
+Femke_lsb	232	Response	16	5332607	12554	2
+Femke_lsb	233	Picture	pos_feedback	5337885	5166	2	15000	3	5000	next	other	0
+Femke_lsb	234	Picture	consistent	5365717	5166	1	10000	2	5000	next	hit	348
+Femke_lsb	234	Response	16	5375636	15085	1
+Femke_lsb	235	Picture	pos_feedback	5380883	5166	1	14999	2	5000	next	other	0
+Femke_lsb	236	Picture	consistent	5411215	5166	1	7666	2	5000	next	hit	351
+Femke_lsb	236	Response	32	5418858	12809	1
+Femke_lsb	237	Picture	pos_feedback	5424048	5167	1	14999	2	5000	next	other	0
+Femke_lsb	238	Picture	consistent	5449380	5167	1	8499	2	5000	next	hit	354
+Femke_lsb	238	Response	16	5457710	13497	2
+Femke_lsb	239	Picture	pos_feedback	5463046	5167	1	14999	2	5000	next	other	0
+Femke_lsb	240	Picture	consistent	5493377	5166	1	7167	2	5000	next	hit	357
+Femke_lsb	240	Response	16	5500456	12245	1
+Femke_lsb	241	Picture	pos_feedback	5505710	5166	1	14999	2	5000	next	other	0
+Femke_lsb	242	Picture	consistent	5531042	5166	1	8833	2	5000	next	hit	360
+Femke_lsb	242	Response	16	5539700	13824	1
+Femke_lsb	243	Picture	pos_feedback	5545041	5166	1	14999	2	5000	next	other	0
+Femke_lsb	244	Picture	consistent	5572873	5166	1	7666	2	5000	next	hit	363
+Femke_lsb	244	Response	16	5580444	12737	1
+Femke_lsb	245	Picture	pos_feedback	5585706	5167	1	14999	2	5000	next	other	0
+Femke_lsb	246	Picture	consistent	5616037	5166	2	7833	3	5000	next	hit	366
+Femke_lsb	246	Response	16	5623703	12832	1
+Femke_lsb	247	Picture	pos_feedback	5629037	5167	1	14999	2	5000	next	other	0
+Femke_lsb	248	Picture	consistent	5656869	5167	1	9832	3	5000	next	hit	369
+Femke_lsb	248	Response	16	5666565	14863	1
+Femke_lsb	249	Picture	pos_feedback	5671868	5167	1	14999	2	5000	next	other	0
+Femke_lsb	250	Picture	consistent	5697200	5167	1	6000	2	5000	next	hit	372
+Femke_lsb	250	Response	32	5703103	11070	1
+Femke_lsb	251	Picture	pos_feedback	5708366	5166	1	14999	2	5000	next	other	0
+Femke_lsb	252	Picture	consistent	5733698	5167	1	8999	3	5000	next	hit	375
+Femke_lsb	252	Response	16	5742627	14096	1
+Femke_lsb	253	Picture	pos_feedback	5747864	5167	1	14999	2	5000	next	other	0
+Femke_lsb	254	Picture	consistent	5778195	5166	2	5500	3	5000	next	hit	378
+Femke_lsb	254	Response	16	5783565	10536	1
+Femke_lsb	255	Picture	pos_feedback	5788862	5167	1	14999	2	5000	next	other	0
+Femke_lsb	256	Picture	consistent	5816693	5166	2	8333	4	5000	next	hit	381
+Femke_lsb	256	Response	32	5824952	13425	1
+Femke_lsb	257	Picture	pos_feedback	5830193	5167	1	14999	2	5000	next	other	0
+Femke_lsb	258	Picture	consistent	5858025	5167	1	7499	2	5000	next	hit	384
+Femke_lsb	258	Response	32	5865404	12546	1
+Femke_lsb	259	Picture	pos_feedback	5870691	5167	1	14999	2	5000	next	other	0
+Femke_lsb	260	Picture	consistent	5896023	5167	1	8166	2	5000	next	hit	387
+Femke_lsb	260	Response	16	5904004	13148	1
+Femke_lsb	261	Picture	pos_feedback	5909355	5166	1	14999	3	5000	next	other	0
+Femke_lsb	262	Picture	consistent	5939687	5166	1	7333	2	5000	next	hit	390
+Femke_lsb	262	Response	32	5946970	12449	2
+Femke_lsb	263	Picture	pos_feedback	5952186	5166	2	15000	3	5000	next	other	0
+Femke_lsb	264	Picture	consistent	5977518	5166	2	7333	3	5000	next	hit	393
+Femke_lsb	264	Response	16	5984748	12396	2
+Femke_lsb	265	Picture	pos_feedback	5990018	5167	1	14999	2	5000	next	other	0
+Femke_lsb	266	Picture	consistent	6017850	5167	1	8332	3	5000	next	hit	396
+Femke_lsb	266	Response	16	6026079	13396	1
+Femke_lsb	267	Picture	pos_feedback	6031349	5167	1	14999	2	5000	next	other	0
+Femke_lsb	268	Picture	consistent	6061681	5167	1	8166	2	5000	next	hit	399
+Femke_lsb	268	Response	16	6069778	13264	1
+Femke_lsb	269	Picture	pos_feedback	6075013	5166	1	14999	3	5000	next	other	0
+Femke_lsb	270	Picture	consistent	6100345	5166	1	8833	2	5000	next	hit	402
+Femke_lsb	270	Response	16	6109095	13916	1
+Femke_lsb	271	Picture	pos_feedback	6114344	5166	2	15000	3	5000	next	other	0
+Femke_lsb	272	Picture	consistent	6144676	5166	1	7000	2	5000	next	hit	405
+Femke_lsb	272	Response	16	6151611	12101	1
+Femke_lsb	273	Picture	pos_feedback	6156842	5166	1	14999	3	5000	next	other	0
+Femke_lsb	274	Picture	consistent	6184674	5166	1	5166	3	5000	next	hit	408
+Femke_lsb	274	Response	16	6189773	10265	1
+Femke_lsb	275	Picture	pos_feedback	6195007	5167	1	14999	2	5000	next	other	0
+Femke_lsb	276	Picture	consistent	6222839	5167	1	6666	2	5000	next	hit	411
+Femke_lsb	276	Response	16	6229385	11713	1
+Femke_lsb	277	Picture	pos_feedback	6234671	5166	2	15000	3	5000	next	other	0
+Femke_lsb	278	Picture	consistent	6265003	5166	1	6333	2	5000	next	hit	414
+Femke_lsb	278	Response	32	6271195	11358	1
+Femke_lsb	279	Picture	pos_feedback	6276503	5167	1	14999	2	5000	next	other	0
+Femke_lsb	280	Picture	consistent	6301835	5167	1	7166	2	5000	next	hit	417
+Femke_lsb	280	Response	16	6308921	12253	2
+Femke_lsb	281	Picture	pos_feedback	6314167	5166	1	14999	3	5000	next	other	0
+Femke_lsb	282	Picture	consistent	6344499	5166	1	9000	2	5000	next	hit	420
+Femke_lsb	282	Response	16	6353429	14096	1
+Femke_lsb	283	Picture	pos_feedback	6358665	5166	1	14999	2	5000	next	other	0
+Femke_lsb	284	Picture	consistent	6383997	5167	1	6999	3	5000	next	hit	423
+Femke_lsb	284	Response	32	6390965	12135	1
+Femke_lsb	285	Picture	pos_feedback	6396163	5167	1	14999	2	5000	next	other	0
+Femke_lsb	286	Picture	consistent	6426495	5167	1	5499	2	5000	next	hit	426
+Femke_lsb	286	Response	32	6431809	10481	2
+Femke_lsb	287	Picture	pos_feedback	6437161	5167	1	14999	2	5000	next	other	0
+Femke_lsb	288	Picture	consistent	6462493	5167	1	5499	3	5000	next	hit	429
+Femke_lsb	288	Response	16	6467821	10495	1
+Femke_lsb	289	Picture	pos_feedback	6473159	5167	1	14999	2	5000	next	other	0
+Femke_lsb	290	Picture	consistent	6500991	5167	1	5666	2	5000	next	hit	432
+Femke_lsb	290	Response	16	6506542	10718	1
+Femke_lsb	291	Picture	pos_feedback	6511823	5166	2	15000	3	5000	next	other	0
+Femke_lsb	292	Picture	consistent	6537155	5166	2	11833	3	5000	next	hit	435
+Femke_lsb	292	Response	16	6548892	16903	1
+Femke_lsb	293	Picture	pos_feedback	6554155	5167	1	14999	2	5000	next	other	0
+Femke_lsb	294	Picture	consistent	6584486	5166	1	7333	2	5000	next	hit	438
+Femke_lsb	294	Response	32	6591684	12364	1
+Femke_lsb	295	Picture	pos_feedback	6596986	5167	1	14999	2	5000	next	other	0
+Femke_lsb	296	Picture	consistent	6624818	5167	1	8832	3	5000	next	hit	441
+Femke_lsb	296	Response	16	6633585	13934	1
+Femke_lsb	297	Picture	pos_feedback	6638817	5167	1	14999	2	5000	next	other	0
+Femke_lsb	298	Picture	consistent	6666649	5167	1	7333	2	5000	next	hit	444
+Femke_lsb	298	Response	32	6673936	12454	1
+Femke_lsb	299	Picture	pos_feedback	6679148	5166	1	14999	2	5000	next	other	0
+Femke_lsb	300	Picture	consistent	6704480	5166	1	8333	2	5000	next	hit	447
+Femke_lsb	300	Response	16	6712790	13476	1
+Femke_lsb	301	Picture	pos_feedback	6717979	5166	1	14999	3	5000	next	other	0
+Femke_lsb	302	Picture	consistent	6745811	5166	1	5333	2	5000	next	hit	450
+Femke_lsb	302	Response	16	6751006	10361	2
+Femke_lsb	303	Picture	pos_feedback	6756311	5167	1	14999	2	5000	next	other	0
+Femke_lsb	304	Picture	consistent	6786642	5166	1	6333	2	5000	next	hit	453
+Femke_lsb	304	Response	32	6792856	11380	1
+Femke_lsb	305	Picture	pos_feedback	6798142	5167	1	14999	2	5000	next	other	0
+Femke_lsb	306	Picture	consistent	6823474	5167	1	5499	3	5000	next	hit	456
+Femke_lsb	306	Response	16	6828943	10636	1
+Femke_lsb	307	Picture	pos_feedback	6834140	5167	1	14999	2	5000	next	other	0
+Femke_lsb	308	Picture	consistent	6861972	5167	1	7499	2	5000	next	hit	459
+Femke_lsb	308	Response	32	6869421	12616	1
+Femke_lsb	309	Picture	pos_feedback	6874638	5167	1	14999	2	5000	next	other	0
+Femke_lsb	310	Picture	consistent	6904969	5166	2	6333	4	5000	next	hit	462
+Femke_lsb	310	Response	16	6911152	11349	1
+Femke_lsb	311	Picture	pos_feedback	6916469	5167	1	14999	2	5000	next	other	0
+Femke_lsb	312	Picture	consistent	6941801	5167	1	7333	2	5000	next	hit	465
+Femke_lsb	312	Response	32	6949088	12454	2
+Femke_lsb	313	Picture	pos_feedback	6954300	5166	1	14999	2	5000	next	other	0
+Femke_lsb	314	Picture	consistent	6982132	5166	1	5000	2	5000	next	hit	468
+Femke_lsb	314	Response	16	6987043	10077	1
+Femke_lsb	315	Picture	pos_feedback	6992298	5166	1	14999	2	5000	next	other	0
+Femke_lsb	316	Picture	consistent	7022630	5167	1	6000	2	5000	next	hit	471
+Femke_lsb	316	Response	16	7028518	11055	1
+Femke_lsb	317	Picture	pos_feedback	7033796	5166	1	14999	2	5000	next	other	0
+Femke_lsb	318	Picture	consistent	7059128	5166	1	6666	2	5000	next	hit	474
+Femke_lsb	318	Response	16	7065663	11701	2
+Femke_lsb	319	Picture	pos_feedback	7070961	5167	1	14999	2	5000	next	other	0
+Femke_lsb	320	Picture	consistent	7098793	5167	1	5833	2	5000	next	hit	477
+Femke_lsb	320	Response	32	7104462	10836	1
+Femke_lsb	321	Picture	pos_feedback	7109792	5166	1	14999	2	5000	next	other	0
+Femke_lsb	322	Picture	consistent	7140124	5167	1	6333	2	5000	next	hit	480
+Femke_lsb	322	Response	32	7146322	11365	2
+Femke_lsb	323	Picture	pos_feedback	7151623	5166	1	14999	2	5000	next	other	0
+Femke_lsb	324	Picture	consistent	7176955	5166	1	5166	3	5000	next	hit	483
+Femke_lsb	324	Response	16	7181968	10179	1
+Femke_lsb	325	Picture	pos_feedback	7187288	5167	1	14999	2	5000	next	other	0
+Femke_lsb	326	Picture	consistent	7215120	5167	1	5499	2	5000	next	hit	486
+Femke_lsb	326	Response	16	7220551	10598	1
+Femke_lsb	327	Picture	pos_feedback	7225786	5167	1	14999	2	5000	next	other	0
+Femke_lsb	328	Picture	consistent	7256117	5166	2	6000	3	5000	next	hit	489
+Femke_lsb	328	Response	16	7261992	11041	1
+Femke_lsb	329	Picture	pos_feedback	7267284	5167	1	14999	2	5000	next	other	0
+Femke_lsb	330	Picture	consistent	7292616	5167	1	7666	2	5000	next	hit	492
+Femke_lsb	330	Response	16	7300152	12703	1
+Femke_lsb	331	Picture	pos_feedback	7305448	5166	1	14999	3	5000	next	other	0
+Femke_lsb	332	Picture	consistent	7333280	5166	1	5500	2	5000	next	hit	495
+Femke_lsb	332	Response	32	7338594	10480	1
+Femke_lsb	333	Picture	pos_feedback	7343946	5166	1	14999	3	5000	next	other	0
+Femke_lsb	334	Picture	consistent	7374278	5166	1	7999	3	5000	next	hit	498
+Femke_lsb	334	Response	32	7382157	13045	1
+Femke_lsb	335	Picture	pos_feedback	7387444	5167	1	14999	2	5000	next	other	0
+Femke_lsb	336	Picture	consistent	7412776	5166	1	6833	2	5000	next	hit	501
+Femke_lsb	336	Response	16	7419567	11957	1
+Femke_lsb	337	Picture	pos_feedback	7424775	5166	1	14999	3	5000	next	other	0
+Femke_lsb	338	Picture	consistent	7452607	5166	1	9833	2	5000	next	hit	504
+Femke_lsb	338	Response	16	7462356	14915	2
+Femke_lsb	339	Picture	pos_feedback	7467606	5166	2	15000	3	5000	next	other	0
+Femke_lsb	340	Picture	consistent	7497938	5166	1	7833	2	5000	next	hit	507
+Femke_lsb	340	Response	32	7505749	12977	1
+Femke_lsb	341	Picture	pos_feedback	7510937	5166	2	15000	3	5000	next	other	0
+Femke_lsb	342	Picture	consistent	7536269	5166	2	9167	3	5000	next	hit	510
+Femke_lsb	342	Response	32	7545398	14295	1
+Femke_lsb	343	Picture	pos_feedback	7550602	5166	1	14999	2	5000	next	other	0
+Femke_lsb	344	Picture	consistent	7578434	5167	1	5333	2	5000	next	hit	513
+Femke_lsb	344	Response	16	7583719	10452	1
+Femke_lsb	345	Picture	pos_feedback	7588933	5166	1	14999	3	5000	next	other	0
+Femke_lsb	346	Picture	consistent	7619265	5166	1	9000	2	5000	next	hit	516
+Femke_lsb	346	Response	16	7628202	14103	1
+Femke_lsb	347	Picture	pos_feedback	7633431	5166	1	14999	2	5000	next	other	0
+Femke_lsb	348	Picture	consistent	7658763	5166	1	7500	2	5000	next	hit	519
+Femke_lsb	348	Response	16	7666078	12481	2
+Femke_lsb	349	Picture	pos_feedback	7671429	5166	1	14999	2	5000	next	other	0
+Femke_lsb	350	Picture	consistent	7699261	5167	1	8166	2	5000	next	hit	522
+Femke_lsb	350	Response	32	7707356	13262	2
+Femke_lsb	351	Picture	pos_feedback	7712593	5166	2	15000	3	5000	next	other	0
+Femke_lsb	352	Picture	consistent	7742925	5166	1	6833	2	5000	next	hit	525
+Femke_lsb	352	Response	32	7749699	11940	1
+Femke_lsb	353	Picture	pos_feedback	7754924	5166	2	15000	3	5000	next	other	0
+Femke_lsb	354	Picture	consistent	7780257	5167	1	6999	2	5000	next	hit	528
+Femke_lsb	354	Response	16	7787096	12006	1
+Femke_lsb	355	Picture	pos_feedback	7792423	5167	1	14999	2	5000	next	other	0
+Femke_lsb	356	Picture	consistent	7820254	5166	2	6833	3	5000	next	hit	531
+Femke_lsb	356	Response	16	7827038	11950	1
+Femke_lsb	357	Picture	pos_feedback	7832254	5167	1	14999	2	5000	next	other	0
+Femke_lsb	358	Picture	consistent	7862586	5167	1	6499	2	5000	next	hit	534
+Femke_lsb	358	Response	32	7868899	11480	1
+Femke_lsb	359	Picture	pos_feedback	7874252	5167	1	14999	2	5000	next	other	0
+Femke_lsb	360	Picture	consistent	7899584	5167	1	11166	2	5000	next	hit	537
+Femke_lsb	360	Response	16	7910704	16287	2
+Femke_lsb	361	Picture	pos_feedback	7915916	5166	1	14999	2	5000	next	other	0
+Femke_lsb	362	Picture	consistent	7943748	5166	1	4666	2	5000	next	hit	540
+Femke_lsb	362	Response	16	7948362	9780	1
+Femke_lsb	363	Picture	pos_feedback	7953581	5167	1	14999	2	5000	next	other	0
+Femke_lsb	364	Picture	consistent	7983912	5166	2	7167	3	5000	next	hit	543
+Femke_lsb	364	Response	16	7990895	12149	1
+Femke_lsb	365	Picture	pos_feedback	7996245	5166	1	14999	2	5000	next	other	0
+Femke_lsb	366	Picture	consistent	8021577	5166	1	7333	2	5000	next	hit	546
+Femke_lsb	366	Response	16	8028843	12432	1
+Femke_lsb	367	Picture	pos_feedback	8034076	5166	2	15000	3	5000	next	other	0
+Femke_lsb	368	Picture	consistent	8061908	5166	2	6333	3	5000	next	hit	549
+Femke_lsb	368	Response	32	8068189	11447	1
+Femke_lsb	369	Picture	pos_feedback	8073408	5167	1	14999	2	5000	next	other	0
+Femke_lsb	370	Picture	consistent	8103739	5166	2	8167	3	5000	next	hit	552
+Femke_lsb	370	Response	16	8111811	13238	1
+Femke_lsb	371	Picture	pos_feedback	8117072	5166	1	14999	2	5000	next	other	0
+Femke_lsb	372	Picture	consistent	8142404	5166	1	9166	2	5000	next	hit	555
+Femke_lsb	372	Response	16	8151442	14204	2
+Femke_lsb	373	Picture	pos_feedback	8156737	5167	1	14999	2	5000	next	other	0
+Femke_lsb	374	Picture	consistent	8184569	5167	1	5832	3	5000	next	hit	558
+Femke_lsb	374	Response	16	8190294	10892	1
+Femke_lsb	375	Picture	pos_feedback	8195568	5167	1	14999	2	5000	next	other	0
+Femke_lsb	376	Picture	consistent	8225900	5167	1	6499	2	5000	next	hit	561
+Femke_lsb	376	Response	16	8232332	11599	2
+Femke_lsb	377	Picture	pos_feedback	8237566	5167	1	14999	2	5000	next	other	0
+Femke_lsb	378	Picture	consistent	8262898	5167	1	8333	2	5000	next	hit	564
+Femke_lsb	378	Response	32	8271159	13428	1
+Femke_lsb	379	Picture	pos_feedback	8276397	5166	1	14999	2	5000	next	other	0
+Femke_lsb	380	Picture	consistent	8304229	5167	1	9333	2	5000	next	hit	567
+Femke_lsb	380	Response	16	8313405	14343	1
+Femke_lsb	381	Picture	pos_feedback	8318728	5166	1	14999	2	5000	next	other	0
+Femke_lsb	382	Picture	consistent	8349060	5167	1	6000	2	5000	next	hit	570
+Femke_lsb	382	Response	16	8354896	11003	1
+Femke_lsb	383	Picture	pos_feedback	8360226	5166	1	14999	2	5000	next	other	0
+Femke_lsb	384	Picture	consistent	8385558	5167	1	7499	3	5000	next	hit	573
+Femke_lsb	384	Response	32	8392950	12559	1
+Femke_lsb	385	Picture	pos_feedback	8398224	5167	1	14999	2	5000	next	other	0
+Femke_lsb	386	Picture	consistent	8426056	5167	1	9999	2	5000	next	hit	576
+Femke_lsb	386	Response	32	8435872	14983	1
+Femke_lsb	387	Picture	pos_feedback	8441222	5167	1	14999	2	5000	next	other	0
+Femke_lsb	388	Picture	consistent	8471553	5166	2	10000	3	5000	next	hit	579
+Femke_lsb	388	Response	16	8481406	15019	1
+Femke_lsb	389	Picture	pos_feedback	8486719	5166	1	14999	3	5000	next	other	0
+Femke_lsb	390	Picture	consistent	8512051	5166	1	12333	2	5000	next	hit	582
+Femke_lsb	390	Response	16	8524360	17475	1
+Femke_lsb	391	Picture	pos_feedback	8529550	5166	1	14999	3	5000	next	other	0
+Femke_lsb	392	Picture	consistent	8557382	5166	1	7666	3	5000	next	hit	585
+Femke_lsb	392	Response	16	8564966	12750	1
+Femke_lsb	393	Picture	pos_feedback	8570215	5167	1	14999	2	5000	next	other	0
+Femke_lsb	394	Picture	consistent	8600546	5166	2	6833	4	5000	next	hit	588
+Femke_lsb	394	Response	16	8607234	11854	1
+Femke_lsb	395	Picture	pos_feedback	8612546	5167	1	14999	2	5000	next	other	0
+Femke_lsb	396	Picture	consistent	8637878	5167	1	6666	2	5000	next	hit	591
+Femke_lsb	396	Response	32	8644522	11811	1
+Femke_lsb	397	Picture	pos_feedback	8649711	5167	1	14999	2	5000	next	other	0
+Femke_lsb	398	Picture	consistent	8677542	5166	2	7167	3	5000	next	hit	594
+Femke_lsb	398	Response	32	8684611	12235	1
+Femke_lsb	399	Picture	pos_feedback	8689875	5166	1	14999	2	5000	next	other	0
+Femke_lsb	400	Picture	consistent	8720207	5166	1	9333	2	5000	next	hit	597
+Femke_lsb	400	Response	16	8729436	14395	1
+Femke_lsb	401	Picture	pos_feedback	8734706	5166	1	14999	2	5000	next	other	0
+Femke_lsb	402	Picture	consistent	8760038	5166	1	10666	2	5000	next	hit	600
+Femke_lsb	402	Response	16	8770601	15729	1
+Femke_lsb	403	Picture	pos_feedback	8775871	5167	1	14999	2	5000	next	other	0
+Femke_lsb	404	Picture	consistent	8803703	5167	1	11332	2	5000	next	hit	603
+Femke_lsb	404	Response	16	8814952	16416	1
+Femke_lsb	405	Picture	pos_feedback	8820202	5167	1	14999	2	5000	next	other	0
+Femke_lsb	406	Picture	consistent	8850533	5166	2	8167	3	5000	next	hit	606
+Femke_lsb	406	Response	32	8858602	13235	1
+Femke_lsb	407	Picture	pos_feedback	8863866	5166	1	14999	2	5000	next	other	0
+Femke_lsb	408	Picture	consistent	8889198	5166	1	6333	2	5000	next	hit	609
+Femke_lsb	408	Response	32	8895498	11466	1
+Femke_lsb	409	Picture	pos_feedback	8900697	5166	2	15000	3	5000	next	other	0
+Femke_lsb	410	Picture	consistent	8928529	5166	1	6000	2	5000	next	hit	612
+Femke_lsb	410	Response	16	8934413	11050	1
+Femke_lsb	411	Picture	pos_feedback	8939695	5166	1	15000	2	5000	next	other	0
+Femke_lsb	412	Picture	consistent	8970027	5166	1	6000	2	5000	next	hit	615
+Femke_lsb	412	Response	16	8975960	11099	1
+Femke_lsb	413	Picture	pos_feedback	8981193	5166	1	14999	2	5000	next	other	0
+Femke_lsb	414	Picture	consistent	9006525	5166	1	9000	2	5000	next	hit	618
+Femke_lsb	414	Response	16	9015399	14040	1
+Femke_lsb	415	Picture	pos_feedback	9020691	5166	1	14999	2	5000	next	other	0
+Femke_lsb	416	Picture	consistent	9048523	5167	1	7999	3	5000	next	hit	621
+Femke_lsb	416	Response	16	9056381	13025	1
+Femke_lsb	417	Picture	pos_feedback	9061689	5167	1	14999	2	5000	next	other	0
+Femke_lsb	418	Picture	consistent	9092021	5167	1	9499	2	5000	next	hit	624
+Femke_lsb	418	Response	16	9101360	14506	2
+Femke_lsb	419	Picture	pos_feedback	9106686	5166	2	15000	3	5000	next	other	0
+Femke_lsb	420	Picture	consistent	9132018	5166	2	10500	3	5000	next	hit	627
+Femke_lsb	420	Response	16	9142423	15571	2
+Femke_lsb	421	Picture	pos_feedback	9147684	5166	2	15000	3	5000	next	other	0
+Femke_lsb	422	Picture	consistent	9175516	5166	1	6333	2	5000	next	hit	630
+Femke_lsb	422	Response	16	9181756	11406	1
+Femke_lsb	423	Picture	pos_feedback	9187016	5167	1	14999	2	5000	next	other	0
+Femke_lsb	424	Picture	consistent	9217347	5166	2	6333	3	5000	next	hit	633
+Femke_lsb	424	Response	32	9223578	11397	1
+Femke_lsb	425	Picture	pos_feedback	9228847	5167	1	14999	2	5000	next	other	0
+Femke_lsb	426	Picture	consistent	9254179	5167	1	5999	3	5000	next	hit	636
+Femke_lsb	426	Response	32	9260014	11002	1
+Femke_lsb	427	Picture	pos_feedback	9265345	5167	1	14999	2	5000	next	other	0
+Femke_lsb	428	Picture	consistent	9293177	5167	1	8666	2	5000	next	hit	639
+Femke_lsb	428	Response	16	9301716	13706	1
+Femke_lsb	429	Picture	pos_feedback	9307009	5166	1	14999	3	5000	next	other	0
+Femke_lsb	430	Picture	consistent	9337341	5167	1	8333	2	5000	next	hit	642
+Femke_lsb	430	Response	32	9345505	13331	1
+Femke_lsb	431	Picture	pos_feedback	9350840	5166	1	14999	3	5000	next	other	0
+Femke_lsb	432	Picture	consistent	9376172	5166	1	6000	2	5000	next	hit	645
+Femke_lsb	432	Response	16	9381989	10983	2
+Femke_lsb	433	Picture	pos_feedback	9387338	5166	1	15000	2	5000	next	other	0
+Femke_lsb	434	Picture	consistent	9415170	5166	1	8333	2	5000	next	hit	648
+Femke_lsb	434	Response	16	9423344	13340	1
+Femke_lsb	435	Picture	pos_feedback	9428669	5166	2	15000	3	5000	next	other	0
+Femke_lsb	436	Picture	consistent	9459001	5166	1	8500	2	5000	next	hit	651
+Femke_lsb	436	Response	16	9467450	13615	1
+Femke_lsb	437	Picture	pos_feedback	9472667	5166	1	14999	2	5000	next	other	0
+Femke_lsb	438	Picture	consistent	9497999	5166	1	7333	2	5000	next	hit	654
+Femke_lsb	438	Response	32	9505258	12425	1
+Femke_lsb	439	Picture	pos_feedback	9510499	5167	1	14999	2	5000	next	other	0
+Femke_lsb	440	Picture	consistent	9538330	5166	2	9000	3	5000	next	hit	657
+Femke_lsb	440	Response	16	9547240	14076	2
+Femke_lsb	441	Picture	pos_feedback	9552496	5166	1	14999	3	5000	next	other	0
+Femke_lsb	442	Picture	consistent	9582828	5166	1	8833	2	5000	next	hit	660
+Femke_lsb	442	Response	32	9591607	13945	1
+Femke_lsb	443	Picture	pos_feedback	9596827	5166	1	14999	3	5000	next	other	0
+Femke_lsb	444	Picture	consistent	9622159	5166	1	8333	2	5000	next	hit	663
+Femke_lsb	444	Response	32	9630402	13409	1
+Femke_lsb	445	Picture	pos_feedback	9635659	5167	1	14999	2	5000	next	other	0
+Femke_lsb	446	Picture	consistent	9663490	5166	2	11167	3	5000	next	hit	666
+Femke_lsb	446	Response	32	9674585	16261	1
+Femke_lsb	447	Picture	pos_feedback	9679823	5166	1	14999	2	5000	next	other	0
+Femke_lsb	448	Picture	consistent	9710155	5167	1	5999	2	5000	next	hit	669
+Femke_lsb	448	Response	32	9716052	11064	2
+Femke_lsb	449	Picture	pos_feedback	9721321	5167	1	14999	2	5000	next	other	0
+Femke_lsb	450	Picture	consistent	9746653	5167	1	6499	3	5000	next	hit	672
+Femke_lsb	450	Response	32	9753037	11551	1
+Femke_lsb	451	Picture	pos_feedback	9758319	5167	1	14999	2	5000	next	other	0
+Femke_lsb	452	Picture	consistent	9786151	5167	1	6833	2	5000	next	hit	675
+Femke_lsb	452	Response	16	9792821	11837	1
+Femke_lsb	453	Picture	pos_feedback	9798150	5166	1	14999	2	5000	next	other	0
+Femke_lsb	454	Picture	consistent	9828482	5167	1	6499	3	5000	next	hit	678
+Femke_lsb	454	Response	32	9834953	11638	1
+Femke_lsb	455	Picture	pos_feedback	9840148	5167	1	14999	2	5000	next	other	0
+Femke_lsb	456	Picture	consistent	9865480	5167	1	6833	2	5000	next	hit	681
+Femke_lsb	456	Response	32	9872126	11813	1
+Femke_lsb	457	Picture	pos_feedback	9877479	5166	1	14999	2	5000	next	other	0
+Femke_lsb	458	Picture	consistent	9905311	5166	1	7166	2	5000	next	hit	684
+Femke_lsb	458	Response	32	9912437	12292	1
+Femke_lsb	459	Picture	pos_feedback	9917644	5167	1	14999	2	5000	next	other	0
+Femke_lsb	460	Picture	consistent	9947975	5166	2	6333	3	5000	next	hit	687
+Femke_lsb	460	Response	16	9954133	11324	1
+Femke_lsb	461	Picture	pos_feedback	9959475	5167	1	14999	2	5000	next	other	0
+Femke_lsb	462	Picture	consistent	9984807	5167	1	8999	2	5000	next	hit	690
+Femke_lsb	462	Response	16	9993719	14079	2
+Femke_lsb	463	Picture	pos_feedback	9998973	5167	1	14999	2	5000	next	other	0
+Femke_lsb	464	Quit		10149498	125360

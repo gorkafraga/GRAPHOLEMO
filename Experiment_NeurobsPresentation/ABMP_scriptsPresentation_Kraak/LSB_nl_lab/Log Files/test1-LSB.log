@@ -1,0 +1,40 @@
+Scenario - 
+Logfile written - 02/23/2017 10:50:51
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test1	1	Response	3	21526	11193	1
+test1	2	Response	3	22956	1290	1
+test1	3	Picture	consistent	28165	5166	1	10167	2	5000	next	hit	4
+test1	3	Response	16	38297	15298	1
+test1	4	Picture	pos_feedback	43498	5166	1	14999	2	5000	next	other	0
+test1	5	Response	32	68482	4818	1
+test1	5	Picture	consistent	68830	5166	1	7000	2	5000	next	hit	8
+test1	5	Response	32	75649	11985	1
+test1	6	Picture	pos_feedback	80996	5166	1	15000	2	5000	next	other	0
+test1	7	Picture	consistent	108828	5166	2	20000	3	5000	next	miss	0
+test1	8	Picture	pos_feedback	133994	5166	1	14999	3	5000	next	other	0
+test1	9	Picture	consistent	164326	5166	1	19999	2	5000	next	miss	0
+test1	10	Picture	pos_feedback	189492	5167	1	14999	2	5000	next	other	0
+test1	11	Picture	consistent	214824	5167	1	19999	2	5000	next	miss	0
+test1	12	Picture	pos_feedback	239989	5166	2	15000	3	5000	next	other	0
+test1	13	Picture	consistent	267822	5167	1	19999	2	5000	next	miss	0
+test1	14	Picture	pos_feedback	292987	5166	1	15000	2	5000	next	other	0
+test1	15	Picture	consistent	323319	5166	1	19999	2	5000	next	incorrect	19
+test1	15	Response	3	342172	24019	1
+test1	16	Picture	pos_feedback	348485	5167	1	14999	2	5000	next	other	0
+test1	17	Picture	consistent	373817	5166	1	19999	2	5000	next	miss	0
+test1	18	Picture	pos_feedback	398983	5167	1	14999	2	5000	next	other	0
+test1	19	Picture	consistent	426815	5167	1	19999	2	5000	next	miss	0
+test1	20	Picture	pos_feedback	451980	5166	1	15000	2	5000	next	other	0
+test1	21	Picture	consistent	482312	5166	1	19999	3	5000	next	miss	0
+test1	22	Picture	pos_feedback	507478	5167	1	14999	2	5000	next	other	0
+test1	23	Picture	consistent	532810	5166	1	19999	2	5000	next	miss	0
+test1	24	Picture	pos_feedback	557976	5167	1	14999	2	5000	next	other	0
+test1	25	Picture	consistent	585808	5167	1	19999	2	5000	next	miss	0
+test1	26	Picture	pos_feedback	610973	5166	2	15000	3	5000	next	other	0
+test1	26	Response	3	618647	12840	1
+test1	27	Picture	consistent	641305	5166	2	20000	3	5000	next	miss	0
+test1	28	Picture	pos_feedback	666471	5166	1	14999	2	5000	next	other	0
+test1	29	Picture	consistent	691803	5166	1	12200	2	5000	next	miss	0
+test1	29	Quit		703606	16969

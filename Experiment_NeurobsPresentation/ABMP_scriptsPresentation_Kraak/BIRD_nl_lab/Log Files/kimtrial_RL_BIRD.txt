@@ -1,0 +1,15 @@
+block	trial	Vstim	Astim	match	C/I	resp	result	RT	fb	V-file	A-file
+RL
+
+0	1	1	1	1	C	0	0	0	0	poli_8sides 24_whiteLine3.jpg	Practice1_b27_cut1_stereo_44KHz.wav
+0	2	2	4	0	C	0	0	0	0	poli_8sides 23_whiteLine3.jpg	Practice4_b26_stereo_44KHz.wav
+0	3	2	3	1	C	0	0	0	0	poli_8sides 23_whiteLine3.jpg	Practice3_b26_cut1_stereo_44KHz.wav
+0	4	1	2	0	C	0	0	0	0	poli_8sides 24_whiteLine3.jpg	Practice2_b27_cut2_stereo_44KHz.wav
+0	5	1	1	1	C	0	0	0	0	poli_8sides 24_whiteLine3.jpg	Practice1_b27_cut1_stereo_44KHz.wav
+0	6	1	2	0	C	0	0	0	0	poli_8sides 24_whiteLine3.jpg	Practice2_b27_cut2_stereo_44KHz.wav
+0	7	2	4	0	C	0	0	0	0	poli_8sides 23_whiteLine3.jpg	Practice4_b26_stereo_44KHz.wav
+0	8	2	3	1	C	0	0	0	0	poli_8sides 23_whiteLine3.jpg	Practice3_b26_cut1_stereo_44KHz.wav
+0	9	1	1	1	C	0	0	0	0	poli_8sides 24_whiteLine3.jpg	Practice1_b27_cut1_stereo_44KHz.wav
+0	10	2	4	0	C	0	0	0	0	poli_8sides 23_whiteLine3.jpg	Practice4_b26_stereo_44KHz.wav
+0	11	1	2	0	C	2	1	199	1	poli_8sides 24_whiteLine3.jpg	Practice2_b27_cut2_stereo_44KHz.wav
+0	12	2	3	1	C	0	0	0	0	poli_8sides 23_whiteLine3.jpg	Practice3_b26_cut1_stereo_44KHz.wav

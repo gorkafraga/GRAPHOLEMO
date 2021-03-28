@@ -1,0 +1,125 @@
+Scenario - FeedLearn_A.sce
+Logfile written - 10/06/2020 14:24:20
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+jj	0	Pulse	199	0	0	NA
+jj	0	Pulse	199	10000	10000	NA
+jj	1	Pulse	199	20000	9665	NA
+jj	1	Response	16	20645	10310	0
+jj	2	Picture	fix	21063	0	1	8717	1	0	next	other	0
+jj	4	Picture	stim	29780	0	1	25144	1	0	25000	miss	0
+jj	4	Pulse	199	30000	220	NA
+jj	4	Pulse	199	40000	10220	NA
+jj	4	Pulse	199	50000	20220	NA
+jj	4	Response	32	54895	25115	0
+jj	5	Picture	fix2	54924	0	1	6035	1	0	next	other	0
+jj	5	Pulse	199	60000	5076	NA
+jj	6	Picture	feedback	60959	0	1	20115	1	0	next	other	0
+jj	6	Pulse	199	70000	9041	NA
+jj	6	Pulse	199	80000	19041	NA
+jj	7	Picture	fix	81074	0	1	22127	1	0	next	other	0
+jj	7	Pulse	199	90000	8926	NA
+jj	7	Pulse	199	100000	18926	NA
+jj	9	Picture	stim	103201	0	1	25144	1	0	25000	hit	22
+jj	9	Pulse	199	110000	6799	NA
+jj	9	Pulse	199	120000	16799	NA
+jj	9	Response	16	121788	18586	0
+jj	10	Picture	fix2	128513	0	1	838	1	0	next	other	0
+jj	11	Picture	feedback	129351	0	1	20116	1	0	next	other	0
+jj	11	Pulse	199	130000	649	NA
+jj	11	Pulse	199	140000	10649	NA
+jj	12	Picture	fix	149467	0	1	14751	1	0	next	other	0
+jj	12	Pulse	199	150000	533	NA
+jj	12	Pulse	199	160000	10533	NA
+jj	14	Picture	stim	164218	0	1	25144	1	0	25000	incorrect	31
+jj	14	Response	32	168752	4533	0
+jj	14	Pulse	199	170000	5782	NA
+jj	14	Pulse	199	180000	15782	NA
+jj	15	Picture	fix2	189363	0	1	10058	1	0	next	other	0
+jj	15	Pulse	199	190000	637	NA
+jj	16	Picture	feedback	199420	0	1	20115	1	0	next	other	0
+jj	16	Pulse	199	200000	580	NA
+jj	16	Pulse	199	210000	10580	NA
+jj	17	Picture	fix	219536	0	1	11399	1	0	next	other	0
+jj	17	Pulse	199	220000	464	NA
+jj	17	Pulse	199	230000	10464	NA
+jj	19	Picture	stim	230935	0	1	25144	1	0	25000	hit	44
+jj	19	Pulse	199	240000	9065	NA
+jj	19	Response	16	244549	13615	0
+jj	19	Pulse	199	250000	19065	NA
+jj	20	Picture	fix2	256247	0	1	11399	1	0	next	other	0
+jj	20	Pulse	199	260000	3753	NA
+jj	21	Picture	feedback	267645	0	1	20115	1	0	next	other	0
+jj	21	Pulse	199	270000	2355	NA
+jj	21	Pulse	199	280000	12355	NA
+jj	22	Picture	fix	287761	0	1	11902	1	0	next	other	0
+jj	22	Pulse	199	290000	2239	NA
+jj	24	Picture	stim	299663	0	1	25144	1	0	25000	incorrect	56
+jj	24	Pulse	199	300000	337	NA
+jj	24	Pulse	199	310000	10337	NA
+jj	24	Response	32	311233	11571	0
+jj	24	Pulse	199	320000	20337	NA
+jj	25	Picture	fix2	324807	0	1	6370	1	0	next	other	0
+jj	25	Pulse	199	330000	5193	NA
+jj	26	Picture	feedback	331177	0	1	20115	1	0	next	other	0
+jj	26	Pulse	199	340000	8823	NA
+jj	26	Pulse	199	350000	18823	NA
+jj	27	Picture	fix	351292	0	1	13578	1	0	next	other	0
+jj	27	Pulse	199	360000	8708	NA
+jj	29	Picture	stim	364870	0	1	25144	1	0	25000	hit	67
+jj	29	Pulse	199	370000	5130	NA
+jj	29	Response	16	375418	10548	0
+jj	29	Pulse	199	380000	15130	NA
+jj	29	Pulse	199	390000	25130	NA
+jj	30	Picture	fix2	390182	0	1	16260	1	0	next	other	0
+jj	30	Pulse	199	400000	9818	NA
+jj	31	Picture	feedback	406442	0	1	20116	1	0	next	other	0
+jj	31	Pulse	199	410000	3558	NA
+jj	31	Pulse	199	420000	13558	NA
+jj	32	Picture	fix	426558	0	1	18942	1	0	next	other	0
+jj	32	Pulse	199	430000	3442	NA
+jj	32	Pulse	199	440000	13442	NA
+jj	34	Picture	stim	445500	0	1	25144	1	0	25000	hit	80
+jj	34	Pulse	199	450000	4500	NA
+jj	34	Response	16	452616	7116	0
+jj	34	Pulse	199	460000	14500	NA
+jj	34	Pulse	199	470000	24500	NA
+jj	35	Picture	fix2	470644	0	1	5867	1	0	next	other	0
+jj	36	Picture	feedback	476511	0	1	20116	1	0	next	other	0
+jj	36	Pulse	199	480000	3489	NA
+jj	36	Pulse	199	490000	13489	NA
+jj	37	Picture	fix	496627	0	1	12069	1	0	next	other	0
+jj	37	Pulse	199	500000	3373	NA
+jj	39	Picture	stim	508696	0	1	25144	1	0	25000	incorrect	92
+jj	39	Pulse	199	510000	1304	NA
+jj	39	Pulse	199	520000	11304	NA
+jj	39	Response	32	524903	16207	0
+jj	39	Pulse	199	530000	21304	NA
+jj	40	Picture	fix2	533840	0	1	11902	1	0	next	other	0
+jj	40	Pulse	199	540000	6160	NA
+jj	41	Picture	feedback	545742	0	1	20115	1	0	next	other	0
+jj	41	Pulse	199	550000	4258	NA
+jj	41	Pulse	199	560000	14258	NA
+jj	42	Picture	fix	565858	0	1	10393	1	0	next	other	0
+jj	42	Pulse	199	570000	4143	NA
+jj	44	Picture	stim	576250	0	1	25144	1	0	25000	incorrect	103
+jj	44	Pulse	199	580000	3750	NA
+jj	44	Response	32	587878	11627	0
+jj	44	Pulse	199	590000	13750	NA
+jj	44	Pulse	199	600000	23750	NA
+jj	45	Picture	fix2	601395	0	1	3353	1	0	next	other	0
+jj	46	Picture	feedback	604747	0	1	20115	1	0	next	other	0
+jj	46	Pulse	199	610000	5253	NA
+jj	46	Pulse	199	620000	15253	NA
+jj	47	Picture	fix	624863	0	1	12740	1	0	next	other	0
+jj	47	Pulse	199	630000	5137	NA
+jj	49	Picture	stim	637603	0	1	25144	1	0	25000	hit	114
+jj	49	Pulse	199	640000	2397	NA
+jj	49	Response	16	649751	12148	0
+jj	49	Pulse	199	650000	12397	NA
+jj	49	Pulse	199	660000	22397	NA
+jj	50	Picture	fix2	662747	0	1	3855	1	0	next	other	0
+jj	51	Picture	feedback	666603	0	1	9481	1	0	next	other	0
+jj	51	Pulse	199	670000	3397	NA
+jj	51	Quit		670175	3573	NA

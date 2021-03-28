@@ -1,0 +1,34 @@
+block	trial	Vstim	Astim	match	C/I	resp	result	RT	fb	V-file	A-file
+LR
+
+0	1	2	3	1	C	2	1	1700	1	Ⴉ	cut_g_stereo_44KHz.wav
+0	2	1	1	1	C	1	0	1588	0	Ⴞ	cut_ee_stereo_44KHz.wav
+0	3	1	2	0	C	2	0	1108	0	Ⴞ	cut_oo_stereo_44KHz.wav
+0	4	2	4	0	C	2	0	1728	0	Ⴉ	cut_eeuw_stereo_44KHz.wav
+0	5	2	3	1	C	1	0	743	0	Ⴉ	cut_g_stereo_44KHz.wav
+0	6	1	2	0	C	2	0	921	0	Ⴞ	cut_oo_stereo_44KHz.wav
+0	7	1	1	1	C	1	0	900	0	Ⴞ	cut_ee_stereo_44KHz.wav
+0	8	2	4	0	C	1	1	764	1	Ⴉ	cut_eeuw_stereo_44KHz.wav
+0	9	1	2	0	C	2	0	629	0	Ⴞ	cut_oo_stereo_44KHz.wav
+0	10	1	1	1	C	1	0	566	0	Ⴞ	cut_ee_stereo_44KHz.wav
+0	11	2	3	1	C	1	0	1066	0	Ⴉ	cut_g_stereo_44KHz.wav
+0	12	2	4	0	C	1	1	1514	1	Ⴉ	cut_eeuw_stereo_44KHz.wav
+0	13	1	1	1	C	2	1	924	1	Ⴞ	cut_ee_stereo_44KHz.wav
+0	14	2	4	0	C	1	1	995	1	Ⴉ	cut_eeuw_stereo_44KHz.wav
+0	15	2	3	1	C	1	0	1273	0	Ⴉ	cut_g_stereo_44KHz.wav
+0	16	1	2	0	C	1	1	1474	1	Ⴞ	cut_oo_stereo_44KHz.wav
+0	17	1	2	0	C	2	0	891	0	Ⴞ	cut_oo_stereo_44KHz.wav
+0	18	1	1	1	C	2	1	1391	1	Ⴞ	cut_ee_stereo_44KHz.wav
+0	19	2	4	0	C	0	0	0	0	Ⴉ	cut_eeuw_stereo_44KHz.wav
+0	20	2	3	1	C	2	1	1143	1	Ⴉ	cut_g_stereo_44KHz.wav
+0	21	1	1	1	C	2	1	874	1	Ⴞ	cut_ee_stereo_44KHz.wav
+0	22	2	3	1	C	2	1	1121	1	Ⴉ	cut_g_stereo_44KHz.wav
+0	23	1	2	0	C	1	1	659	1	Ⴞ	cut_oo_stereo_44KHz.wav
+0	24	2	4	0	C	2	0	970	0	Ⴉ	cut_eeuw_stereo_44KHz.wav
+0	25	2	4	0	C	1	1	1482	1	Ⴉ	cut_eeuw_stereo_44KHz.wav
+0	26	2	3	1	C	2	1	750	1	Ⴉ	cut_g_stereo_44KHz.wav
+0	27	1	2	0	C	1	1	524	1	Ⴞ	cut_oo_stereo_44KHz.wav
+0	28	1	1	1	C	2	1	1067	1	Ⴞ	cut_ee_stereo_44KHz.wav
+0	29	1	2	0	C	1	1	1158	1	Ⴞ	cut_oo_stereo_44KHz.wav
+0	30	2	3	1	C	2	1	921	1	Ⴉ	cut_g_stereo_44KHz.wav
+avg_resp = 1086

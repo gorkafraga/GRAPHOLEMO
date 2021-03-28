@@ -1,0 +1,123 @@
+Scenario - 
+Logfile written - 03/24/2021 14:13:01
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+cacahuete	1	Response	20	43454	21495	0
+cacahuete	2	Picture	start	43583	0	1	60011	1	0	next	other	0
+cacahuete	2	Response	20	59202	15618	0
+cacahuete	3	Response	21	72142	12939	0
+cacahuete	3	Response	21	79462	20260	0
+cacahuete	3	Pulse	199	103436	44234	0
+cacahuete	3	Picture	100	103595	44392	1	50121	1	0	50000	other	0
+cacahuete	3	Response	21	105041	45839	0
+cacahuete	4	Picture	90	153884	0	1	7040	1	0	7000	other	0
+cacahuete	5	Picture	40	161092	0	1	3017	1	0	2860	other	0
+cacahuete	6	Picture	90	164277	0	1	7040	1	0	7000	other	0
+cacahuete	7	Picture	40	171485	0	1	2179	1	0	2130	other	0
+cacahuete	8	Picture	90	173832	0	1	7040	1	0	7000	other	0
+cacahuete	9	Picture	40	181040	0	1	3353	1	0	3310	other	0
+cacahuete	10	Picture	90	184560	0	1	7040	1	0	7000	other	0
+cacahuete	11	Picture	40	191768	0	1	3688	1	0	3660	other	0
+cacahuete	12	Picture	90	195624	0	1	7040	1	0	7000	other	0
+cacahuete	13	Picture	40	202832	0	1	1844	1	0	1780	other	0
+cacahuete	14	Picture	90	204843	0	1	7040	1	0	7000	other	0
+cacahuete	15	Picture	40	212051	0	1	2850	1	0	2690	other	0
+cacahuete	16	Picture	90	215069	0	1	7040	1	0	7000	other	0
+cacahuete	17	Picture	40	222277	0	1	2514	1	0	2490	other	0
+cacahuete	18	Picture	90	224959	0	1	7040	1	0	7000	other	0
+cacahuete	19	Picture	40	232167	0	1	4526	1	0	4350	other	0
+cacahuete	20	Picture	90	236860	0	1	7040	1	0	7000	other	0
+cacahuete	21	Picture	40	244068	0	1	2179	1	0	2140	other	0
+cacahuete	22	Picture	90	246415	0	1	7040	1	0	7000	other	0
+cacahuete	23	Picture	40	253623	0	1	2012	1	0	1990	other	0
+cacahuete	24	Picture	50	255803	0	1	30173	1	0	next	other	0
+cacahuete	25	Picture	60	285976	0	1	7040	1	0	7000	other	0
+cacahuete	26	Picture	40	293184	0	1	2012	1	0	1990	other	0
+cacahuete	27	Picture	60	295363	0	1	7040	1	0	7000	other	0
+cacahuete	28	Picture	40	302571	0	1	2850	1	0	2690	other	0
+cacahuete	29	Picture	60	305589	0	1	7040	1	0	7000	other	0
+cacahuete	30	Picture	40	312797	0	1	2514	1	0	2490	other	0
+cacahuete	31	Picture	60	315479	0	1	7040	1	0	7000	other	0
+cacahuete	32	Picture	40	322687	0	1	3688	1	0	3660	other	0
+cacahuete	33	Picture	60	326542	0	1	7041	1	0	7000	other	0
+cacahuete	34	Picture	40	333750	0	1	4526	1	0	4350	other	0
+cacahuete	35	Picture	60	338444	0	1	7040	1	0	7000	other	0
+cacahuete	36	Picture	40	345652	0	1	2179	1	0	2130	other	0
+cacahuete	37	Picture	60	347999	0	1	7040	1	0	7000	other	0
+cacahuete	38	Picture	40	355207	0	1	3353	1	0	3310	other	0
+cacahuete	39	Picture	60	358727	0	1	7040	1	0	7000	other	0
+cacahuete	40	Picture	40	365935	0	1	2179	1	0	2140	other	0
+cacahuete	41	Picture	65	368282	0	1	7040	1	0	7000	miss	0
+cacahuete	42	Picture	40	375490	0	1	3017	1	0	2860	other	0
+cacahuete	43	Picture	60	378675	0	1	7040	1	0	7000	other	0
+cacahuete	44	Picture	40	385883	0	1	1844	1	0	1780	other	0
+cacahuete	45	Picture	50	387895	0	1	50121	1	0	next	other	0
+cacahuete	46	Picture	80	438016	0	1	7040	1	0	7000	other	0
+cacahuete	47	Picture	40	445224	0	1	2012	1	0	1990	other	0
+cacahuete	48	Picture	80	447403	0	1	7040	1	0	7000	other	0
+cacahuete	49	Picture	40	454611	0	1	1844	1	0	1780	other	0
+cacahuete	50	Picture	80	456623	0	1	7040	1	0	7000	other	0
+cacahuete	51	Picture	40	463831	0	1	3017	1	0	2860	other	0
+cacahuete	52	Picture	80	467016	0	1	7040	1	0	7000	other	0
+cacahuete	53	Picture	40	474224	0	1	2179	1	0	2130	other	0
+cacahuete	54	Picture	80	476571	0	1	7040	1	0	7000	other	0
+cacahuete	55	Picture	40	483779	0	1	3688	1	0	3660	other	0
+cacahuete	56	Picture	85	487634	0	1	7041	1	0	7000	miss	0
+cacahuete	57	Picture	40	494843	0	1	2179	1	0	2140	other	0
+cacahuete	58	Picture	80	497189	0	1	7040	1	0	7000	other	0
+cacahuete	59	Picture	40	504397	0	1	3353	1	0	3310	other	0
+cacahuete	60	Picture	80	507918	0	1	7040	1	0	7000	other	0
+cacahuete	61	Picture	40	515126	0	1	2514	1	0	2490	other	0
+cacahuete	62	Picture	80	517808	0	1	7040	1	0	7000	other	0
+cacahuete	63	Picture	40	525016	0	1	4526	1	0	4350	other	0
+cacahuete	64	Picture	80	529710	0	1	7040	1	0	7000	other	0
+cacahuete	65	Picture	40	536918	0	1	2850	1	0	2690	other	0
+cacahuete	66	Picture	50	539935	0	1	70069	1	0	next	other	0
+cacahuete	67	Picture	70	610004	0	1	7040	1	0	7000	other	0
+cacahuete	68	Picture	40	617212	0	1	2514	1	0	2490	other	0
+cacahuete	69	Picture	70	619894	0	1	7040	1	0	7000	other	0
+cacahuete	70	Picture	40	627102	0	1	3353	1	0	3310	other	0
+cacahuete	71	Picture	75	630623	0	1	7040	1	0	7000	miss	0
+cacahuete	72	Picture	40	637831	0	1	3017	1	0	2860	other	0
+cacahuete	73	Picture	70	641016	0	1	7040	1	0	7000	other	0
+cacahuete	74	Picture	40	648224	0	1	4526	1	0	4350	other	0
+cacahuete	75	Picture	70	652917	0	1	7040	1	0	7000	other	0
+cacahuete	76	Picture	40	660126	0	1	3688	1	0	3660	other	0
+cacahuete	77	Picture	70	663981	0	1	7040	1	0	7000	other	0
+cacahuete	78	Picture	40	671189	0	1	2012	1	0	1990	other	0
+cacahuete	79	Picture	70	673368	0	1	7040	1	0	7000	other	0
+cacahuete	80	Picture	40	680576	0	1	2179	1	0	2140	other	0
+cacahuete	81	Picture	70	682923	0	1	7041	1	0	7000	other	0
+cacahuete	82	Picture	40	690131	0	1	1844	1	0	1780	other	0
+cacahuete	83	Picture	75	692143	0	1	7040	1	0	7000	miss	0
+cacahuete	84	Picture	40	699351	0	1	2179	1	0	2130	other	0
+cacahuete	85	Picture	70	701698	0	1	7040	1	0	7000	other	0
+cacahuete	86	Picture	40	708906	0	1	2850	1	0	2690	other	0
+cacahuete	87	Picture	50	711923	0	1	90185	1	0	next	other	0
+cacahuete	88	Picture	90	802108	0	1	7041	1	0	7000	other	0
+cacahuete	89	Picture	40	809316	0	1	2850	1	0	2690	other	0
+cacahuete	90	Picture	90	812333	0	1	7040	1	0	7000	other	0
+cacahuete	91	Picture	40	819541	0	1	1844	1	0	1780	other	0
+cacahuete	92	Picture	90	821553	0	1	7040	1	0	7000	other	0
+cacahuete	93	Picture	40	828761	0	1	4526	1	0	4350	other	0
+cacahuete	94	Picture	90	833455	0	1	7040	1	0	7000	other	0
+cacahuete	95	Picture	40	840663	0	1	2179	1	0	2140	other	0
+cacahuete	96	Picture	90	843010	0	1	7040	1	0	7000	other	0
+cacahuete	97	Picture	40	850218	0	1	3688	1	0	3660	other	0
+cacahuete	98	Picture	90	854073	0	1	7040	1	0	7000	other	0
+cacahuete	99	Picture	40	861281	0	1	3353	1	0	3310	other	0
+cacahuete	100	Picture	90	864801	0	1	7040	1	0	7000	other	0
+cacahuete	101	Picture	40	872010	0	1	3017	1	0	2860	other	0
+cacahuete	102	Picture	95	875194	0	1	7040	1	0	7000	miss	0
+cacahuete	103	Picture	40	882402	0	1	2515	1	0	2490	other	0
+cacahuete	104	Picture	90	885085	0	1	7040	1	0	7000	other	0
+cacahuete	105	Picture	40	892293	0	1	2179	1	0	2130	other	0
+cacahuete	106	Picture	90	894640	0	1	7040	1	0	7000	other	0
+cacahuete	107	Picture	40	901848	0	1	2012	1	0	1990	other	0
+cacahuete	108	Picture	50	904027	0	1	90185	1	0	next	other	0
+cacahuete	109	Picture	60	994212	0	1	7040	1	0	7000	other	0
+cacahuete	110	Picture	40	1001420	0	1	2011	1	0	1990	other	0
+cacahuete	111	Picture	60	1003599	0	1	7041	1	0	7000	other	0
+cacahuete	112	Picture	40	1010807	0	1	29569	1	0	3660	other	0
+cacahuete	112	Quit		1012080	1273	NA

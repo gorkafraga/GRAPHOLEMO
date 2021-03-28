@@ -1,0 +1,1233 @@
+Scenario - 
+Logfile written - 03/10/2021 18:13:34
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+pepito	0	Pulse	199	0	0	NA
+pepito	1	Pulse	199	10000	9833	NA
+pepito	1	Pulse	199	20000	19833	NA
+pepito	1	Pulse	199	30000	29833	NA
+pepito	1	Response	21	37728	37561	0
+pepito	2	Pulse	199	40000	2116	NA
+pepito	2	Response	21	42835	4951	0
+pepito	3	Picture	100	42913	78	1	50121	1	0	50000	other	0
+pepito	3	Pulse	199	50000	7165	NA
+pepito	3	Pulse	199	60000	17165	NA
+pepito	3	Pulse	199	70000	27165	NA
+pepito	3	Pulse	199	80000	37165	NA
+pepito	3	Pulse	199	90000	47165	NA
+pepito	4	Picture	90	93202	0	1	7040	1	0	7000	other	0
+pepito	4	Pulse	199	100000	6798	NA
+pepito	5	Picture	40	100410	0	1	2179	1	0	2140	other	0
+pepito	6	Picture	90	102757	0	1	7040	1	0	7000	other	0
+pepito	7	Picture	40	109965	0	1	3017	1	0	2860	other	0
+pepito	7	Pulse	199	110000	35	NA
+pepito	8	Picture	90	113150	0	1	7040	1	0	7000	other	0
+pepito	8	Pulse	199	120000	6850	NA
+pepito	9	Picture	40	120358	0	1	2179	1	0	1990	other	0
+pepito	10	Picture	90	122705	0	1	7041	1	0	7000	other	0
+pepito	11	Picture	40	129913	0	1	2514	1	0	2490	other	0
+pepito	11	Pulse	199	130000	87	NA
+pepito	12	Picture	90	132595	0	1	7040	1	0	7000	other	0
+pepito	13	Picture	40	139803	0	1	3688	1	0	3660	other	0
+pepito	13	Pulse	199	140000	197	NA
+pepito	14	Picture	90	143658	0	1	7040	1	0	7000	other	0
+pepito	14	Pulse	199	150000	6342	NA
+pepito	15	Picture	40	150866	0	1	2850	1	0	2690	other	0
+pepito	16	Picture	90	153884	0	1	7040	1	0	7000	other	0
+pepito	16	Pulse	199	160000	6116	NA
+pepito	17	Picture	40	161092	0	1	3353	1	0	3310	other	0
+pepito	18	Picture	90	164612	0	1	7040	1	0	7000	other	0
+pepito	18	Pulse	199	170000	5388	NA
+pepito	19	Picture	40	171820	0	1	1844	1	0	1780	other	0
+pepito	20	Picture	90	173832	0	1	7040	1	0	7000	other	0
+pepito	20	Pulse	199	180000	6168	NA
+pepito	21	Picture	40	181040	0	1	4526	1	0	4350	other	0
+pepito	22	Picture	90	185733	0	1	7040	1	0	7000	other	0
+pepito	22	Pulse	199	190000	4267	NA
+pepito	23	Picture	40	192941	0	1	2179	1	0	2130	other	0
+pepito	24	Picture	50	195288	0	1	30173	1	0	next	other	0
+pepito	24	Pulse	199	200000	4712	NA
+pepito	24	Pulse	199	210000	14712	NA
+pepito	24	Pulse	199	220000	24712	NA
+pepito	25	Picture	60	225462	0	1	7040	1	0	7000	other	0
+pepito	25	Pulse	199	230000	4538	NA
+pepito	26	Picture	40	232670	0	1	2179	1	0	1990	other	0
+pepito	27	Picture	60	235017	0	1	7040	1	0	7000	other	0
+pepito	27	Pulse	199	240000	4983	NA
+pepito	28	Picture	40	242225	0	1	3353	1	0	3310	other	0
+pepito	29	Picture	65	245745	0	1	7040	1	0	7000	miss	0
+pepito	29	Pulse	199	250000	4255	NA
+pepito	30	Picture	40	252953	0	1	3688	1	0	3660	other	0
+pepito	31	Picture	60	256808	0	1	7040	1	0	7000	other	0
+pepito	31	Pulse	199	260000	3192	NA
+pepito	32	Picture	40	264016	0	1	3017	1	0	2860	other	0
+pepito	33	Picture	60	267201	0	1	7040	1	0	7000	other	0
+pepito	33	Pulse	199	270000	2799	NA
+pepito	34	Picture	40	274409	0	1	2850	1	0	2690	other	0
+pepito	35	Picture	60	277427	0	1	7041	1	0	7000	other	0
+pepito	35	Pulse	199	280000	2573	NA
+pepito	36	Picture	40	284635	0	1	2179	1	0	2130	other	0
+pepito	37	Picture	60	286982	0	1	7040	1	0	7000	other	0
+pepito	37	Pulse	199	290000	3018	NA
+pepito	38	Picture	40	294190	0	1	1844	1	0	1780	other	0
+pepito	39	Picture	60	296201	0	1	7040	1	0	7000	other	0
+pepito	39	Pulse	199	300000	3799	NA
+pepito	40	Picture	40	303409	0	1	2514	1	0	2490	other	0
+pepito	41	Picture	65	306091	0	1	7041	1	0	7000	miss	0
+pepito	41	Pulse	199	310000	3909	NA
+pepito	42	Picture	40	313300	0	1	4526	1	0	4350	other	0
+pepito	43	Picture	60	317993	0	1	7040	1	0	7000	other	0
+pepito	43	Pulse	199	320000	2007	NA
+pepito	44	Picture	40	325201	0	1	2179	1	0	2140	other	0
+pepito	45	Picture	50	327548	0	1	50121	1	0	next	other	0
+pepito	45	Pulse	199	330000	2452	NA
+pepito	45	Pulse	199	340000	12452	NA
+pepito	45	Pulse	199	350000	22452	NA
+pepito	45	Pulse	199	360000	32452	NA
+pepito	45	Pulse	199	370000	42452	NA
+pepito	46	Picture	80	377669	0	1	7040	1	0	7000	other	0
+pepito	46	Pulse	199	380000	2331	NA
+pepito	47	Picture	40	384878	0	1	2514	1	0	2490	other	0
+pepito	48	Picture	80	387560	0	1	7040	1	0	7000	other	0
+pepito	48	Pulse	199	390000	2440	NA
+pepito	49	Picture	40	394768	0	1	2850	1	0	2690	other	0
+pepito	50	Picture	85	397785	0	1	7040	1	0	7000	miss	0
+pepito	50	Pulse	199	400000	2215	NA
+pepito	51	Picture	40	404993	0	1	3017	1	0	2860	other	0
+pepito	52	Picture	80	408178	0	1	7040	1	0	7000	other	0
+pepito	52	Pulse	199	410000	1822	NA
+pepito	53	Picture	40	415386	0	1	2179	1	0	2130	other	0
+pepito	54	Picture	80	417733	0	1	7040	1	0	7000	other	0
+pepito	54	Pulse	199	420000	2267	NA
+pepito	55	Picture	40	424941	0	1	3688	1	0	3660	other	0
+pepito	56	Picture	80	428796	0	1	7040	1	0	7000	other	0
+pepito	56	Pulse	199	430000	1204	NA
+pepito	57	Picture	40	436005	0	1	4526	1	0	4350	other	0
+pepito	57	Pulse	199	440000	3995	NA
+pepito	58	Picture	80	440698	0	1	7041	1	0	7000	other	0
+pepito	59	Picture	40	447906	0	1	1844	1	0	1780	other	0
+pepito	60	Picture	80	449918	0	1	7040	1	0	7000	other	0
+pepito	60	Pulse	199	450000	82	NA
+pepito	61	Picture	40	457126	0	1	3353	1	0	3310	other	0
+pepito	61	Pulse	199	460000	2874	NA
+pepito	62	Picture	85	460646	0	1	7040	1	0	7000	miss	0
+pepito	63	Picture	40	467854	0	1	2179	1	0	2140	other	0
+pepito	63	Pulse	199	470000	2146	NA
+pepito	64	Picture	80	470201	0	1	7041	1	0	7000	other	0
+pepito	65	Picture	40	477409	0	1	2179	1	0	1990	other	0
+pepito	66	Picture	50	479756	0	1	70069	1	0	next	other	0
+pepito	66	Pulse	199	480000	244	NA
+pepito	66	Pulse	199	490000	10244	NA
+pepito	66	Pulse	199	500000	20244	NA
+pepito	66	Pulse	199	510000	30244	NA
+pepito	66	Pulse	199	520000	40244	NA
+pepito	66	Pulse	199	530000	50244	NA
+pepito	66	Pulse	199	540000	60244	NA
+pepito	67	Picture	70	549825	0	1	7040	1	0	7000	other	0
+pepito	67	Pulse	199	550000	175	NA
+pepito	68	Picture	40	557033	0	1	3017	1	0	2860	other	0
+pepito	68	Pulse	199	560000	2967	NA
+pepito	69	Picture	70	560218	0	1	7040	1	0	7000	other	0
+pepito	70	Picture	40	567426	0	1	3688	1	0	3660	other	0
+pepito	70	Pulse	199	570000	2574	NA
+pepito	71	Picture	70	571282	0	1	7040	1	0	7000	other	0
+pepito	72	Picture	40	578490	0	1	2179	1	0	2130	other	0
+pepito	72	Pulse	199	580000	1510	NA
+pepito	73	Picture	70	580837	0	1	7041	1	0	7000	other	0
+pepito	74	Picture	40	588045	0	1	4526	1	0	4350	other	0
+pepito	74	Pulse	199	590000	1955	NA
+pepito	75	Picture	70	592738	0	1	7040	1	0	7000	other	0
+pepito	76	Picture	40	599946	0	1	2514	1	0	2490	other	0
+pepito	76	Pulse	199	600000	54	NA
+pepito	77	Picture	70	602629	0	1	7040	1	0	7000	other	0
+pepito	78	Picture	40	609837	0	1	1844	1	0	1780	other	0
+pepito	78	Pulse	199	610000	163	NA
+pepito	79	Picture	70	611848	0	1	7040	1	0	7000	other	0
+pepito	80	Picture	40	619056	0	1	2179	1	0	2140	other	0
+pepito	80	Pulse	199	620000	944	NA
+pepito	81	Picture	75	621403	0	1	7040	1	0	7000	miss	0
+pepito	82	Picture	40	628611	0	1	3353	1	0	3310	other	0
+pepito	82	Pulse	199	630000	1389	NA
+pepito	83	Picture	75	632131	0	1	7040	1	0	7000	miss	0
+pepito	84	Picture	40	639339	0	1	2179	1	0	1990	other	0
+pepito	84	Pulse	199	640000	661	NA
+pepito	85	Picture	70	641686	0	1	7040	1	0	7000	other	0
+pepito	86	Picture	40	648894	0	1	2850	1	0	2690	other	0
+pepito	86	Pulse	199	650000	1106	NA
+pepito	87	Picture	50	651912	0	1	90185	1	0	next	other	0
+pepito	87	Pulse	199	660000	8088	NA
+pepito	87	Pulse	199	670000	18088	NA
+pepito	87	Pulse	199	680000	28088	NA
+pepito	87	Pulse	199	690000	38088	NA
+pepito	87	Pulse	199	700000	48088	NA
+pepito	87	Pulse	199	710000	58088	NA
+pepito	87	Pulse	199	720000	68088	NA
+pepito	87	Pulse	199	730000	78088	NA
+pepito	87	Pulse	199	740000	88088	NA
+pepito	88	Picture	90	742096	0	1	7040	1	0	7000	other	0
+pepito	89	Picture	40	749305	0	1	4526	1	0	4350	other	0
+pepito	89	Pulse	199	750000	695	NA
+pepito	90	Picture	90	753998	0	1	7040	1	0	7000	other	0
+pepito	90	Pulse	199	760000	6002	NA
+pepito	91	Picture	40	761206	0	1	2850	1	0	2690	other	0
+pepito	92	Picture	90	764224	0	1	7040	1	0	7000	other	0
+pepito	92	Pulse	199	770000	5776	NA
+pepito	93	Picture	40	771432	0	1	2179	1	0	1990	other	0
+pepito	94	Picture	95	773778	0	1	7040	1	0	7000	miss	0
+pepito	94	Pulse	199	780000	6222	NA
+pepito	95	Picture	40	780987	0	1	2179	1	0	2130	other	0
+pepito	96	Picture	90	783333	0	1	7040	1	0	7000	other	0
+pepito	96	Pulse	199	790000	6667	NA
+pepito	97	Picture	40	790541	0	1	3688	1	0	3660	other	0
+pepito	98	Picture	90	794397	0	1	7040	1	0	7000	other	0
+pepito	98	Pulse	199	800000	5603	NA
+pepito	99	Picture	40	801605	0	1	1844	1	0	1780	other	0
+pepito	100	Picture	95	803617	0	1	7040	1	0	7000	miss	0
+pepito	100	Pulse	199	810000	6383	NA
+pepito	101	Picture	40	810825	0	1	2515	1	0	2490	other	0
+pepito	102	Picture	90	813507	0	1	7040	1	0	7000	other	0
+pepito	102	Pulse	199	820000	6493	NA
+pepito	103	Picture	40	820715	0	1	3353	1	0	3310	other	0
+pepito	104	Picture	90	824235	0	1	7040	1	0	7000	other	0
+pepito	104	Pulse	199	830000	5765	NA
+pepito	105	Picture	40	831443	0	1	2179	1	0	2140	other	0
+pepito	106	Picture	90	833790	0	1	7040	1	0	7000	other	0
+pepito	106	Pulse	199	840000	6210	NA
+pepito	107	Picture	40	840998	0	1	3017	1	0	2860	other	0
+pepito	108	Picture	50	844183	0	1	90185	1	0	next	other	0
+pepito	108	Pulse	199	850000	5817	NA
+pepito	108	Pulse	199	860000	15817	NA
+pepito	108	Pulse	199	870000	25817	NA
+pepito	108	Pulse	199	880000	35817	NA
+pepito	108	Pulse	199	890000	45817	NA
+pepito	108	Pulse	199	900000	55817	NA
+pepito	108	Pulse	199	910000	65817	NA
+pepito	108	Pulse	199	920000	75817	NA
+pepito	108	Pulse	199	930000	85817	NA
+pepito	109	Picture	60	934368	0	1	7040	1	0	7000	other	0
+pepito	109	Pulse	199	940000	5632	NA
+pepito	110	Picture	40	941576	0	1	3017	1	0	2860	other	0
+pepito	111	Picture	60	944761	0	1	7040	1	0	7000	other	0
+pepito	111	Pulse	199	950000	5239	NA
+pepito	112	Picture	40	951969	0	1	3353	1	0	3310	other	0
+pepito	113	Picture	60	955489	0	1	7040	1	0	7000	other	0
+pepito	113	Pulse	199	960000	4511	NA
+pepito	114	Picture	40	962697	0	1	2179	1	0	1990	other	0
+pepito	115	Picture	65	965044	0	1	7040	1	0	7000	miss	0
+pepito	115	Pulse	199	970000	4956	NA
+pepito	116	Picture	40	972252	0	1	1844	1	0	1780	other	0
+pepito	117	Picture	60	974264	0	1	7040	1	0	7000	other	0
+pepito	117	Pulse	199	980000	5736	NA
+pepito	118	Picture	40	981472	0	1	2514	1	0	2490	other	0
+pepito	119	Picture	60	984154	0	1	7040	1	0	7000	other	0
+pepito	119	Pulse	199	990000	5846	NA
+pepito	120	Picture	40	991362	0	1	3688	1	0	3660	other	0
+pepito	121	Picture	65	995217	0	1	7040	1	0	7000	miss	0
+pepito	121	Pulse	199	1000000	4783	NA
+pepito	122	Picture	40	1002425	0	1	2179	1	0	2140	other	0
+pepito	123	Picture	60	1004772	0	1	7040	1	0	7000	other	0
+pepito	123	Pulse	199	1010000	5228	NA
+pepito	124	Picture	40	1011980	0	1	4526	1	0	4350	other	0
+pepito	125	Picture	60	1016674	0	1	7040	1	0	7000	other	0
+pepito	125	Pulse	199	1020000	3326	NA
+pepito	126	Picture	40	1023882	0	1	2179	1	0	2130	other	0
+pepito	127	Picture	60	1026229	0	1	7040	1	0	7000	other	0
+pepito	127	Pulse	199	1030000	3771	NA
+pepito	128	Picture	40	1033437	0	1	2850	1	0	2690	other	0
+pepito	129	Picture	50	1036454	0	1	70069	1	0	next	other	0
+pepito	129	Pulse	199	1040000	3546	NA
+pepito	129	Pulse	199	1050000	13546	NA
+pepito	129	Pulse	199	1060000	23546	NA
+pepito	129	Pulse	199	1070000	33546	NA
+pepito	129	Pulse	199	1080000	43546	NA
+pepito	129	Pulse	199	1090000	53546	NA
+pepito	129	Pulse	199	1100000	63546	NA
+pepito	130	Picture	80	1106524	0	1	7040	1	0	7000	other	0
+pepito	130	Pulse	199	1110000	3476	NA
+pepito	131	Picture	40	1113732	0	1	2179	1	0	2130	other	0
+pepito	132	Picture	80	1116078	0	1	7040	1	0	7000	other	0
+pepito	132	Pulse	199	1120000	3922	NA
+pepito	133	Picture	40	1123286	0	1	3688	1	0	3660	other	0
+pepito	134	Picture	80	1127142	0	1	7040	1	0	7000	other	0
+pepito	134	Pulse	199	1130000	2858	NA
+pepito	135	Picture	40	1134350	0	1	2179	1	0	2140	other	0
+pepito	136	Picture	80	1136697	0	1	7040	1	0	7000	other	0
+pepito	136	Pulse	199	1140000	3303	NA
+pepito	137	Picture	40	1143905	0	1	3017	1	0	2860	other	0
+pepito	138	Picture	85	1147090	0	1	7040	1	0	7000	miss	0
+pepito	138	Pulse	199	1150000	2910	NA
+pepito	139	Picture	40	1154298	0	1	2012	1	0	1990	other	0
+pepito	140	Picture	80	1156477	0	1	7040	1	0	7000	other	0
+pepito	140	Pulse	199	1160000	3523	NA
+pepito	141	Picture	40	1163685	0	1	1844	1	0	1780	other	0
+pepito	142	Picture	80	1165697	0	1	7040	1	0	7000	other	0
+pepito	142	Pulse	199	1170000	4303	NA
+pepito	143	Picture	40	1172905	0	1	4526	1	0	4350	other	0
+pepito	144	Picture	80	1177599	0	1	7040	1	0	7000	other	0
+pepito	144	Pulse	199	1180000	2401	NA
+pepito	145	Picture	40	1184807	0	1	2850	1	0	2690	other	0
+pepito	146	Picture	80	1187824	0	1	7040	1	0	7000	other	0
+pepito	146	Pulse	199	1190000	2176	NA
+pepito	147	Picture	40	1195032	0	1	3353	1	0	3310	other	0
+pepito	148	Picture	85	1198552	0	1	7040	1	0	7000	miss	0
+pepito	148	Pulse	199	1200000	1448	NA
+pepito	149	Picture	40	1205760	0	1	2514	1	0	2490	other	0
+pepito	150	Picture	50	1208442	0	1	50121	1	0	next	other	0
+pepito	150	Pulse	199	1210000	1558	NA
+pepito	150	Pulse	199	1220000	11558	NA
+pepito	150	Pulse	199	1230000	21558	NA
+pepito	150	Pulse	199	1240000	31558	NA
+pepito	150	Pulse	199	1250000	41558	NA
+pepito	151	Picture	70	1258564	0	1	7040	1	0	7000	other	0
+pepito	151	Pulse	199	1260000	1436	NA
+pepito	152	Picture	40	1265772	0	1	1844	1	0	1780	other	0
+pepito	153	Picture	70	1267783	0	1	7040	1	0	7000	other	0
+pepito	153	Pulse	199	1270000	2217	NA
+pepito	154	Picture	40	1274991	0	1	3353	1	0	3310	other	0
+pepito	155	Picture	70	1278512	0	1	7040	1	0	7000	other	0
+pepito	155	Pulse	199	1280000	1488	NA
+pepito	156	Picture	40	1285720	0	1	3688	1	0	3660	other	0
+pepito	157	Picture	70	1289575	0	1	7040	1	0	7000	other	0
+pepito	157	Pulse	199	1290000	425	NA
+pepito	158	Picture	40	1296783	0	1	2514	1	0	2490	other	0
+pepito	159	Picture	70	1299465	0	1	7040	1	0	7000	other	0
+pepito	159	Pulse	199	1300000	535	NA
+pepito	160	Picture	40	1306673	0	1	2179	1	0	2130	other	0
+pepito	161	Picture	70	1309020	0	1	7040	1	0	7000	other	0
+pepito	161	Pulse	199	1310000	980	NA
+pepito	162	Picture	40	1316228	0	1	3017	1	0	2860	other	0
+pepito	163	Picture	70	1319413	0	1	7040	1	0	7000	other	0
+pepito	163	Pulse	199	1320000	587	NA
+pepito	164	Picture	40	1326621	0	1	2179	1	0	2140	other	0
+pepito	165	Picture	70	1328968	0	1	7041	1	0	7000	other	0
+pepito	165	Pulse	199	1330000	1032	NA
+pepito	166	Picture	40	1336176	0	1	4526	1	0	4350	other	0
+pepito	166	Pulse	199	1340000	3824	NA
+pepito	167	Picture	70	1340870	0	1	7041	1	0	7000	other	0
+pepito	168	Picture	40	1348078	0	1	2179	1	0	1990	other	0
+pepito	168	Pulse	199	1350000	1922	NA
+pepito	169	Picture	70	1350425	0	1	7040	1	0	7000	other	0
+pepito	170	Picture	40	1357633	0	1	2850	1	0	2690	other	0
+pepito	170	Pulse	199	1360000	2367	NA
+pepito	171	Picture	50	1360650	0	1	30173	1	0	next	other	0
+pepito	171	Pulse	199	1370000	9350	NA
+pepito	171	Pulse	199	1380000	19350	NA
+pepito	171	Pulse	199	1390000	29350	NA
+pepito	172	Picture	90	1390824	0	1	7040	1	0	7000	other	0
+pepito	173	Picture	40	1398032	0	1	2179	1	0	2140	other	0
+pepito	173	Pulse	199	1400000	1968	NA
+pepito	174	Picture	90	1400378	0	1	7040	1	0	7000	other	0
+pepito	175	Picture	40	1407587	0	1	2850	1	0	2690	other	0
+pepito	175	Pulse	199	1410000	2414	NA
+pepito	176	Picture	90	1410604	0	1	7040	1	0	7000	other	0
+pepito	177	Picture	40	1417812	0	1	3688	1	0	3660	other	0
+pepito	177	Pulse	199	1420000	2188	NA
+pepito	178	Picture	95	1421667	0	1	7040	1	0	7000	miss	0
+pepito	179	Picture	40	1428875	0	1	3353	1	0	3310	other	0
+pepito	179	Pulse	199	1430000	1125	NA
+pepito	180	Picture	90	1432396	0	1	7040	1	0	7000	other	0
+pepito	181	Picture	40	1439604	0	1	3017	1	0	2860	other	0
+pepito	181	Pulse	199	1440000	396	NA
+pepito	182	Picture	95	1442789	0	1	7040	1	0	7000	miss	0
+pepito	183	Picture	40	1449997	0	1	2012	1	0	1990	other	0
+pepito	183	Pulse	199	1450000	3	NA
+pepito	184	Picture	90	1452176	0	1	7040	1	0	7000	other	0
+pepito	185	Picture	40	1459384	0	1	2514	1	0	2490	other	0
+pepito	185	Pulse	199	1460000	616	NA
+pepito	186	Picture	90	1462066	0	1	7040	1	0	7000	other	0
+pepito	187	Picture	40	1469274	0	1	2179	1	0	2130	other	0
+pepito	187	Pulse	199	1470000	726	NA
+pepito	188	Picture	90	1471621	0	1	7041	1	0	7000	other	0
+pepito	189	Picture	40	1478829	0	1	4526	1	0	4350	other	0
+pepito	189	Pulse	199	1480000	1171	NA
+pepito	190	Picture	90	1483523	0	1	7041	1	0	7000	other	0
+pepito	190	Pulse	199	1490000	6477	NA
+pepito	191	Picture	40	1490731	0	1	1844	1	0	1780	other	0
+pepito	192	Picture	50	1492742	0	1	70069	1	0	next	other	0
+pepito	192	Pulse	199	1500000	7258	NA
+pepito	192	Pulse	199	1510000	17258	NA
+pepito	192	Pulse	199	1520000	27258	NA
+pepito	192	Pulse	199	1530000	37258	NA
+pepito	192	Pulse	199	1540000	47258	NA
+pepito	192	Pulse	199	1550000	57258	NA
+pepito	192	Pulse	199	1560000	67258	NA
+pepito	193	Picture	60	1562812	0	1	7040	1	0	7000	other	0
+pepito	193	Pulse	199	1570000	7188	NA
+pepito	194	Picture	40	1570020	0	1	2179	1	0	2140	other	0
+pepito	195	Picture	60	1572367	0	1	7040	1	0	7000	other	0
+pepito	196	Picture	40	1579575	0	1	2850	1	0	2690	other	0
+pepito	196	Pulse	199	1580000	425	NA
+pepito	197	Picture	65	1582592	0	1	7040	1	0	7000	miss	0
+pepito	198	Picture	40	1589800	0	1	4526	1	0	4350	other	0
+pepito	198	Pulse	199	1590000	200	NA
+pepito	199	Picture	60	1594494	0	1	7040	1	0	7000	other	0
+pepito	199	Pulse	199	1600000	5506	NA
+pepito	200	Picture	40	1601702	0	1	3017	1	0	2860	other	0
+pepito	201	Picture	60	1604887	0	1	7040	1	0	7000	other	0
+pepito	201	Pulse	199	1610000	5113	NA
+pepito	202	Picture	40	1612095	0	1	3353	1	0	3310	other	0
+pepito	203	Picture	60	1615615	0	1	7040	1	0	7000	other	0
+pepito	203	Pulse	199	1620000	4385	NA
+pepito	204	Picture	40	1622823	0	1	3688	1	0	3660	other	0
+pepito	205	Picture	60	1626679	0	1	7040	1	0	7000	other	0
+pepito	205	Pulse	199	1630000	3321	NA
+pepito	206	Picture	40	1633887	0	1	2179	1	0	2130	other	0
+pepito	207	Picture	60	1636234	0	1	7040	1	0	7000	other	0
+pepito	207	Pulse	199	1640000	3766	NA
+pepito	208	Picture	40	1643442	0	1	2514	1	0	2490	other	0
+pepito	209	Picture	65	1646124	0	1	7040	1	0	7000	miss	0
+pepito	209	Pulse	199	1650000	3876	NA
+pepito	210	Picture	40	1653332	0	1	1844	1	0	1780	other	0
+pepito	211	Picture	60	1655343	0	1	7041	1	0	7000	other	0
+pepito	211	Pulse	199	1660000	4657	NA
+pepito	212	Picture	40	1662551	0	1	2179	1	0	1990	other	0
+pepito	213	Picture	50	1664898	0	1	30173	1	0	next	other	0
+pepito	213	Pulse	199	1670000	5102	NA
+pepito	213	Pulse	199	1680000	15102	NA
+pepito	213	Pulse	199	1690000	25102	NA
+pepito	214	Picture	80	1695072	0	1	7040	1	0	7000	other	0
+pepito	214	Pulse	199	1700000	4928	NA
+pepito	215	Picture	40	1702280	0	1	2012	1	0	1990	other	0
+pepito	216	Picture	80	1704459	0	1	7040	1	0	7000	other	0
+pepito	216	Pulse	199	1710000	5541	NA
+pepito	217	Picture	40	1711667	0	1	2179	1	0	2140	other	0
+pepito	218	Picture	80	1714014	0	1	7040	1	0	7000	other	0
+pepito	218	Pulse	199	1720000	5986	NA
+pepito	219	Picture	40	1721222	0	1	2179	1	0	2130	other	0
+pepito	220	Picture	80	1723569	0	1	7040	1	0	7000	other	0
+pepito	220	Pulse	199	1730000	6431	NA
+pepito	221	Picture	40	1730777	0	1	2850	1	0	2690	other	0
+pepito	222	Picture	80	1733794	0	1	7040	1	0	7000	other	0
+pepito	222	Pulse	199	1740000	6206	NA
+pepito	223	Picture	40	1741002	0	1	4526	1	0	4350	other	0
+pepito	224	Picture	80	1745696	0	1	7040	1	0	7000	other	0
+pepito	224	Pulse	199	1750000	4304	NA
+pepito	225	Picture	40	1752904	0	1	3017	1	0	2860	other	0
+pepito	226	Picture	80	1756089	0	1	7041	1	0	7000	other	0
+pepito	226	Pulse	199	1760000	3911	NA
+pepito	227	Picture	40	1763297	0	1	2514	1	0	2490	other	0
+pepito	228	Picture	80	1765979	0	1	7040	1	0	7000	other	0
+pepito	228	Pulse	199	1770000	4021	NA
+pepito	229	Picture	40	1773187	0	1	3353	1	0	3310	other	0
+pepito	230	Picture	80	1776707	0	1	7040	1	0	7000	other	0
+pepito	230	Pulse	199	1780000	3293	NA
+pepito	231	Picture	40	1783915	0	1	1844	1	0	1780	other	0
+pepito	232	Picture	80	1785927	0	1	7040	1	0	7000	other	0
+pepito	232	Pulse	199	1790000	4073	NA
+pepito	233	Picture	40	1793135	0	1	3688	1	0	3660	other	0
+pepito	234	Picture	50	1796990	0	1	90185	1	0	next	other	0
+pepito	234	Pulse	199	1800000	3010	NA
+pepito	234	Pulse	199	1810000	13010	NA
+pepito	234	Pulse	199	1820000	23010	NA
+pepito	234	Pulse	199	1830000	33010	NA
+pepito	234	Pulse	199	1840000	43010	NA
+pepito	234	Pulse	199	1850000	53010	NA
+pepito	234	Pulse	199	1860000	63010	NA
+pepito	234	Pulse	199	1870000	73010	NA
+pepito	234	Pulse	199	1880000	83010	NA
+pepito	235	Picture	70	1887175	0	1	7040	1	0	7000	other	0
+pepito	235	Pulse	199	1890000	2825	NA
+pepito	236	Picture	40	1894383	0	1	2011	1	0	1990	other	0
+pepito	237	Picture	70	1896562	0	1	7040	1	0	7000	other	0
+pepito	237	Pulse	199	1900000	3438	NA
+pepito	238	Picture	40	1903771	0	1	2179	1	0	2140	other	0
+pepito	239	Picture	70	1906117	0	1	7040	1	0	7000	other	0
+pepito	239	Pulse	199	1910000	3883	NA
+pepito	240	Picture	40	1913325	0	1	2850	1	0	2690	other	0
+pepito	241	Picture	75	1916343	0	1	7040	1	0	7000	miss	0
+pepito	241	Pulse	199	1920000	3657	NA
+pepito	242	Picture	40	1923551	0	1	3688	1	0	3660	other	0
+pepito	243	Picture	70	1927406	0	1	7040	1	0	7000	other	0
+pepito	243	Pulse	199	1930000	2594	NA
+pepito	244	Picture	40	1934614	0	1	4526	1	0	4350	other	0
+pepito	245	Picture	75	1939308	0	1	7040	1	0	7000	miss	0
+pepito	245	Pulse	199	1940000	692	NA
+pepito	246	Picture	40	1946516	0	1	1844	1	0	1780	other	0
+pepito	247	Picture	70	1948528	0	1	7040	1	0	7000	other	0
+pepito	247	Pulse	199	1950000	1472	NA
+pepito	248	Picture	40	1955736	0	1	2179	1	0	2130	other	0
+pepito	249	Picture	70	1958083	0	1	7041	1	0	7000	other	0
+pepito	249	Pulse	199	1960000	1917	NA
+pepito	250	Picture	40	1965291	0	1	2515	1	0	2490	other	0
+pepito	251	Picture	70	1967973	0	1	7040	1	0	7000	other	0
+pepito	251	Pulse	199	1970000	2027	NA
+pepito	252	Picture	40	1975181	0	1	3353	1	0	3310	other	0
+pepito	253	Picture	70	1978701	0	1	7040	1	0	7000	other	0
+pepito	253	Pulse	199	1980000	1299	NA
+pepito	254	Picture	40	1985909	0	1	3017	1	0	2860	other	0
+pepito	255	Picture	50	1989094	0	1	50121	1	0	next	other	0
+pepito	255	Pulse	199	1990000	906	NA
+pepito	255	Pulse	199	2000000	10906	NA
+pepito	255	Pulse	199	2010000	20906	NA
+pepito	255	Pulse	199	2020000	30906	NA
+pepito	255	Pulse	199	2030000	40906	NA
+pepito	256	Picture	90	2039215	0	1	7040	1	0	7000	other	0
+pepito	256	Pulse	199	2040000	785	NA
+pepito	257	Picture	40	2046423	0	1	4526	1	0	4350	other	0
+pepito	257	Pulse	199	2050000	3577	NA
+pepito	258	Picture	90	2051117	0	1	7040	1	0	7000	other	0
+pepito	259	Picture	40	2058325	0	1	2514	1	0	2490	other	0
+pepito	259	Pulse	199	2060000	1675	NA
+pepito	260	Picture	95	2061007	0	1	7040	1	0	7000	miss	0
+pepito	261	Picture	40	2068215	0	1	2850	1	0	2690	other	0
+pepito	261	Pulse	199	2070000	1785	NA
+pepito	262	Picture	90	2071233	0	1	7040	1	0	7000	other	0
+pepito	263	Picture	40	2078441	0	1	2179	1	0	2140	other	0
+pepito	263	Pulse	199	2080000	1559	NA
+pepito	264	Picture	90	2080788	0	1	7040	1	0	7000	other	0
+pepito	265	Picture	40	2087996	0	1	3353	1	0	3310	other	0
+pepito	265	Pulse	199	2090000	2004	NA
+pepito	266	Picture	95	2091516	0	1	7040	1	0	7000	miss	0
+pepito	267	Picture	40	2098724	0	1	1844	1	0	1780	other	0
+pepito	267	Pulse	199	2100000	1276	NA
+pepito	268	Picture	90	2100735	0	1	7041	1	0	7000	other	0
+pepito	269	Picture	40	2107944	0	1	3688	1	0	3660	other	0
+pepito	269	Pulse	199	2110000	2056	NA
+pepito	270	Picture	90	2111799	0	1	7040	1	0	7000	other	0
+pepito	271	Picture	40	2119007	0	1	2179	1	0	1990	other	0
+pepito	271	Pulse	199	2120000	993	NA
+pepito	272	Picture	90	2121354	0	1	7040	1	0	7000	other	0
+pepito	273	Picture	40	2128562	0	1	3017	1	0	2860	other	0
+pepito	273	Pulse	199	2130000	1438	NA
+pepito	274	Picture	90	2131747	0	1	7040	1	0	7000	other	0
+pepito	275	Picture	40	2138955	0	1	2179	1	0	2130	other	0
+pepito	275	Pulse	199	2140000	1045	NA
+pepito	276	Picture	50	2141302	0	1	50121	1	0	next	other	0
+pepito	276	Pulse	199	2150000	8698	NA
+pepito	276	Pulse	199	2160000	18698	NA
+pepito	276	Pulse	199	2170000	28698	NA
+pepito	276	Pulse	199	2180000	38698	NA
+pepito	276	Pulse	199	2190000	48698	NA
+pepito	277	Picture	60	2191423	0	1	7040	1	0	7000	other	0
+pepito	278	Picture	40	2198631	0	1	2179	1	0	2140	other	0
+pepito	278	Pulse	199	2200000	1369	NA
+pepito	279	Picture	60	2200978	0	1	7041	1	0	7000	other	0
+pepito	280	Picture	40	2208186	0	1	3353	1	0	3310	other	0
+pepito	280	Pulse	199	2210000	1814	NA
+pepito	281	Picture	60	2211706	0	1	7040	1	0	7000	other	0
+pepito	282	Picture	40	2218914	0	1	2179	1	0	1990	other	0
+pepito	282	Pulse	199	2220000	1086	NA
+pepito	283	Picture	60	2221261	0	1	7040	1	0	7000	other	0
+pepito	284	Picture	40	2228469	0	1	2179	1	0	2130	other	0
+pepito	284	Pulse	199	2230000	1531	NA
+pepito	285	Picture	60	2230816	0	1	7040	1	0	7000	other	0
+pepito	286	Picture	40	2238024	0	1	2850	1	0	2690	other	0
+pepito	286	Pulse	199	2240000	1976	NA
+pepito	287	Picture	60	2241042	0	1	7040	1	0	7000	other	0
+pepito	288	Picture	40	2248250	0	1	2514	1	0	2490	other	0
+pepito	288	Pulse	199	2250000	1750	NA
+pepito	289	Picture	60	2250932	0	1	7040	1	0	7000	other	0
+pepito	290	Picture	40	2258140	0	1	4526	1	0	4350	other	0
+pepito	290	Pulse	199	2260000	1860	NA
+pepito	291	Picture	60	2262833	0	1	7040	1	0	7000	other	0
+pepito	291	Pulse	199	2270000	7167	NA
+pepito	292	Picture	40	2270042	0	1	1844	1	0	1780	other	0
+pepito	293	Picture	60	2272053	0	1	7040	1	0	7000	other	0
+pepito	294	Picture	40	2279261	0	1	3017	1	0	2860	other	0
+pepito	294	Pulse	199	2280000	739	NA
+pepito	295	Picture	60	2282446	0	1	7041	1	0	7000	other	0
+pepito	296	Picture	40	2289654	0	1	3688	1	0	3660	other	0
+pepito	296	Pulse	199	2290000	346	NA
+pepito	297	Picture	50	2293510	0	1	90185	1	0	next	other	0
+pepito	297	Pulse	199	2300000	6490	NA
+pepito	297	Pulse	199	2310000	16490	NA
+pepito	297	Pulse	199	2320000	26490	NA
+pepito	297	Pulse	199	2330000	36490	NA
+pepito	297	Pulse	199	2340000	46490	NA
+pepito	297	Pulse	199	2350000	56490	NA
+pepito	297	Pulse	199	2360000	66490	NA
+pepito	297	Pulse	199	2370000	76490	NA
+pepito	297	Pulse	199	2380000	86490	NA
+pepito	298	Picture	80	2383694	0	1	7040	1	0	7000	other	0
+pepito	298	Pulse	199	2390000	6306	NA
+pepito	299	Picture	40	2390903	0	1	3353	1	0	3310	other	0
+pepito	300	Picture	80	2394423	0	1	7040	1	0	7000	other	0
+pepito	300	Pulse	199	2400000	5577	NA
+pepito	301	Picture	40	2401631	0	1	2850	1	0	2690	other	0
+pepito	302	Picture	80	2404648	0	1	7040	1	0	7000	other	0
+pepito	302	Pulse	199	2410000	5352	NA
+pepito	303	Picture	40	2411856	0	1	2514	1	0	2490	other	0
+pepito	304	Picture	85	2414538	0	1	7040	1	0	7000	miss	0
+pepito	304	Pulse	199	2420000	5462	NA
+pepito	305	Picture	40	2421746	0	1	4526	1	0	4350	other	0
+pepito	306	Picture	80	2426440	0	1	7040	1	0	7000	other	0
+pepito	306	Pulse	199	2430000	3560	NA
+pepito	307	Picture	40	2433648	0	1	1844	1	0	1780	other	0
+pepito	308	Picture	80	2435660	0	1	7040	1	0	7000	other	0
+pepito	308	Pulse	199	2440000	4340	NA
+pepito	309	Picture	40	2442868	0	1	2012	1	0	1990	other	0
+pepito	310	Picture	85	2445047	0	1	7041	1	0	7000	miss	0
+pepito	310	Pulse	199	2450000	4953	NA
+pepito	311	Picture	40	2452255	0	1	2179	1	0	2130	other	0
+pepito	312	Picture	80	2454602	0	1	7040	1	0	7000	other	0
+pepito	312	Pulse	199	2460000	5398	NA
+pepito	313	Picture	40	2461810	0	1	2179	1	0	2140	other	0
+pepito	314	Picture	80	2464157	0	1	7040	1	0	7000	other	0
+pepito	314	Pulse	199	2470000	5843	NA
+pepito	315	Picture	40	2471365	0	1	3017	1	0	2860	other	0
+pepito	316	Picture	80	2474550	0	1	7040	1	0	7000	other	0
+pepito	316	Pulse	199	2480000	5450	NA
+pepito	317	Picture	40	2481758	0	1	3688	1	0	3660	other	0
+pepito	318	Picture	50	2485613	0	1	30173	1	0	next	other	0
+pepito	318	Pulse	199	2490000	4387	NA
+pepito	318	Pulse	199	2500000	14387	NA
+pepito	318	Pulse	199	2510000	24387	NA
+pepito	319	Picture	70	2515787	0	1	7040	1	0	7000	other	0
+pepito	319	Pulse	199	2520000	4213	NA
+pepito	320	Picture	40	2522995	0	1	3353	1	0	3310	other	0
+pepito	321	Picture	70	2526515	0	1	7040	1	0	7000	other	0
+pepito	321	Pulse	199	2530000	3485	NA
+pepito	322	Picture	40	2533723	0	1	2514	1	0	2490	other	0
+pepito	323	Picture	70	2536405	0	1	7040	1	0	7000	other	0
+pepito	323	Pulse	199	2540000	3595	NA
+pepito	324	Picture	40	2543613	0	1	3017	1	0	2860	other	0
+pepito	325	Picture	75	2546798	0	1	7041	1	0	7000	miss	0
+pepito	325	Pulse	199	2550000	3202	NA
+pepito	326	Picture	40	2554006	0	1	2179	1	0	2130	other	0
+pepito	327	Picture	70	2556353	0	1	7040	1	0	7000	other	0
+pepito	327	Pulse	199	2560000	3647	NA
+pepito	328	Picture	40	2563561	0	1	4526	1	0	4350	other	0
+pepito	329	Picture	70	2568255	0	1	7040	1	0	7000	other	0
+pepito	329	Pulse	199	2570000	1745	NA
+pepito	330	Picture	40	2575463	0	1	2850	1	0	2690	other	0
+pepito	331	Picture	75	2578480	0	1	7040	1	0	7000	miss	0
+pepito	331	Pulse	199	2580000	1520	NA
+pepito	332	Picture	40	2585688	0	1	1844	1	0	1780	other	0
+pepito	333	Picture	70	2587700	0	1	7040	1	0	7000	other	0
+pepito	333	Pulse	199	2590000	2300	NA
+pepito	334	Picture	40	2594908	0	1	3688	1	0	3660	other	0
+pepito	335	Picture	70	2598763	0	1	7040	1	0	7000	other	0
+pepito	335	Pulse	199	2600000	1237	NA
+pepito	336	Picture	40	2605972	0	1	2179	1	0	1990	other	0
+pepito	337	Picture	70	2608318	0	1	7040	1	0	7000	other	0
+pepito	337	Pulse	199	2610000	1682	NA
+pepito	338	Picture	40	2615526	0	1	2179	1	0	2140	other	0
+pepito	339	Picture	50	2617873	0	1	70069	1	0	next	other	0
+pepito	339	Pulse	199	2620000	2127	NA
+pepito	339	Pulse	199	2630000	12127	NA
+pepito	339	Pulse	199	2640000	22127	NA
+pepito	339	Pulse	199	2650000	32127	NA
+pepito	339	Pulse	199	2660000	42127	NA
+pepito	339	Pulse	199	2670000	52127	NA
+pepito	339	Pulse	199	2680000	62127	NA
+pepito	340	Picture	90	2687942	0	1	7040	1	0	7000	other	0
+pepito	340	Pulse	199	2690000	2058	NA
+pepito	341	Picture	40	2695151	0	1	2850	1	0	2690	other	0
+pepito	342	Picture	90	2698168	0	1	7040	1	0	7000	other	0
+pepito	342	Pulse	199	2700000	1832	NA
+pepito	343	Picture	40	2705376	0	1	2179	1	0	2130	other	0
+pepito	344	Picture	90	2707723	0	1	7041	1	0	7000	other	0
+pepito	344	Pulse	199	2710000	2277	NA
+pepito	345	Picture	40	2714931	0	1	2514	1	0	2490	other	0
+pepito	346	Picture	90	2717613	0	1	7040	1	0	7000	other	0
+pepito	346	Pulse	199	2720000	2387	NA
+pepito	347	Picture	40	2724821	0	1	1844	1	0	1780	other	0
+pepito	348	Picture	95	2726833	0	1	7040	1	0	7000	miss	0
+pepito	348	Pulse	199	2730000	3168	NA
+pepito	349	Picture	40	2734041	0	1	2179	1	0	1990	other	0
+pepito	350	Picture	90	2736387	0	1	7040	1	0	7000	other	0
+pepito	350	Pulse	199	2740000	3613	NA
+pepito	351	Picture	40	2743595	0	1	3017	1	0	2860	other	0
+pepito	352	Picture	95	2746780	0	1	7040	1	0	7000	miss	0
+pepito	352	Pulse	199	2750000	3220	NA
+pepito	353	Picture	40	2753989	0	1	4526	1	0	4350	other	0
+pepito	354	Picture	90	2758682	0	1	7040	1	0	7000	other	0
+pepito	354	Pulse	199	2760000	1318	NA
+pepito	355	Picture	40	2765890	0	1	3688	1	0	3660	other	0
+pepito	356	Picture	90	2769746	0	1	7040	1	0	7000	other	0
+pepito	356	Pulse	199	2770000	254	NA
+pepito	357	Picture	40	2776954	0	1	2179	1	0	2140	other	0
+pepito	358	Picture	90	2779301	0	1	7040	1	0	7000	other	0
+pepito	358	Pulse	199	2780000	699	NA
+pepito	359	Picture	40	2786509	0	1	3353	1	0	3310	other	0
+pepito	359	Pulse	199	2790000	3491	NA
+pepito	360	Picture	50	2790029	0	1	90185	1	0	next	other	0
+pepito	360	Pulse	199	2800000	9971	NA
+pepito	360	Pulse	199	2810000	19971	NA
+pepito	360	Pulse	199	2820000	29971	NA
+pepito	360	Pulse	199	2830000	39971	NA
+pepito	360	Pulse	199	2840000	49971	NA
+pepito	360	Pulse	199	2850000	59971	NA
+pepito	360	Pulse	199	2860000	69971	NA
+pepito	360	Pulse	199	2870000	79971	NA
+pepito	360	Pulse	199	2880000	89971	NA
+pepito	361	Picture	60	2880214	0	1	7040	1	0	7000	other	0
+pepito	362	Picture	40	2887422	0	1	2515	1	0	2490	other	0
+pepito	362	Pulse	199	2890000	2578	NA
+pepito	363	Picture	60	2890104	0	1	7040	1	0	7000	other	0
+pepito	364	Picture	40	2897312	0	1	2179	1	0	2140	other	0
+pepito	365	Picture	60	2899659	0	1	7040	1	0	7000	other	0
+pepito	365	Pulse	199	2900000	341	NA
+pepito	366	Picture	40	2906867	0	1	3017	1	0	2860	other	0
+pepito	366	Pulse	199	2910000	3133	NA
+pepito	367	Picture	60	2910052	0	1	7040	1	0	7000	other	0
+pepito	368	Picture	40	2917260	0	1	3353	1	0	3310	other	0
+pepito	368	Pulse	199	2920000	2740	NA
+pepito	369	Picture	60	2920780	0	1	7041	1	0	7000	other	0
+pepito	370	Picture	40	2927988	0	1	2179	1	0	1990	other	0
+pepito	370	Pulse	199	2930000	2012	NA
+pepito	371	Picture	60	2930335	0	1	7040	1	0	7000	other	0
+pepito	372	Picture	40	2937543	0	1	1844	1	0	1780	other	0
+pepito	373	Picture	60	2939555	0	1	7041	1	0	7000	other	0
+pepito	373	Pulse	199	2940000	445	NA
+pepito	374	Picture	40	2946763	0	1	3688	1	0	3660	other	0
+pepito	374	Pulse	199	2950000	3237	NA
+pepito	375	Picture	65	2950618	0	1	7040	1	0	7000	miss	0
+pepito	376	Picture	40	2957826	0	1	2850	1	0	2690	other	0
+pepito	376	Pulse	199	2960000	2174	NA
+pepito	377	Picture	65	2960844	0	1	7040	1	0	7000	miss	0
+pepito	378	Picture	40	2968052	0	1	2179	1	0	2130	other	0
+pepito	378	Pulse	199	2970000	1948	NA
+pepito	379	Picture	60	2970399	0	1	7040	1	0	7000	other	0
+pepito	380	Picture	40	2977607	0	1	4526	1	0	4350	other	0
+pepito	380	Pulse	199	2980000	2393	NA
+pepito	381	Picture	50	2982300	0	1	30173	1	0	next	other	0
+pepito	381	Pulse	199	2990000	7700	NA
+pepito	381	Pulse	199	3000000	17700	NA
+pepito	381	Pulse	199	3010000	27700	NA
+pepito	382	Picture	80	3012474	0	1	7040	1	0	7000	other	0
+pepito	383	Picture	40	3019682	0	1	4526	1	0	4350	other	0
+pepito	383	Pulse	199	3020000	318	NA
+pepito	384	Picture	80	3024375	0	1	7040	1	0	7000	other	0
+pepito	384	Pulse	199	3030000	5625	NA
+pepito	385	Picture	40	3031583	0	1	3688	1	0	3660	other	0
+pepito	386	Picture	80	3035439	0	1	7040	1	0	7000	other	0
+pepito	386	Pulse	199	3040000	4561	NA
+pepito	387	Picture	40	3042647	0	1	3353	1	0	3310	other	0
+pepito	388	Picture	80	3046167	0	1	7040	1	0	7000	other	0
+pepito	388	Pulse	199	3050000	3833	NA
+pepito	389	Picture	40	3053375	0	1	2179	1	0	2140	other	0
+pepito	390	Picture	80	3055722	0	1	7040	1	0	7000	other	0
+pepito	390	Pulse	199	3060000	4278	NA
+pepito	391	Picture	40	3062930	0	1	3017	1	0	2860	other	0
+pepito	392	Picture	80	3066115	0	1	7040	1	0	7000	other	0
+pepito	392	Pulse	199	3070000	3885	NA
+pepito	393	Picture	40	3073323	0	1	2850	1	0	2690	other	0
+pepito	394	Picture	80	3076341	0	1	7040	1	0	7000	other	0
+pepito	394	Pulse	199	3080000	3659	NA
+pepito	395	Picture	40	3083549	0	1	2012	1	0	1990	other	0
+pepito	396	Picture	80	3085728	0	1	7040	1	0	7000	other	0
+pepito	396	Pulse	199	3090000	4272	NA
+pepito	397	Picture	40	3092936	0	1	2179	1	0	2130	other	0
+pepito	398	Picture	80	3095283	0	1	7041	1	0	7000	other	0
+pepito	398	Pulse	199	3100000	4717	NA
+pepito	399	Picture	40	3102491	0	1	1844	1	0	1780	other	0
+pepito	400	Picture	80	3104502	0	1	7040	1	0	7000	other	0
+pepito	400	Pulse	199	3110000	5498	NA
+pepito	401	Picture	40	3111710	0	1	2514	1	0	2490	other	0
+pepito	402	Picture	50	3114392	0	1	50121	1	0	next	other	0
+pepito	402	Pulse	199	3120000	5608	NA
+pepito	402	Pulse	199	3130000	15608	NA
+pepito	402	Pulse	199	3140000	25608	NA
+pepito	402	Pulse	199	3150000	35608	NA
+pepito	402	Pulse	199	3160000	45608	NA
+pepito	403	Picture	70	3164514	0	1	7040	1	0	7000	other	0
+pepito	403	Pulse	199	3170000	5486	NA
+pepito	404	Picture	40	3171722	0	1	3017	1	0	2860	other	0
+pepito	405	Picture	70	3174907	0	1	7040	1	0	7000	other	0
+pepito	405	Pulse	199	3180000	5093	NA
+pepito	406	Picture	40	3182115	0	1	1844	1	0	1780	other	0
+pepito	407	Picture	70	3184126	0	1	7040	1	0	7000	other	0
+pepito	407	Pulse	199	3190000	5874	NA
+pepito	408	Picture	40	3191335	0	1	2850	1	0	2690	other	0
+pepito	409	Picture	70	3194352	0	1	7040	1	0	7000	other	0
+pepito	409	Pulse	199	3200000	5648	NA
+pepito	410	Picture	40	3201560	0	1	2514	1	0	2490	other	0
+pepito	411	Picture	75	3204242	0	1	7040	1	0	7000	miss	0
+pepito	411	Pulse	199	3210000	5758	NA
+pepito	412	Picture	40	3211450	0	1	4526	1	0	4350	other	0
+pepito	413	Picture	70	3216144	0	1	7041	1	0	7000	other	0
+pepito	413	Pulse	199	3220000	3856	NA
+pepito	414	Picture	40	3223352	0	1	3353	1	0	3310	other	0
+pepito	415	Picture	75	3226872	0	1	7040	1	0	7000	miss	0
+pepito	415	Pulse	199	3230000	3128	NA
+pepito	416	Picture	40	3234080	0	1	3688	1	0	3660	other	0
+pepito	417	Picture	70	3237936	0	1	7040	1	0	7000	other	0
+pepito	417	Pulse	199	3240000	2064	NA
+pepito	418	Picture	40	3245144	0	1	2179	1	0	2140	other	0
+pepito	419	Picture	70	3247490	0	1	7041	1	0	7000	other	0
+pepito	419	Pulse	199	3250000	2510	NA
+pepito	420	Picture	40	3254699	0	1	2179	1	0	2130	other	0
+pepito	421	Picture	70	3257045	0	1	7040	1	0	7000	other	0
+pepito	421	Pulse	199	3260000	2955	NA
+pepito	422	Picture	40	3264253	0	1	2012	1	0	1990	other	0
+pepito	423	Picture	50	3266433	0	1	70069	1	0	next	other	0
+pepito	423	Pulse	199	3270000	3567	NA
+pepito	423	Pulse	199	3280000	13567	NA
+pepito	423	Pulse	199	3290000	23567	NA
+pepito	423	Pulse	199	3300000	33567	NA
+pepito	423	Pulse	199	3310000	43567	NA
+pepito	423	Pulse	199	3320000	53567	NA
+pepito	423	Pulse	199	3330000	63567	NA
+pepito	424	Picture	90	3336502	0	1	7040	1	0	7000	other	0
+pepito	424	Pulse	199	3340000	3498	NA
+pepito	425	Picture	40	3343710	0	1	3353	1	0	3310	other	0
+pepito	426	Picture	90	3347230	0	1	7040	1	0	7000	other	0
+pepito	426	Pulse	199	3350000	2770	NA
+pepito	427	Picture	40	3354438	0	1	3688	1	0	3660	other	0
+pepito	428	Picture	90	3358294	0	1	7041	1	0	7000	other	0
+pepito	428	Pulse	199	3360000	1706	NA
+pepito	429	Picture	40	3365502	0	1	2012	1	0	1990	other	0
+pepito	430	Picture	90	3367681	0	1	7041	1	0	7000	other	0
+pepito	430	Pulse	199	3370000	2319	NA
+pepito	431	Picture	40	3374889	0	1	2850	1	0	2690	other	0
+pepito	432	Picture	90	3377906	0	1	7040	1	0	7000	other	0
+pepito	432	Pulse	199	3380000	2094	NA
+pepito	433	Picture	40	3385114	0	1	3017	1	0	2860	other	0
+pepito	434	Picture	90	3388300	0	1	7040	1	0	7000	other	0
+pepito	434	Pulse	199	3390000	1701	NA
+pepito	435	Picture	40	3395508	0	1	1844	1	0	1780	other	0
+pepito	436	Picture	95	3397519	0	1	7040	1	0	7000	miss	0
+pepito	436	Pulse	199	3400000	2481	NA
+pepito	437	Picture	40	3404727	0	1	2514	1	0	2490	other	0
+pepito	438	Picture	90	3407409	0	1	7040	1	0	7000	other	0
+pepito	438	Pulse	199	3410000	2591	NA
+pepito	439	Picture	40	3414617	0	1	4526	1	0	4350	other	0
+pepito	440	Picture	95	3419311	0	1	7040	1	0	7000	miss	0
+pepito	440	Pulse	199	3420000	689	NA
+pepito	441	Picture	40	3426519	0	1	2179	1	0	2130	other	0
+pepito	442	Picture	90	3428866	0	1	7040	1	0	7000	other	0
+pepito	442	Pulse	199	3430000	1134	NA
+pepito	443	Picture	40	3436074	0	1	2179	1	0	2140	other	0
+pepito	444	Picture	50	3438421	0	1	70069	1	0	next	other	0
+pepito	444	Pulse	199	3440000	1579	NA
+pepito	444	Pulse	199	3450000	11579	NA
+pepito	444	Pulse	199	3460000	21579	NA
+pepito	444	Pulse	199	3470000	31579	NA
+pepito	444	Pulse	199	3480000	41579	NA
+pepito	444	Pulse	199	3490000	51579	NA
+pepito	444	Pulse	199	3500000	61579	NA
+pepito	445	Picture	60	3508490	0	1	7041	1	0	7000	other	0
+pepito	445	Pulse	199	3510000	1510	NA
+pepito	446	Picture	40	3515698	0	1	4526	1	0	4350	other	0
+pepito	446	Pulse	199	3520000	4302	NA
+pepito	447	Picture	60	3520392	0	1	7040	1	0	7000	other	0
+pepito	448	Picture	40	3527600	0	1	3688	1	0	3660	other	0
+pepito	448	Pulse	199	3530000	2400	NA
+pepito	449	Picture	60	3531455	0	1	7041	1	0	7000	other	0
+pepito	450	Picture	40	3538663	0	1	1844	1	0	1780	other	0
+pepito	450	Pulse	199	3540000	1337	NA
+pepito	451	Picture	60	3540675	0	1	7040	1	0	7000	other	0
+pepito	452	Picture	40	3547883	0	1	3353	1	0	3310	other	0
+pepito	452	Pulse	199	3550000	2117	NA
+pepito	453	Picture	60	3551403	0	1	7040	1	0	7000	other	0
+pepito	454	Picture	40	3558611	0	1	2179	1	0	2130	other	0
+pepito	454	Pulse	199	3560000	1389	NA
+pepito	455	Picture	60	3560958	0	1	7040	1	0	7000	other	0
+pepito	456	Picture	40	3568166	0	1	3017	1	0	2860	other	0
+pepito	456	Pulse	199	3570000	1834	NA
+pepito	457	Picture	60	3571351	0	1	7040	1	0	7000	other	0
+pepito	458	Picture	40	3578559	0	1	2179	1	0	2140	other	0
+pepito	458	Pulse	199	3580000	1441	NA
+pepito	459	Picture	60	3580906	0	1	7040	1	0	7000	other	0
+pepito	460	Picture	40	3588114	0	1	2850	1	0	2690	other	0
+pepito	460	Pulse	199	3590000	1886	NA
+pepito	461	Picture	60	3591131	0	1	7040	1	0	7000	other	0
+pepito	462	Picture	40	3598340	0	1	2179	1	0	1990	other	0
+pepito	462	Pulse	199	3600000	1660	NA
+pepito	463	Picture	60	3600686	0	1	7040	1	0	7000	other	0
+pepito	464	Picture	40	3607894	0	1	2514	1	0	2490	other	0
+pepito	464	Pulse	199	3610000	2106	NA
+pepito	465	Picture	50	3610576	0	1	50121	1	0	next	other	0
+pepito	465	Pulse	199	3620000	9424	NA
+pepito	465	Pulse	199	3630000	19424	NA
+pepito	465	Pulse	199	3640000	29424	NA
+pepito	465	Pulse	199	3650000	39424	NA
+pepito	465	Pulse	199	3660000	49424	NA
+pepito	466	Picture	80	3660698	0	1	7040	1	0	7000	other	0
+pepito	467	Picture	40	3667906	0	1	4526	1	0	4350	other	0
+pepito	467	Pulse	199	3670000	2094	NA
+pepito	468	Picture	80	3672600	0	1	7040	1	0	7000	other	0
+pepito	469	Picture	40	3679808	0	1	3017	1	0	2860	other	0
+pepito	469	Pulse	199	3680000	192	NA
+pepito	470	Picture	85	3682993	0	1	7041	1	0	7000	miss	0
+pepito	470	Pulse	199	3690000	7008	NA
+pepito	471	Picture	40	3690201	0	1	1844	1	0	1780	other	0
+pepito	472	Picture	80	3692212	0	1	7040	1	0	7000	other	0
+pepito	473	Picture	40	3699420	0	1	2179	1	0	2130	other	0
+pepito	473	Pulse	199	3700000	580	NA
+pepito	474	Picture	80	3701767	0	1	7040	1	0	7000	other	0
+pepito	475	Picture	40	3708975	0	1	3688	1	0	3660	other	0
+pepito	475	Pulse	199	3710000	1025	NA
+pepito	476	Picture	80	3712831	0	1	7040	1	0	7000	other	0
+pepito	476	Pulse	199	3720000	7169	NA
+pepito	477	Picture	40	3720039	0	1	3353	1	0	3310	other	0
+pepito	478	Picture	80	3723559	0	1	7040	1	0	7000	other	0
+pepito	478	Pulse	199	3730000	6441	NA
+pepito	479	Picture	40	3730767	0	1	2179	1	0	2140	other	0
+pepito	480	Picture	80	3733114	0	1	7040	1	0	7000	other	0
+pepito	480	Pulse	199	3740000	6886	NA
+pepito	481	Picture	40	3740322	0	1	2012	1	0	1990	other	0
+pepito	482	Picture	85	3742501	0	1	7040	1	0	7000	miss	0
+pepito	483	Picture	40	3749709	0	1	2850	1	0	2690	other	0
+pepito	483	Pulse	199	3750000	291	NA
+pepito	484	Picture	80	3752726	0	1	7040	1	0	7000	other	0
+pepito	485	Picture	40	3759935	0	1	2514	1	0	2490	other	0
+pepito	485	Pulse	199	3760000	65	NA
+pepito	486	Picture	50	3762617	0	1	90185	1	0	next	other	0
+pepito	486	Pulse	199	3770000	7383	NA
+pepito	486	Pulse	199	3780000	17383	NA
+pepito	486	Pulse	199	3790000	27383	NA
+pepito	486	Pulse	199	3800000	37383	NA
+pepito	486	Pulse	199	3810000	47383	NA
+pepito	486	Pulse	199	3820000	57383	NA
+pepito	486	Pulse	199	3830000	67383	NA
+pepito	486	Pulse	199	3840000	77383	NA
+pepito	486	Pulse	199	3850000	87383	NA
+pepito	487	Picture	70	3852801	0	1	7040	1	0	7000	other	0
+pepito	487	Pulse	199	3860000	7199	NA
+pepito	488	Picture	40	3860010	0	1	3353	1	0	3310	other	0
+pepito	489	Picture	70	3863530	0	1	7040	1	0	7000	other	0
+pepito	489	Pulse	199	3870000	6470	NA
+pepito	490	Picture	40	3870738	0	1	2850	1	0	2690	other	0
+pepito	491	Picture	75	3873755	0	1	7040	1	0	7000	miss	0
+pepito	491	Pulse	199	3880000	6245	NA
+pepito	492	Picture	40	3880963	0	1	3688	1	0	3660	other	0
+pepito	493	Picture	70	3884819	0	1	7040	1	0	7000	other	0
+pepito	493	Pulse	199	3890000	5181	NA
+pepito	494	Picture	40	3892027	0	1	1844	1	0	1780	other	0
+pepito	495	Picture	70	3894038	0	1	7040	1	0	7000	other	0
+pepito	495	Pulse	199	3900000	5962	NA
+pepito	496	Picture	40	3901246	0	1	2179	1	0	1990	other	0
+pepito	497	Picture	70	3903593	0	1	7040	1	0	7000	other	0
+pepito	497	Pulse	199	3910000	6407	NA
+pepito	498	Picture	40	3910801	0	1	2179	1	0	2140	other	0
+pepito	499	Picture	70	3913148	0	1	7040	1	0	7000	other	0
+pepito	499	Pulse	199	3920000	6852	NA
+pepito	500	Picture	40	3920356	0	1	3017	1	0	2860	other	0
+pepito	501	Picture	70	3923541	0	1	7040	1	0	7000	other	0
+pepito	501	Pulse	199	3930000	6459	NA
+pepito	502	Picture	40	3930749	0	1	2179	1	0	2130	other	0
+pepito	503	Picture	75	3933096	0	1	7040	1	0	7000	miss	0
+pepito	503	Pulse	199	3940000	6904	NA
+pepito	504	Picture	40	3940304	0	1	2514	1	0	2490	other	0
+pepito	505	Picture	70	3942986	0	1	7041	1	0	7000	other	0
+pepito	505	Pulse	199	3950000	7014	NA
+pepito	506	Picture	40	3950194	0	1	4526	1	0	4350	other	0
+pepito	507	Picture	50	3954888	0	1	30173	1	0	next	other	0
+pepito	507	Pulse	199	3960000	5112	NA
+pepito	507	Pulse	199	3970000	15112	NA
+pepito	507	Pulse	199	3980000	25112	NA
+pepito	508	Picture	90	3985061	0	1	7040	1	0	7000	other	0
+pepito	508	Pulse	199	3990000	4939	NA
+pepito	509	Picture	40	3992269	0	1	4526	1	0	4350	other	0
+pepito	510	Picture	90	3996963	0	1	7040	1	0	7000	other	0
+pepito	510	Pulse	199	4000000	3037	NA
+pepito	511	Picture	40	4004171	0	1	2179	1	0	2130	other	0
+pepito	512	Picture	90	4006518	0	1	7041	1	0	7000	other	0
+pepito	512	Pulse	199	4010000	3482	NA
+pepito	513	Picture	40	4013726	0	1	2850	1	0	2690	other	0
+pepito	514	Picture	90	4016743	0	1	7040	1	0	7000	other	0
+pepito	514	Pulse	199	4020000	3257	NA
+pepito	515	Picture	40	4023951	0	1	2012	1	0	1990	other	0
+pepito	516	Picture	90	4026131	0	1	7040	1	0	7000	other	0
+pepito	516	Pulse	199	4030000	3869	NA
+pepito	517	Picture	40	4033339	0	1	3017	1	0	2860	other	0
+pepito	518	Picture	90	4036524	0	1	7041	1	0	7000	other	0
+pepito	518	Pulse	199	4040000	3476	NA
+pepito	519	Picture	40	4043732	0	1	2514	1	0	2490	other	0
+pepito	520	Picture	90	4046414	0	1	7040	1	0	7000	other	0
+pepito	520	Pulse	199	4050000	3586	NA
+pepito	521	Picture	40	4053622	0	1	3353	1	0	3310	other	0
+pepito	522	Picture	90	4057142	0	1	7040	1	0	7000	other	0
+pepito	522	Pulse	199	4060000	2858	NA
+pepito	523	Picture	40	4064350	0	1	2179	1	0	2140	other	0
+pepito	524	Picture	90	4066697	0	1	7040	1	0	7000	other	0
+pepito	524	Pulse	199	4070000	3303	NA
+pepito	525	Picture	40	4073905	0	1	3688	1	0	3660	other	0
+pepito	526	Picture	90	4077761	0	1	7040	1	0	7000	other	0
+pepito	526	Pulse	199	4080000	2239	NA
+pepito	527	Picture	40	4084969	0	1	1844	1	0	1780	other	0
+pepito	528	Picture	50	4086980	0	1	50121	1	0	next	other	0
+pepito	528	Pulse	199	4090000	3020	NA
+pepito	528	Pulse	199	4100000	13020	NA
+pepito	528	Pulse	199	4110000	23020	NA
+pepito	528	Pulse	199	4120000	33020	NA
+pepito	528	Pulse	199	4130000	43020	NA
+pepito	529	Picture	60	4137102	0	1	7040	1	0	7000	other	0
+pepito	529	Pulse	199	4140000	2899	NA
+pepito	530	Picture	40	4144310	0	1	1844	1	0	1780	other	0
+pepito	531	Picture	60	4146321	0	1	7041	1	0	7000	other	0
+pepito	531	Pulse	199	4150000	3679	NA
+pepito	532	Picture	40	4153529	0	1	3688	1	0	3660	other	0
+pepito	533	Picture	60	4157385	0	1	7040	1	0	7000	other	0
+pepito	533	Pulse	199	4160000	2615	NA
+pepito	534	Picture	40	4164593	0	1	3353	1	0	3310	other	0
+pepito	535	Picture	60	4168113	0	1	7040	1	0	7000	other	0
+pepito	535	Pulse	199	4170000	1887	NA
+pepito	536	Picture	40	4175321	0	1	2179	1	0	2130	other	0
+pepito	537	Picture	60	4177668	0	1	7040	1	0	7000	other	0
+pepito	537	Pulse	199	4180000	2332	NA
+pepito	538	Picture	40	4184876	0	1	2179	1	0	2140	other	0
+pepito	539	Picture	60	4187223	0	1	7040	1	0	7000	other	0
+pepito	539	Pulse	199	4190000	2777	NA
+pepito	540	Picture	40	4194431	0	1	3017	1	0	2860	other	0
+pepito	541	Picture	65	4197616	0	1	7040	1	0	7000	miss	0
+pepito	541	Pulse	199	4200000	2384	NA
+pepito	542	Picture	40	4204824	0	1	2514	1	0	2490	other	0
+pepito	543	Picture	60	4207506	0	1	7040	1	0	7000	other	0
+pepito	543	Pulse	199	4210000	2494	NA
+pepito	544	Picture	40	4214714	0	1	4526	1	0	4350	other	0
+pepito	545	Picture	65	4219408	0	1	7040	1	0	7000	miss	0
+pepito	545	Pulse	199	4220000	592	NA
+pepito	546	Picture	40	4226616	0	1	2012	1	0	1990	other	0
+pepito	547	Picture	60	4228795	0	1	7040	1	0	7000	other	0
+pepito	547	Pulse	199	4230000	1205	NA
+pepito	548	Picture	40	4236003	0	1	2850	1	0	2690	other	0
+pepito	549	Picture	50	4239020	0	1	70069	1	0	next	other	0
+pepito	549	Pulse	199	4240000	980	NA
+pepito	549	Pulse	199	4250000	10980	NA
+pepito	549	Pulse	199	4260000	20980	NA
+pepito	549	Pulse	199	4270000	30980	NA
+pepito	549	Pulse	199	4280000	40980	NA
+pepito	549	Pulse	199	4290000	50980	NA
+pepito	549	Pulse	199	4300000	60980	NA
+pepito	550	Picture	80	4309090	0	1	7040	1	0	7000	other	0
+pepito	550	Pulse	199	4310000	910	NA
+pepito	551	Picture	40	4316298	0	1	3353	1	0	3310	other	0
+pepito	552	Picture	80	4319818	0	1	7040	1	0	7000	other	0
+pepito	552	Pulse	199	4320000	182	NA
+pepito	553	Picture	40	4327026	0	1	3688	1	0	3660	other	0
+pepito	553	Pulse	199	4330000	2974	NA
+pepito	554	Picture	80	4330881	0	1	7040	1	0	7000	other	0
+pepito	555	Picture	40	4338090	0	1	4526	1	0	4350	other	0
+pepito	555	Pulse	199	4340000	1910	NA
+pepito	556	Picture	80	4342783	0	1	7040	1	0	7000	other	0
+pepito	557	Picture	40	4349991	0	1	2514	1	0	2490	other	0
+pepito	557	Pulse	199	4350000	9	NA
+pepito	558	Picture	80	4352673	0	1	7041	1	0	7000	other	0
+pepito	559	Picture	40	4359881	0	1	2179	1	0	2140	other	0
+pepito	559	Pulse	199	4360000	119	NA
+pepito	560	Picture	80	4362228	0	1	7040	1	0	7000	other	0
+pepito	561	Picture	40	4369436	0	1	1844	1	0	1780	other	0
+pepito	561	Pulse	199	4370000	564	NA
+pepito	562	Picture	85	4371448	0	1	7041	1	0	7000	miss	0
+pepito	563	Picture	40	4378656	0	1	2179	1	0	2130	other	0
+pepito	563	Pulse	199	4380000	1344	NA
+pepito	564	Picture	80	4381003	0	1	7040	1	0	7000	other	0
+pepito	565	Picture	40	4388211	0	1	2850	1	0	2690	other	0
+pepito	565	Pulse	199	4390000	1789	NA
+pepito	566	Picture	85	4391228	0	1	7041	1	0	7000	miss	0
+pepito	567	Picture	40	4398436	0	1	2179	1	0	1990	other	0
+pepito	567	Pulse	199	4400000	1564	NA
+pepito	568	Picture	80	4400783	0	1	7040	1	0	7000	other	0
+pepito	569	Picture	40	4407991	0	1	3017	1	0	2860	other	0
+pepito	569	Pulse	199	4410000	2009	NA
+pepito	570	Picture	50	4411176	0	1	30173	1	0	next	other	0
+pepito	570	Pulse	199	4420000	8824	NA
+pepito	570	Pulse	199	4430000	18824	NA
+pepito	570	Pulse	199	4440000	28824	NA
+pepito	571	Picture	70	4441349	0	1	7040	1	0	7000	other	0
+pepito	572	Picture	40	4448558	0	1	2179	1	0	1990	other	0
+pepito	572	Pulse	199	4450000	1442	NA
+pepito	573	Picture	70	4450904	0	1	7040	1	0	7000	other	0
+pepito	574	Picture	40	4458112	0	1	2179	1	0	2140	other	0
+pepito	574	Pulse	199	4460000	1888	NA
+pepito	575	Picture	70	4460459	0	1	7041	1	0	7000	other	0
+pepito	576	Picture	40	4467667	0	1	3353	1	0	3310	other	0
+pepito	576	Pulse	199	4470000	2333	NA
+pepito	577	Picture	75	4471188	0	1	7040	1	0	7000	miss	0
+pepito	578	Picture	40	4478396	0	1	1844	1	0	1780	other	0
+pepito	578	Pulse	199	4480000	1604	NA
+pepito	579	Picture	70	4480407	0	1	7040	1	0	7000	other	0
+pepito	580	Picture	40	4487615	0	1	2179	1	0	2130	other	0
+pepito	581	Picture	70	4489962	0	1	7040	1	0	7000	other	0
+pepito	581	Pulse	199	4490000	38	NA
+pepito	582	Picture	40	4497170	0	1	2850	1	0	2690	other	0
+pepito	582	Pulse	199	4500000	2830	NA
+pepito	583	Picture	75	4500188	0	1	7040	1	0	7000	miss	0
+pepito	584	Picture	40	4507396	0	1	4526	1	0	4350	other	0
+pepito	584	Pulse	199	4510000	2604	NA
+pepito	585	Picture	70	4512089	0	1	7041	1	0	7000	other	0
+pepito	586	Picture	40	4519297	0	1	2514	1	0	2490	other	0
+pepito	586	Pulse	199	4520000	703	NA
+pepito	587	Picture	70	4521979	0	1	7040	1	0	7000	other	0
+pepito	588	Picture	40	4529187	0	1	3017	1	0	2860	other	0
+pepito	588	Pulse	199	4530000	813	NA
+pepito	589	Picture	70	4532372	0	1	7040	1	0	7000	other	0
+pepito	590	Picture	40	4539581	0	1	3688	1	0	3660	other	0
+pepito	590	Pulse	199	4540000	419	NA
+pepito	591	Picture	50	4543436	0	1	90185	1	0	next	other	0
+pepito	591	Pulse	199	4550000	6564	NA
+pepito	591	Pulse	199	4560000	16564	NA
+pepito	591	Pulse	199	4570000	26564	NA
+pepito	591	Pulse	199	4580000	36564	NA
+pepito	591	Pulse	199	4590000	46564	NA
+pepito	591	Pulse	199	4600000	56564	NA
+pepito	591	Pulse	199	4610000	66564	NA
+pepito	591	Pulse	199	4620000	76564	NA
+pepito	591	Pulse	199	4630000	86564	NA
+pepito	592	Picture	90	4633621	0	1	7040	1	0	7000	other	0
+pepito	592	Pulse	199	4640000	6379	NA
+pepito	593	Picture	40	4640829	0	1	3017	1	0	2860	other	0
+pepito	594	Picture	90	4644014	0	1	7040	1	0	7000	other	0
+pepito	594	Pulse	199	4650000	5986	NA
+pepito	595	Picture	40	4651222	0	1	2514	1	0	2490	other	0
+pepito	596	Picture	95	4653904	0	1	7040	1	0	7000	miss	0
+pepito	596	Pulse	199	4660000	6096	NA
+pepito	597	Picture	40	4661112	0	1	4526	1	0	4350	other	0
+pepito	598	Picture	90	4665806	0	1	7040	1	0	7000	other	0
+pepito	598	Pulse	199	4670000	4194	NA
+pepito	599	Picture	40	4673014	0	1	2179	1	0	2140	other	0
+pepito	600	Picture	95	4675361	0	1	7040	1	0	7000	miss	0
+pepito	600	Pulse	199	4680000	4639	NA
+pepito	601	Picture	40	4682569	0	1	2179	1	0	2130	other	0
+pepito	602	Picture	90	4684915	0	1	7040	1	0	7000	other	0
+pepito	602	Pulse	199	4690000	5085	NA
+pepito	603	Picture	40	4692124	0	1	2179	1	0	1990	other	0
+pepito	604	Picture	90	4694470	0	1	7040	1	0	7000	other	0
+pepito	604	Pulse	199	4700000	5530	NA
+pepito	605	Picture	40	4701678	0	1	3688	1	0	3660	other	0
+pepito	606	Picture	90	4705534	0	1	7041	1	0	7000	other	0
+pepito	606	Pulse	199	4710000	4466	NA
+pepito	607	Picture	40	4712742	0	1	1844	1	0	1780	other	0
+pepito	608	Picture	90	4714754	0	1	7040	1	0	7000	other	0
+pepito	608	Pulse	199	4720000	5246	NA
+pepito	609	Picture	40	4721962	0	1	3353	1	0	3310	other	0
+pepito	610	Picture	90	4725482	0	1	7040	1	0	7000	other	0
+pepito	610	Pulse	199	4730000	4518	NA
+pepito	611	Picture	40	4732690	0	1	2850	1	0	2690	other	0
+pepito	612	Picture	50	4735707	0	1	30173	1	0	next	other	0
+pepito	612	Pulse	199	4740000	4293	NA
+pepito	612	Pulse	199	4750000	14293	NA
+pepito	612	Pulse	199	4760000	24293	NA
+pepito	613	Picture	60	4765881	0	1	7040	1	0	7000	other	0
+pepito	613	Pulse	199	4770000	4119	NA
+pepito	614	Picture	40	4773089	0	1	4526	1	0	4350	other	0
+pepito	615	Picture	60	4777782	0	1	7040	1	0	7000	other	0
+pepito	615	Pulse	199	4780000	2218	NA
+pepito	616	Picture	40	4784990	0	1	3688	1	0	3660	other	0
+pepito	617	Picture	65	4788846	0	1	7040	1	0	7000	miss	0
+pepito	617	Pulse	199	4790000	1154	NA
+pepito	618	Picture	40	4796054	0	1	2514	1	0	2490	other	0
+pepito	619	Picture	60	4798736	0	1	7040	1	0	7000	other	0
+pepito	619	Pulse	199	4800000	1264	NA
+pepito	620	Picture	40	4805944	0	1	2850	1	0	2690	other	0
+pepito	621	Picture	65	4808961	0	1	7040	1	0	7000	miss	0
+pepito	621	Pulse	199	4810000	1039	NA
+pepito	622	Picture	40	4816170	0	1	3353	1	0	3310	other	0
+pepito	623	Picture	60	4819690	0	1	7040	1	0	7000	other	0
+pepito	623	Pulse	199	4820000	310	NA
+pepito	624	Picture	40	4826898	0	1	3017	1	0	2860	other	0
+pepito	624	Pulse	199	4830000	3102	NA
+pepito	625	Picture	60	4830083	0	1	7041	1	0	7000	other	0
+pepito	626	Picture	40	4837291	0	1	2179	1	0	2140	other	0
+pepito	627	Picture	60	4839638	0	1	7040	1	0	7000	other	0
+pepito	627	Pulse	199	4840000	362	NA
+pepito	628	Picture	40	4846846	0	1	2179	1	0	2130	other	0
+pepito	629	Picture	60	4849193	0	1	7040	1	0	7000	other	0
+pepito	629	Pulse	199	4850000	807	NA
+pepito	630	Picture	40	4856401	0	1	1844	1	0	1780	other	0
+pepito	631	Picture	60	4858412	0	1	7040	1	0	7000	other	0
+pepito	631	Pulse	199	4860000	1588	NA
+pepito	632	Picture	40	4865620	0	1	2179	1	0	1990	other	0
+pepito	633	Picture	50	4867967	0	1	90185	1	0	next	other	0
+pepito	633	Pulse	199	4870000	2033	NA
+pepito	633	Pulse	199	4880000	12033	NA
+pepito	633	Pulse	199	4890000	22033	NA
+pepito	633	Pulse	199	4900000	32033	NA
+pepito	633	Pulse	199	4910000	42033	NA
+pepito	633	Pulse	199	4920000	52033	NA
+pepito	633	Pulse	199	4930000	62033	NA
+pepito	633	Pulse	199	4940000	72033	NA
+pepito	633	Pulse	199	4950000	82033	NA
+pepito	634	Picture	80	4958152	0	1	7041	1	0	7000	other	0
+pepito	634	Pulse	199	4960000	1848	NA
+pepito	635	Picture	40	4965360	0	1	3017	1	0	2860	other	0
+pepito	636	Picture	80	4968545	0	1	7040	1	0	7000	other	0
+pepito	636	Pulse	199	4970000	1455	NA
+pepito	637	Picture	40	4975753	0	1	2179	1	0	1990	other	0
+pepito	638	Picture	80	4978100	0	1	7040	1	0	7000	other	0
+pepito	638	Pulse	199	4980000	1900	NA
+pepito	639	Picture	40	4985308	0	1	2179	1	0	2140	other	0
+pepito	640	Picture	80	4987655	0	1	7040	1	0	7000	other	0
+pepito	640	Pulse	199	4990000	2345	NA
+pepito	641	Picture	40	4994863	0	1	3688	1	0	3660	other	0
+pepito	642	Picture	85	4998718	0	1	7040	1	0	7000	miss	0
+pepito	642	Pulse	199	5000000	1282	NA
+pepito	643	Picture	40	5005926	0	1	2514	1	0	2490	other	0
+pepito	644	Picture	80	5008608	0	1	7040	1	0	7000	other	0
+pepito	644	Pulse	199	5010000	1392	NA
+pepito	645	Picture	40	5015817	0	1	1844	1	0	1780	other	0
+pepito	646	Picture	80	5017828	0	1	7040	1	0	7000	other	0
+pepito	646	Pulse	199	5020000	2172	NA
+pepito	647	Picture	40	5025036	0	1	2850	1	0	2690	other	0
+pepito	648	Picture	80	5028054	0	1	7040	1	0	7000	other	0
+pepito	648	Pulse	199	5030000	1946	NA
+pepito	649	Picture	40	5035262	0	1	4526	1	0	4350	other	0
+pepito	650	Picture	80	5039955	0	1	7040	1	0	7000	other	0
+pepito	650	Pulse	199	5040000	45	NA
+pepito	651	Picture	40	5047163	0	1	3353	1	0	3310	other	0
+pepito	651	Pulse	199	5050000	2837	NA
+pepito	652	Picture	85	5050684	0	1	7040	1	0	7000	miss	0
+pepito	653	Picture	40	5057892	0	1	2179	1	0	2130	other	0
+pepito	653	Pulse	199	5060000	2108	NA
+pepito	654	Picture	50	5060238	0	1	70069	1	0	next	other	0
+pepito	654	Pulse	199	5070000	9762	NA
+pepito	654	Pulse	199	5080000	19762	NA
+pepito	654	Pulse	199	5090000	29762	NA
+pepito	654	Pulse	199	5100000	39762	NA
+pepito	654	Pulse	199	5110000	49762	NA
+pepito	654	Pulse	199	5120000	59762	NA
+pepito	654	Pulse	199	5130000	69762	NA
+pepito	655	Picture	70	5130308	0	1	7040	1	0	7000	other	0
+pepito	656	Picture	40	5137516	0	1	2179	1	0	1990	other	0
+pepito	657	Picture	70	5139863	0	1	7040	1	0	7000	other	0
+pepito	657	Pulse	199	5140000	137	NA
+pepito	658	Picture	40	5147071	0	1	2514	1	0	2490	other	0
+pepito	659	Picture	70	5149753	0	1	7040	1	0	7000	other	0
+pepito	659	Pulse	199	5150000	247	NA
+pepito	660	Picture	40	5156961	0	1	2850	1	0	2690	other	0
+pepito	661	Picture	70	5159978	0	1	7040	1	0	7000	other	0
+pepito	661	Pulse	199	5160000	22	NA
+pepito	662	Picture	40	5167186	0	1	1844	1	0	1780	other	0
+pepito	663	Picture	70	5169198	0	1	7040	1	0	7000	other	0
+pepito	663	Pulse	199	5170000	802	NA
+pepito	664	Picture	40	5176406	0	1	4526	1	0	4350	other	0
+pepito	664	Pulse	199	5180000	3594	NA
+pepito	665	Picture	70	5181100	0	1	7040	1	0	7000	other	0
+pepito	666	Picture	40	5188308	0	1	3688	1	0	3660	other	0
+pepito	666	Pulse	199	5190000	1692	NA
+pepito	667	Picture	70	5192163	0	1	7040	1	0	7000	other	0
+pepito	668	Picture	40	5199371	0	1	3353	1	0	3310	other	0
+pepito	668	Pulse	199	5200000	629	NA
+pepito	669	Picture	70	5202891	0	1	7040	1	0	7000	other	0
+pepito	669	Pulse	199	5210000	7109	NA
+pepito	670	Picture	40	5210099	0	1	2179	1	0	2140	other	0
+pepito	671	Picture	70	5212446	0	1	7040	1	0	7000	other	0
+pepito	672	Picture	40	5219654	0	1	3017	1	0	2860	other	0
+pepito	672	Pulse	199	5220000	346	NA
+pepito	673	Picture	70	5222839	0	1	7040	1	0	7000	other	0
+pepito	673	Pulse	199	5230000	7161	NA
+pepito	674	Picture	40	5230047	0	1	2179	1	0	2130	other	0
+pepito	675	Picture	50	5232394	0	1	50121	1	0	next	other	0
+pepito	675	Pulse	199	5240000	7606	NA
+pepito	675	Pulse	199	5250000	17606	NA
+pepito	675	Pulse	199	5260000	27606	NA
+pepito	675	Pulse	199	5270000	37606	NA
+pepito	675	Pulse	199	5280000	47606	NA
+pepito	676	Picture	200	5282516	121	1	80127	1	0	80000	other	0
+pepito	676	Pulse	199	5290000	7606	NA
+pepito	676	Pulse	199	5300000	17606	NA
+pepito	676	Pulse	199	5310000	27606	NA
+pepito	676	Pulse	199	5320000	37606	NA
+pepito	676	Pulse	199	5330000	47606	NA
+pepito	676	Pulse	199	5340000	57606	NA
+pepito	676	Pulse	199	5350000	67606	NA
+pepito	676	Pulse	199	5360000	77606	NA
+pepito	677	Pulse	199	5370000	7190	NA
+pepito	677	Pulse	199	5380000	17190	NA
+pepito	677	Pulse	199	5390000	27190	NA
+pepito	677	Pulse	199	5400000	37190	NA
+pepito	677	Pulse	199	5410000	47190	NA
+pepito	677	Pulse	199	5420000	57190	NA
+pepito	677	Pulse	199	5430000	67190	NA
+pepito	677	Pulse	199	5440000	77190	NA
+pepito	677	Pulse	199	5450000	87190	NA
+pepito	677	Pulse	199	5460000	97190	NA
+pepito	677	Pulse	199	5470000	107190	NA
+pepito	677	Pulse	199	5480000	117190	NA
+pepito	677	Pulse	199	5490000	127190	NA
+pepito	677	Pulse	199	5500000	137190	NA
+pepito	677	Pulse	199	5510000	147190	NA

@@ -1,0 +1,4 @@
+trial	block	stimIndex	Condition	VstimCaption	ISIjitter	stimOnset
+1	1	1	FFnew	p	435	23477	
+2	1	2	FFnew	m	331	24670	
+3	1	3	FFnew	l	213	25764	

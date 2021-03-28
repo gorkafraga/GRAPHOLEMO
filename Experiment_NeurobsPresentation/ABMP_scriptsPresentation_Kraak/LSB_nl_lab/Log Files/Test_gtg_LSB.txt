@@ -1,0 +1,10 @@
+block	trial	Vstim	Astim	match	C/I	resp	result	RT	fb	V-file	A-file
+gtg
+
+0	1	2	3	1	C	2	0	720	0	Ⴞ	cut_ee_stereo_44KHz.wav
+0	2	2	4	0	C	0	0	0	0	Ⴞ	cut_g_stereo_44KHz.wav
+0	3	1	1	1	C	0	0	0	0	Ⴢ	cut_eeuw_stereo_44KHz.wav
+0	4	1	2	0	C	1	0	478	0	Ⴢ	cut_oo_stereo_44KHz.wav
+0	5	2	4	0	C	2	1	1051	1	Ⴞ	cut_g_stereo_44KHz.wav
+0	6	1	1	1	C	0	0	0	0	Ⴢ	cut_eeuw_stereo_44KHz.wav
+0	7	1	2	0	C	0	0	0	0	Ⴢ	cut_oo_stereo_44KHz.wav

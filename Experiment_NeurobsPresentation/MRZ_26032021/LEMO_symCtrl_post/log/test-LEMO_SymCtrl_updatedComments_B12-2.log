@@ -1,0 +1,38 @@
+Scenario - 
+Logfile written - 03/04/2021 15:40:23
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test	0	Pulse	199	0	0	NA
+test	1	Pulse	199	10000	9833	NA
+test	1	Response	20	11711	11544	0
+test	2	Response	20	15933	4032	0
+test	3	Picture	100	16092	159	1	50122	1	0	50000	other	0
+test	3	Pulse	199	20000	4066	NA
+test	3	Pulse	199	30000	14066	NA
+test	3	Pulse	199	40000	24066	NA
+test	3	Pulse	199	50000	34066	NA
+test	3	Pulse	199	60000	44066	NA
+test	4	Picture	40	66382	0	1	2515	1	0	2490	other	0
+test	5	Picture	70	69064	0	1	7041	1	0	7000	other	0
+test	5	Pulse	199	70000	936	NA
+test	6	Picture	40	76272	0	1	4526	1	0	4350	other	0
+test	6	Pulse	199	80000	3728	NA
+test	7	Picture	70	80966	0	1	7041	1	0	7000	other	0
+test	8	Picture	40	88174	0	1	3017	1	0	2860	other	0
+test	8	Pulse	199	90000	1826	NA
+test	9	Picture	70	91359	0	1	7041	1	0	7000	other	0
+test	10	Picture	40	98568	0	1	1844	1	0	1780	other	0
+test	10	Pulse	199	100000	1432	NA
+test	11	Picture	70	100579	0	1	7041	1	0	7000	other	0
+test	12	Picture	40	107787	0	1	2179	1	0	2130	other	0
+test	12	Pulse	199	110000	2213	NA
+test	13	Picture	70	110134	0	1	7041	1	0	7000	other	0
+test	14	Picture	40	117342	0	1	2850	1	0	2690	other	0
+test	14	Pulse	199	120000	2658	NA
+test	15	Picture	70	120360	0	1	7040	1	0	7000	other	0
+test	16	Picture	40	127568	0	1	3688	1	0	3660	other	0
+test	16	Pulse	199	130000	2432	NA
+test	17	Picture	70	131424	0	1	7041	1	0	7000	other	0
+test	18	Picture	40	138632	0	1	3353	1	0	3310	other	0
+test	18	Pulse	199	140000	1368	NA

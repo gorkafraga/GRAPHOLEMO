@@ -1,0 +1,2 @@
+block	trial	vStim	aStim	resp	rt	fb	iti	feedJitter	vSymbol	aFile	FBtype	stimOnset	respOnset	feedbackOnset
+1	1	4	3	0	0	2	2458	2422	t_2_1_loudCheck.wav	3	Cong	12859	0	17800

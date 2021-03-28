@@ -1,0 +1,45 @@
+Scenario - 
+Logfile written - 08/07/2019 21:38:06
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test	1	Response	20	17524	17347	0
+test	2	Response	20	20164	2564	0
+test	3	Pulse	199	25935	5771	0
+test	3	Picture	100	25935	5771	199	50155	199	0	50000	other	0
+test	4	Picture	80	76267	0	1	7111	1	0	7000	other	0
+test	5	Picture	40	83556	0	1	4800	1	0	4720	other	0
+test	6	Picture	80	88534	0	1	7111	1	0	7000	other	0
+test	7	Picture	40	95823	0	1	2133	1	0	1990	other	0
+test	8	Picture	80	98134	0	1	7111	1	0	7000	other	0
+test	9	Picture	40	105423	0	1	1956	1	0	1900	other	0
+test	10	Picture	80	107557	0	1	7111	1	0	7000	other	0
+test	11	Picture	40	114845	0	1	2844	1	0	2830	other	0
+test	12	Picture	80	117868	0	1	7111	1	0	7000	other	0
+test	13	Picture	40	125157	0	1	1600	1	0	1510	other	0
+test	14	Picture	80	126934	0	1	7111	1	0	7000	other	0
+test	15	Picture	40	134223	0	1	2311	1	0	2150	other	0
+test	17	Picture	40	144001	0	1	1778	1	0	1640	other	0
+test	18	Picture	80	145957	0	1	7111	1	0	7000	other	0
+test	19	Picture	40	153246	0	1	4267	1	0	4230	other	0
+test	20	Picture	80	157690	0	1	7111	1	0	7000	other	0
+test	21	Picture	40	164979	0	1	3378	1	0	3330	other	0
+test	22	Picture	80	168535	0	1	7111	1	0	7000	other	0
+test	23	Picture	40	175824	0	1	3378	1	0	3210	other	0
+test	24	Picture	80	179380	0	1	7111	1	0	7000	other	0
+test	25	Picture	40	186669	0	1	2667	1	0	2570	other	0
+test	26	Picture	80	189513	0	1	7111	1	0	7000	other	0
+test	27	Picture	40	196802	0	1	2133	1	0	2020	other	0
+test	28	Picture	80	199113	0	1	7111	1	0	7000	other	0
+test	29	Picture	40	206402	0	1	1778	1	0	1630	other	0
+test	30	Picture	80	208358	0	1	7111	1	0	7000	other	0
+test	31	Picture	40	215647	0	1	2133	1	0	2070	other	0
+test	32	Picture	80	217958	0	1	7111	1	0	7000	other	0
+test	33	Picture	40	225247	0	1	2667	1	0	2550	other	0
+test	34	Picture	80	228091	0	1	7111	1	0	7000	other	0
+test	35	Picture	40	235380	0	1	4267	1	0	4080	other	0
+test	37	Picture	40	247114	0	1	1422	1	0	1270	other	0
+test	38	Picture	80	248714	0	1	7111	1	0	7000	other	0
+test	39	Picture	40	256003	0	1	1244	1	0	1180	other	0
+test	40	Picture	50	257425	0	1	56617	1	0	next	other	0
+test	40	Quit		308496	51071	NA

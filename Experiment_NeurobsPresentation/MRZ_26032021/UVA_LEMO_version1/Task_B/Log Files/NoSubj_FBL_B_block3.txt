@@ -1,0 +1,24 @@
+block	trial	vStim	aStim	resp	rt	fb	iti	feedJitter	vSymbol	aFile	FBtype	stimOnset	respOnset	feedbackOnset
+3	1	2	3	2	1	8249	1	1852	1592	a	e	a	i_short_2_2_loudCheck.wav	practice	practice	practice
+3	2	1	2	2	2	1867	1	3200	1066	i	a	a	i_short_2_2_loudCheck.wav	practice	practice	practice
+3	3	2	3	3	1	1056	0	2458	1996	a	e	e	p_2_1_loudCheck.wav	practice	practice	practice
+3	4	1	3	1	2	1278	0	2134	2130	i	e	i	o_short_2_2_loudCheck.wav	practice	practice	practice
+3	5	2	1	1	1	1218	0	2182	1628	a	i	i	o_short_2_2_loudCheck.wav	practice	practice	practice
+3	6	3	1	3	1	1894	1	2350	2619	e	i	e	p_2_1_loudCheck.wav	practice	practice	practice
+3	1	4	3	1	1380	1	2786	2324	sp_2_1_loudCheck.wav	É	Cong	55184	56564	60035
+3	2	2	1	2	1501	0	2532	1670	o_long_2_1_loudCheck.wav	d	Cong	64602	66103	68802
+3	3	5	5	1	1444	0	2269	2130	ur_short_2_1_loudCheck.wav	h	Cong	73089	74533	77744
+3	4	4	3	1	1283	1	2885	2619	sp_2_1_loudCheck.wav	É	Cong	82657	83940	87805
+3	5	2	1	1	1570	1	2986	1718	o_long_2_1_loudCheck.wav	d	Cong	92816	94386	97062
+3	6	5	6	1	2401	1	2364	1656	vö_2_2_loudCheck.wav	h	Cong	101464	103865	105667
+3	7	3	4	1	821	1	1991	1509	scho_2_1.wav	b	Cong	114200	115021	118227
+3	8	6	5	1	1950	1	2586	1574	ur_short_2_1_loudCheck.wav	l	Cong	122841	124791	126941
+3	9	2	2	1	1883	0	3581	2220	i_long_2_1_loudCheck.wav	d	Cong	132553	134436	137293
+3	10	3	3	1	1483	0	2335	1654	sp_2_1_loudCheck.wav	b	Cong	141650	143133	145830
+3	11	5	5	2	1558	1	1889	1289	ur_short_2_1_loudCheck.wav	h	Cong	149736	151294	153545
+3	12	1	1	1	2034	0	2671	1628	o_long_2_1_loudCheck.wav	j	Cong	158246	160280	162399
+3	13	2	2	1	2084	0	2448	2403	i_long_2_1_loudCheck.wav	d	Cong	166874	168958	171824
+3	14	3	3	2	1357	1	1760	1599	sp_2_1_loudCheck.wav	b	Cong	175607	176964	179737
+3	15	4	4	1	1481	0	2925	1066	scho_2_1.wav	É	Cong	184685	186166	188273
+3	16	5	6	1	1145	1	2871	2131	vö_2_2_loudCheck.wav	h	Cong	193163	194308	197837
+3	17	4	3	1	1259	1	2221	2244	sp_2_1_loudCheck.wav	É	Cong	202085	203344	206851
