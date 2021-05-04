@@ -10,27 +10,24 @@
 % - Another output text file shows percent and count of flagged scans 
 
 clear all; close all;  %clear workspace
-epipath = 'G:\lemo_preproc\fbl_b\'; %'G:\lemo_preproc\'; % epis PARENT folder  (followed by \'
+epipath = 'O:\studies\grapholemo\LEMO_GFG\mri\preprocessing\symctrl_pre\'; % epis PARENT folder  (followed by 
 %files = dir([epipath,'\*']);
 %subject= {files.name};
-runlist= {'run1','run2'};
-subject={'gpl001','gpl002','gpl003','gpl004'};
-N_scans = 460;  %408 %470; %N_scans = 370; % FILL IN THE CORRECT NUMBER OF SCANS !!!!!!!!!!!!
+subject={'G002'};
+N_scans = 440 %408 %470; %N_scans = 370; % FILL IN THE CORRECT NUMBER OF SCANS !!!!!!!!!!!!
 %%
-for r= 1:length(runlist)
-    currRun = runlist{r};
- for i=1:length(subject) % loop over all subjects
-    art_repaired = dir([epipath,subject{i},'\func\',currRun,'\ART\','*art_repaired.txt']); % name of txt file
+for i=1:length(subject) % loop over all subjects
+    art_repaired = dir([epipath,subject{i},'\func\epis\ART\','*art_repaired.txt']); % name of txt file
     %  In case multiple art_repair.txt are present in folder. 
      for f = 1:length(art_repaired)   
-        file_repair = [epipath,subject{i},'\func\',currRun,'\ART\',art_repaired(f).name]; % Path for the txt file per subject
+        file_repair = [epipath,subject{i},'\func\epis\ART\',art_repaired(f).name]; % Path for the txt file per subject
         path_repair = art_repaired(f).folder;
         fid = fopen(file_repair); % open txt file
         badscans = textscan(fid,'%n', N_scans, 'delimiter','\n'); % take bad scans from txt file
         fclose(fid); %close txt file
 
         differences=diff(badscans{1,1}); %Get difference between scan positions ( diff is 1 for consecutive scans)          
-
+        
         % Get position of Scans surrounded by bad scans  (Only if there are 2 or less scans between bad scans) 
         gaps=[];  
         for s=1:length(differences) % loop throuh differences between two bad scans position 
@@ -43,7 +40,7 @@ for r= 1:length(runlist)
         end
 
         all_bad=sort([badscans{1,1}' gaps]); % sorting the positions of marked scans
-
+      
           % FLAG only  marked scans with at least two neighboring marked scans(to have blocks of 'bad scans') 
           % Repaired scans that have no other repaired scans nearby (position + 1 or +2) will NOT be flagged
             flag=[];
@@ -58,21 +55,21 @@ for r= 1:length(runlist)
                   continue
               end        
           end
-
+       
          Regr_badscans = zeros(1,N_scans); 
          Regr_badscans (1,flag)=1; % set flagged positions to 1
          Regr_badscans = Regr_badscans.'; % tanspose to vector of 1 column and as many rows as scans (N_scans)
         %Regr_badscans = zeros(1,N_scans); 
         % Regr_badscans ([badscans{1}',gaps])=1; % set flagged positions to 1
         % Regr_badscans = Regr_badscans.'; % tanspose to vector of 1 column and as many rows as scans (N_scans)
-
+    
         if ~isempty(badscans{1})
         %Count repaired scans, flag scans and percentages  
         %countBad = [{sprintf('%.2f',(100*length(badscans{1})/N_scans))},{sprintf('%.2f',(100*length(flag)/N_scans))},length(badscans{1}),length(flag)];
         %countBadTable = cell2table(countBad,'VariableNames',{'percentRepaired','percentFlagged','nRepaired','nFlagged'});      
         nRepNotFlagged =  length(badscans{1}) - ( length(flag)-length(gaps));
         percentRepNotFlagged = sprintf('%.2f',(100*(nRepNotFlagged/N_scans)));
-
+        
          countBad = [{sprintf('%.2f',(100*length(badscans{1})/N_scans))},{sprintf('%.2f',(100*length(flag)/N_scans))},percentRepNotFlagged, length(badscans{1}),length(flag),nRepNotFlagged];
          countBadTable = cell2table(countBad,'VariableNames',{'percentRepaired','percentFlagged','percentRepNotFlagged','nRepaired','nFlagged','nRepNotFlagged'});      
          countbadfile =  strrep(file_repair,'art_repaired.txt','countBadScans_inBlock_v2.txt');
@@ -87,6 +84,5 @@ for r= 1:length(runlist)
            disp (['No scans were flagged for subject ',subject{i}])
            continue
        end
-     end
- end
+    end
 end

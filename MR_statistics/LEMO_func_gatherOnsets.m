@@ -3,9 +3,18 @@ onsets={};
 params={};
 
     for i=1:length(logfiles)
-        % ONSETS ------------------------------------------
+        
         logfile = logfiles{i};
         currLog = readtable(logfile);
+         if contains(logfile,"fbl_b",'IgnoreCase',true)
+             fid = fopen(logfile);
+             filehead = textscan(fid, '%s', 'delimiter', '\t','MultipleDelimsAsOne', 1);
+             filehead = filehead{1};
+             filehead = filehead(1:size(currLog,2))';
+             currLog.Properties.VariableNames = filehead;
+         end         
+        
+        % ONSETS ------------------------------------------
         % Change units to seconds. Remove missing responses
         onsets(i).stimOnset = currLog.stimOnset/1000;
         onsets(i).feedbackOnset = currLog.feedbackOnset/1000;

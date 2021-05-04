@@ -5,11 +5,15 @@ clear all
 % - Arrange in folders 
 % - Copy and get realignment plots and RP parameters
 scriptRec2nifti = 'N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_utils\rec2nifti.pl';
-logSourcePath = 'O:\studies\grapholemo\raw\mrz_transfer\logs';
-rawSourcePath = 'O:\studies\grapholemo\raw\mrz_transfer\';
-rawDestinationPath = 'O:\studies\grapholemo\rawtryme\';
+scriptRec2nifti_saveFilename = 'N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_utils\rec2nifti_saveFilename.pl';
+
+logSourcePath = 'O:\studies\grapholemo\transfer_mrz\logs'; %'O:\studies\grapholemo\raw\mrz_transfer\logs';
+rawSourcePath = 'O:\studies\grapholemo\transfer_mrz\'; %'O:\studies\grapholemo\raw\mrz_transfer\';
+rawDestinationPath = 'O:\studies\grapholemo\raw\';
 saverealign=1;
-subject = {'g003'};
+renameNiftisForPreprocessing = 1;
+subject = {'gpl008','gpl009'};
+
 %recParNames = { 'b0_fbl','fbl_parta','fbl_partb','b0_symctrl','1_symcontrol','t13d','audiotest'};
 % clean up last slash if specified
 if strcmp(rawDestinationPath(end),'\')  rawDestinationPath= rawDestinationPath(1:end-1);   
@@ -33,16 +37,16 @@ for s= 1:length(subject)
             elseif (~isempty(regexpi(files(i).name,'._b0.')))
                   destinationFolder =  [destinationFolder,'\mri\func\b0\parrec'];
                   file2copy= 1;
-            elseif (~isempty(regexpi(files(i).name,'.fbl_partA.')))
+            elseif (~isempty(regexpi(files(i).name,'.fbl_A.')))
                    destinationFolder =  [destinationFolder,'\mri\func\FBL_partA\parrec'];
                    file2copy= 1;
-            elseif  (~isempty(regexpi(files(i).name,'.fbl._partA.')))
+            elseif  (~isempty(regexpi(files(i).name,'.fbl._A.')))
                    destinationFolder =  [destinationFolder,'\mri\func\FBL2_partA\parrec'];
                    file2copy= 1;
-            elseif (~isempty(regexpi(files(i).name,'.fbl_partB.')))
+            elseif (~isempty(regexpi(files(i).name,'.fbl_B.')))
                    destinationFolder =  [destinationFolder,'\mri\func\FBL_partB\parrec'];
                    file2copy= 1;
-            elseif  (~isempty(regexpi(files(i).name,'.fbl2_partB.')))
+            elseif  (~isempty(regexpi(files(i).name,'.fbl2_B.')))
                    destinationFolder =  [destinationFolder,'\mri\func\FBL2_partB\parrec'];
                    file2copy= 1;
             elseif (~isempty(regexpi(files(i).name,'.symctrl.')))
@@ -71,7 +75,8 @@ for s= 1:length(subject)
   for f = 1:length({files.name})
       % Find the recs and convert to nifti 
       cd (files(f).folder)
-      perl(scriptRec2nifti,'-s',[files(f).folder,'\',files(f).name])
+     % perl(scriptRec2nifti_saveFilename,'-s',[files(f).name])
+      perl(scriptRec2nifti,'-s',[files(f).name])
   end  
   %Move niftis to nifti folder
   niftifiles = dir([rawDestinationPath,'\',currSubj,'\**\*.nii']);
@@ -118,7 +123,7 @@ for s= 1:length(subject)
     end
 end
 
-
+cd (destinationFolder)
 %% DO realignment in niftis (copy, realign this copy, delete copy)
 if saverealign ==1
   for s= 1:length(subject)

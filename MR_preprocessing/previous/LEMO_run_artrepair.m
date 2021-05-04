@@ -12,30 +12,26 @@
 %-------------------------------------------------------------------------
 clear all
 %path to preprocess data / epis . 
-preprocessingDir = ['O:\studies\grapholemo\analysis\LEMO_GFG\mri\preprocessing\fbl_b\']; % use \ at the end
-runlist= {'run1','run2'};
+preprocessingDir = ['O:\studies\grapholemo\LEMO_GFG\preprocessing\FBL_A\run1\']; % use \ at the end
 %subject list
-subject = {'GPL006'};
+subject = {'G003'};
 %subject = {'AR1051','AR1058','AR1059','AR1070','AR1071','AR1075','AR1076','AR1088','AR1098','AR1104','AR1105','AR1107','AR1108'};
 %subject = {'AR1051'}
-
 cd (preprocessingDir)
-%% Loop thru runs, then subjects
-for r= 1:length(runlist)
-    currRun = runlist{r};
+%% Loop thru subjects
  for ss = 1:numel(subject)
      %find path to current subject data
-      subjectDir = [preprocessingDir, subject{ss},'\func\',currRun,'\'];     
+      subjectDir = [preprocessingDir, subject{ss},'\func\epis\'];     
       
      %find epis to be repared. Accepts several.
-     epis = dir([subjectDir,'\s*wua*.nii']);
+     epis = dir([subjectDir,'\s*wuamr*.nii']);
      if~isempty(epis)
          for e = 1:length(epis)
 
              %select all volumes of epi 
              Images = spm_select('ExtFPList', epis(e).folder,  epis(e).name, Inf);
              %Take txt file with realignment parameters (only one file)
-             RealignmentFile =  spm_select('FPList', subjectDir, '^rp_a.*\.txt$'); % common file with realignment parameters
+             RealignmentFile =  spm_select('FPList', subjectDir, '^rp_am.*\.txt$'); % common file with realignment parameters
 
              % ART REPAIR SETTINGS
              HeadMaskType = 4; %auto mask
@@ -60,7 +56,7 @@ for r= 1:length(runlist)
               fileID_split = strsplit(epis(e).name,'_'); 
               fileID = [fileID_split{1},'_',subject{ss}];
               % find new files
-              newfiles =  [dir([subjectDir,'\vs*wua*.nii']);dir([subjectDir,'\ArtifactMask.nii']);dir([subjectDir,'\art_deweighted.txt']);dir([subjectDir,'\art_repaired.txt'])];
+              newfiles =  [dir([subjectDir,'\vs*wuamr*.nii']);dir([subjectDir,'\ArtifactMask.nii']);dir([subjectDir,'\art_deweighted.txt']);dir([subjectDir,'\art_repaired.txt'])];
               % Move to new dir, add identifier if needed
               for j = 1:length(newfiles)
                       if contains(newfiles(j).name,'art_deweighted.txt') || contains(newfiles(j).name,'art_repaired.txt')  || contains(newfiles(j).name,'ArtifactMask.nii') 
@@ -72,7 +68,7 @@ for r= 1:length(runlist)
                       
               end
             % the figure is always stored in path_data, Add identifier and move to ART folder within subject
-             picfile = dir([preprocessingDir, subject{ss},'\func\artglobalfunc*.jpg']);
+             picfile = dir([preprocessingDir, subject{ss},'\func\artglobalfuncepis.jpg']);
              if ~isempty(picfile) && length(picfile)==1 
                 movefile(fullfile(picfile.folder, picfile.name),[newDir,[fileID,'_',picfile.name]]);
 
@@ -84,4 +80,4 @@ for r= 1:length(runlist)
          disp(['Epis not found'])
      end
  end
-end
+ 

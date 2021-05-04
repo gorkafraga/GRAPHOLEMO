@@ -5,17 +5,20 @@ Packages <- c("readr", "data.table", "ggplot2","tibble","nlme","lme4","pwr","dpl
 lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
 
+task <- "FBL_a"
 #set ins and outs
-dirinput <-"O:/studies/grapholemo/LEMO_Pilot/B" 
-diroutput <-"O:/studies/grapholemo/LEMO_Pilot/gathered" 
-task <- "FeedLearn"
+dirinput <-"O:/studies/grapholemo/analysis/LEMO_GFG/mri/preprocessing" # no  / at the end 
+diroutput <-paste0("O:/studies/grapholemo/analysis/LEMO_GFG/beh/",task)
+
 ntrials <- 48
+plotme <- 0
+morestats <- 0 
 #winDialog("ok", "HI THERE!! Do all subjects have 2 log files? If not the Plot will be blank. But table will still be OK.")
 
 #loop thru files
 setwd(dirinput)
-files <- dir(dirinput,'*.task.*.txt',recursive = TRUE)
-files <- files[grep('*.txt',files)]
+files <-dir(dirinput,paste0('gpl.*.-',task,'.*.txt'),recursive=TRUE,ignore.case = TRUE,full.names = FALSE)
+
 #`%!in%` = Negate(`%in%`) 
 #files <- files[which(substr(files,1,6) %!in% c("AR1025","AR1063"))] # use this to exclude subjects
 #files <- files[which(substr(files,1,6) %in% c("AR1025","AR1063"))] # use tthis to include subjects from a list of subjects
@@ -26,33 +29,19 @@ dataList<-list()
 cumuList<-list()
 for (i in 1:length(files)){
   #Read File 
-  D <- read_delim(files[i],"\t", escape_double = FALSE, locale = locale(), trim_ws = TRUE, skip_empty_rows=TRUE)
-  subject <- substr(files[i],1,6)
+  D <- read_delim(paste0(dirinput,'/',files[i]),"\t", escape_double = FALSE, locale = locale(), trim_ws = TRUE, skip_empty_rows=TRUE)
+  subject <- substr(sapply(strsplit(files[i],"/"), `[`,6),1,6) #subject ID are the 6 first characters from filename,i.e., last element after splitting fullpath name...
   
   if (dim(D)[1] > ntrials) {
-    D <-  D[7:dim(D)[1],]
+    D <-  D[7:dim(D)[1],] #trim file it has more lines than expected (in task B the first rows are junk)
   }
-  
   if (dim(D)[1] != ntrials) {
     cat("This file has ",dim(D)[1]," trials instead of ",ntrials,"!!",
         "\nAborting file ",files[i],"!!")
     next
   } else {
-    
     cat("File OK (",dim(D)[1]," trials)","\nProceeding with ",files[i],"...\n")
     
-    # minor fix for some files with inconsistent headers
-    if (length(which(colnames(D)=="vSymbols"))!=0) {
-      D$vSymbol1 <- substr(D$vSymbols,1,1)
-      D$vSymbol2 <- substr(D$vSymbols,2,2)
-      tmpIdx <- which(colnames(D)=="vSymbols")
-      D$vSymbolCorrect <- 0
-      for (ii in 1:length(D$vStim1)) {
-        jnk <- cbind(D$vStim1[ii],D$vStim2[ii])
-        D$vSymbolCorrect[ii] <-	 jnk[which(jnk==D$aStim[ii])] 
-      }
-      D <- select(D,c(1:(tmpIdx-1)),length(D)-2,length(D)-1,length(D),c(1+tmpIdx:c(length(D)-2)))
-      }
     # Get indexes per feedback (b) /response type.
     idx_miss <- which(D$fb==2)
     idx_hit <- which(D$fb==1)
@@ -96,6 +85,8 @@ for (i in 1:length(files)){
     rownames(cumsums) <- c()
     cumuScore <- cbind(rep(subject,dim(D)[1]),D$block,cumsums)
     colnames(cumuScore)[1:2] <- c("subjID","block")
+    colnames(cumuScore)<- paste0('ProbCum_',colnames(cumuScore))
+    colnames(cumuScore)[1] <- c("subjID")
     
     cat("cumulative scores calculated\n")
     # Separate the data in quartile
@@ -111,124 +102,143 @@ for (i in 1:length(files)){
 
 # Merge in a single Table  
 DAT <- data.table::rbindlist(dataList) 
-CUMU <- data.table::rbindlist(cumuList) 
-
-# Summary Tables for plot 
-#------------------------------------------------------------------------------
-# ACCU summary Count proportion correct  trials in quartile
-D_per_quart <- DAT %>%  group_by(subjID,block,quartile,fb,.drop = FALSE) %>% tally()
-D_per_quart$prop <- round(D_per_quart$n/(ntrials/4),2)
-ACCU <- filter(D_per_quart,fb==1) %>% group_by(subjID,quartile,fb) %>%  summarise(hit_prop=mean(prop))
+CUMU <- data.table::rbindlist(cumuList)
+DAT2SAVE<-cbind(DAT,CUMU)
+#Write the long   table into xls file
+#write.csv(DAT2SAVE,paste(diroutput,"/Performance_data_long.csv",sep=""),row.names = FALSE)
 
 
-T_ACCU <- ACCU %>% group_by(quartile) %>% summarize(hit_prop=mean(hit_prop))
-tmp <- cbind("overall",mean(ACCU$hit_prop))
-colnames(tmp)<-colnames(T_ACCU)
-T_ACCU <- rbind(T_ACCU,tmp)
-T_ACCU$hit_prop <- round(as.numeric(T_ACCU$hit_prop),2)
-
-# RT summary
-rts_per_quart <- DAT %>%  group_by(subjID,block,quartile,fb,.drop = FALSE) %>%  summarize(meanRT = mean(rt))
-rts_per_quart$meanRT <-round(as.numeric(rts_per_quart$meanRT),3)
-RT <- filter(rts_per_quart,fb<2) 
-T_RT <- RT %>% group_by(quartile) %>% summarize(meanRT=mean(meanRT))
-
-tmp <- cbind("overall",mean(T_RT$meanRT))
-colnames(tmp)<-colnames(T_RT)
-T_RT <- rbind(T_RT,tmp)
-T_RT$meanRT <- round(as.numeric(T_RT$meanRT),3)
-# combine 
-T <- tableGrob(cbind(T_ACCU,T_RT),rows=NULL)
-
-# Some more summary indexes
-idx_hit <- which(DAT$fb==1)    
-idx_err <- which(DAT$fb==0)
-idx_miss <- which(DAT$fb==2)
-
-# CUMULATIVE SCORE Avg per subject to add to plot
-SUCUMU <- CUMU %>% group_by(subjID,rep,stim) %>%  summarise(subAvg=mean(value))
-nsubjects<- length(unique(DAT$subjID))
-
-#-------------------------------------------------------
-# ======================================================
-#      Summary  TABLE TO SAVE
-# ======================================================
-#------------------------------------------------------
-# Code sessions (1 or 2)
-DAT$session <- DAT$block
-allSubjects <- unique(DAT$subjID)
-for (ss in 1:length(allSubjects)){
-  currSession <- DAT[which(DAT$subjID==allSubjects[ss]),session]
-  if (length(unique(currSession)) == 2) {
-    minidx <- which(currSession==min(currSession))
-    maxidx <- which(currSession==max(currSession))
-    
-    currSession[minidx] <- 1
-    currSession[maxidx] <- 2
-    
-  } else if (length(unique(currSession)) == 1)  {
-    print(paste("One session in ", allSubjects[ss],sep=""))
-    currSession[] <- 1 
-  }
-  
-  DAT$session[which(DAT$subjID==allSubjects[ss])] <- currSession
-  print(paste(length(unique(currSession)),' sessions',sep=""))
-}
-DAT$session <- as.integer(DAT$session)
-
-# Get mean reaction time per session (block) and participant. Same  for accuracy
- summary <-  data.frame(matrix(ncol = 17, nrow = nsubjects))
-  for (s in 1:nsubjects){
-    sDat <- DAT[which(DAT$subjID==unique(DAT$subjID)[s])]
-    
-    # RTs and ACCU per session and over both 
-    sDatses1 <- sDat[which(sDat$session==1),]
-      L1_rt_inc <- mean(sDatses1$rt[which(sDatses1$fb==0)],na.rm=TRUE)
-      L1_rt_corr <- mean(sDatses1$rt[which(sDatses1$fb==1)],na.rm=TRUE)
-      L1_n_inc <- length(sDatses1$fb[which(sDatses1$fb==0)])
-      L1_n_corr <- length(sDatses1$fb[which(sDatses1$fb==1)])
-      L1_n_miss <- length(sDatses1$fb[which(sDatses1$fb==2)])
-      L1_blockId <- unique(sDatses1$block)
-      if (length(L1_blockId)==0) { 
-        L1_blockId<- NaN
-        L1_n_corr<- NaN
-        L1_n_inc<- NaN
-        L1_n_miss<- NaN}
-      
-      
-    sDatses2 <- sDat[which(sDat$session==2),]
-      L2_rt_inc <- mean(sDatses2$rt[which(sDatses2$fb==0)],na.rm=TRUE)
-      L2_rt_corr <- mean(sDatses2$rt[which(sDatses2$fb==1)],na.rm=TRUE)
-      L2_n_inc <- length(sDatses2$fb[which(sDatses2$fb==0)])
-      L2_n_corr <- length(sDatses2$fb[which(sDatses2$fb==1)])
-      L2_n_miss <- length(sDatses2$fb[which(sDatses2$fb==2)])
-      L2_blockId <- unique(sDatses2$block)
-      if (length(L2_blockId)==0) { 
-        L2_blockId<- NaN
-        L2_n_corr<- NaN
-        L2_n_inc<- NaN
-        L2_n_miss<- NaN}
-      
-    #both sessions  
-      L12_rt_inc <- mean(mean(c(L1_rt_inc,L2_rt_inc)),na.rm=TRUE)
-      L12_rt_corr <- mean(mean(c(L1_rt_corr,L2_rt_corr)),na.rm=TRUE)
-      L12_n_inc <- length(sDat$fb[which(sDat$fb==0)])
-      L12_n_corr <- length(sDat$fb[which(sDat$fb==1)])
-      L12_n_miss <- length(sDat$fb[which(sDat$fb==2)])
-    
-    combined <-  cbind(L1_blockId,L2_blockId,L1_rt_corr,L1_rt_inc,L2_rt_corr,L2_rt_inc,L12_rt_corr,L12_rt_inc,
-                       L1_n_corr,L1_n_inc,L1_n_miss,L2_n_corr,L2_n_inc,L2_n_miss,L12_n_corr,L12_n_inc,L12_n_miss)
-    summary[s,]<- combined
-    header  <- colnames(combined)
-   
-  }
-  summary <- cbind(unique(DAT$subjID),summary)
-  colnames(summary)  <- c("subjID",header)
-  
-# Combine accu and RT summary table
-write.xlsx(summary,paste(diroutput,"/Perform_summary.xlsx",sep=""),row.names = FALSE,showNA = FALSE)
-
+# Accu summary
+accu <- DAT %>%  group_by(subjID,block,fb,quartile,.drop = FALSE) %>%  tally()
+rt <- DAT %>%  group_by(subjID,block,fb,quartile,.drop = FALSE) %>% summarize(meanRT = mean(rt))
+dlong <- merge(accu,rt,by=c('subjID','block','fb','quartile'))
+dlong$propTrials <- round(dlong$n/(ntrials/4),2)
+write.csv(dlong,paste(diroutput,"/Performance_long.csv",sep=""),row.names = FALSE)
  
+
+
+
+
+
+if (morestats == 1) {
+    
+    # Summary Tables for plot 
+    #------------------------------------------------------------------------------
+    # ACCU summary Count proportion correct  trials in quartile
+    D_per_quart <- DAT %>%  group_by(subjID,block,quartile,fb,.drop = FALSE) %>% tally()
+    D_per_quart$prop <- round(D_per_quart$n/(ntrials/4),2)
+    ACCU <- filter(D_per_quart,fb==1) %>% group_by(subjID,quartile,fb) %>%  summarise(hit_prop=mean(prop))
+    
+    
+    T_ACCU <- ACCU %>% group_by(quartile) %>% summarize(hit_prop=mean(hit_prop))
+    tmp <- cbind("overall",mean(ACCU$hit_prop))
+    colnames(tmp)<-colnames(T_ACCU)
+    T_ACCU <- rbind(T_ACCU,tmp)
+    T_ACCU$hit_prop <- round(as.numeric(T_ACCU$hit_prop),2)
+    
+    # RT summary
+    rts_per_quart <- DAT %>%  group_by(subjID,block,quartile,fb,.drop = FALSE) %>%  summarize(meanRT = mean(rt))
+    rts_per_quart$meanRT <-round(as.numeric(rts_per_quart$meanRT),3)
+    RT <- filter(rts_per_quart,fb<2) 
+    T_RT <- RT %>% group_by(quartile) %>% summarize(meanRT=mean(meanRT))
+    
+    tmp <- cbind("overall",mean(T_RT$meanRT))
+    colnames(tmp)<-colnames(T_RT)
+    T_RT <- rbind(T_RT,tmp)
+    T_RT$meanRT <- round(as.numeric(T_RT$meanRT),3)
+    # combine 
+    T <- tableGrob(cbind(T_ACCU,T_RT),rows=NULL)
+    
+    # Some more summary indexes
+    idx_hit <- which(DAT$fb==1)    
+    idx_err <- which(DAT$fb==0)
+    idx_miss <- which(DAT$fb==2)
+    
+    # CUMULATIVE SCORE Avg per subject to add to plot
+    SUCUMU <- CUMU %>% group_by(subjID,rep,stim) %>%  summarise(subAvg=mean(value))
+    nsubjects<- length(unique(DAT$subjID))
+    
+    #-------------------------------------------------------
+    # ======================================================
+    #      Summary  TABLE TO SAVE
+    # ======================================================
+    #------------------------------------------------------
+    # Code sessions (1 or 2)
+    DAT$session <- DAT$block
+    allSubjects <- unique(DAT$subjID)
+    for (ss in 1:length(allSubjects)){
+      currSession <- DAT[which(DAT$subjID==allSubjects[ss]),session]
+      if (length(unique(currSession)) == 2) {
+        minidx <- which(currSession==min(currSession))
+        maxidx <- which(currSession==max(currSession))
+        
+        currSession[minidx] <- 1
+        currSession[maxidx] <- 2
+        
+      } else if (length(unique(currSession)) == 1)  {
+        print(paste("One session in ", allSubjects[ss],sep=""))
+        currSession[] <- 1 
+      }
+      
+      DAT$session[which(DAT$subjID==allSubjects[ss])] <- currSession
+      print(paste(length(unique(currSession)),' sessions',sep=""))
+    }
+    DAT$session <- as.integer(DAT$session)
+    
+    # Get mean reaction time per session (block) and participant. Same  for accuracy
+     summary <-  data.frame(matrix(ncol = 17, nrow = nsubjects))
+      for (s in 1:nsubjects){
+        sDat <- DAT[which(DAT$subjID==unique(DAT$subjID)[s])]
+        
+        # RTs and ACCU per session and over both 
+        sDatses1 <- sDat[which(sDat$session==1),]
+          L1_rt_inc <- mean(sDatses1$rt[which(sDatses1$fb==0)],na.rm=TRUE)
+          L1_rt_corr <- mean(sDatses1$rt[which(sDatses1$fb==1)],na.rm=TRUE)
+          L1_n_inc <- length(sDatses1$fb[which(sDatses1$fb==0)])
+          L1_n_corr <- length(sDatses1$fb[which(sDatses1$fb==1)])
+          L1_n_miss <- length(sDatses1$fb[which(sDatses1$fb==2)])
+          L1_blockId <- unique(sDatses1$block)
+          if (length(L1_blockId)==0) { 
+            L1_blockId<- NaN
+            L1_n_corr<- NaN
+            L1_n_inc<- NaN
+            L1_n_miss<- NaN}
+          
+          
+        sDatses2 <- sDat[which(sDat$session==2),]
+          L2_rt_inc <- mean(sDatses2$rt[which(sDatses2$fb==0)],na.rm=TRUE)
+          L2_rt_corr <- mean(sDatses2$rt[which(sDatses2$fb==1)],na.rm=TRUE)
+          L2_n_inc <- length(sDatses2$fb[which(sDatses2$fb==0)])
+          L2_n_corr <- length(sDatses2$fb[which(sDatses2$fb==1)])
+          L2_n_miss <- length(sDatses2$fb[which(sDatses2$fb==2)])
+          L2_blockId <- unique(sDatses2$block)
+          if (length(L2_blockId)==0) { 
+            L2_blockId<- NaN
+            L2_n_corr<- NaN
+            L2_n_inc<- NaN
+            L2_n_miss<- NaN}
+          
+        #both sessions  
+          L12_rt_inc <- mean(mean(c(L1_rt_inc,L2_rt_inc)),na.rm=TRUE)
+          L12_rt_corr <- mean(mean(c(L1_rt_corr,L2_rt_corr)),na.rm=TRUE)
+          L12_n_inc <- length(sDat$fb[which(sDat$fb==0)])
+          L12_n_corr <- length(sDat$fb[which(sDat$fb==1)])
+          L12_n_miss <- length(sDat$fb[which(sDat$fb==2)])
+        
+        combined <-  cbind(L1_blockId,L2_blockId,L1_rt_corr,L1_rt_inc,L2_rt_corr,L2_rt_inc,L12_rt_corr,L12_rt_inc,
+                           L1_n_corr,L1_n_inc,L1_n_miss,L2_n_corr,L2_n_inc,L2_n_miss,L12_n_corr,L12_n_inc,L12_n_miss)
+        summary[s,]<- combined
+        header  <- colnames(combined)
+       
+      }
+      summary <- cbind(unique(DAT$subjID),summary)
+      colnames(summary)  <- c("subjID",header)
+      
+    # Combine accu and RT summary table
+    write.csv(summary,paste(diroutput,"/Perform_summary.csv",sep=""),row.names = FALSE)
+
+}
+if (plotme ==  1 ){
 #-------------------------------------------------------
 # ======================================================
 #                     PLOTS
@@ -399,4 +409,4 @@ write.xlsx(summary,paste(diroutput,"/Perform_summary.xlsx",sep=""),row.names = F
     ggsave(outputname,combo,width = 350, height = 310, dpi=300, units = "mm")
     cat("Done. File",outputname, " Saved in ", diroutput,"\n")
     setwd(dirinput)
-          
+}          

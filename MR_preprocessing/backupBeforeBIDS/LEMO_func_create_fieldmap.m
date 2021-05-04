@@ -1,4 +1,4 @@
-function LEMO_func_create_fieldmap(b0Dir,epiDir,currTask,anatTemplate)
+function LEMO_func_create_fieldmap(currsubject,paths_task,currTask,anatTemplate)
     % create_fieldmap  Creates the vdm5*.nii file (voxel displacement file) for
     %a given fieldmap file and a given EPI image. 
     %-----------------------------------------------------------------------
@@ -12,9 +12,11 @@ function LEMO_func_create_fieldmap(b0Dir,epiDir,currTask,anatTemplate)
 
     %% inputs setup
     clear matlabbatch   
- 
+    b0Dir =[paths_task,currsubject,'\func\b0\']; 
+    epiDir = [paths_task,currsubject,'\func\epis\'];
+
  %% BEGIN
-    overwrite = 0;
+    overwrite = 1;
     if ~isempty(dir([ b0Dir,'\vdm5*_1_*'])) && overwrite==0
         fprintf('>> WARNING: Fieldmap (vdm5*%i*.nii) already exists in ', b0Dir,' skipping.\n');
     else 
@@ -23,12 +25,8 @@ function LEMO_func_create_fieldmap(b0Dir,epiDir,currTask,anatTemplate)
     fprintf ('B0 directory is %s\n',b0Dir);
     fprintf ('EPI directory is %s\n',epiDir);
     fprintf ('========================================================================\n');
-    
-   % Find the relevant scans
-      fullfilesb0 = cellstr(spm_select('ExtFPList',b0Dir,'^GPL.*.b0.*.nii$',1));
-      firstEpiVolume = cellstr(spm_select('ExtFPList', epiDir,'^GPL.*bold.nii',1));
-      parfile = dir([b0Dir,'*.par']);
 
+    fullfilesb0 = cellstr(spm_select('ExtFPList',b0Dir,'^mr.*.b0.*.nii$',1));
     %Check number of b0s. Only one is expected (6 files). IF so, continue and find the sequence number of b0
     n_fieldmaps = length(fullfilesb0)/6;
     if n_fieldmaps ~= 1
@@ -38,6 +36,7 @@ function LEMO_func_create_fieldmap(b0Dir,epiDir,currTask,anatTemplate)
     %% RETRIEVE SUBJECT ECHO TIMES
     %---------------------------------
     % Find par file with the pattern of current b0
+    parfile = dir([b0Dir,'\*.par']);
      if length(parfile)~= 1 
        fprintf ('Check your par files ABORT!!!')  
      else
@@ -58,10 +57,10 @@ function LEMO_func_create_fieldmap(b0Dir,epiDir,currTask,anatTemplate)
      end
      current_echo = echoes;
     %% Create batch including the echo information to preprocessing the b0 and create vdm5 file  
-    matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.data.phasemag.shortphase = cellstr(fullfilesb0{find(contains(fullfilesb0,'ec1_typ3'))});
-    matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.data.phasemag.shortmag = cellstr(fullfilesb0{find(contains(fullfilesb0,'ec1_typ0'))});
-    matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.data.phasemag.longphase = cellstr(fullfilesb0{find(contains(fullfilesb0,'ec2_typ3'))});
-    matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.data.phasemag.longmag = cellstr(fullfilesb0{find(contains(fullfilesb0,'ec2_typ0'))});
+    matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.data.phasemag.shortphase = cellstr(spm_select('FPList', b0Dir, ['^mr.*._','.*.ec1_typ3.*.nii$']));
+    matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.data.phasemag.shortmag = cellstr(spm_select('FPList', b0Dir, ['^mr.*._','.*.ec1_typ0.*.nii$']));
+    matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.data.phasemag.longphase = cellstr(spm_select('FPList', b0Dir, ['^mr.*._','.*.ec2_typ3.*.nii$']));
+    matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.data.phasemag.longmag = cellstr(spm_select('FPList', b0Dir, ['^mr.*._','.*.ec2_typ0.*.nii$']));
     matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.et = current_echo;
     matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.maskbrain = 0;
     matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.blipdir = -1;
@@ -69,14 +68,14 @@ function LEMO_func_create_fieldmap(b0Dir,epiDir,currTask,anatTemplate)
  %% CALCULATE EPI READOUT TIME 
  % Formulas from: https://support.brainvoyager.com/brainvoyager/functional-analysis-preparation/29-pre-processing/78-epi-distortion-correction-echo-spacing-and-bandwidth
         if contains(currTask,'fbl','IgnoreCase',true)
-            epifactor  = 39; % EPI factor from par file fbl_taska
-            matrixsize_phase_enc_dir = 78; % nr of echos (y value of scan resolution in .par file)
-            water_fat_shift_pixel = 15.58; %12.47
+            epifactor  = 31; % EPI factor from par file fbl_taska
+            matrixsize_phase_enc_dir = 62; % nr of echos (y value of scan resolution in .par file)
+            water_fat_shift_pixel = 12.48; %12.47
     
         elseif contains(currTask,'symctrl','IgnoreCase',true)
-            epifactor  = 39; % EPI factor
-            matrixsize_phase_enc_dir = 78; % nr of echos (y value of scan resolution in .par file)
-            water_fat_shift_pixel = 11.12; 
+            epifactor  = 31; % EPI factor
+            matrixsize_phase_enc_dir = 62; % nr of echos (y value of scan resolution in .par file)
+            water_fat_shift_pixel = 8.91; 
         end        
 %                 if strcmp(currTask,'eread')
 %             epifactor  = 31; % EPI factor
@@ -134,7 +133,7 @@ function LEMO_func_create_fieldmap(b0Dir,epiDir,currTask,anatTemplate)
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.mflags.ndilate = 4;
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.mflags.thresh = 0.5;
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.defaults.defaultsval.mflags.reg = 0.02;     
-        matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.session.epi = firstEpiVolume; % first volume of the first epi file 
+        matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.session.epi = cellstr(spm_select('ExtFPList', epiDir,'^mr.*.nii',1)); %first volume of epi file. 
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.matchvdm = 1;
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.sessname = 'session';
         matlabbatch{1}.spm.tools.fieldmap.calculatevdm.subj.writeunwarped = 0;

@@ -7,15 +7,15 @@ clear; close all
 %%--------------------------------------------------------------------------------------------------------------
 scripts= ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_statistics');addpath(scripts)
 ntrials = 48 ;   
-taskversion = 'B' ; %or B
-blocks  = {'B1','B2','B3','B4'};
-
-dirinput    =   ['O:\studies\grapholemo\LEMO_Pilot\',taskversion];
-diroutput   =   'O:\studies\grapholemo\LEMO_Pilot\gathered\' ;
-files = dir([dirinput,'\*.txt']);
-
-selectedfiles=dir([dirinput,'\*task',taskversion,'*.txt']);
-subjects = strtok({selectedfiles.name},'_'); % take from file name the subject id
+taskversion = 'fbl_A' ; %FBL_A, FBL_B
+blocks  = {'block1','block2'};
+ 
+dirinput    =   ['O:\studies\grapholemo\analysis\LEMO_GFG\mri\preprocessing\',taskversion];
+diroutput   =    ['O:\studies\grapholemo\analysis\LEMO_GFG\beh\',taskversion];
+ 
+files= dir([dirinput,'\**\logs\*.txt']);
+subjects = strtok({files.name},'-'); % take from file name the subject id
+mkdir(diroutput)
 % OLD PROMPT- keep commented
 %selectedFiles = {}; % If selected files = {} a  window for selection will popup (or you can give a filename)
 % if isempty(selectedFiles)
@@ -30,10 +30,10 @@ for i=1:length(subjects)
     subjectTable = {};
   for ii = 1:length(blocks)
      %create headers for this block
-     header1 = string(strcat(['task',taskversion,'_'],strcat(blocks{ii},{'_N_hits','_N_errors','_N_miss','_RT_hits','_RT_errors','_SD_hits','_SD_errors'})));
-     header2 = string(strcat(['task',taskversion,'_'],[strcat(blocks{ii},'_q',string(1:4),'_N_hits'),strcat(blocks{ii},'_th',string(1:3),'_N_hits'),strcat(blocks{ii},'_h',string(1:2),'_N_hits')]));
+     header1 = string(strcat([taskversion,'_'],strcat(blocks{ii},{'_N_hits','_N_errors','_N_miss','_RT_hits','_RT_errors','_SD_hits','_SD_errors'})));
+     header2 = string(strcat([taskversion,'_'],[strcat(blocks{ii},'_q',string(1:4),'_N_hits'),strcat(blocks{ii},'_th',string(1:3),'_N_hits'),strcat(blocks{ii},'_h',string(1:2),'_N_hits')]));
      % read data
-     logfile = dir([dirinput,'\',subjects{i},'*task',taskversion,'*',blocks{ii},'.txt']);      
+     logfile = dir([dirinput,'\**\logs\',subjects{i},'*',taskversion,'*',blocks{ii},'.txt']);
      T = {};
      if ~isempty(logfile) 
          % Read file (allow files that had 1 or 2 trial less due to interrupted files)
@@ -89,7 +89,7 @@ for i=1:length(subjects)
   end
  
 %Save individual table   
-  writetable(subjectTable, [diroutput,'\Summary_task',taskversion,'_',subjects{i},'.csv'])
+  writetable(subjectTable, [diroutput,'\Summary_',taskversion,'_',subjects{i},'.csv'])
 
   if  isempty(gathered) 
         gathered= [gathered;[cell2table(subjects(i)),subjectTable]];
@@ -99,7 +99,7 @@ for i=1:length(subjects)
   end 
 end
 % save group table
-gathered.Properties.VariableNames(1) = {'subject'}
+gathered.Properties.VariableNames(1) = {'subject'};
 writetable(gathered, [diroutput,'\Summary_task',taskversion,'.csv']);
 
  

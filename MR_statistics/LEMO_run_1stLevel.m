@@ -15,12 +15,13 @@ addpath(scripts)
 %--------------------------------------------------------------------------------------------------------------
 %% [Edit] folders (no \ at the end) and input task
 masterfile      = 'O:\studies\grapholemo\LEMO_GFG\LEMO_Master.xlsx';
-path_preproc    = 'O:\studies\grapholemo\LEMO_GFG\preprocessing'; %PARENT path to your preprocessed data 
-path_logs       = 'O:\studies\grapholemo\LEMO_GFG\preprocessing'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
-path_output     = 'O:\studies\grapholemo\LEMO_GFG\analysis'; % parent of output dir
-task            = 'FBL2_A'; 
-runs2use      = {'1'}; %separated by commas e.g., {'1,2'} {'2,3'}
-subjects        = {'g003'};
+path_preproc    = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\preprocessing'; %PARENT path to your preprocessed data (no \ at the end)
+path_logs       = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\preprocessing'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
+path_output     = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel'; % parent of output dir
+task            = 'FBL_A'; 
+manualScanSelection = 0;nscans = 460; % default = 0
+runs2use      = {'run1','run2'}; %separated by commas e.g., {'run','run2'} 
+subjects        = {'gpl006','gpl007','gpl008','gpl009'};
 modelversion =       'AR_rlddm_v11';
 modeloutputfile =   ['O:\studies\allread\mri\analysis_GFG\stats\task\modelling\RLDDM_fromLocal\GoodPerf_72\outputs\out_',modelversion,'\Parameters_perTrial.csv'] ;
 
@@ -40,10 +41,14 @@ disp(['Selected 1st Level: ',selectedGLM])
  end  
 %% START SUBJECT LOOP 
 spm('defaults','fMRI')
-
 for i = 1:length(subjects)
     subject = subjects{i}; 
+    if manualScanSelection == 1
+        path_output=   strrep(path_output,'1Lv_','SelectScans_1Lv_');
+    end
     path_output_subj = fullfile(path_output,'\',subject); %output path for this subject
+
+
     if ~isfolder(path_output_subj)
         mkdir(path_output_subj);
     end
@@ -57,7 +62,7 @@ for i = 1:length(subjects)
    % ONSETS  % ----------------------------------------------------------------------
    %Gather onsets from log files. Times need to be in seconds
     for b = 1:nsessions
-      logfilesTMP = dir([path_logs,'\',task,'\run',currRun{b},'\',subject,'\func\logs\*.txt']);
+      logfilesTMP = dir([path_logs,'\',task,'\',subject,'\func\',currRun{b},'\logs\*.txt']);
       logfiles(b) = {[logfilesTMP.folder,'\',logfilesTMP.name]} ;       
     end
    % call "gather onsets" 
@@ -77,12 +82,19 @@ for i = 1:length(subjects)
          end
 
           %take  pattern from logfile that can identify its corresponding mr file
-          mrfilename = dir([path_preproc,'\',task,'\run',currRun{j},'\',subject,'\func\epis\ART\vs*wuamr*.nii']);
+          mrfilename = dir([path_preproc,'\',task,'\',subject,'\func\',currRun{j},'\ART\vs*wua*.nii']);
+          
           % select scans 
-          scans{j} =  cellstr(spm_select('ExtFPList',mrfilename.folder, mrfilename.name, Inf))  ;
+         if manualScanSelection == 1 
+           scans{j} =  cellstr(spm_select('ExtFPList',mrfilename.folder, mrfilename.name, 1:nscans))  ;
+           disp(['Selected ',num2str(nscans),' scans'])
+         elseif manualScanSelection == 0 
+           scans{j} = cellstr(spm_select('ExtFPList',mrfilename.folder, mrfilename.name,Inf)) ;
+         end 
+          
           
           % Read the corresponding RP file
-          rpfile = dir([path_preproc,'\',task,'\run',currRun{j},'\',subject,'\func\epis\rp_*.txt']);
+          rpfile =dir([path_preproc,'\',task,'\',subject,'\func\',currRun{j},'\rp*.txt']);
           formatSpec = '%16f%16f%16f%16f%16f%16f%[^\n\r]';
           fileID = fopen([rpfile.folder,'\',rpfile.name],'r');
           rpdat = textscan(fileID, formatSpec, 'Delimiter', '', 'WhiteSpace', '', 'TextType', 'string',  'ReturnOnError', false);
@@ -96,7 +108,10 @@ for i = 1:length(subjects)
           else 
                Regr_badscans = zeros(length(scans{j}),1);  % if no file make a vector of zeros
                logInfBadscans ='No bad scans file'; 
-           end       
+           end   
+           if manualScanSelection == 1 
+               Regr_badscans(1:nscans) = 1;       
+           end 
            
           % Merge RP and Flagscans and save table in txt 
           if (length(scans{j})~= length(Regr_badscans))
@@ -105,6 +120,9 @@ for i = 1:length(subjects)
               disp('trimming bad scans file to match number of scans')
           end              
           multireg =  [rpdat{1},rpdat{2},rpdat{3},rpdat{4},rpdat{5},rpdat{6},Regr_badscans];
+          if manualScanSelection == 1
+            multireg=multireg(1:nscans,:);
+          end 
           writetable(cell2table(num2cell(multireg)),[path_output_subj,'\multiReg_',num2str(j),'.txt'],'WriteVariableNames',false)   
      %----------------------------------------------------------------------------------------
          %Write log 
@@ -144,6 +162,13 @@ for i = 1:length(subjects)
     elseif strcmp('GLM0_mopa_vpe',selectedGLM)
              matlabbatch = LEMO_func_create_1Lv_GLM0_mopa_vpe(path_output_subj,modeloutput,scans,onsets,nsessions);
    %%%
+   elseif  strcmp('GLM0_halfs',selectedGLM)
+                matlabbatch = LEMO_func_create_1Lv_GLM0_halfs(path_output_subj,scans,onsets,nsessions);  
+                   %%%
+   elseif  strcmp('GLM0_thirds',selectedGLM)
+                matlabbatch = LEMO_func_create_1Lv_GLM0_thirds(path_output_subj,scans,onsets,nsessions);   
+   %%%     
+   %%%            
    elseif  strcmp('GLM1_pm1a',selectedGLM)
                 matlabbatch = LEMO_func_create_1Lv_GLM1_pm1a(path_output_subj,scans,onsets,params,nsessions);      
    %%%
