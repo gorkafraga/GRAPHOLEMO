@@ -17,9 +17,9 @@ addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_preprocessing')
 %% Inputs setup
 %------------------------------
 tic 
-subjects = {'gpl006'}; 
+subjects = {'gpl030','gpl031'}; 
 Task =  {'fbl_b'}; %Only ONE at a time. 
-runlist = {'run1','run2'};%{'run1','run2'}; % list of runs, leave it empty  {} if you are not processing FBL task or you have no runs 
+runlist = {'run1','run2'}; % list of runs,for fbl use 'run1' or 'run2' for symctrl 'symctrl'
 anatTemplate = 'C:\Users\gfraga\spm12\tpm\TPM.nii'; % Called by 'LEMO_create_fieldmap.m'
 
 %PATHS (end character should be \ )
@@ -57,14 +57,8 @@ for i=1:length(subjects)
             %%% Create and run PREPROCESSING batch
             %------------------------------ 
              %batch = LEMO_func_create_matlabbatch(b0Dir,epiDir,t1Dir,currTask,anatTemplate);
-            if isempty(dir([t1Dir,'\im*'])) 
-                       LEMO_func_create_fieldmap(b0Dir,epiDir,currTask,anatTemplate);
-                       batch = LEMO_func_preproc_segment(b0Dir,epiDir,t1Dir,currTask,anatTemplate);  
-            elseif ~isempty(dir([t1Dir,'\im*']))
-                       %LEMO_func_create_fieldmap(b0Dir,epiDir,currTask,anatTemplate);
-                       batch = LEMO_func_preproc(b0Dir,epiDir,t1Dir,currTask,anatTemplate);  
-                       %batch = LEMO_func_coregNormalization(b0Dir,epiDir,t1Dir,currTask,anatTemplate);  
-            end
+              LEMO_func_create_fieldmap(b0Dir,epiDir,currTask,anatTemplate);
+              batch = LEMO_func_create_matlabbatch(b0Dir,epiDir,t1Dir,currTask,anatTemplate);  
              %spm_jobman('interactive',batch)
              spm_jobman('run',batch)
              clear batch

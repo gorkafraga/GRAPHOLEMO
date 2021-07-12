@@ -14,12 +14,12 @@
 clear 
 close all
 %Chooice your GLM of interest
-selectedGLM = 'GLM0';
+selectedGLM = 'GLM';
 %selectedGroup = 'all';
 modelversion =   'AR_rlddm_v11';
 
 % set input dir  based on GLM of interest
-parentDir = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel\FBL_A';% NO \ as last character
+parentDir = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel\symCtrl_post';% NO \ as last character
  
 if  contains(selectedGLM,'_mopa')
     %listFolders = dir(strcat(parentDir,'\',selectedGroup,'\',modelversion,'\1Lv_',selectedGLM,'*'));  
@@ -43,7 +43,7 @@ load([tmp(1).folder,'\',tmp(1).name]); % load first spm file in input directory
 contrast=struct();  % gather description and file names of all t-contrasts in that analysis c=1;
 c=1;
 for i = 1:length(SPM.xCon)
-    if contains(SPM.xCon(i).Vcon.fname,'con_000')
+    if contains(SPM.xCon(i).Vcon.fname,'con_00')
         contrast(c).fname = {SPM.xCon(i).Vcon.fname};
         contrast(c).descript = {SPM.xCon(i).Vcon.descrip};
         c= c+1;

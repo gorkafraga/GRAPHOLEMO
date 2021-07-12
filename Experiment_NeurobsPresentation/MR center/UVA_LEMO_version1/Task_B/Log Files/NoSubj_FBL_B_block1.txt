@@ -1,0 +1,2 @@
+block	trial	vStim	aStim	resp	rt	fb	iti	feedJitter	aFile	vSymbol	LeftIsMatch	stimOnset	respOnset	feedbackOnset
+1	1	2	3	2	1	9661	1	1852	1592	R	V	R	e_short_2_2.wav	practice	practice	practice

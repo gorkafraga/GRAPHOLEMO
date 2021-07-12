@@ -29,7 +29,7 @@ if contains(currTask,'fbl','IgnoreCase',true)
 elseif contains(currTask,'symctrl','IgnoreCase',true)
     nslices = 40;
     tr = 1.250; %sec
-    timings = [fliplr(round([0:29.76*2:1190.48])),fliplr(round([0:29.76*2:1190.48]))]; %1257/42 = 29.76, 1250-29.76*2=1190.48
+    timings = [fliplr(round([0:29.929*2:1190.1])),fliplr(round([0:29.929*2:1190.1]))]; %1257/40 = 29.929, 1250-29.929*2=1190.1
     voxelSize = 3;
     smoothSize = 6; % smoothing factor in mm  
 

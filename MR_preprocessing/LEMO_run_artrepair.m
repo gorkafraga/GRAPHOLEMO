@@ -12,20 +12,26 @@
 %-------------------------------------------------------------------------
 clear all
 %path to preprocess data / epis . 
-preprocessingDir = ['O:\studies\grapholemo\analysis\LEMO_GFG\mri\preprocessing\fbl_b\']; % use \ at the end
-runlist= {'run1','run2'};
+preprocessingDir = ['G:\GRAPHOLEMO\lemo_preproc\fbl_b\']; % use \ at the end
+runlist= {'run1','run2'}; % 'run1' or 'run2' or 'symctrl' for fbl task
+
 %subject list
-subject = {'GPL006'};
+%subject = {'gpl010','gpl015','gpl017','gpl019','gpl024','gpl025'}; 
+%subject = {'gpl001','gpl002','gpl003','gpl004','gpl005','gpl006','gpl007','gpl008','gpl009','gpl012','gpl013'}; 
 %subject = {'AR1051','AR1058','AR1059','AR1070','AR1071','AR1075','AR1076','AR1088','AR1098','AR1104','AR1105','AR1107','AR1108'};
 %subject = {'AR1051'}
-
+subject = {'gpl011','gpl012','gpl013'};
 cd (preprocessingDir)
 %% Loop thru runs, then subjects
 for r= 1:length(runlist)
     currRun = runlist{r};
  for ss = 1:numel(subject)
      %find path to current subject data
+     if contains(runlist,'symctrl','IgnoreCase',true)
+      subjectDir = [preprocessingDir, subject{ss},'\func\'];     
+     else
       subjectDir = [preprocessingDir, subject{ss},'\func\',currRun,'\'];     
+     end
       
      %find epis to be repared. Accepts several.
      epis = dir([subjectDir,'\s*wua*.nii']);
@@ -72,7 +78,7 @@ for r= 1:length(runlist)
                       
               end
             % the figure is always stored in path_data, Add identifier and move to ART folder within subject
-             picfile = dir([preprocessingDir, subject{ss},'\func\artglobalfunc*.jpg']);
+             picfile = dir([preprocessingDir, subject{ss},'\func\artglobal*func*.jpg']);
              if ~isempty(picfile) && length(picfile)==1 
                 movefile(fullfile(picfile.folder, picfile.name),[newDir,[fileID,'_',picfile.name]]);
 

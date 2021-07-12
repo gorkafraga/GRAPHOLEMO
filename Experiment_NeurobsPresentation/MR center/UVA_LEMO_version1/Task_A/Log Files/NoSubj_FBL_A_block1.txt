@@ -1,0 +1,2 @@
+block	trial	vStim	aStim	resp	rt	fb	iti	feedJitter	aFile	vSymbol	LeftIsMatch	stimOnset	respOnset	feedbackOnset
+1	1	4	3	1	254	0	2670	1146	t_2_1_loudCheck.wav	3	1	11451	11705	15105

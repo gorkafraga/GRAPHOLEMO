@@ -1,0 +1,16 @@
+block	trial	vStim	aStim	resp	rt	fb	iti	feedJitter	aFile	vSymbol	LeftIsMatch	stimOnset	respOnset	feedbackOnset
+99	1	1	2	1	0	0	2	1852	1592	a	b	a	äu_2_3.wav	practice	practice	practice
+99	2	1	3	1	0	0	2	3200	1066	a	0	a	äu_2_3.wav	practice	practice	practice
+99	3	4	1	1	2	1644	1	2458	1996	1	a	a	äu_2_3.wav	practice	practice	practice
+99	4	2	1	2	1	2162	1	2134	2130	b	a	b	au_2_2.wav	practice	practice	practice
+99	5	1	2	2	1	742	0	2182	1628	a	b	b	au_2_2.wav	practice	practice	practice
+99	6	1	4	1	1	1108	1	2350	2619	a	1	a	äu_2_3.wav	practice	practice	practice
+99	7	2	3	2	2	1102	0	2885	1582	b	0	b	au_2_2.wav	practice	practice	practice
+99	8	2	1	2	1	1485	1	2195	2173	b	a	b	au_2_2.wav	practice	practice	practice
+99	9	4	3	3	2	2329	1	2035	1320	1	0	0	ü_short_2_2.wav	practice	practice	practice
+99	10	3	4	4	2	1385	1	2269	1380	0	1	1	m_2_1.wav	practice	practice	practice
+99	11	1	2	1	1	916	1	2532	1796	a	b	a	äu_2_3.wav	practice	practice	practice
+99	12	2	4	2	1	943	1	3114	2602	b	1	b	au_2_2.wav	practice	practice	practice
+99	13	1	4	4	2	1253	1	3387	1599	a	1	1	m_2_1.wav	practice	practice	practice
+99	14	2	3	3	2	1935	1	3581	2220	b	0	0	ü_short_2_2.wav	practice	practice	practice
+99	15	1	3	3	2	918	1	2586	1795	a	0	0	ü_short_2_2.wav	practice	practice	practice

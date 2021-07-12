@@ -70,16 +70,20 @@ for i = 1:length(subjects)
       rpdat = textscan(fileID1, formatSpec, 'Delimiter', '', 'WhiteSpace', '', 'TextType', 'string',  'ReturnOnError', false);
       fclose(fileID1);
        
-      % Read flagged bad scans (if file found, else create a vector of zeros) 
-       badscans = dir([paths.mri,'\epis\',currsubject,'\ART\*flagscans_inBlock.mat']);
+       % Read flagged bad scans (if file found, else create a vector of zeros) 
+       badscans =  dir([path_preproc,'\',task,'\',subject,'\func\*badScansIdx.csv']);
        if ~isempty(badscans) % If it doesn't find a flagscan file it will use zeroes
-           load([badscans.folder,'\',badscans.name]);  % load variable Regr_badscans from file
+           Regr_badscans = zeros(length(scans),1);  
+           badScansIndices = readmatrix([badscans.folder,'\',badscans.name]);  % read bad scans indices from file
+           Regr_badscans(badScansIndices) = 1;
            logInfBadscans = [badscans.folder,'\',badscans.name];  
       else 
-           Regr_badscans = zeros(nscans,1);   
+           Regr_badscans = zeros(length(scans),1);  % if no file make a vector of zeros
            logInfBadscans ='No bad scans file'; 
-       end
-        
+       end   
+       if manualScanSelection == 1 
+           Regr_badscans(1:nscans) = 1;       
+       end 
         % Merge RP and Flagscans and save table in txt 
          multireg =  [rpdat{1},rpdat{2},rpdat{3},rpdat{4},rpdat{5},rpdat{6},Regr_badscans];
          writetable(cell2table(num2cell(multireg)),[pathSubject,'\multiReg.txt'],'WriteVariableNames',false)

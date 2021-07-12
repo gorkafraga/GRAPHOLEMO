@@ -1,0 +1,86 @@
+Scenario - 
+Logfile written - 03/26/2021 15:09:17
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test	1	Pulse	199	11970	11804	0
+test	1	Response	20	26370	26204	0
+test	2	Picture	start	26527	0	1	14724	198	0	next	other	0
+test	2	Pulse	199	28930	2403	0
+test	2	Pulse	199	39810	13283	0
+test	2	Response	20	41250	14724	0
+test	3	Picture	100	41251	1	198	50101	198	0	50000	other	0
+test	3	Pulse	199	43010	1759	0
+test	4	Picture	90	91518	0	1	7129	1	0	7000	other	0
+test	5	Picture	40	98813	0	1	2819	1	0	2690	other	0
+test	6	Picture	90	101797	0	1	7129	1	0	7000	other	0
+test	7	Picture	40	109092	0	1	2155	1	0	2130	other	0
+test	8	Picture	90	111413	0	1	7129	1	0	7000	other	0
+test	9	Picture	40	118708	0	1	4476	1	0	4350	other	0
+test	10	Picture	90	123350	0	1	7129	1	0	7000	other	0
+test	11	Picture	40	130645	0	1	2155	1	0	1990	other	0
+test	12	Picture	90	132966	0	1	7129	1	0	7000	other	0
+test	13	Picture	40	140261	0	1	2984	1	0	2860	other	0
+test	14	Picture	90	143411	0	1	7129	1	0	7000	other	0
+test	15	Picture	40	150706	0	1	2653	1	0	2490	other	0
+test	16	Picture	90	153525	0	1	7129	1	0	7000	other	0
+test	17	Picture	40	160820	0	1	1824	1	0	1780	other	0
+test	18	Picture	90	162809	0	1	7129	1	0	7000	other	0
+test	19	Picture	40	170104	0	1	2155	1	0	2140	other	0
+test	20	Picture	90	172425	0	1	7129	1	0	7000	other	0
+test	21	Picture	40	179720	0	1	3482	1	0	3310	other	0
+test	22	Picture	90	183368	0	1	7129	1	0	7000	other	0
+test	23	Picture	40	190663	0	1	3813	1	0	3660	other	0
+test	24	Picture	50	194642	0	1	30174	1	0	next	other	0
+test	25	Picture	60	224816	0	1	7129	1	0	7000	other	0
+test	26	Picture	40	232111	0	1	3813	1	0	3660	other	0
+test	27	Picture	60	236090	0	1	7129	1	0	7000	other	0
+test	28	Picture	40	243385	0	1	3482	1	0	3310	other	0
+test	29	Picture	65	247033	0	1	7129	1	0	7000	miss	0
+test	30	Picture	40	254327	0	1	2984	1	0	2860	other	0
+test	31	Picture	60	257478	0	1	7129	1	0	7000	other	0
+test	32	Picture	40	264772	0	1	1824	1	0	1780	other	0
+test	33	Picture	60	266762	0	1	7129	1	0	7000	other	0
+test	34	Picture	40	274057	0	1	2653	1	0	2490	other	0
+test	35	Picture	60	276875	0	1	7129	1	0	7000	other	0
+test	36	Picture	40	284170	0	1	2155	1	0	2140	other	0
+test	37	Picture	60	286491	0	1	7129	1	0	7000	other	0
+test	38	Picture	40	293786	0	1	4476	1	0	4350	other	0
+test	39	Picture	60	298429	0	1	7129	1	0	7000	other	0
+test	40	Picture	40	305723	0	1	2818	1	0	2690	other	0
+test	41	Picture	60	308708	0	1	7129	1	0	7000	other	0
+test	42	Picture	40	316003	0	1	2155	1	0	2130	other	0
+test	43	Picture	60	318324	0	1	7129	1	0	7000	other	0
+test	44	Picture	40	325619	0	1	2155	1	0	1990	other	0
+test	45	Picture	50	327940	0	1	50070	1	0	next	other	0
+test	46	Picture	70	378010	0	1	7129	1	0	7000	other	0
+test	47	Picture	40	385305	0	1	2155	1	0	2140	other	0
+test	48	Picture	70	387626	0	1	7129	1	0	7000	other	0
+test	49	Picture	40	394921	0	1	2653	1	0	2490	other	0
+test	50	Picture	70	397739	0	1	7129	1	0	7000	other	0
+test	51	Picture	40	405034	0	1	2155	1	0	2130	other	0
+test	52	Picture	70	407355	0	1	7129	1	0	7000	other	0
+test	53	Picture	40	414650	0	1	2818	1	0	2690	other	0
+test	54	Picture	70	417634	0	1	7129	1	0	7000	other	0
+test	55	Picture	40	424929	0	1	4476	1	0	4350	other	0
+test	56	Picture	70	429571	0	1	7129	1	0	7000	other	0
+test	57	Picture	40	436866	0	1	2984	1	0	2860	other	0
+test	58	Picture	70	440016	0	1	7129	1	0	7000	other	0
+test	59	Picture	40	447311	0	1	1824	1	0	1780	other	0
+test	60	Picture	75	449301	0	1	7129	1	0	7000	miss	0
+test	61	Picture	40	456596	0	1	3482	1	0	3310	other	0
+test	62	Picture	70	460243	0	1	7129	1	0	7000	other	0
+test	63	Picture	40	467538	0	1	3813	1	0	3660	other	0
+test	64	Picture	70	471517	0	1	7129	1	0	7000	other	0
+test	65	Picture	40	478812	0	1	2155	1	0	1990	other	0
+test	66	Picture	50	481133	0	1	70131	1	0	next	other	0
+test	67	Picture	80	551264	0	1	7129	1	0	7000	other	0
+test	68	Picture	40	558559	0	1	2653	1	0	2490	other	0
+test	69	Picture	80	561378	0	1	7129	1	0	7000	other	0
+test	70	Picture	40	568672	0	1	2155	1	0	1990	other	0
+test	71	Picture	85	570993	0	1	7129	1	0	7000	miss	0
+test	72	Picture	40	578288	0	1	4476	1	0	4350	other	0
+test	73	Picture	80	582931	0	1	7129	1	0	7000	other	0
+test	74	Picture	40	590226	0	1	3482	1	0	3310	other	0
+test	75	Picture	80	593873	0	1	7161	1	0	7000	other	0
+test	75	Quit		595971	2098	NA

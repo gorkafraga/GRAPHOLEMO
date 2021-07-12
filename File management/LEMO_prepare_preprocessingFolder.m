@@ -7,7 +7,7 @@ clear all
 sourcePath = 'O:\studies\grapholemo\raw\';
 destinationPath = 'G:\GRAPHOLEMO\lemo_preproc';
 renameNiftisForPreprocessing = 1;
-subject = {'gpl008','gpl009'};
+subject = {'gpl030','gpl031'};
 
 
 %recParNames = { 'b0_fbl','fbl_parta','fbl_partb','b0_symctrl','1_symcontrol','t13d','audiotest'};
@@ -135,7 +135,7 @@ for s= 1:length(subject)
     end
 end
  
-%% FIND  PAR from b0 files
+%% FIND PAR from b0 files
 mkdir(destinationPath)
 for s= 1:length(subject)
     currSubj = subject{s};

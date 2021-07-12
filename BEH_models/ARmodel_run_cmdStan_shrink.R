@@ -71,7 +71,7 @@ model  <- c('AR_rlddm_v31')
   rstan_options(auto_write = TRUE)
   memory.limit(9999999999)
   memory.size(max = TRUE) 
-  Sys.setenv(LOCAL_CPPFLAGS = '-mtune=native') # Comment this if you get errors.But else, this could improve execution times
+  # Sys.setenv(LOCAL_CPPFLAGS = '-mtune=native') # Comment this if you get errors.But else, this could improve execution times
   #Sys.setenv(LOCAL_CPPFLAGS = '-march=znver2 -mtune=znver2') # Comment this if you get errors.But else, this could improve execution times
   
   # compile  model 

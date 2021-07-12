@@ -1,0 +1,6 @@
+Scenario - FBL_A.sce
+Logfile written - 04/28/2021 15:16:48
+
+Subject	Pulse	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+testinsruction	0	Quit		1141162	1141162	NA

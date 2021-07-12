@@ -1,0 +1,46 @@
+Scenario - FBL_A.sce
+Logfile written - 04/16/2021 13:19:48
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+gpl005	1	Response	16	213725	203559	0
+gpl005	2	Picture	fix	214257	0	1	8787	1	0	next	other	0
+gpl005	4	Picture	stim	223044	0	1	25035	1	0	25000	hit	4
+gpl005	4	Response	16	245635	22591	0
+gpl005	5	Picture	fix2	248079	0	1	5969	1	0	next	other	0
+gpl005	6	Picture	feedback	254048	0	1	20061	1	0	next	other	0
+gpl005	7	Picture	fix	274108	0	1	22051	1	0	next	other	0
+gpl005	9	Picture	stim	296159	0	1	25035	1	0	25000	hit	9
+gpl005	9	Response	16	313275	17116	0
+gpl005	10	Picture	fix2	321194	0	1	829	1	0	next	other	0
+gpl005	11	Picture	feedback	322023	0	1	20061	1	0	next	other	0
+gpl005	12	Picture	fix	342084	0	1	14756	1	0	next	other	0
+gpl005	14	Picture	stim	356839	0	1	25035	1	0	25000	incorrect	14
+gpl005	14	Response	32	365785	8945	0
+gpl005	15	Picture	fix2	381874	0	1	10113	1	0	next	other	0
+gpl005	16	Picture	feedback	391988	0	1	20393	1	0	next	other	0
+gpl005	17	Picture	fix	412380	0	1	11440	1	0	next	other	0
+gpl005	19	Picture	stim	423820	0	1	25035	1	0	25000	hit	19
+gpl005	19	Response	16	439525	15705	0
+gpl005	20	Picture	fix2	449020	0	1	11440	1	0	next	other	0
+gpl005	21	Picture	feedback	460460	0	1	20061	1	0	next	other	0
+gpl005	22	Picture	fix	480521	0	1	11937	1	0	next	other	0
+gpl005	24	Picture	stim	492458	0	1	25035	1	0	25000	incorrect	24
+gpl005	24	Response	32	500944	8486	0
+gpl005	25	Picture	fix2	517493	0	1	6300	1	0	next	other	0
+gpl005	26	Picture	feedback	523793	0	1	20061	1	0	next	other	0
+gpl005	27	Picture	fix	543854	0	1	13595	1	0	next	other	0
+gpl005	29	Picture	stim	557449	0	1	25035	1	0	25000	hit	29
+gpl005	29	Response	16	569294	11845	0
+gpl005	30	Picture	fix2	582484	0	1	16248	1	0	next	other	0
+gpl005	31	Picture	feedback	598732	0	1	20061	1	0	next	other	0
+gpl005	32	Picture	fix	618793	0	1	18900	1	0	next	other	0
+gpl005	34	Picture	stim	637693	0	1	25035	1	0	25000	hit	34
+gpl005	34	Response	16	652704	15011	0
+gpl005	35	Picture	fix2	662894	0	1	5969	1	0	next	other	0
+gpl005	36	Picture	feedback	668862	0	1	20061	1	0	next	other	0
+gpl005	37	Picture	fix	688923	0	1	12103	1	0	next	other	0
+gpl005	39	Picture	stim	701026	0	1	25035	1	0	25000	hit	39
+gpl005	39	Response	16	712723	11697	0
+gpl005	40	Picture	fix2	726061	0	1	11771	1	0	next	other	0
+gpl005	41	Picture	feedback	737832	0	1	27327	1	0	next	other	0

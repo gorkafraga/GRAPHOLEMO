@@ -1,0 +1,105 @@
+Scenario - FBL_A.sce
+Logfile written - 05/08/2021 10:23:39
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+gpl010	1	Response	32	158835	148669	0
+gpl010	2	Picture	fix	159214	0	1	8787	1	0	next	other	0
+gpl010	4	Picture	stim	168001	0	1	25019	182	0	25000	incorrect	4
+gpl010	4	Response	32	186394	18393	0
+gpl010	5	Picture	fix2	193020	0	182	5984	182	0	next	other	0
+gpl010	6	Picture	feedback	199004	0	1	20061	1	0	next	other	0
+gpl010	7	Picture	fix	219065	0	1	22050	1	0	next	other	0
+gpl010	9	Picture	stim	241116	0	1	25035	1	0	25000	incorrect	9
+gpl010	9	Response	32	256114	14998	0
+gpl010	10	Picture	fix2	266151	0	1	829	1	0	next	other	0
+gpl010	11	Picture	feedback	266980	0	1	20061	1	0	next	other	0
+gpl010	12	Picture	fix	287041	0	1	14756	1	0	next	other	0
+gpl010	14	Picture	stim	301796	0	1	25035	1	0	25000	hit	14
+gpl010	14	Response	16	310705	8908	0
+gpl010	15	Picture	fix2	326831	0	1	10113	1	0	next	other	0
+gpl010	16	Picture	feedback	336945	0	1	20393	1	0	next	other	0
+gpl010	17	Picture	fix	357337	0	1	11440	1	0	next	other	0
+gpl010	19	Picture	stim	368777	0	1	25035	1	0	25000	incorrect	19
+gpl010	19	Response	32	390475	21698	0
+gpl010	20	Picture	fix2	393812	0	1	11440	1	0	next	other	0
+gpl010	21	Picture	feedback	405252	0	1	20061	1	0	next	other	0
+gpl010	22	Picture	fix	425313	0	1	11937	1	0	next	other	0
+gpl010	24	Picture	stim	437250	0	1	25035	1	0	25000	incorrect	24
+gpl010	24	Response	32	444905	7655	0
+gpl010	25	Picture	fix2	462285	0	1	6300	1	0	next	other	0
+gpl010	26	Picture	feedback	468585	0	1	20061	1	0	next	other	0
+gpl010	27	Picture	fix	488646	0	1	13595	1	0	next	other	0
+gpl010	29	Picture	stim	502241	0	1	25035	1	0	25000	incorrect	29
+gpl010	29	Response	32	514784	12544	0
+gpl010	30	Picture	fix2	527276	0	1	16248	1	0	next	other	0
+gpl010	31	Picture	feedback	543523	0	1	20061	1	0	next	other	0
+gpl010	32	Picture	fix	563584	0	1	18900	1	0	next	other	0
+gpl010	34	Picture	stim	582485	0	1	25201	1	0	25000	miss	0
+gpl010	35	Picture	fix2	607685	0	1	5969	1	0	next	other	0
+gpl010	36	Picture	feedback	613654	0	1	20061	1	0	next	other	0
+gpl010	36	Response	32	614265	611	0
+gpl010	37	Picture	fix	633715	0	1	12103	1	0	next	other	0
+gpl010	39	Picture	stim	645818	0	1	25035	1	0	25000	incorrect	39
+gpl010	39	Response	32	663575	17757	0
+gpl010	40	Picture	fix2	670853	0	1	11771	1	0	next	other	0
+gpl010	41	Picture	feedback	682624	0	1	20227	1	0	next	other	0
+gpl010	42	Picture	fix	702851	0	1	10445	1	0	next	other	0
+gpl010	44	Picture	stim	713296	0	1	25035	1	0	25000	incorrect	44
+gpl010	44	Response	32	727815	14519	0
+gpl010	45	Picture	fix2	738331	0	1	3316	1	0	next	other	0
+gpl010	46	Picture	feedback	741647	0	1	20227	1	0	next	other	0
+gpl010	47	Picture	fix	761873	0	1	12766	1	0	next	other	0
+gpl010	49	Picture	stim	774639	0	1	25035	1	0	25000	hit	49
+gpl010	49	Response	16	795575	20935	0
+gpl010	50	Picture	fix2	799674	0	1	3801	179	0	next	other	0
+gpl010	51	Picture	feedback	803475	0	179	20073	179	0	next	other	0
+gpl010	52	Picture	fix	823549	0	1	15419	1	0	next	other	0
+gpl010	54	Picture	stim	838967	0	1	25035	1	0	25000	incorrect	54
+gpl010	54	Response	32	847294	8327	0
+gpl010	55	Picture	fix2	864002	0	1	8124	1	0	next	other	0
+gpl010	56	Picture	feedback	872126	0	1	20061	1	0	next	other	0
+gpl010	57	Picture	fix	892187	0	1	21222	1	0	next	other	0
+gpl010	59	Picture	stim	913409	0	1	25035	1	0	25000	incorrect	59
+gpl010	59	Response	32	921615	8206	0
+gpl010	60	Picture	fix2	938444	0	1	16082	1	0	next	other	0
+gpl010	61	Picture	feedback	954526	0	1	20061	1	0	next	other	0
+gpl010	62	Picture	fix	974587	0	1	24040	1	0	next	other	0
+gpl010	64	Picture	stim	998627	0	1	25035	1	0	25000	incorrect	64
+gpl010	64	Response	32	1010604	11978	0
+gpl010	65	Picture	fix2	1023661	0	1	6134	1	0	next	other	0
+gpl010	66	Picture	feedback	1029796	0	1	20061	1	0	next	other	0
+gpl010	67	Picture	fix	1049857	0	1	25864	1	0	next	other	0
+gpl010	69	Picture	stim	1075721	0	1	25035	1	0	25000	incorrect	69
+gpl010	69	Response	32	1098565	22844	0
+gpl010	70	Picture	fix2	1100755	0	1	12269	1	0	next	other	0
+gpl010	71	Picture	feedback	1113024	0	1	20061	1	0	next	other	0
+gpl010	72	Picture	fix	1133085	0	1	15916	1	0	next	other	0
+gpl010	74	Picture	stim	1149001	0	1	25035	1	0	25000	miss	0
+gpl010	75	Picture	fix2	1174036	0	1	8124	1	0	next	other	0
+gpl010	76	Picture	feedback	1182160	0	1	20061	1	0	next	other	0
+gpl010	77	Picture	fix	1202221	0	1	16414	1	0	next	other	0
+gpl010	79	Picture	stim	1218635	0	1	25035	1	0	25000	hit	78
+gpl010	79	Response	16	1232624	13989	0
+gpl010	80	Picture	fix2	1243669	0	1	6632	1	0	next	other	0
+gpl010	81	Picture	feedback	1250301	0	1	20061	1	0	next	other	0
+gpl010	82	Picture	fix	1270362	0	1	17243	1	0	next	other	0
+gpl010	84	Picture	stim	1287605	0	1	25035	1	0	25000	hit	83
+gpl010	84	Response	16	1302194	14589	0
+gpl010	85	Picture	fix2	1312640	0	1	1161	1	0	next	other	0
+gpl010	86	Picture	feedback	1313800	0	1	20061	1	0	next	other	0
+gpl010	87	Picture	fix	1333861	0	1	9450	1	0	next	other	0
+gpl010	89	Picture	stim	1343311	0	1	25035	1	0	25000	incorrect	88
+gpl010	89	Response	32	1358954	15643	0
+gpl010	90	Picture	fix2	1368512	0	1	4642	1	0	next	other	0
+gpl010	91	Picture	feedback	1373154	0	1	20061	1	0	next	other	0
+gpl010	92	Picture	fix	1393215	0	1	10279	1	0	next	other	0
+gpl010	94	Picture	stim	1403494	0	1	25035	1	0	25000	incorrect	93
+gpl010	94	Response	32	1419824	16330	0
+gpl010	95	Picture	fix2	1428695	0	1	7295	1	0	next	other	0
+gpl010	96	Picture	feedback	1435990	0	1	20061	1	0	next	other	0
+gpl010	97	Picture	fix	1456051	0	1	23211	1	0	next	other	0
+gpl010	99	Picture	stim	1479262	0	1	25035	1	0	25000	incorrect	98
+gpl010	99	Response	32	1498604	19342	0
+gpl010	100	Picture	fix2	1504297	0	1	11606	1	0	next	other	0
+gpl010	101	Picture	feedback	1515902	0	1	28419	1	0	next	other	0

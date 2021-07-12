@@ -1,0 +1,25 @@
+Scenario - FBL_B.sce
+Logfile written - 03/26/2021 14:41:10
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+GPL001	1	Response	16	128733	118568	0
+GPL001	2	Picture	fix	129040	0	1	18735	1	0	next	other	0
+GPL001	4	Picture	stim	147774	0	1	15253	1	0	next	hit	4
+GPL001	4	Response	16	162843	15069	0
+GPL001	5	Picture	feedback	163027	0	1	20061	1	0	next	other	0
+GPL001	6	Picture	fix	183089	0	1	32164	1	0	next	other	0
+GPL001	8	Picture	stim	215252	0	1	8456	1	0	next	incorrect	8
+GPL001	8	Response	32	223593	8341	0
+GPL001	9	Picture	feedback	223708	0	1	20227	1	0	next	other	0
+GPL001	10	Picture	fix	243935	0	1	24703	1	0	next	other	0
+GPL001	12	Picture	stim	268638	0	1	6798	1	0	next	incorrect	12
+GPL001	12	Response	32	275333	6695	0
+GPL001	13	Picture	feedback	275436	0	1	20227	1	0	next	other	0
+GPL001	14	Picture	fix	295662	0	1	21387	1	0	next	other	0
+GPL001	16	Picture	stim	317050	0	1	7958	1	0	next	incorrect	16
+GPL001	16	Response	32	324823	7773	0
+GPL001	17	Picture	feedback	325008	0	1	20061	1	0	next	other	0
+GPL001	18	Picture	fix	345069	0	1	21885	1	0	next	other	0
+GPL001	20	Picture	stim	366954	0	1	21933	1	0	next	miss	0
+GPL001	20	Quit		383454	16500	NA

@@ -1,0 +1,1111 @@
+Scenario - 
+Logfile written - 03/09/2021 18:46:59
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+testiming	1	Response	20	14189	14024	0
+testiming	2	Response	20	32909	18651	0
+testiming	3	Pulse	199	727010	694101	0
+testiming	3	Picture	100	727171	694261	1	50070	1	0	50000	other	0
+testiming	3	Pulse	199	739510	706601	0
+testiming	3	Pulse	199	752009	719100	0
+testiming	3	Pulse	199	764509	731600	0
+testiming	3	Pulse	199	777010	744100	0
+testiming	4	Picture	60	777406	0	1	7129	1	0	7000	other	0
+testiming	5	Picture	40	784701	0	1	1824	1	0	1780	other	0
+testiming	6	Picture	60	786691	0	1	7129	1	0	7000	other	0
+testiming	6	Pulse	199	789510	2819	0
+testiming	7	Picture	40	793986	0	1	2653	1	0	2490	other	0
+testiming	8	Picture	60	796804	0	1	7129	1	0	7000	other	0
+testiming	8	Pulse	199	802010	5206	0
+testiming	9	Picture	40	804099	0	1	2818	1	0	2690	other	0
+testiming	10	Picture	60	807083	0	1	7129	1	0	7000	other	0
+testiming	11	Picture	40	814378	0	1	3482	1	0	3310	other	0
+testiming	11	Pulse	199	814510	132	0
+testiming	12	Picture	60	818026	0	1	7129	1	0	7000	other	0
+testiming	13	Picture	40	825321	0	1	4476	1	0	4350	other	0
+testiming	13	Pulse	199	827010	1689	0
+testiming	14	Picture	60	829963	0	1	7129	1	0	7000	other	0
+testiming	15	Picture	40	837258	0	1	2155	1	0	2140	other	0
+testiming	16	Picture	60	839423	0	322	7119	322	0	7000	other	0
+testiming	16	Pulse	199	839423	0	87
+testiming	17	Picture	40	846708	0	1	2155	1	0	1990	other	0
+testiming	18	Picture	60	849029	0	1	7129	1	0	7000	other	0
+testiming	18	Pulse	199	852010	2981	0
+testiming	19	Picture	40	856324	0	1	2984	1	0	2860	other	0
+testiming	20	Picture	60	859474	0	1	7129	1	0	7000	other	0
+testiming	20	Pulse	199	864510	5036	0
+testiming	21	Picture	40	866769	0	1	3813	1	0	3660	other	0
+testiming	22	Picture	60	870748	0	1	7129	1	0	7000	other	0
+testiming	22	Pulse	199	877010	6262	0
+testiming	23	Picture	40	878043	0	1	2155	1	0	2130	other	0
+testiming	24	Picture	50	880364	0	1	30175	1	0	next	other	0
+testiming	24	Pulse	199	889509	9145	0
+testiming	24	Pulse	199	902010	21646	0
+testiming	25	Picture	80	910539	0	1	7129	1	0	7000	other	0
+testiming	25	Pulse	199	914510	3971	0
+testiming	26	Picture	40	917833	0	1	2156	1	0	1990	other	0
+testiming	27	Picture	80	920155	0	1	7129	1	0	7000	other	0
+testiming	27	Pulse	199	927010	6855	0
+testiming	28	Picture	40	927450	0	1	3813	1	0	3660	other	0
+testiming	29	Picture	80	931429	0	1	7129	1	0	7000	other	0
+testiming	30	Picture	40	938724	0	1	2653	1	0	2490	other	0
+testiming	30	Pulse	199	939509	786	0
+testiming	31	Picture	85	941542	0	1	7129	1	0	7000	miss	0
+testiming	32	Picture	40	948837	0	1	1824	1	0	1780	other	0
+testiming	33	Picture	80	950826	0	1	7129	1	0	7000	other	0
+testiming	33	Pulse	199	952010	1183	0
+testiming	34	Picture	40	958121	0	1	2984	1	0	2860	other	0
+testiming	35	Picture	80	961271	0	1	7129	1	0	7000	other	0
+testiming	35	Pulse	199	964509	3238	0
+testiming	36	Picture	40	968566	0	1	2818	1	0	2690	other	0
+testiming	37	Picture	80	971551	0	1	7129	1	0	7000	other	0
+testiming	37	Pulse	199	977010	5459	0
+testiming	38	Picture	40	978846	0	1	2155	1	0	2140	other	0
+testiming	39	Picture	80	981011	0	322	7119	322	0	7000	other	0
+testiming	40	Picture	40	988296	0	1	3482	1	0	3310	other	0
+testiming	40	Pulse	199	989509	1213	0
+testiming	41	Picture	80	991943	0	1	7129	1	0	7000	other	0
+testiming	42	Picture	40	999238	0	1	2155	1	0	2130	other	0
+testiming	43	Picture	80	1001559	0	1	7129	1	0	7000	other	0
+testiming	43	Pulse	199	1002009	450	0
+testiming	44	Picture	40	1008854	0	1	4476	1	0	4350	other	0
+testiming	45	Picture	50	1013496	0	1	50070	1	0	next	other	0
+testiming	45	Pulse	199	1014510	1014	0
+testiming	45	Pulse	199	1027010	13514	0
+testiming	45	Pulse	199	1039510	26014	0
+testiming	45	Pulse	199	1052010	38514	0
+testiming	46	Picture	70	1063566	0	1	7129	1	0	7000	other	0
+testiming	46	Pulse	199	1064510	944	0
+testiming	47	Picture	40	1070861	0	1	2155	1	0	2130	other	0
+testiming	48	Picture	70	1073182	0	1	7129	1	0	7000	other	0
+testiming	48	Pulse	199	1077011	3828	0
+testiming	49	Picture	40	1080477	0	1	2818	1	0	2690	other	0
+testiming	50	Picture	70	1083461	0	1	7129	1	0	7000	other	0
+testiming	50	Pulse	199	1089510	6049	0
+testiming	51	Picture	40	1090756	0	1	3482	1	0	3310	other	0
+testiming	52	Picture	70	1094404	0	1	7129	1	0	7000	other	0
+testiming	53	Picture	40	1101699	0	1	2155	1	0	1990	other	0
+testiming	53	Pulse	199	1102009	311	0
+testiming	54	Picture	75	1104020	0	1	7129	1	0	7000	miss	0
+testiming	55	Picture	40	1111315	0	1	1824	1	0	1780	other	0
+testiming	56	Picture	70	1113304	0	1	7129	1	0	7000	other	0
+testiming	56	Pulse	199	1114510	1206	0
+testiming	57	Picture	40	1120599	0	1	2155	1	0	2140	other	0
+testiming	58	Picture	70	1122764	0	322	7118	323	0	7000	other	0
+testiming	58	Pulse	199	1127010	4246	0
+testiming	59	Picture	40	1130049	0	1	2984	1	0	2860	other	0
+testiming	60	Picture	70	1133200	0	1	7129	1	0	7000	other	0
+testiming	60	Pulse	199	1139510	6311	0
+testiming	61	Picture	40	1140494	0	1	2653	1	0	2490	other	0
+testiming	62	Picture	70	1143313	0	1	7129	1	0	7000	other	0
+testiming	63	Picture	40	1150608	0	1	3813	1	0	3660	other	0
+testiming	63	Pulse	199	1152010	1402	0
+testiming	64	Picture	70	1154587	0	1	7129	1	0	7000	other	0
+testiming	65	Picture	40	1161882	0	1	4476	1	0	4350	other	0
+testiming	65	Pulse	199	1164510	2628	0
+testiming	66	Picture	50	1166524	0	1	70131	1	0	next	other	0
+testiming	66	Pulse	199	1177010	10486	0
+testiming	66	Pulse	199	1189510	22986	0
+testiming	66	Pulse	199	1202010	35486	0
+testiming	66	Pulse	199	1214510	47986	0
+testiming	66	Pulse	199	1227010	60486	0
+testiming	67	Picture	90	1236655	0	1	7129	1	0	7000	other	0
+testiming	67	Pulse	199	1239511	2856	0
+testiming	68	Picture	40	1243950	0	1	4476	1	0	4350	other	0
+testiming	69	Picture	90	1248592	0	1	7129	1	0	7000	other	0
+testiming	69	Pulse	199	1252010	3418	0
+testiming	70	Picture	40	1255887	0	1	3482	1	0	3310	other	0
+testiming	71	Picture	95	1259534	0	1	7129	1	0	7000	miss	0
+testiming	71	Pulse	199	1264511	4976	0
+testiming	72	Picture	40	1266829	0	1	2155	1	0	1990	other	0
+testiming	73	Picture	90	1269150	0	1	7129	1	0	7000	other	0
+testiming	74	Picture	40	1276445	0	1	3813	1	0	3660	other	0
+testiming	74	Pulse	199	1277011	565	0
+testiming	75	Picture	90	1280424	0	1	7129	1	0	7000	other	0
+testiming	76	Picture	40	1287719	0	1	2818	1	0	2690	other	0
+testiming	76	Pulse	199	1289511	1791	0
+testiming	77	Picture	90	1290703	0	1	7129	1	0	7000	other	0
+testiming	78	Picture	40	1297998	0	1	2653	1	0	2490	other	0
+testiming	79	Picture	90	1300817	0	1	7129	1	0	7000	other	0
+testiming	79	Pulse	199	1302011	1194	0
+testiming	80	Picture	40	1308112	0	1	1824	1	0	1780	other	0
+testiming	81	Picture	90	1310101	0	1	7129	1	0	7000	other	0
+testiming	81	Pulse	199	1314511	4409	0
+testiming	82	Picture	40	1317396	0	1	2984	1	0	2860	other	0
+testiming	83	Picture	95	1320546	0	1	7129	1	0	7000	miss	0
+testiming	83	Pulse	199	1327010	6464	0
+testiming	84	Picture	40	1327841	0	1	2155	1	0	2140	other	0
+testiming	85	Picture	90	1330007	0	322	7119	322	0	7000	other	0
+testiming	86	Picture	40	1337291	0	1	2155	1	0	2130	other	0
+testiming	86	Pulse	199	1339510	2219	1
+testiming	87	Picture	50	1339613	0	1	90192	1	0	next	other	0
+testiming	87	Pulse	199	1352011	12398	0
+testiming	87	Pulse	199	1364511	24898	0
+testiming	87	Pulse	199	1377011	37398	0
+testiming	87	Pulse	199	1389510	49898	0
+testiming	87	Pulse	199	1402010	62398	0
+testiming	87	Pulse	199	1414510	74898	0
+testiming	87	Pulse	199	1427010	87397	0
+testiming	88	Picture	60	1429804	0	1	7129	1	0	7000	other	0
+testiming	89	Picture	40	1437099	0	1	3482	1	0	3310	other	0
+testiming	89	Pulse	199	1439510	2411	0
+testiming	90	Picture	60	1440747	0	1	7129	1	0	7000	other	0
+testiming	91	Picture	40	1448042	0	1	2818	1	0	2690	other	0
+testiming	92	Picture	65	1451026	0	1	7129	1	0	7000	miss	0
+testiming	92	Pulse	199	1452011	985	0
+testiming	93	Picture	40	1458321	0	1	2984	1	0	2860	other	0
+testiming	94	Picture	60	1461471	0	1	7129	1	0	7000	other	0
+testiming	94	Pulse	199	1464511	3040	0
+testiming	95	Picture	40	1468766	0	1	2653	1	0	2490	other	0
+testiming	96	Picture	60	1471584	0	1	7129	1	0	7000	other	0
+testiming	96	Pulse	199	1477011	5427	0
+testiming	97	Picture	40	1478879	0	1	3813	1	0	3660	other	0
+testiming	98	Picture	60	1482858	0	1	7129	1	0	7000	other	0
+testiming	98	Pulse	199	1489511	6653	0
+testiming	99	Picture	40	1490153	0	1	1824	1	0	1780	other	0
+testiming	100	Picture	60	1492143	0	1	7129	1	0	7000	other	0
+testiming	101	Picture	40	1499438	0	1	4476	1	0	4350	other	0
+testiming	101	Pulse	199	1502011	2573	0
+testiming	102	Picture	60	1504080	0	1	7129	1	0	7000	other	0
+testiming	103	Picture	40	1511375	0	1	2155	1	0	2130	other	0
+testiming	104	Picture	60	1513696	0	1	7129	1	0	7000	other	0
+testiming	104	Pulse	199	1514511	815	0
+testiming	105	Picture	40	1520991	0	1	2155	1	0	1990	other	0
+testiming	106	Picture	60	1523312	0	1	7129	1	0	7000	other	0
+testiming	106	Pulse	199	1527011	3699	0
+testiming	107	Picture	40	1530607	0	1	2155	1	0	2140	other	0
+testiming	108	Picture	50	1532928	0	1	90192	1	0	next	other	0
+testiming	108	Pulse	199	1539511	6583	0
+testiming	108	Pulse	199	1552010	19082	0
+testiming	108	Pulse	199	1564510	31582	0
+testiming	108	Pulse	199	1577011	44083	0
+testiming	108	Pulse	199	1589511	56583	0
+testiming	108	Pulse	199	1602011	69083	0
+testiming	108	Pulse	199	1614511	81583	0
+testiming	109	Picture	80	1623120	0	1	7129	1	0	7000	other	0
+testiming	109	Pulse	199	1627012	3892	0
+testiming	110	Picture	40	1630415	0	1	2984	1	0	2860	other	0
+testiming	111	Picture	80	1633565	0	1	7129	1	0	7000	other	0
+testiming	111	Pulse	199	1639511	5947	0
+testiming	112	Picture	40	1640860	0	1	1824	1	0	1780	other	0
+testiming	113	Picture	85	1642849	0	1	7129	1	0	7000	miss	0
+testiming	114	Picture	40	1650144	0	1	2653	1	0	2490	other	0
+testiming	114	Pulse	199	1652011	1867	0
+testiming	115	Picture	80	1652963	0	1	7129	1	0	7000	other	0
+testiming	116	Picture	40	1660257	0	1	4477	2	0	4350	other	0
+testiming	116	Pulse	199	1664511	4254	0
+testiming	117	Picture	80	1664900	0	1	7129	1	0	7000	other	0
+testiming	118	Picture	40	1672195	0	1	2155	1	0	1990	other	0
+testiming	119	Picture	80	1674516	0	1	7129	1	0	7000	other	0
+testiming	119	Pulse	199	1677011	2495	0
+testiming	120	Picture	40	1681811	0	1	2155	1	0	2140	other	0
+testiming	121	Picture	80	1684132	0	1	7129	1	0	7000	other	0
+testiming	121	Pulse	199	1689511	5379	0
+testiming	122	Picture	40	1691427	0	1	2155	1	0	2130	other	0
+testiming	123	Picture	80	1693748	0	1	7129	1	0	7000	other	0
+testiming	124	Picture	40	1701043	0	1	2818	1	0	2690	other	0
+testiming	124	Pulse	199	1702011	969	0
+testiming	125	Picture	80	1704027	0	1	7129	1	0	7000	other	0
+testiming	126	Picture	40	1711322	0	1	3813	1	0	3660	other	0
+testiming	126	Pulse	199	1714511	3189	0
+testiming	127	Picture	80	1715301	0	1	7129	1	0	7000	other	0
+testiming	128	Picture	40	1722596	0	1	3482	1	0	3310	other	0
+testiming	129	Picture	50	1726243	0	1	70131	1	0	next	other	0
+testiming	129	Pulse	199	1727012	768	0
+testiming	129	Pulse	199	1739511	13268	0
+testiming	129	Pulse	199	1752011	25768	0
+testiming	129	Pulse	199	1764511	38268	0
+testiming	129	Pulse	199	1777011	50768	0
+testiming	129	Pulse	199	1789511	63268	0
+testiming	130	Picture	70	1796374	0	1	7129	1	0	7000	other	0
+testiming	130	Pulse	199	1802012	5638	0
+testiming	131	Picture	40	1803669	0	1	2819	1	0	2690	other	0
+testiming	132	Picture	70	1806653	0	1	7129	1	0	7000	other	0
+testiming	133	Picture	40	1813948	0	1	3482	1	0	3310	other	0
+testiming	133	Pulse	199	1814512	564	0
+testiming	134	Picture	75	1817596	0	1	7129	1	0	7000	miss	0
+testiming	135	Picture	40	1824891	0	1	3813	1	0	3660	other	0
+testiming	135	Pulse	199	1827012	2121	0
+testiming	136	Picture	70	1828870	0	1	7129	1	0	7000	other	0
+testiming	137	Picture	40	1836165	0	1	2155	1	0	1990	other	0
+testiming	138	Picture	70	1838486	0	1	7129	1	0	7000	other	0
+testiming	138	Pulse	199	1839512	1026	0
+testiming	139	Picture	40	1845781	0	1	2155	1	0	2130	other	0
+testiming	140	Picture	70	1848102	0	1	7129	1	0	7000	other	0
+testiming	140	Pulse	199	1852012	3910	0
+testiming	141	Picture	40	1855397	0	1	2155	1	0	2140	other	0
+testiming	142	Picture	70	1857562	0	322	7119	322	0	7000	other	0
+testiming	142	Pulse	199	1864511	6949	0
+testiming	143	Picture	40	1864847	0	1	1824	1	0	1780	other	0
+testiming	144	Picture	70	1866836	0	1	7129	1	0	7000	other	0
+testiming	145	Picture	40	1874131	0	1	4476	1	0	4350	other	0
+testiming	145	Pulse	199	1877011	2880	0
+testiming	146	Picture	70	1878774	0	1	7129	1	0	7000	other	0
+testiming	147	Picture	40	1886068	0	1	2653	1	0	2490	other	0
+testiming	148	Picture	75	1888887	0	1	7129	1	0	7000	miss	0
+testiming	148	Pulse	199	1889511	624	0
+testiming	149	Picture	40	1896182	0	1	2984	1	0	2860	other	0
+testiming	150	Picture	50	1899332	0	1	50070	1	0	next	other	0
+testiming	150	Pulse	199	1902011	2679	0
+testiming	150	Pulse	199	1914511	15179	0
+testiming	150	Pulse	199	1927012	27680	0
+testiming	150	Pulse	199	1939511	40179	0
+testiming	151	Picture	90	1949402	0	1	7129	1	0	7000	other	0
+testiming	151	Pulse	199	1952012	2610	0
+testiming	152	Picture	40	1956697	0	1	2155	1	0	1990	other	0
+testiming	153	Picture	90	1959018	0	1	7129	1	0	7000	other	0
+testiming	153	Pulse	199	1964512	5494	0
+testiming	154	Picture	40	1966313	0	1	2818	1	0	2690	other	0
+testiming	155	Picture	90	1969297	0	1	7129	1	0	7000	other	0
+testiming	156	Picture	40	1976592	0	1	2155	1	0	2130	other	0
+testiming	156	Pulse	199	1977012	420	0
+testiming	157	Picture	90	1978913	0	1	7129	1	0	7000	other	0
+testiming	158	Picture	40	1986208	0	1	2155	1	0	2140	other	0
+testiming	159	Picture	90	1988373	0	322	7119	322	0	7000	other	0
+testiming	159	Pulse	199	1989511	1138	0
+testiming	160	Picture	40	1995658	0	1	2653	1	0	2490	other	0
+testiming	161	Picture	90	1998477	0	1	7129	1	0	7000	other	0
+testiming	161	Pulse	199	2002011	3535	0
+testiming	162	Picture	40	2005771	0	1	2984	1	0	2860	other	0
+testiming	163	Picture	90	2008922	0	1	7129	1	0	7000	other	0
+testiming	163	Pulse	199	2014512	5590	0
+testiming	164	Picture	40	2016216	0	1	3813	1	0	3660	other	0
+testiming	165	Picture	90	2020196	0	1	7129	1	0	7000	other	0
+testiming	165	Pulse	199	2027012	6816	0
+testiming	166	Picture	40	2027490	0	1	3481	1	0	3310	other	0
+testiming	167	Picture	90	2031138	0	1	7129	1	0	7000	other	0
+testiming	168	Picture	40	2038433	0	1	1824	1	0	1780	other	0
+testiming	168	Pulse	199	2039511	1079	0
+testiming	169	Picture	90	2040422	0	1	7129	1	0	7000	other	0
+testiming	170	Picture	40	2047717	0	1	4476	1	0	4350	other	0
+testiming	170	Pulse	199	2052012	4294	0
+testiming	171	Picture	50	2052359	0	1	30174	1	0	next	other	0
+testiming	171	Pulse	199	2064512	12152	0
+testiming	171	Pulse	199	2077012	24652	0
+testiming	172	Picture	60	2082534	0	1	7129	1	0	7000	other	0
+testiming	172	Pulse	199	2089512	6978	0
+testiming	173	Picture	40	2089829	0	1	2653	1	0	2490	other	0
+testiming	174	Picture	60	2092647	0	1	7129	1	0	7000	other	0
+testiming	175	Picture	40	2099942	0	1	2819	1	0	2690	other	0
+testiming	175	Pulse	199	2102011	2069	0
+testiming	176	Picture	60	2102927	0	1	7129	1	0	7000	other	0
+testiming	177	Picture	40	2110221	0	1	2155	1	0	2130	other	0
+testiming	178	Picture	60	2112543	0	1	7129	1	0	7000	other	0
+testiming	178	Pulse	199	2114512	1970	0
+testiming	179	Picture	40	2119838	0	1	1824	1	0	1780	other	0
+testiming	180	Picture	60	2121827	0	1	7129	1	0	7000	other	0
+testiming	180	Pulse	199	2127012	5185	0
+testiming	181	Picture	40	2129122	0	1	2984	1	0	2860	other	0
+testiming	182	Picture	65	2132272	0	1	7129	1	0	7000	miss	0
+testiming	182	Pulse	199	2139512	7240	0
+testiming	183	Picture	40	2139567	0	1	3482	1	0	3310	other	0
+testiming	184	Picture	60	2143214	0	1	7129	1	0	7000	other	0
+testiming	185	Picture	40	2150509	0	1	4476	1	0	4350	other	0
+testiming	185	Pulse	199	2152012	1503	0
+testiming	186	Picture	60	2155152	0	1	7129	1	0	7000	other	0
+testiming	187	Picture	40	2162446	0	1	2155	1	0	1990	other	0
+testiming	187	Pulse	199	2164512	2066	0
+testiming	188	Picture	60	2164768	0	1	7129	1	0	7000	other	0
+testiming	189	Picture	40	2172063	0	1	2155	1	0	2140	other	0
+testiming	190	Picture	60	2174228	0	322	7119	322	0	7000	other	0
+testiming	190	Pulse	199	2177012	2784	0
+testiming	191	Picture	40	2181513	0	1	3813	1	0	3660	other	0
+testiming	192	Picture	50	2185492	0	1	70131	1	0	next	other	0
+testiming	192	Pulse	199	2189512	4020	0
+testiming	192	Pulse	199	2202012	16520	0
+testiming	192	Pulse	199	2214521	29030	0
+testiming	192	Pulse	199	2227012	41520	0
+testiming	192	Pulse	199	2239512	54020	0
+testiming	192	Pulse	199	2252012	66520	0
+testiming	193	Picture	80	2255623	0	1	7129	1	0	7000	other	0
+testiming	194	Picture	40	2262917	0	1	2155	1	0	2140	other	0
+testiming	194	Pulse	199	2264523	1605	0
+testiming	195	Picture	80	2265083	0	322	7119	322	0	7000	other	0
+testiming	196	Picture	40	2272368	0	1	2653	1	0	2490	other	0
+testiming	197	Picture	85	2275186	0	1	7129	1	0	7000	miss	0
+testiming	197	Pulse	199	2277022	1836	0
+testiming	198	Picture	40	2282481	0	1	2984	1	0	2860	other	0
+testiming	199	Picture	80	2285631	0	1	7129	1	0	7000	other	0
+testiming	199	Pulse	199	2289522	3891	0
+testiming	200	Picture	40	2292926	0	1	3482	1	0	3310	other	0
+testiming	201	Picture	80	2296573	0	1	7130	2	0	7000	other	0
+testiming	201	Pulse	199	2302022	5449	0
+testiming	202	Picture	40	2303868	0	1	2155	1	0	2130	other	0
+testiming	203	Picture	80	2306190	0	1	7128	2	0	7000	other	0
+testiming	204	Picture	40	2313485	0	1	2155	1	0	1990	other	0
+testiming	204	Pulse	199	2314522	1038	0
+testiming	205	Picture	80	2315806	0	1	7129	1	0	7000	other	0
+testiming	206	Picture	40	2323101	0	1	2819	1	0	2690	other	0
+testiming	207	Picture	80	2326085	0	1	7129	1	0	7000	other	0
+testiming	207	Pulse	199	2327022	937	0
+testiming	208	Picture	40	2333380	0	1	4476	1	0	4350	other	0
+testiming	209	Picture	85	2338022	0	1	7129	1	0	7000	miss	0
+testiming	209	Pulse	199	2339522	1500	0
+testiming	210	Picture	40	2345317	0	1	1824	1	0	1780	other	0
+testiming	211	Picture	80	2347306	0	1	7129	1	0	7000	other	0
+testiming	211	Pulse	199	2352023	4716	0
+testiming	212	Picture	40	2354601	0	1	3813	1	0	3660	other	0
+testiming	213	Picture	50	2358580	0	1	30174	1	0	next	other	0
+testiming	213	Pulse	199	2364523	5942	0
+testiming	213	Pulse	199	2377023	18442	0
+testiming	214	Picture	70	2388755	0	1	7129	1	0	7000	other	0
+testiming	214	Pulse	199	2389523	768	0
+testiming	215	Picture	40	2396050	0	1	2653	1	0	2490	other	0
+testiming	216	Picture	70	2398868	0	1	7129	1	0	7000	other	0
+testiming	216	Pulse	199	2402023	3154	0
+testiming	217	Picture	40	2406163	0	1	2818	1	0	2690	other	0
+testiming	218	Picture	70	2409147	0	1	7129	1	0	7000	other	0
+testiming	218	Pulse	199	2414523	5375	0
+testiming	219	Picture	40	2416442	0	1	4476	1	0	4350	other	0
+testiming	220	Picture	70	2421085	0	1	7129	1	0	7000	other	0
+testiming	220	Pulse	199	2427022	5938	0
+testiming	221	Picture	40	2428380	0	1	3813	1	0	3660	other	0
+testiming	222	Picture	70	2432359	0	1	7129	1	0	7000	other	0
+testiming	222	Pulse	199	2439522	7163	0
+testiming	223	Picture	40	2439653	0	1	2155	1	0	2130	other	0
+testiming	224	Picture	70	2441974	0	1	7129	1	0	7000	other	0
+testiming	225	Picture	40	2449270	0	1	2155	1	0	2140	other	0
+testiming	226	Picture	70	2451435	0	322	7119	322	0	7000	other	0
+testiming	226	Pulse	199	2452022	587	0
+testiming	227	Picture	40	2458720	0	1	2155	1	0	1990	other	0
+testiming	228	Picture	70	2461041	0	1	7129	1	0	7000	other	0
+testiming	228	Pulse	199	2464523	3482	0
+testiming	229	Picture	40	2468336	0	1	2984	1	0	2860	other	0
+testiming	230	Picture	70	2471486	0	1	7129	1	0	7000	other	0
+testiming	230	Pulse	199	2477023	5537	0
+testiming	231	Picture	40	2478781	0	1	3482	1	0	3310	other	0
+testiming	232	Picture	70	2482428	0	1	7129	1	0	7000	other	0
+testiming	232	Pulse	199	2489523	7094	0
+testiming	233	Picture	40	2489723	0	1	1824	1	0	1780	other	0
+testiming	234	Picture	50	2491713	0	1	90192	1	0	next	other	0
+testiming	234	Pulse	199	2502023	10310	0
+testiming	234	Pulse	199	2514523	22810	0
+testiming	234	Pulse	199	2527022	35310	0
+testiming	234	Pulse	199	2539522	47810	0
+testiming	234	Pulse	199	2552022	60309	0
+testiming	234	Pulse	199	2564522	72809	0
+testiming	234	Pulse	199	2577022	85309	0
+testiming	235	Picture	90	2581904	0	1	7129	1	0	7000	other	0
+testiming	236	Picture	40	2589199	0	1	3813	1	0	3660	other	0
+testiming	236	Pulse	199	2589523	324	0
+testiming	237	Picture	90	2593178	0	1	7129	1	0	7000	other	0
+testiming	238	Picture	40	2600473	0	1	4476	1	0	4350	other	0
+testiming	238	Pulse	199	2602023	1550	0
+testiming	239	Picture	90	2605116	0	1	7129	1	0	7000	other	0
+testiming	240	Picture	40	2612410	0	1	2155	1	0	1990	other	0
+testiming	240	Pulse	199	2614523	2112	0
+testiming	241	Picture	90	2614731	0	1	7129	1	0	7000	other	0
+testiming	242	Picture	40	2622027	0	1	1824	1	0	1780	other	0
+testiming	243	Picture	95	2624016	0	1	7129	1	0	7000	miss	0
+testiming	243	Pulse	199	2627023	3007	0
+testiming	244	Picture	40	2631311	0	1	3482	1	0	3310	other	0
+testiming	245	Picture	90	2634958	0	1	7129	1	0	7000	other	0
+testiming	245	Pulse	199	2639523	4564	0
+testiming	246	Picture	40	2642253	0	1	2984	1	0	2860	other	0
+testiming	247	Picture	90	2645403	0	1	7129	1	0	7000	other	0
+testiming	247	Pulse	199	2652023	6619	0
+testiming	248	Picture	40	2652698	0	1	2155	1	0	2130	other	0
+testiming	249	Picture	90	2655019	0	1	7129	1	0	7000	other	0
+testiming	250	Picture	40	2662314	0	1	2653	1	0	2490	other	0
+testiming	250	Pulse	199	2664522	2208	0
+testiming	251	Picture	90	2665133	0	1	7129	1	0	7000	other	0
+testiming	252	Picture	40	2672428	0	1	2155	1	0	2140	other	0
+testiming	253	Picture	90	2674749	0	1	7129	1	0	7000	other	0
+testiming	253	Pulse	199	2677022	2273	0
+testiming	254	Picture	40	2682044	0	1	2819	1	0	2690	other	0
+testiming	255	Picture	50	2685028	0	1	50070	1	0	next	other	0
+testiming	255	Pulse	199	2689522	4494	0
+testiming	255	Pulse	199	2702023	16995	0
+testiming	255	Pulse	199	2714523	29495	0
+testiming	255	Pulse	199	2727023	41995	0
+testiming	256	Picture	60	2735098	0	1	7129	1	0	7000	other	0
+testiming	256	Pulse	199	2739523	4425	0
+testiming	257	Picture	40	2742393	0	1	2819	1	0	2690	other	0
+testiming	258	Picture	60	2745377	0	1	7129	1	0	7000	other	0
+testiming	258	Pulse	199	2752023	6646	0
+testiming	259	Picture	40	2752672	0	1	1824	1	0	1780	other	0
+testiming	260	Picture	65	2754661	0	1	7129	1	0	7000	miss	0
+testiming	261	Picture	40	2761956	0	1	3482	1	0	3310	other	0
+testiming	261	Pulse	199	2764523	2566	0
+testiming	262	Picture	60	2765604	0	1	7129	1	0	7000	other	0
+testiming	263	Picture	40	2772899	0	1	2155	1	0	2140	other	0
+testiming	264	Picture	65	2775064	0	322	7119	322	0	7000	miss	0
+testiming	264	Pulse	199	2777022	1958	0
+testiming	265	Picture	40	2782349	0	1	2984	1	0	2860	other	0
+testiming	266	Picture	60	2785499	0	1	7129	1	0	7000	other	0
+testiming	266	Pulse	199	2789523	4024	0
+testiming	267	Picture	40	2792794	0	1	4476	1	0	4350	other	0
+testiming	268	Picture	60	2797436	0	1	7129	1	0	7000	other	0
+testiming	268	Pulse	199	2802023	4586	0
+testiming	269	Picture	40	2804731	0	1	2653	1	0	2490	other	0
+testiming	270	Picture	60	2807550	0	1	7129	1	0	7000	other	0
+testiming	270	Pulse	199	2814523	6973	0
+testiming	271	Picture	40	2814844	0	1	3813	1	0	3660	other	0
+testiming	272	Picture	60	2818824	0	1	7129	1	0	7000	other	0
+testiming	273	Picture	40	2826118	0	1	2155	1	0	1990	other	0
+testiming	273	Pulse	199	2827023	905	0
+testiming	274	Picture	60	2828440	0	1	7129	1	0	7000	other	0
+testiming	275	Picture	40	2835734	0	1	2155	1	0	2130	other	0
+testiming	276	Picture	50	2838056	0	1	50070	1	0	next	other	0
+testiming	276	Pulse	199	2839523	1467	0
+testiming	276	Pulse	199	2852023	13967	0
+testiming	276	Pulse	199	2864523	26468	0
+testiming	276	Pulse	199	2877023	38967	0
+testiming	277	Picture	80	2888125	0	1	7129	1	0	7000	other	0
+testiming	277	Pulse	199	2889522	1397	0
+testiming	278	Picture	40	2895420	0	1	2984	1	0	2860	other	0
+testiming	279	Picture	80	2898570	0	1	7129	1	0	7000	other	0
+testiming	279	Pulse	199	2902022	3452	0
+testiming	280	Picture	40	2905865	0	1	2155	1	0	2130	other	0
+testiming	281	Picture	80	2908186	0	1	7129	1	0	7000	other	0
+testiming	281	Pulse	199	2914523	6337	0
+testiming	282	Picture	40	2915481	0	1	3813	1	0	3660	other	0
+testiming	283	Picture	80	2919460	0	1	7129	1	0	7000	other	0
+testiming	284	Picture	40	2926755	0	1	3482	1	0	3310	other	0
+testiming	284	Pulse	199	2927023	268	0
+testiming	285	Picture	80	2930403	0	1	7129	1	0	7000	other	0
+testiming	286	Picture	40	2937698	0	1	2155	1	0	2140	other	0
+testiming	286	Pulse	199	2939523	1825	0
+testiming	287	Picture	80	2940019	0	1	7129	1	0	7000	other	0
+testiming	288	Picture	40	2947314	0	1	4476	1	0	4350	other	0
+testiming	289	Picture	80	2951956	0	1	7129	1	0	7000	other	0
+testiming	289	Pulse	199	2952023	67	0
+testiming	290	Picture	40	2959251	0	1	2819	1	0	2690	other	0
+testiming	291	Picture	80	2962235	0	1	7129	1	0	7000	other	0
+testiming	291	Pulse	199	2964523	2288	0
+testiming	292	Picture	40	2969530	0	1	1824	1	0	1780	other	0
+testiming	293	Picture	80	2971519	0	1	7129	1	0	7000	other	0
+testiming	293	Pulse	199	2977023	5504	0
+testiming	294	Picture	40	2978814	0	1	2155	1	0	1990	other	0
+testiming	295	Picture	80	2981136	0	1	7129	1	0	7000	other	0
+testiming	296	Picture	40	2988430	0	1	2653	1	0	2490	other	0
+testiming	296	Pulse	199	2989523	1092	0
+testiming	297	Picture	50	2991249	0	1	90192	1	0	next	other	0
+testiming	297	Pulse	199	3002023	10774	0
+testiming	297	Pulse	199	3014523	23274	0
+testiming	297	Pulse	199	3027023	35774	0
+testiming	297	Pulse	199	3039523	48274	0
+testiming	297	Pulse	199	3052023	60774	0
+testiming	297	Pulse	199	3064524	73275	0
+testiming	297	Pulse	199	3077023	85774	0
+testiming	298	Picture	70	3081441	0	1	7129	1	0	7000	other	0
+testiming	299	Picture	40	3088736	0	1	4477	1	0	4350	other	0
+testiming	299	Pulse	199	3089524	788	0
+testiming	300	Picture	70	3093378	0	1	7129	1	0	7000	other	0
+testiming	301	Picture	40	3100673	0	1	3482	1	0	3310	other	0
+testiming	301	Pulse	199	3102023	1351	0
+testiming	302	Picture	70	3104320	0	1	7129	1	0	7000	other	0
+testiming	303	Picture	40	3111615	0	1	1824	1	0	1780	other	0
+testiming	304	Picture	70	3113605	0	1	7129	1	0	7000	other	0
+testiming	304	Pulse	199	3114523	918	0
+testiming	305	Picture	40	3120900	0	1	2155	1	0	2130	other	0
+testiming	306	Picture	75	3123221	0	1	7129	1	0	7000	miss	0
+testiming	306	Pulse	199	3127023	3802	0
+testiming	307	Picture	40	3130516	0	1	2818	1	0	2690	other	0
+testiming	308	Picture	70	3133500	0	1	7129	1	0	7000	other	0
+testiming	308	Pulse	199	3139523	6024	0
+testiming	309	Picture	40	3140795	0	1	2155	1	0	2140	other	0
+testiming	310	Picture	70	3142960	0	156	7119	157	0	7000	other	0
+testiming	311	Picture	40	3150245	0	1	3813	1	0	3660	other	0
+testiming	311	Pulse	199	3152023	1778	0
+testiming	312	Picture	70	3154224	0	1	7129	1	0	7000	other	0
+testiming	313	Picture	40	3161519	0	1	2984	1	0	2860	other	0
+testiming	313	Pulse	199	3164513	2994	11
+testiming	314	Picture	70	3164669	0	1	7129	1	0	7000	other	0
+testiming	315	Picture	40	3171964	0	1	2653	1	0	2490	other	0
+testiming	316	Picture	70	3174782	0	1	7129	1	0	7000	other	0
+testiming	316	Pulse	199	3177023	2241	0
+testiming	317	Picture	40	3182077	0	1	2155	1	0	1990	other	0
+testiming	318	Picture	50	3184399	0	1	30174	1	0	next	other	0
+testiming	318	Pulse	199	3189524	5125	0
+testiming	318	Pulse	199	3202023	17625	0
+testiming	318	Pulse	199	3214523	30125	0
+testiming	319	Picture	90	3214573	0	1	7129	1	0	7000	other	0
+testiming	320	Picture	40	3221868	0	1	3813	1	0	3660	other	0
+testiming	321	Picture	90	3225847	0	1	7129	1	0	7000	other	0
+testiming	321	Pulse	199	3227024	1177	0
+testiming	322	Picture	40	3233142	0	1	4476	1	0	4350	other	0
+testiming	323	Picture	90	3237784	0	1	7129	1	0	7000	other	0
+testiming	323	Pulse	199	3239523	1739	0
+testiming	324	Picture	40	3245079	0	1	3482	1	0	3310	other	0
+testiming	325	Picture	90	3248726	0	1	7129	1	0	7000	other	0
+testiming	325	Pulse	199	3252024	3297	0
+testiming	326	Picture	40	3256021	0	1	1824	1	0	1780	other	0
+testiming	327	Picture	90	3258011	0	1	7129	1	0	7000	other	0
+testiming	327	Pulse	199	3264524	6513	0
+testiming	328	Picture	40	3265306	0	1	2818	1	0	2690	other	0
+testiming	329	Picture	90	3268290	0	1	7129	1	0	7000	other	0
+testiming	330	Picture	40	3275585	0	1	2155	1	0	2140	other	0
+testiming	330	Pulse	199	3277024	1439	0
+testiming	331	Picture	95	3277906	0	1	7129	1	0	7000	miss	0
+testiming	332	Picture	40	3285201	0	1	2155	1	0	1990	other	0
+testiming	333	Picture	90	3287522	0	1	7129	1	0	7000	other	0
+testiming	333	Pulse	199	3289524	2002	0
+testiming	334	Picture	40	3294817	0	1	2155	1	0	2130	other	0
+testiming	335	Picture	90	3297138	0	1	7129	1	0	7000	other	0
+testiming	335	Pulse	199	3302024	4885	0
+testiming	336	Picture	40	3304433	0	1	2653	1	0	2490	other	0
+testiming	337	Picture	90	3307252	0	1	7129	1	0	7000	other	0
+testiming	337	Pulse	199	3314524	7272	0
+testiming	338	Picture	40	3314547	0	1	2984	1	0	2860	other	0
+testiming	339	Picture	50	3317697	0	1	70131	1	0	next	other	0
+testiming	339	Pulse	199	3327023	9326	0
+testiming	339	Pulse	199	3339523	21826	0
+testiming	339	Pulse	199	3352023	34326	0
+testiming	339	Pulse	199	3364523	46827	0
+testiming	339	Pulse	199	3377024	59327	0
+testiming	340	Picture	60	3387827	0	1	7129	1	0	7000	other	0
+testiming	340	Pulse	199	3389524	1696	0
+testiming	341	Picture	40	3395122	0	1	2155	1	0	2140	other	0
+testiming	342	Picture	60	3397288	0	322	7119	322	0	7000	other	0
+testiming	342	Pulse	199	3402024	4737	0
+testiming	343	Picture	40	3404572	0	1	2155	1	0	2130	other	0
+testiming	344	Picture	60	3406894	0	1	7129	1	0	7000	other	0
+testiming	345	Picture	40	3414189	0	1	1824	1	0	1780	other	0
+testiming	345	Pulse	199	3414524	335	0
+testiming	346	Picture	60	3416178	0	1	7129	1	0	7000	other	0
+testiming	347	Picture	40	3423473	0	1	3813	1	0	3660	other	0
+testiming	347	Pulse	199	3427024	3551	0
+testiming	348	Picture	60	3427452	0	1	7129	1	0	7000	other	0
+testiming	349	Picture	40	3434747	0	1	3482	1	0	3310	other	0
+testiming	350	Picture	60	3438394	0	1	7129	1	0	7000	other	0
+testiming	350	Pulse	199	3439524	1129	0
+testiming	351	Picture	40	3445689	0	1	2653	1	0	2490	other	0
+testiming	352	Picture	60	3448508	0	1	7129	1	0	7000	other	0
+testiming	352	Pulse	199	3452024	3516	0
+testiming	353	Picture	40	3455803	0	1	2155	1	0	1990	other	0
+testiming	354	Picture	60	3458124	0	1	7129	1	0	7000	other	0
+testiming	354	Pulse	199	3464524	6400	0
+testiming	355	Picture	40	3465419	0	1	2984	1	0	2860	other	0
+testiming	356	Picture	65	3468569	0	1	7129	1	0	7000	miss	0
+testiming	357	Picture	40	3475864	0	1	2818	1	0	2690	other	0
+testiming	357	Pulse	199	3477024	1160	0
+testiming	358	Picture	60	3478848	0	1	7129	1	0	7000	other	0
+testiming	359	Picture	40	3486143	0	1	4476	1	0	4350	other	0
+testiming	359	Pulse	199	3489524	3381	0
+testiming	360	Picture	50	3490785	0	1	90192	1	0	next	other	0
+testiming	360	Pulse	199	3502024	11239	0
+testiming	360	Pulse	199	3514524	23739	0
+testiming	360	Pulse	199	3527024	36239	0
+testiming	360	Pulse	199	3539524	48739	0
+testiming	360	Pulse	199	3552024	61239	0
+testiming	360	Pulse	199	3564524	73738	0
+testiming	360	Pulse	199	3577024	86239	0
+testiming	361	Picture	80	3580977	0	1	7129	1	0	7000	other	0
+testiming	362	Picture	40	3588272	0	1	2155	1	0	1990	other	0
+testiming	362	Pulse	199	3589524	1252	0
+testiming	363	Picture	80	3590593	0	1	7129	1	0	7000	other	0
+testiming	364	Picture	40	3597888	0	1	1824	1	0	1780	other	0
+testiming	365	Picture	85	3599877	0	1	7129	1	0	7000	miss	0
+testiming	365	Pulse	199	3602024	2147	0
+testiming	366	Picture	40	3607172	0	1	2155	1	0	2140	other	0
+testiming	367	Picture	80	3609493	0	1	7129	1	0	7000	other	0
+testiming	367	Pulse	199	3614524	5031	0
+testiming	368	Picture	40	3616788	0	1	2984	1	0	2860	other	0
+testiming	369	Picture	85	3619938	0	1	7129	1	0	7000	miss	0
+testiming	369	Pulse	199	3627024	7086	0
+testiming	370	Picture	40	3627233	0	1	2155	1	0	2130	other	0
+testiming	371	Picture	80	3629554	0	1	7129	1	0	7000	other	0
+testiming	372	Picture	40	3636849	0	1	3813	1	0	3660	other	0
+testiming	372	Pulse	199	3639524	2675	0
+testiming	373	Picture	80	3640828	0	1	7129	1	0	7000	other	0
+testiming	374	Picture	40	3648123	0	1	2653	1	0	2490	other	0
+testiming	375	Picture	80	3650942	0	1	7129	1	0	7000	other	0
+testiming	375	Pulse	199	3652024	1082	0
+testiming	376	Picture	40	3658237	0	1	2818	1	0	2690	other	0
+testiming	377	Picture	80	3661221	0	1	7129	1	0	7000	other	0
+testiming	377	Pulse	199	3664524	3303	0
+testiming	378	Picture	40	3668516	0	1	4476	1	0	4350	other	0
+testiming	379	Picture	80	3673158	0	1	7129	1	0	7000	other	0
+testiming	379	Pulse	199	3677024	3866	0
+testiming	380	Picture	40	3680453	0	1	3482	1	0	3310	other	0
+testiming	381	Picture	50	3684101	0	1	30175	1	0	next	other	0
+testiming	381	Pulse	199	3689524	5423	0
+testiming	381	Pulse	199	3702025	17924	0
+testiming	382	Picture	70	3714275	0	1	7129	1	0	7000	other	0
+testiming	382	Pulse	199	3714524	249	0
+testiming	383	Picture	40	3721570	0	1	2984	1	0	2860	other	0
+testiming	384	Picture	70	3724720	0	1	7129	1	0	7000	other	0
+testiming	384	Pulse	199	3727024	2304	0
+testiming	385	Picture	40	3732015	0	1	3482	1	0	3310	other	0
+testiming	386	Picture	70	3735662	0	1	7129	1	0	7000	other	0
+testiming	386	Pulse	199	3739524	3862	0
+testiming	387	Picture	40	3742957	0	1	3813	1	0	3660	other	0
+testiming	388	Picture	70	3746936	0	1	7129	1	0	7000	other	0
+testiming	388	Pulse	199	3752025	5088	0
+testiming	389	Picture	40	3754231	0	1	2155	1	0	2130	other	0
+testiming	390	Picture	70	3756552	0	1	7129	1	0	7000	other	0
+testiming	391	Picture	40	3763847	0	1	2653	1	0	2490	other	0
+testiming	391	Pulse	199	3764524	677	0
+testiming	392	Picture	70	3766666	0	1	7129	1	0	7000	other	0
+testiming	393	Picture	40	3773961	0	1	2818	1	0	2690	other	0
+testiming	394	Picture	70	3776945	0	1	7129	1	0	7000	other	0
+testiming	394	Pulse	199	3777024	79	0
+testiming	395	Picture	40	3784240	0	1	2155	1	0	1990	other	0
+testiming	396	Picture	70	3786561	0	1	7129	1	0	7000	other	0
+testiming	396	Pulse	199	3789524	2963	0
+testiming	397	Picture	40	3793856	0	1	2155	1	0	2140	other	0
+testiming	398	Picture	70	3796021	0	322	7119	322	0	7000	other	0
+testiming	398	Pulse	199	3802024	6003	0
+testiming	399	Picture	40	3803306	0	1	1824	1	0	1780	other	0
+testiming	400	Picture	70	3805296	0	1	7129	1	0	7000	other	0
+testiming	401	Picture	40	3812591	0	1	4476	1	0	4350	other	0
+testiming	401	Pulse	199	3814524	1934	0
+testiming	402	Picture	50	3817233	0	1	50070	1	0	next	other	0
+testiming	402	Pulse	199	3827025	9792	0
+testiming	402	Pulse	199	3839524	22291	0
+testiming	402	Pulse	199	3852025	34792	0
+testiming	402	Pulse	199	3864525	47292	0
+testiming	403	Picture	90	3867303	0	1	7129	1	0	7000	other	0
+testiming	404	Picture	40	3874597	0	1	2155	1	0	2140	other	0
+testiming	405	Picture	90	3876919	0	1	7129	1	0	7000	other	0
+testiming	405	Pulse	199	3877025	106	0
+testiming	406	Picture	40	3884213	0	1	2155	1	0	1990	other	0
+testiming	407	Picture	90	3886535	0	1	7129	1	0	7000	other	0
+testiming	407	Pulse	199	3889524	2990	0
+testiming	408	Picture	40	3893830	0	1	2653	1	0	2490	other	0
+testiming	409	Picture	90	3896648	0	1	7129	1	0	7000	other	0
+testiming	409	Pulse	199	3902024	5376	0
+testiming	410	Picture	40	3903943	0	1	2155	1	0	2130	other	0
+testiming	411	Picture	90	3906264	0	1	7129	1	0	7000	other	0
+testiming	412	Picture	40	3913559	0	1	3813	1	0	3660	other	0
+testiming	412	Pulse	199	3914525	966	0
+testiming	413	Picture	90	3917538	0	1	7129	1	0	7000	other	0
+testiming	414	Picture	40	3924833	0	1	1824	1	0	1780	other	0
+testiming	415	Picture	95	3926822	0	1	7129	1	0	7000	miss	0
+testiming	415	Pulse	199	3927025	202	0
+testiming	416	Picture	40	3934117	0	1	2984	1	0	2860	other	0
+testiming	417	Picture	90	3937267	0	1	7129	1	0	7000	other	0
+testiming	417	Pulse	199	3939525	2257	0
+testiming	418	Picture	40	3944562	0	1	3482	1	0	3310	other	0
+testiming	419	Picture	90	3948210	0	1	7129	1	0	7000	other	0
+testiming	419	Pulse	199	3952025	3815	0
+testiming	420	Picture	40	3955505	0	1	2819	1	0	2690	other	0
+testiming	421	Picture	90	3958489	0	1	7129	1	0	7000	other	0
+testiming	421	Pulse	199	3964525	6036	0
+testiming	422	Picture	40	3965784	0	1	4476	1	0	4350	other	0
+testiming	423	Picture	50	3970426	0	1	70131	1	0	next	other	0
+testiming	423	Pulse	199	3977025	6598	0
+testiming	423	Pulse	199	3989524	19098	0
+testiming	423	Pulse	199	4002024	31598	0
+testiming	423	Pulse	199	4014524	44098	0
+testiming	423	Pulse	199	4027024	56598	0
+testiming	423	Pulse	199	4039525	69098	0
+testiming	424	Picture	60	4040557	0	1	7129	1	0	7000	other	0
+testiming	425	Picture	40	4047852	0	1	2155	1	0	1990	other	0
+testiming	426	Picture	60	4050173	0	1	7129	1	0	7000	other	0
+testiming	426	Pulse	199	4052034	1861	0
+testiming	427	Picture	40	4057468	0	1	2653	1	0	2490	other	0
+testiming	428	Picture	60	4060286	0	1	7129	1	0	7000	other	0
+testiming	428	Pulse	199	4064535	4248	0
+testiming	429	Picture	40	4067581	0	1	3813	1	0	3660	other	0
+testiming	430	Picture	60	4071560	0	1	7129	1	0	7000	other	0
+testiming	430	Pulse	199	4077035	5474	0
+testiming	431	Picture	40	4078855	0	1	3482	1	0	3310	other	0
+testiming	432	Picture	60	4082503	0	1	7129	1	0	7000	other	0
+testiming	432	Pulse	199	4089535	7032	1
+testiming	433	Picture	40	4089798	0	1	1824	1	0	1780	other	0
+testiming	434	Picture	60	4091787	0	1	7129	1	0	7000	other	0
+testiming	435	Picture	40	4099082	0	1	2155	1	0	2140	other	0
+testiming	436	Picture	65	4101403	0	1	7129	1	0	7000	miss	0
+testiming	436	Pulse	199	4102035	632	0
+testiming	437	Picture	40	4108698	0	1	2155	1	0	2130	other	0
+testiming	438	Picture	65	4111019	0	1	7129	1	0	7000	miss	0
+testiming	438	Pulse	199	4114534	3515	0
+testiming	439	Picture	40	4118314	0	1	2818	1	0	2690	other	0
+testiming	440	Picture	60	4121298	0	1	7129	1	0	7000	other	0
+testiming	440	Pulse	199	4127035	5736	0
+testiming	441	Picture	40	4128593	0	1	2984	1	0	2860	other	0
+testiming	442	Picture	60	4131743	0	1	7129	1	0	7000	other	0
+testiming	443	Picture	40	4139038	0	1	4476	1	0	4350	other	0
+testiming	443	Pulse	199	4139535	496	0
+testiming	444	Picture	50	4143681	0	1	70131	1	0	next	other	0
+testiming	444	Pulse	199	4152035	8355	0
+testiming	444	Pulse	199	4164535	20854	0
+testiming	444	Pulse	199	4177035	33354	0
+testiming	444	Pulse	199	4189535	45854	0
+testiming	444	Pulse	199	4202035	58354	0
+testiming	445	Picture	80	4213811	0	1	7129	1	0	7000	other	0
+testiming	445	Pulse	199	4214535	724	0
+testiming	446	Picture	40	4221106	0	1	2155	1	0	1990	other	0
+testiming	447	Picture	80	4223427	0	1	7129	1	0	7000	other	0
+testiming	447	Pulse	199	4227034	3607	0
+testiming	448	Picture	40	4230722	0	1	2984	1	0	2860	other	0
+testiming	449	Picture	80	4233872	0	1	7129	1	0	7000	other	0
+testiming	449	Pulse	199	4239534	5662	0
+testiming	450	Picture	40	4241167	0	1	1824	1	0	1780	other	0
+testiming	451	Picture	80	4243157	0	1	7129	1	0	7000	other	0
+testiming	452	Picture	40	4250452	0	1	3813	1	0	3660	other	0
+testiming	452	Pulse	199	4252035	1583	0
+testiming	453	Picture	80	4254431	0	1	7129	1	0	7000	other	0
+testiming	454	Picture	40	4261726	0	1	3482	1	0	3310	other	0
+testiming	454	Pulse	199	4264535	2809	0
+testiming	455	Picture	80	4265373	0	1	7129	1	0	7000	other	0
+testiming	456	Picture	40	4272668	0	1	2818	1	0	2690	other	0
+testiming	457	Picture	80	4275652	0	1	7129	1	0	7000	other	0
+testiming	457	Pulse	199	4277035	1382	0
+testiming	458	Picture	40	4282947	0	1	2155	1	0	2140	other	0
+testiming	459	Picture	80	4285113	0	322	7119	322	0	7000	other	0
+testiming	459	Pulse	199	4289535	4422	0
+testiming	460	Picture	40	4292398	0	1	2653	1	0	2490	other	0
+testiming	461	Picture	80	4295216	0	1	7129	1	0	7000	other	0
+testiming	461	Pulse	199	4302035	6819	0
+testiming	462	Picture	40	4302511	0	1	2155	1	0	2130	other	0
+testiming	463	Picture	80	4304832	0	1	7129	1	0	7000	other	0
+testiming	464	Picture	40	4312127	0	1	4476	1	0	4350	other	0
+testiming	464	Pulse	199	4314535	2408	0
+testiming	465	Picture	50	4316769	0	1	50070	1	0	next	other	0
+testiming	465	Pulse	199	4327035	10266	0
+testiming	465	Pulse	199	4339534	22765	0
+testiming	465	Pulse	199	4352035	35265	0
+testiming	465	Pulse	199	4364535	47766	0
+testiming	466	Picture	70	4366839	0	1	7129	1	0	7000	other	0
+testiming	467	Picture	40	4374134	0	1	2155	1	0	2130	other	0
+testiming	468	Picture	70	4376455	0	1	7129	1	0	7000	other	0
+testiming	468	Pulse	199	4377035	580	0
+testiming	469	Picture	40	4383750	0	1	3813	1	0	3660	other	0
+testiming	470	Picture	70	4387729	0	1	7129	1	0	7000	other	0
+testiming	470	Pulse	199	4389535	1806	0
+testiming	471	Picture	40	4395024	0	1	2819	1	0	2690	other	0
+testiming	472	Picture	75	4398008	0	1	7129	1	0	7000	miss	0
+testiming	472	Pulse	199	4402035	4027	0
+testiming	473	Picture	40	4405303	0	1	2155	1	0	1990	other	0
+testiming	474	Picture	70	4407624	0	1	7129	1	0	7000	other	0
+testiming	474	Pulse	199	4414535	6911	0
+testiming	475	Picture	40	4414919	0	1	1824	1	0	1780	other	0
+testiming	476	Picture	70	4416909	0	1	7129	1	0	7000	other	0
+testiming	477	Picture	40	4424203	0	1	2155	1	0	2140	other	0
+testiming	478	Picture	70	4426525	0	1	7129	1	0	7000	other	0
+testiming	478	Pulse	199	4427035	511	0
+testiming	479	Picture	40	4433819	0	1	4476	1	0	4350	other	0
+testiming	480	Picture	70	4438462	0	1	7129	1	0	7000	other	0
+testiming	480	Pulse	199	4439535	1073	0
+testiming	481	Picture	40	4445757	0	1	2984	1	0	2860	other	0
+testiming	482	Picture	70	4448907	0	1	7129	1	0	7000	other	0
+testiming	482	Pulse	199	4452035	3128	0
+testiming	483	Picture	40	4456202	0	1	2653	1	0	2490	other	0
+testiming	484	Picture	70	4459020	0	1	7129	1	0	7000	other	0
+testiming	484	Pulse	199	4464535	5515	0
+testiming	485	Picture	40	4466315	0	1	3482	1	0	3310	other	0
+testiming	486	Picture	50	4469962	0	1	90192	1	0	next	other	0
+testiming	486	Pulse	199	4477035	7072	0
+testiming	486	Pulse	199	4489535	19573	0
+testiming	486	Pulse	199	4502035	32073	0
+testiming	486	Pulse	199	4514535	44573	0
+testiming	486	Pulse	199	4527035	57073	0
+testiming	486	Pulse	199	4539535	69573	0
+testiming	486	Pulse	199	4552035	82073	0
+testiming	487	Picture	90	4560154	0	1	7129	1	0	7000	other	0
+testiming	487	Pulse	199	4564535	4381	0
+testiming	488	Picture	40	4567449	0	1	3813	1	0	3660	other	0
+testiming	489	Picture	90	4571428	0	1	7129	1	0	7000	other	0
+testiming	489	Pulse	199	4577035	5607	0
+testiming	490	Picture	40	4578723	0	1	2155	1	0	2140	other	0
+testiming	491	Picture	90	4580888	0	322	7119	322	0	7000	other	0
+testiming	492	Picture	40	4588173	0	1	2653	1	0	2490	other	0
+testiming	492	Pulse	199	4589535	1362	0
+testiming	493	Picture	90	4590992	0	1	7129	1	0	7000	other	0
+testiming	494	Picture	40	4598287	0	1	2155	1	0	1990	other	0
+testiming	495	Picture	90	4600608	0	1	7129	1	0	7000	other	0
+testiming	495	Pulse	199	4602036	1428	0
+testiming	496	Picture	40	4607903	0	1	2984	1	0	2860	other	0
+testiming	497	Picture	90	4611053	0	1	7129	1	0	7000	other	0
+testiming	497	Pulse	199	4614536	3483	0
+testiming	498	Picture	40	4618348	0	1	3482	1	0	3310	other	0
+testiming	499	Picture	95	4621995	0	1	7129	1	0	7000	miss	0
+testiming	499	Pulse	199	4627036	5040	0
+testiming	500	Picture	40	4629290	0	1	2155	1	0	2130	other	0
+testiming	501	Picture	90	4631611	0	1	7129	1	0	7000	other	0
+testiming	502	Picture	40	4638906	0	1	4476	1	0	4350	other	0
+testiming	502	Pulse	199	4639536	630	0
+testiming	503	Picture	90	4643548	0	1	7129	1	0	7000	other	0
+testiming	504	Picture	40	4650843	0	1	1824	1	0	1780	other	0
+testiming	504	Pulse	199	4652036	1193	0
+testiming	505	Picture	90	4652833	0	1	7129	1	0	7000	other	0
+testiming	506	Picture	40	4660128	0	1	2818	1	0	2690	other	0
+testiming	507	Picture	50	4663112	0	1	30174	1	0	next	other	0
+testiming	507	Pulse	199	4664536	1424	0
+testiming	507	Pulse	199	4677035	13923	0
+testiming	507	Pulse	199	4689535	26423	0
+testiming	508	Picture	60	4693286	0	1	7129	1	0	7000	other	0
+testiming	509	Picture	40	4700581	0	1	2653	1	0	2490	other	0
+testiming	509	Pulse	199	4702036	1454	0
+testiming	510	Picture	60	4703400	0	1	7129	1	0	7000	other	0
+testiming	511	Picture	40	4710695	0	1	4476	1	0	4350	other	0
+testiming	511	Pulse	199	4714536	3841	0
+testiming	512	Picture	60	4715337	0	1	7129	1	0	7000	other	0
+testiming	513	Picture	40	4722632	0	1	2155	1	0	2140	other	0
+testiming	514	Picture	60	4724797	0	322	7119	322	0	7000	other	0
+testiming	514	Pulse	199	4727036	2239	0
+testiming	515	Picture	40	4732082	0	1	3482	1	0	3310	other	0
+testiming	516	Picture	60	4735730	0	1	7129	1	0	7000	other	0
+testiming	516	Pulse	199	4739536	3806	0
+testiming	517	Picture	40	4743025	0	1	2818	1	0	2690	other	0
+testiming	518	Picture	60	4746009	0	1	7129	1	0	7000	other	0
+testiming	518	Pulse	199	4752036	6027	0
+testiming	519	Picture	40	4753304	0	1	3813	1	0	3660	other	0
+testiming	520	Picture	60	4757283	0	1	7129	1	0	7000	other	0
+testiming	520	Pulse	199	4764536	7253	0
+testiming	521	Picture	40	4764578	0	1	1824	1	0	1780	other	0
+testiming	522	Picture	60	4766567	0	1	7129	1	0	7000	other	0
+testiming	523	Picture	40	4773862	0	1	2984	1	0	2860	other	0
+testiming	524	Picture	60	4777012	0	1	7129	1	0	7000	other	0
+testiming	524	Pulse	199	4777036	23	0
+testiming	525	Picture	40	4784307	0	1	2155	1	0	2130	other	0
+testiming	526	Picture	60	4786628	0	1	7129	1	0	7000	other	0
+testiming	526	Pulse	199	4789535	2907	0
+testiming	527	Picture	40	4793923	0	1	2155	1	0	1990	other	0
+testiming	528	Picture	50	4796244	0	1	50070	1	0	next	other	0
+testiming	528	Pulse	199	4802035	5791	0
+testiming	528	Pulse	199	4814535	18291	0
+testiming	528	Pulse	199	4827035	30791	0
+testiming	528	Pulse	199	4839535	43291	0
+testiming	529	Picture	80	4846314	0	1	7129	1	0	7000	other	0
+testiming	529	Pulse	199	4852036	5722	0
+testiming	530	Picture	40	4853609	0	1	4476	1	0	4350	other	0
+testiming	531	Picture	80	4858251	0	1	7129	1	0	7000	other	0
+testiming	531	Pulse	199	4864536	6284	0
+testiming	532	Picture	40	4865546	0	1	2653	1	0	2490	other	0
+testiming	533	Picture	80	4868365	0	1	7129	1	0	7000	other	0
+testiming	534	Picture	40	4875660	0	1	2818	1	0	2690	other	0
+testiming	534	Pulse	199	4877036	1376	0
+testiming	535	Picture	85	4878644	0	1	7129	1	0	7000	miss	0
+testiming	536	Picture	40	4885939	0	1	3482	1	0	3310	other	0
+testiming	536	Pulse	199	4889536	3597	0
+testiming	537	Picture	80	4889586	0	1	7129	1	0	7000	other	0
+testiming	538	Picture	40	4896881	0	1	2155	1	0	2140	other	0
+testiming	539	Picture	80	4899046	0	156	7119	157	0	7000	other	0
+testiming	539	Pulse	199	4902035	2989	0
+testiming	540	Picture	40	4906331	0	1	1824	1	0	1780	other	0
+testiming	541	Picture	80	4908321	0	1	7129	1	0	7000	other	0
+testiming	541	Pulse	199	4914535	6215	0
+testiming	542	Picture	40	4915616	0	1	3813	1	0	3660	other	0
+testiming	543	Picture	80	4919595	0	1	7129	1	0	7000	other	0
+testiming	544	Picture	40	4926890	0	1	2155	1	0	1990	other	0
+testiming	544	Pulse	199	4927036	146	0
+testiming	545	Picture	80	4929211	0	1	7129	1	0	7000	other	0
+testiming	546	Picture	40	4936506	0	1	2984	1	0	2860	other	0
+testiming	546	Pulse	199	4939536	3030	0
+testiming	547	Picture	80	4939656	0	1	7129	1	0	7000	other	0
+testiming	548	Picture	40	4946951	0	1	2155	1	0	2130	other	0
+testiming	549	Picture	50	4949272	0	1	70131	1	0	next	other	0
+testiming	549	Pulse	199	4952036	2764	0
+testiming	549	Pulse	199	4964536	15264	0
+testiming	549	Pulse	199	4977036	27764	0
+testiming	549	Pulse	199	4989536	40264	0
+testiming	549	Pulse	199	5002036	52764	0
+testiming	549	Pulse	199	5014536	65264	0
+testiming	550	Picture	70	5019402	0	1	7129	1	0	7000	other	0
+testiming	551	Picture	40	5026698	0	1	3482	1	0	3310	other	0
+testiming	551	Pulse	199	5027036	338	0
+testiming	552	Picture	70	5030345	0	1	7129	1	0	7000	other	0
+testiming	553	Picture	40	5037640	0	1	2155	1	0	2130	other	0
+testiming	553	Pulse	199	5039536	1897	0
+testiming	554	Picture	70	5039961	0	1	7129	1	0	7000	other	0
+testiming	555	Picture	40	5047256	0	1	2984	1	0	2860	other	0
+testiming	556	Picture	70	5050406	0	1	7129	1	0	7000	other	0
+testiming	556	Pulse	199	5052036	1630	0
+testiming	557	Picture	40	5057701	0	1	4476	1	0	4350	other	0
+testiming	558	Picture	70	5062343	0	1	7129	1	0	7000	other	0
+testiming	558	Pulse	199	5064536	2193	0
+testiming	559	Picture	40	5069638	0	1	2155	1	0	1990	other	0
+testiming	560	Picture	70	5071959	0	1	7129	1	0	7000	other	0
+testiming	560	Pulse	199	5077036	5077	0
+testiming	561	Picture	40	5079254	0	1	2819	1	0	2690	other	0
+testiming	562	Picture	75	5082238	0	1	7129	1	0	7000	miss	0
+testiming	563	Picture	40	5089533	0	1	2155	1	0	2140	other	0
+testiming	563	Pulse	199	5089536	3	0
+testiming	564	Picture	70	5091699	0	156	7119	157	0	7000	other	0
+testiming	565	Picture	40	5098984	0	1	2653	1	0	2490	other	0
+testiming	566	Picture	70	5101802	0	1	7129	1	0	7000	other	0
+testiming	566	Pulse	199	5102036	234	0
+testiming	567	Picture	40	5109097	0	1	1824	1	0	1780	other	0
+testiming	568	Picture	70	5111086	0	1	7129	1	0	7000	other	0
+testiming	568	Pulse	199	5114536	3450	0
+testiming	569	Picture	40	5118381	0	1	3813	1	0	3660	other	0
+testiming	570	Picture	50	5122360	0	1	30175	1	0	next	other	0
+testiming	570	Pulse	199	5127036	4675	0
+testiming	570	Pulse	199	5139536	17175	0
+testiming	570	Pulse	199	5152037	29677	0
+testiming	571	Picture	90	5152535	0	1	7129	1	0	7000	other	0
+testiming	572	Picture	40	5159830	0	1	2818	1	0	2690	other	0
+testiming	573	Picture	90	5162814	0	1	7129	1	0	7000	other	0
+testiming	573	Pulse	199	5164537	1723	0
+testiming	574	Picture	40	5170109	0	1	2155	1	0	1990	other	0
+testiming	575	Picture	90	5172430	0	1	7129	1	0	7000	other	0
+testiming	575	Pulse	199	5177037	4607	0
+testiming	576	Picture	40	5179725	0	1	3813	1	0	3660	other	0
+testiming	577	Picture	90	5183704	0	1	7129	1	0	7000	other	0
+testiming	577	Pulse	199	5189537	5833	0
+testiming	578	Picture	40	5190999	0	1	2653	1	0	2490	other	0
+testiming	579	Picture	90	5193818	0	1	7129	1	0	7000	other	0
+testiming	580	Picture	40	5201112	0	1	4476	1	0	4350	other	0
+testiming	580	Pulse	199	5202037	924	0
+testiming	581	Picture	90	5205755	0	1	7129	1	0	7000	other	0
+testiming	582	Picture	40	5213050	0	1	2984	1	0	2860	other	0
+testiming	582	Pulse	199	5214537	1487	0
+testiming	583	Picture	90	5216200	0	1	7129	1	0	7000	other	0
+testiming	584	Picture	40	5223495	0	1	1824	1	0	1780	other	0
+testiming	585	Picture	90	5225484	0	1	7129	1	0	7000	other	0
+testiming	585	Pulse	199	5227036	1552	0
+testiming	586	Picture	40	5232779	0	1	2155	1	0	2130	other	0
+testiming	587	Picture	95	5235100	0	1	7129	1	0	7000	miss	0
+testiming	587	Pulse	199	5239536	4436	0
+testiming	588	Picture	40	5242395	0	1	2155	1	0	2140	other	0
+testiming	589	Picture	95	5244560	0	322	7119	323	0	7000	miss	0
+testiming	590	Picture	40	5251845	0	1	3482	1	0	3310	other	0
+testiming	590	Pulse	199	5252037	191	0
+testiming	591	Picture	50	5255493	0	1	90015	177	0	next	other	0
+testiming	591	Pulse	199	5264537	9044	0
+testiming	591	Pulse	199	5277037	21544	0
+testiming	591	Pulse	199	5289537	34044	0
+testiming	591	Pulse	199	5302037	46544	0
+testiming	591	Pulse	199	5314537	59044	0
+testiming	591	Pulse	199	5327037	71544	0
+testiming	591	Pulse	199	5339536	84044	0
+testiming	592	Picture	60	5345508	0	177	7140	177	0	7000	other	0
+testiming	592	Pulse	199	5352037	6529	0
+testiming	593	Picture	40	5352814	0	1	2653	1	0	2490	other	0
+testiming	594	Picture	60	5355632	0	1	7129	1	0	7000	other	0
+testiming	595	Picture	40	5362927	0	1	2155	1	0	1990	other	0
+testiming	595	Pulse	199	5364538	1611	0
+testiming	596	Picture	60	5365248	0	1	7129	1	0	7000	other	0
+testiming	597	Picture	40	5372543	0	1	3482	1	0	3310	other	0
+testiming	598	Picture	65	5376191	0	1	7129	1	0	7000	miss	0
+testiming	598	Pulse	199	5377037	846	0
+testiming	599	Picture	40	5383485	0	1	3813	1	0	3660	other	0
+testiming	600	Picture	60	5387464	0	1	7129	1	0	7000	other	0
+testiming	600	Pulse	199	5389537	2073	0
+testiming	601	Picture	40	5394759	0	1	2984	1	0	2860	other	0
+testiming	602	Picture	60	5397909	0	1	7129	1	0	7000	other	0
+testiming	602	Pulse	199	5402037	4128	0
+testiming	603	Picture	40	5405204	0	1	1824	1	0	1780	other	0
+testiming	604	Picture	60	5407194	0	1	7129	1	0	7000	other	0
+testiming	605	Picture	40	5414489	0	1	2818	1	0	2690	other	0
+testiming	605	Pulse	199	5414536	47	0
+testiming	606	Picture	60	5417473	0	1	7129	1	0	7000	other	0
+testiming	607	Picture	40	5424768	0	1	2155	1	0	2140	other	0
+testiming	608	Picture	60	5426933	0	322	7119	322	0	7000	other	0
+testiming	608	Pulse	199	5426933	0	104
+testiming	609	Picture	40	5434218	0	1	4476	1	0	4350	other	0
+testiming	610	Picture	60	5438860	0	1	7129	1	0	7000	other	0
+testiming	610	Pulse	199	5439536	676	0
+testiming	611	Picture	40	5446155	0	1	2155	1	0	2130	other	0
+testiming	612	Picture	50	5448477	0	1	30174	1	0	next	other	0
+testiming	612	Pulse	199	5452037	3560	0
+testiming	612	Pulse	199	5464536	16060	0
+testiming	612	Pulse	199	5477036	28560	0
+testiming	613	Picture	80	5478651	0	1	7129	1	0	7000	other	0
+testiming	614	Picture	40	5485946	0	1	2818	1	0	2690	other	0
+testiming	615	Picture	80	5488930	0	1	7129	1	0	7000	other	0
+testiming	615	Pulse	199	5489537	606	0
+testiming	616	Picture	40	5496225	0	1	2155	1	0	1990	other	0
+testiming	617	Picture	80	5498546	0	1	7129	1	0	7000	other	0
+testiming	617	Pulse	199	5502037	3491	0
+testiming	618	Picture	40	5505841	0	1	2653	1	0	2490	other	0
+testiming	619	Picture	80	5508660	0	1	7129	1	0	7000	other	0
+testiming	619	Pulse	199	5514537	5877	0
+testiming	620	Picture	40	5515955	0	1	1824	1	0	1780	other	0
+testiming	621	Picture	80	5517944	0	1	7129	1	0	7000	other	0
+testiming	622	Picture	40	5525239	0	1	3813	1	0	3660	other	0
+testiming	622	Pulse	199	5527037	1798	0
+testiming	623	Picture	80	5529218	0	1	7129	1	0	7000	other	0
+testiming	624	Picture	40	5536513	0	1	2155	1	0	2140	other	0
+testiming	625	Picture	80	5538678	0	322	7119	322	0	7000	other	0
+testiming	625	Pulse	199	5539537	858	0
+testiming	626	Picture	40	5545963	0	1	3482	1	0	3310	other	0
+testiming	627	Picture	80	5549611	0	1	7129	1	0	7000	other	0
+testiming	627	Pulse	199	5552037	2427	0
+testiming	628	Picture	40	5556906	0	1	2155	1	0	2130	other	0
+testiming	629	Picture	80	5559227	0	1	7129	1	0	7000	other	0
+testiming	629	Pulse	199	5564536	5310	0
+testiming	630	Picture	40	5566522	0	1	4476	1	0	4350	other	0
+testiming	631	Picture	85	5571164	0	1	7129	1	0	7000	miss	0
+testiming	631	Pulse	199	5577036	5873	0
+testiming	632	Picture	40	5578459	0	1	2984	1	0	2860	other	0
+testiming	633	Picture	50	5581609	0	1	90192	1	0	next	other	0
+testiming	633	Pulse	199	5589536	7928	0
+testiming	633	Pulse	199	5602037	20428	0
+testiming	633	Pulse	199	5614537	32928	0
+testiming	633	Pulse	199	5627037	45428	0
+testiming	633	Pulse	199	5639537	57928	0
+testiming	633	Pulse	199	5652037	70428	0
+testiming	633	Pulse	199	5664537	82928	0
+testiming	634	Picture	70	5671801	0	1	7129	1	0	7000	other	0
+testiming	634	Pulse	199	5677037	5236	0
+testiming	635	Picture	40	5679095	0	1	1824	1	0	1780	other	0
+testiming	636	Picture	70	5681085	0	1	7129	1	0	7000	other	0
+testiming	637	Picture	40	5688380	0	1	2984	1	0	2860	other	0
+testiming	637	Pulse	199	5689537	1157	0
+testiming	638	Picture	70	5691530	0	1	7129	1	0	7000	other	0
+testiming	639	Picture	40	5698825	0	1	2155	1	0	2140	other	0
+testiming	640	Picture	70	5700990	0	322	7119	322	0	7000	other	0
+testiming	640	Pulse	199	5702037	1046	0
+testiming	641	Picture	40	5708275	0	1	2155	1	0	1990	other	0
+testiming	642	Picture	70	5710596	0	1	7129	1	0	7000	other	0
+testiming	642	Pulse	199	5714538	3941	0
+testiming	643	Picture	40	5717891	0	1	3482	1	0	3310	other	0
+testiming	644	Picture	75	5721539	0	1	7129	1	0	7000	miss	0
+testiming	644	Pulse	199	5727037	5499	0
+testiming	645	Picture	40	5728834	0	1	2653	1	0	2490	other	0
+testiming	646	Picture	75	5731652	0	1	7129	1	0	7000	miss	0
+testiming	647	Picture	40	5738947	0	1	3813	1	0	3660	other	0
+testiming	647	Pulse	199	5739538	591	0
+testiming	648	Picture	70	5742926	0	1	7129	1	0	7000	other	0
+testiming	649	Picture	40	5750221	0	1	2155	1	0	2130	other	0
+testiming	649	Pulse	199	5752037	1816	0
+testiming	650	Picture	70	5752542	0	1	7129	1	0	7000	other	0
+testiming	651	Picture	40	5759837	0	1	2819	1	0	2690	other	0
+testiming	652	Picture	70	5762821	0	1	7129	2	0	7000	other	0
+testiming	652	Pulse	199	5764538	1717	0
+testiming	653	Picture	40	5770116	0	1	4476	1	0	4350	other	0
+testiming	654	Picture	50	5774758	0	1	70131	1	0	next	other	0
+testiming	654	Pulse	199	5777037	2279	0
+testiming	654	Pulse	199	5789537	14779	0
+testiming	654	Pulse	199	5802037	27279	0
+testiming	654	Pulse	199	5814537	39779	0
+testiming	654	Pulse	199	5827037	52279	0
+testiming	654	Pulse	199	5839537	64779	0
+testiming	655	Picture	90	5844889	0	1	7129	1	0	7000	other	0
+testiming	655	Pulse	199	5852028	7139	10
+testiming	656	Picture	40	5852184	0	1	2155	1	0	1990	other	0
+testiming	657	Picture	90	5854505	0	1	7129	1	0	7000	other	0
+testiming	658	Picture	40	5861800	0	1	2155	1	0	2130	other	0
+testiming	659	Picture	90	5864121	0	1	7129	1	0	7000	other	0
+testiming	659	Pulse	199	5864538	416	0
+testiming	660	Picture	40	5871416	0	1	4476	1	0	4350	other	0
+testiming	661	Picture	90	5876058	0	1	7130	2	0	7000	other	0
+testiming	661	Pulse	199	5877038	980	0
+testiming	662	Picture	40	5883353	0	1	2984	1	0	2860	other	0
+testiming	663	Picture	90	5886503	0	1	7129	1	0	7000	other	0
+testiming	663	Pulse	199	5889537	3034	0
+testiming	664	Picture	40	5893798	0	1	2155	1	0	2140	other	0
+testiming	665	Picture	90	5895964	0	322	7119	323	0	7000	other	0
+testiming	665	Pulse	199	5902037	6074	0
+testiming	666	Picture	40	5903248	0	1	2653	1	0	2490	other	0
+testiming	667	Picture	90	5906067	0	1	7129	1	0	7000	other	0
+testiming	668	Picture	40	5913362	0	1	2818	1	0	2690	other	0
+testiming	668	Pulse	199	5914547	1185	0
+testiming	669	Picture	90	5916346	0	1	7129	1	0	7000	other	0
+testiming	670	Picture	40	5923641	0	1	3482	1	0	3310	other	0
+testiming	670	Pulse	199	5927047	3406	0
+testiming	671	Picture	90	5927289	0	1	7129	1	0	7000	other	0
+testiming	672	Picture	40	5934583	0	1	1824	1	0	1780	other	0
+testiming	673	Picture	90	5936573	0	1	7129	1	0	7000	other	0
+testiming	673	Pulse	199	5939548	2975	0
+testiming	674	Picture	40	5943868	0	1	3813	1	0	3660	other	0
+testiming	675	Picture	50	5947847	0	1	50070	1	0	next	other	0
+testiming	675	Pulse	199	5952048	4201	0
+testiming	675	Pulse	199	5964548	16701	0
+testiming	675	Pulse	199	5977048	29201	0
+testiming	675	Pulse	199	5989548	41701	0
+testiming	676	Picture	200	5997917	70	1	80078	1	0	80000	other	0
+testiming	676	Pulse	199	6002048	4201	0
+testiming	676	Pulse	199	6014547	16700	0
+testiming	676	Pulse	199	6027047	29200	0
+testiming	676	Pulse	199	6039547	41700	0
+testiming	676	Pulse	199	6052047	54200	0
+testiming	676	Pulse	199	6064548	66701	0
+testiming	676	Pulse	199	6077048	79201	0
+testiming	677	Pulse	199	6089548	11387	0

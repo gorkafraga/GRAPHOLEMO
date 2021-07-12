@@ -12,7 +12,7 @@ rawSourcePath = 'O:\studies\grapholemo\transfer_mrz\'; %'O:\studies\grapholemo\r
 rawDestinationPath = 'O:\studies\grapholemo\raw\';
 saverealign=1;
 renameNiftisForPreprocessing = 1;
-subject = {'gpl008','gpl009'};
+subject = {'gpl034','gpl035','gpl027'};
 
 %recParNames = { 'b0_fbl','fbl_parta','fbl_partb','b0_symctrl','1_symcontrol','t13d','audiotest'};
 % clean up last slash if specified
@@ -34,7 +34,7 @@ for s= 1:length(subject)
             elseif (~isempty(regexpi(files(i).name,'.audiotest.')))
                   destinationFolder =  [destinationFolder,'\mri\func\audiotest\parrec'];    
                   file2copy= 1;
-            elseif (~isempty(regexpi(files(i).name,'._b0.')))
+            elseif (~isempty(regexpi(files(i).name,'.b0.')))
                   destinationFolder =  [destinationFolder,'\mri\func\b0\parrec'];
                   file2copy= 1;
             elseif (~isempty(regexpi(files(i).name,'.fbl_A.')))

@@ -19,8 +19,8 @@ path_preproc    = 'O:\studies\grapholemo\LEMO_GFG\preprocessing'; %path to your 
 path_logs       = 'O:\studies\grapholemo\LEMO_GFG\preprocessing'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
 path_output     = 'O:\studies\grapholemo\LEMO_GFG\analysis'; % parent of output dir
 task            = 'FBL_A'; 
-blocks2use      = {'1'};
-subjects        = {'g002'};
+blocks2use      = {'1','2'};
+subjects        = {'gpl010','gpl011','gpl012','gpl013','gpl015','gpl017','gpl019','gpl025'};
 %modelversion =       'AR_rlddm_v11';
 %modeloutputfile =   ['O:\studies\allread\mri\analysis_GFG\stats\task\modelling\RLDDM_fromLocal\GoodPerf_72\outputs\out_',modelversion,'\Parameters_perTrial.csv'] ;
 
