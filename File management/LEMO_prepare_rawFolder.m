@@ -12,7 +12,7 @@ rawSourcePath = 'O:\studies\grapholemo\transfer_mrz\'; %'O:\studies\grapholemo\r
 rawDestinationPath = 'O:\studies\grapholemo\raw\';
 saverealign=1;
 renameNiftisForPreprocessing = 1;
-subject = {'gpl034','gpl035','gpl027'};
+subject = {'gpl034'};
 
 %recParNames = { 'b0_fbl','fbl_parta','fbl_partb','b0_symctrl','1_symcontrol','t13d','audiotest'};
 % clean up last slash if specified
