@@ -19,8 +19,8 @@ path_preproc    = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\preprocessing'; %
 path_logs       = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\preprocessing'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
 taskList        = {'FBL_A','FBL_B'};
 %% [don't edit] POPUP! Select your GLM from 1lv scripts available
-%GLMs        = dir(strcat([scripts,'\LEMO*create_1Lv_*']));
-%idx2        = listdlg('PromptString','Select GLM','ListString', {GLMs.name},'SelectionMode','single','listSize',[500 100]); % popup 
+GLMs        = dir(strcat([scripts,'\LEMO*create_1Lv_*']));
+idx2        = listdlg('PromptString','Select GLM','ListString', {GLMs.name},'SelectionMode','single','listSize',[500 100]); % popup 
 %selectedGLM = strrep(strrep(GLMs(idx2).name,'LEMO_func_create_1Lv_',''),'.m','');
 
 selectedGLMlist = {'GLM0','GLM0_halfs','GLM0_thirds','GLM1'};
@@ -109,10 +109,10 @@ disp(['Selected 1st Level: ',selectedGLM])
                       fclose(fileID);
 
                     % Read flagged bad scans (if file found, else create a vector of zeros) 
-                           badscans =  dir([path_preproc,'\',task,'\',subject,'\func\*badScansIdx.csv']);
+                          badscans =  dir([path_preproc,'\',task,'\',subject,'\func\',currRun{j},'\*badScansIdx.csv']);
                            if ~isempty(badscans) % If it doesn't find a flagscan file it will use zeroes
                                Regr_badscans = zeros(length(scans{j}),1);  
-                               badScansIndices = readmatrix([badscans.folder,'\',badscans.name]);  % read bad scans indices from file
+                               badScansIndices = table2array(readtable([badscans.folder,'\',badscans.name]));  % read bad scans indices from file
                                Regr_badscans(badScansIndices) = 1;
                                logInfBadscans = [badscans.folder,'\',badscans.name];  
                           else 

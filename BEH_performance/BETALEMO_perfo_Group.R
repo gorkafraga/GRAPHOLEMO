@@ -113,6 +113,8 @@ accu <- DAT %>%  group_by(subjID,block,fb,quartile,.drop = FALSE) %>%  tally()
 rt <- DAT %>%  group_by(subjID,block,fb,quartile,.drop = FALSE) %>% summarize(meanRT = mean(rt))
 dlong <- merge(accu,rt,by=c('subjID','block','fb','quartile'))
 dlong$propTrials <- round(dlong$n/(ntrials/4),2)
+
+
 # add task identifier 
 dlong$meanRT <- round(dlong$meanRT,2)
 dlong$hits <- dlong$n
@@ -123,7 +125,11 @@ dlongFull$task  <- task
 
 write.csv(dlongFull,paste(diroutput,"/",task,"_Performance_long.csv",sep=""),row.names = FALSE)
  
-
-
-
+########## simplify and convert to wide format
+long1 <- dlongFull[which(dlongFull$fb==1),c('subjID','block','quartile','propTrials','hits','meanRT')] 
+long1$quartile <- paste0('q',long1$quartile)
+long1$block <- paste0('b',long1$block)
+wide <- pivot_wider(long1,names_from = c('block','quartile'),values_from = c('meanRT','propTrials','hits'))
+names(wide) <- paste(gsub('_','',task),names(wide),sep='_')
+write.csv(wide,paste(diroutput,"/",task,"_Performance_wide.csv",sep=""),row.names = FALSE)
 

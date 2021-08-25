@@ -3,7 +3,7 @@
 ## GFG modified from Christina Lutz, based on a script by Sarah Di Pietro
 ##########################################################################################################################
 
-scenario_type=fMRI; #In order to test an fMRI mode scenario without an external connection scenario_type=fMRI_emulation; otherwise scenario_type=fMRI
+scenario_type=fMRI_emulation; #In order to test an fMRI mode scenario without an external connection scenario_type=fMRI_emulation; otherwise scenario_type=fMRI
 pulses_per_scan = 1;		#registers the first of the specified number of pulses #how many square wave pulses are produced by the MRI scanner during one scan??
 scan_period=1000;			#time between complete MRI scans in ms
 pulse_code=199;			#used to identify main pulses in fMRI mode in the Analysis window and the logfile

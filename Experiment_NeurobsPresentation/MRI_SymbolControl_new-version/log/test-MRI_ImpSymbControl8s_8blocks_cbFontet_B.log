@@ -1,0 +1,10 @@
+Scenario - 
+Logfile written - 07/26/2021 16:51:20
+
+Subject	Pulse	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test	1	Pulse	199	0	0	NA
+test	2	Pulse	199	10000	10000	NA
+test	3	Pulse	199	20000	20000	NA
+test	4	Pulse	199	30000	30000	NA
+test	4	Quit		30671	30671	NA

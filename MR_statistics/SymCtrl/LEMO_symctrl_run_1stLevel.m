@@ -20,7 +20,7 @@ path_output     = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel'; % pare
 task            = 'symCtrl_pre'; 
 manualScanSelection = 0;nscans = 440; % default = 0
 %subjects =  {'gpl001','gpl002','gpl003','gpl004','gpl005','gpl006','gpl007','gpl008','gpl009', 'gpl010','gpl011','gpl012','gpl013','gpl015','gpl017','gpl019','gpl024','gpl025','gpl014','gpl021'};
-subjects =  {'gpl023','gpl020','gpl026'};
+subjects =  {'gpl019'};
 %% [don't edit] POPUP! Select your GLM from 1lv scripts available
 GLMs        = dir(strcat([scripts,'\LEMO*create_1Lv_*']));
 idx2        = listdlg('PromptString','Select GLM','ListString', {GLMs.name},'SelectionMode','single','listSize',[500 100]); % popup 
@@ -84,7 +84,7 @@ for i = 1:length(subjects)
        badscans =  dir([path_preproc,'\',task,'\',subject,'\func\*badScansIdx.csv']);
        if ~isempty(badscans) % If it doesn't find a flagscan file it will use zeroes
            Regr_badscans = zeros(length(scans{j}),1);  
-           badScansIndices = readmatrix([badscans.folder,'\',badscans.name]);  % read bad scans indices from file
+           badScansIndices = readmatrix([badscans.folder,'\',badscans.name])  % read bad scans indices from file
            Regr_badscans(badScansIndices) = 1;
            logInfBadscans = [badscans.folder,'\',badscans.name];  
       else 
@@ -127,7 +127,7 @@ for i = 1:length(subjects)
       spm_jobman('run',matlabbatch);
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       movefile(ls([path_output,'\',subject,'\*_001.jpg']),strrep(ls('*_001.jpg'),'_001.jpg','_design.jpg'))
-      clear matlabbatch scans  rpdat
+      clear matlabbatch scans  rpdat multireg
       fclose(logfileID);
       disp('done.')
 

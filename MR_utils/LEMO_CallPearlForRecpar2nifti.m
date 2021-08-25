@@ -1,6 +1,6 @@
 %% Define directories
 scriptRec2nifti = 'N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_utils\rec2nifti.pl';
-sourcefolder = 'O:\studies\grapholemo\raw\mri\pilot'
+sourcefolder = 'N:\studies\Grapholemo\Recruitment\Incidental finding'
 sourcefilename = [dir([sourcefolder,'\*_t13d*.rec']),dir([sourcefolder,'/*b0*.rec']),dir([sourcefolder,'/*uvalemosoft*.rec'])];
 destinationfolder = sourcefolder; 
 
