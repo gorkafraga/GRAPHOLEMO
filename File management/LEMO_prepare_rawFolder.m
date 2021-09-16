@@ -12,7 +12,7 @@ rawSourcePath = 'O:\studies\grapholemo\transfer_mrz\'; %'O:\studies\grapholemo\r
 rawDestinationPath = 'O:\studies\grapholemo\raw\';
 saverealign=1;
 renameNiftisForPreprocessing = 1;
-subject = {'gpl029'};
+subject = {'gpl022'};
 
 %recParNames = { 'b0_fbl','fbl_parta','fbl_partb','b0_symctrl','1_symcontrol','t13d','audiotest'};
 % clean up last slash if specified
@@ -123,8 +123,9 @@ for s= 1:length(subject)
     end
 end
 
-cd (destinationFolder)
 %% DO realignment in niftis (copy, realign this copy, delete copy)
+cd (destinationFolder)
+
 if saverealign ==1
   for s= 1:length(subject)
           currSubj = subject{s};

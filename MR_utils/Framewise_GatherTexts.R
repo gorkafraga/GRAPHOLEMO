@@ -4,10 +4,10 @@ rm(list=ls(all=TRUE)) # remove all variables (!)
 Packages <- c("xlsx")
 lapply(Packages, require, character.only = TRUE)
 masterfile <- 'O:/studies/grapholemo/LEMO_Master.xlsx'
-task <- 'symCtrl_post'
+task <- 'fbl_a'
 
-dirinput <- paste0('O:/studies/grapholemo/analysis/LEMO_GFG/mri/preprocessing/',task)
-diroutput <- paste0('O:/studies/grapholemo/analysis')
+dirinput <- paste0('O:/studies/grapholemo/analysis/LEMO_VG/mri/preprocessing/',task)
+diroutput <- paste0('O:/studies/grapholemo/analysis/LEMO_VG')
 gatherall = 1
 
 if (gatherall==1){
@@ -26,7 +26,7 @@ if (gatherall==1){
       masterdat$subjID  <-tolower(masterdat$subjID)
       
       
-      allfiles <- dir(dirinput,pattern = '*.csv',recursive=TRUE)
+      allfiles <- dir(dirinput,pattern = '*bold.csv',recursive=TRUE)
       for (r in 1:length(runs)){
        files <-  allfiles[grep(runs[r],allfiles)]
        subjects <- unlist(lapply(strsplit(files,"/"),'[',1)) # obtain subject list from files directory

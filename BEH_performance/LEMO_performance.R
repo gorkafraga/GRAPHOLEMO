@@ -1,30 +1,35 @@
-
+# -----------------------------------------------------------------
+# Summarize LEMO task performance 
+# - Gather logs from your fMRI preprocessing folder 
+# - Compute performance summary per quartile and thirds
+# - Save data set in long and wide formats for later analysis
+# ----------------------------------------------------------------
 #Load libraries
 rm(list=ls(all=TRUE)) # remove all variables (!)
 Packages <- c("readr", "data.table", "ggplot2","tibble","nlme","lme4","pwr","dplyr","cowplot","tidyr","psych","ggpubr","gridExtra","xlsx")
 lapply(Packages, require, character.only = TRUE)
 source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots and stats/Geom_flat_violin.R")
 
-task <- "FBL_B"
+
 #set ins and outs
+task <- "FBL_A"
 dirinput <-"G:/GRAPHOLEMO/lemo_preproc" # no  / at the end 
 diroutput <-paste0("O:/studies/grapholemo/analysis/LEMO_GFG/beh/")
-
 ntrials <- 48
 plotme <- 0
 morestats <- 0 
-#winDialog("ok", "HI THERE!! Do all subjects have 2 log files? If not the Plot will be blank. But table will still be OK.")
 
-#loop thru files
+# find files 
 setwd(dirinput)
 files <-dir(dirinput,paste0('gpl.*.-',task,'.*.txt'),recursive=TRUE,ignore.case = TRUE,full.names = FALSE)
 
-#`%!in%` = Negate(`%in%`) 
-#files <- files[which(substr(files,1,6) %!in% c("AR1025","AR1063"))] # use this to exclude subjects
-#files <- files[which(substr(files,1,6) %in% c("AR1025","AR1063"))] # use tthis to include subjects from a list of subjects
-#subjects <- subjects[which(subjects %!in% c("AR1025","AR1063"))] # use this to exclude subjects
+# optional subject selection (previous versions)
+  #`%!in%` = Negate(`%in%`) 
+  #files <- files[which(substr(files,1,6) %!in% c("AR1025","AR1063"))] # use this to exclude subjects
+  #files <- files[which(substr(files,1,6) %in% c("AR1025","AR1063"))] # use tthis to include subjects from a list of subjects
+  #subjects <- subjects[which(subjects %!in% c("AR1025","AR1063"))] # use this to exclude subjects
 
-
+# gather all logs, add basic summary stats ------------------------------------
 dataList<-list()
 cumuList<-list()
 for (i in 1:length(files)){
@@ -89,8 +94,11 @@ for (i in 1:length(files)){
     colnames(cumuScore)[1] <- c("subjID")
     
     cat("cumulative scores calculated\n")
+    
     # Separate the data in quartile
     D$quartile <- unlist(lapply(seq(dim(D)[1]/(dim(D)[1]/4)),rep,(dim(D)[1]/4)))
+    D$third <- unlist(lapply(seq(dim(D)[1]/(dim(D)[1]/3)),rep,(dim(D)[1]/3)))
+    
     
     D2save <- cbind(rep(subject,dim(D)[1]),D)
     colnames(D2save)[1] <- "subjID"
@@ -99,37 +107,62 @@ for (i in 1:length(files)){
   }  
 
 }    
-
+#  
 # Merge in a single Table  
-DAT <- data.table::rbindlist(dataList) 
-CUMU <- data.table::rbindlist(cumuList)
-DAT2SAVE<-cbind(DAT,CUMU)
-#Write the long   table into xls file
-#write.csv(DAT2SAVE,paste(diroutput,"/Performance_data_long.csv",sep=""),row.names = FALSE)
-
+DAT <- data.table::rbindlist(dataList,fill=TRUE) 
+CUMU <- data.table::rbindlist(cumuList,fill=TRUE)
+DAT2SAVE<-cbind(DAT,CUMU) 
 
 # Accu summary
 accu <- DAT %>%  group_by(subjID,block,fb,quartile,.drop = FALSE) %>%  tally()
 rt <- DAT %>%  group_by(subjID,block,fb,quartile,.drop = FALSE) %>% summarize(meanRT = mean(rt))
 dlong <- merge(accu,rt,by=c('subjID','block','fb','quartile'))
-dlong$propTrials <- round(dlong$n/(ntrials/4),2)
-
-
-# add task identifier 
 dlong$meanRT <- round(dlong$meanRT,2)
-dlong$hits <- dlong$n
-dlong$errors <- (ntrials/4)-dlong$hits
+dlong$count <- dlong$n
+dlong$proportionPerQuartile <- round(dlong$n/(ntrials/4),2)
+
+accuThirds <- DAT %>%  group_by(subjID,block,fb,third,.drop = FALSE) %>%  tally()
+rtThirds <- DAT %>%  group_by(subjID,block,fb,third,.drop = FALSE) %>% summarize(meanRT = mean(rt))
+dlongThirds <- merge(accuThirds,rtThirds,by=c('subjID','block','fb','third'))
+dlongThirds$meanRT <- round(dlongThirds$meanRT,2)
+dlongThirds$count <- dlongThirds$n
+dlongThirds$proportionPerThird<- round(dlongThirds$n/(ntrials/3),2)
+
+
 
 dlongFull <-dlong %>% complete(subjID,nesting(block,fb,quartile),fill = list(n = 0)) # Make explicit the missing values ! nw length should be nsubjects x blocks x quartile x fb 
-dlongFull$task  <- task
+dlongFull$third <- NA
+dlongFull$proportionPerThird <- NA
 
-write.csv(dlongFull,paste(diroutput,"/",task,"_Performance_long.csv",sep=""),row.names = FALSE)
+dlongFullThirds <-dlongThirds %>% complete(subjID,nesting(block,fb,third),fill = list(n = 0))
+dlongFullThirds$quartile <- NA
+dlongFullThirds$proportionPerQuartile <- NA
+
+# MERGE,  add task identifier  and save 
+#dlongmerged <-
+dlongmerged <- rbind(dlongFull,dlongFullThirds)
+dlongmerged$task  <- task
+dlongmerged$subjID<-tolower(dlongmerged$subjID)
+write.csv(dlongmerged,paste(diroutput,"/",task,"_Performance_long.csv",sep=""),row.names = FALSE,na="")
  
-########## simplify and convert to wide format
-long1 <- dlongFull[which(dlongFull$fb==1),c('subjID','block','quartile','propTrials','hits','meanRT')] 
-long1$quartile <- paste0('q',long1$quartile)
-long1$block <- paste0('b',long1$block)
-wide <- pivot_wider(long1,names_from = c('block','quartile'),values_from = c('meanRT','propTrials','hits'))
-names(wide) <- paste(gsub('_','',task),names(wide),sep='_')
-write.csv(wide,paste(diroutput,"/",task,"_Performance_wide.csv",sep=""),row.names = FALSE)
 
+
+########## simplify and convert to wide format
+long1 <- dlongmerged[which(dlongmerged$fb==1),c('subjID','block','quartile','third','proportionPerQuartile','proportionPerThird','count','meanRT')] 
+long1$quartile <- paste0('q',long1$quartile)
+long1$third <- paste0('t',long1$third)
+long1$block <- paste0('b',long1$block)
+wide <- pivot_wider(long1,names_from = c('block','quartile','third'),values_from = c('meanRT','proportionPerQuartile','proportionPerThird','count'))
+wide$subjID<-tolower(wide$subjID)
+
+names(wide) <- paste(gsub('_','',task),names(wide),sep='_')
+# remove useless columns 
+wide <- wide[,!grepl('*.proportionPerThird.*tNA',names(wide))]
+wide <- wide[,!grepl('*.proportionPerQuartile.*qNA',names(wide))]
+names(wide)<-gsub('_tNA','',names(wide))
+names(wide)<-gsub('qNA_','',names(wide))
+#
+
+write.csv(wide,paste(diroutput,"/",task,"_Performance_wide.csv",sep=""),row.names = FALSE,na = "")
+
+ 
