@@ -12,7 +12,7 @@ addpath(scripts)
 %  
 dirinput      = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\preprocessing\symCtrl_post'; % no \ at the end. Basic parent dir of a task
 subjects      = {'gpl001','gpl002','gpl003','gpl004','gpl005','gpl006','gpl007','gpl008','gpl009','gpl010','gpl011','gpl012','gpl013','gpl015','gpl017','gpl019','gpl024','gpl025','gpl014','gpl021'};
-subjects      = {'gpl020','gpl026'};
+subjects      = {'gpl030','gpl031','gpl032','gpl034','gpl035','gpl038','gpl039','gpl041','gpl042'};
 
 %% Subject loop
 for i = 1:length(subjects)

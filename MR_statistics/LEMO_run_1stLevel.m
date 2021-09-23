@@ -1,4 +1,4 @@
-clear  
+clear all
 close all
 scripts= ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_statistics');
 addpath('N:\studies\Grapholemo\Methods\Scripts\grapholemo\BEH_performance') % path to function to gather performance
@@ -20,12 +20,13 @@ path_logs       = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\preprocessing'; %
 taskList        = {'FBL_A','FBL_B'};
 %% [don't edit] POPUP! Select your GLM from 1lv scripts available
 GLMs        = dir(strcat([scripts,'\LEMO*create_1Lv_*']));
-idx2        = listdlg('PromptString','Select GLM','ListString', {GLMs.name},'SelectionMode','single','listSize',[500 100]); % popup 
+%idx2        = listdlg('PromptString','Select GLM','ListString', {GLMs.name},'SelectionMode','single','listSize',[500 100]); % popup 
 %selectedGLM = strrep(strrep(GLMs(idx2).name,'LEMO_func_create_1Lv_',''),'.m','');
 
 selectedGLMlist = {'GLM0','GLM0_halfs','GLM0_thirds','GLM1'};
+selectedGLMlist = {'GLM0','GLM0_halfs','GLM0_thirds','GLM1'};
 
-for semo=1:length(selectedGLMlist)
+ for semo=1:length(selectedGLMlist)
 
 selectedGLM = selectedGLMlist{semo};
 disp(['Selected 1st Level: ',selectedGLM])
@@ -37,6 +38,10 @@ disp(['Selected 1st Level: ',selectedGLM])
         manualScanSelection = 0;nscans = 460; % default = 0
         runs2use      = {'run1','run2'}; %separated by commas e.g., {'run','run2'} 
         subjects        = {'gpl001','gpl002','gpl003','gpl004','gpl005','gpl006','gpl007','gpl008','gpl009','gpl010','gpl011','gpl012','gpl013','gpl015','gpl017','gpl019','gpl024','gpl025','gpl014','gpl021'};
+        subjects        = {'gpl026','gpl030','gpl031','gpl032','gpl034','gpl039','gpl041'};
+        subjects        = {'gpl026','gpl030','gpl031','gpl032','gpl034',};
+        subjects        = {'gpl038',};
+       % 'gpl035','gpl038' ---> redo
         modelversion =       'AR_rlddm_v11';
         modeloutputfile =   ['O:\studies\allread\mri\analysis_GFG\stats\task\modelling\RLDDM_fromLocal\GoodPerf_72\outputs\out_',modelversion,'\Parameters_perTrial.csv'] ;
         % Set up output paths
