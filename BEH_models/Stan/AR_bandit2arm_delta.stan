@@ -63,7 +63,7 @@ model {
 }
 generated quantities {
   //PE (GFG edit)
-  real PE;
+  //real PE;
   
   // For group level parameters
   real<lower=0, upper=1> mu_A;
