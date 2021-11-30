@@ -17,13 +17,14 @@ addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo\MR_preprocessing')
 %% Inputs setup
 %------------------------------
 tic 
-subjects = {'gpl037'}; 
+subjects = {'gpl030','gpl031'}; 
 Task =  {'symCtrl_post'}; %Only ONE at a time. 
 runlist = {'symctrl'}; % list of runs,for fbl use 'run1' or 'run2' for symctrl 'symctrl'
 anatTemplate = 'C:\Users\gfraga\spm12\tpm\TPM.nii'; % Called by 'LEMO_create_fieldmap.m'
 
 %PATHS (end character should be \ )
 paths.preprocessing = 'G:\GRAPHOLEMO\lemo_preproc\';
+
 %% BEGIN TASK LOOP
 currTask = Task{1};
 cd (paths.preprocessing)

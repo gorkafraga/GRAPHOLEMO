@@ -4,10 +4,10 @@ rm(list=ls(all=TRUE)) # remove all variables (!)
 Packages <- c("xlsx")
 lapply(Packages, require, character.only = TRUE)
 masterfile <- 'O:/studies/grapholemo/LEMO_Master.xlsx'
-task <- 'fbl_a'
+task <- 'symCtrl_post'
 
-dirinput <- paste0('O:/studies/grapholemo/analysis/LEMO_VG/mri/preprocessing/',task)
-diroutput <- paste0('O:/studies/grapholemo/analysis/LEMO_VG')
+dirinput <- paste0('O:/studies/grapholemo/analysis/LEMO_GFG/mri/preprocessing/',task)
+diroutput <- paste0('O:/studies/grapholemo/analysis/LEMO_GFG')
 gatherall = 1
 
 if (gatherall==1){
@@ -21,7 +21,7 @@ if (gatherall==1){
      
       
       #read subjects from master
-      masterdat <-read.xlsx(masterfile,sheetName = 'MRI')
+      masterdat <-read.xlsx(masterfile,sheet = 'MRI')
       masterdat <-dplyr::select(masterdat,'subjID')
       masterdat$subjID  <-tolower(masterdat$subjID)
       

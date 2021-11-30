@@ -20,7 +20,8 @@ path_output     = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel'; % pare
 task            = 'symCtrl_pre'; 
 manualScanSelection = 0;nscans = 440; % default = 0
 %subjects =  {'gpl001','gpl002','gpl003','gpl004','gpl005','gpl006','gpl007','gpl008','gpl009', 'gpl010','gpl011','gpl012','gpl013','gpl015','gpl017','gpl019','gpl024','gpl025','gpl014','gpl021'};
-subjects =  {'gpl019'};
+subjects       = {'gpl022','gpl027','gpl029','gpl030','gpl031','gpl032','gpl034','gpl035','gpl036','gpl037','gpl040','gpl042','gpl043'};
+subjects       = {'gpl023'};
 %% [don't edit] POPUP! Select your GLM from 1lv scripts available
 GLMs        = dir(strcat([scripts,'\LEMO*create_1Lv_*']));
 idx2        = listdlg('PromptString','Select GLM','ListString', {GLMs.name},'SelectionMode','single','listSize',[500 100]); % popup 

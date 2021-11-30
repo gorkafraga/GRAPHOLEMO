@@ -7,7 +7,7 @@ clear all
 sourcePath = 'O:\studies\grapholemo\raw\';
 destinationPath = 'G:\GRAPHOLEMO\lemo_preproc';
 renameNiftisForPreprocessing = 1;
-subject = {'gpl037'};
+subject = {'gpl036'};
 
 %recParNames = { 'b0_fbl','fbl_parta','fbl_partb','b0_symctrl','1_symcontrol','t13d','audiotest'};
 % clean up last slash if specified

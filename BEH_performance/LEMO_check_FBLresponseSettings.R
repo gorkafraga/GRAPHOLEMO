@@ -2,7 +2,7 @@ rm(list=ls(all=TRUE))#clear all
 
 # Check Response Counterbalancing GRAPHOLEMO
 #-----------------------------------------------------
-dirinput <-"O:/studies/grapholemo/analysis/LEMO_GFG/mri/preprocessing"
+dirinput <-"G:/GRAPHOLEMO/lemo_preproc"
 diroutput <- "O:/studies/grapholemo/analysis/LEMO_GFG/"
 
 files <- dir(dirinput,paste0('gpl.*.-','fbl_a','.*.txt'),recursive=TRUE,ignore.case = TRUE,full.names = FALSE)

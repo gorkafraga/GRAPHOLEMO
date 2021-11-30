@@ -12,7 +12,7 @@ source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots an
 
 
 #set ins and outs
-task <- "FBL_A"
+task <- "FBL_B"
 dirinput <-"G:/GRAPHOLEMO/lemo_preproc" # no  / at the end 
 diroutput <-paste0("O:/studies/grapholemo/analysis/LEMO_GFG/beh/")
 ntrials <- 48

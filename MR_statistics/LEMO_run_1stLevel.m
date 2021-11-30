@@ -24,8 +24,7 @@ GLMs        = dir(strcat([scripts,'\LEMO*create_1Lv_*']));
 %selectedGLM = strrep(strrep(GLMs(idx2).name,'LEMO_func_create_1Lv_',''),'.m','');
 
 selectedGLMlist = {'GLM0','GLM0_halfs','GLM0_thirds','GLM1'};
-selectedGLMlist = {'GLM0','GLM0_halfs','GLM0_thirds','GLM1'};
-
+ 
  for semo=1:length(selectedGLMlist)
 
 selectedGLM = selectedGLMlist{semo};
@@ -35,12 +34,9 @@ disp(['Selected 1st Level: ',selectedGLM])
         % Basic inputs
         path_output     = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel'; % parent of output dir
         task            = taskList{t}; 
-        manualScanSelection = 0;nscans = 460; % default = 0
+        manualScanSelection = 0;nscans = 460; % default = 0 nscans is only used if turned to 1
         runs2use      = {'run1','run2'}; %separated by commas e.g., {'run','run2'} 
-        subjects        = {'gpl001','gpl002','gpl003','gpl004','gpl005','gpl006','gpl007','gpl008','gpl009','gpl010','gpl011','gpl012','gpl013','gpl015','gpl017','gpl019','gpl024','gpl025','gpl014','gpl021'};
-        subjects        = {'gpl026','gpl030','gpl031','gpl032','gpl034','gpl039','gpl041'};
-        subjects        = {'gpl026','gpl030','gpl031','gpl032','gpl034',};
-        subjects        = {'gpl038',};
+        subjects        = {'gpl020','gpl022','gpl023','gpl027','gpl029','gpl036','gpl037','gpl040','gpl042','gpl043'};
        % 'gpl035','gpl038' ---> redo
         modelversion =       'AR_rlddm_v11';
         modeloutputfile =   ['O:\studies\allread\mri\analysis_GFG\stats\task\modelling\RLDDM_fromLocal\GoodPerf_72\outputs\out_',modelversion,'\Parameters_perTrial.csv'] ;

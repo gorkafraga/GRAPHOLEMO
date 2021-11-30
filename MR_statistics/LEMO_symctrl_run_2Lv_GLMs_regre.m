@@ -10,7 +10,7 @@ close all
 readRegreFromTable = 1; % set as 0 if you want to input your vector manually
 selectedGLM = 'GLM0';%Chooice your GLM of interest
 % set input dir  based on GLM of interest
-parentDir = 'O:\studies\grapholemo\analysis\LEMO_SW\mri\1stLevel\symCtrl_pre'; 
+parentDir = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel\symCtrl_pre'; 
 listFolders = dir(strcat(parentDir,'\1Lv_',selectedGLM,'*'));
 [indx,tf] = listdlg('PromptString','Select source 1st level folder','ListString',{listFolders.name});
 dirinput = strcat([listFolders(indx).folder,'\',listFolders(indx).name]) ;

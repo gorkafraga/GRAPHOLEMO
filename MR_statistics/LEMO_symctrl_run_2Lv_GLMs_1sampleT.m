@@ -15,7 +15,7 @@ selectedGLM = 'GLM0'; %selectedGroup = 'all';
 modelversion =   'AR_rlddm_v11';
 
 % set input dir  based on GLM of interest
-parentDir = 'O:\studies\grapholemo\analysis\LEMO_SW\mri\1stLevel\symCtrl_pre';% NO \ as last character 
+parentDir = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel\symCtrl_pre';% NO \ as last character 
 
 
  % listFolders = dir(strcat(parentDir,'\',selectedGroup,'\1Lv_',selectedGLM,'*'));   
@@ -72,8 +72,8 @@ for c = 1: length(contrast)
     % Create pairs per subject: 
     for sub = 1:length(subjects)
             matlabbatch{1}.spm.stats.factorial_design.des.pt.pair(sub).scans = {
-                                                                           ['O:\studies\grapholemo\analysis\LEMO_SW\mri\1stLevel\symCtrl_pre\',listFolders(indx).name,'\',subjects{sub},'\',contrastname,'.nii,1']
-                                                                            ['O:\studies\grapholemo\analysis\LEMO_SW\mri\1stLevel\symCtrl_post\',listFolders(indx).name,'\',subjects{sub},'\',contrastname,'.nii,1']
+                                                                           ['O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel\symCtrl_pre\',listFolders(indx).name,'\',subjects{sub},'\',contrastname,'.nii,1']
+                                                                            ['O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel\symCtrl_post\',listFolders(indx).name,'\',subjects{sub},'\',contrastname,'.nii,1']
                                                                            };
     end
     matlabbatch{1}.spm.stats.factorial_design.des.pt.gmsca = 0;

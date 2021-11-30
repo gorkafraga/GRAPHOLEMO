@@ -12,7 +12,7 @@ library(openxlsx)
 master <- read.xlsx("O:/studies/grapholemo/LEMO_Master.xlsx", sheet  = "Cognitive",detectDates = TRUE)
 
 # define colors for each test 
-tests <- c('rias','ran','wais','slrt','rst','lgvt')
+tests <- c('rias','ran','wais','slrt','rst','lgvt','date','_exp')
 colors <- RColorBrewer::brewer.pal(10,'Set3')
 
 #  SAVE WITH STYLE  

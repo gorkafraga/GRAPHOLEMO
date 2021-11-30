@@ -19,7 +19,7 @@ selectedGLM = 'GLM';
 modelversion =   'AR_rlddm_v11';
 
 % set input dir  based on GLM of interest
-parentDir = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel\symCtrl_post';% NO \ as last character
+parentDir = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel\symCtrl_pre';% NO \ as last character
  
 if  contains(selectedGLM,'_mopa')
     %listFolders = dir(strcat(parentDir,'\',selectedGroup,'\',modelversion,'\1Lv_',selectedGLM,'*'));  

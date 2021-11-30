@@ -9,7 +9,7 @@ dirout <-   'O:/studies/grapholemo'
 colnames(dat1)[1] <- 'Subj_ID'
 colnames(dat1)[1] <- 'Subj_ID'
 alldat <- cbind(dat1,dat2)
-
+colnames(master)[1] <- "Subj_ID"
 dat2save <- merge(alldat,select(master,1),by = c("Subj_ID"),all = TRUE)
 
 # Save 
@@ -40,12 +40,12 @@ saveWorkbook(wb,paste0(dirout,'/tmp_merged_color.xlsx'), overwrite = TRUE)
 
 
 # -----------------------------------------------------------------------------------
-# longitudinal files. combine by rows
+# longitudinal files. bind rows
 longdat1 <- read.csv("O:/studies/grapholemo/analysis/LEMO_GFG/beh/FBL_A_Performance_long.csv")
 longdat2 <- read.csv("O:/studies/grapholemo/analysis/LEMO_GFG/beh/FBL_B_Performance_long.csv")
 longdat2save <- rbind(longdat1,longdat2)
 
-haven::write_sav(longdat2save,"O:/studies/grapholemo/analysis/LEMO_GFG/beh/FBL_performance_long.sav")
+haven::write_sav(longdat2save,"O:/studies/grapholemo/analysis/LEMO_GFG/beh/LEMO_beh_fbl_long.sav")
 
 
   
