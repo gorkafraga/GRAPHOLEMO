@@ -1,2 +1,2 @@
-This porject is licensed under the terms of Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+This repository is authored by dr. Gorka Fraga Gonzalez licensed under the terms of Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
  https://creativecommons.org/licenses/by-nc/4.0/
