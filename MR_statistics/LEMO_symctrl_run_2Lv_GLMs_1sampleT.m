@@ -1,39 +1,35 @@
 %--------------------------------------------------------------------------------------------------------------
 % SECOND LEVEL ONE SAMPLE T-TESTS 
-% .................................... 
+% ==========================================================================
 % - Reads first level folder based on your selectedGLM. 
 % - Creates and run one batch per contrast in your selectedGLM folder
 % - Compare Feedback learning part A and B
 % - Allows models with computational model parameters as 2nd level regressor ('mopa')
-% 
-%G.Fraga Gonzalez(2021)
+% %G.Fraga Gonzalez(2021)
 %--------------------------------------------------------------------------------------------------------------
 clear 
 close all
 %Chooice your GLM of interest
 selectedGLM = 'GLM0'; %selectedGroup = 'all';
-modelversion =   'AR_rlddm_v11';
-
+modelversion =   'xx';
 % set input dir  based on GLM of interest
 parentDir = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\1stLevel\symCtrl_pre';% NO \ as last character 
 
+% listFolders = dir(strcat(parentDir,'\',selectedGroup,'\1Lv_',selectedGLM,'*'));   
+listFolders = dir(strcat(parentDir,'\1Lv_',selectedGLM,'*'));   
 
- % listFolders = dir(strcat(parentDir,'\',selectedGroup,'\1Lv_',selectedGLM,'*'));   
- listFolders = dir(strcat(parentDir,'\1Lv_',selectedGLM,'*'));   
- 
- %create input and output dir  
+%create input and output dir  
 [indx,tf] = listdlg('PromptString','Select source 1st level folder','ListString',{listFolders.name});
 dirinput = strcat([listFolders(indx).folder,'\',listFolders(indx).name]) ;
 diroutput = strrep(dirinput,['1Lv_',selectedGLM],['2Lv_',selectedGLM]);
 diroutput = strrep(diroutput, '1stLevel\symCtrl_pre','2ndLevel_pairedTs\symCtrl_prePost');
 mkdir(diroutput)
 
-
 % Read t-test contrasts for that model 
 tmp = dir([dirinput,'\**\spm.mat']);
 load([tmp(1).folder,'\',tmp(1).name]); % load first spm file in input directory
-
 contrast=struct();  % gather description and file names of all t-contrasts in that analysis c=1;
+
 c=1;
 for i = 1:length(SPM.xCon)
     if contains(SPM.xCon(i).Vcon.fname,'con_00')

@@ -1,19 +1,24 @@
-function [onsets,params] = LEMO_func_gatherOnsets(logfiles)
+function [onsets,params] = LEMO_func_gatherOnsets(file2read,options)
 onsets={};
-params={};
-
-    for i=1:length(logfiles)
-        
-        logfile = logfiles{i};
-        currLog = readtable(logfile);
-         if contains(logfile,"fbl_b",'IgnoreCase',true)
-             fid = fopen(logfile);
-             filehead = textscan(fid, '%s', 'delimiter', '\t','MultipleDelimsAsOne', 1);
-             filehead = filehead{1};
-             filehead = filehead(1:size(currLog,2))';
-             currLog.Properties.VariableNames = filehead;
-         end         
-        
+params={}; 
+%%%
+     for i=1:length(file2read)
+        if (contains(options,'useLogFiles'))
+            logfile = file2read{i};
+            currLog = readtable(logfile);
+             if contains(logfile,"fbl_b",'IgnoreCase',true)
+                 fid = fopen(logfile);
+                 filehead = textscan(fid, '%s', 'delimiter', '\t','MultipleDelimsAsOne', 1);
+                 filehead = filehead{1};
+                 filehead = filehead(1:size(currLog,2))';
+                 currLog.Properties.VariableNames = filehead;
+             end         
+        elseif (contains(options,'useModelOutput'))     
+            currLog = file2read{i};
+            %modify RT variable to match the rest of the script
+            currLog.Properties.VariableNames(find(contains(currLog.Properties.VariableNames,'RT'))) = {'rt'}
+            currLog.rt = currLog.rt*1000;
+        end
         % ONSETS ------------------------------------------
         % Change units to seconds. Remove missing responses
         onsets(i).stimOnset = currLog.stimOnset/1000;

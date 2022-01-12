@@ -13,7 +13,7 @@ source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots an
 
 #set ins and outs
 task <- "FBL_B"
-dirinput <-"G:/GRAPHOLEMO/lemo_preproc" # no  / at the end 
+dirinput <-"O:/studies/grapholemo/analysis/LEMO_GFG/mri/preprocessing" # no  / at the end 
 diroutput <-paste0("O:/studies/grapholemo/analysis/LEMO_GFG/beh/")
 ntrials <- 48
 plotme <- 0
@@ -37,12 +37,21 @@ for (i in 1:length(files)){
   D <- read_delim(paste0(dirinput,'/',files[i]),"\t", escape_double = FALSE, locale = locale(), trim_ws = TRUE, skip_empty_rows=TRUE)
   subject <- substr(sapply(strsplit(files[i],"/"), `[`,6),1,6) #subject ID are the 6 first characters from filename,i.e., last element after splitting fullpath name...
   
-  if (dim(D)[1] > ntrials) {
-    D <-  D[7:dim(D)[1],] #trim file it has more lines than expected (in task B the first rows are junk)
+  if (any(grepl('FBtype',colnames(D)))){ 
+    D <- D[,-which(names(D)=='FBtype')]
+    #correct shifted column names
+    colnames(D)[which(colnames(D)=='vSymbol')] <- 'aFile'
+    colnames(D)[grep('aFile',colnames(D))[2]] <- 'vSymbol'
   }
-  if (dim(D)[1] != ntrials) {
-    cat("This file has ",dim(D)[1]," trials instead of ",ntrials,"!!",
-        "\nAborting file ",files[i],"!!")
+  
+  if (any(grepl('LeftIsMatch',colnames(D)))){ D <- D[,-which(names(D)=='LeftIsMatch')]}
+  
+  # Check trials
+  if (dim(D)[1] > ntrials) {
+    D <-  D[7:dim(D)[1],] # in task B the first 6 rows are junk from practice trials
+  }
+  
+  if (dim(D)[1] != ntrials) {cat(files[f]," does not have ",ntrials, "!! script STOPS.\n")
     next
   } else {
     cat("File OK (",dim(D)[1]," trials)","\nProceeding with ",files[i],"...\n")
@@ -111,8 +120,10 @@ for (i in 1:length(files)){
 # Merge in a single Table  
 DAT <- data.table::rbindlist(dataList,fill=TRUE) 
 CUMU <- data.table::rbindlist(cumuList,fill=TRUE)
-DAT2SAVE<-cbind(DAT,CUMU) 
+write.csv(CUMU,paste(diroutput,"/",task,"_cumulative_probabilities.csv",sep=""),row.names = FALSE,na = "")
 
+
+ 
 # Accu summary
 accu <- DAT %>%  group_by(subjID,block,fb,quartile,.drop = FALSE) %>%  tally()
 rt <- DAT %>%  group_by(subjID,block,fb,quartile,.drop = FALSE) %>% summarize(meanRT = mean(rt))
@@ -128,8 +139,7 @@ dlongThirds$meanRT <- round(dlongThirds$meanRT,2)
 dlongThirds$count <- dlongThirds$n
 dlongThirds$proportionPerThird<- round(dlongThirds$n/(ntrials/3),2)
 
-
-
+###
 dlongFull <-dlong %>% complete(subjID,nesting(block,fb,quartile),fill = list(n = 0)) # Make explicit the missing values ! nw length should be nsubjects x blocks x quartile x fb 
 dlongFull$third <- NA
 dlongFull$proportionPerThird <- NA

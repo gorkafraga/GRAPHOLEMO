@@ -87,21 +87,21 @@ function [matlabbatch] =  LEMO_func_create_1Lv_GLM0_thirds(pathSubject,scans,ons
     matlabbatch{3}.spm.stats.con.spmmat(1) = cfg_dep('Model estimation: SPM.mat File', substruct('.','val', '{}',{2}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','spmmat'));
     %fcontrast 1 
     matlabbatch{3}.spm.stats.con.consess{1}.fcon.name = 'Effects of interest';
-    matlabbatch{3}.spm.stats.con.consess{1}.fcon.weights = eye(4);
+    matlabbatch{3}.spm.stats.con.consess{1}.fcon.weights = eye(6);
     matlabbatch{3}.spm.stats.con.consess{1}.fcon.sessrep = 'repl';
-    %t-contrasts 1 
+    %t-contrasts  
     matlabbatch{3}.spm.stats.con.consess{2}.tcon.name = 'stim third1 > third3';
     matlabbatch{3}.spm.stats.con.consess{2}.tcon.weights = [1 0 -1 0 0 0];
     matlabbatch{3}.spm.stats.con.consess{2}.tcon.sessrep = 'repl';
-    %t-contrasts 2
+    %t-contrasts 
     matlabbatch{3}.spm.stats.con.consess{3}.tcon.name = 'stim third3 > third1';
     matlabbatch{3}.spm.stats.con.consess{3}.tcon.weights = [-1 0 1 0 0 0];
-    matlabbatch{3}.spm.stats.con.consess{3}.tcon.sessrep = 'repl';
-    %t-contrasts 3
+    matlabbatch{3}.spm.stats.con.consess{3}.tcon.sessrep = 'repl';    
+    %t-contrasts 
     matlabbatch{3}.spm.stats.con.consess{4}.tcon.name = 'fb third1 > third3';
     matlabbatch{3}.spm.stats.con.consess{4}.tcon.weights = [0 0 0 1 0 -1];
     matlabbatch{3}.spm.stats.con.consess{4}.tcon.sessrep = 'repl';
-    %t-contrasts 4
+    %t-contrasts 
     matlabbatch{3}.spm.stats.con.consess{5}.tcon.name = 'fb third3> third1';
     matlabbatch{3}.spm.stats.con.consess{5}.tcon.weights = [0 0 0 -1 0 1];
     matlabbatch{3}.spm.stats.con.consess{5}.tcon.sessrep = 'repl';

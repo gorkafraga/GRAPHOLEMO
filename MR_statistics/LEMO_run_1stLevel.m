@@ -18,12 +18,12 @@ masterfile      = 'O:\studies\grapholemo\LEMO_GFG\LEMO_Master.xlsx';
 path_preproc    = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\preprocessing'; %PARENT path to your preprocessed data (no \ at the end)
 path_logs       = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\preprocessing'; % here the selected files for this analysis, suffix was fixed when needed so all end in  _bX.txt
 taskList        = {'FBL_A','FBL_B'};
-%% [don't edit] POPUP! Select your GLM from 1lv scripts available
+%%  POPUP! Select your GLM from 1lv scripts available
 GLMs        = dir(strcat([scripts,'\LEMO*create_1Lv_*']));
 %idx2        = listdlg('PromptString','Select GLM','ListString', {GLMs.name},'SelectionMode','single','listSize',[500 100]); % popup 
 %selectedGLM = strrep(strrep(GLMs(idx2).name,'LEMO_func_create_1Lv_',''),'.m','');
-
-selectedGLMlist = {'GLM0','GLM0_halfs','GLM0_thirds','GLM1'};
+%selectedGLMlist = {'GLM0','GLM0_halfs','GLM0_thirds','GLM1'};
+selectedGLMlist = {'GLM0_thirds'};
  
  for semo=1:length(selectedGLMlist)
 
@@ -36,10 +36,13 @@ disp(['Selected 1st Level: ',selectedGLM])
         task            = taskList{t}; 
         manualScanSelection = 0;nscans = 460; % default = 0 nscans is only used if turned to 1
         runs2use      = {'run1','run2'}; %separated by commas e.g., {'run','run2'} 
-        subjects        = {'gpl020','gpl022','gpl023','gpl027','gpl029','gpl036','gpl037','gpl040','gpl042','gpl043'};
-       % 'gpl035','gpl038' ---> redo
-        modelversion =       'AR_rlddm_v11';
-        modeloutputfile =   ['O:\studies\allread\mri\analysis_GFG\stats\task\modelling\RLDDM_fromLocal\GoodPerf_72\outputs\out_',modelversion,'\Parameters_perTrial.csv'] ;
+       % LIST OF SUBJECTS 
+        %subjects        = {'gpl038'};
+        subjects = dir([path_preproc,'/',task,'/gpl*']);
+        subjects = {subjects.name}; 
+      %  subjects = {'gpl014'};
+        modelversion =      'LEMO_rlddm_v31';
+        modeloutputfile =   ['O:\studies\grapholemo\analysis\LEMO_GFG\beh\modeling\analysis_n39\fbl_a\',modelversion,'\Parameters_perTrial.csv'] ;
         % Set up output paths
          if  contains(selectedGLM,'_mopa')
                 path_output = strcat(path_output,'\',task,'\',modelversion,'\1Lv_',selectedGLM);
@@ -56,7 +59,7 @@ disp(['Selected 1st Level: ',selectedGLM])
                 if manualScanSelection == 1
                     path_output=   strrep(path_output,'1Lv_','SelectScans_1Lv_');
                 end
-                path_output_subj = fullfile(path_output,'\',subject); %output path for this subject
+                    path_output_subj = fullfile(path_output,'\',subject); %output path for this subject
 
                 %Output path for curr subject
                 if ~isfolder(path_output_subj)
@@ -70,30 +73,36 @@ disp(['Selected 1st Level: ',selectedGLM])
                nsessions = length(currRun);  
                % ONSETS  % ----------------------------------------------------------------------
                %Gather onsets from log files. Times need to be in seconds
-                for b = 1:nsessions
-                  logfilesTMP = dir([path_logs,'\',task,'\',subject,'\func\',currRun{b},'\logs\*.txt']);
-                  logfiles(b) = {[logfilesTMP.folder,'\',logfilesTMP.name]} ;       
-                end
-               % call "gather onsets" 
-                [onsets,params] = LEMO_func_gatherOnsets(logfiles);                 % call function  
+               for b = 1:nsessions 
+                      logfilesTMP = dir([path_logs,'\',task,'\',subject,'\func\',currRun{b},'\logs\*.txt']);
+                      logfiles(b) = {[logfilesTMP.folder,'\',logfilesTMP.name]} ;                           
+               end      
+                    [onsets,params] = LEMO_func_gatherOnsets(logfiles,'useLogFiles');  
 
+                 %READ MODEL -------if you chose a model-based 1st level: read table with model output 
+                 if  contains(selectedGLM,'_mopa')    
+                    for b = 1:nsessions 
+                        Tmodel = readtable(modeloutputfile);
+                        Tmodel = Tmodel(contains(Tmodel.subjID,subject),:);
+                        modeloutput{b} = Tmodel(find(Tmodel.block==b),:); 
+                    end
+                    % Read onsets from the model output file (overwrite those from log files)
+                    clear onsets params
+                    [onsets,params] = LEMO_func_gatherOnsets(modeloutput,'useModelOutput');  
+  
+                 end
+                
                 % SESSIONS /SCANS----------------------------------------------------------------------
                 % find SCANS matching with log files
                 fprintf(logfileID,strcat(['[[',subject,']]\r\n'])); 
-                for j = 1:length(logfiles)
-
-                     %-------if you chose a model-based 1st level: read table with model output 
-                     if  contains(selectedGLM,'_mopa')
-                        Tmodel = readtable(modeloutputfile);
-                        Tmodel = Tmodel(contains(Tmodel.subjID,subject),:);
-                        modeloutput{j} = T(find(T.block==str2num(strrep(patternId,'_B',''))),:);        
-                        modeloutput{j} = Tmodel(find(Tmodel.block==j),:);        
-                     end
+                
+                for j = 1:length(logfiles)     
+                 
 
                       %take  pattern from logfile that can identify its corresponding mr file
                       mrfilename = dir([path_preproc,'\',task,'\',subject,'\func\',currRun{j},'\s*wua*.nii']);
 
-                      % select scans 
+                     % select scans ====> 
                      if manualScanSelection == 1 
                        scans{j} =  cellstr(spm_select('ExtFPList',mrfilename.folder, mrfilename.name, 1:nscans))  ;
                        disp(['Selected ',num2str(nscans),' scans'])
@@ -102,7 +111,7 @@ disp(['Selected 1st Level: ',selectedGLM])
                      end 
 
 
-                      % Read the corresponding RP file
+                      % Read the corresponding RP file ====> 
                       rpfile =dir([path_preproc,'\',task,'\',subject,'\func\',currRun{j},'\rp*.txt']);
                       formatSpec = '%16f%16f%16f%16f%16f%16f%[^\n\r]';
                       fileID = fopen([rpfile.folder,'\',rpfile.name],'r');
@@ -165,25 +174,29 @@ disp(['Selected 1st Level: ',selectedGLM])
                           else
                             matlabbatch = LEMO_func_create_1Lv_GLM1(path_output_subj,scans,onsets,nsessions);     
                            end
-
-               elseif strcmp('GLM0_mopa',selectedGLM)
-                         matlabbatch = LEMO_func_create_1Lv_GLM0_mopa(path_output_subj,modeloutput,scans,onsets,nsessions);
-
-                elseif strcmp('GLM0_mopa_vpe',selectedGLM)
-                         matlabbatch = LEMO_func_create_1Lv_GLM0_mopa_vpe(path_output_subj,modeloutput,scans,onsets,nsessions);
-               %%%
+           
+               %%% 
                elseif  strcmp('GLM0_halfs',selectedGLM)
                             matlabbatch = LEMO_func_create_1Lv_GLM0_halfs(path_output_subj,scans,onsets,nsessions);  
                                %%%
                elseif  strcmp('GLM0_thirds',selectedGLM)
                             matlabbatch = LEMO_func_create_1Lv_GLM0_thirds(path_output_subj,scans,onsets,nsessions);   
                %%%     
+               elseif  strcmp('GLM0_thirds_exMiss',selectedGLM)
+                            matlabbatch = LEMO_func_create_1Lv_GLM0_thirds_exMiss(path_output_subj,scans,onsets,nsessions);   
                %%%            
                elseif  strcmp('GLM1_pm1a',selectedGLM)
                             matlabbatch = LEMO_func_create_1Lv_GLM1_pm1a(path_output_subj,scans,onsets,params,nsessions);      
                %%%
                elseif   strcmp('GLM2',selectedGLM)
                             matlabbatch = LEMO_func_create_1Lv_GLM2(path_output_subj,scans,onsets,nsessions);
+                            
+               % Model-based 
+               elseif strcmp('GLM0_mopa_aspe',selectedGLM)
+                         matlabbatch = LEMO_func_create_1Lv_GLM0_mopa_aspe(path_output_subj,modeloutput,scans,onsets,nsessions);
+                         
+                elseif strcmp('GLM0_mopa_vpe',selectedGLM)
+                         matlabbatch = LEMO_func_create_1Lv_GLM0_mopa_vpe(path_output_subj,modeloutput,scans,onsets,nsessions);
                 end
 
              %% Execute batch
