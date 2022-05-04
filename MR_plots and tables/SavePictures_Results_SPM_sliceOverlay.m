@@ -5,15 +5,23 @@ close all
 % - Manually edit your SPM result files and anatomical image
 % - Set up a max t value for the color map. If empty it will be defined by the data
 % -  % REQUIRES function 'cell2csv.m' 
+
 addpath ('N:\studies\Grapholemo\Methods\Scripts\grapholemo') % REQUIRES function 'cell2csv.m' 
 templateAnatomy = ['C:\Users\gfraga\spm12\canonical\avg152T1.nii']; %full file path
-dirinput = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\2ndLevel\FBL_B\2Lv_GLM0_thirds_exMiss\'; % end with \
-diroutput = [dirinput,'\summary\'];
+dirinput = 'O:\studies\grapholemo\analysis\LEMO_GFG\mri\2ndLevel\FeedbackLearning\FBL_B\LEMO_rlddm_v32\2Lv_GLM0_mopa_aspepos\'; % end with \
+
+correctFWE = 1; 
+
+if correctFWE == 1 
+    diroutput = [dirinput,'\summary_withFWE\'];
+elseif correctFWE==0
+    diroutput = [dirinput,'\summary\'];
+end 
 mkdir(diroutput)
 %listContrasts = {'con_0001','con_0002','con_0003','con_0004','con_0005','con_0006','con_0007','con_0008','con_0009','con_0010', 'con_0011', 'con_0012'};
-listContrasts = { 'con_0002','con_0003','con_0004','con_0005'};
+listContrasts = { 'con_0002','con_0003','con_0004','con_0005','con_0006','con_0007','con_0008','con_0009'};
 for con=1:length(listContrasts)
-  if contains(dirinput,'prePost')
+  if contains(dirinput,'prePost') || contains(dirinput,'paired')
         ncons = 2; 
   else
         ncons =1;
@@ -30,9 +38,17 @@ for con=1:length(listContrasts)
 
      end
     tmax = 10; % Type [] to leave empty so it is auto selected 
-    pCorrection = 'none';%Alternatively use 'FWE' and adjust Thresh 
-    pthresh = 0.001;
-    figTitle = [inputcontrast, ' p < ' ,num2str(pthresh),'(correction: ',pCorrection,')'];
+    if correctFWE == 1
+        pCorrection = 'FWE';
+        pthresh = 0.05;
+        figTitle = [inputcontrast, ' p < ' ,num2str(pthresh),'(correction: ',pCorrection,')'];
+    
+    elseif correctFWE==0 
+        pCorrection = 'none';%Alternatively use 'FWE' and adjust Thresh 
+        pthresh = 0.001;
+        figTitle = [inputcontrast, ' p < ' ,num2str(pthresh),'(correction: ',pCorrection,')'];
+    end 
+    
     % Load spm results with your thresholds 
     spm('defaults','fmri')
     matlabbatch{1}.spm.stats.results.spmmat = {[dirinput,inputcontrast,'\SPM.mat']};
@@ -99,7 +115,7 @@ for con=1:length(listContrasts)
     % check whether there are clusters and if so, write out the results
     if isempty(xyz2)
         %cell2csv([filepath '/' filename '_EMPTY.txt'],d,'\t');
-        cell2csv([diroutput,'Results_Table_',strrep(outputfilename,'.png','_EMPTY.txt')], d, '\t');
+        cell2csv([diroutput,'Results_Table_',strrep(outputfilename,'.png','.txt')], d, '\t');
         emptyflag = 1;
 
     else

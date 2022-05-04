@@ -1,0 +1,344 @@
+---
+title: "Feedback learning task"
+author: 
+  name: "Gorka Fraga-Gonzalez"
+  affiliation: "University of Zurich"
+date: "`r Sys.Date()`"
+#abstract: ""
+output: 
+  html_document:
+    code_folding: hide 
+    toc: true
+    toc_float:  
+          collapsed: false
+          smooth_scroll: true
+          toc_depth: 6
+    #self_contained: false  
+
+---
+
+```{r , include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r loadstuff, echo = FALSE,  include=FALSE}
+  rm(list=ls())
+  Packages <- c("tidyr","ggplot2","tibble","dplyr","plotly","DT","kableExtra") #Load libraries 
+  lapply(Packages, library, character.only = TRUE)#
+
+```
+
+```{r}
+#library(knitr)
+#knit_hooks$set(optipng = hook_optipng)
+```
+
+# Results
+
+## fMRI: whole-brain 
+- Results displayed based on p uncorrected after cluster extension correction.
+- FBL_A (Feedback learning A, basic task of symbol-speech sound learning)
+- FBL_B (Feedback learning B,symbols from A are presented with modifier marks that change the sound)
+
+### FBL-A {.tabset}
+
+#### GLM-thirds
+Onsets of stimuli and feedback for each third of trials. One regressor of no interest contained onsets of feedback and stimuli in trials with missing responses
+These results are based on *uncorrected p* with *cluster extension correction*.
+
+##### Results table
+```{r , out.width=8,message=FALSE,warning=FALSE}
+dat <- readxl::read_xlsx('O:/studies/grapholemo/analysis/LEMO_GFG/mri/2ndLevel/FeedbackLearning/Result_regions_2Lv_GLM0_thirds_exMiss.xlsx')
+dat <-dat[grep('FBL_A',dat$file),]
+#some formatting 
+dat$file <- substr(dat$file,unlist(gregexpr('con_0',dat$file)),unlist(gregexpr('con_0',dat$file))+7) #keep just the con_**** as name 
+dat <- dplyr::relocate(dat,'aal',2) 
+    dat <-  dplyr::relocate(dat,'file',1)
+    cons2plot <- unique(dat$file)  
+
+
+# Rename contrasts 
+urfile <- dat$file 
+renamecontrasts <- function(originalNames){
+    
+    originalNames <- gsub('con_0002','S1>S3',originalNames)
+    originalNames <- gsub('con_0003','S3>S1',originalNames)
+    originalNames <- gsub('con_0004','F1>F3',originalNames)
+    originalNames <- gsub('con_0005','F3>F1',originalNames)
+    originalNames <- gsub('con_0006','S1>.',originalNames)
+    originalNames <- gsub('con_0007','S3>.',originalNames)
+    originalNames <- gsub('con_0008','F1>.',originalNames)
+    originalNames <- gsub('con_0009','F3>.',originalNames)
+    
+}
+
+dat$file <- renamecontrasts(dat$file) 
+
+knitr::kable(dat,caption='', digits=3) %>% 
+    #kable_styling(bootstrap_options = c("striped", "hover"), full_width = F) %>%
+    column_spec(1, bold = T, border_right = T ) %>%
+    kable_classic(full_width = F, html_font = "Calibri")
+```
+ 
+##### Contrasts {.tabset}
+```{r  contrastpics11,dpi=36,  fig.height=2, echo=FALSE, echo=FALSE,  message=FALSE, warning=FALSE, results="asis"}
+dirpics <- 'O:/studies/grapholemo/analysis/LEMO_GFG/mri/visualizations_mricrogl/fbl_a/'
+filepics <- dir(dirpics,pattern = '*.png')
+for  (f in 1:length(filepics)){
+    filecon <- substr(filepics[f],unlist(gregexpr('con_',filepics[f])),gregexpr('con_',filepics[f])[[1]][1]+7)
+    fileconname <- unique(dat$file[grep(filecon, urfile)])  
+    cat("  \n###### ",fileconname, "\n")
+    #knitr::include_graphics(paste0(dirpics,'/',filepics[f]))  
+    cat(paste0("![](", paste0(dirpics,'/',filepics[f])), ") \n")
+
+    cat("  \n")
+}
+```
+
+#### {-}
+
+#### Model-based GLM
+Onsets of stimuli and feedback against baseline. One regressor of no interest contained onsets of feedback and stimuli in trials with missing responses
+These results are based on *FWE corrected p*
+
+##### Results table
+```{r , out.width=8,message=FALSE,warning=FALSE}
+dat <- readxl::read_xlsx('O:/studies/grapholemo/analysis/LEMO_GFG/mri/2ndLevel/FeedbackLearning/Result_regions_2Lv_GLM0_mopa_aspe_withFWE.xlsx')
+dat <-dat[grep('FBL_A',dat$file),]
+dat <- dat[c(grep('con_0006',dat$file),grep('con_0007',dat$file),grep('con_0008',dat$file),grep('con_0009',dat$file)),]
+
+#some formatting 
+dat$file <- substr(dat$file,unlist(gregexpr('con_0',dat$file)),unlist(gregexpr('con_0',dat$file))+7) #keep just the con_**** as name 
+dat <- dplyr::relocate(dat,'aal',2) 
+    dat <-  dplyr::relocate(dat,'file',1)
+    cons2plot <- unique(dat$file)  
+if (any(dat$cluster_k>15)){
+  dat<-dat[which(as.numeric(dat$cluster_k)>15),]
+}
+# Rename contrasts 
+urfile <- dat$file 
+renamecontrastsmopa <- function(originalNames){
+    
+    originalNames <- gsub('con_0002','S>.',originalNames)
+    originalNames <- gsub('con_0003','F>.',originalNames)
+    originalNames <- gsub('con_0004','S>F',originalNames)
+    originalNames <- gsub('con_0005','F>S',originalNames)
+    originalNames <- gsub('con_0006','Sas+',originalNames)
+    originalNames <- gsub('con_0007','Sas-',originalNames)
+    originalNames <- gsub('con_0008','Fpe+',originalNames)
+    originalNames <- gsub('con_0009','Fpe-',originalNames)
+    
+}
+
+dat$file <- renamecontrastsmopa(dat$file) 
+
+knitr::kable(dat,caption='', digits=3) %>% 
+    #kable_styling(bootstrap_options = c("striped", "hover"), full_width = F) %>%
+    column_spec(1, bold = T, border_right = T ) %>%
+    kable_classic(full_width = F, html_font = "Calibri")
+```
+ 
+##### Contrasts {.tabset}
+```{r  contrastpics12,dpi=36,  fig.height=2, echo=FALSE, echo=FALSE,  message=FALSE, warning=FALSE, results="asis"}
+dirpics <- 'O:/studies/grapholemo/analysis/LEMO_GFG/mri/visualizations_mricrogl/fbl_a_mopa/'
+filepics <- dir(dirpics,pattern = '*.png')
+for  (f in 1:length(filepics)){
+    filecon <- substr(filepics[f],unlist(gregexpr('con_',filepics[f])),gregexpr('con_',filepics[f])[[1]][1]+7)
+    fileconname <- unique(dat$file[grep(filecon, urfile)])  
+    cat("  \n###### ",fileconname, "\n")
+    #knitr::include_graphics(paste0(dirpics,'/',filepics[f]))  
+    cat(paste0("![](", paste0(dirpics,'/',filepics[f])), ") \n")
+
+    cat("  \n")
+}
+```
+
+#### {-}
+
+
+### FBL-B {.tabset}
+#### Results table
+```{r , out.width=8,message=FALSE,warning=FALSE}
+dat <- readxl::read_xlsx('O:/studies/grapholemo/analysis/LEMO_GFG/mri/2ndLevel/FeedbackLearning/Result_regions_2Lv_GLM0_thirds_exMiss.xlsx')
+dat <-dat[grep('FBL_B',dat$file),]
+#some formatting 
+dat$file <- substr(dat$file,unlist(gregexpr('con_0',dat$file)),unlist(gregexpr('con_0',dat$file))+7) #keep just the con_**** as name 
+dat <- dplyr::relocate(dat,'aal',2) 
+    dat <-  dplyr::relocate(dat,'file',1)
+    cons2plot <- unique(dat$file)  
+
+
+# Rename contrasts 
+urfile <- dat$file 
+renamecontrasts <- function(originalNames){
+    
+    originalNames <- gsub('con_0002','S1>S3',originalNames)
+    originalNames <- gsub('con_0003','S3>S1',originalNames)
+    originalNames <- gsub('con_0004','F1>F3',originalNames)
+    originalNames <- gsub('con_0005','F3>F1',originalNames)
+    originalNames <- gsub('con_0006','S1>.',originalNames)
+    originalNames <- gsub('con_0007','S3>.',originalNames)
+    originalNames <- gsub('con_0008','F1>.',originalNames)
+    originalNames <- gsub('con_0009','F3>.',originalNames)
+    
+}
+
+dat$file <- renamecontrasts(dat$file) 
+
+knitr::kable(dat,caption='', digits=3) %>% 
+    #kable_styling(bootstrap_options = c("striped", "hover"), full_width = F) %>%
+    column_spec(1, bold = T, border_right = T ) %>%
+    kable_classic(full_width = F, html_font = "Calibri")
+```
+ 
+##### Contrasts {.tabset}
+```{r  contrastpics21,dpi=36,  fig.height=2, echo=FALSE, echo=FALSE,  message=FALSE,warning=FALSE, results="asis"}
+dirpics <- 'O:/studies/grapholemo/analysis/LEMO_GFG/mri/visualizations_mricrogl/fbl_b/'
+filepics <- dir(dirpics,pattern = '*.png')
+for  (f in 1:length(filepics)){
+    filecon <- substr(filepics[f],unlist(gregexpr('con_',filepics[f])),gregexpr('con_',filepics[f])[[1]][1]+7)
+    fileconname <- unique(dat$file[grep(filecon, urfile)])  
+    cat("  \n###### ",fileconname, "\n")
+    #knitr::include_graphics(paste0(dirpics,'/',filepics[f]))  
+    cat(paste0("![](", paste0(dirpics,'/',filepics[f])), ") \n")
+
+    cat("  \n")
+}
+```
+
+#### {-}
+
+
+#### Model-based GLM
+Onsets of stimuli and feedback against baseline. One regressor of no interest contained onsets of feedback and stimuli in trials with missing responses
+These results are based on *FWE corrected p*
+
+##### Results table
+```{r , out.width=8,message=FALSE,warning=FALSE}
+dat <- readxl::read_xlsx('O:/studies/grapholemo/analysis/LEMO_GFG/mri/2ndLevel/FeedbackLearning/Result_regions_2Lv_GLM0_mopa_aspe_withFWE.xlsx')
+dat <-dat[grep('FBL_B',dat$file),]
+dat <- dat[c(grep('con_0006',dat$file),grep('con_0007',dat$file),grep('con_0008',dat$file),grep('con_0009',dat$file)),]
+
+#some formatting 
+dat$file <- substr(dat$file,unlist(gregexpr('con_0',dat$file)),unlist(gregexpr('con_0',dat$file))+7) #keep just the con_**** as name 
+dat <- dplyr::relocate(dat,'aal',2) 
+    dat <-  dplyr::relocate(dat,'file',1)
+    cons2plot <- unique(dat$file)  
+if (any(dat$cluster_k>15)){
+  dat<-dat[which(as.numeric(dat$cluster_k)>15),]
+}
+# Rename contrasts 
+urfile <- dat$file 
+ 
+dat$file <- renamecontrastsmopa(dat$file) 
+
+knitr::kable(dat,caption='', digits=3) %>% 
+    #kable_styling(bootstrap_options = c("striped", "hover"), full_width = F) %>%
+    column_spec(1, bold = T, border_right = T ) %>%
+    kable_classic(full_width = F, html_font = "Calibri")
+```
+ 
+##### Contrasts {.tabset}
+```{r  contrastpics22,dpi=36,  fig.height=2, echo=FALSE, echo=FALSE,  message=FALSE, warning=FALSE, results="asis"}
+dirpics <- 'O:/studies/grapholemo/analysis/LEMO_GFG/mri/visualizations_mricrogl/fbl_a_mopa/'
+filepics <- dir(dirpics,pattern = '*.png')
+for  (f in 1:length(filepics)){
+    filecon <- substr(filepics[f],unlist(gregexpr('con_',filepics[f])),gregexpr('con_',filepics[f])[[1]][1]+7)
+    fileconname <- unique(dat$file[grep(filecon, urfile)])  
+    cat("  \n###### ",fileconname, "\n")
+    #knitr::include_graphics(paste0(dirpics,'/',filepics[f]))  
+    cat(paste0("![](", paste0(dirpics,'/',filepics[f])), ") \n")
+
+    cat("  \n")
+}
+```
+
+#### {-}
+
+## fMRI: Regions of interest analysis
+
+ 
+### FBL-A {.tabset}
+
+#### GLM-thirds
+- Onsets of stimuli and feedback for each third of trials. One regressor of no interest contained onsets of feedback and stimuli in trials with missing responses
+- Linear mixed models with iterative exclusion of outliers based on residuals (residuals_threshold 2.5 )
+
+##### Results table
+```{r , out.width=8,message=FALSE,warning=FALSE}
+
+dat <- readxl::read_xlsx('O:/studies/grapholemo/analysis/LEMO_GFG/mri/stats_ROI/LMM_ROI_betas_2LvGLM0thirdsexMiss_tidy.xlsx')
+dat <-dat[grep('FBLA',dat$Effect),]
+colnames(dat) <- gsub('-value','',colnames(dat))
+
+
+knitr::kable(dat,caption='', digits=3) %>% 
+    #kable_styling(bootstrap_options = c("striped", "hover"), full_width = F) %>%
+    column_spec(1, bold = T, border_right = T ) %>%
+    kable_classic(full_width = F, html_font = "Calibri")
+```
+ 
+##### Contrasts {.tabset}
+```{r  ,dpi=36,  fig.height=2, echo=FALSE, echo=FALSE,  message=FALSE, warning=FALSE, results="asis"}
+ 
+ 
+```
+
+#### {-}
+
+#### Model-based GLM
+Onsets of stimuli and feedback against baseline. One regressor of no interest contained onsets of feedback and stimuli in trials with missing responses
+These results are based on *FWE corrected p*
+
+##### Results table
+```{r , out.width=8,message=FALSE,warning=FALSE}
+ 
+```
+ 
+##### Contrasts {.tabset}
+```{r  ,dpi=36,  fig.height=2, echo=FALSE, echo=FALSE,  message=FALSE, warning=FALSE, results="asis"}
+
+```
+
+#### {-}
+
+
+### FBL-B {.tabset}
+#### Results table
+```{r , out.width=8,message=FALSE,warning=FALSE}
+
+dat <- readxl::read_xlsx('O:/studies/grapholemo/analysis/LEMO_GFG/mri/stats_ROI/LMM_ROI_betas_2LvGLM0thirdsexMiss_tidy.xlsx')
+dat <-dat[grep('FBLB',dat$Effect),]
+colnames(dat) <- gsub('-value','',colnames(dat))
+
+
+knitr::kable(dat,caption='', digits=3) %>% 
+    #kable_styling(bootstrap_options = c("striped", "hover"), full_width = F) %>%
+    column_spec(1, bold = T, border_right = T ) %>%
+    kable_classic(full_width = F, html_font = "Calibri")
+```
+ 
+##### Contrasts {.tabset}
+```{r  ,dpi=36,  fig.height=2, echo=FALSE, echo=FALSE,  message=FALSE,warning=FALSE, results="asis"}
+
+```
+
+#### {-}
+
+
+#### Model-based GLM
+Onsets of stimuli and feedback against baseline. One regressor of no interest contained onsets of feedback and stimuli in trials with missing responses
+These results are based on *FWE corrected p*
+
+##### Results table
+```{r , out.width=8,message=FALSE,warning=FALSE}
+ 
+```
+ 
+##### Contrasts {.tabset}
+ 
+
+```
+
+#### {-}

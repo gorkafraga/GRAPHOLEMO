@@ -10,20 +10,20 @@ source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots an
 ###############################################################################################
 # files and directories
 task <- 'FBL_A'
-raw <- read.csv(paste0('O:/studies/grapholemo/analysis/LEMO_GFG/beh/',task,'_cumulative_probabilities.csv'))
-diroutput <- 'O:/studies/grapholemo/analysis/LEMO_GFG/beh/plots_taskPerformance/'
+raw <- haven::read_sav(paste0('O:/studies/grapholemo/analysis/LEMO_GFG/beh/LEMO_fbl_probabilities.sav'))
+diroutput <- 'O:/studies/grapholemo/analysis/LEMO_GFG/beh/stats_task/plots_taskPerformance/'
 setwd(diroutput)
 
 
 
 # Plots 
-dat <- raw
+dat <- raw[which(raw$task==task),]
 dat$ProbCum_block <- as.factor(dat$ProbCum_block)
-  levels(dat$ProbCum_block) <- c('Block 1', 'Block 2')
+levels(dat$ProbCum_block) <- c('Block 1', 'Block 2')
 
 dat$ProbCum_stim <- as.factor(dat$ProbCum_stim)
-    levels(dat$ProbCum_stim) <- paste0('S',levels(dat$ProbCum_stim))
-    
+levels(dat$ProbCum_stim) <- paste0('S',levels(dat$ProbCum_stim))
+
 dat$ProbCum_rep <- as.numeric(dat$ProbCum_rep) 
 
 
@@ -60,4 +60,3 @@ p3 <-
 ggsave(plot = p1,filename = paste0(diroutput,"/",task,"_cumProbabilities_facetBlock.jpg"),height=130,width = 175,dpi = 300,units="mm")
 ggsave(plot = p2,filename = paste0(diroutput,"/",task,"_cumProbabilities_facetStimBlock.jpg"),height=140,width = 225,dpi = 300,units="mm")
 ggsave(plot = p3,filename = paste0(diroutput,"/",task,"_cumProbabilities_perSubject.jpg"),height=250,width = 225,dpi = 150,units="mm")
-    

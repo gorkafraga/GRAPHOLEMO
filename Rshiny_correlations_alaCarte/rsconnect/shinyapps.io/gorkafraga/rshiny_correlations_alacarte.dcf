@@ -1,0 +1,11 @@
+name: rshiny_correlations_alacarte
+title:
+username:
+account: gorkafraga
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5607368
+bundleId: 5557378
+url: https://gorkafraga.shinyapps.io/rshiny_correlations_alacarte/
+when: 1644337725.1442
+lastSyncTime: 1644337725.1442

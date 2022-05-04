@@ -9,8 +9,8 @@ source("N:/Developmental_Neuroimaging/scripts/DevNeuro_Scripts/Misc_R/R-plots an
 
 ###############################################################################################
 # files and directories
-raw <- haven::read_sav('O:/studies/grapholemo/analysis/LEMO_GFG/beh/LEMO_beh_fbl_long.sav')
-diroutput <- 'O:/studies/grapholemo/analysis/LEMO_GFG/beh/Plots_taskPerformance'
+raw <- haven::read_sav('O:/studies/grapholemo/analysis/LEMO_GFG/beh/LEMO_fbl_long.sav')
+diroutput <- 'O:/studies/grapholemo/analysis/LEMO_GFG/beh/stats_task/Plots_taskPerformance_OK'
 setwd(diroutput)
  
 # first subject filter to the data 
@@ -173,3 +173,33 @@ ds <-Rmisc::summarySE(dat,measurevar="proportionPerThird",groupvars = c("third",
             axis.title.y = element_text(size=12,color="black")) +
       theme(text = element_text(size=25))
     
+    
+    # RT HISTOGRAMS+=======
+    # Select data
+    dat <- raw[raw$fb!=2,]
+    dat <- dat[!is.na(dat$third),]
+    dat$block <- as.factor(dat$block)
+    levels(dat$block) <- c('B1','B2')
+    dat$third <- as.factor(dat$third)
+    dat$task  <- as.factor(dat$task)
+    dat$fb  <- as.factor(dat$fb)
+    levels(dat$fb) <- c('inc','cor')
+
+    gfig<-
+      ggplot(dat,aes(x=meanRT,group=fb)) + 
+      geom_histogram(aes(fill=fb),color='black')+
+      facet_wrap(~fb*task) + 
+      theme_bw()+
+      theme(axis.line.y = element_line(color = gray.colors(10)[3], size = 1, linetype = "solid"),
+            axis.line.x = element_line(color = gray.colors(10)[3], size = 1, linetype = "solid"),
+            axis.text.x = element_text(size=16,color="black",angle=-30,hjust = 0.2),
+            axis.text.y = element_text(size=16,color="black"),
+            axis.title.x = element_text(size=12,color="black"),
+            axis.title.y = element_text(size=12,color="black")) +
+      theme(text = element_text(size=25))
+      
+    gfig
+    #save 
+    ggsave(plot = gfig,filename = paste0(diroutput,"/FBL_rt_histograms.jpg"),height=130,width = 125,dpi = 300,units="mm")
+    
+         

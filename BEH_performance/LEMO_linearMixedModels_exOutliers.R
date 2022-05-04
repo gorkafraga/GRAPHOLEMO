@@ -42,7 +42,7 @@ dat <- raw # work on a copy, keep original dataset
 #Filter data (use dplyr::filteruse):
 dat <- dplyr::filter(dat , (fb == 1) )
 dat <- dplyr::filter(dat , !is.na(third))
- 
+
 
 #Ensure format of your variables (as.factor or as.numeric)
 

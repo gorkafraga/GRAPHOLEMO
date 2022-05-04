@@ -6,18 +6,21 @@
   # REGRESSION PLOTS with Correlations
   #-------------------------------------------------------------------------------
   # read data
-  alldat <- read.xlsx("O:/studies/grapholemo/LEMO_Master.xlsx", sheet  = "Cognitive",detectDates = TRUE) 
-  diroutput <- 'O:/studies/grapholemo/analysis/LEMO_GFG/beh/plots_cognitiveTests/regressions'
+  alldat <- haven::read_sav('O:/studies/grapholemo/analysis/LEMO_GFG/beh/LEMO_cogni_fbl.sav')
+  diroutput <- 'O:/studies/grapholemo/analysis/LEMO_GFG/beh/stats_associations_modelcogni'
   setwd(diroutput)
    
   
   # correlation method 
   mymethod <- "pearson" 
   
-   # Pre-Select some data
-   selected_predictor <- colnames(alldat)[unlist(lapply(alldat,is.numeric))]
+  # filter 
+  alldat <- alldat[which(alldat$Exclude_all==0),]
+  # Pre-Select some data
+  #selected_predictor <- colnames(alldat)[c(grep('FBL*.*_t1*',colnames(alldat)),grep('LEMO_RLDDM32*',colnames(alldat)))]
+  selected_predictor <- colnames(alldat)[c(grep('FBL*.*_t1*',colnames(alldat)),grep('LEMO_rlddm_32*',colnames(alldat)))]
   #selected_predicted <- vars[c(grep('Know*_T*',vars),grep('^SLRT*_T*',vars),grep('^HRT*_T*',vars),grep('^RAN*_T*',vars),grep('^HAWIK*_T*',vars))]
-  selected_predicted <- colnames(alldat)[unlist(lapply(alldat,is.numeric))]
+  selected_predicted <- colnames(alldat)[c(grep('*raw$',colnames(alldat)),grep('*_pr$',colnames(alldat)))]
   selected <- c(selected_predicted,selected_predictor)
   
   #°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸
@@ -109,6 +112,6 @@
        })
   }
   
-  #plore(alldat)
- runApp(correxplore(alldat),launch.browser = getOption("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe", interactive()))
+ correxplore(alldat)
+ #runApp(correxplore(alldat),launch.browser = getOption("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe", interactive()))
    
