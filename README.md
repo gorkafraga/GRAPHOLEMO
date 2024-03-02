@@ -15,7 +15,8 @@ _Main_
 -  **func** funcions usually called by scripts with 'run' in their filename
 -  **run** scripts that will run analyses using functions in the same folder
 -  **GLM** general linear model - used in the main MR analysis scripts. GLM0, GLM1, etc, indicate different versions
--  **FBL**
+-  **rlddm** reinforcement learning drift diffusion model. The versions are added as suffix e.g., \*_rlddm_v12 , etc. Versions descriptions provided in README at the corresponding folder
+-  **gpl** used in subject ID to designate the experiment  'grapheme-phoneme-learning' e.g., gpl001
 
 _Secondary_
 -  **_EH.** suffix with name initials of a MSc Thesis (ignore)
