@@ -1,8 +1,11 @@
+[[_TOC_]]
+
 # GRAPHOLEMO
 Scripts for Grapheme-Phoneme Learning Modelling  (postdoctoral project running from 2020-2022 at the University of Zurich). Functions for MRI analysis (Matlab), computational model of learning (R,Stan), stimuli presentation (NeurobsPresentation), statistics and visualizations (R)
 
+
 ## Abbreviations 
-These abbreviations may be used in folder name or filename parts
+These are the main abbreviations used in folder names and filename parts
 
 _Main_
 -  **LEMO** shortname for the project title GRAPHOLEMO 
