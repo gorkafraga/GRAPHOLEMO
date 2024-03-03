@@ -1,7 +1,7 @@
 # GRAPHOLEMO
 Scripts for Grapheme-Phoneme Learning Modelling  (postdoctoral project running from 2020-2022 at the University of Zurich). Functions for MRI analysis (Matlab), computational model of learning (R,Stan), stimuli presentation (NeurobsPresentation), statistics and visualizations (R)
 
-## Publication scripts 
+# Publication scripts 
 This section aims at helping finding the scripts involved in the BioRxiv publication and associated submission for peer-review (Fraga-González, G., Haller, P., Willinger, D., Gehrig, V., Frei, N., & Brem, S. (2023). Neural representation of association strength and prediction error during novel symbol-speech sounds learning. bioRxiv, 2023-11. https://doi.org/10.1101/2023.11.06.564575). 
 
 This README aims tries to facilitate navigating through the main scripts. Please see below and contact me for clarifications if needed (contact details in publication; [ORCID](http://orcid.org/0000-0002-1857-8607)). 
