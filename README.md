@@ -30,11 +30,10 @@ _other_
 -  **\_AR\_** acronym for Allread project (ignore)
 
 ## Folder overview
-### Behavioral
-#### BEH_cognitive
+### BEH_cognitive
 contains scripts for descriptive tables and plot on performance in the cognitive tests (reading, spelling, etc)
 
-#### BEH_computational_models
+### BEH_computational_models
 all scripts related to running the models in Stan and preparing the data for them.
 -  **LEMO_task_preprocessing** formats and prepares the task performance data for the computational models. Some operations done here are concatenate tables, trim trials with 'too slow' response, select columns gather the data in a format suited for Stan
 -  **LEMO_model_run_rlddm**  runs the rlddm model in Stan: gathers the samples to create a stan fit object and extracts log lik values for model comparisons
@@ -42,28 +41,28 @@ all scripts related to running the models in Stan and preparing the data for the
 - **BEH_computational_models/Stan** the Stan scripts named *LEMO_rlddm_* are the scripts to compute the models in our project. Ignore subfolders *allread*  (script tests  for other project) and those referring with _bandit2arm_ (initial tests in those tasks and models as examples)
 - **BEH_computational_models/data_generation** (beta) initial tests for further analysis
   
-#### BEH_computational_models_compareTasks
+### BEH_computational_models_compareTasks
 comparisons between the model parameters derived from task parts A and B
 
-#### BEH_correlations
+### BEH_correlations
 Function and runner script to perform various sets of correlations between performance data and model parameters
-#### BEH_redcap
+### BEH_redcap
 ancillary scripts to gather and format tables downloaded from Redcap
-#### Experiment_NeurobsPresentation
+### Experiment_NeurobsPresentation
 the scripts for the program Presentation (from Neurobs) to run the experiment. See README in folder for details 
 
-#### File management 
+### File management 
 Miscellaneous scripts used for folder preparations , file conversions, ec
 
-#### MR_plots and tables
+### MR_plots and tables
 Misc scripts for visualization of MRI data and the results tables
 
-#### MR_preprocessing 
+### MR_preprocessing 
 Scripts starting by LEMO_\*  are the main preprocessing scripts.  **LEMO_run_wrapperPreprocessing** is used as a main preprocessing script that will call functions to create a matlabbatch for SPM 
 
-#### MR_statistics 
+### MR_statistics 
 **Task_feedbacklearning** contains the main analysis scripts, first and second leval with and without model parameter as modulators
 **ROI** contains the main ROI analyses for the feedback learning task
 
-#### MR_utils, Misc visualizations, Rmarkdown and Statistics_functions 
+### MR_utils, Misc visualizations, Rmarkdown and Statistics_functions 
 Miscellaneous scripts (some are beta versions) used for this an other projects 
