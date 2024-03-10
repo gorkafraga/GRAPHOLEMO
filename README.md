@@ -29,7 +29,7 @@ _other_
 -  **Allread**  refers to a previous project Allread (ignore)
 -  **\_AR\_** acronym for Allread project (ignore)
 
-## Folder overview
+## Folder content overview
 
 ### BEH_cognitive
 contains scripts for descriptive tables and plot on performance in the cognitive tests (reading, spelling, etc) 
