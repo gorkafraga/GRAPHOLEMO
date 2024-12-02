@@ -1,9 +1,0 @@
-trial	block	stimIndex	Condition	VstimCaption	ISIjitter
-1	1	1	FFtrained	g	207	
-2	1	2	FFtrained	d	423	
-3	1	3	FFtrained	f	472	
-4	1	4	FFtrained	a	255	
-5	1	5	FFtrained	a	408	
-6	1	6	FFtrained	h	127	
-7	1	7	FFtrained	d	164	
-8	1	8	FFtrained	f	202	
